@@ -1,12 +1,42 @@
 {{ define "main" }}
-<h1>{{ .Title }}</h1>
-{{ range .Pages.ByPublishDate.Reverse }}
-<p>
-<h3><a class="title" href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
-{{ partial "metadata.html" . }}
-<a class="summary" href="{{ .RelPermalink }}">
-    <p>{{ .Summary }}</p>
-</a>
-</p>
-{{ end }}
+<div class="columns">
+    <div class="column is-3">
+        <aside class="is-medium menu">
+            <p class="menu-label">
+                Rule Tags
+            </p>
+            <div class="tags">
+                {{range .Param "tags"}}
+                <a href="#TODO" class="tag is-active">{{.}}</a></a>
+                {{end}}
+            </div>
+            <ul class="menu-list">
+
+            </ul>
+            <p class="menu-label">
+                More to read...
+            </p>
+            <ul class="menu-list">
+                <li><span class="tag is-white is-medium">Lorem</span></li>
+                <li><span class="tag is-white is-medium">Ipsum</span></li>
+            </ul>
+        </aside>
+    </div>
+    <div class="column is-9">
+        {{ partial "breadcrumbs.html" . }}
+        <div class="content is-medium">
+            <h3 class="title is-3">{{.Title}}</h3>
+            <div class="box">
+                {{ range .Pages.ByPublishDate.Reverse }}
+                <p>
+                <h3><a class="title" href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+                <a class="summary" href="{{ .RelPermalink }}">
+                    <p>{{ .Summary }}</p>
+                </a>
+                </p>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</div>
 {{ end }}
