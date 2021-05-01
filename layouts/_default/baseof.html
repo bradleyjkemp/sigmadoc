@@ -17,12 +17,16 @@
 
     <div id="navbarBasicExample" class="navbar-menu">
         <div class="navbar-start">
-            <a class="navbar-item">
+            <a class="navbar-item" href="{{site.BaseURL}}">
                 Home
             </a>
 
-            <a class="navbar-item">
-                Documentation
+            <a class="navbar-item" href="{{site.BaseURL}}/rules/">
+                Rules
+            </a>
+
+            <a class="navbar-item" href="{{site.BaseURL}}/tags/">
+                Tags
             </a>
 
             <div class="navbar-item has-dropdown is-hoverable">
@@ -52,7 +56,7 @@
             <div class="navbar-item" id="search" class="bd-search">
                 <form action="{{site.BaseURL}}/search">
                     <p class="control has-icons-left">
-                        <input class="input" type="text" name="query" placeholder="Search">
+                        <input class="input is-rounded" type="text" name="query" placeholder="Search">
                         <span class="icon is-left">
                         <i class="fas fa-search" aria-hidden="true"></i>
                     </span>
