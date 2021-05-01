@@ -93,7 +93,7 @@ title: "{{.Title}}"
 var ruleTemplate = template.Must(template.New("ruleTemplate").Parse(`---
 title: "{{.Parsed.Title}}"
 aliases:
-  - "/{{.ID}}"
+  - "/rule/{{.Parsed.ID}}"
 {{with .Parsed.AdditionalFields.tags}}
 tags:
 {{range .}}  - {{.}}
