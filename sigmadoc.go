@@ -6,6 +6,7 @@ import (
 	"io/ioutil"
 	"os"
 	"path/filepath"
+	"strings"
 	"text/template"
 
 	"github.com/bradleyjkemp/sigma-go"
@@ -59,16 +60,18 @@ func convertFile(path string) error {
 		return fmt.Errorf("failed to create output directory: %v", err)
 	}
 
-	section, err := os.Create(filepath.Join(filepath.Dir(outPath), "_index.md"))
-	if err != nil {
-		return fmt.Errorf("failed to create content section: %v", err)
-	}
+	for dir := filepath.Dir(outPath); strings.HasPrefix(dir, filepath.Join(*outputDirectory, "rules")); dir = filepath.Dir(dir) {
+		section, err := os.Create(filepath.Join(dir, "_index.md"))
+		if err != nil {
+			return fmt.Errorf("failed to create content section: %v", err)
+		}
 
-	err = sectionTemplate.Execute(section, map[string]interface{}{
-		"Title": filepath.Base(filepath.Dir(outPath)),
-	})
-	if err != nil {
-		return fmt.Errorf("failed to create content section: %v", err)
+		err = sectionTemplate.Execute(section, map[string]interface{}{
+			"Title": filepath.Base(dir),
+		})
+		if err != nil {
+			return fmt.Errorf("failed to create content section: %v", err)
+		}
 	}
 
 	out, err := os.Create(outPath)
