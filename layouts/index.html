@@ -1,15 +1,12 @@
 {{ define "main" }}
-<div id="home-jumbotron" class="jumbotron text-center">
-    <h1 class="title is-1">{{ .Site.Title }}</h1>
-</div>
-Categories: {{ .Site.Taxonomies.categories }}
-Categories: {{ .Site }}
-{{ range .Pages }}
-<p>
-<h3 class="title is-3"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
-<a class="summary" href="{{ .RelPermalink }}">
-    <p>{{ .Summary }}</p>
-</a>
-</p>
-{{ end }}
+<section>
+    <h2 class="title is-2">Newest rules</h2>
+    {{ range .Site.Pages.ByPublishDate.Reverse | first 5 }}
+    {{ if eq .Kind "page" }}
+    {{ partial "rule-card.html" . }}
+    {{ else }}
+    {{ partial "section-card.html" . }}
+    {{end}}
+    {{ end }}
+</section>
 {{ end }}
