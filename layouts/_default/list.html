@@ -28,7 +28,7 @@
         {{ range .Pages.ByPublishDate.Reverse }}
             {{ if eq .Kind "page" }}
                 {{ partial "rule-card.html" . }}
-            {{ else if eq .Kind "section" }}
+            {{ else }}
                 {{ partial "section-card.html" . }}
             {{end}}
         {{ end }}
