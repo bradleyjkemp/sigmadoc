@@ -54,7 +54,7 @@ func convertFile(path string) error {
 	}
 
 	relPath, _ := filepath.Rel(*rulesDirectory, path)
-	outPath := filepath.Join(*outputDirectory, relPath+".md")
+	outPath := filepath.Join(*outputDirectory, "rules", relPath+".md")
 	if err := os.MkdirAll(filepath.Dir(outPath), 0755); err != nil {
 		return fmt.Errorf("failed to create output directory: %v", err)
 	}
