@@ -1,0 +1,28 @@
+<div class="card block">
+    <header class="card-header">
+        <a class="card-header-title" href="{{.Permalink}}">
+            {{ .Title }}
+        </a>
+        <a class="card-header-icon" href="{{.Permalink}}">
+            <div class="field is-grouped is-justify-content-center">
+                <div class="control">
+                    <div class="tags has-addons">
+                        <span class="tag is-dark">level</span>
+                        <span class="tag is-danger">critical</span>
+                    </div>
+                </div>
+                <div class="control">
+                    <div class="tags has-addons">
+                        <span class="tag is-dark">status</span>
+                        <span class="tag is-info">experimental</span>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </header>
+    <div class="card-content">
+        <div class="content">
+            {{ .Summary }}
+        </div>
+    </div>
+</div>
