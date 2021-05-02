@@ -5,8 +5,10 @@ import (
 	"fmt"
 	"io/ioutil"
 	"os"
+	"os/exec"
 	"path/filepath"
 	"strings"
+	"sync"
 	"text/template"
 
 	"github.com/bradleyjkemp/sigma-go"
@@ -46,43 +48,81 @@ func main() {
 func convertFile(path string) error {
 	ruleContents, err := ioutil.ReadFile(path)
 	if err != nil {
-		return fmt.Errorf("failed to read %s: %v", path, err)
+		return fmt.Errorf("failed to read %s: %w", path, err)
 	}
 
 	rule, err := sigma.ParseRule(ruleContents)
 	if err != nil {
-		return fmt.Errorf("failed to parse %s: %v", path, err)
+		return fmt.Errorf("failed to parse %s: %w", path, err)
 	}
 
 	relPath, _ := filepath.Rel(*rulesDirectory, path)
 	outPath := filepath.Join(*outputDirectory, "rules", relPath+".md")
 	if err := os.MkdirAll(filepath.Dir(outPath), 0755); err != nil {
-		return fmt.Errorf("failed to create output directory: %v", err)
+		return fmt.Errorf("failed to create output directory: %w", err)
 	}
 
-	for dir := filepath.Dir(outPath); strings.HasPrefix(dir, filepath.Join(*outputDirectory, "rules")); dir = filepath.Dir(dir) {
+	if err := createSectionFiles(outPath); err != nil {
+		return fmt.Errorf("failed to create section files: %w", err)
+	}
+
+	out, err := os.Create(outPath)
+	if err != nil {
+		return fmt.Errorf("failed to create output file: %w", err)
+	}
+
+	return ruleTemplate.Execute(out, map[string]interface{}{
+		"Parsed":   rule,
+		"Time":     getRuleCreation(path, rule),
+		"Original": string(ruleContents),
+	})
+}
+
+func createSectionFiles(rulePath string) error {
+	for dir := filepath.Dir(rulePath); strings.HasPrefix(dir, filepath.Join(*outputDirectory, "rules")); dir = filepath.Dir(dir) {
 		section, err := os.Create(filepath.Join(dir, "_index.md"))
 		if err != nil {
-			return fmt.Errorf("failed to create content section: %v", err)
+			return err
 		}
 
 		err = sectionTemplate.Execute(section, map[string]interface{}{
 			"Title": filepath.Base(dir),
 		})
 		if err != nil {
-			return fmt.Errorf("failed to create content section: %v", err)
+			return err
 		}
 	}
+	return nil
+}
 
-	out, err := os.Create(outPath)
-	if err != nil {
-		return fmt.Errorf("failed to create output file: %v", err)
-	}
+var (
+	rulesDirIsGitOnce = sync.Once{}
+	ruleDirIsGit      bool
+)
 
-	return ruleTemplate.Execute(out, map[string]interface{}{
-		"Parsed":   rule,
-		"Original": string(ruleContents),
+func getRuleCreation(path string, rule sigma.Rule) string {
+	rulesDirIsGitOnce.Do(func() {
+		gitCheck := exec.Command("git", "rev-parse")
+		gitCheck.Dir = filepath.Dir(path)
+		if gitCheck.Run() == nil {
+			ruleDirIsGit = true
+		}
 	})
+
+	if !ruleDirIsGit {
+		// TODO: read creation time from sigma.Rule
+		return ""
+	}
+	cmd := exec.Command("git", "log", "--diff-filter=A", "--follow", "--format=%aD", "-1", "--", filepath.Base(path))
+	cmd.Dir = filepath.Dir(path)
+
+	timestamp, err := cmd.CombinedOutput()
+	if err != nil {
+		fmt.Println("failed to check timestamp", err, string(timestamp))
+		// Oh well, this was best effort anyway
+		return ""
+	}
+	return string(timestamp)
 }
 
 var sectionTemplate = template.Must(template.New("sectionTemplate").Parse(`---
@@ -98,6 +138,10 @@ aliases:
 tags:
 {{range .}}  - {{.}}
 {{end}}{{end}}
+
+{{with .Time}}
+date: {{.}}
+{{end}}
 ---
 
 {{.Parsed.Description}}
