@@ -36,10 +36,10 @@
                 <div class="field is-grouped is-grouped-multiline">
                     {{range sort $sortedTags.Values "count" "desc" | first 20}}
                     <div class="control">
-                        <div class="tags has-addons">
-                            <a href="{{site.BaseURL}}/tags/{{.tag}}}" class="tag is-medium">{{.tag}}</a></a>
+                        <a class="tags has-addons" href="{{site.BaseURL}}/tags/{{.tag}}">
+                            <span class="tag is-medium">{{.tag}}</span>
                             <span class="tag is-medium">{{.count}}</span>
-                        </div>
+                        </a>
                     </div>
                     {{end}}
                 </div>
