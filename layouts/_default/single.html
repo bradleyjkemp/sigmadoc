@@ -1,27 +1,5 @@
 {{ define "main" }}
 <div class="columns">
-    <div class="column is-3">
-        <aside class="menu is-medium">
-            <p class="menu-label">
-                Rule Tags
-            </p>
-            {{ partial "tags.html" . }}
-            <ul class="menu-list">
-
-            </ul>
-            <p class="menu-label">
-                Similar rules
-            </p>
-            {{ $related := .Site.RegularPages.Related . | first 5 }}
-            {{ with $related }}
-            <ul class="menu-list">
-                {{ range . }}
-                <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
-                {{ end }}
-            </ul>
-            {{ end }}
-        </aside>
-    </div>
     <div class="column is-9">
         {{ partial "breadcrumbs.html" . }}
         <div class="content is-medium">
@@ -45,6 +23,28 @@
                 {{.Content}}
             </div>
         </div>
+    </div>
+    <div class="column is-3">
+        <aside class="menu is-medium">
+            <p class="menu-label">
+                Rule Tags
+            </p>
+            {{ partial "tags.html" . }}
+            <ul class="menu-list">
+
+            </ul>
+            <p class="menu-label">
+                Similar rules
+            </p>
+            {{ $related := .Site.RegularPages.Related . | first 5 }}
+            {{ with $related }}
+            <ul class="menu-list">
+                {{ range . }}
+                <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+                {{ end }}
+            </ul>
+            {{ end }}
+        </aside>
     </div>
 </div>
 {{ end }}
