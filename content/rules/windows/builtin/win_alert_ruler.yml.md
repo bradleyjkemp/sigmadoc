@@ -1,0 +1,82 @@
+---
+title: "Hacktool Ruler"
+aliases:
+  - "/rule/24549159-ac1b-479c-8175-d42aea947cae"
+
+tags:
+  - attack.discovery
+  - attack.execution
+  - attack.t1087
+  - attack.t1075
+  - attack.t1114
+  - attack.t1059
+  - attack.t1550.002
+
+
+
+date: Fri, 26 Jul 2019 14:49:09 +0200
+
+
+---
+
+This events that are generated when using the hacktool Ruler by Sensepost
+
+<!--more-->
+
+
+## Known false-positives
+
+* Go utilities that use staaldraad awesome NTLM library
+
+
+
+## References
+
+* https://github.com/sensepost/ruler
+* https://github.com/sensepost/ruler/issues/47
+* https://github.com/staaldraad/go-ntlm/blob/master/ntlm/ntlmv1.go#L427
+* https://docs.microsoft.com/en-us/windows/security/threat-protection/auditing/event-4776
+* https://docs.microsoft.com/en-us/windows/security/threat-protection/auditing/event-4624
+
+
+## Raw rule
+```yaml
+title: Hacktool Ruler
+id: 24549159-ac1b-479c-8175-d42aea947cae
+description: This events that are generated when using the hacktool Ruler by Sensepost
+author: Florian Roth
+date: 2017/05/31
+modified: 2019/07/26
+references:
+    - https://github.com/sensepost/ruler
+    - https://github.com/sensepost/ruler/issues/47
+    - https://github.com/staaldraad/go-ntlm/blob/master/ntlm/ntlmv1.go#L427
+    - https://docs.microsoft.com/en-us/windows/security/threat-protection/auditing/event-4776
+    - https://docs.microsoft.com/en-us/windows/security/threat-protection/auditing/event-4624
+tags:
+    - attack.discovery
+    - attack.execution
+    - attack.t1087
+    - attack.t1075          # an old one
+    - attack.t1114
+    - attack.t1059
+    - attack.t1550.002
+logsource:
+    product: windows
+    service: security
+detection:
+    selection1:
+        EventID:
+            - 4776
+        Workstation: 'RULER'
+    selection2:
+        EventID:
+            - 4624
+            - 4625
+        WorkstationName: 'RULER'
+    condition: (1 of selection*)
+falsepositives:
+    - Go utilities that use staaldraad awesome NTLM library
+level: high
+
+```

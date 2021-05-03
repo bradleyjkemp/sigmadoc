@@ -1,0 +1,63 @@
+---
+title: "Source Code Enumeration Detection by Keyword"
+aliases:
+  - "/rule/953d460b-f810-420a-97a2-cfca4c98e602"
+
+tags:
+  - attack.discovery
+  - attack.t1083
+
+
+
+date: Sat, 8 Jun 2019 22:40:28 -0400
+
+
+---
+
+Detects source code enumeration that use GET requests by keyword searches in URL strings
+
+<!--more-->
+
+
+## Known false-positives
+
+* unknown
+
+
+
+## References
+
+* https://pentester.land/tutorials/2018/10/25/source-code-disclosure-via-exposed-git-folder.html
+* https://medium.com/@logicbomb_1/bugbounty-how-i-was-able-to-download-the-source-code-of-indias-largest-telecom-service-52cf5c5640a1
+
+
+## Raw rule
+```yaml
+title: Source Code Enumeration Detection by Keyword
+id: 953d460b-f810-420a-97a2-cfca4c98e602
+status: experimental
+description: Detects source code enumeration that use GET requests by keyword searches in URL strings
+author: James Ahearn
+date: 2019/06/08
+modified: 2020/09/03
+references:
+    - https://pentester.land/tutorials/2018/10/25/source-code-disclosure-via-exposed-git-folder.html
+    - https://medium.com/@logicbomb_1/bugbounty-how-i-was-able-to-download-the-source-code-of-indias-largest-telecom-service-52cf5c5640a1
+logsource:
+    category: webserver
+detection:
+    keywords:
+        - '*.git/*'
+    condition: keywords
+fields:
+    - client_ip
+    - vhost
+    - url
+    - response
+falsepositives:
+    - unknown
+level: medium
+tags:
+    - attack.discovery
+    - attack.t1083
+```

@@ -1,0 +1,10 @@
+baseURL: "https://bradleyjkemp.dev/sigmadoc"
+languageCode:  "en-us"
+title: "My New Hugo Site"
+theme: "github.com/bradleyjkemp/sigmadoc"
+
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON" # Used by the built-in search

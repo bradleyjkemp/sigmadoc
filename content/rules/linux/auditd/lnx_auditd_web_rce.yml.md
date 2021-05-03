@@ -1,0 +1,62 @@
+---
+title: "Webshell Remote Command Execution"
+aliases:
+  - "/rule/c0d3734d-330f-4a03-aae2-65dacc6a8222"
+
+tags:
+  - attack.persistence
+  - attack.t1505.003
+
+
+
+date: Mon, 21 Oct 2019 11:14:24 +0200
+
+
+---
+
+Detects posible command execution by web application/web shell
+
+<!--more-->
+
+
+## Known false-positives
+
+* Admin activity
+* Crazy web applications
+
+
+
+## References
+
+* personal experience
+
+
+## Raw rule
+```yaml
+title: Webshell Remote Command Execution
+id: c0d3734d-330f-4a03-aae2-65dacc6a8222
+status: experimental
+description: Detects posible command execution by web application/web shell
+author: Ilyas Ochkov, Beyu Denis, oscd.community
+date: 2019/10/12
+modified: 2019/11/04
+references:
+    - personal experience
+
+logsource:
+    product: linux
+    service: auditd
+detection:
+    selection:
+        type: 'SYSCALL'
+        SYSCALL: 'execve'
+        key: 'detect_execve_www'
+    condition: selection
+falsepositives:
+    - Admin activity
+    - Crazy web applications
+level: critical
+tags:
+    - attack.persistence
+    - attack.t1505.003
+```

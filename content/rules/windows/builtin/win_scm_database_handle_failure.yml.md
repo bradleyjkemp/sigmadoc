@@ -1,0 +1,59 @@
+---
+title: "SCM Database Handle Failure"
+aliases:
+  - "/rule/13addce7-47b2-4ca0-a98f-1de964d1d669"
+
+tags:
+  - attack.discovery
+
+
+
+date: Thu, 24 Oct 2019 02:40:11 +0200
+
+
+---
+
+Detects non-system users failing to get a handle of the SCM database.
+
+<!--more-->
+
+
+## Known false-positives
+
+* Unknown
+
+
+
+## References
+
+* https://github.com/Cyb3rWard0g/ThreatHunter-Playbook/tree/master/playbooks/windows/07_discovery/T1000_local_admin_check/local_admin_remote_check_openscmanager.md
+
+
+## Raw rule
+```yaml
+title: SCM Database Handle Failure
+id: 13addce7-47b2-4ca0-a98f-1de964d1d669
+description: Detects non-system users failing to get a handle of the SCM database.
+status: experimental
+date: 2019/08/12
+author: Roberto Rodriguez @Cyb3rWard0g
+references:
+    - https://github.com/Cyb3rWard0g/ThreatHunter-Playbook/tree/master/playbooks/windows/07_discovery/T1000_local_admin_check/local_admin_remote_check_openscmanager.md
+tags:
+    - attack.discovery
+logsource:
+    product: windows
+    service: security
+detection:
+    selection: 
+        EventID: 4656
+        ObjectType: 'SC_MANAGER OBJECT'
+        ObjectName: 'servicesactive'
+        Keywords: "Audit Failure"
+        SubjectLogonId: "0x3e4"
+    condition: selection
+falsepositives:
+    - Unknown
+level: critical
+
+```

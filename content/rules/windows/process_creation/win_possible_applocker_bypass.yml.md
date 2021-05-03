@@ -1,0 +1,87 @@
+---
+title: "Possible Applocker Bypass"
+aliases:
+  - "/rule/82a19e3a-2bfe-4a91-8c0d-5d4c98fbb719"
+
+tags:
+  - attack.defense_evasion
+  - attack.t1118
+  - attack.t1218.004
+  - attack.t1121
+  - attack.t1218.009
+  - attack.t1127
+  - attack.t1127.001
+  - attack.t1170
+  - attack.t1218.005
+  - attack.t1218
+
+
+
+date: Wed, 16 Jan 2019 23:36:31 +0100
+
+
+---
+
+Detects execution of executables that can be used to bypass Applocker whitelisting
+
+<!--more-->
+
+
+## Known false-positives
+
+* False positives depend on scripts and administrative tools used in the monitored environment
+* Using installutil to add features for .NET applications (primarly would occur in developer environments)
+
+
+
+## References
+
+* https://github.com/subTee/ApplicationWhitelistBypassTechniques/blob/master/TheList.txt
+* https://room362.com/post/2014/2014-01-16-application-whitelist-bypass-using-ieexec-dot-exe/
+
+
+## Raw rule
+```yaml
+title: Possible Applocker Bypass
+id: 82a19e3a-2bfe-4a91-8c0d-5d4c98fbb719
+description: Detects execution of executables that can be used to bypass Applocker whitelisting
+status: experimental
+references:
+    - https://github.com/subTee/ApplicationWhitelistBypassTechniques/blob/master/TheList.txt
+    - https://room362.com/post/2014/2014-01-16-application-whitelist-bypass-using-ieexec-dot-exe/
+author: juju4
+date: 2019/01/16
+modified: 2020/09/01
+tags:
+    - attack.defense_evasion
+    - attack.t1118          # an old one
+    - attack.t1218.004
+    - attack.t1121          # an old one
+    - attack.t1218.009
+    - attack.t1127          # an old one
+    - attack.t1127.001
+    - attack.t1170          # an old one
+    - attack.t1218.005
+    - attack.t1218 # no way to map 1:1, so the technique level is required
+logsource:
+    category: process_creation
+    product: windows
+detection:
+    selection:
+        CommandLine|contains:
+            - '\msdt.exe'
+            - '\installutil.exe'
+            - '\regsvcs.exe'
+            - '\regasm.exe'
+            # - '\regsvr32.exe'  # too many FPs, very noisy
+            - '\msbuild.exe'
+            - '\ieexec.exe'
+            #- '\mshta.exe'
+            #- '\csc.exe'
+    condition: selection
+falsepositives:
+    - False positives depend on scripts and administrative tools used in the monitored environment
+    - Using installutil to add features for .NET applications (primarly would occur in developer environments)
+level: low
+
+```
