@@ -1,0 +1,40 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><title>Cheatsheet Concept</title><meta name=viewport content="width=device-width"><link rel=icon type=image/png sizes=32x32 href=../images/favicon.png><link rel=stylesheet href=https://unpkg.com/bulma@0.9.2/css/bulma.min.css><script src=https://kit.fontawesome.com/7dc3015a44.js crossorigin=anonymous></script></head><body><nav class=navbar role=navigation aria-label="main navigation"><div class=navbar-brand><a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc>Sigma Docs</a>
+<a role=button class=navbar-burger aria-label=menu aria-expanded=false data-target=navbarBasicExample><span aria-hidden=true></span><span aria-hidden=true></span><span aria-hidden=true></span></a></div><div id=navbarBasicExample class=navbar-menu><div class=navbar-start><a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc>Home</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc/rules/>Rules</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc/tags/>Tags</a><div class="navbar-item has-dropdown is-hoverable"><a class=navbar-link>More</a><div class=navbar-dropdown><a class=navbar-item>About</a>
+<a class=navbar-item>Jobs</a>
+<a class=navbar-item>Contact</a><hr class=navbar-divider><a class=navbar-item>Report an issue</a></div></div></div><div class=navbar-end><div class=navbar-item id=search class=bd-search><form action=https://bradleyjkemp.dev/sigmadoc/search><p class="control has-icons-left"><input class="input is-rounded" type=text name=query placeholder=Search>
+<span class="icon is-left"><i class="fas fa-search" aria-hidden=true></i></span></p></form></div></div></div></nav><section class=section><div class=container><div class=columns><div class="column is-9"><nav class=breadcrumb aria-label=breadcrumbs><ul><li><a href=https://bradleyjkemp.dev/sigmadoc>home</a></li><li><a href=https://bradleyjkemp.dev/sigmadocrules>rules</a></li><li><a href=https://bradleyjkemp.dev/sigmadocrules/application>application</a></li><li><a href=https://bradleyjkemp.dev/sigmadocrules/application/appframework_spring_exceptions.yml>appframework_spring_exceptions.yml</a></li></ul></nav><div class="content is-medium"><h3 class="title is-1">Spring Framework Exceptions</h3><div class=box><div class="field is-grouped is-justify-content-center"><div class=control><div class="tags has-addons"><span class="tag is-medium is-dark">level</span>
+<span class="tag is-medium is-danger">critical</span></div></div><div class=control><div class="tags has-addons"><span class="tag is-medium is-dark">status</span>
+<span class="tag is-medium is-info">experimental</span></div></div></div><p>Detects suspicious Spring framework exceptions that could indicate exploitation attempts</p><h2 id=known-false-positives>Known false-positives</h2><ul><li>Application bugs</li><li>Penetration testing</li></ul><h2 id=references>References</h2><ul><li><a href=https://docs.spring.io/spring-security/site/docs/current/apidocs/overview-tree.html>https://docs.spring.io/spring-security/site/docs/current/apidocs/overview-tree.html</a></li></ul><h2 id=raw-rule>Raw rule</h2><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=color:#f92672>title</span>: <span style=color:#ae81ff>Spring Framework Exceptions</span>
+<span style=color:#f92672>id</span>: <span style=color:#ae81ff>ae48ab93-45f7-4051-9dfe-5d30a3f78e33</span>
+<span style=color:#f92672>status</span>: <span style=color:#ae81ff>stable</span>
+<span style=color:#f92672>description</span>: <span style=color:#ae81ff>Detects suspicious Spring framework exceptions that could indicate exploitation attempts</span>
+<span style=color:#f92672>author</span>: <span style=color:#ae81ff>Thomas Patzke</span>
+<span style=color:#f92672>date</span>: <span style=color:#ae81ff>2017</span><span style=color:#ae81ff>/08/06</span>
+<span style=color:#f92672>modified</span>: <span style=color:#ae81ff>2020</span><span style=color:#ae81ff>/09/01</span>
+<span style=color:#f92672>references</span>:
+    - <span style=color:#ae81ff>https://docs.spring.io/spring-security/site/docs/current/apidocs/overview-tree.html</span>
+<span style=color:#f92672>logsource</span>:
+    <span style=color:#f92672>category</span>: <span style=color:#ae81ff>application</span>
+    <span style=color:#f92672>product</span>: <span style=color:#ae81ff>spring</span>
+<span style=color:#f92672>detection</span>:
+    <span style=color:#f92672>keywords</span>:
+        - <span style=color:#ae81ff>AccessDeniedException</span>
+        - <span style=color:#ae81ff>CsrfException</span>
+        - <span style=color:#ae81ff>InvalidCsrfTokenException</span>
+        - <span style=color:#ae81ff>MissingCsrfTokenException</span>
+        - <span style=color:#ae81ff>CookieTheftException</span>
+        - <span style=color:#ae81ff>InvalidCookieException</span>
+        - <span style=color:#ae81ff>RequestRejectedException</span>
+    <span style=color:#f92672>condition</span>: <span style=color:#ae81ff>keywords</span>
+<span style=color:#f92672>falsepositives</span>:
+    - <span style=color:#ae81ff>Application bugs</span>
+    - <span style=color:#ae81ff>Penetration testing</span>
+<span style=color:#f92672>level</span>: <span style=color:#ae81ff>medium</span>
+<span style=color:#f92672>tags</span>:
+    - <span style=color:#ae81ff>attack.initial_access</span>
+    - <span style=color:#ae81ff>attack.t1190</span>
+</code></pre></div></div></div></div><div class="column is-3"><aside class="menu is-medium"><p class=menu-label>Rule Tags</p><div class=tags><a href=https://bradleyjkemp.dev/sigmadoc/tags/attack.initial_access class="tag is-medium">attack.initial_access</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc/tags/attack.t1190 class="tag is-medium">attack.t1190</a></a></div><ul class=menu-list></ul><p class=menu-label>Similar rules</p><ul class=menu-list><li><a href=/sigmadoc/rules/windows/process_creation/win_exploit_cve_2020_1350.yml/>DNS RCE CVE-2020-1350</a></li><li><a href=/sigmadoc/rules/web/web_citrix_cve_2020_8193_8195_exploit.yml/>Citrix ADS Exploitation CVE-2020-8193 CVE-2020-8195</a></li><li><a href=/sigmadoc/rules/windows/process_creation/win_exploit_cve_2020_10189.yml/>Exploited CVE-2020-10189 Zoho ManageEngine</a></li><li><a href=/sigmadoc/rules/web/web_cve_2020_0688_msexchange.yml/>CVE-2020-0688 Exchange Exploitation via Web Log</a></li><li><a href=/sigmadoc/rules/windows/builtin/win_vul_cve_2020_0688.yml/>CVE-2020-0688 Exploitation via Eventlog</a></li></ul></aside></div></div></div></section><footer class=footer><div class="content has-text-centered"><p>Site generated with <a href=https://github.com/bradleyjkemp/sigmadoc><strong>sigmadoc</strong></a>. The website content
+is licensed <a href=https://github.com/SigmaHQ/sigma/blob/master/LICENSE.Detection.Rules.md>DRL 1.0</a>.</p></div></footer></body></html>

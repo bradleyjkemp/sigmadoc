@@ -1,0 +1,41 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><title>Cheatsheet Concept</title><meta name=viewport content="width=device-width"><link rel=icon type=image/png sizes=32x32 href=../images/favicon.png><link rel=stylesheet href=https://unpkg.com/bulma@0.9.2/css/bulma.min.css><script src=https://kit.fontawesome.com/7dc3015a44.js crossorigin=anonymous></script></head><body><nav class=navbar role=navigation aria-label="main navigation"><div class=navbar-brand><a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc>Sigma Docs</a>
+<a role=button class=navbar-burger aria-label=menu aria-expanded=false data-target=navbarBasicExample><span aria-hidden=true></span><span aria-hidden=true></span><span aria-hidden=true></span></a></div><div id=navbarBasicExample class=navbar-menu><div class=navbar-start><a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc>Home</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc/rules/>Rules</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc/tags/>Tags</a><div class="navbar-item has-dropdown is-hoverable"><a class=navbar-link>More</a><div class=navbar-dropdown><a class=navbar-item>About</a>
+<a class=navbar-item>Jobs</a>
+<a class=navbar-item>Contact</a><hr class=navbar-divider><a class=navbar-item>Report an issue</a></div></div></div><div class=navbar-end><div class=navbar-item id=search class=bd-search><form action=https://bradleyjkemp.dev/sigmadoc/search><p class="control has-icons-left"><input class="input is-rounded" type=text name=query placeholder=Search>
+<span class="icon is-left"><i class="fas fa-search" aria-hidden=true></i></span></p></form></div></div></div></nav><section class=section><div class=container><div class=columns><div class="column is-9"><nav class=breadcrumb aria-label=breadcrumbs><ul><li><a href=https://bradleyjkemp.dev/sigmadoc>home</a></li><li><a href=https://bradleyjkemp.dev/sigmadocrules>rules</a></li><li><a href=https://bradleyjkemp.dev/sigmadocrules/web>web</a></li><li><a href=https://bradleyjkemp.dev/sigmadocrules/web/web_multiple_suspicious_resp_codes_single_source.yml>web_multiple_suspicious_resp_codes_single_source.yml</a></li></ul></nav><div class="content is-medium"><h3 class="title is-1">Multiple Suspicious Resp Codes Caused by Single Client</h3><div class=box><div class="field is-grouped is-justify-content-center"><div class=control><div class="tags has-addons"><span class="tag is-medium is-dark">level</span>
+<span class="tag is-medium is-danger">critical</span></div></div><div class=control><div class="tags has-addons"><span class="tag is-medium is-dark">status</span>
+<span class="tag is-medium is-info">experimental</span></div></div></div><p>Detects possible exploitation activity or bugs in a web application</p><h2 id=known-false-positives>Known false-positives</h2><ul><li>Unstable application</li><li>Application that misuses the response codes</li></ul><h2 id=raw-rule>Raw rule</h2><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=color:#f92672>title</span>: <span style=color:#ae81ff>Multiple Suspicious Resp Codes Caused by Single Client</span>
+<span style=color:#f92672>id</span>: <span style=color:#ae81ff>6fdfc796-06b3-46e8-af08-58f3505318af</span>
+<span style=color:#f92672>status</span>: <span style=color:#ae81ff>experimental</span>
+<span style=color:#f92672>description</span>: <span style=color:#ae81ff>Detects possible exploitation activity or bugs in a web application</span>
+<span style=color:#f92672>author</span>: <span style=color:#ae81ff>Thomas Patzke</span>
+<span style=color:#f92672>date</span>: <span style=color:#ae81ff>2017</span><span style=color:#ae81ff>/02/19</span>
+<span style=color:#f92672>modified</span>: <span style=color:#ae81ff>2020</span><span style=color:#ae81ff>/09/03</span>
+<span style=color:#f92672>logsource</span>:
+    <span style=color:#f92672>category</span>: <span style=color:#ae81ff>webserver</span>
+<span style=color:#f92672>detection</span>:
+    <span style=color:#f92672>selection</span>:
+        <span style=color:#f92672>sc-status</span>:
+          - <span style=color:#ae81ff>400</span>
+          - <span style=color:#ae81ff>401</span>
+          - <span style=color:#ae81ff>403</span>
+          - <span style=color:#ae81ff>500</span>
+    <span style=color:#f92672>timeframe</span>: <span style=color:#ae81ff>10m</span>
+    <span style=color:#f92672>condition</span>: <span style=color:#ae81ff>selection | count() by clientip &gt; 10</span>
+<span style=color:#f92672>fields</span>:
+    - <span style=color:#ae81ff>client_ip</span>
+    - <span style=color:#ae81ff>vhost</span>
+    - <span style=color:#ae81ff>url</span>
+    - <span style=color:#ae81ff>response</span>
+<span style=color:#f92672>falsepositives</span>:
+    - <span style=color:#ae81ff>Unstable application</span>
+    - <span style=color:#ae81ff>Application that misuses the response codes</span>
+<span style=color:#f92672>level</span>: <span style=color:#ae81ff>medium</span>
+<span style=color:#f92672>tags</span>:
+    - <span style=color:#ae81ff>attack.initial_access</span>
+    - <span style=color:#ae81ff>attack.t1190</span>
+</code></pre></div></div></div></div><div class="column is-3"><aside class="menu is-medium"><p class=menu-label>Rule Tags</p><div class=tags><a href=https://bradleyjkemp.dev/sigmadoc/tags/attack.initial_access class="tag is-medium">attack.initial_access</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc/tags/attack.t1190 class="tag is-medium">attack.t1190</a></a></div><ul class=menu-list></ul><p class=menu-label>Similar rules</p><ul class=menu-list><li><a href=/sigmadoc/rules/web/web_cve_2020_5902_f5_bigip.yml/>CVE-2020-5902 F5 BIG-IP Exploitation Attempt</a></li><li><a href=/sigmadoc/rules/web/web_citrix_cve_2019_19781_exploit.yml/>Citrix Netscaler Attack CVE-2019-19781</a></li><li><a href=/sigmadoc/rules/web/web_cve_2019_3398_confluence.yml/>Confluence Exploitation CVE-2019-3398</a></li><li><a href=/sigmadoc/rules/application/appframework_django_exceptions.yml/>Django Framework Exceptions</a></li><li><a href=/sigmadoc/rules/proxy/proxy_ua_hacktool.yml/>Hack Tool User Agent</a></li></ul></aside></div></div></div></section><footer class=footer><div class="content has-text-centered"><p>Site generated with <a href=https://github.com/bradleyjkemp/sigmadoc><strong>sigmadoc</strong></a>. The website content
+is licensed <a href=https://github.com/SigmaHQ/sigma/blob/master/LICENSE.Detection.Rules.md>DRL 1.0</a>.</p></div></footer></body></html>

@@ -1,0 +1,59 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><title>Cheatsheet Concept</title><meta name=viewport content="width=device-width"><link rel=icon type=image/png sizes=32x32 href=../images/favicon.png><link rel=stylesheet href=https://unpkg.com/bulma@0.9.2/css/bulma.min.css><script src=https://kit.fontawesome.com/7dc3015a44.js crossorigin=anonymous></script></head><body><nav class=navbar role=navigation aria-label="main navigation"><div class=navbar-brand><a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc>Sigma Docs</a>
+<a role=button class=navbar-burger aria-label=menu aria-expanded=false data-target=navbarBasicExample><span aria-hidden=true></span><span aria-hidden=true></span><span aria-hidden=true></span></a></div><div id=navbarBasicExample class=navbar-menu><div class=navbar-start><a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc>Home</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc/rules/>Rules</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc/tags/>Tags</a><div class="navbar-item has-dropdown is-hoverable"><a class=navbar-link>More</a><div class=navbar-dropdown><a class=navbar-item>About</a>
+<a class=navbar-item>Jobs</a>
+<a class=navbar-item>Contact</a><hr class=navbar-divider><a class=navbar-item>Report an issue</a></div></div></div><div class=navbar-end><div class=navbar-item id=search class=bd-search><form action=https://bradleyjkemp.dev/sigmadoc/search><p class="control has-icons-left"><input class="input is-rounded" type=text name=query placeholder=Search>
+<span class="icon is-left"><i class="fas fa-search" aria-hidden=true></i></span></p></form></div></div></div></nav><section class=section><div class=container><div class=columns><div class="column is-9"><nav class=breadcrumb aria-label=breadcrumbs><ul><li><a href=https://bradleyjkemp.dev/sigmadoc>home</a></li><li><a href=https://bradleyjkemp.dev/sigmadocrules>rules</a></li><li><a href=https://bradleyjkemp.dev/sigmadocrules/windows>windows</a></li><li><a href=https://bradleyjkemp.dev/sigmadocrules/windows/process_creation>process_creation</a></li><li><a href=https://bradleyjkemp.dev/sigmadocrules/windows/process_creation/win_bypass_squiblytwo.yml>win_bypass_squiblytwo.yml</a></li></ul></nav><div class="content is-medium"><h3 class="title is-1">SquiblyTwo</h3><div class=box><div class="field is-grouped is-justify-content-center"><div class=control><div class="tags has-addons"><span class="tag is-medium is-dark">level</span>
+<span class="tag is-medium is-danger">critical</span></div></div><div class=control><div class="tags has-addons"><span class="tag is-medium is-dark">status</span>
+<span class="tag is-medium is-info">experimental</span></div></div></div><p>Detects WMI SquiblyTwo Attack with possible renamed WMI by looking for imphash</p><h2 id=known-false-positives>Known false-positives</h2><ul><li>Unknown</li></ul><h2 id=references>References</h2><ul><li><a href=https://subt0x11.blogspot.ch/2018/04/wmicexe-whitelisting-bypass-hacking.html>https://subt0x11.blogspot.ch/2018/04/wmicexe-whitelisting-bypass-hacking.html</a></li><li><a href=https://twitter.com/mattifestation/status/986280382042595328>https://twitter.com/mattifestation/status/986280382042595328</a></li></ul><h2 id=raw-rule>Raw rule</h2><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=color:#f92672>title</span>: <span style=color:#ae81ff>SquiblyTwo</span>
+<span style=color:#f92672>id</span>: <span style=color:#ae81ff>8d63dadf-b91b-4187-87b6-34a1114577ea</span>
+<span style=color:#f92672>status</span>: <span style=color:#ae81ff>experimental</span>
+<span style=color:#f92672>description</span>: <span style=color:#ae81ff>Detects WMI SquiblyTwo Attack with possible renamed WMI by looking for imphash</span>
+<span style=color:#f92672>references</span>:
+    - <span style=color:#ae81ff>https://subt0x11.blogspot.ch/2018/04/wmicexe-whitelisting-bypass-hacking.html</span>
+    - <span style=color:#ae81ff>https://twitter.com/mattifestation/status/986280382042595328</span>
+<span style=color:#f92672>tags</span>:
+    - <span style=color:#ae81ff>attack.defense_evasion</span>
+    - <span style=color:#ae81ff>attack.t1047</span>
+    - <span style=color:#ae81ff>attack.t1220</span>
+    - <span style=color:#ae81ff>attack.execution</span>
+    - <span style=color:#ae81ff>attack.t1059.005</span>
+    - <span style=color:#ae81ff>attack.t1059.007</span>
+    - <span style=color:#ae81ff>attack.t1059 </span> <span style=color:#75715e># an old one</span>
+<span style=color:#f92672>author</span>: <span style=color:#ae81ff>Markus Neis / Florian Roth</span>
+<span style=color:#f92672>date</span>: <span style=color:#ae81ff>2019</span><span style=color:#ae81ff>/01/16</span>
+<span style=color:#f92672>modified</span>: <span style=color:#ae81ff>2020</span><span style=color:#ae81ff>/08/27</span>
+<span style=color:#f92672>falsepositives</span>:
+    - <span style=color:#ae81ff>Unknown</span>
+<span style=color:#f92672>level</span>: <span style=color:#ae81ff>medium</span>
+<span style=color:#f92672>logsource</span>:
+    <span style=color:#f92672>category</span>: <span style=color:#ae81ff>process_creation</span>
+    <span style=color:#f92672>product</span>: <span style=color:#ae81ff>windows</span>
+<span style=color:#f92672>detection</span>:
+    <span style=color:#f92672>selection1</span>:
+        <span style=color:#f92672>Image</span>:
+            - <span style=color:#e6db74>&#39;*\wmic.exe&#39;</span>
+        <span style=color:#f92672>CommandLine</span>:
+            - <span style=color:#ae81ff>wmic * *format:\&#34;http*</span>
+            - <span style=color:#ae81ff>wmic * /format:&#39;http</span>
+            - <span style=color:#ae81ff>wmic * /format:http*</span>
+    <span style=color:#f92672>selection2</span>:
+        <span style=color:#f92672>Imphash</span>:
+            - <span style=color:#ae81ff>1B1A3F43BF37B5BFE60751F2EE2F326E</span>
+            - <span style=color:#ae81ff>37777A96245A3C74EB217308F3546F4C</span>
+            - <span style=color:#ae81ff>9D87C9D67CE724033C0B40CC4CA1B206</span>
+        <span style=color:#f92672>CommandLine</span>:
+            - <span style=color:#e6db74>&#39;* *format:\&#34;http*&#39;</span>
+            - <span style=color:#e6db74>&#39;* /format:&#39;&#39;http&#39;</span>
+            - <span style=color:#e6db74>&#39;* /format:http*&#39;</span>
+    <span style=color:#f92672>condition</span>: <span style=color:#ae81ff>1</span> <span style=color:#ae81ff>of them</span>
+
+</code></pre></div></div></div></div><div class="column is-3"><aside class="menu is-medium"><p class=menu-label>Rule Tags</p><div class=tags><a href=https://bradleyjkemp.dev/sigmadoc/tags/attack.defense_evasion class="tag is-medium">attack.defense_evasion</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc/tags/attack.t1047 class="tag is-medium">attack.t1047</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc/tags/attack.t1220 class="tag is-medium">attack.t1220</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc/tags/attack.execution class="tag is-medium">attack.execution</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc/tags/attack.t1059.005 class="tag is-medium">attack.t1059.005</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc/tags/attack.t1059.007 class="tag is-medium">attack.t1059.007</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc/tags/attack.t1059 class="tag is-medium">attack.t1059</a></a></div><ul class=menu-list></ul><p class=menu-label>Similar rules</p><ul class=menu-list><li><a href=/sigmadoc/rules/windows/process_creation/win_html_help_spawn.yml/>HTML Help Shell Spawn</a></li><li><a href=/sigmadoc/rules/windows/process_creation/win_malware_script_dropper.yml/>WScript or CScript Dropper</a></li><li><a href=/sigmadoc/rules/windows/sysmon/sysmon_cactustorch.yml/>CACTUSTORCH Remote Thread Creation</a></li><li><a href=/sigmadoc/rules/windows/process_creation/win_susp_csc.yml/>Suspicious Parent of Csc.exe</a></li><li><a href=/sigmadoc/rules/windows/process_creation/win_susp_rasdial_activity.yml/>Suspicious RASdial Activity</a></li></ul></aside></div></div></div></section><footer class=footer><div class="content has-text-centered"><p>Site generated with <a href=https://github.com/bradleyjkemp/sigmadoc><strong>sigmadoc</strong></a>. The website content
+is licensed <a href=https://github.com/SigmaHQ/sigma/blob/master/LICENSE.Detection.Rules.md>DRL 1.0</a>.</p></div></footer></body></html>

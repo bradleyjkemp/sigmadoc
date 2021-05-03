@@ -1,0 +1,45 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><title>Cheatsheet Concept</title><meta name=viewport content="width=device-width"><link rel=icon type=image/png sizes=32x32 href=../images/favicon.png><link rel=stylesheet href=https://unpkg.com/bulma@0.9.2/css/bulma.min.css><script src=https://kit.fontawesome.com/7dc3015a44.js crossorigin=anonymous></script></head><body><nav class=navbar role=navigation aria-label="main navigation"><div class=navbar-brand><a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc>Sigma Docs</a>
+<a role=button class=navbar-burger aria-label=menu aria-expanded=false data-target=navbarBasicExample><span aria-hidden=true></span><span aria-hidden=true></span><span aria-hidden=true></span></a></div><div id=navbarBasicExample class=navbar-menu><div class=navbar-start><a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc>Home</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc/rules/>Rules</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc/tags/>Tags</a><div class="navbar-item has-dropdown is-hoverable"><a class=navbar-link>More</a><div class=navbar-dropdown><a class=navbar-item>About</a>
+<a class=navbar-item>Jobs</a>
+<a class=navbar-item>Contact</a><hr class=navbar-divider><a class=navbar-item>Report an issue</a></div></div></div><div class=navbar-end><div class=navbar-item id=search class=bd-search><form action=https://bradleyjkemp.dev/sigmadoc/search><p class="control has-icons-left"><input class="input is-rounded" type=text name=query placeholder=Search>
+<span class="icon is-left"><i class="fas fa-search" aria-hidden=true></i></span></p></form></div></div></div></nav><section class=section><div class=container><div class=columns><div class="column is-9"><nav class=breadcrumb aria-label=breadcrumbs><ul><li><a href=https://bradleyjkemp.dev/sigmadoc>home</a></li><li><a href=https://bradleyjkemp.dev/sigmadocrules>rules</a></li><li><a href=https://bradleyjkemp.dev/sigmadocrules/linux>linux</a></li><li><a href=https://bradleyjkemp.dev/sigmadocrules/linux/auditd>auditd</a></li><li><a href=https://bradleyjkemp.dev/sigmadocrules/linux/auditd/lnx_network_sniffing.yml>lnx_network_sniffing.yml</a></li></ul></nav><div class="content is-medium"><h3 class="title is-1">Network Sniffing</h3><div class=box><div class="field is-grouped is-justify-content-center"><div class=control><div class="tags has-addons"><span class="tag is-medium is-dark">level</span>
+<span class="tag is-medium is-danger">critical</span></div></div><div class=control><div class="tags has-addons"><span class="tag is-medium is-dark">status</span>
+<span class="tag is-medium is-info">experimental</span></div></div></div><p>Network sniffing refers to using the network interface on a system to monitor or capture information sent over a wired or wireless connection. An adversary may place a network interface into promiscuous mode to passively access data in transit over the network, or use span ports to capture a larger amount of data.</p><h2 id=known-false-positives>Known false-positives</h2><ul><li>Legitimate administrator or user uses network sniffing tool for legitimate reason</li></ul><h2 id=references>References</h2><ul><li><a href=https://github.com/redcanaryco/atomic-red-team/blob/master/atomics/T1040/T1040.yaml>https://github.com/redcanaryco/atomic-red-team/blob/master/atomics/T1040/T1040.yaml</a></li></ul><h2 id=raw-rule>Raw rule</h2><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=color:#f92672>title</span>: <span style=color:#ae81ff>Network Sniffing</span>
+<span style=color:#f92672>id</span>: <span style=color:#ae81ff>f4d3748a-65d1-4806-bd23-e25728081d01</span>
+<span style=color:#f92672>status</span>: <span style=color:#ae81ff>experimental</span>
+<span style=color:#f92672>description</span>: <span style=color:#ae81ff>Network sniffing refers to using the network interface on a system to monitor or capture information sent over a wired or wireless connection. An adversary</span>
+    <span style=color:#ae81ff>may place a network interface into promiscuous mode to passively access data in transit over the network, or use span ports to capture a larger amount of data.</span>
+<span style=color:#f92672>author</span>: <span style=color:#ae81ff>Timur Zinniatullin, oscd.community</span>
+<span style=color:#f92672>date</span>: <span style=color:#ae81ff>2019</span><span style=color:#ae81ff>/10/21</span>
+<span style=color:#f92672>modified</span>: <span style=color:#ae81ff>2019</span><span style=color:#ae81ff>/11/04</span>
+<span style=color:#f92672>references</span>:
+    - <span style=color:#ae81ff>https://github.com/redcanaryco/atomic-red-team/blob/master/atomics/T1040/T1040.yaml</span>
+<span style=color:#f92672>logsource</span>:
+    <span style=color:#f92672>product</span>: <span style=color:#ae81ff>linux</span>
+    <span style=color:#f92672>service</span>: <span style=color:#ae81ff>auditd</span>
+<span style=color:#f92672>detection</span>:
+    <span style=color:#f92672>selection1</span>:
+        <span style=color:#f92672>type</span>: <span style=color:#e6db74>&#39;execve&#39;</span>
+        <span style=color:#f92672>a0</span>: <span style=color:#e6db74>&#39;tcpdump&#39;</span>
+        <span style=color:#f92672>a1</span>: <span style=color:#e6db74>&#39;-c&#39;</span>
+        <span style=color:#f92672>a3|contains</span>: <span style=color:#e6db74>&#39;-i&#39;</span>
+    <span style=color:#f92672>selection2</span>:
+        <span style=color:#f92672>type</span>: <span style=color:#e6db74>&#39;execve&#39;</span>
+        <span style=color:#f92672>a0</span>: <span style=color:#e6db74>&#39;tshark&#39;</span>
+        <span style=color:#f92672>a1</span>: <span style=color:#e6db74>&#39;-c&#39;</span>
+        <span style=color:#f92672>a3</span>: <span style=color:#e6db74>&#39;-i&#39;</span>
+    <span style=color:#f92672>condition</span>: <span style=color:#ae81ff>selection1 or selection2</span>
+<span style=color:#f92672>falsepositives</span>:
+    - <span style=color:#ae81ff>Legitimate administrator or user uses network sniffing tool for legitimate reason</span>
+<span style=color:#f92672>level</span>: <span style=color:#ae81ff>low</span>
+<span style=color:#f92672>tags</span>:
+    - <span style=color:#ae81ff>attack.credential_access</span>
+    - <span style=color:#ae81ff>attack.discovery</span>
+    - <span style=color:#ae81ff>attack.t1040</span>
+
+</code></pre></div></div></div></div><div class="column is-3"><aside class="menu is-medium"><p class=menu-label>Rule Tags</p><div class=tags><a href=https://bradleyjkemp.dev/sigmadoc/tags/attack.credential_access class="tag is-medium">attack.credential_access</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc/tags/attack.discovery class="tag is-medium">attack.discovery</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc/tags/attack.t1040 class="tag is-medium">attack.t1040</a></a></div><ul class=menu-list></ul><p class=menu-label>Similar rules</p><ul class=menu-list><li><a href=/sigmadoc/rules/windows/process_creation/win_netsh_packet_capture.yml/>Capture a Network Trace with netsh.exe</a></li><li><a href=/sigmadoc/rules/windows/builtin/win_remote_registry_management_using_reg_utility.yml/>Remote Registry Management Using Reg Utility</a></li><li><a href=/sigmadoc/rules/windows/image_load/sysmon_suspicious_dbghelp_dbgcore_load.yml/>Load of dbghelp/dbgcore DLL from Suspicious Process</a></li><li><a href=/sigmadoc/rules/windows/network_connection/sysmon_suspicious_outbound_kerberos_connection.yml/>Suspicious Outbound Kerberos Connection</a></li><li><a href=/sigmadoc/rules/windows/builtin/win_possible_dc_shadow.yml/>Possible DC Shadow</a></li></ul></aside></div></div></div></section><footer class=footer><div class="content has-text-centered"><p>Site generated with <a href=https://github.com/bradleyjkemp/sigmadoc><strong>sigmadoc</strong></a>. The website content
+is licensed <a href=https://github.com/SigmaHQ/sigma/blob/master/LICENSE.Detection.Rules.md>DRL 1.0</a>.</p></div></footer></body></html>

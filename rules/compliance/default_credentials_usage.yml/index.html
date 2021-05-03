@@ -1,0 +1,144 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><title>Cheatsheet Concept</title><meta name=viewport content="width=device-width"><link rel=icon type=image/png sizes=32x32 href=../images/favicon.png><link rel=stylesheet href=https://unpkg.com/bulma@0.9.2/css/bulma.min.css><script src=https://kit.fontawesome.com/7dc3015a44.js crossorigin=anonymous></script></head><body><nav class=navbar role=navigation aria-label="main navigation"><div class=navbar-brand><a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc>Sigma Docs</a>
+<a role=button class=navbar-burger aria-label=menu aria-expanded=false data-target=navbarBasicExample><span aria-hidden=true></span><span aria-hidden=true></span><span aria-hidden=true></span></a></div><div id=navbarBasicExample class=navbar-menu><div class=navbar-start><a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc>Home</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc/rules/>Rules</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc/tags/>Tags</a><div class="navbar-item has-dropdown is-hoverable"><a class=navbar-link>More</a><div class=navbar-dropdown><a class=navbar-item>About</a>
+<a class=navbar-item>Jobs</a>
+<a class=navbar-item>Contact</a><hr class=navbar-divider><a class=navbar-item>Report an issue</a></div></div></div><div class=navbar-end><div class=navbar-item id=search class=bd-search><form action=https://bradleyjkemp.dev/sigmadoc/search><p class="control has-icons-left"><input class="input is-rounded" type=text name=query placeholder=Search>
+<span class="icon is-left"><i class="fas fa-search" aria-hidden=true></i></span></p></form></div></div></div></nav><section class=section><div class=container><div class=columns><div class="column is-9"><nav class=breadcrumb aria-label=breadcrumbs><ul><li><a href=https://bradleyjkemp.dev/sigmadoc>home</a></li><li><a href=https://bradleyjkemp.dev/sigmadocrules>rules</a></li><li><a href=https://bradleyjkemp.dev/sigmadocrules/compliance>compliance</a></li><li><a href=https://bradleyjkemp.dev/sigmadocrules/compliance/default_credentials_usage.yml>default_credentials_usage.yml</a></li></ul></nav><div class="content is-medium"><h3 class="title is-1">Default Credentials Usage</h3><div class=box><div class="field is-grouped is-justify-content-center"><div class=control><div class="tags has-addons"><span class="tag is-medium is-dark">level</span>
+<span class="tag is-medium is-danger">critical</span></div></div><div class=control><div class="tags has-addons"><span class="tag is-medium is-dark">status</span>
+<span class="tag is-medium is-info">experimental</span></div></div></div><p>Before deploying any new asset, change all default passwords to have values consistent with administrative level accounts. Sigma detects default credentials usage. Sigma for Qualys vulnerability scanner. Scan type - Vulnerability Management.</p><h2 id=known-false-positives>Known false-positives</h2><ul><li>unknown</li></ul><h2 id=references>References</h2><ul><li><a href=https://www.cisecurity.org/controls/cis-controls-list/>https://www.cisecurity.org/controls/cis-controls-list/</a></li><li><a href=https://www.pcisecuritystandards.org/documents/PCI_DSS_v3-2-1.pdf>https://www.pcisecuritystandards.org/documents/PCI_DSS_v3-2-1.pdf</a></li><li><a href=https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.04162018.pdf>https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.04162018.pdf</a></li><li><a href=https://community.qualys.com/docs/DOC-6406-reporting-toolbox-focused-search-lists>https://community.qualys.com/docs/DOC-6406-reporting-toolbox-focused-search-lists</a></li></ul><h2 id=raw-rule>Raw rule</h2><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=color:#f92672>title</span>: <span style=color:#ae81ff>Default Credentials Usage</span>
+<span style=color:#f92672>id</span>: <span style=color:#ae81ff>1a395cbc-a84a-463a-9086-ed8a70e573c7</span>
+<span style=color:#f92672>status</span>: <span style=color:#ae81ff>stable</span>
+<span style=color:#f92672>description</span>: <span style=color:#ae81ff>Before deploying any new asset, change all default passwords to have values consistent with administrative level accounts. Sigma detects default credentials</span>
+    <span style=color:#ae81ff>usage. Sigma for Qualys vulnerability scanner. Scan type - Vulnerability Management.</span>
+<span style=color:#f92672>author</span>: <span style=color:#ae81ff>Alexandr Yampolskyi, SOC Prime</span>
+<span style=color:#f92672>references</span>:
+    - <span style=color:#ae81ff>https://www.cisecurity.org/controls/cis-controls-list/</span>
+    - <span style=color:#ae81ff>https://www.pcisecuritystandards.org/documents/PCI_DSS_v3-2-1.pdf</span>
+    - <span style=color:#ae81ff>https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.04162018.pdf</span>
+    - <span style=color:#ae81ff>https://community.qualys.com/docs/DOC-6406-reporting-toolbox-focused-search-lists</span>
+<span style=color:#f92672>date</span>: <span style=color:#ae81ff>2019</span><span style=color:#ae81ff>/03/26</span>
+<span style=color:#f92672>logsource</span>:
+    <span style=color:#f92672>product</span>: <span style=color:#ae81ff>qualys</span>
+<span style=color:#f92672>detection</span>:
+    <span style=color:#f92672>selection</span>:
+        <span style=color:#f92672>host.scan.vuln</span>:
+            - <span style=color:#ae81ff>10693</span>
+            - <span style=color:#ae81ff>11507</span>
+            - <span style=color:#ae81ff>11633</span>
+            - <span style=color:#ae81ff>11804</span>
+            - <span style=color:#ae81ff>11821</span>
+            - <span style=color:#ae81ff>11847</span>
+            - <span style=color:#ae81ff>11867</span>
+            - <span style=color:#ae81ff>11931</span>
+            - <span style=color:#ae81ff>11935</span>
+            - <span style=color:#ae81ff>11950</span>
+            - <span style=color:#ae81ff>12541</span>
+            - <span style=color:#ae81ff>12558</span>
+            - <span style=color:#ae81ff>12559</span>
+            - <span style=color:#ae81ff>12560</span>
+            - <span style=color:#ae81ff>12562</span>
+            - <span style=color:#ae81ff>12563</span>
+            - <span style=color:#ae81ff>12565</span>
+            - <span style=color:#ae81ff>12587</span>
+            - <span style=color:#ae81ff>12590</span>
+            - <span style=color:#ae81ff>12599</span>
+            - <span style=color:#ae81ff>12702</span>
+            - <span style=color:#ae81ff>12705</span>
+            - <span style=color:#ae81ff>12706</span>
+            - <span style=color:#ae81ff>12907</span>
+            - <span style=color:#ae81ff>12928</span>
+            - <span style=color:#ae81ff>12929</span>
+            - <span style=color:#ae81ff>13053</span>
+            - <span style=color:#ae81ff>13178</span>
+            - <span style=color:#ae81ff>13200</span>
+            - <span style=color:#ae81ff>13218</span>
+            - <span style=color:#ae81ff>13241</span>
+            - <span style=color:#ae81ff>13253</span>
+            - <span style=color:#ae81ff>13274</span>
+            - <span style=color:#ae81ff>13296</span>
+            - <span style=color:#ae81ff>13301</span>
+            - <span style=color:#ae81ff>13327</span>
+            - <span style=color:#ae81ff>13373</span>
+            - <span style=color:#ae81ff>13374</span>
+            - <span style=color:#ae81ff>13409</span>
+            - <span style=color:#ae81ff>13530</span>
+            - <span style=color:#ae81ff>13532</span>
+            - <span style=color:#ae81ff>20065</span>
+            - <span style=color:#ae81ff>20073</span>
+            - <span style=color:#ae81ff>20081</span>
+            - <span style=color:#ae81ff>27202</span>
+            - <span style=color:#ae81ff>27358</span>
+            - <span style=color:#ae81ff>38702</span>
+            - <span style=color:#ae81ff>38719</span>
+            - <span style=color:#ae81ff>42045</span>
+            - <span style=color:#ae81ff>42417</span>
+            - <span style=color:#ae81ff>43029</span>
+            - <span style=color:#ae81ff>43220</span>
+            - <span style=color:#ae81ff>43221</span>
+            - <span style=color:#ae81ff>43222</span>
+            - <span style=color:#ae81ff>43223</span>
+            - <span style=color:#ae81ff>43225</span>
+            - <span style=color:#ae81ff>43246</span>
+            - <span style=color:#ae81ff>43431</span>
+            - <span style=color:#ae81ff>43484</span>
+            - <span style=color:#ae81ff>86857</span>
+            - <span style=color:#ae81ff>87098</span>
+            - <span style=color:#ae81ff>87106</span>
+    <span style=color:#f92672>condition</span>: <span style=color:#ae81ff>selection</span>
+<span style=color:#f92672>falsepositives</span>:
+    - <span style=color:#ae81ff>unknown</span>
+<span style=color:#f92672>level</span>: <span style=color:#ae81ff>medium</span>
+<span style=color:#f92672>tags</span>:
+    - <span style=color:#ae81ff>CSC4</span>
+    - <span style=color:#ae81ff>CSC4.2</span>
+    - <span style=color:#ae81ff>NIST CSF 1.1 PR.AC-4</span>
+    - <span style=color:#ae81ff>NIST CSF 1.1 PR.AT-2</span>
+    - <span style=color:#ae81ff>NIST CSF 1.1 PR.MA-2</span>
+    - <span style=color:#ae81ff>NIST CSF 1.1 PR.PT-3</span>
+    - <span style=color:#ae81ff>ISO 27002-2013 A.9.1.1</span>
+    - <span style=color:#ae81ff>ISO 27002-2013 A.9.2.2</span>
+    - <span style=color:#ae81ff>ISO 27002-2013 A.9.2.3</span>
+    - <span style=color:#ae81ff>ISO 27002-2013 A.9.2.4</span>
+    - <span style=color:#ae81ff>ISO 27002-2013 A.9.2.5</span>
+    - <span style=color:#ae81ff>ISO 27002-2013 A.9.2.6</span>
+    - <span style=color:#ae81ff>ISO 27002-2013 A.9.3.1</span>
+    - <span style=color:#ae81ff>ISO 27002-2013 A.9.4.1</span>
+    - <span style=color:#ae81ff>ISO 27002-2013 A.9.4.2</span>
+    - <span style=color:#ae81ff>ISO 27002-2013 A.9.4.3</span>
+    - <span style=color:#ae81ff>ISO 27002-2013 A.9.4.4</span>
+    - <span style=color:#ae81ff>PCI DSS 3.2 2.1</span>
+    - <span style=color:#ae81ff>PCI DSS 3.2 7.1</span>
+    - <span style=color:#ae81ff>PCI DSS 3.2 7.2</span>
+    - <span style=color:#ae81ff>PCI DSS 3.2 7.3</span>
+    - <span style=color:#ae81ff>PCI DSS 3.2 8.1</span>
+    - <span style=color:#ae81ff>PCI DSS 3.2 8.2</span>
+    - <span style=color:#ae81ff>PCI DSS 3.2 8.3</span>
+    - <span style=color:#ae81ff>PCI DSS 3.2 8.7</span>
+
+</code></pre></div></div></div></div><div class="column is-3"><aside class="menu is-medium"><p class=menu-label>Rule Tags</p><div class=tags><a href=https://bradleyjkemp.dev/sigmadoc/tags/CSC4 class="tag is-medium">CSC4</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc/tags/CSC4.2 class="tag is-medium">CSC4.2</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc/tags/NIST%20CSF%201.1%20PR.AC-4 class="tag is-medium">NIST CSF 1.1 PR.AC-4</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc/tags/NIST%20CSF%201.1%20PR.AT-2 class="tag is-medium">NIST CSF 1.1 PR.AT-2</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc/tags/NIST%20CSF%201.1%20PR.MA-2 class="tag is-medium">NIST CSF 1.1 PR.MA-2</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc/tags/NIST%20CSF%201.1%20PR.PT-3 class="tag is-medium">NIST CSF 1.1 PR.PT-3</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc/tags/ISO%2027002-2013%20A.9.1.1 class="tag is-medium">ISO 27002-2013 A.9.1.1</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc/tags/ISO%2027002-2013%20A.9.2.2 class="tag is-medium">ISO 27002-2013 A.9.2.2</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc/tags/ISO%2027002-2013%20A.9.2.3 class="tag is-medium">ISO 27002-2013 A.9.2.3</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc/tags/ISO%2027002-2013%20A.9.2.4 class="tag is-medium">ISO 27002-2013 A.9.2.4</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc/tags/ISO%2027002-2013%20A.9.2.5 class="tag is-medium">ISO 27002-2013 A.9.2.5</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc/tags/ISO%2027002-2013%20A.9.2.6 class="tag is-medium">ISO 27002-2013 A.9.2.6</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc/tags/ISO%2027002-2013%20A.9.3.1 class="tag is-medium">ISO 27002-2013 A.9.3.1</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc/tags/ISO%2027002-2013%20A.9.4.1 class="tag is-medium">ISO 27002-2013 A.9.4.1</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc/tags/ISO%2027002-2013%20A.9.4.2 class="tag is-medium">ISO 27002-2013 A.9.4.2</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc/tags/ISO%2027002-2013%20A.9.4.3 class="tag is-medium">ISO 27002-2013 A.9.4.3</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc/tags/ISO%2027002-2013%20A.9.4.4 class="tag is-medium">ISO 27002-2013 A.9.4.4</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc/tags/PCI%20DSS%203.2%202.1 class="tag is-medium">PCI DSS 3.2 2.1</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc/tags/PCI%20DSS%203.2%207.1 class="tag is-medium">PCI DSS 3.2 7.1</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc/tags/PCI%20DSS%203.2%207.2 class="tag is-medium">PCI DSS 3.2 7.2</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc/tags/PCI%20DSS%203.2%207.3 class="tag is-medium">PCI DSS 3.2 7.3</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc/tags/PCI%20DSS%203.2%208.1 class="tag is-medium">PCI DSS 3.2 8.1</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc/tags/PCI%20DSS%203.2%208.2 class="tag is-medium">PCI DSS 3.2 8.2</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc/tags/PCI%20DSS%203.2%208.3 class="tag is-medium">PCI DSS 3.2 8.3</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc/tags/PCI%20DSS%203.2%208.7 class="tag is-medium">PCI DSS 3.2 8.7</a></a></div><ul class=menu-list></ul><p class=menu-label>Similar rules</p><ul class=menu-list><li><a href=/sigmadoc/rules/compliance/cleartext_protocols.yml/>Cleartext Protocol Usage</a></li><li><a href=/sigmadoc/rules/compliance/group_modification_logging.yml/>Group Modification Logging</a></li><li><a href=/sigmadoc/rules/compliance/workstation_was_locked.yml/>Locked Workstation</a></li></ul></aside></div></div></div></section><footer class=footer><div class="content has-text-centered"><p>Site generated with <a href=https://github.com/bradleyjkemp/sigmadoc><strong>sigmadoc</strong></a>. The website content
+is licensed <a href=https://github.com/SigmaHQ/sigma/blob/master/LICENSE.Detection.Rules.md>DRL 1.0</a>.</p></div></footer></body></html>

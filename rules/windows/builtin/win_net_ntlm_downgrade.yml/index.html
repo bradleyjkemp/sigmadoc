@@ -1,0 +1,58 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><title>Cheatsheet Concept</title><meta name=viewport content="width=device-width"><link rel=icon type=image/png sizes=32x32 href=../images/favicon.png><link rel=stylesheet href=https://unpkg.com/bulma@0.9.2/css/bulma.min.css><script src=https://kit.fontawesome.com/7dc3015a44.js crossorigin=anonymous></script></head><body><nav class=navbar role=navigation aria-label="main navigation"><div class=navbar-brand><a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc>Sigma Docs</a>
+<a role=button class=navbar-burger aria-label=menu aria-expanded=false data-target=navbarBasicExample><span aria-hidden=true></span><span aria-hidden=true></span><span aria-hidden=true></span></a></div><div id=navbarBasicExample class=navbar-menu><div class=navbar-start><a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc>Home</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc/rules/>Rules</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc/tags/>Tags</a><div class="navbar-item has-dropdown is-hoverable"><a class=navbar-link>More</a><div class=navbar-dropdown><a class=navbar-item>About</a>
+<a class=navbar-item>Jobs</a>
+<a class=navbar-item>Contact</a><hr class=navbar-divider><a class=navbar-item>Report an issue</a></div></div></div><div class=navbar-end><div class=navbar-item id=search class=bd-search><form action=https://bradleyjkemp.dev/sigmadoc/search><p class="control has-icons-left"><input class="input is-rounded" type=text name=query placeholder=Search>
+<span class="icon is-left"><i class="fas fa-search" aria-hidden=true></i></span></p></form></div></div></div></nav><section class=section><div class=container><div class=columns><div class="column is-9"><nav class=breadcrumb aria-label=breadcrumbs><ul><li><a href=https://bradleyjkemp.dev/sigmadoc>home</a></li><li><a href=https://bradleyjkemp.dev/sigmadocrules>rules</a></li><li><a href=https://bradleyjkemp.dev/sigmadocrules/windows>windows</a></li><li><a href=https://bradleyjkemp.dev/sigmadocrules/windows/builtin>builtin</a></li><li><a href=https://bradleyjkemp.dev/sigmadocrules/windows/builtin/win_net_ntlm_downgrade.yml>win_net_ntlm_downgrade.yml</a></li></ul></nav><div class="content is-medium"><h3 class="title is-1">NetNTLM Downgrade Attack</h3><div class=box><div class="field is-grouped is-justify-content-center"><div class=control><div class="tags has-addons"><span class="tag is-medium is-dark">level</span>
+<span class="tag is-medium is-danger">critical</span></div></div><div class=control><div class="tags has-addons"><span class="tag is-medium is-dark">status</span>
+<span class="tag is-medium is-info">experimental</span></div></div></div><p>Detects NetNTLM downgrade attack</p><h2 id=known-false-positives>Known false-positives</h2><ul><li>Unknown</li></ul><h2 id=references>References</h2><ul><li><a href=https://www.optiv.com/blog/post-exploitation-using-netntlm-downgrade-attacks>https://www.optiv.com/blog/post-exploitation-using-netntlm-downgrade-attacks</a></li></ul><h2 id=raw-rule>Raw rule</h2><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=color:#f92672>action</span>: <span style=color:#ae81ff>global</span>
+<span style=color:#f92672>title</span>: <span style=color:#ae81ff>NetNTLM Downgrade Attack</span>
+<span style=color:#f92672>id</span>: <span style=color:#ae81ff>d67572a0-e2ec-45d6-b8db-c100d14b8ef2</span>
+<span style=color:#f92672>description</span>: <span style=color:#ae81ff>Detects NetNTLM downgrade attack</span>
+<span style=color:#f92672>references</span>:
+    - <span style=color:#ae81ff>https://www.optiv.com/blog/post-exploitation-using-netntlm-downgrade-attacks</span>
+<span style=color:#f92672>author</span>: <span style=color:#ae81ff>Florian Roth</span>
+<span style=color:#f92672>date</span>: <span style=color:#ae81ff>2018</span><span style=color:#ae81ff>/03/20</span>
+<span style=color:#f92672>modified</span>: <span style=color:#ae81ff>2020</span><span style=color:#ae81ff>/08/23</span>
+<span style=color:#f92672>tags</span>:
+    - <span style=color:#ae81ff>attack.defense_evasion</span>
+    - <span style=color:#ae81ff>attack.t1089         </span> <span style=color:#75715e># an old one</span>
+    - <span style=color:#ae81ff>attack.t1562.001</span>
+    - <span style=color:#ae81ff>attack.t1112</span>
+<span style=color:#f92672>detection</span>:
+    <span style=color:#f92672>condition</span>: <span style=color:#ae81ff>1</span> <span style=color:#ae81ff>of them</span>
+<span style=color:#f92672>falsepositives</span>:
+    - <span style=color:#ae81ff>Unknown</span>
+<span style=color:#f92672>level</span>: <span style=color:#ae81ff>critical</span>
+---
+<span style=color:#f92672>logsource</span>:
+    <span style=color:#f92672>product</span>: <span style=color:#ae81ff>windows</span>
+    <span style=color:#f92672>service</span>: <span style=color:#ae81ff>sysmon</span>
+<span style=color:#f92672>detection</span>:
+    <span style=color:#f92672>selection1</span>:
+        <span style=color:#f92672>EventID</span>: <span style=color:#ae81ff>13</span>
+        <span style=color:#f92672>TargetObject</span>: 
+            - <span style=color:#e6db74>&#39;*SYSTEM\\*ControlSet*\Control\Lsa\lmcompatibilitylevel&#39;</span>
+            - <span style=color:#e6db74>&#39;*SYSTEM\\*ControlSet*\Control\Lsa*\NtlmMinClientSec&#39;</span>
+            - <span style=color:#e6db74>&#39;*SYSTEM\\*ControlSet*\Control\Lsa*\RestrictSendingNTLMTraffic&#39;</span>
+---
+<span style=color:#75715e># Windows Security Eventlog: Process Creation with Full Command Line</span>
+<span style=color:#f92672>logsource</span>:
+    <span style=color:#f92672>product</span>: <span style=color:#ae81ff>windows</span>
+    <span style=color:#f92672>service</span>: <span style=color:#ae81ff>security</span>
+    <span style=color:#f92672>definition: &#39;Requirements: Audit Policy </span>: <span style=color:#ae81ff>Object Access &gt; Audit Registry (Success)&#39;</span>
+<span style=color:#f92672>detection</span>:
+    <span style=color:#f92672>selection2</span>:
+        <span style=color:#f92672>EventID</span>: <span style=color:#ae81ff>4657</span>
+        <span style=color:#f92672>ObjectName</span>: <span style=color:#e6db74>&#39;\REGISTRY\MACHINE\SYSTEM\\*ControlSet*\Control\Lsa*&#39;</span>
+        <span style=color:#f92672>ObjectValueName</span>: 
+            - <span style=color:#e6db74>&#39;LmCompatibilityLevel&#39;</span>
+            - <span style=color:#e6db74>&#39;NtlmMinClientSec&#39;</span>
+            - <span style=color:#e6db74>&#39;RestrictSendingNTLMTraffic&#39;</span>
+
+</code></pre></div></div></div></div><div class="column is-3"><aside class="menu is-medium"><p class=menu-label>Rule Tags</p><div class=tags><a href=https://bradleyjkemp.dev/sigmadoc/tags/attack.defense_evasion class="tag is-medium">attack.defense_evasion</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc/tags/attack.t1089 class="tag is-medium">attack.t1089</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc/tags/attack.t1562.001 class="tag is-medium">attack.t1562.001</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc/tags/attack.t1112 class="tag is-medium">attack.t1112</a></a></div><ul class=menu-list></ul><p class=menu-label>Similar rules</p><ul class=menu-list><li><a href=/sigmadoc/rules/windows/builtin/win_susp_msmpeng_crash.yml/>Microsoft Malware Protection Engine Crash</a></li><li><a href=/sigmadoc/rules/windows/builtin/win_user_driver_loaded.yml/>Suspicious Driver Loaded By User</a></li><li><a href=/sigmadoc/rules/windows/file_event/sysmon_susp_procexplorer_driver_created_in_tmp_folder.yml/>Suspicious PROCEXP152.sys File Created In TMP</a></li><li><a href=/sigmadoc/rules/windows/registry_event/sysmon_dhcp_calloutdll.yml/>DHCP Callout DLL Installation</a></li><li><a href=/sigmadoc/rules/windows/builtin/win_etw_modification.yml/>COMPlus_ETWEnabled Registry Modification</a></li></ul></aside></div></div></div></section><footer class=footer><div class="content has-text-centered"><p>Site generated with <a href=https://github.com/bradleyjkemp/sigmadoc><strong>sigmadoc</strong></a>. The website content
+is licensed <a href=https://github.com/SigmaHQ/sigma/blob/master/LICENSE.Detection.Rules.md>DRL 1.0</a>.</p></div></footer></body></html>

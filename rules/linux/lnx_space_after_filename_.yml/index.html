@@ -1,0 +1,31 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><title>Cheatsheet Concept</title><meta name=viewport content="width=device-width"><link rel=icon type=image/png sizes=32x32 href=../images/favicon.png><link rel=stylesheet href=https://unpkg.com/bulma@0.9.2/css/bulma.min.css><script src=https://kit.fontawesome.com/7dc3015a44.js crossorigin=anonymous></script></head><body><nav class=navbar role=navigation aria-label="main navigation"><div class=navbar-brand><a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc>Sigma Docs</a>
+<a role=button class=navbar-burger aria-label=menu aria-expanded=false data-target=navbarBasicExample><span aria-hidden=true></span><span aria-hidden=true></span><span aria-hidden=true></span></a></div><div id=navbarBasicExample class=navbar-menu><div class=navbar-start><a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc>Home</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc/rules/>Rules</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc/tags/>Tags</a><div class="navbar-item has-dropdown is-hoverable"><a class=navbar-link>More</a><div class=navbar-dropdown><a class=navbar-item>About</a>
+<a class=navbar-item>Jobs</a>
+<a class=navbar-item>Contact</a><hr class=navbar-divider><a class=navbar-item>Report an issue</a></div></div></div><div class=navbar-end><div class=navbar-item id=search class=bd-search><form action=https://bradleyjkemp.dev/sigmadoc/search><p class="control has-icons-left"><input class="input is-rounded" type=text name=query placeholder=Search>
+<span class="icon is-left"><i class="fas fa-search" aria-hidden=true></i></span></p></form></div></div></div></nav><section class=section><div class=container><div class=columns><div class="column is-9"><nav class=breadcrumb aria-label=breadcrumbs><ul><li><a href=https://bradleyjkemp.dev/sigmadoc>home</a></li><li><a href=https://bradleyjkemp.dev/sigmadocrules>rules</a></li><li><a href=https://bradleyjkemp.dev/sigmadocrules/linux>linux</a></li><li><a href=https://bradleyjkemp.dev/sigmadocrules/linux/lnx_space_after_filename_.yml>lnx_space_after_filename_.yml</a></li></ul></nav><div class="content is-medium"><h3 class="title is-1">Space After Filename</h3><div class=box><div class="field is-grouped is-justify-content-center"><div class=control><div class="tags has-addons"><span class="tag is-medium is-dark">level</span>
+<span class="tag is-medium is-danger">critical</span></div></div><div class=control><div class="tags has-addons"><span class="tag is-medium is-dark">status</span>
+<span class="tag is-medium is-info">experimental</span></div></div></div><p>Detects space after filename</p><h2 id=known-false-positives>Known false-positives</h2><ul><li>Typos</li></ul><h2 id=references>References</h2><ul><li><a href=https://attack.mitre.org/techniques/T1064>https://attack.mitre.org/techniques/T1064</a></li></ul><h2 id=raw-rule>Raw rule</h2><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=color:#f92672>title</span>: <span style=color:#ae81ff>Space After Filename</span>
+<span style=color:#f92672>id</span>: <span style=color:#ae81ff>879c3015-c88b-4782-93d7-07adf92dbcb7 </span>
+<span style=color:#f92672>status</span>: <span style=color:#ae81ff>experimental</span>
+<span style=color:#f92672>description</span>: <span style=color:#ae81ff>Detects space after filename</span>
+<span style=color:#f92672>author</span>: <span style=color:#ae81ff>Ömer Günal</span>
+<span style=color:#f92672>date</span>: <span style=color:#ae81ff>2020</span><span style=color:#ae81ff>/06/17</span>
+<span style=color:#f92672>references</span>:
+    - <span style=color:#ae81ff>https://attack.mitre.org/techniques/T1064</span>
+<span style=color:#f92672>level</span>: <span style=color:#ae81ff>low</span>
+<span style=color:#f92672>logsource</span>:
+    <span style=color:#f92672>product</span>: <span style=color:#ae81ff>linux</span>
+<span style=color:#f92672>detection</span>:
+    <span style=color:#f92672>selection1</span>:
+        - <span style=color:#e6db74>&#39;echo &#34;*&#34; &gt; * &amp;&amp; chmod +x *&#39;</span>
+    <span style=color:#f92672>selection2</span>:
+        - <span style=color:#e6db74>&#39;mv * &#34;* &#34;&#39;</span>
+    <span style=color:#f92672>condition</span>: <span style=color:#ae81ff>selection1 and selection2 </span>
+<span style=color:#f92672>falsepositives</span>:
+    - <span style=color:#ae81ff>Typos</span>
+<span style=color:#f92672>tags</span>:
+    - <span style=color:#ae81ff>attack.execution</span>
+</code></pre></div></div></div></div><div class="column is-3"><aside class="menu is-medium"><p class=menu-label>Rule Tags</p><div class=tags><a href=https://bradleyjkemp.dev/sigmadoc/tags/attack.execution class="tag is-medium">attack.execution</a></a></div><ul class=menu-list></ul><p class=menu-label>Similar rules</p><ul class=menu-list><li><a href=/sigmadoc/rules/windows/powershell/powershell_xor_commandline.yml/>Suspicious XOR Encoded PowerShell Command Line</a></li><li><a href=/sigmadoc/rules/windows/process_creation/win_commandline_path_traversal.yml/>Cmd.exe CommandLine Path Traversal</a></li><li><a href=/sigmadoc/rules/windows/registry_event/sysmon_cve-2020-1048.yml/>Suspicious New Printer Ports in Registry (CVE-2020-1048)</a></li><li><a href=/sigmadoc/rules/windows/network_connection/sysmon_notepad_network_connection.yml/>Notepad Making Network Connection</a></li><li><a href=/sigmadoc/rules/windows/process_creation/win_crime_maze_ransomware.yml/>Maze Ransomware</a></li></ul></aside></div></div></div></section><footer class=footer><div class="content has-text-centered"><p>Site generated with <a href=https://github.com/bradleyjkemp/sigmadoc><strong>sigmadoc</strong></a>. The website content
+is licensed <a href=https://github.com/SigmaHQ/sigma/blob/master/LICENSE.Detection.Rules.md>DRL 1.0</a>.</p></div></footer></body></html>

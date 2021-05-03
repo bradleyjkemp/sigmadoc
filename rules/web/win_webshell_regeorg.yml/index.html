@@ -1,0 +1,49 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><title>Cheatsheet Concept</title><meta name=viewport content="width=device-width"><link rel=icon type=image/png sizes=32x32 href=../images/favicon.png><link rel=stylesheet href=https://unpkg.com/bulma@0.9.2/css/bulma.min.css><script src=https://kit.fontawesome.com/7dc3015a44.js crossorigin=anonymous></script></head><body><nav class=navbar role=navigation aria-label="main navigation"><div class=navbar-brand><a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc>Sigma Docs</a>
+<a role=button class=navbar-burger aria-label=menu aria-expanded=false data-target=navbarBasicExample><span aria-hidden=true></span><span aria-hidden=true></span><span aria-hidden=true></span></a></div><div id=navbarBasicExample class=navbar-menu><div class=navbar-start><a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc>Home</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc/rules/>Rules</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc/tags/>Tags</a><div class="navbar-item has-dropdown is-hoverable"><a class=navbar-link>More</a><div class=navbar-dropdown><a class=navbar-item>About</a>
+<a class=navbar-item>Jobs</a>
+<a class=navbar-item>Contact</a><hr class=navbar-divider><a class=navbar-item>Report an issue</a></div></div></div><div class=navbar-end><div class=navbar-item id=search class=bd-search><form action=https://bradleyjkemp.dev/sigmadoc/search><p class="control has-icons-left"><input class="input is-rounded" type=text name=query placeholder=Search>
+<span class="icon is-left"><i class="fas fa-search" aria-hidden=true></i></span></p></form></div></div></div></nav><section class=section><div class=container><div class=columns><div class="column is-9"><nav class=breadcrumb aria-label=breadcrumbs><ul><li><a href=https://bradleyjkemp.dev/sigmadoc>home</a></li><li><a href=https://bradleyjkemp.dev/sigmadocrules>rules</a></li><li><a href=https://bradleyjkemp.dev/sigmadocrules/web>web</a></li><li><a href=https://bradleyjkemp.dev/sigmadocrules/web/win_webshell_regeorg.yml>win_webshell_regeorg.yml</a></li></ul></nav><div class="content is-medium"><h3 class="title is-1">Webshell ReGeorg Detection Via Web Logs</h3><div class=box><div class="field is-grouped is-justify-content-center"><div class=control><div class="tags has-addons"><span class="tag is-medium is-dark">level</span>
+<span class="tag is-medium is-danger">critical</span></div></div><div class=control><div class="tags has-addons"><span class="tag is-medium is-dark">status</span>
+<span class="tag is-medium is-info">experimental</span></div></div></div><p>Certain strings in the uri_query field when combined with null referer and null user agent can indicate activity associated with the webshell ReGeorg.</p><h2 id=known-false-positives>Known false-positives</h2><ul><li>web applications that use the same URL parameters as ReGeorg</li></ul><h2 id=raw-rule>Raw rule</h2><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=color:#f92672>title</span>: <span style=color:#ae81ff>Webshell ReGeorg Detection Via Web Logs</span>
+<span style=color:#f92672>id</span>: <span style=color:#ae81ff>2ea44a60-cfda-11ea-87d0-0242ac130003</span>
+<span style=color:#f92672>status</span>: <span style=color:#ae81ff>experimental</span>
+<span style=color:#f92672>description</span>: <span style=color:#ae81ff>Certain strings in the uri_query field when combined with null referer and null user agent can indicate activity associated with the webshell ReGeorg.</span>
+<span style=color:#f92672>author</span>: <span style=color:#ae81ff>Cian Heasley</span>
+<span style=color:#f92672>date</span>: <span style=color:#ae81ff>2020</span><span style=color:#ae81ff>/08/04</span>
+<span style=color:#f92672>modified</span>: <span style=color:#ae81ff>2020</span><span style=color:#ae81ff>/09/03</span>
+<span style=color:#f92672>reference</span>:
+    - <span style=color:#ae81ff>https://community.rsa.com/community/products/netwitness/blog/2019/02/19/web-shells-and-netwitness-part-3</span>
+    - <span style=color:#ae81ff>https://github.com/sensepost/reGeorg</span>
+<span style=color:#f92672>logsource</span>:
+    <span style=color:#f92672>category</span>: <span style=color:#ae81ff>webserver</span>
+<span style=color:#f92672>detection</span>:
+    <span style=color:#f92672>selection</span>:
+        <span style=color:#f92672>uri_query|contains</span>:
+            - <span style=color:#e6db74>&#39;*cmd=read*&#39;</span>
+            - <span style=color:#e6db74>&#39;*connect&amp;target*&#39;</span>
+            - <span style=color:#e6db74>&#39;*cmd=connect*&#39;</span>
+            - <span style=color:#e6db74>&#39;*cmd=disconnect*&#39;</span>
+            - <span style=color:#e6db74>&#39;*cmd=forward*&#39;</span>
+    <span style=color:#f92672>filter</span>:
+        <span style=color:#f92672>referer</span>: <span style=color:#66d9ef>null</span>
+        <span style=color:#f92672>useragent</span>: <span style=color:#66d9ef>null</span>
+        <span style=color:#f92672>method</span>: <span style=color:#ae81ff>POST</span>
+    <span style=color:#f92672>condition</span>: <span style=color:#ae81ff>selection and filter</span>
+<span style=color:#f92672>fields</span>:
+    - <span style=color:#ae81ff>uri_query</span>
+    - <span style=color:#ae81ff>referer</span>
+    - <span style=color:#ae81ff>method</span>
+    - <span style=color:#ae81ff>useragent</span>
+<span style=color:#f92672>falsepositives</span>:
+    - <span style=color:#ae81ff>web applications that use the same URL parameters as ReGeorg</span>
+<span style=color:#f92672>level</span>: <span style=color:#ae81ff>high</span>
+<span style=color:#f92672>tags</span>:
+    - <span style=color:#ae81ff>attack.persistence</span>
+    - <span style=color:#ae81ff>attack.t1100</span>
+    - <span style=color:#ae81ff>attack.t1505.003</span>
+</code></pre></div></div></div></div><div class="column is-3"><aside class="menu is-medium"><p class=menu-label>Rule Tags</p><div class=tags><a href=https://bradleyjkemp.dev/sigmadoc/tags/attack.persistence class="tag is-medium">attack.persistence</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc/tags/attack.t1100 class="tag is-medium">attack.t1100</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc/tags/attack.t1505.003 class="tag is-medium">attack.t1505.003</a></a></div><ul class=menu-list></ul><p class=menu-label>Similar rules</p><ul class=menu-list><li><a href=/sigmadoc/rules/windows/process_creation/win_webshell_recon_detection.yml/>Webshell Recon Detection Via CommandLine & Processes</a></li><li><a href=/sigmadoc/rules/windows/process_creation/win_webshell_spawn.yml/>Shells Spawned by Web Servers</a></li><li><a href=/sigmadoc/rules/windows/process_creation/win_susp_execution_path_webserver.yml/>Execution in Webserver Root Folder</a></li><li><a href=/sigmadoc/rules/windows/process_creation/win_webshell_detection.yml/>Webshell Detection With Command Line Keywords</a></li><li><a href=/sigmadoc/rules/windows/process_creation/win_susp_iss_module_install.yml/>IIS Native-Code Module Command Line Installation</a></li></ul></aside></div></div></div></section><footer class=footer><div class="content has-text-centered"><p>Site generated with <a href=https://github.com/bradleyjkemp/sigmadoc><strong>sigmadoc</strong></a>. The website content
+is licensed <a href=https://github.com/SigmaHQ/sigma/blob/master/LICENSE.Detection.Rules.md>DRL 1.0</a>.</p></div></footer></body></html>

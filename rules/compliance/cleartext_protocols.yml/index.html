@@ -1,0 +1,161 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><title>Cheatsheet Concept</title><meta name=viewport content="width=device-width"><link rel=icon type=image/png sizes=32x32 href=../images/favicon.png><link rel=stylesheet href=https://unpkg.com/bulma@0.9.2/css/bulma.min.css><script src=https://kit.fontawesome.com/7dc3015a44.js crossorigin=anonymous></script></head><body><nav class=navbar role=navigation aria-label="main navigation"><div class=navbar-brand><a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc>Sigma Docs</a>
+<a role=button class=navbar-burger aria-label=menu aria-expanded=false data-target=navbarBasicExample><span aria-hidden=true></span><span aria-hidden=true></span><span aria-hidden=true></span></a></div><div id=navbarBasicExample class=navbar-menu><div class=navbar-start><a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc>Home</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc/rules/>Rules</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc/tags/>Tags</a><div class="navbar-item has-dropdown is-hoverable"><a class=navbar-link>More</a><div class=navbar-dropdown><a class=navbar-item>About</a>
+<a class=navbar-item>Jobs</a>
+<a class=navbar-item>Contact</a><hr class=navbar-divider><a class=navbar-item>Report an issue</a></div></div></div><div class=navbar-end><div class=navbar-item id=search class=bd-search><form action=https://bradleyjkemp.dev/sigmadoc/search><p class="control has-icons-left"><input class="input is-rounded" type=text name=query placeholder=Search>
+<span class="icon is-left"><i class="fas fa-search" aria-hidden=true></i></span></p></form></div></div></div></nav><section class=section><div class=container><div class=columns><div class="column is-9"><nav class=breadcrumb aria-label=breadcrumbs><ul><li><a href=https://bradleyjkemp.dev/sigmadoc>home</a></li><li><a href=https://bradleyjkemp.dev/sigmadocrules>rules</a></li><li><a href=https://bradleyjkemp.dev/sigmadocrules/compliance>compliance</a></li><li><a href=https://bradleyjkemp.dev/sigmadocrules/compliance/cleartext_protocols.yml>cleartext_protocols.yml</a></li></ul></nav><div class="content is-medium"><h3 class="title is-1">Cleartext Protocol Usage</h3><div class=box><div class="field is-grouped is-justify-content-center"><div class=control><div class="tags has-addons"><span class="tag is-medium is-dark">level</span>
+<span class="tag is-medium is-danger">critical</span></div></div><div class=control><div class="tags has-addons"><span class="tag is-medium is-dark">status</span>
+<span class="tag is-medium is-info">experimental</span></div></div></div><p>Ensure that all account usernames and authentication credentials are transmitted across networks using encrypted channels. Ensure that an encryption is used for all sensitive information in transit. Ensure that an encrypted channels is used for all administrative account access.</p><h2 id=known-false-positives>Known false-positives</h2><ul><li>unknown</li></ul><h2 id=references>References</h2><ul><li><a href=https://www.cisecurity.org/controls/cis-controls-list/>https://www.cisecurity.org/controls/cis-controls-list/</a></li><li><a href=https://www.pcisecuritystandards.org/documents/PCI_DSS_v3-2-1.pdf>https://www.pcisecuritystandards.org/documents/PCI_DSS_v3-2-1.pdf</a></li><li><a href=https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.04162018.pdf>https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.04162018.pdf</a></li></ul><h2 id=raw-rule>Raw rule</h2><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=color:#f92672>action</span>: <span style=color:#ae81ff>global</span>
+<span style=color:#f92672>title</span>: <span style=color:#ae81ff>Cleartext Protocol Usage</span>
+<span style=color:#f92672>id</span>: <span style=color:#ae81ff>7e4bfe58-4a47-4709-828d-d86c78b7cc1f</span>
+<span style=color:#f92672>status</span>: <span style=color:#ae81ff>stable</span>
+<span style=color:#f92672>description</span>: <span style=color:#ae81ff>Ensure that all account usernames and authentication credentials are transmitted across networks using encrypted channels. Ensure that an encryption</span>
+    <span style=color:#ae81ff>is used for all sensitive information in transit. Ensure that an encrypted channels is used  for all administrative account access.</span>
+<span style=color:#f92672>author</span>: <span style=color:#ae81ff>Alexandr Yampolskyi, SOC Prime</span>
+<span style=color:#f92672>date</span>: <span style=color:#ae81ff>2019</span><span style=color:#ae81ff>/03/26</span>
+<span style=color:#f92672>references</span>:
+    - <span style=color:#ae81ff>https://www.cisecurity.org/controls/cis-controls-list/</span>
+    - <span style=color:#ae81ff>https://www.pcisecuritystandards.org/documents/PCI_DSS_v3-2-1.pdf</span>
+    - <span style=color:#ae81ff>https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.04162018.pdf</span>
+<span style=color:#f92672>falsepositives</span>:
+    - <span style=color:#ae81ff>unknown</span>
+<span style=color:#f92672>level</span>: <span style=color:#ae81ff>low</span>
+<span style=color:#f92672>tags</span>:
+    - <span style=color:#ae81ff>CSC4</span>
+    - <span style=color:#ae81ff>CSC4.5</span>
+    - <span style=color:#ae81ff>CSC14</span>
+    - <span style=color:#ae81ff>CSC14.4</span>
+    - <span style=color:#ae81ff>CSC16</span>
+    - <span style=color:#ae81ff>CSC16.5</span>
+    - <span style=color:#ae81ff>NIST CSF 1.1 PR.AT-2</span>
+    - <span style=color:#ae81ff>NIST CSF 1.1 PR.MA-2</span>
+    - <span style=color:#ae81ff>NIST CSF 1.1 PR.PT-3</span>
+    - <span style=color:#ae81ff>NIST CSF 1.1 PR.AC-1</span>
+    - <span style=color:#ae81ff>NIST CSF 1.1 PR.AC-4</span>
+    - <span style=color:#ae81ff>NIST CSF 1.1 PR.AC-5</span>
+    - <span style=color:#ae81ff>NIST CSF 1.1 PR.AC-6</span>
+    - <span style=color:#ae81ff>NIST CSF 1.1 PR.AC-7</span>
+    - <span style=color:#ae81ff>NIST CSF 1.1 PR.DS-1</span>
+    - <span style=color:#ae81ff>NIST CSF 1.1 PR.DS-2</span>
+    - <span style=color:#ae81ff>ISO 27002-2013 A.9.2.1</span>
+    - <span style=color:#ae81ff>ISO 27002-2013 A.9.2.2</span>
+    - <span style=color:#ae81ff>ISO 27002-2013 A.9.2.3</span>
+    - <span style=color:#ae81ff>ISO 27002-2013 A.9.2.4</span>
+    - <span style=color:#ae81ff>ISO 27002-2013 A.9.2.5</span>
+    - <span style=color:#ae81ff>ISO 27002-2013 A.9.2.6</span>
+    - <span style=color:#ae81ff>ISO 27002-2013 A.9.3.1</span>
+    - <span style=color:#ae81ff>ISO 27002-2013 A.9.4.1</span>
+    - <span style=color:#ae81ff>ISO 27002-2013 A.9.4.2</span>
+    - <span style=color:#ae81ff>ISO 27002-2013 A.9.4.3</span>
+    - <span style=color:#ae81ff>ISO 27002-2013 A.9.4.4</span>
+    - <span style=color:#ae81ff>ISO 27002-2013 A.8.3.1</span>
+    - <span style=color:#ae81ff>ISO 27002-2013 A.9.1.1</span>
+    - <span style=color:#ae81ff>ISO 27002-2013 A.10.1.1</span>
+    - <span style=color:#ae81ff>PCI DSS 3.2 2.1</span>
+    - <span style=color:#ae81ff>PCI DSS 3.2 8.1</span>
+    - <span style=color:#ae81ff>PCI DSS 3.2 8.2</span>
+    - <span style=color:#ae81ff>PCI DSS 3.2 8.3</span>
+    - <span style=color:#ae81ff>PCI DSS 3.2 8.7</span>
+    - <span style=color:#ae81ff>PCI DSS 3.2 8.8</span>
+    - <span style=color:#ae81ff>PCI DSS 3.2 1.3</span>
+    - <span style=color:#ae81ff>PCI DSS 3.2 1.4</span>
+    - <span style=color:#ae81ff>PCI DSS 3.2 4.3</span>
+    - <span style=color:#ae81ff>PCI DSS 3.2 7.1</span>
+    - <span style=color:#ae81ff>PCI DSS 3.2 7.2</span>
+    - <span style=color:#ae81ff>PCI DSS 3.2 7.3</span>
+---
+<span style=color:#f92672>logsource</span>:
+    <span style=color:#f92672>product</span>: <span style=color:#ae81ff>netflow</span>
+<span style=color:#f92672>detection</span>:
+    <span style=color:#f92672>selection</span>:
+        <span style=color:#f92672>destination.port</span>:
+            - <span style=color:#ae81ff>8080</span>
+            - <span style=color:#ae81ff>21</span>
+            - <span style=color:#ae81ff>80</span>
+            - <span style=color:#ae81ff>23</span>
+            - <span style=color:#ae81ff>50000</span>
+            - <span style=color:#ae81ff>1521</span>
+            - <span style=color:#ae81ff>27017</span>
+            - <span style=color:#ae81ff>1433</span>
+            - <span style=color:#ae81ff>11211</span>
+            - <span style=color:#ae81ff>3306</span>
+            - <span style=color:#ae81ff>15672</span>
+            - <span style=color:#ae81ff>5900</span>
+            - <span style=color:#ae81ff>5901</span>
+            - <span style=color:#ae81ff>5902</span>
+            - <span style=color:#ae81ff>5903</span>
+            - <span style=color:#ae81ff>5904</span>
+    <span style=color:#f92672>condition</span>: <span style=color:#ae81ff>selection</span>
+---
+<span style=color:#f92672>logsource</span>:
+    <span style=color:#f92672>product</span>: <span style=color:#ae81ff>firewall</span>
+<span style=color:#f92672>detection</span>:
+    <span style=color:#f92672>selection1</span>:
+        <span style=color:#f92672>destination.port</span>:
+            - <span style=color:#ae81ff>8080</span>
+            - <span style=color:#ae81ff>21</span>
+            - <span style=color:#ae81ff>80</span>
+            - <span style=color:#ae81ff>23</span>
+            - <span style=color:#ae81ff>50000</span>
+            - <span style=color:#ae81ff>1521</span>
+            - <span style=color:#ae81ff>27017</span>
+            - <span style=color:#ae81ff>3306</span>
+            - <span style=color:#ae81ff>1433</span>
+            - <span style=color:#ae81ff>11211</span>
+            - <span style=color:#ae81ff>15672</span>
+            - <span style=color:#ae81ff>5900</span>
+            - <span style=color:#ae81ff>5901</span>
+            - <span style=color:#ae81ff>5902</span>
+            - <span style=color:#ae81ff>5903</span>
+            - <span style=color:#ae81ff>5904</span>
+    <span style=color:#f92672>selection2</span>:
+        <span style=color:#f92672>action</span>:
+            - <span style=color:#ae81ff>forward</span>
+            - <span style=color:#ae81ff>accept</span>
+            - <span style=color:#ae81ff>2</span>
+    <span style=color:#f92672>condition</span>: <span style=color:#ae81ff>selection1 AND selection2</span>
+
+</code></pre></div></div></div></div><div class="column is-3"><aside class="menu is-medium"><p class=menu-label>Rule Tags</p><div class=tags><a href=https://bradleyjkemp.dev/sigmadoc/tags/CSC4 class="tag is-medium">CSC4</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc/tags/CSC4.5 class="tag is-medium">CSC4.5</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc/tags/CSC14 class="tag is-medium">CSC14</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc/tags/CSC14.4 class="tag is-medium">CSC14.4</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc/tags/CSC16 class="tag is-medium">CSC16</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc/tags/CSC16.5 class="tag is-medium">CSC16.5</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc/tags/NIST%20CSF%201.1%20PR.AT-2 class="tag is-medium">NIST CSF 1.1 PR.AT-2</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc/tags/NIST%20CSF%201.1%20PR.MA-2 class="tag is-medium">NIST CSF 1.1 PR.MA-2</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc/tags/NIST%20CSF%201.1%20PR.PT-3 class="tag is-medium">NIST CSF 1.1 PR.PT-3</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc/tags/NIST%20CSF%201.1%20PR.AC-1 class="tag is-medium">NIST CSF 1.1 PR.AC-1</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc/tags/NIST%20CSF%201.1%20PR.AC-4 class="tag is-medium">NIST CSF 1.1 PR.AC-4</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc/tags/NIST%20CSF%201.1%20PR.AC-5 class="tag is-medium">NIST CSF 1.1 PR.AC-5</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc/tags/NIST%20CSF%201.1%20PR.AC-6 class="tag is-medium">NIST CSF 1.1 PR.AC-6</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc/tags/NIST%20CSF%201.1%20PR.AC-7 class="tag is-medium">NIST CSF 1.1 PR.AC-7</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc/tags/NIST%20CSF%201.1%20PR.DS-1 class="tag is-medium">NIST CSF 1.1 PR.DS-1</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc/tags/NIST%20CSF%201.1%20PR.DS-2 class="tag is-medium">NIST CSF 1.1 PR.DS-2</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc/tags/ISO%2027002-2013%20A.9.2.1 class="tag is-medium">ISO 27002-2013 A.9.2.1</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc/tags/ISO%2027002-2013%20A.9.2.2 class="tag is-medium">ISO 27002-2013 A.9.2.2</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc/tags/ISO%2027002-2013%20A.9.2.3 class="tag is-medium">ISO 27002-2013 A.9.2.3</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc/tags/ISO%2027002-2013%20A.9.2.4 class="tag is-medium">ISO 27002-2013 A.9.2.4</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc/tags/ISO%2027002-2013%20A.9.2.5 class="tag is-medium">ISO 27002-2013 A.9.2.5</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc/tags/ISO%2027002-2013%20A.9.2.6 class="tag is-medium">ISO 27002-2013 A.9.2.6</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc/tags/ISO%2027002-2013%20A.9.3.1 class="tag is-medium">ISO 27002-2013 A.9.3.1</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc/tags/ISO%2027002-2013%20A.9.4.1 class="tag is-medium">ISO 27002-2013 A.9.4.1</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc/tags/ISO%2027002-2013%20A.9.4.2 class="tag is-medium">ISO 27002-2013 A.9.4.2</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc/tags/ISO%2027002-2013%20A.9.4.3 class="tag is-medium">ISO 27002-2013 A.9.4.3</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc/tags/ISO%2027002-2013%20A.9.4.4 class="tag is-medium">ISO 27002-2013 A.9.4.4</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc/tags/ISO%2027002-2013%20A.8.3.1 class="tag is-medium">ISO 27002-2013 A.8.3.1</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc/tags/ISO%2027002-2013%20A.9.1.1 class="tag is-medium">ISO 27002-2013 A.9.1.1</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc/tags/ISO%2027002-2013%20A.10.1.1 class="tag is-medium">ISO 27002-2013 A.10.1.1</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc/tags/PCI%20DSS%203.2%202.1 class="tag is-medium">PCI DSS 3.2 2.1</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc/tags/PCI%20DSS%203.2%208.1 class="tag is-medium">PCI DSS 3.2 8.1</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc/tags/PCI%20DSS%203.2%208.2 class="tag is-medium">PCI DSS 3.2 8.2</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc/tags/PCI%20DSS%203.2%208.3 class="tag is-medium">PCI DSS 3.2 8.3</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc/tags/PCI%20DSS%203.2%208.7 class="tag is-medium">PCI DSS 3.2 8.7</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc/tags/PCI%20DSS%203.2%208.8 class="tag is-medium">PCI DSS 3.2 8.8</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc/tags/PCI%20DSS%203.2%201.3 class="tag is-medium">PCI DSS 3.2 1.3</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc/tags/PCI%20DSS%203.2%201.4 class="tag is-medium">PCI DSS 3.2 1.4</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc/tags/PCI%20DSS%203.2%204.3 class="tag is-medium">PCI DSS 3.2 4.3</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc/tags/PCI%20DSS%203.2%207.1 class="tag is-medium">PCI DSS 3.2 7.1</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc/tags/PCI%20DSS%203.2%207.2 class="tag is-medium">PCI DSS 3.2 7.2</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc/tags/PCI%20DSS%203.2%207.3 class="tag is-medium">PCI DSS 3.2 7.3</a></a></div><ul class=menu-list></ul><p class=menu-label>Similar rules</p><ul class=menu-list><li><a href=/sigmadoc/rules/compliance/group_modification_logging.yml/>Group Modification Logging</a></li><li><a href=/sigmadoc/rules/compliance/default_credentials_usage.yml/>Default Credentials Usage</a></li><li><a href=/sigmadoc/rules/compliance/workstation_was_locked.yml/>Locked Workstation</a></li><li><a href=/sigmadoc/rules/compliance/host_without_firewall.yml/>Host Without Firewall</a></li></ul></aside></div></div></div></section><footer class=footer><div class="content has-text-centered"><p>Site generated with <a href=https://github.com/bradleyjkemp/sigmadoc><strong>sigmadoc</strong></a>. The website content
+is licensed <a href=https://github.com/SigmaHQ/sigma/blob/master/LICENSE.Detection.Rules.md>DRL 1.0</a>.</p></div></footer></body></html>

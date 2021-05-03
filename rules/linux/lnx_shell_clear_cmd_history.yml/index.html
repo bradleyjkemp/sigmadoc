@@ -1,0 +1,52 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><title>Cheatsheet Concept</title><meta name=viewport content="width=device-width"><link rel=icon type=image/png sizes=32x32 href=../images/favicon.png><link rel=stylesheet href=https://unpkg.com/bulma@0.9.2/css/bulma.min.css><script src=https://kit.fontawesome.com/7dc3015a44.js crossorigin=anonymous></script></head><body><nav class=navbar role=navigation aria-label="main navigation"><div class=navbar-brand><a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc>Sigma Docs</a>
+<a role=button class=navbar-burger aria-label=menu aria-expanded=false data-target=navbarBasicExample><span aria-hidden=true></span><span aria-hidden=true></span><span aria-hidden=true></span></a></div><div id=navbarBasicExample class=navbar-menu><div class=navbar-start><a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc>Home</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc/rules/>Rules</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc/tags/>Tags</a><div class="navbar-item has-dropdown is-hoverable"><a class=navbar-link>More</a><div class=navbar-dropdown><a class=navbar-item>About</a>
+<a class=navbar-item>Jobs</a>
+<a class=navbar-item>Contact</a><hr class=navbar-divider><a class=navbar-item>Report an issue</a></div></div></div><div class=navbar-end><div class=navbar-item id=search class=bd-search><form action=https://bradleyjkemp.dev/sigmadoc/search><p class="control has-icons-left"><input class="input is-rounded" type=text name=query placeholder=Search>
+<span class="icon is-left"><i class="fas fa-search" aria-hidden=true></i></span></p></form></div></div></div></nav><section class=section><div class=container><div class=columns><div class="column is-9"><nav class=breadcrumb aria-label=breadcrumbs><ul><li><a href=https://bradleyjkemp.dev/sigmadoc>home</a></li><li><a href=https://bradleyjkemp.dev/sigmadocrules>rules</a></li><li><a href=https://bradleyjkemp.dev/sigmadocrules/linux>linux</a></li><li><a href=https://bradleyjkemp.dev/sigmadocrules/linux/lnx_shell_clear_cmd_history.yml>lnx_shell_clear_cmd_history.yml</a></li></ul></nav><div class="content is-medium"><h3 class="title is-1">Clear Command History</h3><div class=box><div class="field is-grouped is-justify-content-center"><div class=control><div class="tags has-addons"><span class="tag is-medium is-dark">level</span>
+<span class="tag is-medium is-danger">critical</span></div></div><div class=control><div class="tags has-addons"><span class="tag is-medium is-dark">status</span>
+<span class="tag is-medium is-info">experimental</span></div></div></div><p>Clear command history in linux which is used for defense evasion.</p><h2 id=known-false-positives>Known false-positives</h2><ul><li>Unknown</li></ul><h2 id=references>References</h2><ul><li><a href=https://github.com/redcanaryco/atomic-red-team/blob/master/atomics/T1070.003/T1070.003.yaml>https://github.com/redcanaryco/atomic-red-team/blob/master/atomics/T1070.003/T1070.003.yaml</a></li><li><a href=https://attack.mitre.org/techniques/T1070/003/>https://attack.mitre.org/techniques/T1070/003/</a></li><li><a href=https://www.hackers-arise.com/single-post/2016/06/20/Covering-your-BASH-Shell-Tracks-AntiForensics>https://www.hackers-arise.com/single-post/2016/06/20/Covering-your-BASH-Shell-Tracks-AntiForensics</a></li></ul><h2 id=raw-rule>Raw rule</h2><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=color:#f92672>title</span>: <span style=color:#ae81ff>Clear Command History</span>
+<span style=color:#f92672>id</span>: <span style=color:#ae81ff>fdc88d25-96fb-4b7c-9633-c0e417fdbd4e</span>
+<span style=color:#f92672>status</span>: <span style=color:#ae81ff>experimental</span>
+<span style=color:#f92672>description</span>: <span style=color:#ae81ff>Clear command history in linux which is used for defense evasion.</span>
+    <span style=color:#75715e># Example config for this one (place it in .bash_profile):</span>
+    <span style=color:#75715e># (is_empty=false; inotifywait -m .bash_history | while read file; do if [ $(wc -l &lt;.bash_history) -lt 1  ]; then if  [ &#34;$is_empty&#34; = false ]; then logger -i -p local5.info -t empty_bash_history &#34;$USER : ~/.bash_history is empty &#34;; is_empty=true; fi; else is_empty=false;  fi;  done ) &amp;</span>
+    <span style=color:#75715e># It monitors the size of .bash_history and log the words &#34;empty_bash_history&#34; whenever a previously not empty bash_history becomes empty</span>
+    <span style=color:#75715e># We define an empty file as a document with 0 or 1 lines (it can be a line with only one space character for example)</span>
+    <span style=color:#75715e># It has two advantages over the version suggested by Patrick Bareiss  :</span>
+    <span style=color:#75715e>#   - it is not relative to the exact command used to clear .bash_history : for instance Caldera uses &#34;&gt; .bash_history&#34; to clear the history and this is not one the commands listed here. We can&#39;t be exhaustive for all the possibilities !</span>
+    <span style=color:#75715e>#   - the method suggested by Patrick Bareiss logs all the commands entered directly in a bash shell. therefore it may miss some events (for instance it doesn&#39;t log the commands launched from a Caldera agent). Here if .bash_history is cleared, it will always be detected</span>
+<span style=color:#f92672>author</span>: <span style=color:#ae81ff>Patrick Bareiss</span>
+<span style=color:#f92672>date</span>: <span style=color:#ae81ff>2019</span><span style=color:#ae81ff>/03/24</span>
+<span style=color:#f92672>modified</span>: <span style=color:#ae81ff>2020</span><span style=color:#ae81ff>/07/13</span>
+<span style=color:#f92672>references</span>:
+    - <span style=color:#ae81ff>https://github.com/redcanaryco/atomic-red-team/blob/master/atomics/T1070.003/T1070.003.yaml</span>
+    - <span style=color:#ae81ff>https://attack.mitre.org/techniques/T1070/003/</span>
+    - <span style=color:#ae81ff>https://www.hackers-arise.com/single-post/2016/06/20/Covering-your-BASH-Shell-Tracks-AntiForensics</span>
+<span style=color:#f92672>logsource</span>:
+    <span style=color:#f92672>product</span>: <span style=color:#ae81ff>linux</span>
+<span style=color:#f92672>detection</span>:
+    <span style=color:#f92672>keywords</span>:
+        - <span style=color:#e6db74>&#39;rm *bash_history&#39;</span>
+        - <span style=color:#e6db74>&#39;echo &#34;&#34; &gt; *bash_history&#39;</span>
+        - <span style=color:#e6db74>&#39;cat /dev/null &gt; *bash_history&#39;</span>
+        - <span style=color:#e6db74>&#39;ln -sf /dev/null *bash_history&#39;</span>
+        - <span style=color:#e6db74>&#39;truncate -s0 *bash_history&#39;</span>
+        <span style=color:#75715e># - &#39;unset HISTFILE&#39;  # prone to false positives</span>
+        - <span style=color:#e6db74>&#39;export HISTFILESIZE=0&#39;</span>
+        - <span style=color:#e6db74>&#39;history -c&#39;</span>
+        - <span style=color:#e6db74>&#39;history -w&#39;</span>
+        - <span style=color:#e6db74>&#39;shred *bash_history&#39;</span>
+        - <span style=color:#e6db74>&#39;empty_bash_history&#39;</span>
+    <span style=color:#f92672>condition</span>: <span style=color:#ae81ff>keywords</span>
+<span style=color:#f92672>falsepositives</span>:
+    - <span style=color:#ae81ff>Unknown</span>
+<span style=color:#f92672>level</span>: <span style=color:#ae81ff>high</span>
+<span style=color:#f92672>tags</span>:
+    - <span style=color:#ae81ff>attack.defense_evasion</span>
+    - <span style=color:#ae81ff>attack.t1070.003</span>
+
+</code></pre></div></div></div></div><div class="column is-3"><aside class="menu is-medium"><p class=menu-label>Rule Tags</p><div class=tags><a href=https://bradleyjkemp.dev/sigmadoc/tags/attack.defense_evasion class="tag is-medium">attack.defense_evasion</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc/tags/attack.t1070.003 class="tag is-medium">attack.t1070.003</a></a></div><ul class=menu-list></ul><p class=menu-label>Similar rules</p><ul class=menu-list><li><a href=/sigmadoc/rules/windows/builtin/win_susp_mshta_execution.yml/>MSHTA Suspicious Execution 01</a></li><li><a href=/sigmadoc/rules/windows/process_creation/win_apt_babyshark.yml/>Baby Shark Activity</a></li><li><a href=/sigmadoc/rules/windows/builtin/win_rdp_reverse_tunnel.yml/>RDP over Reverse SSH Tunnel WFP</a></li><li><a href=/sigmadoc/rules/windows/process_creation/win_susp_control_dll_load.yml/>Suspicious Control Panel DLL Load</a></li><li><a href=/sigmadoc/rules/windows/process_creation/win_powershell_amsi_bypass.yml/>Powershell AMSI Bypass via .NET Reflection</a></li></ul></aside></div></div></div></section><footer class=footer><div class="content has-text-centered"><p>Site generated with <a href=https://github.com/bradleyjkemp/sigmadoc><strong>sigmadoc</strong></a>. The website content
+is licensed <a href=https://github.com/SigmaHQ/sigma/blob/master/LICENSE.Detection.Rules.md>DRL 1.0</a>.</p></div></footer></body></html>

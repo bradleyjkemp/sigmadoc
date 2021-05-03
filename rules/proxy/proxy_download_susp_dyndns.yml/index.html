@@ -1,0 +1,128 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><title>Cheatsheet Concept</title><meta name=viewport content="width=device-width"><link rel=icon type=image/png sizes=32x32 href=../images/favicon.png><link rel=stylesheet href=https://unpkg.com/bulma@0.9.2/css/bulma.min.css><script src=https://kit.fontawesome.com/7dc3015a44.js crossorigin=anonymous></script></head><body><nav class=navbar role=navigation aria-label="main navigation"><div class=navbar-brand><a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc>Sigma Docs</a>
+<a role=button class=navbar-burger aria-label=menu aria-expanded=false data-target=navbarBasicExample><span aria-hidden=true></span><span aria-hidden=true></span><span aria-hidden=true></span></a></div><div id=navbarBasicExample class=navbar-menu><div class=navbar-start><a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc>Home</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc/rules/>Rules</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc/tags/>Tags</a><div class="navbar-item has-dropdown is-hoverable"><a class=navbar-link>More</a><div class=navbar-dropdown><a class=navbar-item>About</a>
+<a class=navbar-item>Jobs</a>
+<a class=navbar-item>Contact</a><hr class=navbar-divider><a class=navbar-item>Report an issue</a></div></div></div><div class=navbar-end><div class=navbar-item id=search class=bd-search><form action=https://bradleyjkemp.dev/sigmadoc/search><p class="control has-icons-left"><input class="input is-rounded" type=text name=query placeholder=Search>
+<span class="icon is-left"><i class="fas fa-search" aria-hidden=true></i></span></p></form></div></div></div></nav><section class=section><div class=container><div class=columns><div class="column is-9"><nav class=breadcrumb aria-label=breadcrumbs><ul><li><a href=https://bradleyjkemp.dev/sigmadoc>home</a></li><li><a href=https://bradleyjkemp.dev/sigmadocrules>rules</a></li><li><a href=https://bradleyjkemp.dev/sigmadocrules/proxy>proxy</a></li><li><a href=https://bradleyjkemp.dev/sigmadocrules/proxy/proxy_download_susp_dyndns.yml>proxy_download_susp_dyndns.yml</a></li></ul></nav><div class="content is-medium"><h3 class="title is-1">Download from Suspicious Dyndns Hosts</h3><div class=box><div class="field is-grouped is-justify-content-center"><div class=control><div class="tags has-addons"><span class="tag is-medium is-dark">level</span>
+<span class="tag is-medium is-danger">critical</span></div></div><div class=control><div class="tags has-addons"><span class="tag is-medium is-dark">status</span>
+<span class="tag is-medium is-info">experimental</span></div></div></div><p>Detects download of certain file types from hosts with dynamic DNS names (selected list)</p><h2 id=known-false-positives>Known false-positives</h2><ul><li>Software downloads</li></ul><h2 id=references>References</h2><ul><li><a href=https://www.alienvault.com/blogs/security-essentials/dynamic-dns-security-and-potential-threats>https://www.alienvault.com/blogs/security-essentials/dynamic-dns-security-and-potential-threats</a></li></ul><h2 id=raw-rule>Raw rule</h2><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=color:#f92672>title</span>: <span style=color:#ae81ff>Download from Suspicious Dyndns Hosts</span>
+<span style=color:#f92672>id</span>: <span style=color:#ae81ff>195c1119-ef07-4909-bb12-e66f5e07bf3c</span>
+<span style=color:#f92672>status</span>: <span style=color:#ae81ff>experimental</span>
+<span style=color:#f92672>description</span>: <span style=color:#ae81ff>Detects download of certain file types from hosts with dynamic DNS names (selected list)</span>
+<span style=color:#f92672>author</span>: <span style=color:#ae81ff>Florian Roth</span>
+<span style=color:#f92672>date</span>: <span style=color:#ae81ff>2017</span><span style=color:#ae81ff>/11/08</span>
+<span style=color:#f92672>modified</span>: <span style=color:#ae81ff>2020</span><span style=color:#ae81ff>/09/03</span>
+<span style=color:#f92672>references</span>:
+    - <span style=color:#ae81ff>https://www.alienvault.com/blogs/security-essentials/dynamic-dns-security-and-potential-threats</span>
+<span style=color:#f92672>logsource</span>:
+    <span style=color:#f92672>category</span>: <span style=color:#ae81ff>proxy</span>
+<span style=color:#f92672>detection</span>:
+    <span style=color:#f92672>selection</span>:
+        <span style=color:#f92672>c-uri-extension</span>: 
+            - <span style=color:#e6db74>&#39;exe&#39;</span>
+            - <span style=color:#e6db74>&#39;vbs&#39;</span>
+            - <span style=color:#e6db74>&#39;bat&#39;</span>
+            - <span style=color:#e6db74>&#39;rar&#39;</span>
+            - <span style=color:#e6db74>&#39;ps1&#39;</span>
+            - <span style=color:#e6db74>&#39;doc&#39;</span>
+            - <span style=color:#e6db74>&#39;docm&#39;</span>
+            - <span style=color:#e6db74>&#39;xls&#39;</span>
+            - <span style=color:#e6db74>&#39;xlsm&#39;</span>
+            - <span style=color:#e6db74>&#39;pptm&#39;</span>
+            - <span style=color:#e6db74>&#39;rtf&#39;</span>
+            - <span style=color:#e6db74>&#39;hta&#39;</span>
+            - <span style=color:#e6db74>&#39;dll&#39;</span>
+            - <span style=color:#e6db74>&#39;ws&#39;</span>
+            - <span style=color:#e6db74>&#39;wsf&#39;</span>
+            - <span style=color:#e6db74>&#39;sct&#39;</span>
+            - <span style=color:#e6db74>&#39;zip&#39;</span>
+            <span style=color:#75715e># If you want to add more extensions - see https://docs.google.com/spreadsheets/d/1TWS238xacAto-fLKh1n5uTsdijWdCEsGIM0Y0Hvmc5g/</span>
+        <span style=color:#f92672>r-dns</span>: 
+            - <span style=color:#e6db74>&#39;*.hopto.org&#39;</span>
+            - <span style=color:#e6db74>&#39;*.no-ip.org&#39;</span>
+            - <span style=color:#e6db74>&#39;*.no-ip.info&#39;</span>
+            - <span style=color:#e6db74>&#39;*.no-ip.biz&#39;</span>
+            - <span style=color:#e6db74>&#39;*.no-ip.com&#39;</span>
+            - <span style=color:#e6db74>&#39;*.noip.com&#39;</span>
+            - <span style=color:#e6db74>&#39;*.ddns.name&#39;</span>
+            - <span style=color:#e6db74>&#39;*.myftp.org&#39;</span>
+            - <span style=color:#e6db74>&#39;*.myftp.biz&#39;</span>
+            - <span style=color:#e6db74>&#39;*.serveblog.net&#39;</span>
+            - <span style=color:#e6db74>&#39;*.servebeer.com&#39;</span>
+            - <span style=color:#e6db74>&#39;*.servemp3.com&#39;</span>
+            - <span style=color:#e6db74>&#39;*.serveftp.com&#39;</span>
+            - <span style=color:#e6db74>&#39;*.servequake.com&#39;</span>
+            - <span style=color:#e6db74>&#39;*.servehalflife.com&#39;</span>
+            - <span style=color:#e6db74>&#39;*.servehttp.com&#39;</span>
+            - <span style=color:#e6db74>&#39;*.servegame.com&#39;</span>
+            - <span style=color:#e6db74>&#39;*.servepics.com&#39;</span>
+            - <span style=color:#e6db74>&#39;*.myvnc.com&#39;</span>
+            - <span style=color:#e6db74>&#39;*.ignorelist.com&#39;</span>
+            - <span style=color:#e6db74>&#39;*.jkub.com&#39;</span>
+            - <span style=color:#e6db74>&#39;*.dlinkddns.com&#39;</span>
+            - <span style=color:#e6db74>&#39;*.jumpingcrab.com&#39;</span>
+            - <span style=color:#e6db74>&#39;*.ddns.info&#39;</span>
+            - <span style=color:#e6db74>&#39;*.mooo.com&#39;</span>
+            - <span style=color:#e6db74>&#39;*.dns-dns.com&#39;</span>
+            - <span style=color:#e6db74>&#39;*.strangled.net&#39;</span>
+            - <span style=color:#e6db74>&#39;*.adultdns.net&#39;</span>
+            - <span style=color:#e6db74>&#39;*.craftx.biz&#39;</span>
+            - <span style=color:#e6db74>&#39;*.ddns01.com&#39;</span>
+            - <span style=color:#e6db74>&#39;*.dns53.biz&#39;</span>
+            - <span style=color:#e6db74>&#39;*.dnsapi.info&#39;</span>
+            - <span style=color:#e6db74>&#39;*.dnsd.info&#39;</span>
+            - <span style=color:#e6db74>&#39;*.dnsdynamic.com&#39;</span>
+            - <span style=color:#e6db74>&#39;*.dnsdynamic.net&#39;</span>
+            - <span style=color:#e6db74>&#39;*.dnsget.org&#39;</span>
+            - <span style=color:#e6db74>&#39;*.fe100.net&#39;</span>
+            - <span style=color:#e6db74>&#39;*.flashserv.net&#39;</span>
+            - <span style=color:#e6db74>&#39;*.ftp21.net&#39;</span>
+            - <span style=color:#e6db74>&#39;*.http01.com&#39;</span>
+            - <span style=color:#e6db74>&#39;*.http80.info&#39;</span>
+            - <span style=color:#e6db74>&#39;*.https443.com&#39;</span>
+            - <span style=color:#e6db74>&#39;*.imap01.com&#39;</span>
+            - <span style=color:#e6db74>&#39;*.kadm5.com&#39;</span>
+            - <span style=color:#e6db74>&#39;*.mysq1.net&#39;</span>
+            - <span style=color:#e6db74>&#39;*.ns360.info&#39;</span>
+            - <span style=color:#e6db74>&#39;*.ntdll.net&#39;</span>
+            - <span style=color:#e6db74>&#39;*.ole32.com&#39;</span>
+            - <span style=color:#e6db74>&#39;*.proxy8080.com&#39;</span>
+            - <span style=color:#e6db74>&#39;*.sql01.com&#39;</span>
+            - <span style=color:#e6db74>&#39;*.ssh01.com&#39;</span>
+            - <span style=color:#e6db74>&#39;*.ssh22.net&#39;</span>
+            - <span style=color:#e6db74>&#39;*.tempors.com&#39;</span>
+            - <span style=color:#e6db74>&#39;*.tftpd.net&#39;</span>
+            - <span style=color:#e6db74>&#39;*.ttl60.com&#39;</span>
+            - <span style=color:#e6db74>&#39;*.ttl60.org&#39;</span>
+            - <span style=color:#e6db74>&#39;*.user32.com&#39;</span>
+            - <span style=color:#e6db74>&#39;*.voip01.com&#39;</span>
+            - <span style=color:#e6db74>&#39;*.wow64.net&#39;</span>
+            - <span style=color:#e6db74>&#39;*.x64.me&#39;</span>
+            - <span style=color:#e6db74>&#39;*.xns01.com&#39;</span>
+            - <span style=color:#e6db74>&#39;*.dyndns.org&#39;</span>
+            - <span style=color:#e6db74>&#39;*.dyndns.info&#39;</span>
+            - <span style=color:#e6db74>&#39;*.dyndns.tv&#39;</span>
+            - <span style=color:#e6db74>&#39;*.dyndns-at-home.com&#39;</span>
+            - <span style=color:#e6db74>&#39;*.dnsomatic.com&#39;</span>
+            - <span style=color:#e6db74>&#39;*.zapto.org&#39;</span>
+            - <span style=color:#e6db74>&#39;*.webhop.net&#39;</span>
+            - <span style=color:#e6db74>&#39;*.25u.com&#39;</span>
+            - <span style=color:#e6db74>&#39;*.slyip.net&#39;</span>
+    <span style=color:#f92672>condition</span>: <span style=color:#ae81ff>selection</span>
+<span style=color:#f92672>fields</span>:
+    - <span style=color:#ae81ff>cs-ip</span>
+    - <span style=color:#ae81ff>c-uri</span>
+<span style=color:#f92672>falsepositives</span>:
+    - <span style=color:#ae81ff>Software downloads</span>
+<span style=color:#f92672>level</span>: <span style=color:#ae81ff>medium</span>
+<span style=color:#f92672>tags</span>:
+    - <span style=color:#ae81ff>attack.defense_evasion</span>
+    - <span style=color:#ae81ff>attack.command_and_control</span>
+    - <span style=color:#ae81ff>attack.t1105</span>
+    - <span style=color:#ae81ff>attack.t1568</span>
+</code></pre></div></div></div></div><div class="column is-3"><aside class="menu is-medium"><p class=menu-label>Rule Tags</p><div class=tags><a href=https://bradleyjkemp.dev/sigmadoc/tags/attack.defense_evasion class="tag is-medium">attack.defense_evasion</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc/tags/attack.command_and_control class="tag is-medium">attack.command_and_control</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc/tags/attack.t1105 class="tag is-medium">attack.t1105</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc/tags/attack.t1568 class="tag is-medium">attack.t1568</a></a></div><ul class=menu-list></ul><p class=menu-label>Similar rules</p><ul class=menu-list><li><a href=/sigmadoc/rules/windows/process_creation/win_susp_msiexec_web_install.yml/>MsiExec Web Install</a></li><li><a href=/sigmadoc/rules/windows/process_creation/win_susp_certutil_command.yml/>Suspicious Certutil Command</a></li><li><a href=/sigmadoc/rules/windows/process_creation/win_apt_greenbug_may20.yml/>Greenbug Campaign Indicators</a></li><li><a href=/sigmadoc/rules/proxy/proxy_empire_ua_uri_combos.yml/>Empire UserAgent URI Combo</a></li><li><a href=/sigmadoc/rules/windows/network_connection/sysmon_notepad_network_connection.yml/>Notepad Making Network Connection</a></li></ul></aside></div></div></div></section><footer class=footer><div class="content has-text-centered"><p>Site generated with <a href=https://github.com/bradleyjkemp/sigmadoc><strong>sigmadoc</strong></a>. The website content
+is licensed <a href=https://github.com/SigmaHQ/sigma/blob/master/LICENSE.Detection.Rules.md>DRL 1.0</a>.</p></div></footer></body></html>
