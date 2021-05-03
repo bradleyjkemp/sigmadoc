@@ -1,0 +1,29 @@
+name: github pages
+
+on:
+  push:
+    branches:
+      - exampleSite
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: true  # Fetch Hugo themes (true OR recursive)
+          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@2e89aa66d0093e4cd14751b3028fc1a179452c2e # https://github.com/peaceiris/actions-hugo/commit/2e89aa66d0093e4cd14751b3028fc1a179452c2e
+        with:
+          hugo-version: '0.81.0'
+
+      - name: Build
+        run: hugo --minify
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@068dc23d9710f1ba62e86896f84735d869951305 # https://github.com/peaceiris/actions-gh-pages/commit/068dc23d9710f1ba62e86896f84735d869951305
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
