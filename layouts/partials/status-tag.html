@@ -1,0 +1,14 @@
+<div class="control">
+    <div class="tags has-addons">
+        <span class="tag {{with .size}}is-{{.}}{{end}} is-dark">status</span>
+        {{$colour := "light"}}
+        {{if eq .status "stable"}}
+            {{$colour = "success"}}
+        {{else if eq .status "testing"}}
+            {{$colour = "warning"}}
+        {{else if eq .status "experimental"}}
+            {{$colour = "danger"}}
+        {{end}}
+        <span class="tag {{with .size}}is-{{.}}{{end}} is-{{$colour}} is-light">{{.status}}</span>
+    </div>
+</div>

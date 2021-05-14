@@ -6,19 +6,8 @@
             <h3 class="title is-1">{{.Title}}</h3>
             <div class="box">
                 <div class="field is-grouped is-justify-content-center">
-                    <div class="control">
-                        <div class="tags has-addons">
-                            <span class="tag is-medium is-dark">level</span>
-                            <span class="tag is-medium is-danger">critical</span>
-                        </div>
-                    </div>
-
-                    <div class="control">
-                        <div class="tags has-addons">
-                            <span class="tag is-medium is-dark">status</span>
-                            <span class="tag is-medium is-info">experimental</span>
-                        </div>
-                    </div>
+                    {{partial "level-tag.html" (dict "level" ($.Param "level") "size" "medium")}}
+                    {{partial "status-tag.html" (dict "status" ($.Param "status") "size" "medium")}}
                 </div>
                 {{.Content}}
             </div>

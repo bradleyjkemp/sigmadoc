@@ -139,6 +139,14 @@ tags:
 {{range .}}  - {{.}}
 {{end}}{{end}}
 
+{{with .Parsed.Status}}
+status: {{.}}
+{{end}}
+
+{{with .Parsed.AdditionalFields.level}}
+level: {{.}}
+{{end}}
+
 {{with .Time}}
 date: {{.}}
 {{end}}

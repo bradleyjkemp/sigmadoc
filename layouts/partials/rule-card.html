@@ -5,18 +5,8 @@
         </a>
         <a class="card-header-icon" href="{{.Permalink}}">
             <div class="field is-grouped is-justify-content-center">
-                <div class="control">
-                    <div class="tags has-addons">
-                        <span class="tag is-dark">level</span>
-                        <span class="tag is-danger">critical</span>
-                    </div>
-                </div>
-                <div class="control">
-                    <div class="tags has-addons">
-                        <span class="tag is-dark">status</span>
-                        <span class="tag is-info">experimental</span>
-                    </div>
-                </div>
+                {{partial "level-tag.html" (dict "level" ($.Param "level"))}}
+                {{partial "status-tag.html" (dict "status" ($.Param "status"))}}
             </div>
         </a>
     </header>

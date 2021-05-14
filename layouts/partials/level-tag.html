@@ -1,0 +1,18 @@
+<div class="control">
+    <div class="tags has-addons">
+        <span class="tag {{with .size}}is-{{.}}{{end}} is-dark">level</span>
+        {{$colour := "light"}}
+        {{if eq .level "critical"}}
+            {{$colour = "black"}}
+        {{else if eq .level "high"}}
+            {{$colour = "danger"}}
+        {{else if eq .level "medium"}}
+            {{$colour = "warning"}}
+        {{else if eq .level "low"}}
+            {{$colour = "link"}}
+        {{else if eq .level "info"}}
+            {{$colour = "info"}}
+        {{end}}
+        <span class="tag {{with .size}}is-{{.}}{{end}} is-{{$colour}}">{{.level}}</span>
+    </div>
+</div>
