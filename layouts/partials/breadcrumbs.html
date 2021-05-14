@@ -1,14 +1,15 @@
 <nav class="breadcrumb" aria-label="breadcrumbs">
     <ul>
         {{ $url := replace .Permalink ( printf "%s" .Site.BaseURL) "" }}
-        {{ $.Scratch.Add "path" .Site.BaseURL }}
+        {{ $breadcrumbURL := newScratch }}
+        {{ $breadcrumbURL.Add "path" .Site.BaseURL }}
         <li><a href="{{.Site.BaseURL}}">home</a></li>
         {{ range $index, $element := split $url "/" }}
-        {{ $.Scratch.Add "path" $element }}
-        {{ if ne $element "" }}
-        <li><a href="{{ $.Scratch.Get "path" }}">{{ . }}</a></li>
-        {{ $.Scratch.Add "path" "/" }}
-        {{ end }}
+            {{ $breadcrumbURL.Add "path" $element }}
+            {{ if ne $element "" }}
+                {{ $breadcrumbURL.Add "path" "/" }}
+                <li><a href="{{ $breadcrumbURL.Get "path" }}">{{ . }}</a></li>
+            {{ end }}
         {{ end }}
     </ul>
 </nav>
