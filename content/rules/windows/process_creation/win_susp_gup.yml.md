@@ -10,6 +10,14 @@ tags:
 
 
 
+status: experimental
+
+
+
+level: high
+
+
+
 ---
 
 Detects execution of the Notepad++ updater in a suspicious directory, which is often used in DLL side-loading attacks

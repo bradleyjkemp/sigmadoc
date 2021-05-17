@@ -9,6 +9,14 @@ tags:
 
 
 
+status: experimental
+
+
+
+level: high
+
+
+
 ---
 
 Detects suspicious use of calc.exe with command line parameters or in a suspicious directory, which is likely caused by some PoC or detection evasion

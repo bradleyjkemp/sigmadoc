@@ -10,6 +10,14 @@ tags:
 
 
 
+status: experimental
+
+
+
+level: medium
+
+
+
 ---
 
 Detects Service Principal Name Enumeration used for Kerberoasting

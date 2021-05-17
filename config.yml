@@ -1,4 +1,4 @@
-baseURL: "https://bradleyjkemp.dev/sigmadoc"
+baseURL: "https://bradleyjkemp.dev/sigmadoc/"
 languageCode:  "en-us"
 title: "My New Hugo Site"
 theme: "github.com/bradleyjkemp/sigmadoc"
@@ -8,3 +8,8 @@ outputs:
     - "HTML"
     - "RSS"
     - "JSON" # Used by the built-in search
+
+taxonomies:
+  tag: tags
+  status: status
+  level: level

@@ -12,6 +12,14 @@ tags:
 
 
 
+status: experimental
+
+
+
+level: medium
+
+
+
 ---
 
 Detects, possibly, malicious unauthorized usage of bcdedit.exe

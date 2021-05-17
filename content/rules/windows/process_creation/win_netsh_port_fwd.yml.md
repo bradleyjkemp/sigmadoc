@@ -11,6 +11,14 @@ tags:
 
 
 
+status: experimental
+
+
+
+level: medium
+
+
+
 ---
 
 Detects netsh commands that configure a port forwarding

@@ -11,6 +11,14 @@ tags:
 
 
 
+status: experimental
+
+
+
+level: high
+
+
+
 ---
 
 Detects netsh commands that configure a port forwarding of port 3389 used for RDP

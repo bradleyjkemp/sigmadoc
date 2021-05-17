@@ -9,6 +9,14 @@ tags:
 
 
 
+status: experimental
+
+
+
+level: medium
+
+
+
 ---
 
 Detects suspicious a certutil command that used to encode files, which is sometimes used for data exfiltration

@@ -10,6 +10,14 @@ tags:
 
 
 
+status: experimental
+
+
+
+level: high
+
+
+
 ---
 
 Detects EnableUnsafeClientMailRules used for Script Execution from Outlook

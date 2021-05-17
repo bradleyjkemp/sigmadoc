@@ -13,6 +13,14 @@ tags:
 
 
 
+status: experimental
+
+
+
+level: high
+
+
+
 ---
 
 Detects a suspicious parent of csc.exe, which could by a sign of payload delivery
