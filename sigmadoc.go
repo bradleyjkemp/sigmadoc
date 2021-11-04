@@ -47,11 +47,24 @@ func main() {
 }
 
 func convertFile(path string) error {
-	ruleContents, err := ioutil.ReadFile(path)
+	contents, err := ioutil.ReadFile(path)
 	if err != nil {
 		return fmt.Errorf("failed to read %s: %w", path, err)
 	}
 
+	switch sigma.InferFileType(contents) {
+	case sigma.RuleFile:
+		return convertRule(path, contents)
+
+	case sigma.ConfigFile:
+		return convertConfig(path, contents)
+
+	default:
+		return nil
+	}
+}
+
+func convertRule(path string, ruleContents []byte) error {
 	rule, err := sigma.ParseRule(ruleContents)
 	if err != nil {
 		return fmt.Errorf("failed to parse %s: %w", path, err)
@@ -77,6 +90,11 @@ func convertFile(path string) error {
 		"Time":     getRuleCreation(path, rule),
 		"Original": string(ruleContents),
 	})
+}
+
+func convertConfig(path string, configContents []byte) error {
+	// TODO
+	return nil
 }
 
 func createSectionFiles(rulePath string) error {
