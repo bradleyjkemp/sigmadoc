@@ -1,6 +1,7 @@
 package main
 
 import (
+	"embed"
 	"flag"
 	"fmt"
 	"io/ioutil"
@@ -71,7 +72,7 @@ func convertFile(path string) error {
 		return fmt.Errorf("failed to create output file: %w", err)
 	}
 
-	return ruleTemplate.Execute(out, map[string]interface{}{
+	return templates.ExecuteTemplate(out, "rule.tmpl.md", map[string]interface{}{
 		"Parsed":   rule,
 		"Time":     getRuleCreation(path, rule),
 		"Original": string(ruleContents),
@@ -85,7 +86,7 @@ func createSectionFiles(rulePath string) error {
 			return err
 		}
 
-		err = sectionTemplate.Execute(section, map[string]interface{}{
+		err = templates.ExecuteTemplate(section, "section.tmpl.md", map[string]interface{}{
 			"Title": filepath.Base(dir),
 		})
 		if err != nil {
@@ -125,53 +126,6 @@ func getRuleCreation(path string, rule sigma.Rule) string {
 	return string(timestamp)
 }
 
-var sectionTemplate = template.Must(template.New("sectionTemplate").Parse(`---
-title: "{{.Title}}"
----
-`))
-
-var ruleTemplate = template.Must(template.New("ruleTemplate").Parse(`---
-title: "{{.Parsed.Title}}"
-aliases:
-  - "/rule/{{.Parsed.ID}}"
-{{with .Parsed.AdditionalFields.tags}}
-tags:
-{{range .}}  - {{.}}
-{{end}}{{end}}
-
-{{with .Parsed.Status}}
-status: {{.}}
-{{end}}
-
-{{with .Parsed.AdditionalFields.level}}
-level: {{.}}
-{{end}}
-
-{{with .Time}}
-date: {{.}}
-{{end}}
----
-
-{{.Parsed.Description}}
-
-<!--more-->
-
-{{with .Parsed.AdditionalFields.falsepositives}}
-## Known false-positives
-{{range .}}
-* {{.}}
-{{- end}}
-{{end}}
-
-{{with .Parsed.References}}
-## References
-{{range .}}
-* {{.}}
-{{- end}}
-{{end}}
-
-## Raw rule
-` + "```yaml" + `
-{{.Original}}
-` + "```" + `
-`))
+//go:embed *.tmpl.md
+var templateFiles embed.FS
+var templates = template.Must(template.ParseFS(templateFiles, "*"))
