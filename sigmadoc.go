@@ -95,7 +95,7 @@ func convertRule(rulePath string, ruleContents []byte) error {
 	}
 
 	if *gitHubRepoURL != "" {
-		params["GitHubEditLink"] = path.Join(*gitHubRepoURL, "edit", *gitHubBranch, relPath)
+		params["GitHubEditLink"] = *gitHubRepoURL + "/" + path.Join("edit", *gitHubBranch, relPath)
 	}
 
 	return templates.ExecuteTemplate(out, "rule.tmpl.md", params)
@@ -130,7 +130,7 @@ func convertConfig(configPath string, configContents []byte) error {
 	}
 
 	if *gitHubRepoURL != "" {
-		params["GitHubEditLink"] = path.Join(*gitHubRepoURL, "edit", *gitHubBranch, relPath)
+		params["GitHubEditLink"] = *gitHubRepoURL + "/" + path.Join("edit", *gitHubBranch, relPath)
 	}
 
 	return templates.ExecuteTemplate(out, "config.tmpl.md", params)
