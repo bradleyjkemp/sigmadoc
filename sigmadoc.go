@@ -87,18 +87,41 @@ func convertRule(path string, ruleContents []byte) error {
 
 	return templates.ExecuteTemplate(out, "rule.tmpl.md", map[string]interface{}{
 		"Parsed":   rule,
-		"Time":     getRuleCreation(path, rule),
+		"Time":     getFileCreation(path),
 		"Original": string(ruleContents),
 	})
 }
 
 func convertConfig(path string, configContents []byte) error {
-	// TODO
-	return nil
+	config, err := sigma.ParseConfig(configContents)
+	if err != nil {
+		return fmt.Errorf("failed to parse %s: %w", path, err)
+	}
+
+	relPath, _ := filepath.Rel(*rulesDirectory, path)
+	outPath := filepath.Join(*outputDirectory, "configs", relPath+".md")
+	if err := os.MkdirAll(filepath.Dir(outPath), 0755); err != nil {
+		return fmt.Errorf("failed to create output directory: %w", err)
+	}
+
+	if err := createSectionFiles(outPath); err != nil {
+		return fmt.Errorf("failed to create section files: %w", err)
+	}
+
+	out, err := os.Create(outPath)
+	if err != nil {
+		return fmt.Errorf("failed to create output file: %w", err)
+	}
+
+	return templates.ExecuteTemplate(out, "config.tmpl.md", map[string]interface{}{
+		"Parsed":   config,
+		"Time":     getFileCreation(path),
+		"Original": string(configContents),
+	})
 }
 
-func createSectionFiles(rulePath string) error {
-	for dir := filepath.Dir(rulePath); strings.HasPrefix(dir, filepath.Join(*outputDirectory, "rules")); dir = filepath.Dir(dir) {
+func createSectionFiles(path string) error {
+	for dir := filepath.Dir(path); strings.HasPrefix(filepath.Dir(dir), *outputDirectory); dir = filepath.Dir(dir) {
 		section, err := os.Create(filepath.Join(dir, "_index.md"))
 		if err != nil {
 			return err
@@ -119,7 +142,7 @@ var (
 	ruleDirIsGit      bool
 )
 
-func getRuleCreation(path string, rule sigma.Rule) string {
+func getFileCreation(path string) string {
 	rulesDirIsGitOnce.Do(func() {
 		gitCheck := exec.Command("git", "rev-parse")
 		gitCheck.Dir = filepath.Dir(path)
