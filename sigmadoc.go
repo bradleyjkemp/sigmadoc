@@ -7,6 +7,7 @@ import (
 	"io/ioutil"
 	"os"
 	"os/exec"
+	"path"
 	"path/filepath"
 	"strings"
 	"sync"
@@ -18,6 +19,8 @@ import (
 var (
 	rulesDirectory  = flag.String("rules-directory", ".", "Directory containing Sigma rules")
 	outputDirectory = flag.String("output-directory", "content", "Directory to write converted markdown files to (usually your Hugo content directory)")
+	gitHubRepoURL   = flag.String("github-repo", "", "(Optional) GitHub repository URL to include links to edit files.")
+	gitHubBranch    = flag.String("github-branch", "main", "(Optional) GitHub branch that your rules are on.")
 )
 
 func main() {
@@ -64,13 +67,13 @@ func convertFile(path string) error {
 	}
 }
 
-func convertRule(path string, ruleContents []byte) error {
+func convertRule(rulePath string, ruleContents []byte) error {
 	rule, err := sigma.ParseRule(ruleContents)
 	if err != nil {
-		return fmt.Errorf("failed to parse %s: %w", path, err)
+		return fmt.Errorf("failed to parse %s: %w", rulePath, err)
 	}
 
-	relPath, _ := filepath.Rel(*rulesDirectory, path)
+	relPath, _ := filepath.Rel(*rulesDirectory, rulePath)
 	outPath := filepath.Join(*outputDirectory, "rules", relPath+".md")
 	if err := os.MkdirAll(filepath.Dir(outPath), 0755); err != nil {
 		return fmt.Errorf("failed to create output directory: %w", err)
@@ -85,20 +88,27 @@ func convertRule(path string, ruleContents []byte) error {
 		return fmt.Errorf("failed to create output file: %w", err)
 	}
 
-	return templates.ExecuteTemplate(out, "rule.tmpl.md", map[string]interface{}{
+	params := map[string]interface{}{
 		"Parsed":   rule,
-		"Time":     getFileCreation(path),
+		"Time":     getFileCreation(rulePath),
 		"Original": string(ruleContents),
-	})
-}
-
-func convertConfig(path string, configContents []byte) error {
-	config, err := sigma.ParseConfig(configContents)
-	if err != nil {
-		return fmt.Errorf("failed to parse %s: %w", path, err)
 	}
 
-	relPath, _ := filepath.Rel(*rulesDirectory, path)
+	if *gitHubRepoURL != "" {
+		params["GitHubEditLink"] = path.Join(*gitHubRepoURL, "edit", *gitHubBranch, relPath)
+	}
+
+	return templates.ExecuteTemplate(out, "rule.tmpl.md", params)
+
+}
+
+func convertConfig(configPath string, configContents []byte) error {
+	config, err := sigma.ParseConfig(configContents)
+	if err != nil {
+		return fmt.Errorf("failed to parse %s: %w", configPath, err)
+	}
+
+	relPath, _ := filepath.Rel(*rulesDirectory, configPath)
 	outPath := filepath.Join(*outputDirectory, "configs", relPath+".md")
 	if err := os.MkdirAll(filepath.Dir(outPath), 0755); err != nil {
 		return fmt.Errorf("failed to create output directory: %w", err)
@@ -113,11 +123,17 @@ func convertConfig(path string, configContents []byte) error {
 		return fmt.Errorf("failed to create output file: %w", err)
 	}
 
-	return templates.ExecuteTemplate(out, "config.tmpl.md", map[string]interface{}{
+	params := map[string]interface{}{
 		"Parsed":   config,
-		"Time":     getFileCreation(path),
+		"Time":     getFileCreation(configPath),
 		"Original": string(configContents),
-	})
+	}
+
+	if *gitHubRepoURL != "" {
+		params["GitHubEditLink"] = path.Join(*gitHubRepoURL, "edit", *gitHubBranch, relPath)
+	}
+
+	return templates.ExecuteTemplate(out, "config.tmpl.md", params)
 }
 
 func createSectionFiles(path string) error {

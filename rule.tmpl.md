@@ -39,7 +39,7 @@ date: {{.}}
   {{- end}}
 {{end}}
 
-## Raw rule
+## Raw rule {{with .GitHubEditLink}}([edit]({{.}})){{end}}
 ```yaml
 {{.Original}}
 ```

@@ -6,7 +6,7 @@ date: {{.}}
 {{end}}
 ---
 
-## Raw config
+## Raw config {{with .GitHubEditLink}}([edit]({{.}})){{end}}
 ```yaml
 {{.Original}}
 ```
