@@ -21,6 +21,7 @@ var (
 	outputDirectory = flag.String("output-directory", "content", "Directory to write converted markdown files to (usually your Hugo content directory)")
 	gitHubRepoURL   = flag.String("github-repo", "", "(Optional) GitHub repository URL to include links to edit files.")
 	gitHubBranch    = flag.String("github-branch", "main", "(Optional) GitHub branch that your rules are on.")
+	gitHubRelPath   = flag.String("repo-relative-path", "", "Relative path to rule files within the GitHub repo.")
 )
 
 func main() {
@@ -95,7 +96,7 @@ func convertRule(rulePath string, ruleContents []byte) error {
 	}
 
 	if *gitHubRepoURL != "" {
-		params["GitHubEditLink"] = *gitHubRepoURL + "/" + path.Join("edit", *gitHubBranch, relPath)
+		params["GitHubEditLink"] = *gitHubRepoURL + "/" + path.Join("edit", *gitHubBranch, *gitHubRelPath, relPath)
 	}
 
 	return templates.ExecuteTemplate(out, "rule.tmpl.md", params)
@@ -130,7 +131,7 @@ func convertConfig(configPath string, configContents []byte) error {
 	}
 
 	if *gitHubRepoURL != "" {
-		params["GitHubEditLink"] = *gitHubRepoURL + "/" + path.Join("edit", *gitHubBranch, relPath)
+		params["GitHubEditLink"] = *gitHubRepoURL + "/" + path.Join("edit", *gitHubBranch, *gitHubRelPath, relPath)
 	}
 
 	return templates.ExecuteTemplate(out, "config.tmpl.md", params)
