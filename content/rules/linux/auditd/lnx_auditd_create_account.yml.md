@@ -3,18 +3,16 @@ title: "Creation Of An User Account"
 aliases:
   - "/rule/759d0d51-bc99-4b5e-9add-8f5b2c8e7512"
 
+
 tags:
-  - attack.t1136
   - attack.t1136.001
   - attack.persistence
 
 
 
-status: experimental
+status: test
 
 
-
-level: medium
 
 
 
@@ -39,29 +37,30 @@ Detects the creation of a new user account. Such accounts may be used for persis
 * MITRE Attack technique T1136; Create Account 
 
 
-## Raw rule
+## Raw rule ([edit](https://github.com/SigmaHQ/sigma/edit/master/rules/linux/auditd/lnx_auditd_create_account.yml))
 ```yaml
 title: Creation Of An User Account
 id: 759d0d51-bc99-4b5e-9add-8f5b2c8e7512
-status: experimental
+status: test
 description: Detects the creation of a new user account. Such accounts may be used for persistence that do not require persistent remote access tools to be deployed on the system.
 author: Marie Euler
-date: 2020/05/18
 references:
-    - 'MITRE Attack technique T1136; Create Account '
+  - 'MITRE Attack technique T1136; Create Account '
+date: 2020/05/18
+modified: 2021/11/27
 logsource:
-    product: linux
-    service: auditd
+  product: linux
+  service: auditd
 detection:
-    selection:
-        type: 'SYSCALL'
-        exe: '*/useradd'
-    condition: selection
+  selection:
+    type: 'SYSCALL'
+    exe|endswith: '/useradd'
+  condition: selection
 falsepositives:
-    - Admin activity
+  - Admin activity
 level: medium
 tags:
-    - attack.t1136    # an old one
-    - attack.t1136.001
-    - attack.persistence
+  - attack.t1136.001
+  - attack.persistence
+
 ```

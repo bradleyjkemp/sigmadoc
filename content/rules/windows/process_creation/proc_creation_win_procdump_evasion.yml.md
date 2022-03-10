@@ -1,0 +1,80 @@
+---
+title: "Procdump Evasion"
+aliases:
+  - "/rule/79b06761-465f-4f88-9ef2-150e24d3d737"
+
+
+tags:
+  - attack.defense_evasion
+  - attack.t1036
+  - attack.t1003.001
+
+
+
+status: experimental
+
+
+
+
+
+date: Tue, 11 Jan 2022 09:07:56 +0100
+
+
+---
+
+Detects uses of the SysInternals Procdump utility in which procdump or its output get renamed or a dump file is moved ot copied to a different name
+
+<!--more-->
+
+
+## Known false-positives
+
+* Cases in which procdump just gets copied to a different directory without any renaming
+
+
+
+## References
+
+* https://twitter.com/mrd0x/status/1480785527901204481
+
+
+## Raw rule ([edit](https://github.com/SigmaHQ/sigma/edit/master/rules/windows/process_creation/proc_creation_win_procdump_evasion.yml))
+```yaml
+title: Procdump Evasion
+id: 79b06761-465f-4f88-9ef2-150e24d3d737
+description: Detects uses of the SysInternals Procdump utility in which procdump or its output get renamed or a dump file is moved ot copied to a different name
+status: experimental
+references:
+    - https://twitter.com/mrd0x/status/1480785527901204481
+author: Florian Roth
+date: 2022/01/11
+tags:
+    - attack.defense_evasion
+    - attack.t1036
+    - attack.t1003.001
+logsource:
+    category: process_creation
+    product: windows
+detection:
+    selection1:
+        CommandLine|contains:
+            - 'copy procdump'
+            - 'move procdump'
+    selection2:
+        CommandLine|contains|all:
+            - 'copy '
+            - '.dmp '
+        CommandLine|contains:
+            - '2.dmp'
+            - 'lsass'
+            - 'out.dmp'
+    selection3:
+        CommandLine|contains:
+            - 'copy lsass.exe_'  # procdump default pattern e.g. lsass.exe_220111_085234.dmp
+            - 'move lsass.exe_'  # procdump default pattern e.g. lsass.exe_220111_085234.dmp
+    condition: 1 of selection*
+falsepositives:
+    - Cases in which procdump just gets copied to a different directory without any renaming
+level: high
+
+```

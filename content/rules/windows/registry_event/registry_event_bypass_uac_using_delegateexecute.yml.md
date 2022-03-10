@@ -1,0 +1,72 @@
+---
+title: "Bypass UAC Using DelegateExecute"
+aliases:
+  - "/rule/46dd5308-4572-4d12-aa43-8938f0184d4f"
+
+
+tags:
+  - attack.privilege_escalation
+  - attack.defense_evasion
+  - attack.t1548.002
+
+
+
+status: experimental
+
+
+
+
+
+date: Wed, 5 Jan 2022 19:52:52 +0100
+
+
+---
+
+Bypasses User Account Control using a fileless method
+
+<!--more-->
+
+
+## Known false-positives
+
+* Unknown
+
+
+
+## References
+
+* https://docs.microsoft.com/en-us/windows/win32/api/shobjidl_core/nn-shobjidl_core-iexecutecommand
+* https://devblogs.microsoft.com/oldnewthing/20100312-01/?p=14623
+* https://github.com/redcanaryco/atomic-red-team/blob/master/atomics/T1548.002/T1548.002.md#atomic-test-7---bypass-uac-using-sdclt-delegateexecute
+
+
+## Raw rule ([edit](https://github.com/SigmaHQ/sigma/edit/master/rules/windows/registry_event/registry_event_bypass_uac_using_delegateexecute.yml))
+```yaml
+title: Bypass UAC Using DelegateExecute
+id: 46dd5308-4572-4d12-aa43-8938f0184d4f
+description: Bypasses User Account Control using a fileless method
+author: frack113
+date: 2022/01/05
+status: experimental
+references:
+    - https://docs.microsoft.com/en-us/windows/win32/api/shobjidl_core/nn-shobjidl_core-iexecutecommand
+    - https://devblogs.microsoft.com/oldnewthing/20100312-01/?p=14623
+    - https://github.com/redcanaryco/atomic-red-team/blob/master/atomics/T1548.002/T1548.002.md#atomic-test-7---bypass-uac-using-sdclt-delegateexecute
+logsource:
+    category: registry_event
+    product: windows
+detection:
+    selection:
+        EventType: SetValue
+        TargetObject|endswith: \open\command\DelegateExecute
+        Details: (Empty)
+    condition: selection
+falsepositives:
+    - Unknown
+level: high
+tags:
+  - attack.privilege_escalation
+  - attack.defense_evasion
+  - attack.t1548.002
+
+```

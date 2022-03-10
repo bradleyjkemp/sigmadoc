@@ -1,0 +1,69 @@
+---
+title: "Windows Defender Malware Detection History Deletion"
+aliases:
+  - "/rule/2afe6582-e149-11ea-87d0-0242ac130003"
+
+
+tags:
+  - attack.defense_evasion
+  - attack.t1070.001
+
+
+
+status: experimental
+
+
+
+
+
+date: Fri, 21 Aug 2020 13:51:05 +0100
+
+
+---
+
+Windows Defender logs when the history of detected infections is deleted. Log file will contain the message "Windows Defender Antivirus has removed history of malware and other potentially unwanted software".
+
+<!--more-->
+
+
+## Known false-positives
+
+* Deletion of Defender malware detections history for legitimate reasons
+
+
+
+## References
+
+* https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-antivirus/troubleshoot-microsoft-defender-antivirus
+
+
+## Raw rule ([edit](https://github.com/SigmaHQ/sigma/edit/master/rules/windows/builtin/windefend/win_defender_history_delete.yml))
+```yaml
+title: Windows Defender Malware Detection History Deletion
+id: 2afe6582-e149-11ea-87d0-0242ac130003
+status: experimental
+description: Windows Defender logs when the history of detected infections is deleted. Log file will contain the message "Windows Defender Antivirus has removed history of malware and other potentially unwanted software".
+author: Cian Heasley
+references:
+    - https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-antivirus/troubleshoot-microsoft-defender-antivirus
+date: 2020/08/13
+modified: 2021/05/30
+tags:
+    - attack.defense_evasion
+    - attack.t1070.001
+logsource:
+    product: windows
+    service: windefend
+detection:
+    selection:
+        EventID: 1013
+        EventType: 4
+    condition: selection
+fields:
+    - EventID
+    - EventType
+falsepositives:
+    - Deletion of Defender malware detections history for legitimate reasons
+level: high
+
+```

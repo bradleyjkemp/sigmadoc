@@ -3,38 +3,12 @@ title: "Locked Workstation"
 aliases:
   - "/rule/411742ad-89b0-49cb-a7b0-3971b5c1e0a4"
 
-tags:
-  - CSC16
-  - CSC16.11
-  - ISO27002-2013 A.9.1.1
-  - ISO27002-2013 A.9.2.1
-  - ISO27002-2013 A.9.2.2
-  - ISO27002-2013 A.9.2.3
-  - ISO27002-2013 A.9.2.4
-  - ISO27002-2013 A.9.2.5
-  - ISO27002-2013 A.9.2.6
-  - ISO27002-2013 A.9.3.1
-  - ISO27002-2013 A.9.4.1
-  - ISO27002-2013 A.9.4.3
-  - ISO27002-2013 A.11.2.8
-  - PCI DSS 3.1 7.1
-  - PCI DSS 3.1 7.2
-  - PCI DSS 3.1 7.3
-  - PCI DSS 3.1 8.7
-  - PCI DSS 3.1 8.8
-  - NIST CSF 1.1 PR.AC-1
-  - NIST CSF 1.1 PR.AC-4
-  - NIST CSF 1.1 PR.AC-6
-  - NIST CSF 1.1 PR.AC-7
-  - NIST CSF 1.1 PR.PT-3
 
 
 
 status: stable
 
 
-
-level: low
 
 
 
@@ -62,7 +36,7 @@ Automatically lock workstation sessions after a standard period of inactivity. T
 * https://www.ultimatewindowssecurity.com/securitylog/encyclopedia/event.aspx?eventID=4800
 
 
-## Raw rule
+## Raw rule ([edit](https://github.com/SigmaHQ/sigma/edit/master/rules/compliance/workstation_was_locked.yml))
 ```yaml
 title: Locked Workstation
 id: 411742ad-89b0-49cb-a7b0-3971b5c1e0a4
@@ -87,29 +61,29 @@ detection:
 falsepositives:
     - unknown
 level: low
-tags:
-    - CSC16
-    - CSC16.11
-    - ISO27002-2013 A.9.1.1
-    - ISO27002-2013 A.9.2.1
-    - ISO27002-2013 A.9.2.2
-    - ISO27002-2013 A.9.2.3
-    - ISO27002-2013 A.9.2.4
-    - ISO27002-2013 A.9.2.5
-    - ISO27002-2013 A.9.2.6
-    - ISO27002-2013 A.9.3.1
-    - ISO27002-2013 A.9.4.1
-    - ISO27002-2013 A.9.4.3
-    - ISO27002-2013 A.11.2.8
-    - PCI DSS 3.1 7.1
-    - PCI DSS 3.1 7.2
-    - PCI DSS 3.1 7.3
-    - PCI DSS 3.1 8.7
-    - PCI DSS 3.1 8.8
-    - NIST CSF 1.1 PR.AC-1
-    - NIST CSF 1.1 PR.AC-4
-    - NIST CSF 1.1 PR.AC-6
-    - NIST CSF 1.1 PR.AC-7
-    - NIST CSF 1.1 PR.PT-3
+# tags:
+    # - CSC16
+    # - CSC16.11
+    # - ISO27002-2013 A.9.1.1
+    # - ISO27002-2013 A.9.2.1
+    # - ISO27002-2013 A.9.2.2
+    # - ISO27002-2013 A.9.2.3
+    # - ISO27002-2013 A.9.2.4
+    # - ISO27002-2013 A.9.2.5
+    # - ISO27002-2013 A.9.2.6
+    # - ISO27002-2013 A.9.3.1
+    # - ISO27002-2013 A.9.4.1
+    # - ISO27002-2013 A.9.4.3
+    # - ISO27002-2013 A.11.2.8
+    # - PCI DSS 3.1 7.1
+    # - PCI DSS 3.1 7.2
+    # - PCI DSS 3.1 7.3
+    # - PCI DSS 3.1 8.7
+    # - PCI DSS 3.1 8.8
+    # - NIST CSF 1.1 PR.AC-1
+    # - NIST CSF 1.1 PR.AC-4
+    # - NIST CSF 1.1 PR.AC-6
+    # - NIST CSF 1.1 PR.AC-7
+    # - NIST CSF 1.1 PR.PT-3
 
 ```

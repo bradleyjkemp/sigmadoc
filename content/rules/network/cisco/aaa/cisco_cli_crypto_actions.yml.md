@@ -3,21 +3,18 @@ title: "Cisco Crypto Commands"
 aliases:
   - "/rule/1f978c6a-4415-47fb-aca5-736a44d7ca3d"
 
+
 tags:
   - attack.credential_access
   - attack.defense_evasion
-  - attack.t1130
   - attack.t1553.004
-  - attack.t1145
   - attack.t1552.004
 
 
 
-status: experimental
+status: test
 
 
-
-level: high
 
 
 
@@ -38,38 +35,38 @@ Show when private keys are being exported from the device, or when new certifica
 
 
 
-## Raw rule
+## Raw rule ([edit](https://github.com/SigmaHQ/sigma/edit/master/rules/network/cisco/aaa/cisco_cli_crypto_actions.yml))
 ```yaml
 title: Cisco Crypto Commands
 id: 1f978c6a-4415-47fb-aca5-736a44d7ca3d
-status: experimental
+status: test
 description: Show when private keys are being exported from the device, or when new certificates are installed
 author: Austin Clark
 date: 2019/08/12
+modified: 2021/11/27
 logsource:
-    product: cisco
-    service: aaa
-    category: accounting
-fields:
-    - src
-    - CmdSet
-    - User
-    - Privilege_Level
-    - Remote_Address
+  product: cisco
+  service: aaa
+  category: accounting
 detection:
-    keywords:
-        - 'crypto pki export'
-        - 'crypto pki import'
-        - 'crypto pki trustpoint'
-    condition: keywords
+  keywords:
+    - 'crypto pki export'
+    - 'crypto pki import'
+    - 'crypto pki trustpoint'
+  condition: keywords
+fields:
+  - src
+  - CmdSet
+  - User
+  - Privilege_Level
+  - Remote_Address
 falsepositives:
-    - Not commonly run by administrators. Also whitelist your known good certificates
+  - Not commonly run by administrators. Also whitelist your known good certificates
 level: high
 tags:
-    - attack.credential_access
-    - attack.defense_evasion
-    - attack.t1130          # an old one
-    - attack.t1553.004
-    - attack.t1145          # an old one
-    - attack.t1552.004
+  - attack.credential_access
+  - attack.defense_evasion
+  - attack.t1553.004
+  - attack.t1552.004
+
 ```

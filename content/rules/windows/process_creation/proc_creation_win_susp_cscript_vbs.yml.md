@@ -1,0 +1,65 @@
+---
+title: "Cscript Visual Basic Script Execution"
+aliases:
+  - "/rule/23250293-eed5-4c39-b57a-841c8933a57d"
+
+
+tags:
+  - attack.execution
+  - attack.t1059.005
+
+
+
+status: experimental
+
+
+
+
+
+date: Sun, 2 Jan 2022 10:36:52 +0100
+
+
+---
+
+Adversaries may abuse Visual Basic (VB) for execution
+
+<!--more-->
+
+
+## Known false-positives
+
+* Unknown
+
+
+
+## References
+
+* https://github.com/redcanaryco/atomic-red-team/blob/master/atomics/T1059.005/T1059.005.md
+
+
+## Raw rule ([edit](https://github.com/SigmaHQ/sigma/edit/master/rules/windows/process_creation/proc_creation_win_susp_cscript_vbs.yml))
+```yaml
+title: Cscript Visual Basic Script Execution
+id: 23250293-eed5-4c39-b57a-841c8933a57d
+status: experimental
+description: Adversaries may abuse Visual Basic (VB) for execution
+author: frack113
+references:
+    - https://github.com/redcanaryco/atomic-red-team/blob/master/atomics/T1059.005/T1059.005.md
+date: 2022/01/02
+logsource:
+    category: process_creation
+    product: windows
+detection:
+    selection:
+        Image|endswith: \cscript.exe
+        CommandLine|contains: '.vbs'
+    condition: selection
+falsepositives:
+    - Unknown
+level: medium
+tags:
+    - attack.execution
+    - attack.t1059.005
+
+```

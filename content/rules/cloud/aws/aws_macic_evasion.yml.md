@@ -1,0 +1,79 @@
+---
+title: "AWS Macie Evasion"
+aliases:
+  - "/rule/91f6a16c-ef71-437a-99ac-0b070e3ad221"
+
+
+tags:
+  - attack.defense_evasion
+  - attack.t1562.001
+
+
+
+status: experimental
+
+
+
+
+
+date: Mon, 26 Jul 2021 15:14:44 +0700
+
+
+---
+
+Detects evade to Macie detection.
+
+<!--more-->
+
+
+## Known false-positives
+
+* System or Network administrator behaviors
+
+
+
+## References
+
+* https://docs.aws.amazon.com/cli/latest/reference/macie/
+
+
+## Raw rule ([edit](https://github.com/SigmaHQ/sigma/edit/master/rules/cloud/aws/aws_macic_evasion.yml))
+```yaml
+title: AWS Macie Evasion
+id: 91f6a16c-ef71-437a-99ac-0b070e3ad221
+status: experimental
+description: Detects evade to Macie detection.
+author: Sittikorn S
+date: 2021/07/06
+references:
+    - https://docs.aws.amazon.com/cli/latest/reference/macie/
+tags:
+    - attack.defense_evasion
+    - attack.t1562.001
+logsource:
+    product: aws
+    service: cloudtrail
+detection:
+    selection:
+        eventName:
+            - 'ArchiveFindings'
+            - 'CreateFindingsFilter'
+            - 'DeleteMember'
+            - 'DisassociateFromMasterAccount'
+            - 'DisassociateMember'
+            - 'DisableMacie'
+            - 'DisableOrganizationAdminAccount'
+            - 'UpdateFindingsFilter'
+            - 'UpdateMacieSession'
+            - 'UpdateMemberSession'
+            - 'UpdateClassificationJob'
+    timeframe: 10m
+    condition: selection | count() by sourceIPAddress > 5
+fields:
+    - sourceIPAddress
+    - userIdentity.arn
+falsepositives:
+    - System or Network administrator behaviors
+level: medium
+
+```

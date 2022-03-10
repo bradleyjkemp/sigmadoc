@@ -3,6 +3,7 @@ title: "Webshell Remote Command Execution"
 aliases:
   - "/rule/c0d3734d-330f-4a03-aae2-65dacc6a8222"
 
+
 tags:
   - attack.persistence
   - attack.t1505.003
@@ -13,8 +14,6 @@ status: experimental
 
 
 
-level: critical
-
 
 
 date: Mon, 21 Oct 2019 11:14:24 +0200
@@ -22,7 +21,7 @@ date: Mon, 21 Oct 2019 11:14:24 +0200
 
 ---
 
-Detects posible command execution by web application/web shell
+Detects possible command execution by web application/web shell
 
 <!--more-->
 
@@ -39,25 +38,24 @@ Detects posible command execution by web application/web shell
 * personal experience
 
 
-## Raw rule
+## Raw rule ([edit](https://github.com/SigmaHQ/sigma/edit/master/rules/linux/auditd/lnx_auditd_web_rce.yml))
 ```yaml
 title: Webshell Remote Command Execution
 id: c0d3734d-330f-4a03-aae2-65dacc6a8222
 status: experimental
-description: Detects posible command execution by web application/web shell
+description: Detects possible command execution by web application/web shell
 author: Ilyas Ochkov, Beyu Denis, oscd.community
 date: 2019/10/12
-modified: 2019/11/04
+modified: 2021/11/11
 references:
     - personal experience
-
 logsource:
     product: linux
     service: auditd
 detection:
     selection:
         type: 'SYSCALL'
-        SYSCALL: 'execve'
+        syscall: 'execve'
         key: 'detect_execve_www'
     condition: selection
 falsepositives:

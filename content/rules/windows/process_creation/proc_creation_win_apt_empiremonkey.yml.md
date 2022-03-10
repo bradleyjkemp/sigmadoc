@@ -1,0 +1,69 @@
+---
+title: "Empire Monkey"
+aliases:
+  - "/rule/10152a7b-b566-438f-a33c-390b607d1c8d"
+
+
+tags:
+  - attack.defense_evasion
+  - attack.t1218.010
+
+
+
+status: test
+
+
+
+
+
+date: Wed, 3 Apr 2019 16:25:18 +0200
+
+
+---
+
+Detects EmpireMonkey APT reported Activity
+
+<!--more-->
+
+
+## Known false-positives
+
+* Very Unlikely
+
+
+
+## References
+
+* https://app.any.run/tasks/a4107649-8cb0-41af-ad75-113152d4d57b
+
+
+## Raw rule ([edit](https://github.com/SigmaHQ/sigma/edit/master/rules/windows/process_creation/proc_creation_win_apt_empiremonkey.yml))
+```yaml
+title: Empire Monkey
+id: 10152a7b-b566-438f-a33c-390b607d1c8d
+status: test
+description: Detects EmpireMonkey APT reported Activity
+author: Markus Neis
+references:
+  - https://app.any.run/tasks/a4107649-8cb0-41af-ad75-113152d4d57b
+date: 2019/04/02
+modified: 2021/11/27
+logsource:
+  category: process_creation
+  product: windows
+detection:
+  selection_cutil:
+    CommandLine|endswith: '/i:%APPDATA%\logs.txt scrobj.dll'
+    Image|endswith: '\cutil.exe'
+  selection_regsvr32:
+    CommandLine|endswith: '/i:%APPDATA%\logs.txt scrobj.dll'
+    Description: 'Microsoft(C) Registerserver'
+  condition: 1 of selection*
+falsepositives:
+  - Very Unlikely
+level: critical
+tags:
+  - attack.defense_evasion
+  - attack.t1218.010
+
+```

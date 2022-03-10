@@ -3,18 +3,16 @@ title: "Kerberos Network Traffic RC4 Ticket Encryption"
 aliases:
   - "/rule/503fe26e-b5f2-4944-a126-eab405cc06e5"
 
+
 tags:
   - attack.credential_access
-  - attack.t1208
   - attack.t1558.003
 
 
 
-status: experimental
+status: test
 
 
-
-level: medium
 
 
 
@@ -39,31 +37,32 @@ Detects kerberos TGS request using RC4 encryption which may be indicative of ker
 * https://adsecurity.org/?p=3458
 
 
-## Raw rule
+## Raw rule ([edit](https://github.com/SigmaHQ/sigma/edit/master/rules/network/zeek/zeek_susp_kerberos_rc4.yml))
 ```yaml
 title: Kerberos Network Traffic RC4 Ticket Encryption
 id: 503fe26e-b5f2-4944-a126-eab405cc06e5
-status: experimental
-date: 2020/02/12
+status: test
 description: Detects kerberos TGS request using RC4 encryption which may be indicative of kerberoasting
+author: sigma
 references:
-    - https://adsecurity.org/?p=3458
-tags:
-    - attack.credential_access
-    - attack.t1208 # an old one
-    - attack.t1558.003
+  - https://adsecurity.org/?p=3458
+date: 2020/02/12
+modified: 2021/11/27
 logsource:
-    product: zeek
-    service: kerberos
+  product: zeek
+  service: kerberos
 detection:
-    selection:
-        request_type: 'TGS'
-        cipher: 'rc4-hmac'
-    computer_acct:
-        service: '$*'
-    condition: selection and not computer_acct
+  selection:
+    request_type: 'TGS'
+    cipher: 'rc4-hmac'
+  computer_acct:
+    service|startswith: '$'
+  condition: selection and not computer_acct
 falsepositives:
-    - normal enterprise SPN requests activity
+  - normal enterprise SPN requests activity
 level: medium
+tags:
+  - attack.credential_access
+  - attack.t1558.003
 
 ```

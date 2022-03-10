@@ -1,0 +1,74 @@
+---
+title: "Powershell Timestomp"
+aliases:
+  - "/rule/c6438007-e081-42ce-9483-b067fbef33c3"
+
+
+tags:
+  - attack.defense_evasion
+  - attack.t1070.006
+
+
+
+status: experimental
+
+
+
+
+
+date: Tue, 3 Aug 2021 16:01:54 +0200
+
+
+---
+
+Adversaries may modify file time attributes to hide new or changes to existing files. Timestomping is a technique that modifies the timestamps of a file (the modify, access, create, and change times), often to mimic files that are in the same folder.
+
+<!--more-->
+
+
+## Known false-positives
+
+* legitime admin script
+
+
+
+## References
+
+* https://github.com/redcanaryco/atomic-red-team/blob/master/atomics/T1070.006/T1070.006.md
+* https://www.offensive-security.com/metasploit-unleashed/timestomp/
+
+
+## Raw rule ([edit](https://github.com/SigmaHQ/sigma/edit/master/rules/windows/powershell/powershell_script/posh_ps_timestomp.yml))
+```yaml
+title: Powershell Timestomp
+id: c6438007-e081-42ce-9483-b067fbef33c3
+status: experimental
+author: frack113
+date: 2021/08/03
+modified: 2021/10/16
+description: Adversaries may modify file time attributes to hide new or changes to existing files. Timestomping is a technique that modifies the timestamps of a file (the modify, access, create, and change times), often to mimic files that are in the same folder. 
+references:
+    - https://github.com/redcanaryco/atomic-red-team/blob/master/atomics/T1070.006/T1070.006.md
+    - https://www.offensive-security.com/metasploit-unleashed/timestomp/
+tags:
+    - attack.defense_evasion
+    - attack.t1070.006
+logsource:
+    product: windows
+    category: ps_script
+    definition: EnableScriptBlockLogging must be set to enable
+detection:
+    selection_ioc:
+        ScriptBlockText|contains: 
+            - '.CreationTime ='
+            - '.LastWriteTime ='
+            - '.LastAccessTime ='
+            - '[IO.File]::SetCreationTime'
+            - '[IO.File]::SetLastAccessTime'
+            - '[IO.File]::SetLastWriteTime'
+    condition: selection_ioc
+falsepositives:
+    - legitime admin script
+level: medium
+
+```

@@ -3,19 +3,17 @@ title: "Cisco Local Accounts"
 aliases:
   - "/rule/6d844f0f-1c18-41af-8f19-33e7654edfc3"
 
+
 tags:
   - attack.persistence
-  - attack.t1136
   - attack.t1136.001
   - attack.t1098
 
 
 
-status: experimental
+status: test
 
 
-
-level: high
 
 
 
@@ -36,32 +34,32 @@ Find local accounts being created or modified as well as remote authentication c
 
 
 
-## Raw rule
+## Raw rule ([edit](https://github.com/SigmaHQ/sigma/edit/master/rules/network/cisco/aaa/cisco_cli_local_accounts.yml))
 ```yaml
 title: Cisco Local Accounts
 id: 6d844f0f-1c18-41af-8f19-33e7654edfc3
-status: experimental
+status: test
 description: Find local accounts being created or modified as well as remote authentication configurations
 author: Austin Clark
 date: 2019/08/12
-modified: 2020/09/02
+modified: 2021/11/27
 logsource:
-    product: cisco
-    service: aaa
-    category: accounting
-fields:
-    - CmdSet
+  product: cisco
+  service: aaa
+  category: accounting
 detection:
-    keywords:
-        - 'username'
-        - 'aaa'
-    condition: keywords
+  keywords:
+    - 'username'
+    - 'aaa'
+  condition: keywords
+fields:
+  - CmdSet
 falsepositives:
-    - When remote authentication is in place, this should not change often
+  - When remote authentication is in place, this should not change often
 level: high
 tags:
-    - attack.persistence
-    - attack.t1136          # an old one
-    - attack.t1136.001
-    - attack.t1098
+  - attack.persistence
+  - attack.t1136.001
+  - attack.t1098
+
 ```

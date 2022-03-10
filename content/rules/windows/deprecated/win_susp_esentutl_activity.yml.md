@@ -3,6 +3,7 @@ title: "Suspicious Esentutl Use"
 aliases:
   - "/rule/56a8189f-11b2-48c8-8ca7-c54b03c2fbf7"
 
+
 tags:
   - attack.defense_evasion
   - attack.execution
@@ -11,11 +12,9 @@ tags:
 
 
 
-status: experimental
+status: deprecated
 
 
-
-level: high
 
 
 
@@ -41,11 +40,11 @@ Detects flags often used with the LOLBAS Esentutl for malicious activity. It cou
 * https://twitter.com/chadtilbury/status/1264226341408452610
 
 
-## Raw rule
+## Raw rule ([edit](https://github.com/SigmaHQ/sigma/edit/master/rules/windows/deprecated/win_susp_esentutl_activity.yml))
 ```yaml
 title: Suspicious Esentutl Use
 id: 56a8189f-11b2-48c8-8ca7-c54b03c2fbf7
-status: experimental
+status: deprecated
 description: Detects flags often used with the LOLBAS Esentutl for malicious activity. It could be used in rare cases by administrators to access locked files or during maintenance. 
 author: Florian Roth
 date: 2020/05/23

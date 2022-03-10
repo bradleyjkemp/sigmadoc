@@ -1,0 +1,75 @@
+---
+title: "Security Software Discovery"
+aliases:
+  - "/rule/c9d8b7fd-78e4-44fe-88f6-599135d46d60"
+
+
+tags:
+  - attack.discovery
+  - attack.t1518.001
+
+
+
+status: test
+
+
+
+
+
+date: Thu, 1 Jul 2021 12:18:30 +0545
+
+
+---
+
+Detects usage of system utilities (only grep for now) to discover security software discovery
+
+<!--more-->
+
+
+## Known false-positives
+
+* Legitimate activities
+
+
+
+## References
+
+* https://github.com/redcanaryco/atomic-red-team/blob/master/atomics/T1518.001/T1518.001.md
+
+
+## Raw rule ([edit](https://github.com/SigmaHQ/sigma/edit/master/rules/linux/process_creation/proc_creation_lnx_security_software_discovery.yml))
+```yaml
+title: Security Software Discovery
+id: c9d8b7fd-78e4-44fe-88f6-599135d46d60
+status: test
+description: Detects usage of system utilities (only grep for now) to discover security software discovery
+author: Daniil Yugoslavskiy, oscd.community
+references:
+  - https://github.com/redcanaryco/atomic-red-team/blob/master/atomics/T1518.001/T1518.001.md
+date: 2020/10/19
+modified: 2021/11/27
+logsource:
+  category: process_creation
+  product: linux
+detection:
+  grep_execution:
+    Image|endswith: '/grep'
+  security_services_and_processes:
+    CommandLine|contains:
+      - 'nessusd'        # nessus vulnerability scanner
+      - 'td-agent'       # fluentd log shipper
+      - 'packetbeat'     # elastic network logger/shipper
+      - 'filebeat'       # elastic log file shipper
+      - 'auditbeat'      # elastic auditing agent/log shipper
+      - 'osqueryd'       # facebook osquery
+      - 'cbagentd'       # carbon black
+      - 'falcond'        # crowdstrike falcon
+  condition: grep_execution and security_services_and_processes
+falsepositives:
+  - Legitimate activities
+level: low
+tags:
+  - attack.discovery
+  - attack.t1518.001
+
+```

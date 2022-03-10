@@ -1,0 +1,71 @@
+---
+title: "Conhost Parent Process Executions"
+aliases:
+  - "/rule/7dc2dedd-7603-461a-bc13-15803d132355"
+
+
+tags:
+  - attack.defense_evasion
+  - attack.t1202
+
+
+
+status: experimental
+
+
+
+
+
+date: Sun, 25 Oct 2020 12:33:59 +0530
+
+
+---
+
+Detects the conhost execution as parent process. Can be used to evaded defense mechanism.
+
+<!--more-->
+
+
+## Known false-positives
+
+* Unlikely, conhost is a child less process
+
+
+
+## References
+
+* http://www.hexacorn.com/blog/2020/05/25/how-to-con-your-host/
+
+
+## Raw rule ([edit](https://github.com/SigmaHQ/sigma/edit/master/rules/windows/process_creation/proc_creation_win_susp_conhost.yml))
+```yaml
+title: Conhost Parent Process Executions
+id: 7dc2dedd-7603-461a-bc13-15803d132355
+status: experimental
+description: Detects the conhost execution as parent process. Can be used to evaded defense mechanism.
+references:
+    - http://www.hexacorn.com/blog/2020/05/25/how-to-con-your-host/
+author: omkar72
+date: 2020/10/25
+modified: 2021/12/17
+tags:
+    - attack.defense_evasion
+    - attack.t1202
+logsource:
+    category: process_creation
+    product: windows
+detection:
+    selection:
+        ParentImage|endswith: '\conhost.exe'
+    filter:
+        Provider_Name: 'SystemTraceProvider-Process'  # FPs with Aurora
+    condition: selection and not filter
+fields:
+    - Image
+    - CommandLine
+    - ParentCommandLine
+falsepositives:
+    - Unlikely, conhost is a child less process
+level: medium
+
+```

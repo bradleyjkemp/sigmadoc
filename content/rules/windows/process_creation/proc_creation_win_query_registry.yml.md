@@ -1,0 +1,85 @@
+---
+title: "Query Registry"
+aliases:
+  - "/rule/970007b7-ce32-49d0-a4a4-fbef016950bd"
+
+
+tags:
+  - attack.discovery
+  - attack.t1012
+  - attack.t1007
+
+
+
+status: test
+
+
+
+
+
+date: Sun, 27 Oct 2019 23:13:03 +0300
+
+
+---
+
+Adversaries may interact with the Windows Registry to gather information about the system, configuration, and installed software.
+
+<!--more-->
+
+
+
+
+## References
+
+* https://github.com/redcanaryco/atomic-red-team/blob/master/atomics/T1012/T1012.md
+
+
+## Raw rule ([edit](https://github.com/SigmaHQ/sigma/edit/master/rules/windows/process_creation/proc_creation_win_query_registry.yml))
+```yaml
+title: Query Registry
+id: 970007b7-ce32-49d0-a4a4-fbef016950bd
+status: test
+description: Adversaries may interact with the Windows Registry to gather information about the system, configuration, and installed software.
+author: Timur Zinniatullin, oscd.community
+references:
+  - https://github.com/redcanaryco/atomic-red-team/blob/master/atomics/T1012/T1012.md
+date: 2019/10/21
+modified: 2021/11/27
+logsource:
+  category: process_creation
+  product: windows
+detection:
+  selection_1:
+    Image|endswith: '\reg.exe'
+    CommandLine|contains:
+      - 'query'
+      - 'save'
+      - 'export'
+  selection_2:
+    CommandLine|contains:
+      - 'currentVersion\windows'
+      - 'currentVersion\runServicesOnce'
+      - 'currentVersion\runServices'
+      - 'winlogon\'
+      - 'currentVersion\shellServiceObjectDelayLoad'
+      - 'currentVersion\runOnce'
+      - 'currentVersion\runOnceEx'
+      - 'currentVersion\run'
+      - 'currentVersion\policies\explorer\run'
+      - 'currentcontrolset\services'
+  condition: selection_1 and selection_2
+fields:
+  - Image
+  - CommandLine
+  - User
+  - LogonGuid
+  - Hashes
+  - ParentProcessGuid
+  - ParentCommandLine
+level: low
+tags:
+  - attack.discovery
+  - attack.t1012
+  - attack.t1007
+
+```

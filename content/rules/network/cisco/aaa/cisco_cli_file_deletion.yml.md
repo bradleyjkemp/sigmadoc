@@ -3,23 +3,19 @@ title: "Cisco File Deletion"
 aliases:
   - "/rule/71d65515-c436-43c0-841b-236b1f32c21e"
 
+
 tags:
   - attack.defense_evasion
   - attack.impact
-  - attack.t1107
   - attack.t1070.004
-  - attack.t1488
   - attack.t1561.001
-  - attack.t1487
   - attack.t1561.002
 
 
 
-status: experimental
+status: test
 
 
-
-level: medium
 
 
 
@@ -40,36 +36,35 @@ See what files are being deleted from flash file systems
 
 
 
-## Raw rule
+## Raw rule ([edit](https://github.com/SigmaHQ/sigma/edit/master/rules/network/cisco/aaa/cisco_cli_file_deletion.yml))
 ```yaml
 title: Cisco File Deletion
 id: 71d65515-c436-43c0-841b-236b1f32c21e
-status: experimental
+status: test
 description: See what files are being deleted from flash file systems
 author: Austin Clark
 date: 2019/08/12
+modified: 2021/11/27
 logsource:
-    product: cisco
-    service: aaa
-    category: accounting
-fields:
-    - CmdSet
+  product: cisco
+  service: aaa
+  category: accounting
 detection:
-    keywords:
-        - 'erase'
-        - 'delete'
-        - 'format'
-    condition: keywords
+  keywords:
+    - 'erase'
+    - 'delete'
+    - 'format'
+  condition: keywords
+fields:
+  - CmdSet
 falsepositives:
-    - Will be used sometimes by admins to clean up local flash space
+  - Will be used sometimes by admins to clean up local flash space
 level: medium
 tags:
-    - attack.defense_evasion
-    - attack.impact
-    - attack.t1107          # an old one
-    - attack.t1070.004
-    - attack.t1488          # an old one
-    - attack.t1561.001
-    - attack.t1487          # an old one
-    - attack.t1561.002
+  - attack.defense_evasion
+  - attack.impact
+  - attack.t1070.004
+  - attack.t1561.001
+  - attack.t1561.002
+
 ```

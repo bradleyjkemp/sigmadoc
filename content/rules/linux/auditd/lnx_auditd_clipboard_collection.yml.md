@@ -1,0 +1,76 @@
+---
+title: "Clipboard Collection with Xclip Tool"
+aliases:
+  - "/rule/214e7e6c-f21b-47ff-bb6f-551b2d143fcf"
+
+
+tags:
+  - attack.collection
+  - attack.t1115
+
+
+
+status: experimental
+
+
+
+
+
+date: Fri, 24 Sep 2021 18:40:10 +0200
+
+
+---
+
+Detects attempts to collect data stored in the clipboard from users with the usage of xclip tool. Xclip has to be installed. Highly recommended using rule on servers, due to high usage of clipboard utilities on user workstations.
+
+<!--more-->
+
+
+## Known false-positives
+
+* Legitimate usage of xclip tools
+
+
+
+## References
+
+* https://attack.mitre.org/techniques/T1115/
+* https://linux.die.net/man/1/xclip
+* https://www.cyberciti.biz/faq/xclip-linux-insert-files-command-output-intoclipboard/
+
+
+## Raw rule ([edit](https://github.com/SigmaHQ/sigma/edit/master/rules/linux/auditd/lnx_auditd_clipboard_collection.yml))
+```yaml
+title: Clipboard Collection with Xclip Tool
+id: 214e7e6c-f21b-47ff-bb6f-551b2d143fcf
+description: Detects attempts to collect data stored in the clipboard from users with the usage of xclip tool. Xclip has to be installed. Highly recommended using rule on servers, due to high usage of clipboard utilities on user workstations.
+author: 'Pawel Mazur'
+status: experimental
+date: 2021/09/24
+references:
+   - https://attack.mitre.org/techniques/T1115/
+   - https://linux.die.net/man/1/xclip
+   - https://www.cyberciti.biz/faq/xclip-linux-insert-files-command-output-intoclipboard/
+logsource:
+   product: linux
+   service: auditd
+detection:
+    xclip:
+        type: EXECVE
+        a0: xclip
+        a1: 
+            - '-selection'
+            - '-sel'
+        a2: 
+            - clipboard
+            - clip
+        a3: '-o'
+    condition: xclip
+tags:
+   - attack.collection
+   - attack.t1115
+falsepositives:
+   - Legitimate usage of xclip tools
+level: low
+
+```

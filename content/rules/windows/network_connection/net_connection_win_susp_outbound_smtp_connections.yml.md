@@ -1,0 +1,81 @@
+---
+title: "Suspicious Outbound SMTP Connections"
+aliases:
+  - "/rule/9976fa64-2804-423c-8a5b-646ade840773"
+
+
+tags:
+  - attack.exfiltration
+  - attack.t1048.003
+
+
+
+status: experimental
+
+
+
+
+
+date: Sat, 8 Jan 2022 09:17:56 +0100
+
+
+---
+
+Adversaries may steal data by exfiltrating it over an un-encrypted network protocol other than that of the existing command and control channel.
+The data may also be sent to an alternate network location from the main command and control server. 
+
+
+<!--more-->
+
+
+## Known false-positives
+
+* Other SMTP tools
+
+
+
+## References
+
+* https://github.com/redcanaryco/atomic-red-team/blob/master/atomics/T1048.003/T1048.003.md#atomic-test-5---exfiltration-over-alternative-protocol---smtp
+* https://www.ietf.org/rfc/rfc2821.txt
+
+
+## Raw rule ([edit](https://github.com/SigmaHQ/sigma/edit/master/rules/windows/network_connection/net_connection_win_susp_outbound_smtp_connections.yml))
+```yaml
+title: Suspicious Outbound SMTP Connections
+id: 9976fa64-2804-423c-8a5b-646ade840773
+status: experimental
+description: |
+  Adversaries may steal data by exfiltrating it over an un-encrypted network protocol other than that of the existing command and control channel.
+  The data may also be sent to an alternate network location from the main command and control server. 
+references:
+  - https://github.com/redcanaryco/atomic-red-team/blob/master/atomics/T1048.003/T1048.003.md#atomic-test-5---exfiltration-over-alternative-protocol---smtp
+  - https://www.ietf.org/rfc/rfc2821.txt
+author: frack113
+date: 2022/01/07
+modified: 2022/02/16
+logsource:
+  category: network_connection
+  product: windows
+detection:
+  selection:
+    DestinationPort: 
+        - 25
+        - 587
+        - 465
+        - 2525
+    Initiated: 'true'
+  filter_clients:
+    Image|endswith:
+      - \thunderbird.exe
+      - \outlook.exe
+  filter_mailserver:
+    Image|startswith: 'C:\Program Files\Microsoft\Exchange Server\'
+  condition: selection and not 1 of filter*
+falsepositives:
+  - Other SMTP tools
+level: medium
+tags:
+    - attack.exfiltration
+    - attack.t1048.003
+```

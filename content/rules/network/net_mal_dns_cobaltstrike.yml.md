@@ -3,9 +3,9 @@ title: "Cobalt Strike DNS Beaconing"
 aliases:
   - "/rule/2975af79-28c4-4d2f-a951-9095f229df29"
 
+
 tags:
   - attack.command_and_control
-  - attack.t1071
   - attack.t1071.004
 
 
@@ -13,8 +13,6 @@ tags:
 status: experimental
 
 
-
-level: high
 
 
 
@@ -37,9 +35,10 @@ Detects suspicious DNS queries known from Cobalt Strike beacons
 ## References
 
 * https://www.icebrg.io/blog/footprints-of-fin7-tracking-actor-patterns
+* https://www.sekoia.io/en/hunting-and-detecting-cobalt-strike/
 
 
-## Raw rule
+## Raw rule ([edit](https://github.com/SigmaHQ/sigma/edit/master/rules/network/net_mal_dns_cobaltstrike.yml))
 ```yaml
 title: Cobalt Strike DNS Beaconing
 id: 2975af79-28c4-4d2f-a951-9095f229df29
@@ -47,23 +46,25 @@ status: experimental
 description: Detects suspicious DNS queries known from Cobalt Strike beacons
 author: Florian Roth
 date: 2018/05/10
-modified: 2020/08/27
+modified: 2021/03/24
 references:
     - https://www.icebrg.io/blog/footprints-of-fin7-tracking-actor-patterns
+    - https://www.sekoia.io/en/hunting-and-detecting-cobalt-strike/
 logsource:
     category: dns
 detection:
-    selection:
-        query:
-            - 'aaa.stage.*' 
-            - 'post.1*'
-    condition: selection
+    selection1:
+        query|startswith:
+            - 'aaa.stage.' 
+            - 'post.1'
+    selection2:
+        query|contains: '.stage.123456.'
+    condition: 1 of selection*
 falsepositives:
     - Unknown
-level: high
+level: critical
 tags:
     - attack.command_and_control
-    - attack.t1071 # an old one
     - attack.t1071.004
 
 ```

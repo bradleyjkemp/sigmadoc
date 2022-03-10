@@ -1,0 +1,82 @@
+---
+title: "Suspicious Child Process Created as System"
+aliases:
+  - "/rule/590a5f4c-6c8c-4f10-8307-89afe9453a9d"
+
+
+tags:
+  - attack.privilege_escalation
+  - attack.t1134.002
+
+
+
+status: test
+
+
+
+
+
+date: Sun, 27 Oct 2019 20:54:07 +0300
+
+
+---
+
+Detection of child processes spawned with SYSTEM privileges by parents with LOCAL SERVICE or NETWORK SERVICE accounts
+
+<!--more-->
+
+
+## Known false-positives
+
+* Unknown
+
+
+
+## References
+
+* https://speakerdeck.com/heirhabarov/hunting-for-privilege-escalation-in-windows-environment
+* https://foxglovesecurity.com/2016/09/26/rotten-potato-privilege-escalation-from-service-accounts-to-system/
+* https://github.com/antonioCoco/RogueWinRM
+* https://twitter.com/Cyb3rWard0g/status/1453123054243024897
+
+
+## Raw rule ([edit](https://github.com/SigmaHQ/sigma/edit/master/rules/windows/process_creation/proc_creation_win_susp_child_process_as_system_.yml))
+```yaml
+title: Suspicious Child Process Created as System
+id: 590a5f4c-6c8c-4f10-8307-89afe9453a9d
+status: test
+description: Detection of child processes spawned with SYSTEM privileges by parents with LOCAL SERVICE or NETWORK SERVICE accounts
+author: Teymur Kheirkhabarov, Roberto Rodriguez (@Cyb3rWard0g), Open Threat Research (OTR)
+references:
+  - https://speakerdeck.com/heirhabarov/hunting-for-privilege-escalation-in-windows-environment
+  - https://foxglovesecurity.com/2016/09/26/rotten-potato-privilege-escalation-from-service-accounts-to-system/
+  - https://github.com/antonioCoco/RogueWinRM
+  - https://twitter.com/Cyb3rWard0g/status/1453123054243024897
+date: 2019/10/26
+modified: 2021/11/27
+logsource:
+  category: process_creation
+  product: windows
+  definition: ParentUser field needs sysmon >= 13.30
+detection:
+  selection:
+    ParentUser:
+      - 'NT AUTHORITY\NETWORK SERVICE'
+      - 'NT AUTHORITY\LOCAL SERVICE'
+      - 'AUTORITE NT\'       # French language settings
+    User:
+      - 'NT AUTHORITY\SYSTEM'
+      - 'AUTORITE NT\Sys'       # French language settings
+    IntegrityLevel: 'System'
+  rundllexception:
+    Image|endswith: '\rundll32.exe'
+    CommandLine|contains: 'DavSetCookie'
+  condition: selection and not rundllexception
+falsepositives:
+  - Unknown
+level: high
+tags:
+  - attack.privilege_escalation
+  - attack.t1134.002
+
+```

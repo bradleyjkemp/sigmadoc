@@ -3,17 +3,16 @@ title: "Activity Related to NTDS.dit Domain Hash Retrieval"
 aliases:
   - "/rule/b932b60f-fdda-4d53-8eda-a170c1d97bbd"
 
+
 tags:
   - attack.credential_access
   - attack.t1003
 
 
 
-status: experimental
+status: deprecated
 
 
-
-level: high
 
 
 
@@ -42,11 +41,11 @@ Detects suspicious commands that could be related to activity that uses volume s
 * https://dfironthemountain.wordpress.com/2018/12/06/locked-file-access-using-esentutl-exe/
 
 
-## Raw rule
+## Raw rule ([edit](https://github.com/SigmaHQ/sigma/edit/master/rules/windows/deprecated/win_susp_vssadmin_ntds_activity.yml))
 ```yaml
 title: Activity Related to NTDS.dit Domain Hash Retrieval
 id: b932b60f-fdda-4d53-8eda-a170c1d97bbd
-status: experimental
+status: deprecated
 description: Detects suspicious commands that could be related to activity that uses volume shadow copy to steal and retrieve hashes from the NTDS.dit file remotely
 author: Florian Roth, Michael Haag
 date: 2019/01/16

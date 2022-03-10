@@ -1,0 +1,78 @@
+---
+title: "Windows Update Client LOLBIN"
+aliases:
+  - "/rule/d7825193-b70a-48a4-b992-8b5b3015cc11"
+
+
+tags:
+  - attack.command_and_control
+  - attack.execution
+  - attack.t1105
+  - attack.t1218
+
+
+
+status: experimental
+
+
+
+
+
+date: Sat, 9 Jan 2021 10:38:20 +0100
+
+
+---
+
+Detects code execution via the Windows Update client (wuauclt)
+
+<!--more-->
+
+
+## Known false-positives
+
+* Unknown
+
+
+
+## References
+
+* https://dtm.uk/wuauclt/
+
+
+## Raw rule ([edit](https://github.com/SigmaHQ/sigma/edit/master/rules/windows/process_creation/proc_creation_win_susp_wuauclt.yml))
+```yaml
+title: Windows Update Client LOLBIN
+id: d7825193-b70a-48a4-b992-8b5b3015cc11
+status: experimental
+description: Detects code execution via the Windows Update client (wuauclt)
+references:
+    - https://dtm.uk/wuauclt/
+author: FPT.EagleEye Team
+date: 2020/10/17
+modified: 2021/11/18
+tags:
+    - attack.command_and_control
+    - attack.execution
+    - attack.t1105
+    - attack.t1218
+logsource:
+    product: windows
+    category: process_creation
+detection:
+    selection:
+        CommandLine|contains|all: 
+            - '/UpdateDeploymentProvider'
+            - '/RunHandlerComServer'
+            - '.dll'
+        Image|endswith: 
+            - '\wuauclt.exe'
+    filter:
+        CommandLine|contains:
+            - ' /ClassId '
+            - ' wuaueng.dll '
+    condition: selection and not filter
+falsepositives:
+    - Unknown
+level: high
+
+```

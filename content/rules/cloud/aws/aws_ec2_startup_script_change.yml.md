@@ -1,0 +1,71 @@
+---
+title: "AWS EC2 Startup Shell Script Change"
+aliases:
+  - "/rule/1ab3c5ed-5baf-417b-bb6b-78ca33f6c3df"
+
+
+tags:
+  - attack.execution
+  - attack.t1059.001
+  - attack.t1059.003
+  - attack.t1059.004
+
+
+
+status: experimental
+
+
+
+
+
+date: Wed, 12 Feb 2020 22:23:18 +0200
+
+
+---
+
+Detects changes to the EC2 instance startup script. The shell script will be executed as root/SYSTEM every time the specific instances are booted up.
+
+<!--more-->
+
+
+## Known false-positives
+
+* Valid changes to the startup script
+
+
+
+## References
+
+* https://github.com/RhinoSecurityLabs/pacu/blob/master/modules/ec2__startup_shell_script/main.py#L9
+
+
+## Raw rule ([edit](https://github.com/SigmaHQ/sigma/edit/master/rules/cloud/aws/aws_ec2_startup_script_change.yml))
+```yaml
+title: AWS EC2 Startup Shell Script Change
+id: 1ab3c5ed-5baf-417b-bb6b-78ca33f6c3df
+status: experimental
+description: Detects changes to the EC2 instance startup script. The shell script will be executed as root/SYSTEM every time the specific instances are booted up.
+author: faloker
+date: 2020/02/12
+modified: 2021/08/09
+references:
+    - https://github.com/RhinoSecurityLabs/pacu/blob/master/modules/ec2__startup_shell_script/main.py#L9
+logsource:
+    product: aws
+    service: cloudtrail
+detection:
+    selection_source:
+        eventSource: ec2.amazonaws.com
+        requestParameters.userData: '*'
+        eventName: ModifyInstanceAttribute
+    condition: selection_source
+falsepositives:
+    - Valid changes to the startup script
+level: high
+tags:
+    - attack.execution
+    - attack.t1059.001
+    - attack.t1059.003
+    - attack.t1059.004
+
+```

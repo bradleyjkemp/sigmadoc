@@ -1,0 +1,113 @@
+---
+title: "Renamed Binary"
+aliases:
+  - "/rule/36480ae1-a1cb-4eaa-a0d6-29801d7e9142"
+
+
+tags:
+  - attack.defense_evasion
+  - attack.t1036.003
+
+
+
+status: test
+
+
+
+
+
+date: Sat, 15 Jun 2019 20:19:35 +1000
+
+
+---
+
+Detects the execution of a renamed binary often used by attackers or malware leveraging new Sysmon OriginalFileName datapoint.
+
+<!--more-->
+
+
+## Known false-positives
+
+* Custom applications use renamed binaries adding slight change to binary name. Typically this is easy to spot and add to whitelist
+
+
+
+## References
+
+* https://attack.mitre.org/techniques/T1036/
+* https://mgreen27.github.io/posts/2019/05/12/BinaryRename.html
+* https://mgreen27.github.io/posts/2019/05/29/BinaryRename2.html
+
+
+## Raw rule ([edit](https://github.com/SigmaHQ/sigma/edit/master/rules/windows/process_creation/proc_creation_win_renamed_binary.yml))
+```yaml
+title: Renamed Binary
+id: 36480ae1-a1cb-4eaa-a0d6-29801d7e9142
+status: test
+description: Detects the execution of a renamed binary often used by attackers or malware leveraging new Sysmon OriginalFileName datapoint.
+author: Matthew Green - @mgreen27, Ecco, James Pemberton / @4A616D6573, oscd.community (improvements), Andreas Hunkeler (@Karneades)
+references:
+  - https://attack.mitre.org/techniques/T1036/
+  - https://mgreen27.github.io/posts/2019/05/12/BinaryRename.html
+  - https://mgreen27.github.io/posts/2019/05/29/BinaryRename2.html
+date: 2019/06/15
+modified: 2021/12/01
+logsource:
+  category: process_creation
+  product: windows
+detection:
+  selection:
+    OriginalFileName:
+      - 'cmd.exe'
+      - 'CONHOST.EXE'
+      - 'powershell.exe'
+      - 'powershell_ise.exe'
+      - 'psexec.exe'
+      - 'psexec.c'        # old versions of psexec (2016 seen)
+      - 'cscript.exe'
+      - 'wscript.exe'
+      - 'mshta.exe'
+      - 'regsvr32.exe'
+      - 'wmic.exe'
+      - 'certutil.exe'
+      - 'rundll32.exe'
+      - 'cmstp.exe'
+      - 'msiexec.exe'
+      - '7z.exe'
+      - 'winrar.exe'
+      - 'wevtutil.exe'
+      - 'net.exe'
+      - 'net1.exe'
+      - 'netsh.exe'
+  filter:
+    Image|endswith:
+      - '\cmd.exe'
+      - '\conhost.exe'
+      - '\powershell.exe'
+      - '\powershell_ise.exe'
+      - '\psexec.exe'
+      - '\psexec64.exe'
+      - '\cscript.exe'
+      - '\wscript.exe'
+      - '\mshta.exe'
+      - '\regsvr32.exe'
+      - '\wmic.exe'
+      - '\certutil.exe'
+      - '\rundll32.exe'
+      - '\cmstp.exe'
+      - '\msiexec.exe'
+      - '\7z.exe'
+      - '\winrar.exe'
+      - '\wevtutil.exe'
+      - '\net.exe'
+      - '\net1.exe'
+      - '\netsh.exe'
+  condition: selection and not filter
+falsepositives:
+  - Custom applications use renamed binaries adding slight change to binary name. Typically this is easy to spot and add to whitelist
+level: medium
+tags:
+  - attack.defense_evasion
+  - attack.t1036.003
+
+```

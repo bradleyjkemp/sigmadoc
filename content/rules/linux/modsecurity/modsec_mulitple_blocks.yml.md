@@ -4,12 +4,15 @@ aliases:
   - "/rule/a06eea10-d932-4aa6-8ba9-186df72c8d23"
 
 
+tags:
+  - attack.impact
+  - attack.t1499
+
+
 
 status: stable
 
 
-
-level: medium
 
 
 
@@ -31,7 +34,7 @@ Detects multiple blocks by the mod_security module (Web Application Firewall)
 
 
 
-## Raw rule
+## Raw rule ([edit](https://github.com/SigmaHQ/sigma/edit/master/rules/linux/modsecurity/modsec_mulitple_blocks.yml))
 ```yaml
 title: Multiple Modsecurity Blocks
 id: a06eea10-d932-4aa6-8ba9-186df72c8d23
@@ -53,5 +56,7 @@ falsepositives:
     - Vulnerability scanners
     - Frequent attacks if system faces Internet
 level: medium
-
+tags:
+    - attack.impact
+    - attack.t1499 
 ```

@@ -1,0 +1,72 @@
+---
+title: "Suspicious Outbound Kerberos Connection"
+aliases:
+  - "/rule/eca91c7c-9214-47b9-b4c5-cb1d7e4f2350"
+
+
+tags:
+  - attack.lateral_movement
+  - attack.t1558.003
+
+
+
+status: test
+
+
+
+
+
+date: Tue, 29 Oct 2019 03:44:22 +0300
+
+
+---
+
+Detects suspicious outbound network activity via kerberos default port indicating possible lateral movement or first stage PrivEsc via delegation.
+
+<!--more-->
+
+
+## Known false-positives
+
+* Other browsers
+
+
+
+## References
+
+* https://github.com/GhostPack/Rubeus
+
+
+## Raw rule ([edit](https://github.com/SigmaHQ/sigma/edit/master/rules/windows/builtin/security/win_suspicious_outbound_kerberos_connection.yml))
+```yaml
+title: Suspicious Outbound Kerberos Connection
+id: eca91c7c-9214-47b9-b4c5-cb1d7e4f2350
+status: test
+description: Detects suspicious outbound network activity via kerberos default port indicating possible lateral movement or first stage PrivEsc via delegation.
+author: Ilyas Ochkov, oscd.community
+references:
+  - https://github.com/GhostPack/Rubeus
+date: 2019/10/24
+modified: 2021/11/27
+logsource:
+  product: windows
+  service: security
+detection:
+  selection:
+    EventID: 5156
+    DestinationPort: 88
+  filter:
+    Image|endswith:
+      - '\lsass.exe'
+      - '\opera.exe'
+      - '\chrome.exe'
+      - '\firefox.exe'
+  condition: selection and not filter
+falsepositives:
+  - Other browsers
+level: high
+tags:
+  - attack.lateral_movement
+  - attack.t1558.003
+
+```

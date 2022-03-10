@@ -3,19 +3,18 @@ title: "MITRE BZAR Indicators for Execution"
 aliases:
   - "/rule/b640c0b8-87f8-4daa-aef8-95a24261dd1d"
 
+
 tags:
   - attack.execution
-  - attack.t1035
   - attack.t1047
-  - attack.t1053
   - attack.t1053.002
   - attack.t1569.002
 
 
 
+status: test
 
 
-level: medium
 
 
 
@@ -41,60 +40,60 @@ Windows DCE-RPC functions which indicate an execution techniques on the remote s
 * https://github.com/mitre-attack/bzar#indicators-for-attck-execution
 
 
-## Raw rule
+## Raw rule ([edit](https://github.com/SigmaHQ/sigma/edit/master/rules/network/zeek/zeek_dce_rpc_mitre_bzar_execution.yml))
 ```yaml
 title: MITRE BZAR Indicators for Execution
 id: b640c0b8-87f8-4daa-aef8-95a24261dd1d
+status: test
 description: 'Windows DCE-RPC functions which indicate an execution techniques on the remote system. All credit for the Zeek mapping of the suspicious endpoint/operation field goes to MITRE'
 author: '@neu5ron, SOC Prime'
-date: 2020/03/19
 references:
-    - https://github.com/mitre-attack/bzar#indicators-for-attck-execution
-tags:
-    - attack.execution
-    - attack.t1035 # an old one
-    - attack.t1047
-    - attack.t1053 # an old one
-    - attack.t1053.002
-    - attack.t1569.002
+  - https://github.com/mitre-attack/bzar#indicators-for-attck-execution
+date: 2020/03/19
+modified: 2021/11/27
 logsource:
-    product: zeek
-    service: dce_rpc
+  product: zeek
+  service: dce_rpc
 detection:
-    op1:
-        endpoint: 'JobAdd'
-        operation: 'atsvc'
-    op2:
-        endpoint: 'ITaskSchedulerService'
-        operation: 'SchRpcEnableTask'
-    op3:
-        endpoint: 'ITaskSchedulerService'
-        operation: 'SchRpcRegisterTask'
-    op4:
-        endpoint: 'ITaskSchedulerService'
-        operation: 'SchRpcRun'
-    op5:
-        endpoint: 'IWbemServices'
-        operation: 'ExecMethod'
-    op6:
-        endpoint: 'IWbemServices'
-        operation: 'ExecMethodAsync'
-    op7:
-        endpoint: 'svcctl'
-        operation: 'CreateServiceA'
-    op8:
-        endpoint: 'svcctl'
-        operation: 'CreateServiceW'
-    op9:
-        endpoint: 'svcctl'
-        operation: 'StartServiceA'
-    op10:
-        endpoint: 'svcctl'
-        operation: 'StartServiceW'
-    condition: 1 of them
+  op1:
+    endpoint: 'JobAdd'
+    operation: 'atsvc'
+  op2:
+    endpoint: 'ITaskSchedulerService'
+    operation: 'SchRpcEnableTask'
+  op3:
+    endpoint: 'ITaskSchedulerService'
+    operation: 'SchRpcRegisterTask'
+  op4:
+    endpoint: 'ITaskSchedulerService'
+    operation: 'SchRpcRun'
+  op5:
+    endpoint: 'IWbemServices'
+    operation: 'ExecMethod'
+  op6:
+    endpoint: 'IWbemServices'
+    operation: 'ExecMethodAsync'
+  op7:
+    endpoint: 'svcctl'
+    operation: 'CreateServiceA'
+  op8:
+    endpoint: 'svcctl'
+    operation: 'CreateServiceW'
+  op9:
+    endpoint: 'svcctl'
+    operation: 'StartServiceA'
+  op10:
+    endpoint: 'svcctl'
+    operation: 'StartServiceW'
+  condition: 1 of op*
 falsepositives:
-    - 'Windows administrator tasks or troubleshooting'
-    - 'Windows management scripts or software'
+  - 'Windows administrator tasks or troubleshooting'
+  - 'Windows management scripts or software'
 level: medium
+tags:
+  - attack.execution
+  - attack.t1047
+  - attack.t1053.002
+  - attack.t1569.002
 
 ```

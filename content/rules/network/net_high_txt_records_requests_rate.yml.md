@@ -3,21 +3,18 @@ title: "High TXT Records Requests Rate"
 aliases:
   - "/rule/f0a8cedc-1d22-4453-9c44-8d9f4ebd5d35"
 
+
 tags:
   - attack.exfiltration
-  - attack.t1048
   - attack.t1048.003
   - attack.command_and_control
-  - attack.t1071
   - attack.t1071.004
 
 
 
-status: experimental
+status: test
 
 
-
-level: medium
 
 
 
@@ -38,30 +35,29 @@ Extremely high rate of TXT record type DNS requests from host per short period o
 
 
 
-## Raw rule
+## Raw rule ([edit](https://github.com/SigmaHQ/sigma/edit/master/rules/network/net_high_txt_records_requests_rate.yml))
 ```yaml
 title: High TXT Records Requests Rate
 id: f0a8cedc-1d22-4453-9c44-8d9f4ebd5d35
-status: experimental
+status: test
 description: Extremely high rate of TXT record type DNS requests from host per short period of time. Possible result of Do-exfiltration tool execution
 author: Daniil Yugoslavskiy, oscd.community
 date: 2019/10/24
-modified: 2020/08/27
+modified: 2021/11/27
 logsource:
-    category: dns
+  category: dns
 detection:
-    selection:
-        record_type: "TXT"
-    timeframe: 1m
-    condition: selection | count() by src_ip > 50
+  selection:
+    record_type: 'TXT'
+  timeframe: 1m
+  condition: selection | count() by src_ip > 50
 falsepositives:
-    - Legitimate high DNS TXT requests rate to domain name which should be added to whitelist
+  - Legitimate high DNS TXT requests rate to domain name which should be added to whitelist
 level: medium
 tags:
-    - attack.exfiltration
-    - attack.t1048 # an old one
-    - attack.t1048.003
-    - attack.command_and_control
-    - attack.t1071 # an old one
-    - attack.t1071.004
+  - attack.exfiltration
+  - attack.t1048.003
+  - attack.command_and_control
+  - attack.t1071.004
+
 ```

@@ -3,6 +3,7 @@ title: "Windows PowerShell User Agent"
 aliases:
   - "/rule/c8557060-9221-4448-8794-96320e6f3e74"
 
+
 tags:
   - attack.defense_evasion
   - attack.command_and_control
@@ -10,11 +11,9 @@ tags:
 
 
 
-status: experimental
+status: test
 
 
-
-level: medium
 
 
 
@@ -40,33 +39,34 @@ Detects Windows PowerShell Web Access
 * https://msdn.microsoft.com/powershell/reference/5.1/microsoft.powershell.utility/Invoke-WebRequest
 
 
-## Raw rule
+## Raw rule ([edit](https://github.com/SigmaHQ/sigma/edit/master/rules/proxy/proxy_powershell_ua.yml))
 ```yaml
 title: Windows PowerShell User Agent
 id: c8557060-9221-4448-8794-96320e6f3e74
-status: experimental
+status: test
 description: Detects Windows PowerShell Web Access
 author: Florian Roth
-date: 2017/03/13
-modified: 2020/09/03
 references:
-    - https://msdn.microsoft.com/powershell/reference/5.1/microsoft.powershell.utility/Invoke-WebRequest
+  - https://msdn.microsoft.com/powershell/reference/5.1/microsoft.powershell.utility/Invoke-WebRequest
+date: 2017/03/13
+modified: 2021/11/27
 logsource:
-    category: proxy
+  category: proxy
 detection:
-    selection:
-      c-useragent: '* WindowsPowerShell/*'
-    condition: selection
+  selection:
+    c-useragent|contains: ' WindowsPowerShell/'
+  condition: selection
 fields:
-    - ClientIP
-    - c-uri
-    - c-useragent
+  - ClientIP
+  - c-uri
+  - c-useragent
 falsepositives:
-    - Administrative scripts that download files from the Internet
-    - Administrative scripts that retrieve certain website contents
+  - Administrative scripts that download files from the Internet
+  - Administrative scripts that retrieve certain website contents
 level: medium
 tags:
   - attack.defense_evasion
   - attack.command_and_control
   - attack.t1071.001
+
 ```

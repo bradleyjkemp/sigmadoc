@@ -1,0 +1,74 @@
+---
+title: "Google Full Network Traffic Packet Capture"
+aliases:
+  - "/rule/980a7598-1e7f-4962-9372-2d754c930d0e"
+
+
+tags:
+  - attack.collection
+  - attack.t1074
+
+
+
+status: experimental
+
+
+
+
+
+date: Fri, 13 Aug 2021 17:07:18 -0500
+
+
+---
+
+Identifies potential full network packet capture in gcp. This feature can potentially be abused to read sensitive data from unencrypted internal traffic.
+
+<!--more-->
+
+
+## Known false-positives
+
+* Full Network Packet Capture may be done by a system or network administrator.
+* If known behavior is causing false positives, it can be exempted from the rule.
+
+
+
+## References
+
+* https://cloud.google.com/kubernetes-engine/docs/how-to/audit-logging
+* https://developers.google.com/resources/api-libraries/documentation/compute/v1/java/latest/com/google/api/services/compute/Compute.PacketMirrorings.html
+
+
+## Raw rule ([edit](https://github.com/SigmaHQ/sigma/edit/master/rules/cloud/gcp/gcp_full_network_traffic_packet_capture.yml))
+```yaml
+title: Google Full Network Traffic Packet Capture
+id: 980a7598-1e7f-4962-9372-2d754c930d0e
+description: Identifies potential full network packet capture in gcp. This feature can potentially be abused to read sensitive data from unencrypted internal traffic.
+author: Austin Songer @austinsonger
+status: experimental
+date: 2021/08/13
+references:
+    - https://cloud.google.com/kubernetes-engine/docs/how-to/audit-logging
+    - https://developers.google.com/resources/api-libraries/documentation/compute/v1/java/latest/com/google/api/services/compute/Compute.PacketMirrorings.html
+logsource:
+  product: gcp
+  service: gcp.audit
+detection:
+    selection:
+        gcp.audit.method_name: 
+            - v*.Compute.PacketMirrorings.Get
+            - v*.Compute.PacketMirrorings.Delete
+            - v*.Compute.PacketMirrorings.Insert
+            - v*.Compute.PacketMirrorings.Patch
+            - v*.Compute.PacketMirrorings.List
+            - v*.Compute.PacketMirrorings.aggregatedList
+    condition: selection
+level: medium
+tags:
+    - attack.collection
+    - attack.t1074
+falsepositives:
+  - Full Network Packet Capture may be done by a system or network administrator. 
+  - If known behavior is causing false positives, it can be exempted from the rule.
+
+```

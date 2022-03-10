@@ -1,0 +1,74 @@
+---
+title: "Possible App Whitelisting Bypass via WinDbg/CDB as a Shellcode Runner"
+aliases:
+  - "/rule/b5c7395f-e501-4a08-94d4-57fe7a9da9d2"
+
+
+tags:
+  - attack.execution
+  - attack.t1106
+  - attack.defense_evasion
+  - attack.t1218
+  - attack.t1127
+
+
+
+status: test
+
+
+
+
+
+date: Sat, 26 Oct 2019 19:49:45 +0200
+
+
+---
+
+Launch 64-bit shellcode from a debugger script file using cdb.exe.
+
+<!--more-->
+
+
+## Known false-positives
+
+* Legitimate use of debugging tools
+
+
+
+## References
+
+* https://github.com/LOLBAS-Project/LOLBAS/blob/master/yml/OtherMSBinaries/Cdb.yml
+* http://www.exploit-monday.com/2016/08/windbg-cdb-shellcode-runner.html
+
+
+## Raw rule ([edit](https://github.com/SigmaHQ/sigma/edit/master/rules/windows/process_creation/proc_creation_win_susp_cdb.yml))
+```yaml
+title: Possible App Whitelisting Bypass via WinDbg/CDB as a Shellcode Runner
+id: b5c7395f-e501-4a08-94d4-57fe7a9da9d2
+status: test
+description: Launch 64-bit shellcode from a debugger script file using cdb.exe.
+author: Beyu Denis, oscd.community
+references:
+  - https://github.com/LOLBAS-Project/LOLBAS/blob/master/yml/OtherMSBinaries/Cdb.yml
+  - http://www.exploit-monday.com/2016/08/windbg-cdb-shellcode-runner.html
+date: 2019/10/26
+modified: 2021/11/27
+logsource:
+  category: process_creation
+  product: windows
+detection:
+  selection:
+    Image|endswith: '\cdb.exe'
+    CommandLine|contains: '-cf'
+  condition: selection
+falsepositives:
+  - Legitimate use of debugging tools
+level: medium
+tags:
+  - attack.execution
+  - attack.t1106
+  - attack.defense_evasion
+  - attack.t1218
+  - attack.t1127
+
+```

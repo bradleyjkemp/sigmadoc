@@ -3,6 +3,7 @@ title: "Mimikatz Detection LSASS Access"
 aliases:
   - "/rule/0d894093-71bc-43c3-8c4d-ecfc28dcf5d9"
 
+
 tags:
   - attack.t1003
   - attack.s0002
@@ -11,11 +12,9 @@ tags:
 
 
 
-status: experimental
+status: deprecated
 
 
-
-level: high
 
 
 
@@ -38,11 +37,11 @@ Detects process access to LSASS which is typical for Mimikatz (0x1000 PROCESS_QU
 * https://cyberwardog.blogspot.com/2017/03/chronicles-of-threat-hunter-hunting-for_22.html
 
 
-## Raw rule
+## Raw rule ([edit](https://github.com/SigmaHQ/sigma/edit/master/rules/windows/deprecated/sysmon_mimikatz_detection_lsass.yml))
 ```yaml
 title: Mimikatz Detection LSASS Access
 id: 0d894093-71bc-43c3-8c4d-ecfc28dcf5d9
-status: experimental
+status: deprecated
 description: Detects process access to LSASS which is typical for Mimikatz (0x1000 PROCESS_QUERY_ LIMITED_INFORMATION, 0x0400 PROCESS_QUERY_ INFORMATION "only old
     versions", 0x0010 PROCESS_VM_READ)
 references:
@@ -55,17 +54,23 @@ tags:
     - car.2019-04-004
 author: Sherif Eldeeb
 date: 2017/10/18
+modified: 2022/01/28
 logsource:
     product: windows
-    service: sysmon
+    category: process_access
 detection:
     selection:
-        EventID: 10
-        TargetImage: 'C:\windows\system32\lsass.exe'
+        TargetImage|endswith: '\lsass.exe'
         GrantedAccess:
             - '0x1410'
             - '0x1010'
-    condition: selection
+            - '0x410'
+    filter:
+        SourceImage|startswith: 
+            - 'C:\Program Files\WindowsApps\'
+            - 'C:\Windows\System32\'
+        SourceImage|endswith: '\GamingServices.exe'
+    condition: selection and not filter
 fields:
     - ComputerName
     - User

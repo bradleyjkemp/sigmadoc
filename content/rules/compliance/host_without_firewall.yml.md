@@ -3,26 +3,12 @@ title: "Host Without Firewall"
 aliases:
   - "/rule/6b2066c8-3dc7-4db7-9db0-6cc1d7b0dde9"
 
-tags:
-  - CSC9
-  - CSC9.4
-  - NIST CSF 1.1 PR.AC-5
-  - NIST CSF 1.1 PR.AC-6
-  - NIST CSF 1.1 PR.AC-7
-  - NIST CSF 1.1 DE.AE-1
-  - ISO 27002-2013 A.9.1.2
-  - ISO 27002-2013 A.13.2.1
-  - ISO 27002-2013 A.13.2.2
-  - ISO 27002-2013 A.14.1.2
-  - PCI DSS 3.2 1.4
 
 
 
 status: stable
 
 
-
-level: low
 
 
 
@@ -45,7 +31,7 @@ Host Without Firewall. Alert means not complied. Sigma for Qualys vulnerability 
 * https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.04162018.pdf
 
 
-## Raw rule
+## Raw rule ([edit](https://github.com/SigmaHQ/sigma/edit/master/rules/compliance/host_without_firewall.yml))
 ```yaml
 title: Host Without Firewall
 id: 6b2066c8-3dc7-4db7-9db0-6cc1d7b0dde9
@@ -53,29 +39,30 @@ status: stable
 description: Host Without Firewall. Alert means not complied. Sigma for Qualys vulnerability scanner. Scan type - Vulnerability Management.
 author: Alexandr Yampolskyi, SOC Prime
 date: 2019/03/19
+modified: 2021/05/30
 references:
     - https://www.cisecurity.org/controls/cis-controls-list/
     - https://www.pcisecuritystandards.org/documents/PCI_DSS_v3-2-1.pdf
     - https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.04162018.pdf
 logsource:
-    product: Qualys
+    product: qualys
 detection:
     selection:
         event.category: Security Policy
         host.scan.vuln_name: Firewall Product Not Detected*
     condition: selection
 level: low
-tags:
-    - CSC9
-    - CSC9.4
-    - NIST CSF 1.1 PR.AC-5
-    - NIST CSF 1.1 PR.AC-6
-    - NIST CSF 1.1 PR.AC-7
-    - NIST CSF 1.1 DE.AE-1
-    - ISO 27002-2013 A.9.1.2
-    - ISO 27002-2013 A.13.2.1
-    - ISO 27002-2013 A.13.2.2
-    - ISO 27002-2013 A.14.1.2
-    - PCI DSS 3.2 1.4
+# tags:
+    # - CSC9
+    # - CSC9.4
+    # - NIST CSF 1.1 PR.AC-5
+    # - NIST CSF 1.1 PR.AC-6
+    # - NIST CSF 1.1 PR.AC-7
+    # - NIST CSF 1.1 DE.AE-1
+    # - ISO 27002-2013 A.9.1.2
+    # - ISO 27002-2013 A.13.2.1
+    # - ISO 27002-2013 A.13.2.2
+    # - ISO 27002-2013 A.14.1.2
+    # - PCI DSS 3.2 1.4
 
 ```

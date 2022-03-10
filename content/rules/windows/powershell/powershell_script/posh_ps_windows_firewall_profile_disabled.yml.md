@@ -1,0 +1,75 @@
+---
+title: "Windows Firewall Profile Disabled"
+aliases:
+  - "/rule/488b44e7-3781-4a71-888d-c95abfacf44d"
+
+
+tags:
+  - attack.defense_evasion
+  - attack.t1562.004
+
+
+
+status: experimental
+
+
+
+
+
+date: Tue, 12 Oct 2021 11:56:37 -0500
+
+
+---
+
+Detects when a user disables the Windows Firewall via a Profile to help evade defense.
+
+<!--more-->
+
+
+## Known false-positives
+
+* Unknown
+
+
+
+## References
+
+* https://docs.microsoft.com/en-us/powershell/module/netsecurity/set-netfirewallprofile?view=windowsserver2019-ps
+* https://www.tutorialspoint.com/how-to-get-windows-firewall-profile-settings-using-powershell
+* http://powershellhelp.space/commands/set-netfirewallrule-psv5.php
+* http://woshub.com/manage-windows-firewall-powershell/
+
+
+## Raw rule ([edit](https://github.com/SigmaHQ/sigma/edit/master/rules/windows/powershell/powershell_script/posh_ps_windows_firewall_profile_disabled.yml))
+```yaml
+title: Windows Firewall Profile Disabled
+id: 488b44e7-3781-4a71-888d-c95abfacf44d
+description: Detects when a user disables the Windows Firewall via a Profile to help evade defense.
+status: experimental
+author: Austin Songer @austinsonger
+date: 2021/10/12
+modified: 2021/10/16
+references:
+    - https://docs.microsoft.com/en-us/powershell/module/netsecurity/set-netfirewallprofile?view=windowsserver2019-ps
+    - https://www.tutorialspoint.com/how-to-get-windows-firewall-profile-settings-using-powershell
+    - http://powershellhelp.space/commands/set-netfirewallrule-psv5.php
+    - http://woshub.com/manage-windows-firewall-powershell/
+logsource:
+      product: windows
+      category: ps_script
+detection: 
+    selection:
+        ScriptBlockText|contains|all:
+            - Set-NetFirewallProfile
+            - -Profile
+            - -Enabled
+            - 'False'
+    condition: selection
+tags:
+    - attack.defense_evasion
+    - attack.t1562.004
+level: high
+falsepositives:
+    - Unknown
+
+```

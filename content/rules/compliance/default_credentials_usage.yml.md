@@ -3,40 +3,12 @@ title: "Default Credentials Usage"
 aliases:
   - "/rule/1a395cbc-a84a-463a-9086-ed8a70e573c7"
 
-tags:
-  - CSC4
-  - CSC4.2
-  - NIST CSF 1.1 PR.AC-4
-  - NIST CSF 1.1 PR.AT-2
-  - NIST CSF 1.1 PR.MA-2
-  - NIST CSF 1.1 PR.PT-3
-  - ISO 27002-2013 A.9.1.1
-  - ISO 27002-2013 A.9.2.2
-  - ISO 27002-2013 A.9.2.3
-  - ISO 27002-2013 A.9.2.4
-  - ISO 27002-2013 A.9.2.5
-  - ISO 27002-2013 A.9.2.6
-  - ISO 27002-2013 A.9.3.1
-  - ISO 27002-2013 A.9.4.1
-  - ISO 27002-2013 A.9.4.2
-  - ISO 27002-2013 A.9.4.3
-  - ISO 27002-2013 A.9.4.4
-  - PCI DSS 3.2 2.1
-  - PCI DSS 3.2 7.1
-  - PCI DSS 3.2 7.2
-  - PCI DSS 3.2 7.3
-  - PCI DSS 3.2 8.1
-  - PCI DSS 3.2 8.2
-  - PCI DSS 3.2 8.3
-  - PCI DSS 3.2 8.7
 
 
 
 status: stable
 
 
-
-level: medium
 
 
 
@@ -64,7 +36,7 @@ Before deploying any new asset, change all default passwords to have values cons
 * https://community.qualys.com/docs/DOC-6406-reporting-toolbox-focused-search-lists
 
 
-## Raw rule
+## Raw rule ([edit](https://github.com/SigmaHQ/sigma/edit/master/rules/compliance/default_credentials_usage.yml))
 ```yaml
 title: Default Credentials Usage
 id: 1a395cbc-a84a-463a-9086-ed8a70e573c7
@@ -149,31 +121,31 @@ detection:
 falsepositives:
     - unknown
 level: medium
-tags:
-    - CSC4
-    - CSC4.2
-    - NIST CSF 1.1 PR.AC-4
-    - NIST CSF 1.1 PR.AT-2
-    - NIST CSF 1.1 PR.MA-2
-    - NIST CSF 1.1 PR.PT-3
-    - ISO 27002-2013 A.9.1.1
-    - ISO 27002-2013 A.9.2.2
-    - ISO 27002-2013 A.9.2.3
-    - ISO 27002-2013 A.9.2.4
-    - ISO 27002-2013 A.9.2.5
-    - ISO 27002-2013 A.9.2.6
-    - ISO 27002-2013 A.9.3.1
-    - ISO 27002-2013 A.9.4.1
-    - ISO 27002-2013 A.9.4.2
-    - ISO 27002-2013 A.9.4.3
-    - ISO 27002-2013 A.9.4.4
-    - PCI DSS 3.2 2.1
-    - PCI DSS 3.2 7.1
-    - PCI DSS 3.2 7.2
-    - PCI DSS 3.2 7.3
-    - PCI DSS 3.2 8.1
-    - PCI DSS 3.2 8.2
-    - PCI DSS 3.2 8.3
-    - PCI DSS 3.2 8.7
+# tags:
+    # - CSC4
+    # - CSC4.2
+    # - NIST CSF 1.1 PR.AC-4
+    # - NIST CSF 1.1 PR.AT-2
+    # - NIST CSF 1.1 PR.MA-2
+    # - NIST CSF 1.1 PR.PT-3
+    # - ISO 27002-2013 A.9.1.1
+    # - ISO 27002-2013 A.9.2.2
+    # - ISO 27002-2013 A.9.2.3
+    # - ISO 27002-2013 A.9.2.4
+    # - ISO 27002-2013 A.9.2.5
+    # - ISO 27002-2013 A.9.2.6
+    # - ISO 27002-2013 A.9.3.1
+    # - ISO 27002-2013 A.9.4.1
+    # - ISO 27002-2013 A.9.4.2
+    # - ISO 27002-2013 A.9.4.3
+    # - ISO 27002-2013 A.9.4.4
+    # - PCI DSS 3.2 2.1
+    # - PCI DSS 3.2 7.1
+    # - PCI DSS 3.2 7.2
+    # - PCI DSS 3.2 7.3
+    # - PCI DSS 3.2 8.1
+    # - PCI DSS 3.2 8.2
+    # - PCI DSS 3.2 8.3
+    # - PCI DSS 3.2 8.7
 
 ```

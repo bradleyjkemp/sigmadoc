@@ -3,18 +3,16 @@ title: "Logging Configuration Changes on Linux Host"
 aliases:
   - "/rule/c830f15d-6f6e-430f-8074-6f73d6807841"
 
+
 tags:
   - attack.defense_evasion
-  - attack.t1054
   - attack.t1562.006
 
 
 
-status: experimental
+status: test
 
 
-
-level: high
 
 
 
@@ -39,40 +37,37 @@ Detect changes of syslog daemons configuration files
 * self experience
 
 
-## Raw rule
+## Raw rule ([edit](https://github.com/SigmaHQ/sigma/edit/master/rules/linux/auditd/lnx_auditd_logging_config_change.yml))
 ```yaml
 title: Logging Configuration Changes on Linux Host
 id: c830f15d-6f6e-430f-8074-6f73d6807841
-status: experimental
+status: test
 description: Detect changes of syslog daemons configuration files
-    # Example config for this one (place it at the top of audit.rules)
-    # -w /etc/syslog.conf -p wa -k etc_modify_syslogconfig
-    # -w /etc/rsyslog.conf -p wa -k etc_modify_rsyslogconfig
-    # -w /etc/syslog-ng/syslog-ng.conf -p wa -k etc_modify_syslogngconfig
 author: Mikhail Larin, oscd.community
-date: 2019/10/25
 references:
-    - self experience
+  - self experience
+date: 2019/10/25
+modified: 2021/11/27
 logsource:
-    product: linux
-    service: auditd
+  product: linux
+  service: auditd
 detection:
-    selection:
-        type: 'PATH'
-        name:
-            - /etc/syslog.conf
-            - /etc/rsyslog.conf
-            - /etc/syslog-ng/syslog-ng.conf
-    condition: selection
+  selection:
+    type: 'PATH'
+    name:
+      - /etc/syslog.conf
+      - /etc/rsyslog.conf
+      - /etc/syslog-ng/syslog-ng.conf
+  condition: selection
 fields:
-    - exe
-    - comm
-    - key
+  - exe
+  - comm
+  - key
 falsepositives:
-    - Legitimate administrative activity
+  - Legitimate administrative activity
 level: high
 tags:
-    - attack.defense_evasion
-    - attack.t1054    # an old one
-    - attack.t1562.006
+  - attack.defense_evasion
+  - attack.t1562.006
+
 ```

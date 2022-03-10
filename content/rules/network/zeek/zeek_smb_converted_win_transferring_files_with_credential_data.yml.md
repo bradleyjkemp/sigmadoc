@@ -3,20 +3,18 @@ title: "Transferring Files with Credential Data via Network Shares - Zeek"
 aliases:
   - "/rule/2e69f167-47b5-4ae7-a390-47764529eff5"
 
+
 tags:
   - attack.credential_access
-  - attack.t1003
   - attack.t1003.002
   - attack.t1003.001
   - attack.t1003.003
 
 
 
-status: experimental
+status: test
 
 
-
-level: medium
 
 
 
@@ -41,39 +39,39 @@ Transferring files with well-known filenames (sensitive files with credential da
 * https://github.com/neo23x0/sigma/blob/373424f14574facf9e261d5c822345a282b91479/rules/windows/builtin/win_transferring_files_with_credential_data_via_network_shares.yml
 
 
-## Raw rule
+## Raw rule ([edit](https://github.com/SigmaHQ/sigma/edit/master/rules/network/zeek/zeek_smb_converted_win_transferring_files_with_credential_data.yml))
 ```yaml
 title: Transferring Files with Credential Data via Network Shares - Zeek
 id: 2e69f167-47b5-4ae7-a390-47764529eff5
+status: test
 description: Transferring files with well-known filenames (sensitive files with credential data) using network shares
 author: '@neu5ron, Teymur Kheirkhabarov, oscd.community'
-date: 2020/04/02
 references:
-    - https://github.com/neo23x0/sigma/blob/373424f14574facf9e261d5c822345a282b91479/rules/windows/builtin/win_transferring_files_with_credential_data_via_network_shares.yml
-tags:
-    - attack.credential_access
-    - attack.t1003 # an old one
-    - attack.t1003.002
-    - attack.t1003.001
-    - attack.t1003.003
+  - https://github.com/neo23x0/sigma/blob/373424f14574facf9e261d5c822345a282b91479/rules/windows/builtin/win_transferring_files_with_credential_data_via_network_shares.yml
+date: 2020/04/02
+modified: 2021/11/27
 logsource:
-    product: zeek
-    service: smb_files
+  product: zeek
+  service: smb_files
 detection:
-    selection:
-        name:
-            - '\mimidrv'
-            - '\lsass'
-            - '\windows\minidump\'
-            - '\hiberfil'
-            - '\sqldmpr'
-            - '\sam'
-            - '\ntds.dit'
-            - '\security'
-    condition: selection
+  selection:
+    name:
+      - '\mimidrv'
+      - '\lsass'
+      - '\windows\minidump\'
+      - '\hiberfil'
+      - '\sqldmpr'
+      - '\sam'
+      - '\ntds.dit'
+      - '\security'
+  condition: selection
 falsepositives:
-    - Transferring sensitive files for legitimate administration work by legitimate administrator
+  - Transferring sensitive files for legitimate administration work by legitimate administrator
 level: medium
-status: experimental
+tags:
+  - attack.credential_access
+  - attack.t1003.002
+  - attack.t1003.001
+  - attack.t1003.003
 
 ```

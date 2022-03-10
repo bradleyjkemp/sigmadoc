@@ -1,7 +1,8 @@
 ---
 title: "Wannacry Killswitch Domain"
 aliases:
-  - "/rule/c64c5175-5189-431b-a55e-6d9882158251"
+  - "/rule/3eaf6218-3bed-4d8a-8707-274096f12a18"
+
 
 tags:
   - attack.command_and_control
@@ -9,11 +10,9 @@ tags:
 
 
 
-status: experimental
+status: test
 
 
-
-level: high
 
 
 
@@ -38,32 +37,34 @@ Detects wannacry killswitch domain dns queries
 * https://www.fireeye.com/blog/products-and-services/2017/05/wannacry-ransomware-campaign.html
 
 
-## Raw rule
+## Raw rule ([edit](https://github.com/SigmaHQ/sigma/edit/master/rules/network/net_wannacry_killswitch_domain.yml))
 ```yaml
 title: Wannacry Killswitch Domain
-id: c64c5175-5189-431b-a55e-6d9882158251
-status: experimental
+id: 3eaf6218-3bed-4d8a-8707-274096f12a18
+status: test
 description: Detects wannacry killswitch domain dns queries
-references:
-    - https://www.fireeye.com/blog/products-and-services/2017/05/wannacry-ransomware-campaign.html
 author: Mike Wade
+references:
+  - https://www.fireeye.com/blog/products-and-services/2017/05/wannacry-ransomware-campaign.html
 date: 2020/09/16
-tags:
-    - attack.command_and_control
-    - attack.t1071.001
+modified: 2021/11/27
 logsource:
-    category: dns
+  category: dns
 detection:
-    selection:
-        query:
-            - 'ifferfsodp9ifjaposdfjhgosurijfaewrwergwea.testing'
-            - 'ifferfsodp9ifjaposdfjhgosurijfaewrwergwea.test'
-            - 'ifferfsodp9ifjaposdfjhgosurijfaewrwergwea.com'
-            - 'ayylmaotjhsstasdfasdfasdfasdfasdfasdfasdf.com'
-            - 'iuqssfsodp9ifjaposdfjhgosurijfaewrwergwea.com'
-            - ''
-    condition: selection
+  selection:
+    query:
+      - 'ifferfsodp9ifjaposdfjhgosurijfaewrwergwea.testing'
+      - 'ifferfsodp9ifjaposdfjhgosurijfaewrwergwea.test'
+      - 'ifferfsodp9ifjaposdfjhgosurijfaewrwergwea.com'
+      - 'ayylmaotjhsstasdfasdfasdfasdfasdfasdfasdf.com'
+      - 'iuqssfsodp9ifjaposdfjhgosurijfaewrwergwea.com'
+      - ''
+  condition: selection
 falsepositives:
-    - Analyst testing 
+  - Analyst testing
 level: high
+tags:
+  - attack.command_and_control
+  - attack.t1071.001
+
 ```

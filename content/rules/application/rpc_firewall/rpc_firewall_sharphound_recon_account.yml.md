@@ -1,0 +1,75 @@
+---
+title: "SharpHound Recon Account Discovery"
+aliases:
+  - "/rule/65f77b1e-8e79-45bf-bb67-5988a8ce45a5"
+
+
+tags:
+  - attack.t1087
+
+
+
+status: experimental
+
+
+
+
+
+date: Mon, 10 Jan 2022 18:04:43 +0200
+
+
+---
+
+Detects remote RPC calls useb by SharpHound to map remote connections and local group membership.
+
+<!--more-->
+
+
+## Known false-positives
+
+* Unknown
+
+
+
+## References
+
+* https://attack.mitre.org/techniques/T1087/
+* https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-wkst/55118c55-2122-4ef9-8664-0c1ff9e168f3
+* https://github.com/jsecurity101/MSRPC-to-ATTACK/blob/main/documents/MS-WKST.md
+* https://github.com/zeronetworks/rpcfirewall
+* https://zeronetworks.com/blog/stopping_lateral_movement_via_the_rpc_firewall/
+
+
+## Raw rule ([edit](https://github.com/SigmaHQ/sigma/edit/master/rules/application/rpc_firewall/rpc_firewall_sharphound_recon_account.yml))
+```yaml
+title: SharpHound Recon Account Discovery
+id: 65f77b1e-8e79-45bf-bb67-5988a8ce45a5
+description: Detects remote RPC calls useb by SharpHound to map remote connections and local group membership.
+references:
+    - https://attack.mitre.org/techniques/T1087/
+    - https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-wkst/55118c55-2122-4ef9-8664-0c1ff9e168f3
+    - https://github.com/jsecurity101/MSRPC-to-ATTACK/blob/main/documents/MS-WKST.md
+    - https://github.com/zeronetworks/rpcfirewall
+    - https://zeronetworks.com/blog/stopping_lateral_movement_via_the_rpc_firewall/
+tags:
+    - attack.t1087
+status: experimental
+author: Sagie Dulce, Dekel Paz
+date: 2022/01/01
+modified: 2022/01/01
+logsource:
+    product: rpc_firewall
+    category: application
+    definition: 'Requirements: install and apply the RPC Firewall to all processes with "audit:true action:block uuid:6bffd098-a112-3610-9833-46c3f87e345a opnum:2'
+detection:
+    selection:
+        EventLog: RPCFW
+        EventID: 3
+        InterfaceUuid: 6bffd098-a112-3610-9833-46c3f87e345a
+        OpNum: 2
+    condition: selection
+falsepositives:
+    - Unknown
+level: high
+
+```

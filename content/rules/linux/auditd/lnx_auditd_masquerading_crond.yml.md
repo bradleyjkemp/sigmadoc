@@ -3,17 +3,16 @@ title: "Masquerading as Linux Crond Process"
 aliases:
   - "/rule/9d4548fa-bba0-4e88-bd66-5d5bf516cda0"
 
+
 tags:
   - attack.defense_evasion
   - attack.t1036.003
 
 
 
-status: experimental
+status: test
 
 
-
-level: medium
 
 
 
@@ -31,33 +30,34 @@ Masquerading occurs when the name or location of an executable, legitimate or ma
 
 ## References
 
-* https://github.com/redcanaryco/atomic-red-team/blob/master/atomics/T1036.003/T1036.003.yaml
+* https://github.com/redcanaryco/atomic-red-team/blob/master/atomics/T1036.003/T1036.003.md
 
 
-## Raw rule
+## Raw rule ([edit](https://github.com/SigmaHQ/sigma/edit/master/rules/linux/auditd/lnx_auditd_masquerading_crond.yml))
 ```yaml
 title: Masquerading as Linux Crond Process
 id: 9d4548fa-bba0-4e88-bd66-5d5bf516cda0
-status: experimental
-description: Masquerading occurs when the name or location of an executable, legitimate or malicious, is manipulated or abused for the sake of evading defenses and
-    observation. Several different variations of this technique have been observed.
+status: test
+description: Masquerading occurs when the name or location of an executable, legitimate or malicious, is manipulated or abused for the sake of evading defenses and observation. Several different variations of this technique have been observed.
 author: Timur Zinniatullin, oscd.community
-date: 2019/10/21
 references:
-    - https://github.com/redcanaryco/atomic-red-team/blob/master/atomics/T1036.003/T1036.003.yaml
+  - https://github.com/redcanaryco/atomic-red-team/blob/master/atomics/T1036.003/T1036.003.md
+date: 2019/10/21
+modified: 2021/11/27
 logsource:
-    product: linux
-    service: auditd
+  product: linux
+  service: auditd
 detection:
-    selection:
-        type: 'execve'
-        a0: 'cp'
-        a1: '-i'
-        a2: '/bin/sh'
-        a3: '*/crond'
-    condition: selection
+  selection:
+    type: 'execve'
+    a0: 'cp'
+    a1: '-i'
+    a2: '/bin/sh'
+    a3|endswith: '/crond'
+  condition: selection
 level: medium
 tags:
-    - attack.defense_evasion
-    - attack.t1036.003
+  - attack.defense_evasion
+  - attack.t1036.003
+
 ```
