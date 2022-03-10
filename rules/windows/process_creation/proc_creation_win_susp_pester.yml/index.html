@@ -1,0 +1,50 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><title>Sigma Rule Browser</title><meta name=viewport content="width=device-width"><link rel=icon type=image/png sizes=32x32 href=../images/favicon.png><link rel=stylesheet href=https://unpkg.com/bulma@0.9.2/css/bulma.min.css><script src=https://kit.fontawesome.com/7dc3015a44.js crossorigin=anonymous></script></head><body><nav class=navbar role=navigation aria-label="main navigation"><div class=navbar-brand><a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc/>Sigma Docs</a>
+<a role=button class=navbar-burger aria-label=menu aria-expanded=false data-target=navbarBasicExample><span aria-hidden=true></span><span aria-hidden=true></span><span aria-hidden=true></span></a></div><div id=navbarBasicExample class=navbar-menu><div class=navbar-start><a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc/>Home</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//rules/>Rules</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//configs/>Configs</a><div class="navbar-item has-dropdown is-hoverable"><a class=navbar-link>Explore rules by...</a><div class=navbar-dropdown><a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//tags/>Tag</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//status/>Status</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//level/>Level</a></div></div></div><div class=navbar-end><div class=navbar-item id=search class=bd-search><form action=https://bradleyjkemp.dev/sigmadoc//search><p class="control has-icons-left"><input class="input is-rounded" type=text name=query placeholder=Search>
+<span class="icon is-left"><i class="fas fa-search" aria-hidden=true></i></span></p></form></div></div></div></nav><section class=section><div class=container><div class=columns><div class="column is-9"><nav class=breadcrumb aria-label=breadcrumbs><ul><li><a href=https://bradleyjkemp.dev/sigmadoc/>home</a></li><li><a href=https://bradleyjkemp.dev/sigmadoc/rules/>rules</a></li><li><a href=https://bradleyjkemp.dev/sigmadoc/rules/windows/>windows</a></li><li><a href=https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/>process_creation</a></li><li><a href=https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_pester.yml/>proc_creation_win_susp_pester.yml</a></li></ul></nav><div class="content is-medium"><h3 class="title is-1">Execute Code with Pester.bat</h3><div class=box><div class="field is-grouped is-justify-content-center"><div class=control><div class="tags has-addons"><span class="tag is-medium is-dark">level</span>
+<span class="tag is-medium is-light"></span></div></div><div class=control><div class="tags has-addons"><span class="tag is-medium is-dark">status</span>
+<span class="tag is-medium is-light is-light">test</span></div></div></div><p>Detects code execution via Pester.bat (Pester - Powershell Modulte for testing)</p><h2 id=known-false-positives>Known false-positives</h2><ul><li>Legitimate use of Pester for writing tests for Powershell scripts and modules</li></ul><h2 id=references>References</h2><ul><li><a href=https://twitter.com/Oddvarmoe/status/993383596244258816>https://twitter.com/Oddvarmoe/status/993383596244258816</a></li></ul><h2 id=raw-rule-edithttpsgithubcomsigmahqsigmaeditmasterruleswindowsprocess_creationproc_creation_win_susp_pesteryml>Raw rule (<a href=https://github.com/SigmaHQ/sigma/edit/master/rules/windows/process_creation/proc_creation_win_susp_pester.yml>edit</a>)</h2><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=color:#f92672>title</span>: <span style=color:#ae81ff>Execute Code with Pester.bat</span>
+<span style=color:#f92672>id</span>: <span style=color:#ae81ff>59e938ff-0d6d-4dc3-b13f-36cc28734d4e</span>
+<span style=color:#f92672>status</span>: <span style=color:#ae81ff>test</span>
+<span style=color:#f92672>description</span>: <span style=color:#ae81ff>Detects code execution via Pester.bat (Pester - Powershell Modulte for testing)</span>
+<span style=color:#f92672>author</span>: <span style=color:#ae81ff>Julia Fomina, oscd.community</span>
+<span style=color:#f92672>references</span>:
+  - <span style=color:#ae81ff>https://twitter.com/Oddvarmoe/status/993383596244258816</span>
+<span style=color:#f92672>date</span>: <span style=color:#ae81ff>2020</span><span style=color:#ae81ff>/10/08</span>
+<span style=color:#f92672>modified</span>: <span style=color:#ae81ff>2021</span><span style=color:#ae81ff>/11/27</span>
+<span style=color:#f92672>logsource</span>:
+  <span style=color:#f92672>category</span>: <span style=color:#ae81ff>process_creation</span>
+  <span style=color:#f92672>product</span>: <span style=color:#ae81ff>windows</span>
+<span style=color:#f92672>detection</span>:
+  <span style=color:#f92672>powershell_module</span>:
+    <span style=color:#f92672>Image|endswith</span>: <span style=color:#e6db74>&#39;\powershell.exe&#39;</span>
+    <span style=color:#f92672>CommandLine|contains|all</span>:
+      - <span style=color:#e6db74>&#39;Pester&#39;</span>
+      - <span style=color:#e6db74>&#39;Get-Help&#39;</span>
+  <span style=color:#f92672>cmd_execution</span>:
+    <span style=color:#f92672>Image|endswith</span>: <span style=color:#e6db74>&#39;\cmd.exe&#39;</span>
+    <span style=color:#f92672>CommandLine|contains|all</span>:
+      - <span style=color:#e6db74>&#39;pester&#39;</span>
+      - <span style=color:#e6db74>&#39;;&#39;</span>
+  <span style=color:#f92672>get_help</span>:
+    <span style=color:#f92672>CommandLine|contains</span>:
+      - <span style=color:#e6db74>&#39;help&#39;</span>
+      - <span style=color:#e6db74>&#39;?&#39;</span>
+  <span style=color:#f92672>condition</span>: <span style=color:#ae81ff>powershell_module or (cmd_execution and get_help)</span>
+<span style=color:#f92672>falsepositives</span>:
+  - <span style=color:#ae81ff>Legitimate use of Pester for writing tests for Powershell scripts and modules</span>
+<span style=color:#f92672>level</span>: <span style=color:#ae81ff>medium</span>
+<span style=color:#f92672>tags</span>:
+  - <span style=color:#ae81ff>attack.execution</span>
+  - <span style=color:#ae81ff>attack.t1059.001</span>
+  - <span style=color:#ae81ff>attack.defense_evasion</span>
+  - <span style=color:#ae81ff>attack.t1216</span>
+
+</code></pre></div></div></div></div><div class="column is-3"><aside class="menu is-medium"><p class=menu-label>Rule Tags</p><div class=tags><a href=https://bradleyjkemp.dev/sigmadoc//tags/attack.execution class="tag is-medium">attack.execution</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc//tags/attack.t1059.001 class="tag is-medium">attack.t1059.001</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc//tags/attack.defense_evasion class="tag is-medium">attack.defense_evasion</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc//tags/attack.t1216 class="tag is-medium">attack.t1216</a></a></div><ul class=menu-list></ul><p class=menu-label>Similar rules</p><ul class=menu-list><li><a href=/sigmadoc/rules/windows/builtin/security/win_apt_wocao.yml/>Operation Wocao Activity</a></li><li><a href=/sigmadoc/rules/windows/process_creation/proc_creation_win_malware_emotet.yml/>Emotet Process Creation</a></li><li><a href=/sigmadoc/rules/windows/process_creation/proc_creation_win_apt_babyshark.yml/>Baby Shark Activity</a></li><li><a href=/sigmadoc/rules/windows/process_creation/proc_creation_win_shell_spawn_susp_program.yml/>Windows Shell Spawning Suspicious Program</a></li><li><a href=/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_shellcode_b64.yml/>PowerShell ShellCode</a></li></ul></aside></div></div></div></section><footer class=footer><div class="content has-text-centered"><p>Site generated with <a href=https://github.com/bradleyjkemp/sigmadoc><strong>sigmadoc</strong></a>. The website content
+is licensed <a href=https://github.com/SigmaHQ/sigma/blob/master/LICENSE.Detection.Rules.md>DRL 1.0</a>.</p></div></footer></body></html>

@@ -1,0 +1,41 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><title>Sigma Rule Browser</title><meta name=viewport content="width=device-width"><link rel=icon type=image/png sizes=32x32 href=../images/favicon.png><link rel=stylesheet href=https://unpkg.com/bulma@0.9.2/css/bulma.min.css><script src=https://kit.fontawesome.com/7dc3015a44.js crossorigin=anonymous></script></head><body><nav class=navbar role=navigation aria-label="main navigation"><div class=navbar-brand><a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc/>Sigma Docs</a>
+<a role=button class=navbar-burger aria-label=menu aria-expanded=false data-target=navbarBasicExample><span aria-hidden=true></span><span aria-hidden=true></span><span aria-hidden=true></span></a></div><div id=navbarBasicExample class=navbar-menu><div class=navbar-start><a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc/>Home</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//rules/>Rules</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//configs/>Configs</a><div class="navbar-item has-dropdown is-hoverable"><a class=navbar-link>Explore rules by...</a><div class=navbar-dropdown><a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//tags/>Tag</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//status/>Status</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//level/>Level</a></div></div></div><div class=navbar-end><div class=navbar-item id=search class=bd-search><form action=https://bradleyjkemp.dev/sigmadoc//search><p class="control has-icons-left"><input class="input is-rounded" type=text name=query placeholder=Search>
+<span class="icon is-left"><i class="fas fa-search" aria-hidden=true></i></span></p></form></div></div></div></nav><section class=section><div class=container><div class=columns><div class="column is-9"><nav class=breadcrumb aria-label=breadcrumbs><ul><li><a href=https://bradleyjkemp.dev/sigmadoc/>home</a></li><li><a href=https://bradleyjkemp.dev/sigmadoc/rules/>rules</a></li><li><a href=https://bradleyjkemp.dev/sigmadoc/rules/windows/>windows</a></li><li><a href=https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/>registry_event</a></li><li><a href=https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_apt_pandemic.yml/>registry_event_apt_pandemic.yml</a></li></ul></nav><div class="content is-medium"><h3 class="title is-1">Pandemic Registry Key</h3><div class=box><div class="field is-grouped is-justify-content-center"><div class=control><div class="tags has-addons"><span class="tag is-medium is-dark">level</span>
+<span class="tag is-medium is-light"></span></div></div><div class=control><div class="tags has-addons"><span class="tag is-medium is-dark">status</span>
+<span class="tag is-medium is-danger is-light">experimental</span></div></div></div><p>Detects Pandemic Windows Implant</p><h2 id=known-false-positives>Known false-positives</h2><ul><li>unknown</li></ul><h2 id=references>References</h2><ul><li><a href=https://wikileaks.org/vault7/#Pandemic>https://wikileaks.org/vault7/#Pandemic</a></li><li><a href=https://twitter.com/MalwareJake/status/870349480356454401>https://twitter.com/MalwareJake/status/870349480356454401</a></li></ul><h2 id=raw-rule-edithttpsgithubcomsigmahqsigmaeditmasterruleswindowsregistry_eventregistry_event_apt_pandemicyml>Raw rule (<a href=https://github.com/SigmaHQ/sigma/edit/master/rules/windows/registry_event/registry_event_apt_pandemic.yml>edit</a>)</h2><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=color:#f92672>title</span>: <span style=color:#ae81ff>Pandemic Registry Key</span>
+<span style=color:#f92672>id</span>: <span style=color:#ae81ff>47e0852a-cf81-4494-a8e6-31864f8c86ed</span>
+<span style=color:#f92672>status</span>: <span style=color:#ae81ff>experimental</span>
+<span style=color:#f92672>description</span>: <span style=color:#ae81ff>Detects Pandemic Windows Implant</span>
+<span style=color:#f92672>references</span>:
+    - <span style=color:#ae81ff>https://wikileaks.org/vault7/#Pandemic</span>
+    - <span style=color:#ae81ff>https://twitter.com/MalwareJake/status/870349480356454401</span>
+<span style=color:#f92672>tags</span>:
+    - <span style=color:#ae81ff>attack.lateral_movement</span>
+    - <span style=color:#ae81ff>attack.t1105</span>
+<span style=color:#f92672>author</span>: <span style=color:#ae81ff>Florian Roth</span>
+<span style=color:#f92672>date</span>: <span style=color:#ae81ff>2017</span><span style=color:#ae81ff>/06/01</span>
+<span style=color:#f92672>modified</span>: <span style=color:#ae81ff>2021</span><span style=color:#ae81ff>/09/12</span>
+<span style=color:#f92672>logsource</span>:
+    <span style=color:#f92672>category</span>: <span style=color:#ae81ff>registry_event</span>
+    <span style=color:#f92672>product</span>: <span style=color:#ae81ff>windows</span>
+<span style=color:#f92672>detection</span>:
+    <span style=color:#f92672>selection</span>:        
+        <span style=color:#f92672>TargetObject|contains</span>: <span style=color:#e6db74>&#39;\SYSTEM\CurrentControlSet\services\null\Instance&#39;</span>
+    <span style=color:#f92672>condition</span>: <span style=color:#ae81ff>selection</span>
+<span style=color:#f92672>falsepositives</span>:
+    - <span style=color:#ae81ff>unknown</span>
+<span style=color:#f92672>level</span>: <span style=color:#ae81ff>critical</span>
+<span style=color:#f92672>fields</span>:
+    - <span style=color:#ae81ff>EventID</span>
+    - <span style=color:#ae81ff>CommandLine</span>
+    - <span style=color:#ae81ff>ParentCommandLine</span>
+    - <span style=color:#ae81ff>Image</span>
+    - <span style=color:#ae81ff>User</span>
+    - <span style=color:#ae81ff>TargetObject</span>
+</code></pre></div></div></div></div><div class="column is-3"><aside class="menu is-medium"><p class=menu-label>Rule Tags</p><div class=tags><a href=https://bradleyjkemp.dev/sigmadoc//tags/attack.lateral_movement class="tag is-medium">attack.lateral_movement</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc//tags/attack.t1105 class="tag is-medium">attack.t1105</a></a></div><ul class=menu-list></ul><p class=menu-label>Similar rules</p><ul class=menu-list><li><a href=/sigmadoc/rules/linux/builtin/lnx_file_copy.yml/>Remote File Copy</a></li><li><a href=/sigmadoc/rules/network/cisco/aaa/cisco_cli_moving_data.yml/>Cisco Stage Data</a></li><li><a href=/sigmadoc/rules/windows/network_connection/net_connection_win_binary_github_com.yml/>Microsoft Binary Github Communication</a></li><li><a href=/sigmadoc/rules/windows/network_connection/net_connection_win_binary_susp_com.yml/>Microsoft Binary Suspicious Communication Endpoint</a></li><li><a href=/sigmadoc/rules/windows/network_connection/net_connection_win_imewdbld.yml/>Download a File with IMEWDBLD.exe</a></li></ul></aside></div></div></div></section><footer class=footer><div class="content has-text-centered"><p>Site generated with <a href=https://github.com/bradleyjkemp/sigmadoc><strong>sigmadoc</strong></a>. The website content
+is licensed <a href=https://github.com/SigmaHQ/sigma/blob/master/LICENSE.Detection.Rules.md>DRL 1.0</a>.</p></div></footer></body></html>

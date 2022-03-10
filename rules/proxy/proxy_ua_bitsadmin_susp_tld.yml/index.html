@@ -1,28 +1,28 @@
 <!doctype html><html lang=en><head><meta charset=utf-8><title>Sigma Rule Browser</title><meta name=viewport content="width=device-width"><link rel=icon type=image/png sizes=32x32 href=../images/favicon.png><link rel=stylesheet href=https://unpkg.com/bulma@0.9.2/css/bulma.min.css><script src=https://kit.fontawesome.com/7dc3015a44.js crossorigin=anonymous></script></head><body><nav class=navbar role=navigation aria-label="main navigation"><div class=navbar-brand><a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc/>Sigma Docs</a>
 <a role=button class=navbar-burger aria-label=menu aria-expanded=false data-target=navbarBasicExample><span aria-hidden=true></span><span aria-hidden=true></span><span aria-hidden=true></span></a></div><div id=navbarBasicExample class=navbar-menu><div class=navbar-start><a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc/>Home</a>
-<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//rules/>Rules</a><div class="navbar-item has-dropdown is-hoverable"><a class=navbar-link>Explore rules by...</a><div class=navbar-dropdown><a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//tags/>Tag</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//rules/>Rules</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//configs/>Configs</a><div class="navbar-item has-dropdown is-hoverable"><a class=navbar-link>Explore rules by...</a><div class=navbar-dropdown><a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//tags/>Tag</a>
 <a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//status/>Status</a>
 <a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//level/>Level</a></div></div></div><div class=navbar-end><div class=navbar-item id=search class=bd-search><form action=https://bradleyjkemp.dev/sigmadoc//search><p class="control has-icons-left"><input class="input is-rounded" type=text name=query placeholder=Search>
 <span class="icon is-left"><i class="fas fa-search" aria-hidden=true></i></span></p></form></div></div></div></nav><section class=section><div class=container><div class=columns><div class="column is-9"><nav class=breadcrumb aria-label=breadcrumbs><ul><li><a href=https://bradleyjkemp.dev/sigmadoc/>home</a></li><li><a href=https://bradleyjkemp.dev/sigmadoc/rules/>rules</a></li><li><a href=https://bradleyjkemp.dev/sigmadoc/rules/proxy/>proxy</a></li><li><a href=https://bradleyjkemp.dev/sigmadoc/rules/proxy/proxy_ua_bitsadmin_susp_tld.yml/>proxy_ua_bitsadmin_susp_tld.yml</a></li></ul></nav><div class="content is-medium"><h3 class="title is-1">Bitsadmin to Uncommon TLD</h3><div class=box><div class="field is-grouped is-justify-content-center"><div class=control><div class="tags has-addons"><span class="tag is-medium is-dark">level</span>
-<span class="tag is-medium is-danger">high</span></div></div><div class=control><div class="tags has-addons"><span class="tag is-medium is-dark">status</span>
-<span class="tag is-medium is-danger is-light">experimental</span></div></div></div><p>Detects Bitsadmin connections to domains with uncommon TLDs - <a href=https://twitter.com/jhencinski/status/1102695118455349248>https://twitter.com/jhencinski/status/1102695118455349248</a> - <a href=https://isc.sans.edu/forums/diary/Investigating+Microsoft+BITS+Activity/23281/>https://isc.sans.edu/forums/diary/Investigating+Microsoft+BITS+Activity/23281/</a></p><h2 id=known-false-positives>Known false-positives</h2><ul><li>Rare programs that use Bitsadmin and update from regional TLDs e.g. .uk or .ca</li></ul><h2 id=raw-rule>Raw rule</h2><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=color:#f92672>title</span>: <span style=color:#ae81ff>Bitsadmin to Uncommon TLD</span>
+<span class="tag is-medium is-light"></span></div></div><div class=control><div class="tags has-addons"><span class="tag is-medium is-dark">status</span>
+<span class="tag is-medium is-danger is-light">experimental</span></div></div></div><p>Detects Bitsadmin connections to domains with uncommon TLDs - <a href=https://twitter.com/jhencinski/status/1102695118455349248>https://twitter.com/jhencinski/status/1102695118455349248</a> - <a href=https://isc.sans.edu/forums/diary/Investigating+Microsoft+BITS+Activity/23281/>https://isc.sans.edu/forums/diary/Investigating+Microsoft+BITS+Activity/23281/</a></p><h2 id=known-false-positives>Known false-positives</h2><ul><li>Rare programs that use Bitsadmin and update from regional TLDs e.g. .uk or .ca</li></ul><h2 id=raw-rule-edithttpsgithubcomsigmahqsigmaeditmasterrulesproxyproxy_ua_bitsadmin_susp_tldyml>Raw rule (<a href=https://github.com/SigmaHQ/sigma/edit/master/rules/proxy/proxy_ua_bitsadmin_susp_tld.yml>edit</a>)</h2><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=color:#f92672>title</span>: <span style=color:#ae81ff>Bitsadmin to Uncommon TLD</span>
 <span style=color:#f92672>id</span>: <span style=color:#ae81ff>9eb68894-7476-4cd6-8752-23b51f5883a7</span>
 <span style=color:#f92672>status</span>: <span style=color:#ae81ff>experimental</span>
 <span style=color:#f92672>description</span>: <span style=color:#ae81ff>Detects Bitsadmin connections to domains with uncommon TLDs - https://twitter.com/jhencinski/status/1102695118455349248 - https://isc.sans.edu/forums/diary/Investigating+Microsoft+BITS+Activity/23281/</span>
 <span style=color:#f92672>author</span>: <span style=color:#ae81ff>Florian Roth</span>
 <span style=color:#f92672>date</span>: <span style=color:#ae81ff>2019</span><span style=color:#ae81ff>/03/07</span>
-<span style=color:#f92672>modified</span>: <span style=color:#ae81ff>2020</span><span style=color:#ae81ff>/09/03</span>
+<span style=color:#f92672>modified</span>: <span style=color:#ae81ff>2021</span><span style=color:#ae81ff>/08/09</span>
 <span style=color:#f92672>logsource</span>:
     <span style=color:#f92672>category</span>: <span style=color:#ae81ff>proxy</span>
 <span style=color:#f92672>detection</span>:
     <span style=color:#f92672>selection</span>:
-        <span style=color:#f92672>c-useragent</span>:
-            - <span style=color:#e6db74>&#39;Microsoft BITS/*&#39;</span>
+        <span style=color:#f92672>c-useragent|startswith</span>: <span style=color:#e6db74>&#39;Microsoft BITS/&#39;</span>
     <span style=color:#f92672>falsepositives</span>:
-        <span style=color:#f92672>r-dns</span>:
-            - <span style=color:#e6db74>&#39;*.com&#39;</span> 
-            - <span style=color:#e6db74>&#39;*.net&#39;</span> 
-            - <span style=color:#e6db74>&#39;*.org&#39;</span> 
+        <span style=color:#f92672>r-dns|endswith</span>:
+            - <span style=color:#e6db74>&#39;.com&#39;</span> 
+            - <span style=color:#e6db74>&#39;.net&#39;</span> 
+            - <span style=color:#e6db74>&#39;.org&#39;</span> 
     <span style=color:#f92672>condition</span>: <span style=color:#ae81ff>selection and not falsepositives</span>
 <span style=color:#f92672>fields</span>:
     - <span style=color:#ae81ff>ClientIP</span>
@@ -38,10 +38,11 @@
     - <span style=color:#ae81ff>attack.persistence</span>
     - <span style=color:#ae81ff>attack.t1197</span>
     - <span style=color:#ae81ff>attack.s0190</span>
+
 </code></pre></div></div></div></div><div class="column is-3"><aside class="menu is-medium"><p class=menu-label>Rule Tags</p><div class=tags><a href=https://bradleyjkemp.dev/sigmadoc//tags/attack.command_and_control class="tag is-medium">attack.command_and_control</a></a>
 <a href=https://bradleyjkemp.dev/sigmadoc//tags/attack.t1071.001 class="tag is-medium">attack.t1071.001</a></a>
 <a href=https://bradleyjkemp.dev/sigmadoc//tags/attack.defense_evasion class="tag is-medium">attack.defense_evasion</a></a>
 <a href=https://bradleyjkemp.dev/sigmadoc//tags/attack.persistence class="tag is-medium">attack.persistence</a></a>
 <a href=https://bradleyjkemp.dev/sigmadoc//tags/attack.t1197 class="tag is-medium">attack.t1197</a></a>
-<a href=https://bradleyjkemp.dev/sigmadoc//tags/attack.s0190 class="tag is-medium">attack.s0190</a></a></div><ul class=menu-list></ul><p class=menu-label>Similar rules</p><ul class=menu-list><li><a href=/sigmadoc/rules/windows/process_creation/win_process_creation_bitsadmin_download.yml/>Bitsadmin Download</a></li><li><a href=/sigmadoc/rules/proxy/proxy_empire_ua_uri_combos.yml/>Empire UserAgent URI Combo</a></li><li><a href=/sigmadoc/rules/windows/process_creation/win_powershell_bitsjob.yml/>Suspicious Bitsadmin Job via PowerShell</a></li><li><a href=/sigmadoc/rules/proxy/proxy_cobalt_ocsp.yml/>CobaltStrike Malleable (OCSP) Profile</a></li><li><a href=/sigmadoc/rules/proxy/proxy_cobalt_onedrive.yml/>CobaltStrike Malleable OneDrive Browsing Traffic Profile</a></li></ul></aside></div></div></div></section><footer class=footer><div class="content has-text-centered"><p>Site generated with <a href=https://github.com/bradleyjkemp/sigmadoc><strong>sigmadoc</strong></a>. The website content
+<a href=https://bradleyjkemp.dev/sigmadoc//tags/attack.s0190 class="tag is-medium">attack.s0190</a></a></div><ul class=menu-list></ul><p class=menu-label>Similar rules</p><ul class=menu-list><li><a href=/sigmadoc/rules/windows/process_creation/proc_creation_win_bitsadmin_download.yml/>Bitsadmin Download</a></li><li><a href=/sigmadoc/rules/windows/builtin/system/win_apt_chafer_mar18_system.yml/>Chafer Activity</a></li><li><a href=/sigmadoc/rules/proxy/proxy_empire_ua_uri_combos.yml/>Empire UserAgent URI Combo</a></li><li><a href=/sigmadoc/rules/windows/process_creation/proc_creation_win_powershell_bitsjob.yml/>Suspicious Bitsadmin Job via PowerShell</a></li><li><a href=/sigmadoc/rules/proxy/proxy_cobalt_ocsp.yml/>CobaltStrike Malleable (OCSP) Profile</a></li></ul></aside></div></div></div></section><footer class=footer><div class="content has-text-centered"><p>Site generated with <a href=https://github.com/bradleyjkemp/sigmadoc><strong>sigmadoc</strong></a>. The website content
 is licensed <a href=https://github.com/SigmaHQ/sigma/blob/master/LICENSE.Detection.Rules.md>DRL 1.0</a>.</p></div></footer></body></html>

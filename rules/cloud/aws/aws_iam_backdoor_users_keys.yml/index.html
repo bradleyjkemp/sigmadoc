@@ -1,0 +1,43 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><title>Sigma Rule Browser</title><meta name=viewport content="width=device-width"><link rel=icon type=image/png sizes=32x32 href=../images/favicon.png><link rel=stylesheet href=https://unpkg.com/bulma@0.9.2/css/bulma.min.css><script src=https://kit.fontawesome.com/7dc3015a44.js crossorigin=anonymous></script></head><body><nav class=navbar role=navigation aria-label="main navigation"><div class=navbar-brand><a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc/>Sigma Docs</a>
+<a role=button class=navbar-burger aria-label=menu aria-expanded=false data-target=navbarBasicExample><span aria-hidden=true></span><span aria-hidden=true></span><span aria-hidden=true></span></a></div><div id=navbarBasicExample class=navbar-menu><div class=navbar-start><a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc/>Home</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//rules/>Rules</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//configs/>Configs</a><div class="navbar-item has-dropdown is-hoverable"><a class=navbar-link>Explore rules by...</a><div class=navbar-dropdown><a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//tags/>Tag</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//status/>Status</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//level/>Level</a></div></div></div><div class=navbar-end><div class=navbar-item id=search class=bd-search><form action=https://bradleyjkemp.dev/sigmadoc//search><p class="control has-icons-left"><input class="input is-rounded" type=text name=query placeholder=Search>
+<span class="icon is-left"><i class="fas fa-search" aria-hidden=true></i></span></p></form></div></div></div></nav><section class=section><div class=container><div class=columns><div class="column is-9"><nav class=breadcrumb aria-label=breadcrumbs><ul><li><a href=https://bradleyjkemp.dev/sigmadoc/>home</a></li><li><a href=https://bradleyjkemp.dev/sigmadoc/rules/>rules</a></li><li><a href=https://bradleyjkemp.dev/sigmadoc/rules/cloud/>cloud</a></li><li><a href=https://bradleyjkemp.dev/sigmadoc/rules/cloud/aws/>aws</a></li><li><a href=https://bradleyjkemp.dev/sigmadoc/rules/cloud/aws/aws_iam_backdoor_users_keys.yml/>aws_iam_backdoor_users_keys.yml</a></li></ul></nav><div class="content is-medium"><h3 class="title is-1">AWS IAM Backdoor Users Keys</h3><div class=box><div class="field is-grouped is-justify-content-center"><div class=control><div class="tags has-addons"><span class="tag is-medium is-dark">level</span>
+<span class="tag is-medium is-light"></span></div></div><div class=control><div class="tags has-addons"><span class="tag is-medium is-dark">status</span>
+<span class="tag is-medium is-danger is-light">experimental</span></div></div></div><p>Detects AWS API key creation for a user by another user. Backdoored users can be used to obtain persistence in the AWS environment. Also with this alert, you can detect a flow of AWS keys in your org.</p><h2 id=known-false-positives>Known false-positives</h2><ul><li>Adding user keys to their own accounts (the filter cannot cover all possible variants of user naming)</li><li>AWS API keys legitimate exchange workflows</li></ul><h2 id=references>References</h2><ul><li><a href=https://github.com/RhinoSecurityLabs/pacu/blob/master/pacu/modules/iam__backdoor_users_keys/main.py>https://github.com/RhinoSecurityLabs/pacu/blob/master/pacu/modules/iam__backdoor_users_keys/main.py</a></li></ul><h2 id=raw-rule-edithttpsgithubcomsigmahqsigmaeditmasterrulescloudawsaws_iam_backdoor_users_keysyml>Raw rule (<a href=https://github.com/SigmaHQ/sigma/edit/master/rules/cloud/aws/aws_iam_backdoor_users_keys.yml>edit</a>)</h2><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=color:#f92672>title</span>: <span style=color:#ae81ff>AWS IAM Backdoor Users Keys</span>
+<span style=color:#f92672>id</span>: <span style=color:#ae81ff>0a5177f4-6ca9-44c2-aacf-d3f3d8b6e4d2</span>
+<span style=color:#f92672>status</span>: <span style=color:#ae81ff>experimental</span>
+<span style=color:#f92672>description</span>: <span style=color:#ae81ff>Detects AWS API key creation for a user by another user. Backdoored users can be used to obtain persistence in the AWS environment. Also with this alert, you can detect a flow of AWS keys in your org.</span>
+<span style=color:#f92672>author</span>: <span style=color:#ae81ff>faloker</span>
+<span style=color:#f92672>date</span>: <span style=color:#ae81ff>2020</span><span style=color:#ae81ff>/02/12</span>
+<span style=color:#f92672>modified</span>: <span style=color:#ae81ff>2021</span><span style=color:#ae81ff>/08/20</span>
+<span style=color:#f92672>references</span>:
+    - <span style=color:#ae81ff>https://github.com/RhinoSecurityLabs/pacu/blob/master/pacu/modules/iam__backdoor_users_keys/main.py</span>
+<span style=color:#f92672>logsource</span>:
+    <span style=color:#f92672>product</span>: <span style=color:#ae81ff>aws</span>
+    <span style=color:#f92672>service</span>: <span style=color:#ae81ff>cloudtrail</span>
+<span style=color:#f92672>detection</span>:
+    <span style=color:#f92672>selection_source</span>:
+        <span style=color:#f92672>eventSource</span>: <span style=color:#ae81ff>iam.amazonaws.com</span>
+        <span style=color:#f92672>eventName</span>: <span style=color:#ae81ff>CreateAccessKey</span>
+    <span style=color:#f92672>filter</span>:
+        <span style=color:#f92672>userIdentity.arn|contains</span>: <span style=color:#ae81ff>responseElements.accessKey.userName</span>
+    <span style=color:#f92672>condition</span>: <span style=color:#ae81ff>selection_source and not filter</span>
+<span style=color:#f92672>fields</span>:
+    - <span style=color:#ae81ff>userIdentity.arn</span>
+    - <span style=color:#ae81ff>responseElements.accessKey.userName</span>
+    - <span style=color:#ae81ff>errorCode</span>
+    - <span style=color:#ae81ff>errorMessage</span>
+<span style=color:#f92672>falsepositives</span>:
+    - <span style=color:#ae81ff>Adding user keys to their own accounts (the filter cannot cover all possible variants of user naming)</span>
+    - <span style=color:#ae81ff>AWS API keys legitimate exchange workflows</span>
+<span style=color:#f92672>level</span>: <span style=color:#ae81ff>medium</span>
+<span style=color:#f92672>tags</span>:
+    - <span style=color:#ae81ff>attack.persistence</span>
+    - <span style=color:#ae81ff>attack.t1098</span>
+
+</code></pre></div></div></div></div><div class="column is-3"><aside class="menu is-medium"><p class=menu-label>Rule Tags</p><div class=tags><a href=https://bradleyjkemp.dev/sigmadoc//tags/attack.persistence class="tag is-medium">attack.persistence</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc//tags/attack.t1098 class="tag is-medium">attack.t1098</a></a></div><ul class=menu-list></ul><p class=menu-label>Similar rules</p><ul class=menu-list><li><a href=/sigmadoc/rules/network/cisco/aaa/cisco_cli_local_accounts.yml/>Cisco Local Accounts</a></li><li><a href=/sigmadoc/rules/windows/builtin/security/win_user_added_to_local_administrators.yml/>User Added to Local Administrators</a></li><li><a href=/sigmadoc/rules/windows/builtin/security/win_susp_dsrm_password_change.yml/>Password Change on Directory Service Restore Mode (DSRM) Account</a></li><li><a href=/sigmadoc/rules/windows/builtin/security/win_susp_add_domain_trust.yml/>Addition of Domain Trusts</a></li><li><a href=/sigmadoc/rules/windows/builtin/security/win_alert_active_directory_user_control.yml/>Enabled User Right in AD to Control User Objects</a></li></ul></aside></div></div></div></section><footer class=footer><div class="content has-text-centered"><p>Site generated with <a href=https://github.com/bradleyjkemp/sigmadoc><strong>sigmadoc</strong></a>. The website content
+is licensed <a href=https://github.com/SigmaHQ/sigma/blob/master/LICENSE.Detection.Rules.md>DRL 1.0</a>.</p></div></footer></body></html>

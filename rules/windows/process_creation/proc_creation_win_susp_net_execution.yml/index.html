@@ -1,0 +1,77 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><title>Sigma Rule Browser</title><meta name=viewport content="width=device-width"><link rel=icon type=image/png sizes=32x32 href=../images/favicon.png><link rel=stylesheet href=https://unpkg.com/bulma@0.9.2/css/bulma.min.css><script src=https://kit.fontawesome.com/7dc3015a44.js crossorigin=anonymous></script></head><body><nav class=navbar role=navigation aria-label="main navigation"><div class=navbar-brand><a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc/>Sigma Docs</a>
+<a role=button class=navbar-burger aria-label=menu aria-expanded=false data-target=navbarBasicExample><span aria-hidden=true></span><span aria-hidden=true></span><span aria-hidden=true></span></a></div><div id=navbarBasicExample class=navbar-menu><div class=navbar-start><a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc/>Home</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//rules/>Rules</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//configs/>Configs</a><div class="navbar-item has-dropdown is-hoverable"><a class=navbar-link>Explore rules by...</a><div class=navbar-dropdown><a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//tags/>Tag</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//status/>Status</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//level/>Level</a></div></div></div><div class=navbar-end><div class=navbar-item id=search class=bd-search><form action=https://bradleyjkemp.dev/sigmadoc//search><p class="control has-icons-left"><input class="input is-rounded" type=text name=query placeholder=Search>
+<span class="icon is-left"><i class="fas fa-search" aria-hidden=true></i></span></p></form></div></div></div></nav><section class=section><div class=container><div class=columns><div class="column is-9"><nav class=breadcrumb aria-label=breadcrumbs><ul><li><a href=https://bradleyjkemp.dev/sigmadoc/>home</a></li><li><a href=https://bradleyjkemp.dev/sigmadoc/rules/>rules</a></li><li><a href=https://bradleyjkemp.dev/sigmadoc/rules/windows/>windows</a></li><li><a href=https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/>process_creation</a></li><li><a href=https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_net_execution.yml/>proc_creation_win_susp_net_execution.yml</a></li></ul></nav><div class="content is-medium"><h3 class="title is-1">Net.exe Execution</h3><div class=box><div class="field is-grouped is-justify-content-center"><div class=control><div class="tags has-addons"><span class="tag is-medium is-dark">level</span>
+<span class="tag is-medium is-light"></span></div></div><div class=control><div class="tags has-addons"><span class="tag is-medium is-dark">status</span>
+<span class="tag is-medium is-danger is-light">experimental</span></div></div></div><p>Detects execution of Net.exe, whether suspicious or benign.</p><h2 id=known-false-positives>Known false-positives</h2><ul><li>Will need to be tuned. If using Splunk, I recommend | stats count by Computer,CommandLine following the search for easy hunting by computer/CommandLine.</li></ul><h2 id=references>References</h2><ul><li><a href=https://pentest.blog/windows-privilege-escalation-methods-for-pentesters/>https://pentest.blog/windows-privilege-escalation-methods-for-pentesters/</a></li><li><a href=https://eqllib.readthedocs.io/en/latest/analytics/4d2e7fc1-af0b-4915-89aa-03d25ba7805e.html>https://eqllib.readthedocs.io/en/latest/analytics/4d2e7fc1-af0b-4915-89aa-03d25ba7805e.html</a></li><li><a href=https://eqllib.readthedocs.io/en/latest/analytics/e61f557c-a9d0-4c25-ab5b-bbc46bb24deb.html>https://eqllib.readthedocs.io/en/latest/analytics/e61f557c-a9d0-4c25-ab5b-bbc46bb24deb.html</a></li><li><a href=https://eqllib.readthedocs.io/en/latest/analytics/9b3dd402-891c-4c4d-a662-28947168ce61.html>https://eqllib.readthedocs.io/en/latest/analytics/9b3dd402-891c-4c4d-a662-28947168ce61.html</a></li><li><a href=https://github.com/redcanaryco/atomic-red-team/blob/master/atomics/T1007/T1007.md#atomic-test-2---system-service-discovery---netexe>https://github.com/redcanaryco/atomic-red-team/blob/master/atomics/T1007/T1007.md#atomic-test-2---system-service-discovery---netexe</a></li></ul><h2 id=raw-rule-edithttpsgithubcomsigmahqsigmaeditmasterruleswindowsprocess_creationproc_creation_win_susp_net_executionyml>Raw rule (<a href=https://github.com/SigmaHQ/sigma/edit/master/rules/windows/process_creation/proc_creation_win_susp_net_execution.yml>edit</a>)</h2><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=color:#f92672>title</span>: <span style=color:#ae81ff>Net.exe Execution</span>
+<span style=color:#f92672>id</span>: <span style=color:#ae81ff>183e7ea8-ac4b-4c23-9aec-b3dac4e401ac</span>
+<span style=color:#f92672>status</span>: <span style=color:#ae81ff>experimental</span>
+<span style=color:#f92672>description</span>: <span style=color:#ae81ff>Detects execution of Net.exe, whether suspicious or benign.</span>
+<span style=color:#f92672>references</span>:
+    - <span style=color:#ae81ff>https://pentest.blog/windows-privilege-escalation-methods-for-pentesters/</span>
+    - <span style=color:#ae81ff>https://eqllib.readthedocs.io/en/latest/analytics/4d2e7fc1-af0b-4915-89aa-03d25ba7805e.html</span>
+    - <span style=color:#ae81ff>https://eqllib.readthedocs.io/en/latest/analytics/e61f557c-a9d0-4c25-ab5b-bbc46bb24deb.html</span>
+    - <span style=color:#ae81ff>https://eqllib.readthedocs.io/en/latest/analytics/9b3dd402-891c-4c4d-a662-28947168ce61.html</span>
+    - <span style=color:#ae81ff>https://github.com/redcanaryco/atomic-red-team/blob/master/atomics/T1007/T1007.md#atomic-test-2---system-service-discovery---netexe</span>
+<span style=color:#f92672>author</span>: <span style=color:#ae81ff>Michael Haag, Mark Woan (improvements), James Pemberton / @4A616D6573 / oscd.community (improvements)</span>
+<span style=color:#f92672>date</span>: <span style=color:#ae81ff>2019</span><span style=color:#ae81ff>/01/16</span>
+<span style=color:#f92672>modified</span>: <span style=color:#ae81ff>2021</span><span style=color:#ae81ff>/12/06</span>
+<span style=color:#f92672>tags</span>:
+    - <span style=color:#ae81ff>attack.discovery</span>
+    - <span style=color:#ae81ff>attack.t1007</span>
+    - <span style=color:#ae81ff>attack.t1049</span>
+    - <span style=color:#ae81ff>attack.t1018</span>
+    - <span style=color:#ae81ff>attack.t1135</span>
+    - <span style=color:#ae81ff>attack.t1201</span>
+    - <span style=color:#ae81ff>attack.t1069.001</span>
+    - <span style=color:#ae81ff>attack.t1069.002</span>
+    - <span style=color:#ae81ff>attack.t1087.001</span>
+    - <span style=color:#ae81ff>attack.t1087.002</span>
+    - <span style=color:#ae81ff>attack.lateral_movement</span>
+    - <span style=color:#ae81ff>attack.t1021.002</span>
+    - <span style=color:#ae81ff>attack.s0039</span>
+<span style=color:#f92672>logsource</span>:
+    <span style=color:#f92672>category</span>: <span style=color:#ae81ff>process_creation</span>
+    <span style=color:#f92672>product</span>: <span style=color:#ae81ff>windows</span>
+<span style=color:#f92672>detection</span>:
+    <span style=color:#f92672>selection</span>:
+        <span style=color:#f92672>Image|endswith</span>:
+            - <span style=color:#e6db74>&#39;\net.exe&#39;</span>
+            - <span style=color:#e6db74>&#39;\net1.exe&#39;</span>
+    <span style=color:#f92672>cmdline</span>:
+        <span style=color:#f92672>CommandLine|contains</span>:
+            - <span style=color:#e6db74>&#39; group&#39;</span>
+            - <span style=color:#e6db74>&#39; localgroup&#39;</span>
+            - <span style=color:#e6db74>&#39; user&#39;</span>
+            - <span style=color:#e6db74>&#39; view&#39;</span>
+            - <span style=color:#e6db74>&#39; share&#39;</span>
+            - <span style=color:#e6db74>&#39; accounts&#39;</span>
+            - <span style=color:#e6db74>&#39; stop &#39;</span>
+            - <span style=color:#e6db74>&#39; start&#39;</span>
+    <span style=color:#f92672>condition</span>: <span style=color:#ae81ff>selection and cmdline</span>
+<span style=color:#f92672>fields</span>:
+    - <span style=color:#ae81ff>ComputerName</span>
+    - <span style=color:#ae81ff>User</span>
+    - <span style=color:#ae81ff>CommandLine</span>
+    - <span style=color:#ae81ff>ParentCommandLine</span>
+<span style=color:#f92672>falsepositives</span>:
+    - <span style=color:#ae81ff>Will need to be tuned. If using Splunk, I recommend | stats count by Computer,CommandLine following the search for easy hunting by computer/CommandLine.</span>
+<span style=color:#f92672>level</span>: <span style=color:#ae81ff>low</span>
+
+</code></pre></div></div></div></div><div class="column is-3"><aside class="menu is-medium"><p class=menu-label>Rule Tags</p><div class=tags><a href=https://bradleyjkemp.dev/sigmadoc//tags/attack.discovery class="tag is-medium">attack.discovery</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc//tags/attack.t1007 class="tag is-medium">attack.t1007</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc//tags/attack.t1049 class="tag is-medium">attack.t1049</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc//tags/attack.t1018 class="tag is-medium">attack.t1018</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc//tags/attack.t1135 class="tag is-medium">attack.t1135</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc//tags/attack.t1201 class="tag is-medium">attack.t1201</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc//tags/attack.t1069.001 class="tag is-medium">attack.t1069.001</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc//tags/attack.t1069.002 class="tag is-medium">attack.t1069.002</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc//tags/attack.t1087.001 class="tag is-medium">attack.t1087.001</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc//tags/attack.t1087.002 class="tag is-medium">attack.t1087.002</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc//tags/attack.lateral_movement class="tag is-medium">attack.lateral_movement</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc//tags/attack.t1021.002 class="tag is-medium">attack.t1021.002</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc//tags/attack.s0039 class="tag is-medium">attack.s0039</a></a></div><ul class=menu-list></ul><p class=menu-label>Similar rules</p><ul class=menu-list><li><a href=/sigmadoc/rules/windows/builtin/security/win_susp_net_recon_activity.yml/>Reconnaissance Activity</a></li><li><a href=/sigmadoc/rules/windows/process_creation/proc_creation_win_apt_turla_commands_critical.yml/>Turla Group Lateral Movement</a></li><li><a href=/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_recon_activity.yml/>Suspicious Reconnaissance Activity</a></li><li><a href=/sigmadoc/rules/windows/builtin/ldap/win_ldap_recon.yml/>LDAP Reconnaissance / Active Directory Enumeration</a></li><li><a href=/sigmadoc/rules/windows/process_creation/proc_creation_win_malware_dridex.yml/>Dridex Process Pattern</a></li></ul></aside></div></div></div></section><footer class=footer><div class="content has-text-centered"><p>Site generated with <a href=https://github.com/bradleyjkemp/sigmadoc><strong>sigmadoc</strong></a>. The website content
+is licensed <a href=https://github.com/SigmaHQ/sigma/blob/master/LICENSE.Detection.Rules.md>DRL 1.0</a>.</p></div></footer></body></html>

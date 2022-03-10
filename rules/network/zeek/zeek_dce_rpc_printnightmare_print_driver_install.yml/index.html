@@ -1,0 +1,61 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><title>Sigma Rule Browser</title><meta name=viewport content="width=device-width"><link rel=icon type=image/png sizes=32x32 href=../images/favicon.png><link rel=stylesheet href=https://unpkg.com/bulma@0.9.2/css/bulma.min.css><script src=https://kit.fontawesome.com/7dc3015a44.js crossorigin=anonymous></script></head><body><nav class=navbar role=navigation aria-label="main navigation"><div class=navbar-brand><a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc/>Sigma Docs</a>
+<a role=button class=navbar-burger aria-label=menu aria-expanded=false data-target=navbarBasicExample><span aria-hidden=true></span><span aria-hidden=true></span><span aria-hidden=true></span></a></div><div id=navbarBasicExample class=navbar-menu><div class=navbar-start><a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc/>Home</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//rules/>Rules</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//configs/>Configs</a><div class="navbar-item has-dropdown is-hoverable"><a class=navbar-link>Explore rules by...</a><div class=navbar-dropdown><a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//tags/>Tag</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//status/>Status</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//level/>Level</a></div></div></div><div class=navbar-end><div class=navbar-item id=search class=bd-search><form action=https://bradleyjkemp.dev/sigmadoc//search><p class="control has-icons-left"><input class="input is-rounded" type=text name=query placeholder=Search>
+<span class="icon is-left"><i class="fas fa-search" aria-hidden=true></i></span></p></form></div></div></div></nav><section class=section><div class=container><div class=columns><div class="column is-9"><nav class=breadcrumb aria-label=breadcrumbs><ul><li><a href=https://bradleyjkemp.dev/sigmadoc/>home</a></li><li><a href=https://bradleyjkemp.dev/sigmadoc/rules/>rules</a></li><li><a href=https://bradleyjkemp.dev/sigmadoc/rules/network/>network</a></li><li><a href=https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/>zeek</a></li><li><a href=https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_dce_rpc_printnightmare_print_driver_install.yml/>zeek_dce_rpc_printnightmare_print_driver_install.yml</a></li></ul></nav><div class="content is-medium"><h3 class="title is-1">Possible PrintNightmare Print Driver Install</h3><div class=box><div class="field is-grouped is-justify-content-center"><div class=control><div class="tags has-addons"><span class="tag is-medium is-dark">level</span>
+<span class="tag is-medium is-light"></span></div></div><div class=control><div class="tags has-addons"><span class="tag is-medium is-dark">status</span>
+<span class="tag is-medium is-success is-light">stable</span></div></div></div><p>Detects the remote installation of a print driver which is possible indication of the exploitation of PrintNightmare (CVE-2021-1675).
+The occurrence of print drivers being installed remotely via RPC functions should be rare, as print drivers are normally installed locally and or through group policy.</p><h2 id=known-false-positives>Known false-positives</h2><ul><li>Legitimate remote alteration of a printer driver.</li></ul><h2 id=references>References</h2><ul><li><a href=https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-par/93d1915d-4d9f-4ceb-90a7-e8f2a59adc29>https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-par/93d1915d-4d9f-4ceb-90a7-e8f2a59adc29</a></li><li><a href=https://github.com/zeek/zeek/blob/master/scripts/base/protocols/dce-rpc/consts.zeek>https://github.com/zeek/zeek/blob/master/scripts/base/protocols/dce-rpc/consts.zeek</a></li><li><a href=https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-34527>https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-34527</a></li><li><a href=https://github.com/corelight/CVE-2021-1675>https://github.com/corelight/CVE-2021-1675</a></li><li><a href=https://github.com/SigmaHQ/sigma/blob/master/rules/network/zeek/zeek_dce_rpc_mitre_bzar_persistence.yml>https://github.com/SigmaHQ/sigma/blob/master/rules/network/zeek/zeek_dce_rpc_mitre_bzar_persistence.yml</a></li><li><a href=https://old.zeek.org/zeekweek2019/slides/bzar.pdf>https://old.zeek.org/zeekweek2019/slides/bzar.pdf</a></li><li><a href=https://www.crowdstrike.com/blog/cve-2021-1678-printer-spooler-relay-security-advisory/>https://www.crowdstrike.com/blog/cve-2021-1678-printer-spooler-relay-security-advisory/</a></li></ul><h2 id=raw-rule-edithttpsgithubcomsigmahqsigmaeditmasterrulesnetworkzeekzeek_dce_rpc_printnightmare_print_driver_installyml>Raw rule (<a href=https://github.com/SigmaHQ/sigma/edit/master/rules/network/zeek/zeek_dce_rpc_printnightmare_print_driver_install.yml>edit</a>)</h2><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=color:#f92672>title</span>: <span style=color:#ae81ff>Possible PrintNightmare Print Driver Install</span>
+<span style=color:#f92672>id</span>: <span style=color:#ae81ff>7b33baef-2a75-4ca3-9da4-34f9a15382d8</span>
+<span style=color:#f92672>description</span>: |<span style=color:#e6db74>
+</span><span style=color:#e6db74>    Detects the remote installation of a print driver which is possible indication of the exploitation of PrintNightmare (CVE-2021-1675).
+</span><span style=color:#e6db74>    The occurrence of print drivers being installed remotely via RPC functions should be rare, as print drivers are normally installed locally and or through group policy.</span>    
+<span style=color:#f92672>author</span>: <span style=color:#e6db74>&#39;@neu5ron (Nate Guagenti)&#39;</span>
+<span style=color:#f92672>date</span>: <span style=color:#ae81ff>2021</span><span style=color:#ae81ff>/08/23</span>
+<span style=color:#f92672>references</span>:
+    - <span style=color:#ae81ff>https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-par/93d1915d-4d9f-4ceb-90a7-e8f2a59adc29</span>
+    - <span style=color:#ae81ff>https://github.com/zeek/zeek/blob/master/scripts/base/protocols/dce-rpc/consts.zeek</span>
+    - <span style=color:#ae81ff>https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-34527</span>
+    - <span style=color:#ae81ff>https://github.com/corelight/CVE-2021-1675</span>
+    - <span style=color:#ae81ff>https://github.com/SigmaHQ/sigma/blob/master/rules/network/zeek/zeek_dce_rpc_mitre_bzar_persistence.yml</span>
+    - <span style=color:#ae81ff>https://old.zeek.org/zeekweek2019/slides/bzar.pdf</span>
+    - <span style=color:#ae81ff>https://www.crowdstrike.com/blog/cve-2021-1678-printer-spooler-relay-security-advisory/</span>
+
+<span style=color:#f92672>tags</span>:
+    - <span style=color:#ae81ff>attack.execution</span>
+    - <span style=color:#ae81ff>cve.2021.1678</span>
+    - <span style=color:#ae81ff>cve.2021.1675</span>
+    - <span style=color:#ae81ff>cve.2021.34527</span>
+<span style=color:#f92672>logsource</span>:
+    <span style=color:#f92672>product</span>: <span style=color:#ae81ff>zeek</span>
+    <span style=color:#f92672>service</span>: <span style=color:#ae81ff>dce_rpc</span>
+<span style=color:#f92672>detection</span>:
+    <span style=color:#f92672>printer_operation</span>:
+        <span style=color:#f92672>operation</span>:
+            - <span style=color:#e6db74>&#39;RpcAsyncInstallPrinterDriverFromPackage&#39;</span> <span style=color:#75715e># &#34;76f03f96-cdfd-44fc-a22c-64950a001209&#34;,0x3e</span>
+            - <span style=color:#e6db74>&#39;RpcAsyncAddPrintProcessor&#39;</span> <span style=color:#75715e># &#34;76f03f96-cdfd-44fc-a22c-64950a001209&#34;,0x2c</span>
+            - <span style=color:#e6db74>&#39;RpcAddPrintProcessor&#39;</span> <span style=color:#75715e># &#34;12345678-1234-abcd-ef00-0123456789ab&#34;,0x0e</span>
+            - <span style=color:#e6db74>&#39;RpcAddPrinterDriverEx&#39;</span> <span style=color:#75715e># &#34;12345678-1234-abcd-ef00-0123456789ab&#34;,0x59</span>
+            - <span style=color:#e6db74>&#39;RpcAddPrinterDriver&#39;</span> <span style=color:#75715e># &#34;12345678-1234-abcd-ef00-0123456789ab&#34;,0x09</span>
+            - <span style=color:#e6db74>&#39;RpcAsyncAddPrinterDriver&#39;</span> <span style=color:#75715e># &#34;76f03f96-cdfd-44fc-a22c-64950a001209&#34;,0x27</span>
+    <span style=color:#f92672>condition</span>: <span style=color:#ae81ff>printer_operation</span>
+<span style=color:#f92672>falsepositives</span>:
+    - <span style=color:#ae81ff>Legitimate remote alteration of a printer driver.</span>
+<span style=color:#f92672>level</span>: <span style=color:#ae81ff>medium</span>
+<span style=color:#f92672>fields</span>:
+    - <span style=color:#ae81ff>id.orig_h</span>
+    - <span style=color:#ae81ff>id.resp_h</span>
+    - <span style=color:#ae81ff>id.resp_p</span>
+    - <span style=color:#ae81ff>operation</span>
+    - <span style=color:#ae81ff>endpoint</span>
+    - <span style=color:#ae81ff>named_pipe</span>
+    - <span style=color:#ae81ff>uid</span>
+<span style=color:#f92672>status</span>: <span style=color:#ae81ff>stable</span>
+
+</code></pre></div></div></div></div><div class="column is-3"><aside class="menu is-medium"><p class=menu-label>Rule Tags</p><div class=tags><a href=https://bradleyjkemp.dev/sigmadoc//tags/attack.execution class="tag is-medium">attack.execution</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc//tags/cve.2021.1678 class="tag is-medium">cve.2021.1678</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc//tags/cve.2021.1675 class="tag is-medium">cve.2021.1675</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc//tags/cve.2021.34527 class="tag is-medium">cve.2021.34527</a></a></div><ul class=menu-list></ul><p class=menu-label>Similar rules</p><ul class=menu-list><li><a href=/sigmadoc/rules/windows/builtin/security/win_exploit_cve_2021_1675_printspooler_security.yml/>CVE-2021-1675 Print Spooler Exploitation IPC Access</a></li><li><a href=/sigmadoc/rules/windows/registry_event/registry_event_mimikatz_printernightmare.yml/>PrinterNightmare Mimimkatz Driver Name</a></li><li><a href=/sigmadoc/rules/windows/builtin/printservice/win_exploit_cve_2021_1675_printspooler_operational.yml/>CVE-2021-1675 Print Spooler Exploitation</a></li><li><a href=/sigmadoc/rules/windows/file_event/file_event_win_cve_2021_1675_printspooler.yml/>CVE-2021-1675 Print Spooler Exploitation Filename Pattern</a></li><li><a href=/sigmadoc/rules/windows/builtin/printservice/win_exploit_cve_2021_1675_printspooler.yml/>Possible CVE-2021-1675 Print Spooler Exploitation</a></li></ul></aside></div></div></div></section><footer class=footer><div class="content has-text-centered"><p>Site generated with <a href=https://github.com/bradleyjkemp/sigmadoc><strong>sigmadoc</strong></a>. The website content
+is licensed <a href=https://github.com/SigmaHQ/sigma/blob/master/LICENSE.Detection.Rules.md>DRL 1.0</a>.</p></div></footer></body></html>

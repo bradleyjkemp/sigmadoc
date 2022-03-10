@@ -1,0 +1,134 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><title>Sigma Rule Browser</title><meta name=viewport content="width=device-width"><link rel=icon type=image/png sizes=32x32 href=../images/favicon.png><link rel=stylesheet href=https://unpkg.com/bulma@0.9.2/css/bulma.min.css><script src=https://kit.fontawesome.com/7dc3015a44.js crossorigin=anonymous></script></head><body><nav class=navbar role=navigation aria-label="main navigation"><div class=navbar-brand><a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc/>Sigma Docs</a>
+<a role=button class=navbar-burger aria-label=menu aria-expanded=false data-target=navbarBasicExample><span aria-hidden=true></span><span aria-hidden=true></span><span aria-hidden=true></span></a></div><div id=navbarBasicExample class=navbar-menu><div class=navbar-start><a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc/>Home</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//rules/>Rules</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//configs/>Configs</a><div class="navbar-item has-dropdown is-hoverable"><a class=navbar-link>Explore rules by...</a><div class=navbar-dropdown><a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//tags/>Tag</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//status/>Status</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//level/>Level</a></div></div></div><div class=navbar-end><div class=navbar-item id=search class=bd-search><form action=https://bradleyjkemp.dev/sigmadoc//search><p class="control has-icons-left"><input class="input is-rounded" type=text name=query placeholder=Search>
+<span class="icon is-left"><i class="fas fa-search" aria-hidden=true></i></span></p></form></div></div></div></nav><section class=section><div class=container><div class=columns><div class="column is-9"><nav class=breadcrumb aria-label=breadcrumbs><ul><li><a href=https://bradleyjkemp.dev/sigmadoc/>home</a></li><li><a href=https://bradleyjkemp.dev/sigmadoc/rules/>rules</a></li><li><a href=https://bradleyjkemp.dev/sigmadoc/rules/windows/>windows</a></li><li><a href=https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/>powershell</a></li><li><a href=https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/>powershell_script</a></li><li><a href=https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_malicious_commandlets.yml/>posh_ps_malicious_commandlets.yml</a></li></ul></nav><div class="content is-medium"><h3 class="title is-1">Malicious PowerShell Commandlets</h3><div class=box><div class="field is-grouped is-justify-content-center"><div class=control><div class="tags has-addons"><span class="tag is-medium is-dark">level</span>
+<span class="tag is-medium is-light"></span></div></div><div class=control><div class="tags has-addons"><span class="tag is-medium is-dark">status</span>
+<span class="tag is-medium is-danger is-light">experimental</span></div></div></div><p>Detects Commandlet names from well-known PowerShell exploitation frameworks</p><h2 id=known-false-positives>Known false-positives</h2><ul><li>Penetration testing</li></ul><h2 id=references>References</h2><ul><li><a href="https://adsecurity.org/?p=2921">https://adsecurity.org/?p=2921</a></li></ul><h2 id=raw-rule-edithttpsgithubcomsigmahqsigmaeditmasterruleswindowspowershellpowershell_scriptposh_ps_malicious_commandletsyml>Raw rule (<a href=https://github.com/SigmaHQ/sigma/edit/master/rules/windows/powershell/powershell_script/posh_ps_malicious_commandlets.yml>edit</a>)</h2><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=color:#f92672>title</span>: <span style=color:#ae81ff>Malicious PowerShell Commandlets</span>
+<span style=color:#f92672>id</span>: <span style=color:#ae81ff>89819aa4-bbd6-46bc-88ec-c7f7fe30efa6</span>
+<span style=color:#f92672>status</span>: <span style=color:#ae81ff>experimental</span>
+<span style=color:#f92672>description</span>: <span style=color:#ae81ff>Detects Commandlet names from well-known PowerShell exploitation frameworks</span>
+<span style=color:#f92672>references</span>:
+    - <span style=color:#ae81ff>https://adsecurity.org/?p=2921</span>
+<span style=color:#f92672>tags</span>:
+    - <span style=color:#ae81ff>attack.execution</span>
+    - <span style=color:#ae81ff>attack.t1059.001</span>
+<span style=color:#f92672>author</span>: <span style=color:#ae81ff>Sean Metcalf (source), Florian Roth (rule), Bartlomiej Czyz @bczyz1 (update), oscd.community (update)</span>
+<span style=color:#f92672>date</span>: <span style=color:#ae81ff>2017</span><span style=color:#ae81ff>/03/05</span>
+<span style=color:#f92672>modified</span>: <span style=color:#ae81ff>2021</span><span style=color:#ae81ff>/11/29</span>
+<span style=color:#f92672>logsource</span>:
+    <span style=color:#f92672>product</span>: <span style=color:#ae81ff>windows</span>
+    <span style=color:#f92672>category</span>: <span style=color:#ae81ff>ps_script</span>
+    <span style=color:#f92672>definition</span>: <span style=color:#ae81ff>Script Block Logging must be enable</span>
+<span style=color:#f92672>detection</span>:
+    <span style=color:#f92672>select_Malicious</span>:
+        <span style=color:#f92672>ScriptBlockText|contains</span>:
+            - <span style=color:#e6db74>&#39;Invoke-DllInjection&#39;</span>
+            - <span style=color:#e6db74>&#39;Invoke-Shellcode&#39;</span>
+            - <span style=color:#e6db74>&#39;Invoke-WmiCommand&#39;</span>
+            - <span style=color:#e6db74>&#39;Get-GPPPassword&#39;</span>
+            - <span style=color:#e6db74>&#39;Get-Keystrokes&#39;</span>
+            - <span style=color:#e6db74>&#39;Get-TimedScreenshot&#39;</span>
+            - <span style=color:#e6db74>&#39;Get-VaultCredential&#39;</span>
+            - <span style=color:#e6db74>&#39;Invoke-CredentialInjection&#39;</span>
+            - <span style=color:#e6db74>&#39;Invoke-Mimikatz&#39;</span>
+            - <span style=color:#e6db74>&#39;Invoke-NinjaCopy&#39;</span>
+            - <span style=color:#e6db74>&#39;Invoke-TokenManipulation&#39;</span>
+            - <span style=color:#e6db74>&#39;Out-Minidump&#39;</span>
+            - <span style=color:#e6db74>&#39;VolumeShadowCopyTools&#39;</span>
+            - <span style=color:#e6db74>&#39;Invoke-ReflectivePEInjection&#39;</span>
+            - <span style=color:#e6db74>&#39;Invoke-UserHunter&#39;</span>
+            - <span style=color:#e6db74>&#39;Find-GPOLocation&#39;</span>
+            - <span style=color:#e6db74>&#39;Invoke-ACLScanner&#39;</span>
+            - <span style=color:#e6db74>&#39;Invoke-DowngradeAccount&#39;</span>
+            - <span style=color:#e6db74>&#39;Get-ServiceUnquoted&#39;</span>
+            - <span style=color:#e6db74>&#39;Get-ServiceFilePermission&#39;</span>
+            - <span style=color:#e6db74>&#39;Get-ServicePermission&#39;</span>
+            - <span style=color:#e6db74>&#39;Invoke-ServiceAbuse&#39;</span>
+            - <span style=color:#e6db74>&#39;Install-ServiceBinary&#39;</span>
+            - <span style=color:#e6db74>&#39;Get-RegAutoLogon&#39;</span>
+            - <span style=color:#e6db74>&#39;Get-VulnAutoRun&#39;</span>
+            - <span style=color:#e6db74>&#39;Get-VulnSchTask&#39;</span>
+            - <span style=color:#e6db74>&#39;Get-UnattendedInstallFile&#39;</span>
+            - <span style=color:#e6db74>&#39;Get-ApplicationHost&#39;</span>
+            - <span style=color:#e6db74>&#39;Get-RegAlwaysInstallElevated&#39;</span>
+            - <span style=color:#e6db74>&#39;Get-Unconstrained&#39;</span>
+            - <span style=color:#e6db74>&#39;Add-RegBackdoor&#39;</span>
+            - <span style=color:#e6db74>&#39;Add-ScrnSaveBackdoor&#39;</span>
+            - <span style=color:#e6db74>&#39;Gupt-Backdoor&#39;</span>
+            - <span style=color:#e6db74>&#39;Invoke-ADSBackdoor&#39;</span>
+            - <span style=color:#e6db74>&#39;Enabled-DuplicateToken&#39;</span>
+            - <span style=color:#e6db74>&#39;Invoke-PsUaCme&#39;</span>
+            - <span style=color:#e6db74>&#39;Remove-Update&#39;</span>
+            - <span style=color:#e6db74>&#39;Check-VM&#39;</span>
+            - <span style=color:#e6db74>&#39;Get-LSASecret&#39;</span>
+            - <span style=color:#e6db74>&#39;Get-PassHashes&#39;</span>
+            - <span style=color:#e6db74>&#39;Show-TargetScreen&#39;</span>
+            - <span style=color:#e6db74>&#39;Port-Scan&#39;</span>
+            - <span style=color:#e6db74>&#39;Invoke-PoshRatHttp&#39;</span>
+            - <span style=color:#e6db74>&#39;Invoke-PowerShellTCP&#39;</span>
+            - <span style=color:#e6db74>&#39;Invoke-PowerShellWMI&#39;</span>
+            - <span style=color:#e6db74>&#39;Add-Exfiltration&#39;</span>
+            - <span style=color:#e6db74>&#39;Add-Persistence&#39;</span>
+            - <span style=color:#e6db74>&#39;Do-Exfiltration&#39;</span>
+            - <span style=color:#e6db74>&#39;Start-CaptureServer&#39;</span>
+            - <span style=color:#e6db74>&#39;Get-ChromeDump&#39;</span>
+            - <span style=color:#e6db74>&#39;Get-ClipboardContents&#39;</span>
+            - <span style=color:#e6db74>&#39;Get-FoxDump&#39;</span>
+            - <span style=color:#e6db74>&#39;Get-IndexedItem&#39;</span>
+            - <span style=color:#e6db74>&#39;Get-Screenshot&#39;</span>
+            - <span style=color:#e6db74>&#39;Invoke-Inveigh&#39;</span>
+            - <span style=color:#e6db74>&#39;Invoke-NetRipper&#39;</span>
+            - <span style=color:#e6db74>&#39;Invoke-EgressCheck&#39;</span>
+            - <span style=color:#e6db74>&#39;Invoke-PostExfil&#39;</span>
+            - <span style=color:#e6db74>&#39;Invoke-PSInject&#39;</span>
+            - <span style=color:#e6db74>&#39;Invoke-RunAs&#39;</span>
+            - <span style=color:#e6db74>&#39;MailRaider&#39;</span>
+            - <span style=color:#e6db74>&#39;New-HoneyHash&#39;</span>
+            - <span style=color:#e6db74>&#39;Set-MacAttribute&#39;</span>
+            - <span style=color:#e6db74>&#39;Invoke-DCSync&#39;</span>
+            - <span style=color:#e6db74>&#39;Invoke-PowerDump&#39;</span>
+            - <span style=color:#e6db74>&#39;Exploit-Jboss&#39;</span>
+            - <span style=color:#e6db74>&#39;Invoke-ThunderStruck&#39;</span>
+            - <span style=color:#e6db74>&#39;Invoke-VoiceTroll&#39;</span>
+            - <span style=color:#e6db74>&#39;Set-Wallpaper&#39;</span>
+            - <span style=color:#e6db74>&#39;Invoke-InveighRelay&#39;</span>
+            - <span style=color:#e6db74>&#39;Invoke-PsExec&#39;</span>
+            - <span style=color:#e6db74>&#39;Invoke-SSHCommand&#39;</span>
+            - <span style=color:#e6db74>&#39;Get-SecurityPackages&#39;</span>
+            - <span style=color:#e6db74>&#39;Install-SSP&#39;</span>
+            - <span style=color:#e6db74>&#39;Invoke-BackdoorLNK&#39;</span>
+            - <span style=color:#e6db74>&#39;PowerBreach&#39;</span>
+            - <span style=color:#e6db74>&#39;Get-SiteListPassword&#39;</span>
+            - <span style=color:#e6db74>&#39;Get-System&#39;</span>
+            - <span style=color:#e6db74>&#39;Invoke-BypassUAC&#39;</span>
+            - <span style=color:#e6db74>&#39;Invoke-Tater&#39;</span>
+            - <span style=color:#e6db74>&#39;Invoke-WScriptBypassUAC&#39;</span>
+            - <span style=color:#e6db74>&#39;PowerUp&#39;</span>
+            - <span style=color:#e6db74>&#39;PowerView&#39;</span>
+            - <span style=color:#e6db74>&#39;Get-RickAstley&#39;</span>
+            - <span style=color:#e6db74>&#39;Find-Fruit&#39;</span>
+            - <span style=color:#e6db74>&#39;HTTP-Login&#39;</span>
+            - <span style=color:#e6db74>&#39;Find-TrustedDocuments&#39;</span>
+            - <span style=color:#e6db74>&#39;Invoke-Paranoia&#39;</span>
+            - <span style=color:#e6db74>&#39;Invoke-WinEnum&#39;</span>
+            - <span style=color:#e6db74>&#39;Invoke-ARPScan&#39;</span>
+            - <span style=color:#e6db74>&#39;Invoke-PortScan&#39;</span>
+            - <span style=color:#e6db74>&#39;Invoke-ReverseDNSLookup&#39;</span>
+            - <span style=color:#e6db74>&#39;Invoke-SMBScanner&#39;</span>
+            - <span style=color:#e6db74>&#39;Invoke-Mimikittenz&#39;</span>
+            - <span style=color:#e6db74>&#39;Invoke-AllChecks&#39;</span>
+    <span style=color:#f92672>false_positives</span>:
+        <span style=color:#f92672>ScriptBlockText|contains</span>:
+            - <span style=color:#ae81ff>Get-SystemDriveInfo </span> <span style=color:#75715e># http://bheltborg.dk/Windows/WinSxS/amd64_microsoft-windows-maintenancediagnostic_31bf3856ad364e35_10.0.10240.16384_none_91ef7543a4514b5e/CL_Utility.ps1</span>
+            - <span style=color:#ae81ff>C:\ProgramData\Amazon\EC2-Windows\Launch\Module\Scripts\Set-Wallpaper.ps1 </span> <span style=color:#75715e># false positive form Amazon EC2</span>
+    <span style=color:#f92672>condition</span>: <span style=color:#ae81ff>select_Malicious and not false_positives</span>
+<span style=color:#f92672>falsepositives</span>:
+    - <span style=color:#ae81ff>Penetration testing</span>
+<span style=color:#f92672>level</span>: <span style=color:#ae81ff>high</span>
+
+</code></pre></div></div></div></div><div class="column is-3"><aside class="menu is-medium"><p class=menu-label>Rule Tags</p><div class=tags><a href=https://bradleyjkemp.dev/sigmadoc//tags/attack.execution class="tag is-medium">attack.execution</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc//tags/attack.t1059.001 class="tag is-medium">attack.t1059.001</a></a></div><ul class=menu-list></ul><p class=menu-label>Similar rules</p><ul class=menu-list><li><a href=/sigmadoc/rules/windows/process_creation/proc_creation_win_powershell_download_patterns.yml/>Suspicious PowerShell Download and Execute Pattern</a></li><li><a href=/sigmadoc/rules/windows/process_creation/proc_creation_win_set_policies_to_unsecure_level.yml/>Change PowerShell Policies to an Unsecure Level</a></li><li><a href=/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_shellintel_malicious_commandlets.yml/>Malicious ShellIntel PowerShell Commandlets</a></li><li><a href=/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_adrecon_execution.yml/>PowerShell ADRecon Execution</a></li><li><a href=/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_powerview_malicious_commandlets.yml/>Malicious PowerView PowerShell Commandlets</a></li></ul></aside></div></div></div></section><footer class=footer><div class="content has-text-centered"><p>Site generated with <a href=https://github.com/bradleyjkemp/sigmadoc><strong>sigmadoc</strong></a>. The website content
+is licensed <a href=https://github.com/SigmaHQ/sigma/blob/master/LICENSE.Detection.Rules.md>DRL 1.0</a>.</p></div></footer></body></html>

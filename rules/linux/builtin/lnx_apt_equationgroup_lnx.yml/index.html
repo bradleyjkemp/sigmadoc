@@ -1,0 +1,95 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><title>Sigma Rule Browser</title><meta name=viewport content="width=device-width"><link rel=icon type=image/png sizes=32x32 href=../images/favicon.png><link rel=stylesheet href=https://unpkg.com/bulma@0.9.2/css/bulma.min.css><script src=https://kit.fontawesome.com/7dc3015a44.js crossorigin=anonymous></script></head><body><nav class=navbar role=navigation aria-label="main navigation"><div class=navbar-brand><a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc/>Sigma Docs</a>
+<a role=button class=navbar-burger aria-label=menu aria-expanded=false data-target=navbarBasicExample><span aria-hidden=true></span><span aria-hidden=true></span><span aria-hidden=true></span></a></div><div id=navbarBasicExample class=navbar-menu><div class=navbar-start><a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc/>Home</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//rules/>Rules</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//configs/>Configs</a><div class="navbar-item has-dropdown is-hoverable"><a class=navbar-link>Explore rules by...</a><div class=navbar-dropdown><a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//tags/>Tag</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//status/>Status</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//level/>Level</a></div></div></div><div class=navbar-end><div class=navbar-item id=search class=bd-search><form action=https://bradleyjkemp.dev/sigmadoc//search><p class="control has-icons-left"><input class="input is-rounded" type=text name=query placeholder=Search>
+<span class="icon is-left"><i class="fas fa-search" aria-hidden=true></i></span></p></form></div></div></div></nav><section class=section><div class=container><div class=columns><div class="column is-9"><nav class=breadcrumb aria-label=breadcrumbs><ul><li><a href=https://bradleyjkemp.dev/sigmadoc/>home</a></li><li><a href=https://bradleyjkemp.dev/sigmadoc/rules/>rules</a></li><li><a href=https://bradleyjkemp.dev/sigmadoc/rules/linux/>linux</a></li><li><a href=https://bradleyjkemp.dev/sigmadoc/rules/linux/builtin/>builtin</a></li><li><a href=https://bradleyjkemp.dev/sigmadoc/rules/linux/builtin/lnx_apt_equationgroup_lnx.yml/>lnx_apt_equationgroup_lnx.yml</a></li></ul></nav><div class="content is-medium"><h3 class="title is-1">Equation Group Indicators</h3><div class=box><div class="field is-grouped is-justify-content-center"><div class=control><div class="tags has-addons"><span class="tag is-medium is-dark">level</span>
+<span class="tag is-medium is-light"></span></div></div><div class=control><div class="tags has-addons"><span class="tag is-medium is-dark">status</span>
+<span class="tag is-medium is-light is-light">test</span></div></div></div><p>Detects suspicious shell commands used in various Equation Group scripts and tools</p><h2 id=known-false-positives>Known false-positives</h2><ul><li>Unknown</li></ul><h2 id=references>References</h2><ul><li><a href=https://medium.com/@shadowbrokerss/dont-forget-your-base-867d304a94b1>https://medium.com/@shadowbrokerss/dont-forget-your-base-867d304a94b1</a></li></ul><h2 id=raw-rule-edithttpsgithubcomsigmahqsigmaeditmasterruleslinuxbuiltinlnx_apt_equationgroup_lnxyml>Raw rule (<a href=https://github.com/SigmaHQ/sigma/edit/master/rules/linux/builtin/lnx_apt_equationgroup_lnx.yml>edit</a>)</h2><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=color:#f92672>title</span>: <span style=color:#ae81ff>Equation Group Indicators</span>
+<span style=color:#f92672>id</span>: <span style=color:#ae81ff>41e5c73d-9983-4b69-bd03-e13b67e9623c</span>
+<span style=color:#f92672>status</span>: <span style=color:#ae81ff>test</span>
+<span style=color:#f92672>description</span>: <span style=color:#ae81ff>Detects suspicious shell commands used in various Equation Group scripts and tools</span>
+<span style=color:#f92672>author</span>: <span style=color:#ae81ff>Florian Roth</span>
+<span style=color:#f92672>references</span>:
+  - <span style=color:#ae81ff>https://medium.com/@shadowbrokerss/dont-forget-your-base-867d304a94b1</span>
+<span style=color:#f92672>date</span>: <span style=color:#ae81ff>2017</span><span style=color:#ae81ff>/04/09</span>
+<span style=color:#f92672>modified</span>: <span style=color:#ae81ff>2021</span><span style=color:#ae81ff>/11/27</span>
+<span style=color:#f92672>logsource</span>:
+  <span style=color:#f92672>product</span>: <span style=color:#ae81ff>linux</span>
+<span style=color:#f92672>detection</span>:
+  <span style=color:#f92672>keywords</span>:
+        <span style=color:#75715e># evolvingstrategy, elgingamble, estesfox</span>
+    - <span style=color:#e6db74>&#39;chown root*chmod 4777 &#39;</span>
+    - <span style=color:#e6db74>&#39;cp /bin/sh .;chown&#39;</span>
+        <span style=color:#75715e># tmpwatch</span>
+    - <span style=color:#e6db74>&#39;chmod 4777 /tmp/.scsi/dev/bin/gsh&#39;</span>
+    - <span style=color:#e6db74>&#39;chown root:root /tmp/.scsi/dev/bin/&#39;</span>
+        <span style=color:#75715e># estesfox</span>
+    - <span style=color:#e6db74>&#39;chown root:root x;&#39;</span>
+        <span style=color:#75715e># ratload</span>
+    - <span style=color:#e6db74>&#39;/bin/telnet locip locport &lt; /dev/console | /bin/sh&#39;</span>
+    - <span style=color:#e6db74>&#39;/tmp/ratload&#39;</span>
+        <span style=color:#75715e># ewok</span>
+    - <span style=color:#e6db74>&#39;ewok -t &#39;</span>
+        <span style=color:#75715e># xspy</span>
+    - <span style=color:#e6db74>&#39;xspy -display &#39;</span>
+        <span style=color:#75715e># elatedmonkey</span>
+    - <span style=color:#e6db74>&#39;cat &gt; /dev/tcp/127.0.0.1/80 &lt;&lt;END&#39;</span>
+        <span style=color:#75715e># ftshell</span>
+    - <span style=color:#e6db74>&#39;rm -f /current/tmp/ftshell.latest&#39;</span>
+        <span style=color:#75715e># ghost</span>
+    - <span style=color:#e6db74>&#39;ghost_* -v &#39;</span>
+        <span style=color:#75715e># morerats client</span>
+    - <span style=color:#e6db74>&#39; --wipe &gt; /dev/null&#39;</span>
+        <span style=color:#75715e># noclient</span>
+    - <span style=color:#e6db74>&#39;ping -c 2 *; grep * /proc/net/arp &gt;/tmp/gx&#39;</span>
+    - <span style=color:#e6db74>&#39;iptables * OUTPUT -p tcp -d 127.0.0.1 --tcp-flags RST RST -j DROP;&#39;</span>
+        <span style=color:#75715e># auditcleaner</span>
+    - <span style=color:#e6db74>&#39;&gt; /var/log/audit/audit.log; rm -f .&#39;</span>
+    - <span style=color:#e6db74>&#39;cp /var/log/audit/audit.log .tmp&#39;</span>
+        <span style=color:#75715e># reverse shell</span>
+    - <span style=color:#e6db74>&#39;sh &gt;/dev/tcp/* &lt;&amp;1 2&gt;&amp;1&#39;</span>
+        <span style=color:#75715e># packrat</span>
+    - <span style=color:#e6db74>&#39;ncat -vv -l -p * &lt;&#39;</span>
+    - <span style=color:#e6db74>&#39;nc -vv -l -p * &lt;&#39;</span>
+        <span style=color:#75715e># empty bowl</span>
+    - <span style=color:#e6db74>&#39;&lt; /dev/console | uudecode &amp;&amp; uncompress&#39;</span>
+    - <span style=color:#e6db74>&#39;sendmail -osendmail;chmod +x sendmail&#39;</span>
+        <span style=color:#75715e># echowrecker</span>
+    - <span style=color:#e6db74>&#39;/usr/bin/wget -O /tmp/a http* &amp;&amp; chmod 755 /tmp/cron&#39;</span>
+        <span style=color:#75715e># dubmoat</span>
+    - <span style=color:#e6db74>&#39;chmod 666 /var/run/utmp~&#39;</span>
+        <span style=color:#75715e># poptop</span>
+    - <span style=color:#e6db74>&#39;chmod 700 nscd crond&#39;</span>
+        <span style=color:#75715e># abopscript</span>
+    - <span style=color:#e6db74>&#39;cp /etc/shadow /tmp/.&#39;</span>
+        <span style=color:#75715e># ys</span>
+    - <span style=color:#e6db74>&#39;&lt;/dev/console |uudecode &gt; /dev/null 2&gt;&amp;1 &amp;&amp; uncompress&#39;</span>
+        <span style=color:#75715e># jacktelnet</span>
+    - <span style=color:#e6db74>&#39;chmod 700 jp&amp;&amp;netstat -an|grep&#39;</span>
+        <span style=color:#75715e># others</span>
+    - <span style=color:#e6db74>&#39;uudecode &gt; /dev/null 2&gt;&amp;1 &amp;&amp; uncompress -f * &amp;&amp; chmod 755&#39;</span>
+    - <span style=color:#e6db74>&#39;chmod 700 crond&#39;</span>
+    - <span style=color:#e6db74>&#39;wget http*; chmod +x /tmp/sendmail&#39;</span>
+    - <span style=color:#e6db74>&#39;chmod 700 fp sendmail pt&#39;</span>
+    - <span style=color:#e6db74>&#39;chmod 755 /usr/vmsys/bin/pipe&#39;</span>
+    - <span style=color:#e6db74>&#39;chmod -R 755 /usr/vmsys&#39;</span>
+    - <span style=color:#e6db74>&#39;chmod 755 $opbin/*tunnel&#39;</span>
+    - <span style=color:#e6db74>&#39;chmod 700 sendmail&#39;</span>
+    - <span style=color:#e6db74>&#39;chmod 0700 sendmail&#39;</span>
+    - <span style=color:#e6db74>&#39;/usr/bin/wget http*sendmail;chmod +x sendmail;&#39;</span>
+    - <span style=color:#e6db74>&#39;&amp;&amp; telnet * 2&gt;&amp;1 &lt;/dev/console&#39;</span>
+  <span style=color:#f92672>condition</span>: <span style=color:#ae81ff>keywords</span>
+<span style=color:#f92672>falsepositives</span>:
+  - <span style=color:#ae81ff>Unknown</span>
+<span style=color:#f92672>level</span>: <span style=color:#ae81ff>high</span>
+<span style=color:#f92672>tags</span>:
+  - <span style=color:#ae81ff>attack.execution</span>
+  - <span style=color:#ae81ff>attack.g0020</span>
+  - <span style=color:#ae81ff>attack.t1059.004</span>
+
+</code></pre></div></div></div></div><div class="column is-3"><aside class="menu is-medium"><p class=menu-label>Rule Tags</p><div class=tags><a href=https://bradleyjkemp.dev/sigmadoc//tags/attack.execution class="tag is-medium">attack.execution</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc//tags/attack.g0020 class="tag is-medium">attack.g0020</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc//tags/attack.t1059.004 class="tag is-medium">attack.t1059.004</a></a></div><ul class=menu-list></ul><p class=menu-label>Similar rules</p><ul class=menu-list><li><a href=/sigmadoc/rules/linux/process_creation/proc_creation_lnx_bpftrace_unsafe_option_usage.yml/>BPFtrace Unsafe Option Usage</a></li><li><a href=/sigmadoc/rules/cloud/aws/aws_ec2_startup_script_change.yml/>AWS EC2 Startup Shell Script Change</a></li><li><a href=/sigmadoc/rules/linux/auditd/lnx_auditd_susp_cmds.yml/>Suspicious Commands Linux</a></li><li><a href=/sigmadoc/rules/linux/builtin/lnx_shell_susp_commands.yml/>Suspicious Activity in Shell Commands</a></li><li><a href=/sigmadoc/rules/linux/builtin/lnx_susp_jexboss.yml/>JexBoss Command Sequence</a></li></ul></aside></div></div></div></section><footer class=footer><div class="content has-text-centered"><p>Site generated with <a href=https://github.com/bradleyjkemp/sigmadoc><strong>sigmadoc</strong></a>. The website content
+is licensed <a href=https://github.com/SigmaHQ/sigma/blob/master/LICENSE.Detection.Rules.md>DRL 1.0</a>.</p></div></footer></body></html>

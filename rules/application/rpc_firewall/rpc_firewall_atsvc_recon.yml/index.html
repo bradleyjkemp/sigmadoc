@@ -1,0 +1,42 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><title>Sigma Rule Browser</title><meta name=viewport content="width=device-width"><link rel=icon type=image/png sizes=32x32 href=../images/favicon.png><link rel=stylesheet href=https://unpkg.com/bulma@0.9.2/css/bulma.min.css><script src=https://kit.fontawesome.com/7dc3015a44.js crossorigin=anonymous></script></head><body><nav class=navbar role=navigation aria-label="main navigation"><div class=navbar-brand><a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc/>Sigma Docs</a>
+<a role=button class=navbar-burger aria-label=menu aria-expanded=false data-target=navbarBasicExample><span aria-hidden=true></span><span aria-hidden=true></span><span aria-hidden=true></span></a></div><div id=navbarBasicExample class=navbar-menu><div class=navbar-start><a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc/>Home</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//rules/>Rules</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//configs/>Configs</a><div class="navbar-item has-dropdown is-hoverable"><a class=navbar-link>Explore rules by...</a><div class=navbar-dropdown><a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//tags/>Tag</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//status/>Status</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//level/>Level</a></div></div></div><div class=navbar-end><div class=navbar-item id=search class=bd-search><form action=https://bradleyjkemp.dev/sigmadoc//search><p class="control has-icons-left"><input class="input is-rounded" type=text name=query placeholder=Search>
+<span class="icon is-left"><i class="fas fa-search" aria-hidden=true></i></span></p></form></div></div></div></nav><section class=section><div class=container><div class=columns><div class="column is-9"><nav class=breadcrumb aria-label=breadcrumbs><ul><li><a href=https://bradleyjkemp.dev/sigmadoc/>home</a></li><li><a href=https://bradleyjkemp.dev/sigmadoc/rules/>rules</a></li><li><a href=https://bradleyjkemp.dev/sigmadoc/rules/application/>application</a></li><li><a href=https://bradleyjkemp.dev/sigmadoc/rules/application/rpc_firewall/>rpc_firewall</a></li><li><a href=https://bradleyjkemp.dev/sigmadoc/rules/application/rpc_firewall/rpc_firewall_atsvc_recon.yml/>rpc_firewall_atsvc_recon.yml</a></li></ul></nav><div class="content is-medium"><h3 class="title is-1">Remote Schedule Task Recon via AtScv</h3><div class=box><div class="field is-grouped is-justify-content-center"><div class=control><div class="tags has-addons"><span class="tag is-medium is-dark">level</span>
+<span class="tag is-medium is-light"></span></div></div><div class=control><div class="tags has-addons"><span class="tag is-medium is-dark">status</span>
+<span class="tag is-medium is-danger is-light">experimental</span></div></div></div><p>Detects remote RPC calls to read information about scheduled tasks via AtScv</p><h2 id=known-false-positives>Known false-positives</h2><ul><li>unknown</li></ul><h2 id=references>References</h2><ul><li><a href=https://attack.mitre.org/tactics/TA0007/>https://attack.mitre.org/tactics/TA0007/</a></li><li><a href=https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-tsch/d1058a28-7e02-4948-8b8d-4a347fa64931>https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-tsch/d1058a28-7e02-4948-8b8d-4a347fa64931</a></li><li><a href=https://github.com/zeronetworks/rpcfirewall>https://github.com/zeronetworks/rpcfirewall</a></li><li><a href=https://github.com/jsecurity101/MSRPC-to-ATTACK/blob/main/documents/MS-TSCH.md>https://github.com/jsecurity101/MSRPC-to-ATTACK/blob/main/documents/MS-TSCH.md</a></li><li><a href=https://github.com/zeronetworks/rpcfirewall>https://github.com/zeronetworks/rpcfirewall</a></li><li><a href=https://zeronetworks.com/blog/stopping_lateral_movement_via_the_rpc_firewall/>https://zeronetworks.com/blog/stopping_lateral_movement_via_the_rpc_firewall/</a></li></ul><h2 id=raw-rule-edithttpsgithubcomsigmahqsigmaeditmasterrulesapplicationrpc_firewallrpc_firewall_atsvc_reconyml>Raw rule (<a href=https://github.com/SigmaHQ/sigma/edit/master/rules/application/rpc_firewall/rpc_firewall_atsvc_recon.yml>edit</a>)</h2><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=color:#f92672>title</span>: <span style=color:#ae81ff>Remote Schedule Task Recon via AtScv</span>
+<span style=color:#f92672>id</span>: <span style=color:#ae81ff>f177f2bc-5f3e-4453-b599-57eefce9a59c</span>
+<span style=color:#f92672>description</span>: <span style=color:#ae81ff>Detects remote RPC calls to read information about scheduled tasks via AtScv</span>
+<span style=color:#f92672>references</span>:
+    - <span style=color:#ae81ff>https://attack.mitre.org/tactics/TA0007/</span>
+    - <span style=color:#ae81ff>https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-tsch/d1058a28-7e02-4948-8b8d-4a347fa64931</span>
+    - <span style=color:#ae81ff>https://github.com/zeronetworks/rpcfirewall</span>
+    - <span style=color:#ae81ff>https://github.com/jsecurity101/MSRPC-to-ATTACK/blob/main/documents/MS-TSCH.md</span>
+    - <span style=color:#ae81ff>https://github.com/zeronetworks/rpcfirewall</span>
+    - <span style=color:#ae81ff>https://zeronetworks.com/blog/stopping_lateral_movement_via_the_rpc_firewall/</span>
+<span style=color:#f92672>status</span>: <span style=color:#ae81ff>experimental</span>
+<span style=color:#f92672>author</span>: <span style=color:#ae81ff>Sagie Dulce, Dekel Paz</span>
+<span style=color:#f92672>date</span>: <span style=color:#ae81ff>2022</span><span style=color:#ae81ff>/01/01</span>
+<span style=color:#f92672>modified</span>: <span style=color:#ae81ff>2022</span><span style=color:#ae81ff>/01/01</span>
+<span style=color:#f92672>logsource</span>:
+    <span style=color:#f92672>product</span>: <span style=color:#ae81ff>rpc_firewall</span>
+    <span style=color:#f92672>category</span>: <span style=color:#ae81ff>application</span>
+    <span style=color:#f92672>definition: &#39;Requirements</span>: <span style=color:#ae81ff>install and apply the RPC Firewall to all processes with &#34;audit:true action:block uuid:1ff70682-0a51-30e8-076d-740be8cee98b&#34;&#39;</span>
+<span style=color:#f92672>detection</span>:
+    <span style=color:#f92672>selection</span>:
+        <span style=color:#f92672>EventLog</span>: <span style=color:#ae81ff>RPCFW</span>
+        <span style=color:#f92672>EventID</span>: <span style=color:#ae81ff>3</span>
+        <span style=color:#f92672>InterfaceUuid</span>: <span style=color:#ae81ff>1ff70682-0a51-30e8-076d-740be8cee98b</span>
+    <span style=color:#f92672>filter</span>:
+      <span style=color:#f92672>OpNum</span>:
+        - <span style=color:#ae81ff>0</span>
+        - <span style=color:#ae81ff>1</span>
+    <span style=color:#f92672>condition</span>: <span style=color:#ae81ff>selection and not filter</span>
+<span style=color:#f92672>falsepositives</span>:
+    - <span style=color:#ae81ff>unknown</span>
+<span style=color:#f92672>level</span>: <span style=color:#ae81ff>high</span>
+
+</code></pre></div></div></div></div><div class="column is-3"><aside class="menu is-medium"><p class=menu-label>Rule Tags</p><div class=tags></div><ul class=menu-list></ul><p class=menu-label>Similar rules</p></aside></div></div></div></section><footer class=footer><div class="content has-text-centered"><p>Site generated with <a href=https://github.com/bradleyjkemp/sigmadoc><strong>sigmadoc</strong></a>. The website content
+is licensed <a href=https://github.com/SigmaHQ/sigma/blob/master/LICENSE.Detection.Rules.md>DRL 1.0</a>.</p></div></footer></body></html>

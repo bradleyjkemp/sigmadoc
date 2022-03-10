@@ -1,0 +1,84 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><title>Sigma Rule Browser</title><meta name=viewport content="width=device-width"><link rel=icon type=image/png sizes=32x32 href=../images/favicon.png><link rel=stylesheet href=https://unpkg.com/bulma@0.9.2/css/bulma.min.css><script src=https://kit.fontawesome.com/7dc3015a44.js crossorigin=anonymous></script></head><body><nav class=navbar role=navigation aria-label="main navigation"><div class=navbar-brand><a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc/>Sigma Docs</a>
+<a role=button class=navbar-burger aria-label=menu aria-expanded=false data-target=navbarBasicExample><span aria-hidden=true></span><span aria-hidden=true></span><span aria-hidden=true></span></a></div><div id=navbarBasicExample class=navbar-menu><div class=navbar-start><a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc/>Home</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//rules/>Rules</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//configs/>Configs</a><div class="navbar-item has-dropdown is-hoverable"><a class=navbar-link>Explore rules by...</a><div class=navbar-dropdown><a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//tags/>Tag</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//status/>Status</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//level/>Level</a></div></div></div><div class=navbar-end><div class=navbar-item id=search class=bd-search><form action=https://bradleyjkemp.dev/sigmadoc//search><p class="control has-icons-left"><input class="input is-rounded" type=text name=query placeholder=Search>
+<span class="icon is-left"><i class="fas fa-search" aria-hidden=true></i></span></p></form></div></div></div></nav><section class=section><div class=container><div class=columns><div class="column is-9"><nav class=breadcrumb aria-label=breadcrumbs><ul><li><a href=https://bradleyjkemp.dev/sigmadoc/>home</a></li><li><a href=https://bradleyjkemp.dev/sigmadoc/rules/>rules</a></li><li><a href=https://bradleyjkemp.dev/sigmadoc/rules/network/>network</a></li><li><a href=https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/>zeek</a></li><li><a href=https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_dns_suspicious_zbit_flag.yml/>zeek_dns_suspicious_zbit_flag.yml</a></li></ul></nav><div class="content is-medium"><h3 class="title is-1">Suspicious DNS Z Flag Bit Set</h3><div class=box><div class="field is-grouped is-justify-content-center"><div class=control><div class="tags has-addons"><span class="tag is-medium is-dark">level</span>
+<span class="tag is-medium is-light"></span></div></div><div class=control><div class="tags has-addons"><span class="tag is-medium is-dark">status</span>
+<span class="tag is-medium is-danger is-light">experimental</span></div></div></div><p>The DNS Z flag is bit within the DNS protocol header that is, per the IETF design, meant to be used reserved (unused). Although recently it has been used in DNSSec, the value being set to anything other than 0 should be rare. Otherwise if it is set to non 0 and DNSSec is being used, then excluding the legitimate domains is low effort and high reward. Determine if multiple of these files were accessed in a short period of time to further enhance the possibility of seeing if this was a one off or the possibility of larger sensitive file gathering. This Sigma query is designed to accompany the Corelight Threat Hunting Guide, which can be found here: <a href=https://www3.corelight.com/corelights-introductory-guide-to-threat-hunting-with-zeek-bro-logs>https://www3.corelight.com/corelights-introductory-guide-to-threat-hunting-with-zeek-bro-logs</a></p><h2 id=known-false-positives>Known false-positives</h2><ul><li>Internal or legitimate external domains using DNSSec. Verify if these are legitimate DNSSec domains and then exclude them.</li><li>If you work in a Public Sector then it may be good to exclude things like endswith &ldquo;.edu&rdquo;, &ldquo;.gov&rdquo; and or &ldquo;.mil&rdquo;</li></ul><h2 id=references>References</h2><ul><li><a href=https://twitter.com/neu5ron/status/1346245602502443009>https://twitter.com/neu5ron/status/1346245602502443009</a></li><li><a href=https://tdm.socprime.com/tdm/info/eLbyj4JjI15v#sigma>https://tdm.socprime.com/tdm/info/eLbyj4JjI15v#sigma</a></li><li><a href=https://tools.ietf.org/html/rfc2929#section-2.1>https://tools.ietf.org/html/rfc2929#section-2.1</a></li><li><a href="https://www.netresec.com/?page=Blog&month=2021-01&post=Finding-Targeted-SUNBURST-Victims-with-pDNS">https://www.netresec.com/?page=Blog&month=2021-01&post=Finding-Targeted-SUNBURST-Victims-with-pDNS</a></li></ul><h2 id=raw-rule-edithttpsgithubcomsigmahqsigmaeditmasterrulesnetworkzeekzeek_dns_suspicious_zbit_flagyml>Raw rule (<a href=https://github.com/SigmaHQ/sigma/edit/master/rules/network/zeek/zeek_dns_suspicious_zbit_flag.yml>edit</a>)</h2><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=color:#f92672>title</span>: <span style=color:#ae81ff>Suspicious DNS Z Flag Bit Set</span>
+<span style=color:#f92672>id</span>: <span style=color:#ae81ff>ede05abc-2c9e-4624-9944-9ff17fdc0bf5</span>
+<span style=color:#f92672>description: &#39;The DNS Z flag is bit within the DNS protocol header that is, per the IETF design, meant to be used reserved (unused). Although recently it has been used in DNSSec, the value being set to anything other than 0 should be rare. Otherwise if it is set to non 0 and DNSSec is being used, then excluding the legitimate domains is low effort and high reward. Determine if multiple of these files were accessed in a short period of time to further enhance the possibility of seeing if this was a one off or the possibility of larger sensitive file gathering. This Sigma query is designed to accompany the Corelight Threat Hunting Guide, which can be found here</span>: <span style=color:#ae81ff>https://www3.corelight.com/corelights-introductory-guide-to-threat-hunting-with-zeek-bro-logs&#39;</span>
+<span style=color:#f92672>status</span>: <span style=color:#ae81ff>experimental</span>
+<span style=color:#f92672>date</span>: <span style=color:#ae81ff>2021</span><span style=color:#ae81ff>/05/04</span>
+<span style=color:#f92672>modified</span>: <span style=color:#ae81ff>2022</span><span style=color:#ae81ff>/02/24</span>
+<span style=color:#f92672>references</span>:
+  - <span style=color:#e6db74>&#39;https://twitter.com/neu5ron/status/1346245602502443009&#39;</span>
+  - <span style=color:#e6db74>&#39;https://tdm.socprime.com/tdm/info/eLbyj4JjI15v#sigma&#39;</span>
+  - <span style=color:#e6db74>&#39;https://tools.ietf.org/html/rfc2929#section-2.1&#39;</span>
+  - <span style=color:#e6db74>&#39;https://www.netresec.com/?page=Blog&amp;month=2021-01&amp;post=Finding-Targeted-SUNBURST-Victims-with-pDNS&#39;</span>
+<span style=color:#f92672>author</span>: <span style=color:#e6db74>&#39;@neu5ron, SOC Prime Team, Corelight&#39;</span>
+<span style=color:#f92672>tags</span>:
+  - <span style=color:#ae81ff>attack.t1095</span>
+  - <span style=color:#ae81ff>attack.t1571</span>
+  - <span style=color:#ae81ff>attack.command_and_control</span>
+<span style=color:#f92672>logsource</span>:
+  <span style=color:#f92672>product</span>: <span style=color:#ae81ff>zeek</span>
+  <span style=color:#f92672>service</span>: <span style=color:#ae81ff>dns</span>
+<span style=color:#f92672>detection</span>:
+  <span style=color:#f92672>z_flag_unset</span>:
+    <span style=color:#f92672>Z</span>: <span style=color:#e6db74>&#39;0&#39;</span>
+  <span style=color:#f92672>most_probable_valid_domain</span>:
+    <span style=color:#f92672>query|contains</span>: <span style=color:#e6db74>&#39;.&#39;</span>
+  <span style=color:#f92672>exclude_tlds</span>:
+    <span style=color:#f92672>query|endswith</span>:
+      - <span style=color:#e6db74>&#39;.arpa&#39;</span>
+      - <span style=color:#e6db74>&#39;.local&#39;</span>
+      - <span style=color:#e6db74>&#39;.ultradns.net&#39;</span>
+      - <span style=color:#e6db74>&#39;.twtrdns.net&#39;</span>
+      - <span style=color:#e6db74>&#39;.azuredns-prd.info&#39;</span>
+      - <span style=color:#e6db74>&#39;.azure-dns.com&#39;</span>
+      - <span style=color:#e6db74>&#39;.azuredns-ff.info&#39;</span>
+      - <span style=color:#e6db74>&#39;.azuredns-ff.org&#39;</span>
+      - <span style=color:#e6db74>&#39;.azuregov-dns.org&#39;</span>
+  <span style=color:#f92672>exclude_query_types</span>:
+    <span style=color:#f92672>qtype_name</span>:
+      - <span style=color:#e6db74>&#39;NS&#39;</span>
+      - <span style=color:#e6db74>&#39;ns&#39;</span>
+      - <span style=color:#e6db74>&#39;MX&#39;</span>
+      - <span style=color:#e6db74>&#39;mx&#39;</span>
+  <span style=color:#f92672>exclude_responses</span>:
+    <span style=color:#f92672>answers|endswith</span>: <span style=color:#e6db74>&#39;\\x00&#39;</span>
+  <span style=color:#f92672>exclude_netbios</span>:
+    <span style=color:#f92672>id.resp_p</span>:
+      - <span style=color:#e6db74>&#39;137&#39;</span>
+      - <span style=color:#e6db74>&#39;138&#39;</span>
+      - <span style=color:#e6db74>&#39;139&#39;</span>
+  <span style=color:#f92672>condition</span>: <span style=color:#ae81ff>not z_flag_unset and most_probable_valid_domain and not (exclude_tlds or exclude_query_types or exclude_responses or exclude_netbios)</span>
+<span style=color:#f92672>falsepositives</span>:
+  - <span style=color:#e6db74>&#39;Internal or legitimate external domains using DNSSec. Verify if these are legitimate DNSSec domains and then exclude them.&#39;</span>
+  - <span style=color:#e6db74>&#39;If you work in a Public Sector then it may be good to exclude things like endswith &#34;.edu&#34;, &#34;.gov&#34; and or &#34;.mil&#34;&#39;</span>
+<span style=color:#f92672>level</span>: <span style=color:#ae81ff>medium</span>
+<span style=color:#f92672>fields</span>:
+  - <span style=color:#ae81ff>ts</span>
+  - <span style=color:#ae81ff>id.orig_h</span>
+  - <span style=color:#ae81ff>id.orig_p</span>
+  - <span style=color:#ae81ff>id.resp_h</span>
+  - <span style=color:#ae81ff>id.resp_p</span>
+  - <span style=color:#ae81ff>proto</span>
+  - <span style=color:#ae81ff>qtype_name</span>
+  - <span style=color:#ae81ff>qtype</span>
+  - <span style=color:#ae81ff>query</span>
+  - <span style=color:#ae81ff>answers</span>
+  - <span style=color:#ae81ff>rcode</span>
+  - <span style=color:#ae81ff>rcode_name</span>
+  - <span style=color:#ae81ff>trans_id</span>
+  - <span style=color:#ae81ff>qtype</span>
+  - <span style=color:#ae81ff>ttl</span>
+  - <span style=color:#ae81ff>AA</span>
+  - <span style=color:#ae81ff>uid</span>
+
+</code></pre></div></div></div></div><div class="column is-3"><aside class="menu is-medium"><p class=menu-label>Rule Tags</p><div class=tags><a href=https://bradleyjkemp.dev/sigmadoc//tags/attack.t1095 class="tag is-medium">attack.t1095</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc//tags/attack.t1571 class="tag is-medium">attack.t1571</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc//tags/attack.command_and_control class="tag is-medium">attack.command_and_control</a></a></div><ul class=menu-list></ul><p class=menu-label>Similar rules</p><ul class=menu-list><li><a href=/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_test_netconnection.yml/>Testing Usage of Uncommonly Used Port</a></li><li><a href=/sigmadoc/rules/windows/powershell/powershell_module/posh_pm_powercat.yml/>Netcat The Powershell Version</a></li><li><a href=/sigmadoc/rules/windows/process_creation/proc_creation_win_netcat_execution.yml/>Ncat Execution</a></li><li><a href=/sigmadoc/rules/windows/network_connection/net_connection_win_malware_backconnect_ports.yml/>Suspicious Typical Malware Back Connect Ports</a></li><li><a href=/sigmadoc/rules/windows/process_creation/proc_creation_win_screenconnect_anomaly.yml/>ScreenConnect Backstage Mode Anomaly</a></li></ul></aside></div></div></div></section><footer class=footer><div class="content has-text-centered"><p>Site generated with <a href=https://github.com/bradleyjkemp/sigmadoc><strong>sigmadoc</strong></a>. The website content
+is licensed <a href=https://github.com/SigmaHQ/sigma/blob/master/LICENSE.Detection.Rules.md>DRL 1.0</a>.</p></div></footer></body></html>

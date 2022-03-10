@@ -1,0 +1,101 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><title>Sigma Rule Browser</title><meta name=viewport content="width=device-width"><link rel=icon type=image/png sizes=32x32 href=../images/favicon.png><link rel=stylesheet href=https://unpkg.com/bulma@0.9.2/css/bulma.min.css><script src=https://kit.fontawesome.com/7dc3015a44.js crossorigin=anonymous></script></head><body><nav class=navbar role=navigation aria-label="main navigation"><div class=navbar-brand><a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc/>Sigma Docs</a>
+<a role=button class=navbar-burger aria-label=menu aria-expanded=false data-target=navbarBasicExample><span aria-hidden=true></span><span aria-hidden=true></span><span aria-hidden=true></span></a></div><div id=navbarBasicExample class=navbar-menu><div class=navbar-start><a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc/>Home</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//rules/>Rules</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//configs/>Configs</a><div class="navbar-item has-dropdown is-hoverable"><a class=navbar-link>Explore rules by...</a><div class=navbar-dropdown><a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//tags/>Tag</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//status/>Status</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//level/>Level</a></div></div></div><div class=navbar-end><div class=navbar-item id=search class=bd-search><form action=https://bradleyjkemp.dev/sigmadoc//search><p class="control has-icons-left"><input class="input is-rounded" type=text name=query placeholder=Search>
+<span class="icon is-left"><i class="fas fa-search" aria-hidden=true></i></span></p></form></div></div></div></nav><section class=section><div class=container><div class=columns><div class="column is-9"><nav class=breadcrumb aria-label=breadcrumbs><ul><li><a href=https://bradleyjkemp.dev/sigmadoc/>home</a></li><li><a href=https://bradleyjkemp.dev/sigmadoc/rules/>rules</a></li><li><a href=https://bradleyjkemp.dev/sigmadoc/rules/windows/>windows</a></li><li><a href=https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/>builtin</a></li><li><a href=https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/>security</a></li><li><a href=https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_alert_enable_weak_encryption.yml/>win_alert_enable_weak_encryption.yml</a></li></ul></nav><div class="content is-medium"><h3 class="title is-1">Weak Encryption Enabled and Kerberoast</h3><div class=box><div class="field is-grouped is-justify-content-center"><div class=control><div class="tags has-addons"><span class="tag is-medium is-dark">level</span>
+<span class="tag is-medium is-light"></span></div></div><div class=control><div class="tags has-addons"><span class="tag is-medium is-dark">status</span>
+<span class="tag is-medium is-light is-light">test</span></div></div></div><p>Detects scenario where weak encryption is enabled for a user profile which could be used for hash/password cracking.</p><h2 id=known-false-positives>Known false-positives</h2><ul><li>Unknown</li></ul><h2 id=references>References</h2><ul><li><a href="https://adsecurity.org/?p=2053">https://adsecurity.org/?p=2053</a></li><li><a href=https://www.harmj0y.net/blog/activedirectory/roasting-as-reps/>https://www.harmj0y.net/blog/activedirectory/roasting-as-reps/</a></li></ul><h2 id=raw-rule-edithttpsgithubcomsigmahqsigmaeditmasterruleswindowsbuiltinsecuritywin_alert_enable_weak_encryptionyml>Raw rule (<a href=https://github.com/SigmaHQ/sigma/edit/master/rules/windows/builtin/security/win_alert_enable_weak_encryption.yml>edit</a>)</h2><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=color:#f92672>title</span>: <span style=color:#ae81ff>Weak Encryption Enabled and Kerberoast</span>
+<span style=color:#f92672>id</span>: <span style=color:#ae81ff>f6de9536-0441-4b3f-a646-f4e00f300ffd</span>
+<span style=color:#f92672>status</span>: <span style=color:#ae81ff>test</span>
+<span style=color:#f92672>description</span>: <span style=color:#ae81ff>Detects scenario where weak encryption is enabled for a user profile which could be used for hash/password cracking.</span>
+<span style=color:#f92672>author</span>: <span style=color:#e6db74>&#39;@neu5ron&#39;</span>
+<span style=color:#f92672>references</span>:
+  - <span style=color:#ae81ff>https://adsecurity.org/?p=2053</span>
+  - <span style=color:#ae81ff>https://www.harmj0y.net/blog/activedirectory/roasting-as-reps/</span>
+<span style=color:#f92672>date</span>: <span style=color:#ae81ff>2017</span><span style=color:#ae81ff>/07/30</span>
+<span style=color:#f92672>modified</span>: <span style=color:#ae81ff>2021</span><span style=color:#ae81ff>/11/27</span>
+<span style=color:#f92672>logsource</span>:
+  <span style=color:#f92672>product</span>: <span style=color:#ae81ff>windows</span>
+  <span style=color:#f92672>service</span>: <span style=color:#ae81ff>security</span>
+  <span style=color:#f92672>definition: &#39;Requirements: Audit Policy : Account Management &gt; Audit User Account Management, Group Policy </span>: <span style=color:#ae81ff>Computer Configuration\Windows Settings\Security Settings\Advanced Audit Policy Configuration\Audit Policies\Account Management\Audit User Account Management&#39;</span>
+<span style=color:#f92672>detection</span>:
+  <span style=color:#f92672>selection</span>:
+    <span style=color:#f92672>EventID</span>: <span style=color:#ae81ff>4738</span>
+    <span style=color:#75715e># According to Microsoft, the bit values are listed here: https://docs.microsoft.com/en-us/windows/security/threat-protection/auditing/event-4720</span>
+    <span style=color:#75715e># However, that seems to be a simple copy from https://docs.microsoft.com/en-US/troubleshoot/windows-server/identity/useraccountcontrol-manipulate-account-properties</span>
+    <span style=color:#75715e># and the actual flags that are used are quite different and, unfortunately, not documented.</span>
+    <span style=color:#75715e># https://github.com/mdecrevoisier/EVTX-to-MITRE-Attack/ contains a number of EVTX files with relevant events, which can be used to extract</span>
+    <span style=color:#75715e># the following values.</span>
+  <span style=color:#f92672>olduac_des</span>:   <span style=color:#75715e># 0x8000</span>
+    <span style=color:#f92672>OldUacValue|endswith</span>:
+      - <span style=color:#ae81ff>8</span>???
+      - <span style=color:#ae81ff>9</span>???
+      - <span style=color:#ae81ff>A???</span>
+      - <span style=color:#ae81ff>B???</span>
+      - <span style=color:#ae81ff>C???</span>
+      - <span style=color:#ae81ff>D???</span>
+      - <span style=color:#ae81ff>E???</span>
+      - <span style=color:#ae81ff>F???</span>
+  <span style=color:#f92672>newuac_des</span>:
+    <span style=color:#f92672>NewUacValue|endswith</span>:
+      - <span style=color:#ae81ff>8</span>???
+      - <span style=color:#ae81ff>9</span>???
+      - <span style=color:#ae81ff>A???</span>
+      - <span style=color:#ae81ff>B???</span>
+      - <span style=color:#ae81ff>C???</span>
+      - <span style=color:#ae81ff>D???</span>
+      - <span style=color:#ae81ff>E???</span>
+      - <span style=color:#ae81ff>F???</span>
+  <span style=color:#f92672>olduac_preauth</span>:   <span style=color:#75715e># 0x10000</span>
+    <span style=color:#f92672>OldUacValue|endswith</span>:
+      - <span style=color:#ae81ff>1</span>????
+      - <span style=color:#ae81ff>3</span>????
+      - <span style=color:#ae81ff>5</span>????
+      - <span style=color:#ae81ff>7</span>????
+      - <span style=color:#ae81ff>9</span>????
+      - <span style=color:#ae81ff>B????</span>
+      - <span style=color:#ae81ff>D????</span>
+      - <span style=color:#ae81ff>F????</span>
+  <span style=color:#f92672>newuac_preauth</span>:
+    <span style=color:#f92672>NewUacValue|endswith</span>:
+      - <span style=color:#ae81ff>1</span>????
+      - <span style=color:#ae81ff>3</span>????
+      - <span style=color:#ae81ff>5</span>????
+      - <span style=color:#ae81ff>7</span>????
+      - <span style=color:#ae81ff>9</span>????
+      - <span style=color:#ae81ff>B????</span>
+      - <span style=color:#ae81ff>D????</span>
+      - <span style=color:#ae81ff>F????</span>
+  <span style=color:#f92672>olduac_encrypted</span>:   <span style=color:#75715e># 0x800</span>
+    <span style=color:#f92672>OldUacValue|endswith</span>:
+      - <span style=color:#ae81ff>8</span>??
+      - <span style=color:#ae81ff>9</span>??
+      - <span style=color:#ae81ff>A??</span>
+      - <span style=color:#ae81ff>B??</span>
+      - <span style=color:#ae81ff>C??</span>
+      - <span style=color:#ae81ff>D??</span>
+      - <span style=color:#ae81ff>E??</span>
+      - <span style=color:#ae81ff>F??</span>
+  <span style=color:#f92672>newuac_encrypted</span>:
+    <span style=color:#f92672>NewUacValue|endswith</span>:
+      - <span style=color:#ae81ff>8</span>??
+      - <span style=color:#ae81ff>9</span>??
+      - <span style=color:#ae81ff>A??</span>
+      - <span style=color:#ae81ff>B??</span>
+      - <span style=color:#ae81ff>C??</span>
+      - <span style=color:#ae81ff>D??</span>
+      - <span style=color:#ae81ff>E??</span>
+      - <span style=color:#ae81ff>F??</span>
+  <span style=color:#f92672>condition</span>: <span style=color:#ae81ff>selection and ((newuac_des and not olduac_des) or (newuac_preauth and not olduac_preauth) or (newuac_encrypted and not olduac_encrypted))</span>
+<span style=color:#f92672>falsepositives</span>:
+  - <span style=color:#ae81ff>Unknown</span>
+<span style=color:#f92672>level</span>: <span style=color:#ae81ff>high</span>
+<span style=color:#f92672>tags</span>:
+  - <span style=color:#ae81ff>attack.defense_evasion</span>
+  - <span style=color:#ae81ff>attack.t1562.001</span>
+
+</code></pre></div></div></div></div><div class="column is-3"><aside class="menu is-medium"><p class=menu-label>Rule Tags</p><div class=tags><a href=https://bradleyjkemp.dev/sigmadoc//tags/attack.defense_evasion class="tag is-medium">attack.defense_evasion</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc//tags/attack.t1562.001 class="tag is-medium">attack.t1562.001</a></a></div><ul class=menu-list></ul><p class=menu-label>Similar rules</p><ul class=menu-list><li><a href=/sigmadoc/rules/windows/process_creation/proc_creation_win_reg_defender_exclusion.yml/>Registry Defender Exclusions</a></li><li><a href=/sigmadoc/rules/windows/process_creation/proc_creation_win_dsim_remove.yml/>Dism Remove Online Package</a></li><li><a href=/sigmadoc/rules/windows/process_creation/proc_creation_win_uninstall_sysmon.yml/>Uninstall Sysinternals Sysmon</a></li><li><a href=/sigmadoc/rules/windows/process_creation/proc_creation_win_cleanwipe.yml/>CleanWipe Usage</a></li><li><a href=/sigmadoc/rules/windows/registry_event/registry_event_defender_realtime_protection_disabled.yml/>Windows Defender Real-Time Protection Disabled</a></li></ul></aside></div></div></div></section><footer class=footer><div class="content has-text-centered"><p>Site generated with <a href=https://github.com/bradleyjkemp/sigmadoc><strong>sigmadoc</strong></a>. The website content
+is licensed <a href=https://github.com/SigmaHQ/sigma/blob/master/LICENSE.Detection.Rules.md>DRL 1.0</a>.</p></div></footer></body></html>

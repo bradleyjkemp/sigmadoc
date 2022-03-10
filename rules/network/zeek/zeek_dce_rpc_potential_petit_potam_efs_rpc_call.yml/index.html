@@ -1,0 +1,53 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><title>Sigma Rule Browser</title><meta name=viewport content="width=device-width"><link rel=icon type=image/png sizes=32x32 href=../images/favicon.png><link rel=stylesheet href=https://unpkg.com/bulma@0.9.2/css/bulma.min.css><script src=https://kit.fontawesome.com/7dc3015a44.js crossorigin=anonymous></script></head><body><nav class=navbar role=navigation aria-label="main navigation"><div class=navbar-brand><a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc/>Sigma Docs</a>
+<a role=button class=navbar-burger aria-label=menu aria-expanded=false data-target=navbarBasicExample><span aria-hidden=true></span><span aria-hidden=true></span><span aria-hidden=true></span></a></div><div id=navbarBasicExample class=navbar-menu><div class=navbar-start><a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc/>Home</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//rules/>Rules</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//configs/>Configs</a><div class="navbar-item has-dropdown is-hoverable"><a class=navbar-link>Explore rules by...</a><div class=navbar-dropdown><a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//tags/>Tag</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//status/>Status</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//level/>Level</a></div></div></div><div class=navbar-end><div class=navbar-item id=search class=bd-search><form action=https://bradleyjkemp.dev/sigmadoc//search><p class="control has-icons-left"><input class="input is-rounded" type=text name=query placeholder=Search>
+<span class="icon is-left"><i class="fas fa-search" aria-hidden=true></i></span></p></form></div></div></div></nav><section class=section><div class=container><div class=columns><div class="column is-9"><nav class=breadcrumb aria-label=breadcrumbs><ul><li><a href=https://bradleyjkemp.dev/sigmadoc/>home</a></li><li><a href=https://bradleyjkemp.dev/sigmadoc/rules/>rules</a></li><li><a href=https://bradleyjkemp.dev/sigmadoc/rules/network/>network</a></li><li><a href=https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/>zeek</a></li><li><a href=https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_dce_rpc_potential_petit_potam_efs_rpc_call.yml/>zeek_dce_rpc_potential_petit_potam_efs_rpc_call.yml</a></li></ul></nav><div class="content is-medium"><h3 class="title is-1">Potential PetitPotam Attack Via EFS RPC Calls</h3><div class=box><div class="field is-grouped is-justify-content-center"><div class=control><div class="tags has-addons"><span class="tag is-medium is-dark">level</span>
+<span class="tag is-medium is-light"></span></div></div><div class=control><div class="tags has-addons"><span class="tag is-medium is-dark">status</span>
+<span class="tag is-medium is-danger is-light">experimental</span></div></div></div><p>Detects usage of the windows RPC library Encrypting File System Remote Protocol (MS-EFSRPC). Variations of this RPC are used within the attack refereed to as PetitPotam.
+The usage of this RPC function should be rare if ever used at all.
+Thus usage of this function is uncommon enough that any usage of this RPC function should warrant further investigation to determine if it is legitimate.
+View surrounding logs (within a few minutes before and after) from the Source IP to. Logs from from the Source IP would include dce_rpc, smb_mapping, smb_files, rdp, ntlm, kerberos, etc..'</p><h2 id=known-false-positives>Known false-positives</h2><ul><li>Uncommon but legitimate windows administrator or software tasks that make use of the Encrypting File System RPC Calls. Verify if this is common activity (see description).</li></ul><h2 id=references>References</h2><ul><li><a href=https://github.com/topotam/PetitPotam/blob/main/PetitPotam/PetitPotam.cpp>https://github.com/topotam/PetitPotam/blob/main/PetitPotam/PetitPotam.cpp</a></li><li><a href=https://msrc.microsoft.com/update-guide/vulnerability/ADV210003>https://msrc.microsoft.com/update-guide/vulnerability/ADV210003</a></li><li><a href=https://vx-underground.org/archive/Symantec/windows-vista-network-attack-07-en.pdf>https://vx-underground.org/archive/Symantec/windows-vista-network-attack-07-en.pdf</a></li><li><a href=https://threatpost.com/microsoft-petitpotam-poc/168163/>https://threatpost.com/microsoft-petitpotam-poc/168163/</a></li></ul><h2 id=raw-rule-edithttpsgithubcomsigmahqsigmaeditmasterrulesnetworkzeekzeek_dce_rpc_potential_petit_potam_efs_rpc_callyml>Raw rule (<a href=https://github.com/SigmaHQ/sigma/edit/master/rules/network/zeek/zeek_dce_rpc_potential_petit_potam_efs_rpc_call.yml>edit</a>)</h2><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=color:#f92672>title</span>: <span style=color:#ae81ff>Potential PetitPotam Attack Via EFS RPC Calls </span>
+<span style=color:#f92672>id</span>: <span style=color:#ae81ff>4096842a-8f9f-4d36-92b4-d0b2a62f9b2a</span>
+<span style=color:#f92672>description</span>: |<span style=color:#e6db74>
+</span><span style=color:#e6db74>    Detects usage of the windows RPC library Encrypting File System Remote Protocol (MS-EFSRPC). Variations of this RPC are used within the attack refereed to as PetitPotam.
+</span><span style=color:#e6db74>    The usage of this RPC function should be rare if ever used at all.
+</span><span style=color:#e6db74>    Thus usage of this function is uncommon enough that any usage of this RPC function should warrant further investigation to determine if it is legitimate.
+</span><span style=color:#e6db74>     View surrounding logs (within a few minutes before and after) from the Source IP to. Logs from from the Source IP would include dce_rpc, smb_mapping, smb_files, rdp, ntlm, kerberos, etc..&#39;</span>    
+<span style=color:#f92672>status</span>: <span style=color:#ae81ff>experimental</span>
+<span style=color:#f92672>author</span>: <span style=color:#e6db74>&#39;@neu5ron, @Antonlovesdnb, Mike Remen&#39;</span>
+<span style=color:#f92672>date</span>: <span style=color:#ae81ff>2021</span><span style=color:#ae81ff>/08/17</span>
+<span style=color:#f92672>references</span>:
+    - <span style=color:#ae81ff>https://github.com/topotam/PetitPotam/blob/main/PetitPotam/PetitPotam.cpp</span>
+    - <span style=color:#ae81ff>https://msrc.microsoft.com/update-guide/vulnerability/ADV210003</span>
+    - <span style=color:#ae81ff>https://vx-underground.org/archive/Symantec/windows-vista-network-attack-07-en.pdf</span>
+    - <span style=color:#ae81ff>https://threatpost.com/microsoft-petitpotam-poc/168163/</span>
+<span style=color:#f92672>tags</span>:
+    - <span style=color:#ae81ff>attack.t1557.001</span>
+    - <span style=color:#ae81ff>attack.t1187</span>
+<span style=color:#f92672>logsource</span>:
+    <span style=color:#f92672>product</span>: <span style=color:#ae81ff>zeek</span>
+    <span style=color:#f92672>service</span>: <span style=color:#ae81ff>dce_rpc</span>
+<span style=color:#f92672>detection</span>:
+    <span style=color:#f92672>efs_operation</span>:
+        <span style=color:#f92672>operation|startswith</span>:
+            - <span style=color:#e6db74>&#39;Efs&#39;</span>
+            - <span style=color:#e6db74>&#39;efs&#39;</span>
+    <span style=color:#f92672>condition</span>: <span style=color:#ae81ff>efs_operation</span>
+<span style=color:#f92672>falsepositives</span>:
+    - <span style=color:#ae81ff>Uncommon but legitimate windows administrator or software tasks that make use of the Encrypting File System RPC Calls. Verify if this is common activity (see description).</span>
+<span style=color:#f92672>level</span>: <span style=color:#ae81ff>medium</span>
+<span style=color:#f92672>fields</span>:
+    - <span style=color:#ae81ff>id.orig_h</span>
+    - <span style=color:#ae81ff>id.resp_h</span>
+    - <span style=color:#ae81ff>id.resp_p</span>
+    - <span style=color:#ae81ff>operation</span>
+    - <span style=color:#ae81ff>endpoint</span>
+    - <span style=color:#ae81ff>named_pipe</span>
+    - <span style=color:#ae81ff>uid</span>
+
+</code></pre></div></div></div></div><div class="column is-3"><aside class="menu is-medium"><p class=menu-label>Rule Tags</p><div class=tags><a href=https://bradleyjkemp.dev/sigmadoc//tags/attack.t1557.001 class="tag is-medium">attack.t1557.001</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc//tags/attack.t1187 class="tag is-medium">attack.t1187</a></a></div><ul class=menu-list></ul><p class=menu-label>Similar rules</p><ul class=menu-list><li><a href=/sigmadoc/rules/windows/process_creation/proc_creation_win_hack_adcspwn.yml/>ADCSPwn Hack Tool</a></li><li><a href=/sigmadoc/rules/windows/driver_load/driver_load_windivert.yml/>WinDivert Driver Load</a></li><li><a href=/sigmadoc/rules/windows/process_creation/proc_creation_win_tools_relay_attacks.yml/>SMB Relay Attack Tools</a></li><li><a href=/sigmadoc/rules/windows/builtin/security/win_susp_rottenpotato.yml/>RottenPotato Like Attack Pattern</a></li><li><a href=/sigmadoc/rules/windows/builtin/security/win_petitpotam_susp_tgt_request.yml/>PetitPotam Suspicious Kerberos TGT Request</a></li></ul></aside></div></div></div></section><footer class=footer><div class="content has-text-centered"><p>Site generated with <a href=https://github.com/bradleyjkemp/sigmadoc><strong>sigmadoc</strong></a>. The website content
+is licensed <a href=https://github.com/SigmaHQ/sigma/blob/master/LICENSE.Detection.Rules.md>DRL 1.0</a>.</p></div></footer></body></html>

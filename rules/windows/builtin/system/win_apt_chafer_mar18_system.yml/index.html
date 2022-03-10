@@ -1,0 +1,51 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><title>Sigma Rule Browser</title><meta name=viewport content="width=device-width"><link rel=icon type=image/png sizes=32x32 href=../images/favicon.png><link rel=stylesheet href=https://unpkg.com/bulma@0.9.2/css/bulma.min.css><script src=https://kit.fontawesome.com/7dc3015a44.js crossorigin=anonymous></script></head><body><nav class=navbar role=navigation aria-label="main navigation"><div class=navbar-brand><a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc/>Sigma Docs</a>
+<a role=button class=navbar-burger aria-label=menu aria-expanded=false data-target=navbarBasicExample><span aria-hidden=true></span><span aria-hidden=true></span><span aria-hidden=true></span></a></div><div id=navbarBasicExample class=navbar-menu><div class=navbar-start><a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc/>Home</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//rules/>Rules</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//configs/>Configs</a><div class="navbar-item has-dropdown is-hoverable"><a class=navbar-link>Explore rules by...</a><div class=navbar-dropdown><a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//tags/>Tag</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//status/>Status</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//level/>Level</a></div></div></div><div class=navbar-end><div class=navbar-item id=search class=bd-search><form action=https://bradleyjkemp.dev/sigmadoc//search><p class="control has-icons-left"><input class="input is-rounded" type=text name=query placeholder=Search>
+<span class="icon is-left"><i class="fas fa-search" aria-hidden=true></i></span></p></form></div></div></div></nav><section class=section><div class=container><div class=columns><div class="column is-9"><nav class=breadcrumb aria-label=breadcrumbs><ul><li><a href=https://bradleyjkemp.dev/sigmadoc/>home</a></li><li><a href=https://bradleyjkemp.dev/sigmadoc/rules/>rules</a></li><li><a href=https://bradleyjkemp.dev/sigmadoc/rules/windows/>windows</a></li><li><a href=https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/>builtin</a></li><li><a href=https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/>system</a></li><li><a href=https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_apt_chafer_mar18_system.yml/>win_apt_chafer_mar18_system.yml</a></li></ul></nav><div class="content is-medium"><h3 class="title is-1">Chafer Activity</h3><div class=box><div class="field is-grouped is-justify-content-center"><div class=control><div class="tags has-addons"><span class="tag is-medium is-dark">level</span>
+<span class="tag is-medium is-light"></span></div></div><div class=control><div class="tags has-addons"><span class="tag is-medium is-dark">status</span>
+<span class="tag is-medium is-danger is-light">experimental</span></div></div></div><p>Detects Chafer activity attributed to OilRig as reported in Nyotron report in March 2018</p><h2 id=known-false-positives>Known false-positives</h2><ul><li>Unknown</li></ul><h2 id=references>References</h2><ul><li><a href=https://nyotron.com/nyotron-discovers-next-generation-oilrig-attacks/>https://nyotron.com/nyotron-discovers-next-generation-oilrig-attacks/</a></li></ul><h2 id=raw-rule-edithttpsgithubcomsigmahqsigmaeditmasterruleswindowsbuiltinsystemwin_apt_chafer_mar18_systemyml>Raw rule (<a href=https://github.com/SigmaHQ/sigma/edit/master/rules/windows/builtin/system/win_apt_chafer_mar18_system.yml>edit</a>)</h2><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=color:#f92672>title</span>: <span style=color:#ae81ff>Chafer Activity</span>
+<span style=color:#f92672>id</span>: <span style=color:#ae81ff>53ba33fd-3a50-4468-a5ef-c583635cfa92</span>
+<span style=color:#f92672>description</span>: <span style=color:#ae81ff>Detects Chafer activity attributed to OilRig as reported in Nyotron report in March 2018</span>
+<span style=color:#f92672>status</span>: <span style=color:#ae81ff>experimental</span>
+<span style=color:#f92672>references</span>:
+    - <span style=color:#ae81ff>https://nyotron.com/nyotron-discovers-next-generation-oilrig-attacks/</span>
+<span style=color:#f92672>tags</span>:
+    - <span style=color:#ae81ff>attack.persistence</span>
+    - <span style=color:#ae81ff>attack.g0049</span>
+    - <span style=color:#ae81ff>attack.t1053.005</span>
+    - <span style=color:#ae81ff>attack.s0111</span>
+    - <span style=color:#ae81ff>attack.t1543.003</span>
+    - <span style=color:#ae81ff>attack.defense_evasion</span>
+    - <span style=color:#ae81ff>attack.t1112</span>
+    - <span style=color:#ae81ff>attack.command_and_control</span>
+    - <span style=color:#ae81ff>attack.t1071.004</span>
+<span style=color:#f92672>date</span>: <span style=color:#ae81ff>2018</span><span style=color:#ae81ff>/03/23</span>
+<span style=color:#f92672>modified</span>: <span style=color:#ae81ff>2021</span><span style=color:#ae81ff>/11/30</span>
+<span style=color:#f92672>author</span>: <span style=color:#ae81ff>Florian Roth, Markus Neis, Jonhnathan Ribeiro, Daniil Yugoslavskiy, oscd.community</span>
+<span style=color:#f92672>logsource</span>:
+    <span style=color:#f92672>product</span>: <span style=color:#ae81ff>windows</span>
+    <span style=color:#f92672>service</span>: <span style=color:#ae81ff>system</span>
+<span style=color:#f92672>detection</span>:
+    <span style=color:#f92672>selection_service</span>:
+        <span style=color:#f92672>Provider_Name</span>: <span style=color:#e6db74>&#39;Service Control Manager&#39;</span>
+        <span style=color:#f92672>EventID</span>: <span style=color:#ae81ff>7045</span>
+        <span style=color:#f92672>ServiceName</span>:
+            - <span style=color:#e6db74>&#39;SC Scheduled Scan&#39;</span>
+            - <span style=color:#e6db74>&#39;UpdatMachine&#39;</span>
+    <span style=color:#f92672>condition</span>: <span style=color:#ae81ff>selection_service</span>
+<span style=color:#f92672>falsepositives</span>:
+    - <span style=color:#ae81ff>Unknown</span>
+<span style=color:#f92672>level</span>: <span style=color:#ae81ff>critical</span>
+</code></pre></div></div></div></div><div class="column is-3"><aside class="menu is-medium"><p class=menu-label>Rule Tags</p><div class=tags><a href=https://bradleyjkemp.dev/sigmadoc//tags/attack.persistence class="tag is-medium">attack.persistence</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc//tags/attack.g0049 class="tag is-medium">attack.g0049</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc//tags/attack.t1053.005 class="tag is-medium">attack.t1053.005</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc//tags/attack.s0111 class="tag is-medium">attack.s0111</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc//tags/attack.t1543.003 class="tag is-medium">attack.t1543.003</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc//tags/attack.defense_evasion class="tag is-medium">attack.defense_evasion</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc//tags/attack.t1112 class="tag is-medium">attack.t1112</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc//tags/attack.command_and_control class="tag is-medium">attack.command_and_control</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc//tags/attack.t1071.004 class="tag is-medium">attack.t1071.004</a></a></div><ul class=menu-list></ul><p class=menu-label>Similar rules</p><ul class=menu-list><li><a href=/sigmadoc/rules/windows/registry_event/registry_event_cve_2020_1048.yml/>Suspicious New Printer Ports in Registry (CVE-2020-1048)</a></li><li><a href=/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_certutil_command.yml/>Suspicious Certutil Command</a></li><li><a href=/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_schtask_creation.yml/>Scheduled Task Creation</a></li><li><a href=/sigmadoc/rules/windows/process_creation/proc_creation_win_powersploit_empire_schtasks.yml/>Default PowerSploit and Empire Schtasks Persistence</a></li><li><a href=/sigmadoc/rules/windows/process_creation/proc_creation_win_apt_slingshot.yml/>Defrag Deactivation</a></li></ul></aside></div></div></div></section><footer class=footer><div class="content has-text-centered"><p>Site generated with <a href=https://github.com/bradleyjkemp/sigmadoc><strong>sigmadoc</strong></a>. The website content
+is licensed <a href=https://github.com/SigmaHQ/sigma/blob/master/LICENSE.Detection.Rules.md>DRL 1.0</a>.</p></div></footer></body></html>

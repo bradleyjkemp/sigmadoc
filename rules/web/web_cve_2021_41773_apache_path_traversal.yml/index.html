@@ -1,0 +1,48 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><title>Sigma Rule Browser</title><meta name=viewport content="width=device-width"><link rel=icon type=image/png sizes=32x32 href=../images/favicon.png><link rel=stylesheet href=https://unpkg.com/bulma@0.9.2/css/bulma.min.css><script src=https://kit.fontawesome.com/7dc3015a44.js crossorigin=anonymous></script></head><body><nav class=navbar role=navigation aria-label="main navigation"><div class=navbar-brand><a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc/>Sigma Docs</a>
+<a role=button class=navbar-burger aria-label=menu aria-expanded=false data-target=navbarBasicExample><span aria-hidden=true></span><span aria-hidden=true></span><span aria-hidden=true></span></a></div><div id=navbarBasicExample class=navbar-menu><div class=navbar-start><a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc/>Home</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//rules/>Rules</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//configs/>Configs</a><div class="navbar-item has-dropdown is-hoverable"><a class=navbar-link>Explore rules by...</a><div class=navbar-dropdown><a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//tags/>Tag</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//status/>Status</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//level/>Level</a></div></div></div><div class=navbar-end><div class=navbar-item id=search class=bd-search><form action=https://bradleyjkemp.dev/sigmadoc//search><p class="control has-icons-left"><input class="input is-rounded" type=text name=query placeholder=Search>
+<span class="icon is-left"><i class="fas fa-search" aria-hidden=true></i></span></p></form></div></div></div></nav><section class=section><div class=container><div class=columns><div class="column is-9"><nav class=breadcrumb aria-label=breadcrumbs><ul><li><a href=https://bradleyjkemp.dev/sigmadoc/>home</a></li><li><a href=https://bradleyjkemp.dev/sigmadoc/rules/>rules</a></li><li><a href=https://bradleyjkemp.dev/sigmadoc/rules/web/>web</a></li><li><a href=https://bradleyjkemp.dev/sigmadoc/rules/web/web_cve_2021_41773_apache_path_traversal.yml/>web_cve_2021_41773_apache_path_traversal.yml</a></li></ul></nav><div class="content is-medium"><h3 class="title is-1">CVE-2021-41773 Exploitation Attempt</h3><div class=box><div class="field is-grouped is-justify-content-center"><div class=control><div class="tags has-addons"><span class="tag is-medium is-dark">level</span>
+<span class="tag is-medium is-light"></span></div></div><div class=control><div class="tags has-addons"><span class="tag is-medium is-dark">status</span>
+<span class="tag is-medium is-danger is-light">experimental</span></div></div></div><p>Detects exploitation of flaw in path normalization in Apache HTTP server 2.4.49. An attacker could use a path traversal attack to map URLs to files outside the expected document root. If files outside of the document root are not protected by &ldquo;require all denied&rdquo; these requests can succeed. Additionally this flaw could leak the source of interpreted files like CGI scripts. This issue is known to be exploited in the wild. This issue only affects Apache 2.4.49 and not earlier versions.</p><h2 id=known-false-positives>Known false-positives</h2><ul><li>Unknown</li></ul><h2 id=references>References</h2><ul><li><a href=https://nvd.nist.gov/vuln/detail/CVE-2021-41773>https://nvd.nist.gov/vuln/detail/CVE-2021-41773</a></li><li><a href=https://github.com/apache/httpd/commit/e150697086e70c552b2588f369f2d17815cb1782>https://github.com/apache/httpd/commit/e150697086e70c552b2588f369f2d17815cb1782</a></li><li><a href=https://twitter.com/ptswarm/status/1445376079548624899>https://twitter.com/ptswarm/status/1445376079548624899</a></li><li><a href=https://twitter.com/h4x0r_dz/status/1445401960371429381>https://twitter.com/h4x0r_dz/status/1445401960371429381</a></li><li><a href=https://github.com/projectdiscovery/nuclei-templates/blob/master/cves/2021/CVE-2021-41773.yaml>https://github.com/projectdiscovery/nuclei-templates/blob/master/cves/2021/CVE-2021-41773.yaml</a></li><li><a href=https://twitter.com/bl4sty/status/1445462677824761878>https://twitter.com/bl4sty/status/1445462677824761878</a></li></ul><h2 id=raw-rule-edithttpsgithubcomsigmahqsigmaeditmasterruleswebweb_cve_2021_41773_apache_path_traversalyml>Raw rule (<a href=https://github.com/SigmaHQ/sigma/edit/master/rules/web/web_cve_2021_41773_apache_path_traversal.yml>edit</a>)</h2><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=color:#f92672>title</span>: <span style=color:#ae81ff>CVE-2021-41773 Exploitation Attempt</span>
+<span style=color:#f92672>id</span>: <span style=color:#ae81ff>3007fec6-e761-4319-91af-e32e20ac43f5</span>
+<span style=color:#f92672>status</span>: <span style=color:#ae81ff>experimental</span>
+<span style=color:#f92672>description</span>: <span style=color:#ae81ff>Detects exploitation of flaw in path normalization in Apache HTTP server 2.4.49. An attacker could use a path traversal attack to map URLs to files outside the expected document root. If files outside of the document root are not protected by &#34;require all denied&#34; these requests can succeed. Additionally this flaw could leak the source of interpreted files like CGI scripts. This issue is known to be exploited in the wild. This issue only affects Apache 2.4.49 and not earlier versions.</span>
+<span style=color:#f92672>author</span>: <span style=color:#ae81ff>daffainfo, Florian Roth</span>
+<span style=color:#f92672>date</span>: <span style=color:#ae81ff>2021</span><span style=color:#ae81ff>/10/05</span>
+<span style=color:#f92672>modified</span>: <span style=color:#ae81ff>2021</span><span style=color:#ae81ff>/10/06</span>
+<span style=color:#f92672>references</span>:
+    - <span style=color:#ae81ff>https://nvd.nist.gov/vuln/detail/CVE-2021-41773</span>
+    - <span style=color:#ae81ff>https://github.com/apache/httpd/commit/e150697086e70c552b2588f369f2d17815cb1782</span>
+    - <span style=color:#ae81ff>https://twitter.com/ptswarm/status/1445376079548624899</span>
+    - <span style=color:#ae81ff>https://twitter.com/h4x0r_dz/status/1445401960371429381</span>
+    - <span style=color:#ae81ff>https://github.com/projectdiscovery/nuclei-templates/blob/master/cves/2021/CVE-2021-41773.yaml</span>
+    - <span style=color:#ae81ff>https://twitter.com/bl4sty/status/1445462677824761878</span>
+<span style=color:#f92672>logsource</span>:
+  <span style=color:#f92672>category</span>: <span style=color:#ae81ff>webserver</span>
+<span style=color:#f92672>detection</span>:
+    <span style=color:#f92672>selection</span>:
+        <span style=color:#f92672>c-uri|contains</span>: 
+            - <span style=color:#e6db74>&#39;/cgi-bin/.%2e/&#39;</span>
+            - <span style=color:#e6db74>&#39;/icons/.%2e/&#39;</span>
+            - <span style=color:#e6db74>&#39;/cgi-bin/.%%32%65/&#39;</span>
+            - <span style=color:#e6db74>&#39;/icons/.%%32%65/&#39;</span>
+            - <span style=color:#e6db74>&#39;/cgi-bin/.%%%25%33&#39;</span>
+            - <span style=color:#e6db74>&#39;/icons/.%%%25%33&#39;</span>
+    <span style=color:#f92672>selection_success</span>:
+        <span style=color:#f92672>sc-status</span>: 
+            - <span style=color:#ae81ff>200</span>
+            - <span style=color:#ae81ff>301</span>    
+    <span style=color:#f92672>condition</span>: <span style=color:#ae81ff>selection and selection_success</span>
+<span style=color:#f92672>falsepositives</span>:
+    - <span style=color:#ae81ff>Unknown</span>
+<span style=color:#f92672>tags</span>:
+    - <span style=color:#ae81ff>attack.initial_access</span>
+    - <span style=color:#ae81ff>attack.t1190</span>
+<span style=color:#f92672>level</span>: <span style=color:#ae81ff>high</span>
+
+</code></pre></div></div></div></div><div class="column is-3"><aside class="menu is-medium"><p class=menu-label>Rule Tags</p><div class=tags><a href=https://bradleyjkemp.dev/sigmadoc//tags/attack.initial_access class="tag is-medium">attack.initial_access</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc//tags/attack.t1190 class="tag is-medium">attack.t1190</a></a></div><ul class=menu-list></ul><p class=menu-label>Similar rules</p><ul class=menu-list><li><a href=/sigmadoc/rules/windows/file_event/file_event_win_susp_exchange_aspx_write.yml/>Suspicious MSExchangeMailboxReplication ASPX Write</a></li><li><a href=/sigmadoc/rules/web/web_cve_2021_44228_log4j_fields.yml/>Log4j RCE CVE-2021-44228 in Fields</a></li><li><a href=/sigmadoc/rules/web/web_cve_2021_44228_log4j.yml/>Log4j RCE CVE-2021-44228 Generic</a></li><li><a href=/sigmadoc/rules/windows/builtin/application/win_vul_cve_2021_41379.yml/>LPE InstallerFileTakeOver PoC CVE-2021-41379</a></li><li><a href=/sigmadoc/rules/web/web_cve_2021_42237_sitecore_report_ashx.yml/>Sitecore Pre-Auth RCE CVE-2021-42237</a></li></ul></aside></div></div></div></section><footer class=footer><div class="content has-text-centered"><p>Site generated with <a href=https://github.com/bradleyjkemp/sigmadoc><strong>sigmadoc</strong></a>. The website content
+is licensed <a href=https://github.com/SigmaHQ/sigma/blob/master/LICENSE.Detection.Rules.md>DRL 1.0</a>.</p></div></footer></body></html>

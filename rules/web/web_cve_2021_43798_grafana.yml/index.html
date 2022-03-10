@@ -1,0 +1,91 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><title>Sigma Rule Browser</title><meta name=viewport content="width=device-width"><link rel=icon type=image/png sizes=32x32 href=../images/favicon.png><link rel=stylesheet href=https://unpkg.com/bulma@0.9.2/css/bulma.min.css><script src=https://kit.fontawesome.com/7dc3015a44.js crossorigin=anonymous></script></head><body><nav class=navbar role=navigation aria-label="main navigation"><div class=navbar-brand><a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc/>Sigma Docs</a>
+<a role=button class=navbar-burger aria-label=menu aria-expanded=false data-target=navbarBasicExample><span aria-hidden=true></span><span aria-hidden=true></span><span aria-hidden=true></span></a></div><div id=navbarBasicExample class=navbar-menu><div class=navbar-start><a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc/>Home</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//rules/>Rules</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//configs/>Configs</a><div class="navbar-item has-dropdown is-hoverable"><a class=navbar-link>Explore rules by...</a><div class=navbar-dropdown><a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//tags/>Tag</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//status/>Status</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//level/>Level</a></div></div></div><div class=navbar-end><div class=navbar-item id=search class=bd-search><form action=https://bradleyjkemp.dev/sigmadoc//search><p class="control has-icons-left"><input class="input is-rounded" type=text name=query placeholder=Search>
+<span class="icon is-left"><i class="fas fa-search" aria-hidden=true></i></span></p></form></div></div></div></nav><section class=section><div class=container><div class=columns><div class="column is-9"><nav class=breadcrumb aria-label=breadcrumbs><ul><li><a href=https://bradleyjkemp.dev/sigmadoc/>home</a></li><li><a href=https://bradleyjkemp.dev/sigmadoc/rules/>rules</a></li><li><a href=https://bradleyjkemp.dev/sigmadoc/rules/web/>web</a></li><li><a href=https://bradleyjkemp.dev/sigmadoc/rules/web/web_cve_2021_43798_grafana.yml/>web_cve_2021_43798_grafana.yml</a></li></ul></nav><div class="content is-medium"><h3 class="title is-1">Grafana Path Traversal Exploitation CVE-2021-43798</h3><div class=box><div class="field is-grouped is-justify-content-center"><div class=control><div class="tags has-addons"><span class="tag is-medium is-dark">level</span>
+<span class="tag is-medium is-light"></span></div></div><div class=control><div class="tags has-addons"><span class="tag is-medium is-dark">status</span>
+<span class="tag is-medium is-danger is-light">experimental</span></div></div></div><p>Detects a successful Grafana path traversal exploitation</p><h2 id=known-false-positives>Known false-positives</h2><ul><li>Vulnerability scanners that scan a host that returns 200 status codes even in cases of a file not found or other error</li></ul><h2 id=references>References</h2><ul><li><a href=https://grafana.com/blog/2021/12/07/grafana-8.3.1-8.2.7-8.1.8-and-8.0.7-released-with-high-severity-security-fix/>https://grafana.com/blog/2021/12/07/grafana-8.3.1-8.2.7-8.1.8-and-8.0.7-released-with-high-severity-security-fix/</a></li><li><a href="https://github.com/search?q=CVE-2021-43798">https://github.com/search?q=CVE-2021-43798</a></li></ul><h2 id=raw-rule-edithttpsgithubcomsigmahqsigmaeditmasterruleswebweb_cve_2021_43798_grafanayml>Raw rule (<a href=https://github.com/SigmaHQ/sigma/edit/master/rules/web/web_cve_2021_43798_grafana.yml>edit</a>)</h2><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=color:#f92672>title</span>: <span style=color:#ae81ff>Grafana Path Traversal Exploitation CVE-2021-43798</span>
+<span style=color:#f92672>id</span>: <span style=color:#ae81ff>7b72b328-5708-414f-9a2a-6a6867c26e16</span>
+<span style=color:#f92672>status</span>: <span style=color:#ae81ff>experimental</span>
+<span style=color:#f92672>description</span>: <span style=color:#ae81ff>Detects a successful Grafana path traversal exploitation </span>
+<span style=color:#f92672>author</span>: <span style=color:#ae81ff>Florian Roth</span>
+<span style=color:#f92672>references</span>:
+  - <span style=color:#ae81ff>https://grafana.com/blog/2021/12/07/grafana-8.3.1-8.2.7-8.1.8-and-8.0.7-released-with-high-severity-security-fix/</span>
+  - <span style=color:#ae81ff>https://github.com/search?q=CVE-2021-43798</span>
+<span style=color:#f92672>date</span>: <span style=color:#ae81ff>2021</span><span style=color:#ae81ff>/12/08</span>
+<span style=color:#f92672>tags</span>:
+  - <span style=color:#ae81ff>attack.initial_access</span>
+  - <span style=color:#ae81ff>attack.t1190</span>
+<span style=color:#f92672>logsource</span>:
+  <span style=color:#f92672>category</span>: <span style=color:#ae81ff>webserver</span>
+<span style=color:#f92672>detection</span>:
+  <span style=color:#f92672>selection_traversal</span>:
+    <span style=color:#f92672>c-uri|contains</span>: <span style=color:#e6db74>&#39;/../../../../../../../&#39;</span>
+    <span style=color:#f92672>sc-status</span>: <span style=color:#ae81ff>200</span>
+  <span style=color:#f92672>selection_plugins</span>:
+    <span style=color:#f92672>c-uri|contains</span>:
+        - <span style=color:#e6db74>&#39;/public/plugins/live&#39;</span>
+        - <span style=color:#e6db74>&#39;/public/plugins/icon&#39;</span>
+        - <span style=color:#e6db74>&#39;/public/plugins/loki&#39;</span>
+        - <span style=color:#e6db74>&#39;/public/plugins/text&#39;</span>
+        - <span style=color:#e6db74>&#39;/public/plugins/logs&#39;</span>
+        - <span style=color:#e6db74>&#39;/public/plugins/news&#39;</span>
+        - <span style=color:#e6db74>&#39;/public/plugins/stat&#39;</span>
+        - <span style=color:#e6db74>&#39;/public/plugins/mssql&#39;</span>
+        - <span style=color:#e6db74>&#39;/public/plugins/mixed&#39;</span>
+        - <span style=color:#e6db74>&#39;/public/plugins/mysql&#39;</span>
+        - <span style=color:#e6db74>&#39;/public/plugins/tempo&#39;</span>
+        - <span style=color:#e6db74>&#39;/public/plugins/graph&#39;</span>
+        - <span style=color:#e6db74>&#39;/public/plugins/gauge&#39;</span>
+        - <span style=color:#e6db74>&#39;/public/plugins/table&#39;</span>
+        - <span style=color:#e6db74>&#39;/public/plugins/debug&#39;</span>
+        - <span style=color:#e6db74>&#39;/public/plugins/zipkin&#39;</span>
+        - <span style=color:#e6db74>&#39;/public/plugins/jaeger&#39;</span>
+        - <span style=color:#e6db74>&#39;/public/plugins/geomap&#39;</span>
+        - <span style=color:#e6db74>&#39;/public/plugins/canvas&#39;</span>
+        - <span style=color:#e6db74>&#39;/public/plugins/grafana&#39;</span>
+        - <span style=color:#e6db74>&#39;/public/plugins/welcome&#39;</span>
+        - <span style=color:#e6db74>&#39;/public/plugins/xychart&#39;</span>
+        - <span style=color:#e6db74>&#39;/public/plugins/heatmap&#39;</span>
+        - <span style=color:#e6db74>&#39;/public/plugins/postgres&#39;</span>
+        - <span style=color:#e6db74>&#39;/public/plugins/testdata&#39;</span>
+        - <span style=color:#e6db74>&#39;/public/plugins/opentsdb&#39;</span>
+        - <span style=color:#e6db74>&#39;/public/plugins/influxdb&#39;</span>
+        - <span style=color:#e6db74>&#39;/public/plugins/barchart&#39;</span>
+        - <span style=color:#e6db74>&#39;/public/plugins/annolist&#39;</span>
+        - <span style=color:#e6db74>&#39;/public/plugins/bargauge&#39;</span>
+        - <span style=color:#e6db74>&#39;/public/plugins/graphite&#39;</span>
+        - <span style=color:#e6db74>&#39;/public/plugins/dashlist&#39;</span>
+        - <span style=color:#e6db74>&#39;/public/plugins/piechart&#39;</span>
+        - <span style=color:#e6db74>&#39;/public/plugins/dashboard&#39;</span>
+        - <span style=color:#e6db74>&#39;/public/plugins/nodeGraph&#39;</span>
+        - <span style=color:#e6db74>&#39;/public/plugins/alertlist&#39;</span>
+        - <span style=color:#e6db74>&#39;/public/plugins/histogram&#39;</span>
+        - <span style=color:#e6db74>&#39;/public/plugins/table-old&#39;</span>
+        - <span style=color:#e6db74>&#39;/public/plugins/pluginlist&#39;</span>
+        - <span style=color:#e6db74>&#39;/public/plugins/timeseries&#39;</span>
+        - <span style=color:#e6db74>&#39;/public/plugins/cloudwatch&#39;</span>
+        - <span style=color:#e6db74>&#39;/public/plugins/prometheus&#39;</span>
+        - <span style=color:#e6db74>&#39;/public/plugins/stackdriver&#39;</span>
+        - <span style=color:#e6db74>&#39;/public/plugins/alertGroups&#39;</span>
+        - <span style=color:#e6db74>&#39;/public/plugins/alertmanager&#39;</span>
+        - <span style=color:#e6db74>&#39;/public/plugins/elasticsearch&#39;</span>
+        - <span style=color:#e6db74>&#39;/public/plugins/gettingstarted&#39;</span>
+        - <span style=color:#e6db74>&#39;/public/plugins/state-timeline&#39;</span>
+        - <span style=color:#e6db74>&#39;/public/plugins/status-history&#39;</span>
+        - <span style=color:#e6db74>&#39;/public/plugins/grafana-clock-panel&#39;</span>
+        - <span style=color:#e6db74>&#39;/public/plugins/grafana-simple-json-datasource&#39;</span>
+        - <span style=color:#e6db74>&#39;/public/plugins/grafana-azure-monitor-datasource&#39;</span>
+  <span style=color:#f92672>condition</span>: <span style=color:#ae81ff>all of selection*</span>
+<span style=color:#f92672>fields</span>:
+  - <span style=color:#ae81ff>c-ip</span>
+  - <span style=color:#ae81ff>c-dns</span>
+<span style=color:#f92672>falsepositives</span>:
+  - <span style=color:#ae81ff>Vulnerability scanners that scan a host that returns 200 status codes even in cases of a file not found or other error</span>
+<span style=color:#f92672>level</span>: <span style=color:#ae81ff>critical</span>
+
+</code></pre></div></div></div></div><div class="column is-3"><aside class="menu is-medium"><p class=menu-label>Rule Tags</p><div class=tags><a href=https://bradleyjkemp.dev/sigmadoc//tags/attack.initial_access class="tag is-medium">attack.initial_access</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc//tags/attack.t1190 class="tag is-medium">attack.t1190</a></a></div><ul class=menu-list></ul><p class=menu-label>Similar rules</p><ul class=menu-list><li><a href=/sigmadoc/rules/windows/file_event/file_event_win_susp_exchange_aspx_write.yml/>Suspicious MSExchangeMailboxReplication ASPX Write</a></li><li><a href=/sigmadoc/rules/web/web_cve_2021_44228_log4j_fields.yml/>Log4j RCE CVE-2021-44228 in Fields</a></li><li><a href=/sigmadoc/rules/web/web_cve_2021_44228_log4j.yml/>Log4j RCE CVE-2021-44228 Generic</a></li><li><a href=/sigmadoc/rules/windows/builtin/application/win_vul_cve_2021_41379.yml/>LPE InstallerFileTakeOver PoC CVE-2021-41379</a></li><li><a href=/sigmadoc/rules/web/web_cve_2021_42237_sitecore_report_ashx.yml/>Sitecore Pre-Auth RCE CVE-2021-42237</a></li></ul></aside></div></div></div></section><footer class=footer><div class="content has-text-centered"><p>Site generated with <a href=https://github.com/bradleyjkemp/sigmadoc><strong>sigmadoc</strong></a>. The website content
+is licensed <a href=https://github.com/SigmaHQ/sigma/blob/master/LICENSE.Detection.Rules.md>DRL 1.0</a>.</p></div></footer></body></html>

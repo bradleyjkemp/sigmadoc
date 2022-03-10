@@ -1,0 +1,89 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><title>Sigma Rule Browser</title><meta name=viewport content="width=device-width"><link rel=icon type=image/png sizes=32x32 href=../images/favicon.png><link rel=stylesheet href=https://unpkg.com/bulma@0.9.2/css/bulma.min.css><script src=https://kit.fontawesome.com/7dc3015a44.js crossorigin=anonymous></script></head><body><nav class=navbar role=navigation aria-label="main navigation"><div class=navbar-brand><a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc/>Sigma Docs</a>
+<a role=button class=navbar-burger aria-label=menu aria-expanded=false data-target=navbarBasicExample><span aria-hidden=true></span><span aria-hidden=true></span><span aria-hidden=true></span></a></div><div id=navbarBasicExample class=navbar-menu><div class=navbar-start><a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc/>Home</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//rules/>Rules</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//configs/>Configs</a><div class="navbar-item has-dropdown is-hoverable"><a class=navbar-link>Explore rules by...</a><div class=navbar-dropdown><a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//tags/>Tag</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//status/>Status</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//level/>Level</a></div></div></div><div class=navbar-end><div class=navbar-item id=search class=bd-search><form action=https://bradleyjkemp.dev/sigmadoc//search><p class="control has-icons-left"><input class="input is-rounded" type=text name=query placeholder=Search>
+<span class="icon is-left"><i class="fas fa-search" aria-hidden=true></i></span></p></form></div></div></div></nav><section class=section><div class=container><div class=columns><div class="column is-9"><nav class=breadcrumb aria-label=breadcrumbs><ul><li><a href=https://bradleyjkemp.dev/sigmadoc/>home</a></li><li><a href=https://bradleyjkemp.dev/sigmadoc/rules/>rules</a></li><li><a href=https://bradleyjkemp.dev/sigmadoc/rules/windows/>windows</a></li><li><a href=https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/>registry_event</a></li><li><a href=https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_persistence_search_order.yml/>registry_event_persistence_search_order.yml</a></li></ul></nav><div class="content is-medium"><h3 class="title is-1">Windows Registry Persistence COM Search Order Hijacking</h3><div class=box><div class="field is-grouped is-justify-content-center"><div class=control><div class="tags has-addons"><span class="tag is-medium is-dark">level</span>
+<span class="tag is-medium is-light"></span></div></div><div class=control><div class="tags has-addons"><span class="tag is-medium is-dark">status</span>
+<span class="tag is-medium is-danger is-light">experimental</span></div></div></div><p>Detects potential COM object hijacking leveraging the COM Search Order</p><h2 id=known-false-positives>Known false-positives</h2><ul><li>Some installed utilities (i.e. OneDrive) may serve new COM objects at user-level</li></ul><h2 id=references>References</h2><ul><li><a href=https://www.cyberbit.com/blog/endpoint-security/com-hijacking-windows-overlooked-security-vulnerability/>https://www.cyberbit.com/blog/endpoint-security/com-hijacking-windows-overlooked-security-vulnerability/</a></li><li><a href=https://attack.mitre.org/techniques/T1546/015/>https://attack.mitre.org/techniques/T1546/015/</a></li></ul><h2 id=raw-rule-edithttpsgithubcomsigmahqsigmaeditmasterruleswindowsregistry_eventregistry_event_persistence_search_orderyml>Raw rule (<a href=https://github.com/SigmaHQ/sigma/edit/master/rules/windows/registry_event/registry_event_persistence_search_order.yml>edit</a>)</h2><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=color:#f92672>title</span>: <span style=color:#ae81ff>Windows Registry Persistence COM Search Order Hijacking</span>
+<span style=color:#f92672>id</span>: <span style=color:#ae81ff>a0ff33d8-79e4-4cef-b4f3-9dc4133ccd12</span>
+<span style=color:#f92672>status</span>: <span style=color:#ae81ff>experimental</span>
+<span style=color:#f92672>description</span>: <span style=color:#ae81ff>Detects potential COM object hijacking leveraging the COM Search Order</span>
+<span style=color:#f92672>references</span>:
+    - <span style=color:#ae81ff>https://www.cyberbit.com/blog/endpoint-security/com-hijacking-windows-overlooked-security-vulnerability/</span>
+    - <span style=color:#ae81ff>https://attack.mitre.org/techniques/T1546/015/</span>
+<span style=color:#f92672>author</span>: <span style=color:#ae81ff>Maxime Thiebaut (@0xThiebaut), oscd.community, Cédric Hien</span>
+<span style=color:#f92672>date</span>: <span style=color:#ae81ff>2020</span><span style=color:#ae81ff>/04/14</span>
+<span style=color:#f92672>modified</span>: <span style=color:#ae81ff>2022</span><span style=color:#ae81ff>/03/05</span>
+<span style=color:#f92672>tags</span>:
+    - <span style=color:#ae81ff>attack.persistence</span>
+    - <span style=color:#ae81ff>attack.t1546.015</span>
+<span style=color:#f92672>logsource</span>:
+    <span style=color:#f92672>category</span>: <span style=color:#ae81ff>registry_event</span>
+    <span style=color:#f92672>product</span>: <span style=color:#ae81ff>windows</span>
+<span style=color:#f92672>detection</span>:
+    <span style=color:#f92672>selection</span>: <span style=color:#75715e># Detect new COM servers in the user hive</span>
+        <span style=color:#f92672>EventType</span>: <span style=color:#ae81ff>SetValue</span>
+        <span style=color:#f92672>TargetObject|startswith</span>: 
+            - <span style=color:#e6db74>&#39;HKCR\CLSID\&#39;
+</span><span style=color:#e6db74>            - &#39;</span><span style=color:#ae81ff>HKCU\Software\Classes\CLSID\&#39;</span>
+        <span style=color:#f92672>TargetObject|endswith</span>: <span style=color:#e6db74>&#39;\InprocServer32\(Default)&#39;</span>
+    <span style=color:#f92672>filter1</span>:
+        <span style=color:#f92672>Details|contains</span>: <span style=color:#75715e># Exclude privileged directories and observed FPs</span>
+            - <span style=color:#e6db74>&#39;%%systemroot%%\system32\&#39;
+</span><span style=color:#e6db74>            - &#39;</span><span style=color:#ae81ff>%%systemroot%%\SysWow64\&#39;</span>
+    <span style=color:#f92672>filterOneDrive</span>:
+        <span style=color:#f92672>Details|contains</span>: 
+            - <span style=color:#e6db74>&#39;\AppData\Local\Microsoft\OneDrive\&#39;
+</span><span style=color:#e6db74>            - &#39;</span><span style=color:#ae81ff>\FileCoAuthLib64.dll&#39;</span>
+            - <span style=color:#e6db74>&#39;\FileSyncShell64.dll&#39;</span>
+            - <span style=color:#e6db74>&#39;\FileSyncApi64.dll&#39;</span>
+    <span style=color:#f92672>filter2</span>:
+        <span style=color:#f92672>Details|contains|all</span>:
+            - <span style=color:#e6db74>&#39;\AppData\Local\Microsoft\TeamsMeetingAddin\&#39;
+</span><span style=color:#e6db74>            - &#39;</span><span style=color:#ae81ff>\Microsoft.Teams.AddinLoader.dll&#39;</span>
+    <span style=color:#f92672>filter3</span>:
+        <span style=color:#f92672>Details|contains|all</span>:
+            - <span style=color:#e6db74>&#39;\AppData\Roaming\Dropbox\&#39;
+</span><span style=color:#e6db74>            - &#39;</span><span style=color:#ae81ff>\DropboxExt64.*.dll&#39;</span>
+    <span style=color:#f92672>filter4</span>:
+        <span style=color:#f92672>Details|endswith</span>: <span style=color:#ae81ff>TmopIEPlg.dll</span> <span style=color:#75715e>#TrendMicro osce</span>
+    <span style=color:#f92672>filter5</span>:
+        <span style=color:#f92672>Image</span>:
+            - <span style=color:#ae81ff>C:\WINDOWS\system32\wuauclt.exe</span>
+            - <span style=color:#ae81ff>C:\WINDOWS\system32\svchost.exe</span>
+    <span style=color:#f92672>filter_defender</span>:
+        <span style=color:#f92672>Image|startswith</span>:
+            - <span style=color:#e6db74>&#39;C:\ProgramData\Microsoft\Windows Defender\Platform\&#39;
+</span><span style=color:#e6db74>            - &#39;</span><span style=color:#ae81ff>C:\Program Files\Windows Defender\&#39;</span>
+        <span style=color:#f92672>Image|endswith</span>: <span style=color:#e6db74>&#39;\MsMpEng.exe&#39;</span>
+    <span style=color:#f92672>filter_nvidia</span>:
+        <span style=color:#f92672>Details|contains</span>:
+            - <span style=color:#e6db74>&#39;\FileRepository\nvmdi.inf&#39;</span>
+    <span style=color:#f92672>filter_edge</span>:
+        <span style=color:#f92672>Image|endswith</span>: <span style=color:#e6db74>&#39;\MicrosoftEdgeUpdateComRegisterShell64.exe&#39;</span>
+    <span style=color:#f92672>filter_dx</span>:
+        <span style=color:#f92672>Image</span>: <span style=color:#e6db74>&#39;C:\WINDOWS\SYSTEM32\dxdiag.exe&#39;</span>
+    <span style=color:#f92672>filter_python</span>:
+        <span style=color:#f92672>Details</span>:
+            - <span style=color:#e6db74>&#39;C:\Windows\pyshellext.amd64.dll&#39;</span>
+            - <span style=color:#e6db74>&#39;C:\Windows\pyshellext.dll&#39;</span>
+    <span style=color:#f92672>filter_bonjourlib</span>:
+        <span style=color:#f92672>Details</span>:
+            - <span style=color:#e6db74>&#39;C:\Windows\system32\dnssdX.dll&#39;</span>
+            - <span style=color:#e6db74>&#39;C:\Windows\SysWOW64\dnssdX.dll&#39;</span>
+    <span style=color:#f92672>filter_programfiles</span>:
+        <span style=color:#f92672>Details|startswith</span>:
+            - <span style=color:#e6db74>&#39;C:\Program Files\&#39;
+</span><span style=color:#e6db74>            - &#39;</span><span style=color:#ae81ff>C:\Program Files (x86)\&#39;</span>
+    <span style=color:#f92672>filter_gameservice</span>:
+        <span style=color:#f92672>Details|contains</span>: <span style=color:#e6db74>&#39;C:\WINDOWS\system32\GamingServicesProxy.dll&#39;</span>
+    <span style=color:#f92672>condition</span>: <span style=color:#ae81ff>selection and not 1 of filter*</span>
+<span style=color:#f92672>falsepositives</span>:
+    - <span style=color:#ae81ff>Some installed utilities (i.e. OneDrive) may serve new COM objects at user-level</span>
+<span style=color:#f92672>level</span>: <span style=color:#ae81ff>medium</span>
+
+</code></pre></div></div></div></div><div class="column is-3"><aside class="menu is-medium"><p class=menu-label>Rule Tags</p><div class=tags><a href=https://bradleyjkemp.dev/sigmadoc//tags/attack.persistence class="tag is-medium">attack.persistence</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc//tags/attack.t1546.015 class="tag is-medium">attack.t1546.015</a></a></div><ul class=menu-list></ul><p class=menu-label>Similar rules</p><ul class=menu-list><li><a href=/sigmadoc/rules/windows/registry_event/registry_event_persistence_key_linking.yml/>Windows Registry Persistence COM Key Linking</a></li><li><a href=/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_create_local_user.yml/>PowerShell Create Local User</a></li><li><a href=/sigmadoc/rules/windows/file_event/file_event_win_susp_desktop_ini.yml/>Suspicious desktop.ini Action</a></li><li><a href=/sigmadoc/rules/cloud/aws/aws_iam_backdoor_users_keys.yml/>AWS IAM Backdoor Users Keys</a></li><li><a href=/sigmadoc/rules/windows/process_creation/proc_creation_win_task_folder_evasion.yml/>Tasks Folder Evasion</a></li></ul></aside></div></div></div></section><footer class=footer><div class="content has-text-centered"><p>Site generated with <a href=https://github.com/bradleyjkemp/sigmadoc><strong>sigmadoc</strong></a>. The website content
+is licensed <a href=https://github.com/SigmaHQ/sigma/blob/master/LICENSE.Detection.Rules.md>DRL 1.0</a>.</p></div></footer></body></html>

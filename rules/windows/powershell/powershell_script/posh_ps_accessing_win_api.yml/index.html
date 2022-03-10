@@ -1,0 +1,84 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><title>Sigma Rule Browser</title><meta name=viewport content="width=device-width"><link rel=icon type=image/png sizes=32x32 href=../images/favicon.png><link rel=stylesheet href=https://unpkg.com/bulma@0.9.2/css/bulma.min.css><script src=https://kit.fontawesome.com/7dc3015a44.js crossorigin=anonymous></script></head><body><nav class=navbar role=navigation aria-label="main navigation"><div class=navbar-brand><a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc/>Sigma Docs</a>
+<a role=button class=navbar-burger aria-label=menu aria-expanded=false data-target=navbarBasicExample><span aria-hidden=true></span><span aria-hidden=true></span><span aria-hidden=true></span></a></div><div id=navbarBasicExample class=navbar-menu><div class=navbar-start><a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc/>Home</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//rules/>Rules</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//configs/>Configs</a><div class="navbar-item has-dropdown is-hoverable"><a class=navbar-link>Explore rules by...</a><div class=navbar-dropdown><a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//tags/>Tag</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//status/>Status</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//level/>Level</a></div></div></div><div class=navbar-end><div class=navbar-item id=search class=bd-search><form action=https://bradleyjkemp.dev/sigmadoc//search><p class="control has-icons-left"><input class="input is-rounded" type=text name=query placeholder=Search>
+<span class="icon is-left"><i class="fas fa-search" aria-hidden=true></i></span></p></form></div></div></div></nav><section class=section><div class=container><div class=columns><div class="column is-9"><nav class=breadcrumb aria-label=breadcrumbs><ul><li><a href=https://bradleyjkemp.dev/sigmadoc/>home</a></li><li><a href=https://bradleyjkemp.dev/sigmadoc/rules/>rules</a></li><li><a href=https://bradleyjkemp.dev/sigmadoc/rules/windows/>windows</a></li><li><a href=https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/>powershell</a></li><li><a href=https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/>powershell_script</a></li><li><a href=https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_accessing_win_api.yml/>posh_ps_accessing_win_api.yml</a></li></ul></nav><div class="content is-medium"><h3 class="title is-1">Accessing WinAPI in PowerShell</h3><div class=box><div class="field is-grouped is-justify-content-center"><div class=control><div class="tags has-addons"><span class="tag is-medium is-dark">level</span>
+<span class="tag is-medium is-light"></span></div></div><div class=control><div class="tags has-addons"><span class="tag is-medium is-dark">status</span>
+<span class="tag is-medium is-danger is-light">experimental</span></div></div></div><p>Detecting use WinAPI Functions in PowerShell</p><h2 id=known-false-positives>Known false-positives</h2><ul><li>Carbon PowerShell Module (<a href=https://github.com/webmd-health-services/Carbon>https://github.com/webmd-health-services/Carbon</a>)</li></ul><h2 id=references>References</h2><ul><li><a href=https://speakerdeck.com/heirhabarov/hunting-for-powershell-abuse>https://speakerdeck.com/heirhabarov/hunting-for-powershell-abuse</a></li></ul><h2 id=raw-rule-edithttpsgithubcomsigmahqsigmaeditmasterruleswindowspowershellpowershell_scriptposh_ps_accessing_win_apiyml>Raw rule (<a href=https://github.com/SigmaHQ/sigma/edit/master/rules/windows/powershell/powershell_script/posh_ps_accessing_win_api.yml>edit</a>)</h2><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=color:#f92672>title</span>: <span style=color:#ae81ff>Accessing WinAPI in PowerShell</span>
+<span style=color:#f92672>id</span>: <span style=color:#ae81ff>03d83090-8cba-44a0-b02f-0b756a050306</span>
+<span style=color:#f92672>status</span>: <span style=color:#ae81ff>experimental</span>
+<span style=color:#f92672>description</span>: <span style=color:#ae81ff>Detecting use WinAPI Functions in PowerShell</span>
+<span style=color:#f92672>author</span>: <span style=color:#ae81ff>Nikita Nazarov, oscd.community</span>
+<span style=color:#f92672>date</span>: <span style=color:#ae81ff>2020</span><span style=color:#ae81ff>/10/06</span>
+<span style=color:#f92672>modified</span>: <span style=color:#ae81ff>2022</span><span style=color:#ae81ff>/02/23</span>
+<span style=color:#f92672>references</span>:
+    - <span style=color:#ae81ff>https://speakerdeck.com/heirhabarov/hunting-for-powershell-abuse</span>
+<span style=color:#f92672>tags</span>:
+    - <span style=color:#ae81ff>attack.execution</span>
+    - <span style=color:#ae81ff>attack.t1059.001</span>
+    - <span style=color:#ae81ff>attack.t1106</span>
+<span style=color:#f92672>logsource</span>:
+    <span style=color:#f92672>product</span>: <span style=color:#ae81ff>windows</span>
+    <span style=color:#f92672>category</span>: <span style=color:#ae81ff>ps_script</span>
+    <span style=color:#f92672>definition</span>: <span style=color:#ae81ff>Script block logging must be enabled</span>
+<span style=color:#f92672>detection</span>:
+    <span style=color:#f92672>selection</span>:
+        <span style=color:#f92672>ScriptBlockText|contains</span>:
+            - <span style=color:#e6db74>&#39;WaitForSingleObject&#39;</span>
+            - <span style=color:#e6db74>&#39;QueueUserApc&#39;</span>
+            - <span style=color:#e6db74>&#39;RtlCreateUserThread&#39;</span>
+            - <span style=color:#e6db74>&#39;OpenProcess&#39;</span>
+            - <span style=color:#e6db74>&#39;VirtualAlloc&#39;</span>
+            - <span style=color:#e6db74>&#39;VirtualFree&#39;</span>
+            - <span style=color:#e6db74>&#39;WriteProcessMemory&#39;</span>
+            - <span style=color:#e6db74>&#39;CreateUserThread&#39;</span>
+            - <span style=color:#e6db74>&#39;CloseHandle&#39;</span>
+            - <span style=color:#e6db74>&#39;GetDelegateForFunctionPointer&#39;</span>
+            - <span style=color:#e6db74>&#39;CreateThread&#39;</span>
+            - <span style=color:#e6db74>&#39;memcpy&#39;</span>
+            - <span style=color:#e6db74>&#39;LoadLibrary&#39;</span>
+            - <span style=color:#e6db74>&#39;GetModuleHandle&#39;</span>
+            - <span style=color:#e6db74>&#39;GetProcAddress&#39;</span>
+            - <span style=color:#e6db74>&#39;VirtualProtect&#39;</span>
+            - <span style=color:#e6db74>&#39;FreeLibrary&#39;</span>
+            - <span style=color:#e6db74>&#39;ReadProcessMemory&#39;</span>
+            - <span style=color:#e6db74>&#39;CreateRemoteThread&#39;</span>
+            - <span style=color:#e6db74>&#39;AdjustTokenPrivileges&#39;</span>
+            <span style=color:#75715e># - &#39;WriteByte&#39;  # FP with .NET System.IO.FileStream</span>
+            - <span style=color:#e6db74>&#39;WriteInt32&#39;</span>
+            - <span style=color:#e6db74>&#39;OpenThreadToken&#39;</span>
+            - <span style=color:#e6db74>&#39;PtrToString&#39;</span>
+            - <span style=color:#e6db74>&#39;FreeHGlobal&#39;</span>
+            - <span style=color:#e6db74>&#39;ZeroFreeGlobalAllocUnicode&#39;</span>
+            - <span style=color:#e6db74>&#39;OpenProcessToken&#39;</span>
+            - <span style=color:#e6db74>&#39;GetTokenInformation&#39;</span>
+            - <span style=color:#e6db74>&#39;SetThreadToken&#39;</span>
+            - <span style=color:#e6db74>&#39;ImpersonateLoggedOnUser&#39;</span>
+            - <span style=color:#e6db74>&#39;RevertToSelf&#39;</span>
+            - <span style=color:#e6db74>&#39;GetLogonSessionData&#39;</span>
+            - <span style=color:#e6db74>&#39;CreateProcessWithToken&#39;</span>
+            - <span style=color:#e6db74>&#39;DuplicateTokenEx&#39;</span>
+            - <span style=color:#e6db74>&#39;OpenWindowStation&#39;</span>
+            - <span style=color:#e6db74>&#39;OpenDesktop&#39;</span>
+            - <span style=color:#e6db74>&#39;MiniDumpWriteDump&#39;</span>
+            - <span style=color:#e6db74>&#39;AddSecurityPackage&#39;</span>
+            - <span style=color:#e6db74>&#39;EnumerateSecurityPackages&#39;</span>
+            - <span style=color:#e6db74>&#39;GetProcessHandle&#39;</span>
+            - <span style=color:#e6db74>&#39;DangerousGetHandle&#39;</span>
+            - <span style=color:#e6db74>&#39;kernel32&#39;</span>
+            - <span style=color:#e6db74>&#39;Advapi32&#39;</span>
+            - <span style=color:#e6db74>&#39;msvcrt&#39;</span>
+            - <span style=color:#e6db74>&#39;ntdll&#39;</span>
+            <span style=color:#75715e># - &#39;user32&#39;  # FP with chocolatey</span>
+            - <span style=color:#e6db74>&#39;secur32&#39;</span>
+    <span style=color:#f92672>condition</span>: <span style=color:#ae81ff>selection</span>
+<span style=color:#f92672>falsepositives</span>:
+    - <span style=color:#ae81ff>Carbon PowerShell Module (https://github.com/webmd-health-services/Carbon)</span>
+<span style=color:#f92672>level</span>: <span style=color:#ae81ff>high</span>
+
+</code></pre></div></div></div></div><div class="column is-3"><aside class="menu is-medium"><p class=menu-label>Rule Tags</p><div class=tags><a href=https://bradleyjkemp.dev/sigmadoc//tags/attack.execution class="tag is-medium">attack.execution</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc//tags/attack.t1059.001 class="tag is-medium">attack.t1059.001</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc//tags/attack.t1106 class="tag is-medium">attack.t1106</a></a></div><ul class=menu-list></ul><p class=menu-label>Similar rules</p><ul class=menu-list><li><a href=/sigmadoc/rules/windows/process_creation/proc_creation_win_powershell_download_patterns.yml/>Suspicious PowerShell Download and Execute Pattern</a></li><li><a href=/sigmadoc/rules/windows/process_creation/proc_creation_win_set_policies_to_unsecure_level.yml/>Change PowerShell Policies to an Unsecure Level</a></li><li><a href=/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_shellintel_malicious_commandlets.yml/>Malicious ShellIntel PowerShell Commandlets</a></li><li><a href=/sigmadoc/rules/windows/process_access/proc_access_win_direct_syscall_ntopenprocess.yml/>Direct Syscall of NtOpenProcess</a></li><li><a href=/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_mshta_pattern.yml/>Suspicious MSHTA Process Patterns</a></li></ul></aside></div></div></div></section><footer class=footer><div class="content has-text-centered"><p>Site generated with <a href=https://github.com/bradleyjkemp/sigmadoc><strong>sigmadoc</strong></a>. The website content
+is licensed <a href=https://github.com/SigmaHQ/sigma/blob/master/LICENSE.Detection.Rules.md>DRL 1.0</a>.</p></div></footer></body></html>

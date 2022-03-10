@@ -1,0 +1,71 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><title>Sigma Rule Browser</title><meta name=viewport content="width=device-width"><link rel=icon type=image/png sizes=32x32 href=../images/favicon.png><link rel=stylesheet href=https://unpkg.com/bulma@0.9.2/css/bulma.min.css><script src=https://kit.fontawesome.com/7dc3015a44.js crossorigin=anonymous></script></head><body><nav class=navbar role=navigation aria-label="main navigation"><div class=navbar-brand><a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc/>Sigma Docs</a>
+<a role=button class=navbar-burger aria-label=menu aria-expanded=false data-target=navbarBasicExample><span aria-hidden=true></span><span aria-hidden=true></span><span aria-hidden=true></span></a></div><div id=navbarBasicExample class=navbar-menu><div class=navbar-start><a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc/>Home</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//rules/>Rules</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//configs/>Configs</a><div class="navbar-item has-dropdown is-hoverable"><a class=navbar-link>Explore rules by...</a><div class=navbar-dropdown><a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//tags/>Tag</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//status/>Status</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//level/>Level</a></div></div></div><div class=navbar-end><div class=navbar-item id=search class=bd-search><form action=https://bradleyjkemp.dev/sigmadoc//search><p class="control has-icons-left"><input class="input is-rounded" type=text name=query placeholder=Search>
+<span class="icon is-left"><i class="fas fa-search" aria-hidden=true></i></span></p></form></div></div></div></nav><section class=section><div class=container><div class=columns><div class="column is-9"><nav class=breadcrumb aria-label=breadcrumbs><ul><li><a href=https://bradleyjkemp.dev/sigmadoc/>home</a></li><li><a href=https://bradleyjkemp.dev/sigmadoc/rules/>rules</a></li><li><a href=https://bradleyjkemp.dev/sigmadoc/rules/linux/>linux</a></li><li><a href=https://bradleyjkemp.dev/sigmadoc/rules/linux/builtin/>builtin</a></li><li><a href=https://bradleyjkemp.dev/sigmadoc/rules/linux/builtin/lnx_shell_susp_commands.yml/>lnx_shell_susp_commands.yml</a></li></ul></nav><div class="content is-medium"><h3 class="title is-1">Suspicious Activity in Shell Commands</h3><div class=box><div class="field is-grouped is-justify-content-center"><div class=control><div class="tags has-addons"><span class="tag is-medium is-dark">level</span>
+<span class="tag is-medium is-light"></span></div></div><div class=control><div class="tags has-addons"><span class="tag is-medium is-dark">status</span>
+<span class="tag is-medium is-light is-light">test</span></div></div></div><p>Detects suspicious shell commands used in various exploit codes (see references)</p><h2 id=known-false-positives>Known false-positives</h2><ul><li>Unknown</li></ul><h2 id=references>References</h2><ul><li><a href=http://www.threatgeek.com/2017/03/widespread-exploitation-attempts-using-cve-2017-5638.html>http://www.threatgeek.com/2017/03/widespread-exploitation-attempts-using-cve-2017-5638.html</a></li><li><a href=https://github.com/rapid7/metasploit-framework/blob/master/modules/exploits/multi/http/struts_code_exec_exception_delegator.rb#L121>https://github.com/rapid7/metasploit-framework/blob/master/modules/exploits/multi/http/struts_code_exec_exception_delegator.rb#L121</a></li><li><a href=http://pastebin.com/FtygZ1cg>http://pastebin.com/FtygZ1cg</a></li><li><a href=https://artkond.com/2017/03/23/pivoting-guide/>https://artkond.com/2017/03/23/pivoting-guide/</a></li></ul><h2 id=raw-rule-edithttpsgithubcomsigmahqsigmaeditmasterruleslinuxbuiltinlnx_shell_susp_commandsyml>Raw rule (<a href=https://github.com/SigmaHQ/sigma/edit/master/rules/linux/builtin/lnx_shell_susp_commands.yml>edit</a>)</h2><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=color:#f92672>title</span>: <span style=color:#ae81ff>Suspicious Activity in Shell Commands</span>
+<span style=color:#f92672>id</span>: <span style=color:#ae81ff>2aa1440c-9ae9-4d92-84a7-a9e5f5e31695</span>
+<span style=color:#f92672>status</span>: <span style=color:#ae81ff>test</span>
+<span style=color:#f92672>description</span>: <span style=color:#ae81ff>Detects suspicious shell commands used in various exploit codes (see references)</span>
+<span style=color:#f92672>author</span>: <span style=color:#ae81ff>Florian Roth</span>
+<span style=color:#f92672>references</span>:
+  - <span style=color:#ae81ff>http://www.threatgeek.com/2017/03/widespread-exploitation-attempts-using-cve-2017-5638.html</span>
+  - <span style=color:#ae81ff>https://github.com/rapid7/metasploit-framework/blob/master/modules/exploits/multi/http/struts_code_exec_exception_delegator.rb#L121</span>
+  - <span style=color:#ae81ff>http://pastebin.com/FtygZ1cg</span>
+  - <span style=color:#ae81ff>https://artkond.com/2017/03/23/pivoting-guide/</span>
+<span style=color:#f92672>date</span>: <span style=color:#ae81ff>2017</span><span style=color:#ae81ff>/08/21</span>
+<span style=color:#f92672>modified</span>: <span style=color:#ae81ff>2021</span><span style=color:#ae81ff>/11/27</span>
+<span style=color:#f92672>logsource</span>:
+  <span style=color:#f92672>product</span>: <span style=color:#ae81ff>linux</span>
+<span style=color:#f92672>detection</span>:
+  <span style=color:#f92672>keywords</span>:
+        <span style=color:#75715e># Generic suspicious commands</span>
+    - <span style=color:#e6db74>&#39;wget * - http* | perl&#39;</span>
+    - <span style=color:#e6db74>&#39;wget * - http* | sh&#39;</span>
+    - <span style=color:#e6db74>&#39;wget * - http* | bash&#39;</span>
+    - <span style=color:#e6db74>&#39;python -m SimpleHTTPServer&#39;</span>
+    - <span style=color:#e6db74>&#39;-m http.server&#39;</span>      <span style=color:#75715e># Python 3</span>
+    - <span style=color:#e6db74>&#39;import pty; pty.spawn*&#39;</span>
+    - <span style=color:#e6db74>&#39;socat exec:*&#39;</span>
+    - <span style=color:#e6db74>&#39;socat -O /tmp/*&#39;</span>
+    - <span style=color:#e6db74>&#39;socat tcp-connect*&#39;</span>
+    - <span style=color:#e6db74>&#39;*echo binary &gt;&gt;*&#39;</span>
+        <span style=color:#75715e># Malware</span>
+    - <span style=color:#e6db74>&#39;*wget *; chmod +x*&#39;</span>
+    - <span style=color:#e6db74>&#39;*wget *; chmod 777 *&#39;</span>
+    - <span style=color:#e6db74>&#39;*cd /tmp || cd /var/run || cd /mnt*&#39;</span>
+        <span style=color:#75715e># Apache Struts in-the-wild exploit codes</span>
+    - <span style=color:#e6db74>&#39;*stop;service iptables stop;*&#39;</span>
+    - <span style=color:#e6db74>&#39;*stop;SuSEfirewall2 stop;*&#39;</span>
+    - <span style=color:#e6db74>&#39;chmod 777 2020*&#39;</span>
+    - <span style=color:#e6db74>&#39;*&gt;&gt;/etc/rc.local&#39;</span>
+        <span style=color:#75715e># Metasploit framework exploit codes</span>
+    - <span style=color:#e6db74>&#39;*base64 -d /tmp/*&#39;</span>
+    - <span style=color:#e6db74>&#39;* | base64 -d *&#39;</span>
+    - <span style=color:#e6db74>&#39;*/chmod u+s *&#39;</span>
+    - <span style=color:#e6db74>&#39;*chmod +s /tmp/*&#39;</span>
+    - <span style=color:#e6db74>&#39;*chmod u+s /tmp/*&#39;</span>
+    - <span style=color:#e6db74>&#39;* /tmp/haxhax*&#39;</span>
+    - <span style=color:#e6db74>&#39;* /tmp/ns_sploit*&#39;</span>
+    - <span style=color:#e6db74>&#39;nc -l -p *&#39;</span>
+    - <span style=color:#e6db74>&#39;cp /bin/ksh *&#39;</span>
+    - <span style=color:#e6db74>&#39;cp /bin/sh *&#39;</span>
+    - <span style=color:#e6db74>&#39;* /tmp/*.b64 *&#39;</span>
+    - <span style=color:#e6db74>&#39;*/tmp/ysocereal.jar*&#39;</span>
+    - <span style=color:#e6db74>&#39;*/tmp/x *&#39;</span>
+    - <span style=color:#e6db74>&#39;*; chmod +x /tmp/*&#39;</span>
+    - <span style=color:#e6db74>&#39;*;chmod +x /tmp/*&#39;</span>
+  <span style=color:#f92672>condition</span>: <span style=color:#ae81ff>keywords</span>
+<span style=color:#f92672>falsepositives</span>:
+  - <span style=color:#ae81ff>Unknown</span>
+<span style=color:#f92672>level</span>: <span style=color:#ae81ff>high</span>
+<span style=color:#f92672>tags</span>:
+  - <span style=color:#ae81ff>attack.execution</span>
+  - <span style=color:#ae81ff>attack.t1059.004</span>
+
+</code></pre></div></div></div></div><div class="column is-3"><aside class="menu is-medium"><p class=menu-label>Rule Tags</p><div class=tags><a href=https://bradleyjkemp.dev/sigmadoc//tags/attack.execution class="tag is-medium">attack.execution</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc//tags/attack.t1059.004 class="tag is-medium">attack.t1059.004</a></a></div><ul class=menu-list></ul><p class=menu-label>Similar rules</p><ul class=menu-list><li><a href=/sigmadoc/rules/linux/builtin/lnx_apt_equationgroup_lnx.yml/>Equation Group Indicators</a></li><li><a href=/sigmadoc/rules/linux/builtin/lnx_susp_jexboss.yml/>JexBoss Command Sequence</a></li><li><a href=/sigmadoc/rules/linux/builtin/lnx_shell_priv_esc_prep.yml/>Privilege Escalation Preparation</a></li><li><a href=/sigmadoc/rules/linux/builtin/lnx_shell_susp_rev_shells.yml/>Suspicious Reverse Shell Command Line</a></li><li><a href=/sigmadoc/rules/proxy/proxy_download_susp_tlds_whitelist.yml/>Download EXE from Suspicious TLD</a></li></ul></aside></div></div></div></section><footer class=footer><div class="content has-text-centered"><p>Site generated with <a href=https://github.com/bradleyjkemp/sigmadoc><strong>sigmadoc</strong></a>. The website content
+is licensed <a href=https://github.com/SigmaHQ/sigma/blob/master/LICENSE.Detection.Rules.md>DRL 1.0</a>.</p></div></footer></body></html>

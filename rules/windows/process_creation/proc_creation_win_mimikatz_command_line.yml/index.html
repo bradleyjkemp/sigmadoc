@@ -1,0 +1,76 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><title>Sigma Rule Browser</title><meta name=viewport content="width=device-width"><link rel=icon type=image/png sizes=32x32 href=../images/favicon.png><link rel=stylesheet href=https://unpkg.com/bulma@0.9.2/css/bulma.min.css><script src=https://kit.fontawesome.com/7dc3015a44.js crossorigin=anonymous></script></head><body><nav class=navbar role=navigation aria-label="main navigation"><div class=navbar-brand><a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc/>Sigma Docs</a>
+<a role=button class=navbar-burger aria-label=menu aria-expanded=false data-target=navbarBasicExample><span aria-hidden=true></span><span aria-hidden=true></span><span aria-hidden=true></span></a></div><div id=navbarBasicExample class=navbar-menu><div class=navbar-start><a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc/>Home</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//rules/>Rules</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//configs/>Configs</a><div class="navbar-item has-dropdown is-hoverable"><a class=navbar-link>Explore rules by...</a><div class=navbar-dropdown><a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//tags/>Tag</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//status/>Status</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//level/>Level</a></div></div></div><div class=navbar-end><div class=navbar-item id=search class=bd-search><form action=https://bradleyjkemp.dev/sigmadoc//search><p class="control has-icons-left"><input class="input is-rounded" type=text name=query placeholder=Search>
+<span class="icon is-left"><i class="fas fa-search" aria-hidden=true></i></span></p></form></div></div></div></nav><section class=section><div class=container><div class=columns><div class="column is-9"><nav class=breadcrumb aria-label=breadcrumbs><ul><li><a href=https://bradleyjkemp.dev/sigmadoc/>home</a></li><li><a href=https://bradleyjkemp.dev/sigmadoc/rules/>rules</a></li><li><a href=https://bradleyjkemp.dev/sigmadoc/rules/windows/>windows</a></li><li><a href=https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/>process_creation</a></li><li><a href=https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_mimikatz_command_line.yml/>proc_creation_win_mimikatz_command_line.yml</a></li></ul></nav><div class="content is-medium"><h3 class="title is-1">Mimikatz Command Line</h3><div class=box><div class="field is-grouped is-justify-content-center"><div class=control><div class="tags has-addons"><span class="tag is-medium is-dark">level</span>
+<span class="tag is-medium is-light"></span></div></div><div class=control><div class="tags has-addons"><span class="tag is-medium is-dark">status</span>
+<span class="tag is-medium is-light is-light">test</span></div></div></div><p>Detection well-known mimikatz command line arguments</p><h2 id=known-false-positives>Known false-positives</h2><ul><li>Legitimate Administrator using tool for password recovery</li></ul><h2 id=references>References</h2><ul><li><a href=https://www.slideshare.net/heirhabarov/hunting-for-credentials-dumping-in-windows-environment>https://www.slideshare.net/heirhabarov/hunting-for-credentials-dumping-in-windows-environment</a></li><li><a href=https://tools.thehacker.recipes/mimikatz/modules>https://tools.thehacker.recipes/mimikatz/modules</a></li></ul><h2 id=raw-rule-edithttpsgithubcomsigmahqsigmaeditmasterruleswindowsprocess_creationproc_creation_win_mimikatz_command_lineyml>Raw rule (<a href=https://github.com/SigmaHQ/sigma/edit/master/rules/windows/process_creation/proc_creation_win_mimikatz_command_line.yml>edit</a>)</h2><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=color:#f92672>title</span>: <span style=color:#ae81ff>Mimikatz Command Line</span>
+<span style=color:#f92672>id</span>: <span style=color:#ae81ff>a642964e-bead-4bed-8910-1bb4d63e3b4d</span>
+<span style=color:#f92672>status</span>: <span style=color:#ae81ff>test</span>
+<span style=color:#f92672>description</span>: <span style=color:#ae81ff>Detection well-known mimikatz command line arguments</span>
+<span style=color:#f92672>author</span>: <span style=color:#ae81ff>Teymur Kheirkhabarov, oscd.community, David ANDRE (additional keywords), Tim Shelton</span>
+<span style=color:#f92672>references</span>:
+  - <span style=color:#ae81ff>https://www.slideshare.net/heirhabarov/hunting-for-credentials-dumping-in-windows-environment</span>
+  - <span style=color:#ae81ff>https://tools.thehacker.recipes/mimikatz/modules</span>
+<span style=color:#f92672>date</span>: <span style=color:#ae81ff>2019</span><span style=color:#ae81ff>/10/22</span>
+<span style=color:#f92672>modified</span>: <span style=color:#ae81ff>2022</span><span style=color:#ae81ff>/02/07</span>
+<span style=color:#f92672>tags</span>:
+  - <span style=color:#ae81ff>attack.credential_access</span>
+  - <span style=color:#ae81ff>attack.t1003.001</span>
+  - <span style=color:#ae81ff>attack.t1003.002</span>
+  - <span style=color:#ae81ff>attack.t1003.004</span>
+  - <span style=color:#ae81ff>attack.t1003.005</span>
+  - <span style=color:#ae81ff>attack.t1003.006</span>
+<span style=color:#f92672>logsource</span>:
+  <span style=color:#f92672>category</span>: <span style=color:#ae81ff>process_creation</span>
+  <span style=color:#f92672>product</span>: <span style=color:#ae81ff>windows</span>
+<span style=color:#f92672>detection</span>:
+  <span style=color:#f92672>selection_1</span>:
+    <span style=color:#f92672>CommandLine|contains</span>:
+      - <span style=color:#ae81ff>DumpCreds</span>
+      - <span style=color:#ae81ff>invoke-mimikatz</span>
+  <span style=color:#f92672>module_names</span>:
+    <span style=color:#f92672>CommandLine|contains</span>:
+      - <span style=color:#ae81ff>rpc</span>
+      - <span style=color:#ae81ff>token</span>
+      - <span style=color:#ae81ff>crypto</span>
+      - <span style=color:#ae81ff>dpapi</span>
+      - <span style=color:#ae81ff>sekurlsa</span>
+      - <span style=color:#ae81ff>kerberos</span>
+      - <span style=color:#ae81ff>lsadump</span>
+      - <span style=color:#ae81ff>privilege</span>
+      - <span style=color:#ae81ff>process</span>
+      - <span style=color:#ae81ff>vault</span>
+  <span style=color:#f92672>mimikatz_separator</span>:
+    <span style=color:#f92672>CommandLine|contains</span>:
+      - <span style=color:#e6db74>&#39;::&#39;</span>
+  <span style=color:#f92672>function_names</span>: <span style=color:#75715e># To cover functions from modules that are not in module_names (likely too generic)</span>
+    <span style=color:#f92672>CommandLine|contains</span>:
+      - <span style=color:#e6db74>&#39;aadcookie&#39;</span> <span style=color:#75715e>#misc module</span>
+      - <span style=color:#e6db74>&#39;detours&#39;</span> <span style=color:#75715e>#misc module</span>
+      - <span style=color:#e6db74>&#39;memssp&#39;</span> <span style=color:#75715e>#misc module</span>
+      - <span style=color:#e6db74>&#39;mflt&#39;</span> <span style=color:#75715e>#misc module</span>
+      - <span style=color:#e6db74>&#39;ncroutemon&#39;</span> <span style=color:#75715e>#misc module</span>
+      - <span style=color:#e6db74>&#39;ngcsign&#39;</span> <span style=color:#75715e>#misc module</span>
+      - <span style=color:#e6db74>&#39;printnightmare&#39;</span> <span style=color:#75715e>#misc module</span>
+      - <span style=color:#e6db74>&#39;skeleton&#39;</span> <span style=color:#75715e>#misc module</span>
+      - <span style=color:#e6db74>&#39;preshutdown&#39;</span>  <span style=color:#75715e>#service module</span>
+      - <span style=color:#e6db74>&#39;mstsc&#39;</span>  <span style=color:#75715e>#ts module</span>
+      - <span style=color:#e6db74>&#39;multirdp&#39;</span>  <span style=color:#75715e>#ts module</span>
+  <span style=color:#f92672>filter_1</span>:
+    <span style=color:#f92672>CommandLine|contains</span>:
+      - <span style=color:#e6db74>&#39;function Convert-GuidToCompressedGuid&#39;</span>
+  <span style=color:#f92672>condition</span>: <span style=color:#ae81ff>( selection_1 or (module_names and mimikatz_separator) or (function_names and mimikatz_separator) ) and not 1 of filter*</span>
+<span style=color:#f92672>falsepositives</span>:
+  - <span style=color:#ae81ff>Legitimate Administrator using tool for password recovery</span>
+<span style=color:#f92672>level</span>: <span style=color:#ae81ff>medium</span>
+
+</code></pre></div></div></div></div><div class="column is-3"><aside class="menu is-medium"><p class=menu-label>Rule Tags</p><div class=tags><a href=https://bradleyjkemp.dev/sigmadoc//tags/attack.credential_access class="tag is-medium">attack.credential_access</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc//tags/attack.t1003.001 class="tag is-medium">attack.t1003.001</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc//tags/attack.t1003.002 class="tag is-medium">attack.t1003.002</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc//tags/attack.t1003.004 class="tag is-medium">attack.t1003.004</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc//tags/attack.t1003.005 class="tag is-medium">attack.t1003.005</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc//tags/attack.t1003.006 class="tag is-medium">attack.t1003.006</a></a></div><ul class=menu-list></ul><p class=menu-label>Similar rules</p><ul class=menu-list><li><a href=/sigmadoc/rules/windows/builtin/system/win_mal_creddumper.yml/>Credential Dumping Tools Service Execution</a></li><li><a href=/sigmadoc/rules/windows/builtin/win_alert_mimikatz_keywords.yml/>Mimikatz Use</a></li><li><a href=/sigmadoc/rules/windows/pipe_created/pipe_created_cred_dump_tools_named_pipes.yml/>Cred Dump-Tools Named Pipes</a></li><li><a href=/sigmadoc/rules/windows/process_creation/proc_creation_win_grabbing_sensitive_hives_via_reg.yml/>Grabbing Sensitive Hives via Reg Utility</a></li><li><a href=/sigmadoc/rules/application/antivirus/av_password_dumper.yml/>Antivirus Password Dumper Detection</a></li></ul></aside></div></div></div></section><footer class=footer><div class="content has-text-centered"><p>Site generated with <a href=https://github.com/bradleyjkemp/sigmadoc><strong>sigmadoc</strong></a>. The website content
+is licensed <a href=https://github.com/SigmaHQ/sigma/blob/master/LICENSE.Detection.Rules.md>DRL 1.0</a>.</p></div></footer></body></html>

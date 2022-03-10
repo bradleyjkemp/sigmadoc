@@ -1,0 +1,41 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><title>Sigma Rule Browser</title><meta name=viewport content="width=device-width"><link rel=icon type=image/png sizes=32x32 href=../images/favicon.png><link rel=stylesheet href=https://unpkg.com/bulma@0.9.2/css/bulma.min.css><script src=https://kit.fontawesome.com/7dc3015a44.js crossorigin=anonymous></script></head><body><nav class=navbar role=navigation aria-label="main navigation"><div class=navbar-brand><a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc/>Sigma Docs</a>
+<a role=button class=navbar-burger aria-label=menu aria-expanded=false data-target=navbarBasicExample><span aria-hidden=true></span><span aria-hidden=true></span><span aria-hidden=true></span></a></div><div id=navbarBasicExample class=navbar-menu><div class=navbar-start><a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc/>Home</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//rules/>Rules</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//configs/>Configs</a><div class="navbar-item has-dropdown is-hoverable"><a class=navbar-link>Explore rules by...</a><div class=navbar-dropdown><a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//tags/>Tag</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//status/>Status</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//level/>Level</a></div></div></div><div class=navbar-end><div class=navbar-item id=search class=bd-search><form action=https://bradleyjkemp.dev/sigmadoc//search><p class="control has-icons-left"><input class="input is-rounded" type=text name=query placeholder=Search>
+<span class="icon is-left"><i class="fas fa-search" aria-hidden=true></i></span></p></form></div></div></div></nav><section class=section><div class=container><div class=columns><div class="column is-9"><nav class=breadcrumb aria-label=breadcrumbs><ul><li><a href=https://bradleyjkemp.dev/sigmadoc/>home</a></li><li><a href=https://bradleyjkemp.dev/sigmadoc/rules/>rules</a></li><li><a href=https://bradleyjkemp.dev/sigmadoc/rules/windows/>windows</a></li><li><a href=https://bradleyjkemp.dev/sigmadoc/rules/windows/process_access/>process_access</a></li><li><a href=https://bradleyjkemp.dev/sigmadoc/rules/windows/process_access/proc_access_win_lazagne_cred_dump_lsass_access.yml/>proc_access_win_lazagne_cred_dump_lsass_access.yml</a></li></ul></nav><div class="content is-medium"><h3 class="title is-1">Credential Dumping by LaZagne</h3><div class=box><div class="field is-grouped is-justify-content-center"><div class=control><div class="tags has-addons"><span class="tag is-medium is-dark">level</span>
+<span class="tag is-medium is-light"></span></div></div><div class=control><div class="tags has-addons"><span class="tag is-medium is-dark">status</span>
+<span class="tag is-medium is-success is-light">stable</span></div></div></div><p>Detects LSASS process access by LaZagne for credential dumping.</p><h2 id=known-false-positives>Known false-positives</h2><ul><li>Unknown</li></ul><h2 id=references>References</h2><ul><li><a href=https://twitter.com/bh4b3sh/status/1303674603819081728>https://twitter.com/bh4b3sh/status/1303674603819081728</a></li></ul><h2 id=raw-rule-edithttpsgithubcomsigmahqsigmaeditmasterruleswindowsprocess_accessproc_access_win_lazagne_cred_dump_lsass_accessyml>Raw rule (<a href=https://github.com/SigmaHQ/sigma/edit/master/rules/windows/process_access/proc_access_win_lazagne_cred_dump_lsass_access.yml>edit</a>)</h2><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=color:#f92672>title</span>: <span style=color:#ae81ff>Credential Dumping by LaZagne</span>
+<span style=color:#f92672>id</span>: <span style=color:#ae81ff>4b9a8556-99c4-470b-a40c-9c8d02c77ed0</span>
+<span style=color:#f92672>description</span>: <span style=color:#ae81ff>Detects LSASS process access by LaZagne for credential dumping.</span>
+<span style=color:#f92672>status</span>: <span style=color:#ae81ff>stable</span>
+<span style=color:#f92672>date</span>: <span style=color:#ae81ff>2020</span><span style=color:#ae81ff>/09/09</span>
+<span style=color:#f92672>author</span>: <span style=color:#ae81ff>Bhabesh Raj, Jonhnathan Ribeiro</span>
+<span style=color:#f92672>references</span>:
+    - <span style=color:#ae81ff>https://twitter.com/bh4b3sh/status/1303674603819081728</span>
+<span style=color:#f92672>tags</span>:
+    - <span style=color:#ae81ff>attack.credential_access</span>
+    - <span style=color:#ae81ff>attack.t1003.001</span>
+    - <span style=color:#ae81ff>attack.s0349</span>
+<span style=color:#f92672>logsource</span>:
+    <span style=color:#f92672>category</span>: <span style=color:#ae81ff>process_access</span>
+    <span style=color:#f92672>product</span>: <span style=color:#ae81ff>windows</span>
+<span style=color:#f92672>detection</span>:
+    <span style=color:#f92672>selection</span>: 
+        <span style=color:#f92672>TargetImage|endswith</span>: <span style=color:#e6db74>&#39;\lsass.exe&#39;</span>
+        <span style=color:#f92672>CallTrace|contains|all</span>: 
+            - <span style=color:#e6db74>&#39;C:\\Windows\\SYSTEM32\\ntdll.dll+&#39;</span>
+            - <span style=color:#e6db74>&#39;|C:\\Windows\\System32\\KERNELBASE.dll+&#39;</span>
+            - <span style=color:#e6db74>&#39;_ctypes.pyd+&#39;</span>
+            - <span style=color:#e6db74>&#39;python27.dll+&#39;</span>
+        <span style=color:#f92672>GrantedAccess</span>: <span style=color:#e6db74>&#39;0x1FFFFF&#39;</span>
+    <span style=color:#f92672>condition</span>: <span style=color:#ae81ff>selection</span>
+<span style=color:#f92672>level</span>: <span style=color:#ae81ff>critical</span>
+<span style=color:#f92672>falsepositives</span>:
+    - <span style=color:#ae81ff>Unknown</span>
+
+</code></pre></div></div></div></div><div class="column is-3"><aside class="menu is-medium"><p class=menu-label>Rule Tags</p><div class=tags><a href=https://bradleyjkemp.dev/sigmadoc//tags/attack.credential_access class="tag is-medium">attack.credential_access</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc//tags/attack.t1003.001 class="tag is-medium">attack.t1003.001</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc//tags/attack.s0349 class="tag is-medium">attack.s0349</a></a></div><ul class=menu-list></ul><p class=menu-label>Similar rules</p><ul class=menu-list><li><a href=/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_trolleyexpress_procdump.yml/>Process Access via TrolleyExpress Exclusion</a></li><li><a href=/sigmadoc/rules/windows/process_access/proc_access_win_lsass_memdump_evasion.yml/>LSASS Access from White-Listed Processes</a></li><li><a href=/sigmadoc/rules/windows/process_access/proc_access_win_lsass_memdump_indicators.yml/>LSASS Memory Access by Tool Named Dump</a></li><li><a href=/sigmadoc/rules/windows/process_access/proc_access_win_susp_proc_access_lsass_susp_source.yml/>LSASS Access from Program in Suspicious Folder</a></li><li><a href=/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_lsass_clone.yml/>Suspicious LSASS Process Clone</a></li></ul></aside></div></div></div></section><footer class=footer><div class="content has-text-centered"><p>Site generated with <a href=https://github.com/bradleyjkemp/sigmadoc><strong>sigmadoc</strong></a>. The website content
+is licensed <a href=https://github.com/SigmaHQ/sigma/blob/master/LICENSE.Detection.Rules.md>DRL 1.0</a>.</p></div></footer></body></html>

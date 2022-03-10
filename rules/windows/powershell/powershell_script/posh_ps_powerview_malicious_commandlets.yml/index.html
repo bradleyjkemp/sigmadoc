@@ -1,0 +1,160 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><title>Sigma Rule Browser</title><meta name=viewport content="width=device-width"><link rel=icon type=image/png sizes=32x32 href=../images/favicon.png><link rel=stylesheet href=https://unpkg.com/bulma@0.9.2/css/bulma.min.css><script src=https://kit.fontawesome.com/7dc3015a44.js crossorigin=anonymous></script></head><body><nav class=navbar role=navigation aria-label="main navigation"><div class=navbar-brand><a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc/>Sigma Docs</a>
+<a role=button class=navbar-burger aria-label=menu aria-expanded=false data-target=navbarBasicExample><span aria-hidden=true></span><span aria-hidden=true></span><span aria-hidden=true></span></a></div><div id=navbarBasicExample class=navbar-menu><div class=navbar-start><a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc/>Home</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//rules/>Rules</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//configs/>Configs</a><div class="navbar-item has-dropdown is-hoverable"><a class=navbar-link>Explore rules by...</a><div class=navbar-dropdown><a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//tags/>Tag</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//status/>Status</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//level/>Level</a></div></div></div><div class=navbar-end><div class=navbar-item id=search class=bd-search><form action=https://bradleyjkemp.dev/sigmadoc//search><p class="control has-icons-left"><input class="input is-rounded" type=text name=query placeholder=Search>
+<span class="icon is-left"><i class="fas fa-search" aria-hidden=true></i></span></p></form></div></div></div></nav><section class=section><div class=container><div class=columns><div class="column is-9"><nav class=breadcrumb aria-label=breadcrumbs><ul><li><a href=https://bradleyjkemp.dev/sigmadoc/>home</a></li><li><a href=https://bradleyjkemp.dev/sigmadoc/rules/>rules</a></li><li><a href=https://bradleyjkemp.dev/sigmadoc/rules/windows/>windows</a></li><li><a href=https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/>powershell</a></li><li><a href=https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/>powershell_script</a></li><li><a href=https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_powerview_malicious_commandlets.yml/>posh_ps_powerview_malicious_commandlets.yml</a></li></ul></nav><div class="content is-medium"><h3 class="title is-1">Malicious PowerView PowerShell Commandlets</h3><div class=box><div class="field is-grouped is-justify-content-center"><div class=control><div class="tags has-addons"><span class="tag is-medium is-dark">level</span>
+<span class="tag is-medium is-light"></span></div></div><div class=control><div class="tags has-addons"><span class="tag is-medium is-dark">status</span>
+<span class="tag is-medium is-danger is-light">experimental</span></div></div></div><p>Detects Commandlet names from PowerView of PowerSploit exploitation framework.</p><h2 id=known-false-positives>Known false-positives</h2><ul><li>Should not be any as administrators do not use this tool</li></ul><h2 id=references>References</h2><ul><li><a href=https://powersploit.readthedocs.io/en/stable/Recon/README>https://powersploit.readthedocs.io/en/stable/Recon/README</a></li><li><a href=https://github.com/PowerShellMafia/PowerSploit/tree/master/Recon>https://github.com/PowerShellMafia/PowerSploit/tree/master/Recon</a></li><li><a href=https://thedfirreport.com/2020/10/08/ryuks-return>https://thedfirreport.com/2020/10/08/ryuks-return</a></li><li><a href="https://adsecurity.org/?p=2277">https://adsecurity.org/?p=2277</a></li></ul><h2 id=raw-rule-edithttpsgithubcomsigmahqsigmaeditmasterruleswindowspowershellpowershell_scriptposh_ps_powerview_malicious_commandletsyml>Raw rule (<a href=https://github.com/SigmaHQ/sigma/edit/master/rules/windows/powershell/powershell_script/posh_ps_powerview_malicious_commandlets.yml>edit</a>)</h2><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=color:#f92672>title</span>: <span style=color:#ae81ff>Malicious PowerView PowerShell Commandlets</span>
+<span style=color:#f92672>id</span>: <span style=color:#ae81ff>dcd74b95-3f36-4ed9-9598-0490951643aa</span>
+<span style=color:#f92672>status</span>: <span style=color:#ae81ff>experimental</span>
+<span style=color:#f92672>description</span>: <span style=color:#ae81ff>Detects Commandlet names from PowerView of PowerSploit exploitation framework.</span>
+<span style=color:#f92672>date</span>: <span style=color:#ae81ff>2021</span><span style=color:#ae81ff>/05/18</span>
+<span style=color:#f92672>modified</span>: <span style=color:#ae81ff>2021</span><span style=color:#ae81ff>/10/16</span>
+<span style=color:#f92672>references</span>:
+    - <span style=color:#ae81ff>https://powersploit.readthedocs.io/en/stable/Recon/README</span>
+    - <span style=color:#ae81ff>https://github.com/PowerShellMafia/PowerSploit/tree/master/Recon</span>
+    - <span style=color:#ae81ff>https://thedfirreport.com/2020/10/08/ryuks-return</span>
+    - <span style=color:#ae81ff>https://adsecurity.org/?p=2277</span>
+<span style=color:#f92672>tags</span>:
+    - <span style=color:#ae81ff>attack.execution</span>
+    - <span style=color:#ae81ff>attack.t1059.001</span>
+<span style=color:#f92672>author</span>: <span style=color:#ae81ff>Bhabesh Raj</span>
+<span style=color:#f92672>logsource</span>:
+    <span style=color:#f92672>product</span>: <span style=color:#ae81ff>windows</span>
+    <span style=color:#f92672>category</span>: <span style=color:#ae81ff>ps_script</span>
+    <span style=color:#f92672>definition</span>: <span style=color:#ae81ff>Script Block Logging must be enable</span>
+<span style=color:#f92672>detection</span>:
+  <span style=color:#f92672>selection</span>:
+      <span style=color:#f92672>ScriptBlockText|contains</span>:
+        - <span style=color:#ae81ff>Export-PowerViewCSV</span>
+        - <span style=color:#ae81ff>Get-IPAddress</span>
+        - <span style=color:#ae81ff>Resolve-IPAddress</span>
+        - <span style=color:#ae81ff>Convert-NameToSid</span>
+        - <span style=color:#ae81ff>ConvertTo-SID</span>
+        - <span style=color:#ae81ff>Convert-ADName</span>
+        - <span style=color:#ae81ff>ConvertFrom-UACValue</span>
+        - <span style=color:#ae81ff>Add-RemoteConnection</span>
+        - <span style=color:#ae81ff>Remove-RemoteConnection</span>
+        - <span style=color:#ae81ff>Invoke-UserImpersonation</span>
+        - <span style=color:#ae81ff>Invoke-RevertToSelf</span>
+        - <span style=color:#ae81ff>Request-SPNTicket</span>
+        - <span style=color:#ae81ff>Get-DomainSPNTicket</span>
+        - <span style=color:#ae81ff>Invoke-Kerberoast</span>
+        - <span style=color:#ae81ff>Get-PathAcl</span>
+        - <span style=color:#ae81ff>Get-DNSZone</span>
+        - <span style=color:#ae81ff>Get-DomainDNSZone</span>
+        - <span style=color:#ae81ff>Get-DNSRecord</span>
+        - <span style=color:#ae81ff>Get-DomainDNSRecord</span>
+        - <span style=color:#ae81ff>Get-NetDomain</span>
+        - <span style=color:#ae81ff>Get-Domain</span>
+        - <span style=color:#ae81ff>Get-NetDomainController</span>
+        - <span style=color:#ae81ff>Get-DomainController</span>
+        - <span style=color:#ae81ff>Get-NetForest</span>
+        - <span style=color:#ae81ff>Get-Forest</span>
+        - <span style=color:#ae81ff>Get-NetForestDomain</span>
+        - <span style=color:#ae81ff>Get-ForestDomain</span>
+        - <span style=color:#ae81ff>Get-NetForestCatalog</span>
+        - <span style=color:#ae81ff>Get-ForestGlobalCatalog</span>
+        - <span style=color:#ae81ff>Find-DomainObjectPropertyOutlier</span>
+        - <span style=color:#ae81ff>Get-NetUser</span>
+        - <span style=color:#ae81ff>Get-DomainUser</span>
+        - <span style=color:#ae81ff>New-DomainUser</span>
+        - <span style=color:#ae81ff>Set-DomainUserPassword</span>
+        - <span style=color:#ae81ff>Get-UserEvent</span>
+        - <span style=color:#ae81ff>Get-DomainUserEvent</span>
+        - <span style=color:#ae81ff>Get-NetComputer</span>
+        - <span style=color:#ae81ff>Get-DomainComputer</span>
+        - <span style=color:#ae81ff>Get-ADObject</span>
+        - <span style=color:#ae81ff>Get-DomainObject</span>
+        - <span style=color:#ae81ff>Set-ADObject</span>
+        - <span style=color:#ae81ff>Set-DomainObject</span>
+        - <span style=color:#ae81ff>Get-ObjectAcl</span>
+        - <span style=color:#ae81ff>Get-DomainObjectAcl</span>
+        - <span style=color:#ae81ff>Add-ObjectAcl</span>
+        - <span style=color:#ae81ff>Add-DomainObjectAcl</span>
+        - <span style=color:#ae81ff>Invoke-ACLScanner</span>
+        - <span style=color:#ae81ff>Find-InterestingDomainAcl</span>
+        - <span style=color:#ae81ff>Get-NetOU</span>
+        - <span style=color:#ae81ff>Get-DomainOU</span>
+        - <span style=color:#ae81ff>Get-NetSite</span>
+        - <span style=color:#ae81ff>Get-DomainSite</span>
+        - <span style=color:#ae81ff>Get-NetSubnet</span>
+        - <span style=color:#ae81ff>Get-DomainSubnet</span>
+        - <span style=color:#ae81ff>Get-DomainSID</span>
+        - <span style=color:#ae81ff>Get-NetGroup</span>
+        - <span style=color:#ae81ff>Get-DomainGroup</span>
+        - <span style=color:#ae81ff>New-DomainGroup</span>
+        - <span style=color:#ae81ff>Find-ManagedSecurityGroups</span>
+        - <span style=color:#ae81ff>Get-DomainManagedSecurityGroup</span>
+        - <span style=color:#ae81ff>Get-NetGroupMember</span>
+        - <span style=color:#ae81ff>Get-DomainGroupMember</span>
+        - <span style=color:#ae81ff>Add-DomainGroupMember</span>
+        - <span style=color:#ae81ff>Get-NetFileServer</span>
+        - <span style=color:#ae81ff>Get-DomainFileServer</span>
+        - <span style=color:#ae81ff>Get-DFSshare</span>
+        - <span style=color:#ae81ff>Get-DomainDFSShare</span>
+        - <span style=color:#ae81ff>Get-NetGPO</span>
+        - <span style=color:#ae81ff>Get-DomainGPO</span>
+        - <span style=color:#ae81ff>Get-NetGPOGroup</span>
+        - <span style=color:#ae81ff>Get-DomainGPOLocalGroup</span>
+        - <span style=color:#ae81ff>Find-GPOLocation</span>
+        - <span style=color:#ae81ff>Get-DomainGPOUserLocalGroupMapping</span>
+        - <span style=color:#ae81ff>Find-GPOComputerAdmin</span>
+        - <span style=color:#ae81ff>Get-DomainGPOComputerLocalGroupMapping</span>
+        - <span style=color:#ae81ff>Get-DomainPolicy</span>
+        - <span style=color:#ae81ff>Get-NetLocalGroup</span>
+        - <span style=color:#ae81ff>Get-NetLocalGroupMember</span>
+        - <span style=color:#ae81ff>Get-NetShare</span>
+        - <span style=color:#ae81ff>Get-NetLoggedon</span>
+        - <span style=color:#ae81ff>Get-NetSession</span>
+        - <span style=color:#ae81ff>Get-LoggedOnLocal</span>
+        - <span style=color:#ae81ff>Get-RegLoggedOn</span>
+        - <span style=color:#ae81ff>Get-NetRDPSession</span>
+        - <span style=color:#ae81ff>Invoke-CheckLocalAdminAccess</span>
+        - <span style=color:#ae81ff>Test-AdminAccess</span>
+        - <span style=color:#ae81ff>Get-SiteName</span>
+        - <span style=color:#ae81ff>Get-NetComputerSiteName</span>
+        - <span style=color:#ae81ff>Get-Proxy</span>
+        - <span style=color:#ae81ff>Get-WMIRegProxy</span>
+        - <span style=color:#ae81ff>Get-LastLoggedOn</span>
+        - <span style=color:#ae81ff>Get-WMIRegLastLoggedOn</span>
+        - <span style=color:#ae81ff>Get-CachedRDPConnection</span>
+        - <span style=color:#ae81ff>Get-WMIRegCachedRDPConnection</span>
+        - <span style=color:#ae81ff>Get-RegistryMountedDrive</span>
+        - <span style=color:#ae81ff>Get-WMIRegMountedDrive</span>
+        - <span style=color:#ae81ff>Get-NetProcess</span>
+        - <span style=color:#ae81ff>Get-WMIProcess</span>
+        - <span style=color:#ae81ff>Find-InterestingFile</span>
+        - <span style=color:#ae81ff>Invoke-UserHunter</span>
+        - <span style=color:#ae81ff>Find-DomainUserLocation</span>
+        - <span style=color:#ae81ff>Invoke-ProcessHunter</span>
+        - <span style=color:#ae81ff>Find-DomainProcess</span>
+        - <span style=color:#ae81ff>Invoke-EventHunter</span>
+        - <span style=color:#ae81ff>Find-DomainUserEvent</span>
+        - <span style=color:#ae81ff>Invoke-ShareFinder</span>
+        - <span style=color:#ae81ff>Find-DomainShare</span>
+        - <span style=color:#ae81ff>Invoke-FileFinder</span>
+        - <span style=color:#ae81ff>Find-InterestingDomainShareFile</span>
+        - <span style=color:#ae81ff>Find-LocalAdminAccess</span>
+        - <span style=color:#ae81ff>Invoke-EnumerateLocalAdmin</span>
+        - <span style=color:#ae81ff>Find-DomainLocalGroupMember</span>
+        - <span style=color:#ae81ff>Get-NetDomainTrust</span>
+        - <span style=color:#ae81ff>Get-DomainTrust</span>
+        - <span style=color:#ae81ff>Get-NetForestTrust</span>
+        - <span style=color:#ae81ff>Get-ForestTrust</span>
+        - <span style=color:#ae81ff>Find-ForeignUser</span>
+        - <span style=color:#ae81ff>Get-DomainForeignUser</span>
+        - <span style=color:#ae81ff>Find-ForeignGroup</span>
+        - <span style=color:#ae81ff>Get-DomainForeignGroupMember</span>
+        - <span style=color:#ae81ff>Invoke-MapDomainTrust</span>
+        - <span style=color:#ae81ff>Get-DomainTrustMapping</span>
+  <span style=color:#f92672>condition</span>: <span style=color:#ae81ff>selection</span>
+<span style=color:#f92672>falsepositives</span>:
+    - <span style=color:#ae81ff>Should not be any as administrators do not use this tool</span>
+<span style=color:#f92672>level</span>: <span style=color:#ae81ff>high</span>
+
+</code></pre></div></div></div></div><div class="column is-3"><aside class="menu is-medium"><p class=menu-label>Rule Tags</p><div class=tags><a href=https://bradleyjkemp.dev/sigmadoc//tags/attack.execution class="tag is-medium">attack.execution</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc//tags/attack.t1059.001 class="tag is-medium">attack.t1059.001</a></a></div><ul class=menu-list></ul><p class=menu-label>Similar rules</p><ul class=menu-list><li><a href=/sigmadoc/rules/windows/builtin/applocker/win_applocker_file_was_not_allowed_to_run.yml/>File Was Not Allowed To Run</a></li><li><a href=/sigmadoc/rules/windows/powershell/powershell_classic/posh_pc_xor_commandline.yml/>Suspicious XOR Encoded PowerShell Command Line</a></li><li><a href=/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_create_local_user.yml/>PowerShell Create Local User</a></li><li><a href=/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_wmimplant.yml/>WMImplant Hack Tool</a></li><li><a href=/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_ps_downloadfile.yml/>PowerShell DownloadFile</a></li></ul></aside></div></div></div></section><footer class=footer><div class="content has-text-centered"><p>Site generated with <a href=https://github.com/bradleyjkemp/sigmadoc><strong>sigmadoc</strong></a>. The website content
+is licensed <a href=https://github.com/SigmaHQ/sigma/blob/master/LICENSE.Detection.Rules.md>DRL 1.0</a>.</p></div></footer></body></html>

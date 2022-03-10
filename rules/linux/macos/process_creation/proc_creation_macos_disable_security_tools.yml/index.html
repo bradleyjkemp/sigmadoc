@@ -1,0 +1,55 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><title>Sigma Rule Browser</title><meta name=viewport content="width=device-width"><link rel=icon type=image/png sizes=32x32 href=../images/favicon.png><link rel=stylesheet href=https://unpkg.com/bulma@0.9.2/css/bulma.min.css><script src=https://kit.fontawesome.com/7dc3015a44.js crossorigin=anonymous></script></head><body><nav class=navbar role=navigation aria-label="main navigation"><div class=navbar-brand><a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc/>Sigma Docs</a>
+<a role=button class=navbar-burger aria-label=menu aria-expanded=false data-target=navbarBasicExample><span aria-hidden=true></span><span aria-hidden=true></span><span aria-hidden=true></span></a></div><div id=navbarBasicExample class=navbar-menu><div class=navbar-start><a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc/>Home</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//rules/>Rules</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//configs/>Configs</a><div class="navbar-item has-dropdown is-hoverable"><a class=navbar-link>Explore rules by...</a><div class=navbar-dropdown><a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//tags/>Tag</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//status/>Status</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//level/>Level</a></div></div></div><div class=navbar-end><div class=navbar-item id=search class=bd-search><form action=https://bradleyjkemp.dev/sigmadoc//search><p class="control has-icons-left"><input class="input is-rounded" type=text name=query placeholder=Search>
+<span class="icon is-left"><i class="fas fa-search" aria-hidden=true></i></span></p></form></div></div></div></nav><section class=section><div class=container><div class=columns><div class="column is-9"><nav class=breadcrumb aria-label=breadcrumbs><ul><li><a href=https://bradleyjkemp.dev/sigmadoc/>home</a></li><li><a href=https://bradleyjkemp.dev/sigmadoc/rules/>rules</a></li><li><a href=https://bradleyjkemp.dev/sigmadoc/rules/linux/>linux</a></li><li><a href=https://bradleyjkemp.dev/sigmadoc/rules/linux/macos/>macos</a></li><li><a href=https://bradleyjkemp.dev/sigmadoc/rules/linux/macos/process_creation/>process_creation</a></li><li><a href=https://bradleyjkemp.dev/sigmadoc/rules/linux/macos/process_creation/proc_creation_macos_disable_security_tools.yml/>proc_creation_macos_disable_security_tools.yml</a></li></ul></nav><div class="content is-medium"><h3 class="title is-1">Disable Security Tools</h3><div class=box><div class="field is-grouped is-justify-content-center"><div class=control><div class="tags has-addons"><span class="tag is-medium is-dark">level</span>
+<span class="tag is-medium is-light"></span></div></div><div class=control><div class="tags has-addons"><span class="tag is-medium is-dark">status</span>
+<span class="tag is-medium is-light is-light">test</span></div></div></div><p>Detects disabling security tools</p><h2 id=known-false-positives>Known false-positives</h2><ul><li>Legitimate activities</li></ul><h2 id=references>References</h2><ul><li><a href=https://github.com/redcanaryco/atomic-red-team/blob/master/atomics/T1562.001/T1562.001.md>https://github.com/redcanaryco/atomic-red-team/blob/master/atomics/T1562.001/T1562.001.md</a></li></ul><h2 id=raw-rule-edithttpsgithubcomsigmahqsigmaeditmasterruleslinuxmacosprocess_creationproc_creation_macos_disable_security_toolsyml>Raw rule (<a href=https://github.com/SigmaHQ/sigma/edit/master/rules/linux/macos/process_creation/proc_creation_macos_disable_security_tools.yml>edit</a>)</h2><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=color:#f92672>title</span>: <span style=color:#ae81ff>Disable Security Tools</span>
+<span style=color:#f92672>id</span>: <span style=color:#ae81ff>ff39f1a6-84ac-476f-a1af-37fcdf53d7c0</span>
+<span style=color:#f92672>status</span>: <span style=color:#ae81ff>test</span>
+<span style=color:#f92672>description</span>: <span style=color:#ae81ff>Detects disabling security tools</span>
+<span style=color:#f92672>author</span>: <span style=color:#ae81ff>Daniil Yugoslavskiy, oscd.community</span>
+<span style=color:#f92672>references</span>:
+  - <span style=color:#ae81ff>https://github.com/redcanaryco/atomic-red-team/blob/master/atomics/T1562.001/T1562.001.md</span>
+<span style=color:#f92672>date</span>: <span style=color:#ae81ff>2020</span><span style=color:#ae81ff>/10/19</span>
+<span style=color:#f92672>modified</span>: <span style=color:#ae81ff>2021</span><span style=color:#ae81ff>/11/27</span>
+<span style=color:#f92672>logsource</span>:
+  <span style=color:#f92672>category</span>: <span style=color:#ae81ff>process_creation</span>
+  <span style=color:#f92672>product</span>: <span style=color:#ae81ff>macos</span>
+<span style=color:#f92672>detection</span>:
+  <span style=color:#f92672>launchctl_unload</span>:
+    <span style=color:#f92672>Image</span>: <span style=color:#e6db74>&#39;/bin/launchctl&#39;</span>
+    <span style=color:#f92672>CommandLine|contains</span>: <span style=color:#e6db74>&#39;unload&#39;</span>
+  <span style=color:#f92672>security_plists</span>:
+    <span style=color:#f92672>CommandLine|contains</span>:
+      - <span style=color:#e6db74>&#39;com.objective-see.lulu.plist&#39;</span>                     <span style=color:#75715e># Objective-See firewall management utility</span>
+      - <span style=color:#e6db74>&#39;com.objective-see.blockblock.plist&#39;</span>               <span style=color:#75715e># Objective-See persistence locations watcher/blocker</span>
+      - <span style=color:#e6db74>&#39;com.google.santad.plist&#39;</span>                          <span style=color:#75715e># google santa</span>
+      - <span style=color:#e6db74>&#39;com.carbonblack.defense.daemon.plist&#39;</span>             <span style=color:#75715e># carbon black</span>
+      - <span style=color:#e6db74>&#39;com.carbonblack.daemon.plist&#39;</span>                     <span style=color:#75715e># carbon black</span>
+      - <span style=color:#e6db74>&#39;at.obdev.littlesnitchd.plist&#39;</span>                     <span style=color:#75715e># Objective Development Software firewall management utility</span>
+      - <span style=color:#e6db74>&#39;com.tenablesecurity.nessusagent.plist&#39;</span>            <span style=color:#75715e># Tenable Nessus</span>
+      - <span style=color:#e6db74>&#39;com.opendns.osx.RoamingClientConfigUpdater.plist&#39;</span> <span style=color:#75715e># OpenDNS Umbrella</span>
+      - <span style=color:#e6db74>&#39;com.crowdstrike.falcond.plist&#39;</span>                    <span style=color:#75715e># Crowdstrike Falcon</span>
+      - <span style=color:#e6db74>&#39;com.crowdstrike.userdaemon.plist&#39;</span>                 <span style=color:#75715e># Crowdstrike Falcon</span>
+      - <span style=color:#e6db74>&#39;osquery&#39;</span>                                          <span style=color:#75715e># facebook osquery</span>
+      - <span style=color:#e6db74>&#39;filebeat&#39;</span>                                         <span style=color:#75715e># elastic log file shipper</span>
+      - <span style=color:#e6db74>&#39;auditbeat&#39;</span>                                        <span style=color:#75715e># elastic auditing agent/log shipper</span>
+      - <span style=color:#e6db74>&#39;packetbeat&#39;</span>                                       <span style=color:#75715e># elastic network logger/shipper</span>
+      - <span style=color:#e6db74>&#39;td-agent&#39;</span>                                         <span style=color:#75715e># fluentd log shipper</span>
+  <span style=color:#f92672>disable_gatekeeper</span>:
+    <span style=color:#f92672>Image</span>: <span style=color:#e6db74>&#39;/usr/sbin/spctl&#39;</span>
+    <span style=color:#f92672>CommandLine|contains</span>: <span style=color:#e6db74>&#39;disable&#39;</span>
+  <span style=color:#f92672>condition</span>: <span style=color:#ae81ff>(launchctl_unload and security_plists) or disable_gatekeeper</span>
+<span style=color:#f92672>falsepositives</span>:
+  - <span style=color:#ae81ff>Legitimate activities</span>
+<span style=color:#f92672>level</span>: <span style=color:#ae81ff>medium</span>
+<span style=color:#f92672>tags</span>:
+  - <span style=color:#ae81ff>attack.defense_evasion</span>
+  - <span style=color:#ae81ff>attack.t1562.001</span>
+
+</code></pre></div></div></div></div><div class="column is-3"><aside class="menu is-medium"><p class=menu-label>Rule Tags</p><div class=tags><a href=https://bradleyjkemp.dev/sigmadoc//tags/attack.defense_evasion class="tag is-medium">attack.defense_evasion</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc//tags/attack.t1562.001 class="tag is-medium">attack.t1562.001</a></a></div><ul class=menu-list></ul><p class=menu-label>Similar rules</p><ul class=menu-list><li><a href=/sigmadoc/rules/windows/process_creation/proc_creation_win_reg_defender_exclusion.yml/>Registry Defender Exclusions</a></li><li><a href=/sigmadoc/rules/windows/process_creation/proc_creation_win_dsim_remove.yml/>Dism Remove Online Package</a></li><li><a href=/sigmadoc/rules/windows/process_creation/proc_creation_win_uninstall_sysmon.yml/>Uninstall Sysinternals Sysmon</a></li><li><a href=/sigmadoc/rules/windows/process_creation/proc_creation_win_cleanwipe.yml/>CleanWipe Usage</a></li><li><a href=/sigmadoc/rules/windows/registry_event/registry_event_defender_realtime_protection_disabled.yml/>Windows Defender Real-Time Protection Disabled</a></li></ul></aside></div></div></div></section><footer class=footer><div class="content has-text-centered"><p>Site generated with <a href=https://github.com/bradleyjkemp/sigmadoc><strong>sigmadoc</strong></a>. The website content
+is licensed <a href=https://github.com/SigmaHQ/sigma/blob/master/LICENSE.Detection.Rules.md>DRL 1.0</a>.</p></div></footer></body></html>

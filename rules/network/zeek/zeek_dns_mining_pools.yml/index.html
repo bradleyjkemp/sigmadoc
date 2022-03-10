@@ -1,0 +1,117 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><title>Sigma Rule Browser</title><meta name=viewport content="width=device-width"><link rel=icon type=image/png sizes=32x32 href=../images/favicon.png><link rel=stylesheet href=https://unpkg.com/bulma@0.9.2/css/bulma.min.css><script src=https://kit.fontawesome.com/7dc3015a44.js crossorigin=anonymous></script></head><body><nav class=navbar role=navigation aria-label="main navigation"><div class=navbar-brand><a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc/>Sigma Docs</a>
+<a role=button class=navbar-burger aria-label=menu aria-expanded=false data-target=navbarBasicExample><span aria-hidden=true></span><span aria-hidden=true></span><span aria-hidden=true></span></a></div><div id=navbarBasicExample class=navbar-menu><div class=navbar-start><a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc/>Home</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//rules/>Rules</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//configs/>Configs</a><div class="navbar-item has-dropdown is-hoverable"><a class=navbar-link>Explore rules by...</a><div class=navbar-dropdown><a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//tags/>Tag</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//status/>Status</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//level/>Level</a></div></div></div><div class=navbar-end><div class=navbar-item id=search class=bd-search><form action=https://bradleyjkemp.dev/sigmadoc//search><p class="control has-icons-left"><input class="input is-rounded" type=text name=query placeholder=Search>
+<span class="icon is-left"><i class="fas fa-search" aria-hidden=true></i></span></p></form></div></div></div></nav><section class=section><div class=container><div class=columns><div class="column is-9"><nav class=breadcrumb aria-label=breadcrumbs><ul><li><a href=https://bradleyjkemp.dev/sigmadoc/>home</a></li><li><a href=https://bradleyjkemp.dev/sigmadoc/rules/>rules</a></li><li><a href=https://bradleyjkemp.dev/sigmadoc/rules/network/>network</a></li><li><a href=https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/>zeek</a></li><li><a href=https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_dns_mining_pools.yml/>zeek_dns_mining_pools.yml</a></li></ul></nav><div class="content is-medium"><h3 class="title is-1">DNS Events Related To Mining Pools</h3><div class=box><div class="field is-grouped is-justify-content-center"><div class=control><div class="tags has-addons"><span class="tag is-medium is-dark">level</span>
+<span class="tag is-medium is-light"></span></div></div><div class=control><div class="tags has-addons"><span class="tag is-medium is-dark">status</span>
+<span class="tag is-medium is-danger is-light">experimental</span></div></div></div><p>Identifies clients that may be performing DNS lookups associated with common currency mining pools.</p><h2 id=known-false-positives>Known false-positives</h2><ul><li>A DNS lookup does not necessarily mean a successful attempt, verify a) if there was a response using the zeek answers field, if there was then verify the connections (conn.log) to those IPs. b) verify if HTTP, SSL, or TLS activity to the domain that was queried. http.log field is &lsquo;host&rsquo; and ssl/tls is &lsquo;server_name&rsquo;.</li></ul><h2 id=references>References</h2><ul><li><a href=https://github.com/Azure/Azure-Sentinel/blob/master/Detections/ASimDNS/imDNS_Miners.yaml>https://github.com/Azure/Azure-Sentinel/blob/master/Detections/ASimDNS/imDNS_Miners.yaml</a></li></ul><h2 id=raw-rule-edithttpsgithubcomsigmahqsigmaeditmasterrulesnetworkzeekzeek_dns_mining_poolsyml>Raw rule (<a href=https://github.com/SigmaHQ/sigma/edit/master/rules/network/zeek/zeek_dns_mining_pools.yml>edit</a>)</h2><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=color:#f92672>title</span>: <span style=color:#ae81ff>DNS Events Related To Mining Pools</span>
+<span style=color:#f92672>id</span>: <span style=color:#ae81ff>bf74135c-18e8-4a72-a926-0e4f47888c19</span>
+<span style=color:#f92672>description</span>: <span style=color:#ae81ff>Identifies clients that may be performing DNS lookups associated with common currency mining pools.</span>
+<span style=color:#f92672>status</span>: <span style=color:#ae81ff>experimental</span>
+<span style=color:#f92672>references</span>:
+  - <span style=color:#ae81ff>https://github.com/Azure/Azure-Sentinel/blob/master/Detections/ASimDNS/imDNS_Miners.yaml</span>
+<span style=color:#f92672>date</span>: <span style=color:#ae81ff>2021</span><span style=color:#ae81ff>/08/19</span>
+<span style=color:#f92672>modified</span>: <span style=color:#ae81ff>2021</span><span style=color:#ae81ff>/08/23</span>
+<span style=color:#f92672>author</span>: <span style=color:#ae81ff>Saw Winn Naung, Azure-Sentinel, @neu5ron</span>
+<span style=color:#f92672>level</span>: <span style=color:#ae81ff>low</span>
+<span style=color:#f92672>logsource</span>:
+    <span style=color:#f92672>service</span>: <span style=color:#ae81ff>dns</span>
+    <span style=color:#f92672>product</span>: <span style=color:#ae81ff>zeek</span>
+<span style=color:#f92672>tags</span>:
+  - <span style=color:#ae81ff>attack.t1569.002</span>
+  - <span style=color:#ae81ff>attack.t1496</span>
+<span style=color:#f92672>detection</span>:
+    <span style=color:#f92672>selection</span>:
+        <span style=color:#f92672>query|endswith</span>:
+            - <span style=color:#e6db74>&#39;monerohash.com&#39;</span>
+            - <span style=color:#e6db74>&#39;do-dear.com&#39;</span>
+            - <span style=color:#e6db74>&#39;xmrminerpro.com&#39;</span>
+            - <span style=color:#e6db74>&#39;secumine.net&#39;</span>
+            - <span style=color:#e6db74>&#39;xmrpool.com&#39;</span>
+            - <span style=color:#e6db74>&#39;minexmr.org&#39;</span>
+            - <span style=color:#e6db74>&#39;hashanywhere.com&#39;</span>
+            - <span style=color:#e6db74>&#39;xmrget.com&#39;</span>
+            - <span style=color:#e6db74>&#39;mininglottery.eu&#39;</span>
+            - <span style=color:#e6db74>&#39;minergate.com&#39;</span>
+            - <span style=color:#e6db74>&#39;moriaxmr.com&#39;</span>
+            - <span style=color:#e6db74>&#39;multipooler.com&#39;</span>
+            - <span style=color:#e6db74>&#39;moneropools.com&#39;</span>
+            - <span style=color:#e6db74>&#39;xmrpool.eu&#39;</span>
+            - <span style=color:#e6db74>&#39;coolmining.club&#39;</span>
+            - <span style=color:#e6db74>&#39;supportxmr.com&#39;</span>
+            - <span style=color:#e6db74>&#39;minexmr.com&#39;</span>
+            - <span style=color:#e6db74>&#39;hashvault.pro&#39;</span>
+            - <span style=color:#e6db74>&#39;xmrpool.net&#39;</span>
+            - <span style=color:#e6db74>&#39;crypto-pool.fr&#39;</span>
+            - <span style=color:#e6db74>&#39;xmr.pt&#39;</span>
+            - <span style=color:#e6db74>&#39;miner.rocks&#39;</span>
+            - <span style=color:#e6db74>&#39;walpool.com&#39;</span>
+            - <span style=color:#e6db74>&#39;herominers.com&#39;</span>
+            - <span style=color:#e6db74>&#39;gntl.co.uk&#39;</span>
+            - <span style=color:#e6db74>&#39;semipool.com&#39;</span>
+            - <span style=color:#e6db74>&#39;coinfoundry.org&#39;</span>
+            - <span style=color:#e6db74>&#39;cryptoknight.cc&#39;</span>
+            - <span style=color:#e6db74>&#39;fairhash.org&#39;</span>
+            - <span style=color:#e6db74>&#39;baikalmine.com&#39;</span>
+            - <span style=color:#e6db74>&#39;tubepool.xyz&#39;</span>
+            - <span style=color:#e6db74>&#39;fairpool.xyz&#39;</span>
+            - <span style=color:#e6db74>&#39;asiapool.io&#39;</span>
+            - <span style=color:#e6db74>&#39;coinpoolit.webhop.me&#39;</span>
+            - <span style=color:#e6db74>&#39;nanopool.org&#39;</span>
+            - <span style=color:#e6db74>&#39;moneropool.com&#39;</span>
+            - <span style=color:#e6db74>&#39;miner.center&#39;</span>
+            - <span style=color:#e6db74>&#39;prohash.net&#39;</span>
+            - <span style=color:#e6db74>&#39;poolto.be&#39;</span>
+            - <span style=color:#e6db74>&#39;cryptoescrow.eu&#39;</span>
+            - <span style=color:#e6db74>&#39;monerominers.net&#39;</span>
+            - <span style=color:#e6db74>&#39;cryptonotepool.org&#39;</span>
+            - <span style=color:#e6db74>&#39;extrmepool.org&#39;</span>
+            - <span style=color:#e6db74>&#39;webcoin.me&#39;</span>
+            - <span style=color:#e6db74>&#39;kippo.eu&#39;</span>
+            - <span style=color:#e6db74>&#39;hashinvest.ws&#39;</span>
+            - <span style=color:#e6db74>&#39;monero.farm&#39;</span>
+            - <span style=color:#e6db74>&#39;linux-repository-updates.com&#39;</span>
+            - <span style=color:#e6db74>&#39;1gh.com&#39;</span>
+            - <span style=color:#e6db74>&#39;dwarfpool.com&#39;</span>
+            - <span style=color:#e6db74>&#39;hash-to-coins.com&#39;</span>
+            - <span style=color:#e6db74>&#39;pool-proxy.com&#39;</span>
+            - <span style=color:#e6db74>&#39;hashfor.cash&#39;</span>
+            - <span style=color:#e6db74>&#39;fairpool.cloud&#39;</span>
+            - <span style=color:#e6db74>&#39;litecoinpool.org&#39;</span>
+            - <span style=color:#e6db74>&#39;mineshaft.ml&#39;</span>
+            - <span style=color:#e6db74>&#39;abcxyz.stream&#39;</span>
+            - <span style=color:#e6db74>&#39;moneropool.ru&#39;</span>
+            - <span style=color:#e6db74>&#39;cryptonotepool.org.uk&#39;</span>
+            - <span style=color:#e6db74>&#39;extremepool.org&#39;</span>
+            - <span style=color:#e6db74>&#39;extremehash.com&#39;</span>
+            - <span style=color:#e6db74>&#39;hashinvest.net&#39;</span>
+            - <span style=color:#e6db74>&#39;unipool.pro&#39;</span>
+            - <span style=color:#e6db74>&#39;crypto-pools.org&#39;</span>
+            - <span style=color:#e6db74>&#39;monero.net&#39;</span>
+            - <span style=color:#e6db74>&#39;backup-pool.com&#39;</span>
+            - <span style=color:#e6db74>&#39;mooo.com&#39;</span> <span style=color:#75715e># Dynamic DNS, may want to exclude</span>
+            - <span style=color:#e6db74>&#39;freeyy.me&#39;</span>
+            - <span style=color:#e6db74>&#39;cryptonight.net&#39;</span>
+            - <span style=color:#e6db74>&#39;shscrypto.net&#39;</span>
+    <span style=color:#f92672>exclude_answers</span>:
+        <span style=color:#f92672>answers</span>:
+            - <span style=color:#e6db74>&#39;127.0.0.1&#39;</span>
+            - <span style=color:#e6db74>&#39;0.0.0.0&#39;</span>
+    <span style=color:#f92672>exclude_rejected</span>:
+        <span style=color:#f92672>rejected</span>: <span style=color:#e6db74>&#39;true&#39;</span>
+    <span style=color:#f92672>condition</span>: <span style=color:#ae81ff>selection and not (exclude_answers or exclude_rejected)</span>
+<span style=color:#f92672>falsepositives</span>:
+    - <span style=color:#ae81ff>A DNS lookup does not necessarily  mean a successful attempt, verify a) if there was a response using the zeek answers field, if there was then verify the connections (conn.log) to those IPs. b) verify if HTTP, SSL, or TLS activity to the domain that was queried. http.log field is &#39;host&#39; and ssl/tls is &#39;server_name&#39;.</span>
+<span style=color:#f92672>fields</span>:
+    - <span style=color:#ae81ff>id.orig_h</span>
+    - <span style=color:#ae81ff>id.resp_h</span>
+    - <span style=color:#ae81ff>query</span>
+    - <span style=color:#ae81ff>answers</span>
+    - <span style=color:#ae81ff>qtype_name</span>
+    - <span style=color:#ae81ff>rcode_name</span>
+
+</code></pre></div></div></div></div><div class="column is-3"><aside class="menu is-medium"><p class=menu-label>Rule Tags</p><div class=tags><a href=https://bradleyjkemp.dev/sigmadoc//tags/attack.t1569.002 class="tag is-medium">attack.t1569.002</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc//tags/attack.t1496 class="tag is-medium">attack.t1496</a></a></div><ul class=menu-list></ul><p class=menu-label>Similar rules</p><ul class=menu-list><li><a href=/sigmadoc/rules/windows/process_creation/proc_creation_win_exploit_cve_2020_1350.yml/>DNS RCE CVE-2020-1350</a></li><li><a href=/sigmadoc/rules/windows/builtin/windefend/win_defender_psexec_wmi_asr.yml/>PSExec and WMI Process Creations Block</a></li><li><a href=/sigmadoc/rules/windows/process_creation/proc_creation_win_service_execution.yml/>Service Execution</a></li><li><a href=/sigmadoc/rules/windows/process_creation/proc_creation_win_psexesvc_start.yml/>PsExec Service Start</a></li><li><a href=/sigmadoc/rules/windows/builtin/system/win_hack_smbexec.yml/>smbexec.py Service Installation</a></li></ul></aside></div></div></div></section><footer class=footer><div class="content has-text-centered"><p>Site generated with <a href=https://github.com/bradleyjkemp/sigmadoc><strong>sigmadoc</strong></a>. The website content
+is licensed <a href=https://github.com/SigmaHQ/sigma/blob/master/LICENSE.Detection.Rules.md>DRL 1.0</a>.</p></div></footer></body></html>

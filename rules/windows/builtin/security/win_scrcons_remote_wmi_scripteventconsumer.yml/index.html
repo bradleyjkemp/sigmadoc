@@ -1,0 +1,42 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><title>Sigma Rule Browser</title><meta name=viewport content="width=device-width"><link rel=icon type=image/png sizes=32x32 href=../images/favicon.png><link rel=stylesheet href=https://unpkg.com/bulma@0.9.2/css/bulma.min.css><script src=https://kit.fontawesome.com/7dc3015a44.js crossorigin=anonymous></script></head><body><nav class=navbar role=navigation aria-label="main navigation"><div class=navbar-brand><a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc/>Sigma Docs</a>
+<a role=button class=navbar-burger aria-label=menu aria-expanded=false data-target=navbarBasicExample><span aria-hidden=true></span><span aria-hidden=true></span><span aria-hidden=true></span></a></div><div id=navbarBasicExample class=navbar-menu><div class=navbar-start><a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc/>Home</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//rules/>Rules</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//configs/>Configs</a><div class="navbar-item has-dropdown is-hoverable"><a class=navbar-link>Explore rules by...</a><div class=navbar-dropdown><a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//tags/>Tag</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//status/>Status</a>
+<a class=navbar-item href=https://bradleyjkemp.dev/sigmadoc//level/>Level</a></div></div></div><div class=navbar-end><div class=navbar-item id=search class=bd-search><form action=https://bradleyjkemp.dev/sigmadoc//search><p class="control has-icons-left"><input class="input is-rounded" type=text name=query placeholder=Search>
+<span class="icon is-left"><i class="fas fa-search" aria-hidden=true></i></span></p></form></div></div></div></nav><section class=section><div class=container><div class=columns><div class="column is-9"><nav class=breadcrumb aria-label=breadcrumbs><ul><li><a href=https://bradleyjkemp.dev/sigmadoc/>home</a></li><li><a href=https://bradleyjkemp.dev/sigmadoc/rules/>rules</a></li><li><a href=https://bradleyjkemp.dev/sigmadoc/rules/windows/>windows</a></li><li><a href=https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/>builtin</a></li><li><a href=https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/>security</a></li><li><a href=https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_scrcons_remote_wmi_scripteventconsumer.yml/>win_scrcons_remote_wmi_scripteventconsumer.yml</a></li></ul></nav><div class="content is-medium"><h3 class="title is-1">Remote WMI ActiveScriptEventConsumers</h3><div class=box><div class="field is-grouped is-justify-content-center"><div class=control><div class="tags has-addons"><span class="tag is-medium is-dark">level</span>
+<span class="tag is-medium is-light"></span></div></div><div class=control><div class="tags has-addons"><span class="tag is-medium is-dark">status</span>
+<span class="tag is-medium is-light is-light">test</span></div></div></div><p>Detect potential adversaries leveraging WMI ActiveScriptEventConsumers remotely to move laterally in a network</p><h2 id=known-false-positives>Known false-positives</h2><ul><li>SCCM</li></ul><h2 id=references>References</h2><ul><li><a href=https://threathunterplaybook.com/notebooks/windows/08_lateral_movement/WIN-200902020333.html>https://threathunterplaybook.com/notebooks/windows/08_lateral_movement/WIN-200902020333.html</a></li></ul><h2 id=raw-rule-edithttpsgithubcomsigmahqsigmaeditmasterruleswindowsbuiltinsecuritywin_scrcons_remote_wmi_scripteventconsumeryml>Raw rule (<a href=https://github.com/SigmaHQ/sigma/edit/master/rules/windows/builtin/security/win_scrcons_remote_wmi_scripteventconsumer.yml>edit</a>)</h2><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=color:#f92672>title</span>: <span style=color:#ae81ff>Remote WMI ActiveScriptEventConsumers</span>
+<span style=color:#f92672>id</span>: <span style=color:#ae81ff>9599c180-e3a8-4743-8f92-7fb96d3be648</span>
+<span style=color:#f92672>status</span>: <span style=color:#ae81ff>test</span>
+<span style=color:#f92672>description</span>: <span style=color:#ae81ff>Detect potential adversaries leveraging WMI ActiveScriptEventConsumers remotely to move laterally in a network</span>
+<span style=color:#f92672>author</span>: <span style=color:#ae81ff>Roberto Rodriguez (Cyb3rWard0g), OTR (Open Threat Research)</span>
+<span style=color:#f92672>references</span>:
+  - <span style=color:#ae81ff>https://threathunterplaybook.com/notebooks/windows/08_lateral_movement/WIN-200902020333.html</span>
+<span style=color:#f92672>date</span>: <span style=color:#ae81ff>2020</span><span style=color:#ae81ff>/09/02</span>
+<span style=color:#f92672>modified</span>: <span style=color:#ae81ff>2021</span><span style=color:#ae81ff>/11/27</span>
+<span style=color:#f92672>logsource</span>:
+  <span style=color:#f92672>product</span>: <span style=color:#ae81ff>windows</span>
+  <span style=color:#f92672>service</span>: <span style=color:#ae81ff>security</span>
+<span style=color:#f92672>detection</span>:
+  <span style=color:#f92672>selection</span>:
+    <span style=color:#f92672>EventID</span>: <span style=color:#ae81ff>4624</span>
+    <span style=color:#f92672>LogonType</span>: <span style=color:#ae81ff>3</span>
+    <span style=color:#f92672>ProcessName|endswith</span>: <span style=color:#e6db74>&#39;scrcons.exe&#39;</span>
+  <span style=color:#f92672>filter</span>:
+    <span style=color:#f92672>TargetLogonId</span>: <span style=color:#e6db74>&#39;0x3e7&#39;</span>
+  <span style=color:#f92672>condition</span>: <span style=color:#ae81ff>selection and not filter</span>
+<span style=color:#f92672>falsepositives</span>:
+  - <span style=color:#ae81ff>SCCM</span>
+<span style=color:#f92672>level</span>: <span style=color:#ae81ff>high</span>
+<span style=color:#f92672>tags</span>:
+  - <span style=color:#ae81ff>attack.lateral_movement</span>
+  - <span style=color:#ae81ff>attack.privilege_escalation</span>
+  - <span style=color:#ae81ff>attack.persistence</span>
+  - <span style=color:#ae81ff>attack.t1546.003</span>
+
+</code></pre></div></div></div></div><div class="column is-3"><aside class="menu is-medium"><p class=menu-label>Rule Tags</p><div class=tags><a href=https://bradleyjkemp.dev/sigmadoc//tags/attack.lateral_movement class="tag is-medium">attack.lateral_movement</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc//tags/attack.privilege_escalation class="tag is-medium">attack.privilege_escalation</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc//tags/attack.persistence class="tag is-medium">attack.persistence</a></a>
+<a href=https://bradleyjkemp.dev/sigmadoc//tags/attack.t1546.003 class="tag is-medium">attack.t1546.003</a></a></div><ul class=menu-list></ul><p class=menu-label>Similar rules</p><ul class=menu-list><li><a href=/sigmadoc/rules/windows/image_load/image_load_scrcons_imageload_wmi_scripteventconsumer.yml/>WMI Script Host Process Image Loaded</a></li><li><a href=/sigmadoc/rules/windows/process_creation/proc_creation_win_wmi_persistence_script_event_consumer.yml/>WMI Persistence - Script Event Consumer</a></li><li><a href=/sigmadoc/rules/windows/builtin/wmi/win_wmi_persistence.yml/>WMI Persistence</a></li><li><a href=/sigmadoc/rules/windows/process_creation/proc_creation_win_rundll32_registered_com_objects.yml/>Rundll32 Registered COM Objects</a></li><li><a href=/sigmadoc/rules/windows/process_creation/proc_creation_win_using_sc_to_hide_sevices.yml/>Abuse of Service Permissions to Hide Services in Tools</a></li></ul></aside></div></div></div></section><footer class=footer><div class="content has-text-centered"><p>Site generated with <a href=https://github.com/bradleyjkemp/sigmadoc><strong>sigmadoc</strong></a>. The website content
+is licensed <a href=https://github.com/SigmaHQ/sigma/blob/master/LICENSE.Detection.Rules.md>DRL 1.0</a>.</p></div></footer></body></html>
