@@ -8,8 +8,14 @@ github.com/bradleyjkemp/cupaloy/v2 v2.6.0/go.mod h1:bm7JXdkRd4BHJk9HpwqAI8BoAY1l
 github.com/bradleyjkemp/sigma-go v0.3.1/go.mod h1:eDT0OXQD6U68UQXw4XXaRz38Lb/PwJ/BKVCaPQ0I5fA=
 github.com/bradleyjkemp/sigma-go v0.3.2 h1:I6WFOvcFHdu09fnKyoLGEg0eeg/VppaCViQyVGu1epU=
 github.com/bradleyjkemp/sigma-go v0.3.2/go.mod h1:eDT0OXQD6U68UQXw4XXaRz38Lb/PwJ/BKVCaPQ0I5fA=
+github.com/bradleyjkemp/sigma-go v0.3.3 h1:kbZ9Ce6yeLbqKaZ3otT4q1tkaLykzS0CxPsw76tdOgE=
+github.com/bradleyjkemp/sigma-go v0.3.3/go.mod h1:eDT0OXQD6U68UQXw4XXaRz38Lb/PwJ/BKVCaPQ0I5fA=
 github.com/bradleyjkemp/sigmadoc v0.0.0-20220310115928-e6c382a03c68 h1:Y1qQ4tqA0TKD4nMbNGKKRtbiHaqeOc3xSq19iNCfYvk=
 github.com/bradleyjkemp/sigmadoc v0.0.0-20220310115928-e6c382a03c68/go.mod h1:TIEEsboW+wVu0Ht1atdKKn1ghf/PS/Zd4+siS6w/554=
+github.com/bradleyjkemp/sigmadoc v0.0.0-20220530173051-5ebd9ab37ded h1:2QtEjI8FFtAnyqZbPX6eerT53+AzQcEFNVxf6fpRMrM=
+github.com/bradleyjkemp/sigmadoc v0.0.0-20220530173051-5ebd9ab37ded/go.mod h1:TIEEsboW+wVu0Ht1atdKKn1ghf/PS/Zd4+siS6w/554=
+github.com/bradleyjkemp/sigmadoc v0.0.0-20220530173523-d38666860386 h1:MTbsYcbf1Q80IxApzKRRde7Wlc8VEiQx2haHrM45obU=
+github.com/bradleyjkemp/sigmadoc v0.0.0-20220530173523-d38666860386/go.mod h1:TIEEsboW+wVu0Ht1atdKKn1ghf/PS/Zd4+siS6w/554=
 github.com/davecgh/go-spew v0.0.0-20161028175848-04cdfd42973b/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
@@ -27,3 +33,5 @@ gopkg.in/yaml.v3 v3.0.0-20200313102051-9f266ea9e77c/go.mod h1:K4uyk7z7BCEPqu6E+C
 gopkg.in/yaml.v3 v3.0.0-20200615113413-eeeca48fe776/go.mod h1:K4uyk7z7BCEPqu6E+C64Yfv1cQ7kz7rIZviUmN+EgEM=
 gopkg.in/yaml.v3 v3.0.0-20210107192922-496545a6307b h1:h8qDotaEPuJATrMmW04NCwg7v22aHH28wwpauUhK9Oo=
 gopkg.in/yaml.v3 v3.0.0-20210107192922-496545a6307b/go.mod h1:K4uyk7z7BCEPqu6E+C64Yfv1cQ7kz7rIZviUmN+EgEM=
+gopkg.in/yaml.v3 v3.0.1 h1:fxVm/GzAzEWqLHuvctI91KS9hhNmmWOoWu0XTYJS7CA=
+gopkg.in/yaml.v3 v3.0.1/go.mod h1:K4uyk7z7BCEPqu6E+C64Yfv1cQ7kz7rIZviUmN+EgEM=
