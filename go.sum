@@ -16,6 +16,8 @@ github.com/bradleyjkemp/sigmadoc v0.0.0-20220530173051-5ebd9ab37ded h1:2QtEjI8FF
 github.com/bradleyjkemp/sigmadoc v0.0.0-20220530173051-5ebd9ab37ded/go.mod h1:TIEEsboW+wVu0Ht1atdKKn1ghf/PS/Zd4+siS6w/554=
 github.com/bradleyjkemp/sigmadoc v0.0.0-20220530173523-d38666860386 h1:MTbsYcbf1Q80IxApzKRRde7Wlc8VEiQx2haHrM45obU=
 github.com/bradleyjkemp/sigmadoc v0.0.0-20220530173523-d38666860386/go.mod h1:TIEEsboW+wVu0Ht1atdKKn1ghf/PS/Zd4+siS6w/554=
+github.com/bradleyjkemp/sigmadoc v0.0.0-20220713155001-7259d8710235 h1:KFVXOZAMd95nVgtFxOCTokp5vssIfPNiBCIdHnyk3XY=
+github.com/bradleyjkemp/sigmadoc v0.0.0-20220713155001-7259d8710235/go.mod h1:TIEEsboW+wVu0Ht1atdKKn1ghf/PS/Zd4+siS6w/554=
 github.com/davecgh/go-spew v0.0.0-20161028175848-04cdfd42973b/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
