@@ -2,9 +2,11 @@ package main
 
 import (
 	"embed"
+	"encoding/json"
 	"flag"
 	"fmt"
 	"io/ioutil"
+	"log"
 	"os"
 	"os/exec"
 	"path"
@@ -23,6 +25,8 @@ var (
 	gitHubBranch    = flag.String("github-branch", "main", "(Optional) GitHub branch that your rules are on.")
 	gitHubRelPath   = flag.String("repo-relative-path", "", "Relative path to rule files within the GitHub repo.")
 )
+
+var techniques = map[string]*attackTechnique{}
 
 func main() {
 	flag.Parse()
@@ -45,6 +49,10 @@ func main() {
 		fmt.Println(err)
 		os.Exit(1)
 	}
+	if err := writeHeatmap(); err != nil {
+		errored = true
+		fmt.Println(err)
+	}
 	if errored {
 		os.Exit(1)
 	}
@@ -58,7 +66,13 @@ func convertFile(path string) error {
 
 	switch sigma.InferFileType(contents) {
 	case sigma.RuleFile:
-		return convertRule(path, contents)
+		if err := convertRule(path, contents); err != nil {
+			return err
+		}
+		if err := extractRuleAttackTags(path, contents); err != nil {
+			return err
+		}
+		return nil
 
 	case sigma.ConfigFile:
 		return convertConfig(path, contents)
@@ -101,6 +115,32 @@ func convertRule(rulePath string, ruleContents []byte) error {
 
 	return templates.ExecuteTemplate(out, "rule.tmpl.md", params)
 
+}
+
+func extractRuleAttackTags(rulePath string, ruleContents []byte) error {
+	rule, err := sigma.ParseRule(ruleContents)
+	if err != nil {
+		return fmt.Errorf("failed to parse %s: %w", rulePath, err)
+	}
+
+	for _, tag := range rule.Tags {
+		if !strings.HasPrefix(tag, "attack.t") {
+			continue
+		}
+
+		technique := strings.ToUpper(strings.TrimPrefix(tag, "attack."))
+		if techniques[technique] == nil {
+			techniques[technique] = &attackTechnique{
+				ID:    technique,
+				Score: 1,
+			}
+		}
+		techniques[technique].Links = append(techniques[technique].Links, attackLink{
+			Label: filepath.Base(rulePath),
+			URL:   "../rule/" + rule.ID,
+		})
+	}
+	return nil
 }
 
 func convertConfig(configPath string, configContents []byte) error {
@@ -182,6 +222,32 @@ func getFileCreation(path string) string {
 		return ""
 	}
 	return string(timestamp)
+}
+
+func writeHeatmap() error {
+	h := heatmap{
+		Domain: "mitre-enterprise",
+		Versions: attackVersions{
+			Attack:    "10",
+			Navigator: "4.4.4",
+			Layer:     "4.3",
+		},
+		Name:     "Sigma Rules Heatmap",
+		Gradient: attackGradient{Colors: []string{"#d9f2ff", "#d9f2ff"}, MaxValue: 1, MinValue: 0},
+	}
+
+	for _, technique := range techniques {
+		h.Techniques = append(h.Techniques, *technique)
+	}
+	attackHeatmap, err := json.Marshal(h)
+	if err != nil {
+		log.Fatal(err)
+	}
+	err = os.WriteFile(filepath.Join(*outputDirectory, "attack-navigator.md"), []byte("---\ntitle: \"ATT&CK® Navigator\"\nsitemap:\npriority : 0.1\nlayout: \"attack-navigator\"\n---"), 0644)
+	if err != nil {
+		log.Fatal(err)
+	}
+	return os.WriteFile(filepath.Join(*outputDirectory, "..", "static", "attack-navigator", "heatmap.json"), attackHeatmap, 0644)
 }
 
 //go:embed *.tmpl.md
