@@ -247,6 +247,7 @@ func writeHeatmap() error {
 	if err != nil {
 		log.Fatal(err)
 	}
+	os.MkdirAll(filepath.Join(*outputDirectory, "..", "static", "attack-navigator"), 0755)
 	return os.WriteFile(filepath.Join(*outputDirectory, "..", "static", "attack-navigator", "heatmap.json"), attackHeatmap, 0644)
 }
 
