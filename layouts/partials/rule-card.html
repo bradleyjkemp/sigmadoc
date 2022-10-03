@@ -5,6 +5,7 @@
         </a>
         <a class="card-header-icon" href="{{.Permalink}}">
             <div class="field is-grouped is-justify-content-center">
+                {{partial "reviewer-tag.html" (dict "reviewer" ($.Param "reviewer"))}}
                 {{partial "level-tag.html" (dict "level" ($.Param "level"))}}
                 {{partial "status-tag.html" (dict "status" ($.Param "status"))}}
             </div>
