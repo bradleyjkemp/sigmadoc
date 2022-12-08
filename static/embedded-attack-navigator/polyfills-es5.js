@@ -3362,7 +3362,7 @@
     /***/
     function _(module, exports, __webpack_require__) {
       __webpack_require__(
-      /*! /Users/bradleykemp/src/github.com/bradleyjkemp/attack-navigator/nav-app/node_modules/@angular-devkit/build-angular/src/webpack/es5-polyfills.js */
+      /*! /Users/bradley/src/github.com/mitre-attack/attack-navigator/nav-app/node_modules/@angular-devkit/build-angular/src/webpack/es5-polyfills.js */
       "voQr");
 
       __webpack_require__(
@@ -3370,7 +3370,7 @@
       "R0gw");
 
       module.exports = __webpack_require__(
-      /*! /Users/bradleykemp/src/github.com/bradleyjkemp/attack-navigator/nav-app/src/polyfills.ts */
+      /*! /Users/bradley/src/github.com/mitre-attack/attack-navigator/nav-app/src/polyfills.ts */
       "hN/g");
       /***/
     },

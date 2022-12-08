@@ -341,7 +341,7 @@
     /***/
     function _(module, exports, __webpack_require__) {
       module.exports = __webpack_require__(
-      /*! /Users/bradleykemp/src/github.com/bradleyjkemp/attack-navigator/nav-app/src/main.ts */
+      /*! /Users/bradley/src/github.com/mitre-attack/attack-navigator/nav-app/src/main.ts */
       "zUnb");
       /***/
     },
@@ -4281,7 +4281,7 @@
             var blob = new Blob([json], {
               type: "text/json"
             });
-            var filename = this.viewModel.name.replace(/ /g, "_") + ".json"; // FileSaver.saveAs(blob, this.viewModel.name.replace(/ /g, "_") + ".json");
+            var filename = this.viewModel.name.toLowerCase().replace(/ /g, "_") + ".json"; // FileSaver.saveAs(blob, this.viewModel.name.replace(/ /g, "_") + ".json");
 
             this.saveBlob(blob, filename);
           }
@@ -4290,7 +4290,7 @@
           value: function saveBlob(blob, filename) {
             if (is_js__WEBPACK_IMPORTED_MODULE_7__["ie"]()) {
               //internet explorer
-              window.navigator.msSaveBlob(blob, filename);
+              window.navigator.msSaveOrOpenBlob(blob, filename);
             } else {
               var svgUrl = URL.createObjectURL(blob);
               var downloadLink = document.createElement("a");
@@ -4503,7 +4503,7 @@
               var blob = new Blob([data], {
                 type: "application/octet-stream"
               });
-              var filename = _this4.viewModel.name.replace(/ /g, "_") + ".xlsx";
+              var filename = _this4.viewModel.name.toLowerCase().replace(/ /g, "_") + ".xlsx";
 
               _this4.saveBlob(blob, filename);
             });
@@ -8019,7 +8019,7 @@
 
             if (is_js__WEBPACK_IMPORTED_MODULE_4__["ie"]()) {
               //internet explorer
-              window.navigator.msSaveBlob(svgBlob, filename);
+              window.navigator.msSaveOrOpenBlob(svgBlob, filename);
             } else {
               var svgUrl = URL.createObjectURL(svgBlob);
               var downloadLink = document.createElement("a");
@@ -9356,7 +9356,8 @@
             1: false,
             2: false,
             3: false,
-            4: false // data components panel
+            4: false,
+            5: false // data components panel
 
           };
           this.fields = [{
@@ -9367,12 +9368,7 @@
             "label": "ATT&CK ID",
             "field": "attackID",
             "enabled": true
-          }, // {
-          //     "label": "STIX ID",
-          //     "field": "id",
-          //     "enabled": false
-          // },
-          {
+          }, {
             "label": "description",
             "field": "description",
             "enabled": true
@@ -9601,6 +9597,9 @@
             }, {
               "label": "mitigations",
               "objects": this.filterAndSort(domain.mitigations, this._query)
+            }, {
+              "label": "campaigns",
+              "objects": this.filterAndSort(domain.campaigns, this._query)
             }];
             domain.dataComponents.forEach(function (c) {
               var source = c.source(_this11.viewModel.domainVersionID);
@@ -9817,6 +9816,10 @@
                 return stixObject.relatedTechniques(domainVersionID).includes(technique.id);
               });
             } else if (stixObject instanceof _data_service__WEBPACK_IMPORTED_MODULE_2__["Mitigation"]) {
+              return allTechniques.filter(function (technique) {
+                return stixObject.relatedTechniques(domainVersionID).includes(technique.id);
+              });
+            } else if (stixObject instanceof _data_service__WEBPACK_IMPORTED_MODULE_2__["Campaign"]) {
               return allTechniques.filter(function (technique) {
                 return stixObject.relatedTechniques(domainVersionID).includes(technique.id);
               });
@@ -10052,7 +10055,7 @@
       !*** ./src/app/data.service.ts ***!
       \*********************************/
 
-    /*! exports provided: DataService, BaseStix, Matrix, Tactic, Technique, VersionChangelog, DataComponent, Software, Group, Mitigation, Note, Domain, Version */
+    /*! exports provided: DataService, BaseStix, Matrix, Tactic, Technique, VersionChangelog, DataComponent, Software, Group, Mitigation, Campaign, Note, Domain, Version */
 
     /***/
     function R7Hv(module, __webpack_exports__, __webpack_require__) {
@@ -10122,6 +10125,12 @@
       /* harmony export (binding) */
 
 
+      __webpack_require__.d(__webpack_exports__, "Campaign", function () {
+        return Campaign;
+      });
+      /* harmony export (binding) */
+
+
       __webpack_require__.d(__webpack_exports__, "Note", function () {
         return Note;
       });
@@ -10152,27 +10161,37 @@
       /* harmony import */
 
 
-      var rxjs_Rx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+      var buffer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+      /*! buffer */
+      "tjlA");
+      /* harmony import */
+
+
+      var buffer__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(buffer__WEBPACK_IMPORTED_MODULE_2__);
+      /* harmony import */
+
+
+      var rxjs_Rx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
       /*! rxjs/Rx */
       "M6kn");
       /* harmony import */
 
 
-      var rxjs_Rx__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(rxjs_Rx__WEBPACK_IMPORTED_MODULE_2__);
+      var rxjs_Rx__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(rxjs_Rx__WEBPACK_IMPORTED_MODULE_3__);
       /* harmony import */
 
 
-      var rxjs_observable_fromPromise__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+      var rxjs_observable_fromPromise__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
       /*! rxjs/observable/fromPromise */
       "3gwn");
       /* harmony import */
 
 
-      var rxjs_observable_fromPromise__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(rxjs_observable_fromPromise__WEBPACK_IMPORTED_MODULE_3__);
+      var rxjs_observable_fromPromise__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(rxjs_observable_fromPromise__WEBPACK_IMPORTED_MODULE_4__);
       /* harmony import */
 
 
-      var _taxii2lib__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+      var _taxii2lib__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
       /*! ./taxii2lib */
       "yZ9l");
 
@@ -10192,8 +10211,8 @@
           this.subtechniquesEnabled = true; // URLs in case config file doesn't load properly
 
           this.latestVersion = {
-            name: "ATT&CK v11",
-            number: "11"
+            name: "ATT&CK v12",
+            number: "12"
           };
           this.enterpriseAttackURL = "https://raw.githubusercontent.com/mitre/cti/master/enterprise-attack/enterprise-attack.json";
           this.mobileAttackURL = "https://raw.githubusercontent.com/mitre/cti/master/mobile-attack/mobile-attack.json";
@@ -10276,8 +10295,11 @@
 
                       case "malware":
                       case "tool":
-                        var soft = new Software(sdo, _this14);
-                        domain.software.push(soft);
+                        domain.software.push(new Software(sdo, _this14));
+                        break;
+
+                      case "campaign":
+                        domain.campaigns.push(new Campaign(sdo, _this14));
                         break;
 
                       case "course-of-action":
@@ -10312,12 +10334,21 @@
                             } else {
                               domain.relationships["software_uses"].set(sdo.source_ref, [sdo.target_ref]);
                             }
+                          } else if (sdo.source_ref.startsWith("campaign") && sdo.target_ref.startsWith("attack-pattern")) {
+                            // record campaign:technique relationship
+                            if (domain.relationships["campaign_uses"].has(sdo.source_ref)) {
+                              var _ids3 = domain.relationships["campaign_uses"].get(sdo.source_ref);
+
+                              _ids3.push(sdo.target_ref);
+                            } else {
+                              domain.relationships["campaign_uses"].set(sdo.source_ref, [sdo.target_ref]);
+                            }
                           }
                         } else if (sdo.relationship_type == "mitigates") {
                           if (domain.relationships["mitigates"].has(sdo.source_ref)) {
-                            var _ids3 = domain.relationships["mitigates"].get(sdo.source_ref);
+                            var _ids4 = domain.relationships["mitigates"].get(sdo.source_ref);
 
-                            _ids3.push(sdo.target_ref);
+                            _ids4.push(sdo.target_ref);
                           } else {
                             domain.relationships["mitigates"].set(sdo.source_ref, [sdo.target_ref]);
                           }
@@ -10326,11 +10357,19 @@
                           domain.relationships["revoked_by"].set(sdo.source_ref, sdo.target_ref);
                         } else if (sdo.relationship_type === 'detects') {
                           if (domain.relationships["component_rel"].has(sdo.source_ref)) {
-                            var _ids4 = domain.relationships["component_rel"].get(sdo.source_ref);
+                            var _ids5 = domain.relationships["component_rel"].get(sdo.source_ref);
 
-                            _ids4.push(sdo.target_ref);
+                            _ids5.push(sdo.target_ref);
                           } else {
                             domain.relationships["component_rel"].set(sdo.source_ref, [sdo.target_ref]);
+                          }
+                        } else if (sdo.relationship_type == "attributed-to") {
+                          if (domain.relationships["campaigns_attributed_to"].has(sdo.target_ref)) {
+                            var _ids6 = domain.relationships["campaigns_attributed_to"].get(sdo.target_ref);
+
+                            _ids6.push(sdo.source_ref);
+                          } else {
+                            domain.relationships["campaigns_attributed_to"].set(sdo.target_ref, [sdo.source_ref]); // group -> [campaigns]
                           }
                         }
 
@@ -10501,6 +10540,7 @@
               version["domains"].forEach(function (domain) {
                 var identifier = domain["identifier"];
                 var domainObject = new Domain(identifier, domain["name"], v);
+                if (version["authentication"]) domainObject.authentication = version["authentication"];
 
                 if (domain["taxii_url"] && domain["taxii_collection"]) {
                   domainObject.taxii_url = domain["taxii_url"];
@@ -10554,7 +10594,7 @@
 
             if (domain.taxii_collection && domain.taxii_url) {
               console.log("fetching data from TAXII server");
-              var conn = new _taxii2lib__WEBPACK_IMPORTED_MODULE_4__["TaxiiConnect"](domain.taxii_url, '', '', 5000);
+              var conn = new _taxii2lib__WEBPACK_IMPORTED_MODULE_5__["TaxiiConnect"](domain.taxii_url, '', '', 5000);
               var collectionInfo = {
                 'id': domain.taxii_collection,
                 'title': domain.name,
@@ -10563,15 +10603,27 @@
                 'can_write': false,
                 'media_types': ['application/vnd.oasis.stix+json']
               };
-              var collection = new _taxii2lib__WEBPACK_IMPORTED_MODULE_4__["Collection"](collectionInfo, domain.taxii_url + 'stix', conn);
-              this.domainData$ = rxjs_Rx__WEBPACK_IMPORTED_MODULE_2__["Observable"].forkJoin(Object(rxjs_observable_fromPromise__WEBPACK_IMPORTED_MODULE_3__["fromPromise"])(collection.getObjects('', undefined)));
+              var collection = new _taxii2lib__WEBPACK_IMPORTED_MODULE_5__["Collection"](collectionInfo, domain.taxii_url + 'stix', conn);
+              this.domainData$ = rxjs_Rx__WEBPACK_IMPORTED_MODULE_3__["Observable"].forkJoin(Object(rxjs_observable_fromPromise__WEBPACK_IMPORTED_MODULE_4__["fromPromise"])(collection.getObjects('', undefined)));
             } else if (refresh || !this.domainData$) {
               console.log("retrieving data", domain.urls);
               var bundleData = [];
+              var httpOptions = {
+                headers: undefined
+              };
+
+              if (domain.authentication && domain.authentication.enabled) {
+                // include authorization header, if configured (integrations)
+                var token = "".concat(domain.authentication.serviceName, ":").concat(domain.authentication.apiKey);
+                httpOptions.headers = new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpHeaders"]({
+                  'Authorization': 'Basic ' + buffer__WEBPACK_IMPORTED_MODULE_2__["Buffer"].from(token).toString('base64')
+                });
+              }
+
               domain.urls.forEach(function (url) {
-                bundleData.push(_this16.http.get(url));
+                bundleData.push(_this16.http.get(url, httpOptions));
               });
-              this.domainData$ = rxjs_Rx__WEBPACK_IMPORTED_MODULE_2__["Observable"].forkJoin(bundleData);
+              this.domainData$ = rxjs_Rx__WEBPACK_IMPORTED_MODULE_3__["Observable"].forkJoin(bundleData);
             }
 
             return this.domainData$;
@@ -10880,8 +10932,15 @@
 
           _this18 = _super4.call(this, stixSDO, dataService);
           _this18.tactics = stixSDO.tactic_refs.map(function (tacticID) {
-            return new Tactic(idToTacticSDO.get(tacticID), techniques, _this18.dataService);
-          });
+            return idToTacticSDO.get(tacticID);
+          }) // Get tacticSDOs
+          .filter(function (tacticSDO) {
+            return tacticSDO;
+          }) // Filter out nulls (tacticSDO not found)
+          .map(function (tacticSDO) {
+            return new Tactic(tacticSDO, techniques, _this18.dataService);
+          }); // Create Tactic objects
+
           return _this18;
         }
 
@@ -11196,13 +11255,37 @@
             if (rels.has(this.id)) return rels.get(this.id);else return [];
           }
           /**
+           * get techniques used by campaigns attributed to this group
+           * @returns {string[]} technique IDs used by campaigns attributed to this group
+           */
+
+        }, {
+          key: "campaignsUsed",
+          value: function campaignsUsed(domainVersionID) {
+            // get campaigns attributed to groups
+            var attributedCampaigns = this.dataService.getDomain(domainVersionID).relationships.campaigns_attributed_to; // get techniques used by campaigns
+
+            var rels = this.dataService.getDomain(domainVersionID).relationships.campaign_uses;
+
+            if (attributedCampaigns.has(this.id)) {
+              // get set of techniques used by attributed campaigns
+              var techniques = [];
+              attributedCampaigns.get(this.id).forEach(function (campaign_id) {
+                if (rels.has(campaign_id)) techniques = techniques.concat(rels.get(campaign_id));
+              });
+              return techniques;
+            } else return []; // no attributed campaigns
+
+          }
+          /**
            * Return all related techniques
            */
 
         }, {
           key: "relatedTechniques",
           value: function relatedTechniques(domainVersionID) {
-            return this.used(domainVersionID);
+            var usedSet = new Set(this.used(domainVersionID).concat(this.campaignsUsed(domainVersionID)));
+            return Array.from(usedSet);
           }
         }]);
 
@@ -11252,6 +11335,42 @@
         return Mitigation;
       }(BaseStix);
 
+      var Campaign = /*#__PURE__*/function (_BaseStix8) {
+        _inherits(Campaign, _BaseStix8);
+
+        var _super11 = _createSuper(Campaign);
+
+        function Campaign() {
+          _classCallCheck(this, Campaign);
+
+          return _super11.apply(this, arguments);
+        }
+
+        _createClass(Campaign, [{
+          key: "used",
+          value:
+          /**
+           * get techniques used by this campaign
+           * @returns {string[]} technique IDs used by this campaign
+           */
+          function used(domainVersionID) {
+            var rels = this.dataService.getDomain(domainVersionID).relationships.campaign_uses;
+            if (rels.has(this.id)) return rels.get(this.id);else return [];
+          }
+          /**
+           * Return all related techniques
+           */
+
+        }, {
+          key: "relatedTechniques",
+          value: function relatedTechniques(domainVersionID) {
+            return this.used(domainVersionID);
+          }
+        }]);
+
+        return Campaign;
+      }(BaseStix);
+
       var Note = /*#__PURE__*/_createClass(
       /**
        * Creates an instance of Note.
@@ -11280,6 +11399,7 @@
 
           this.subtechniques = [];
           this.software = [];
+          this.campaigns = [];
           this.dataComponents = [];
           this.dataSources = new Map(); // Map data source ID to name and urls to be used by data components
 
@@ -11296,9 +11416,15 @@
             // group uses technique
             // ID of group to [] of technique IDs
             group_uses: new Map(),
-            // group uses technique
-            // ID of group to [] of technique IDs
+            // software uses technique
+            // ID of software to [] of technique IDs
             software_uses: new Map(),
+            // campaign uses technique
+            // ID of campaign to [] of technique IDs
+            campaign_uses: new Map(),
+            // campaigns attributed to group
+            // ID of group to [] of campaign IDs
+            campaigns_attributed_to: new Map(),
             // mitigation mitigates technique
             // ID of mitigation to [] of technique IDs
             mitigates: new Map(),
@@ -11392,47 +11518,55 @@
       /* harmony import */
 
 
-      var _tabs_tabs_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+      var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+      /*! @angular/platform-browser */
+      "jhN1");
+      /* harmony import */
+
+
+      var _tabs_tabs_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
       /*! ./tabs/tabs.component */
       "a46E");
       /* harmony import */
 
 
-      var _config_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+      var _config_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
       /*! ./config.service */
       "wxHw");
       /* harmony import */
 
 
-      var _globals__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+      var _globals__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
       /*! ./globals */
       "xa+l");
       /* harmony import */
 
 
-      var _icons_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+      var _icons_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
       /*! ./icons.service */
       "+xqt");
       /* harmony import */
 
 
-      var _cookies__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+      var _cookies__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
       /*! ./cookies */
       "miVK");
       /* harmony import */
 
 
-      var _angular_common__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+      var _angular_common__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
       /*! @angular/common */
       "ofXK");
 
       var AppComponent = /*#__PURE__*/function () {
-        function AppComponent(configService, iconsService) {
+        function AppComponent(configService, iconsService, titleService) {
           _classCallCheck(this, AppComponent);
 
           this.configService = configService;
           this.iconsService = iconsService;
-          this.nav_version = _globals__WEBPACK_IMPORTED_MODULE_3__["nav_version"];
+          this.titleService = titleService;
+          this.nav_version = _globals__WEBPACK_IMPORTED_MODULE_4__["nav_version"];
+          this.title = 'ATT&CK® Navigator';
 
           Array.prototype.includes = function (value) {
             for (var i = 0; i < this.length; i++) {
@@ -11442,9 +11576,9 @@
             return false;
           };
 
-          if (Object(_cookies__WEBPACK_IMPORTED_MODULE_5__["hasCookie"])("is_user_theme_dark") && Object(_cookies__WEBPACK_IMPORTED_MODULE_5__["getCookie"])("is_user_theme_dark") === "true") {
+          if (Object(_cookies__WEBPACK_IMPORTED_MODULE_6__["hasCookie"])("is_user_theme_dark") && Object(_cookies__WEBPACK_IMPORTED_MODULE_6__["getCookie"])("is_user_theme_dark") === "true") {
             this.user_theme = 'theme-override-dark';
-          } else if (Object(_cookies__WEBPACK_IMPORTED_MODULE_5__["getCookie"])("is_user_theme_dark") === "false") {
+          } else if (Object(_cookies__WEBPACK_IMPORTED_MODULE_6__["getCookie"])("is_user_theme_dark") === "false") {
             this.user_theme = 'theme-override-light';
           } else {
             this.user_theme = 'theme-use-system';
@@ -11463,16 +11597,17 @@
           key: "ngOnInit",
           value: function ngOnInit() {
             this.iconsService.registerIcons();
+            this.titleService.setTitle(this.title);
           }
         }, {
           key: "themeChangeHandler",
           value: function themeChangeHandler(theme) {
             if (theme === 'system') {
-              if (Object(_cookies__WEBPACK_IMPORTED_MODULE_5__["hasCookie"])("is_user_theme_dark")) Object(_cookies__WEBPACK_IMPORTED_MODULE_5__["deleteCookie"])("is_user_theme_dark");
+              if (Object(_cookies__WEBPACK_IMPORTED_MODULE_6__["hasCookie"])("is_user_theme_dark")) Object(_cookies__WEBPACK_IMPORTED_MODULE_6__["deleteCookie"])("is_user_theme_dark");
               this.user_theme = 'theme-use-system';
             } else {
               this.user_theme = theme === 'dark' ? 'theme-override-dark' : 'theme-override-light';
-              Object(_cookies__WEBPACK_IMPORTED_MODULE_5__["setCookie"])("is_user_theme_dark", theme === 'dark' ? "true" : "false", 180);
+              Object(_cookies__WEBPACK_IMPORTED_MODULE_6__["setCookie"])("is_user_theme_dark", theme === 'dark' ? "true" : "false", 180);
             }
           }
         }]);
@@ -11481,7 +11616,7 @@
       }();
 
       AppComponent.ɵfac = function AppComponent_Factory(t) {
-        return new (t || AppComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_config_service__WEBPACK_IMPORTED_MODULE_2__["ConfigService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_icons_service__WEBPACK_IMPORTED_MODULE_4__["IconsService"]));
+        return new (t || AppComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_config_service__WEBPACK_IMPORTED_MODULE_3__["ConfigService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_icons_service__WEBPACK_IMPORTED_MODULE_5__["IconsService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["Title"]));
       };
 
       AppComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
@@ -11489,7 +11624,7 @@
         selectors: [["app-root"]],
         viewQuery: function AppComponent_Query(rf, ctx) {
           if (rf & 1) {
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵviewQuery"](_tabs_tabs_component__WEBPACK_IMPORTED_MODULE_1__["TabsComponent"], 1);
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵviewQuery"](_tabs_tabs_component__WEBPACK_IMPORTED_MODULE_2__["TabsComponent"], 1);
           }
 
           if (rf & 2) {
@@ -11553,7 +11688,7 @@
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("MITRE ATT&CK\xAE Navigator v", ctx.nav_version, "");
           }
         },
-        directives: [_angular_common__WEBPACK_IMPORTED_MODULE_6__["NgClass"], _tabs_tabs_component__WEBPACK_IMPORTED_MODULE_1__["TabsComponent"]],
+        directives: [_angular_common__WEBPACK_IMPORTED_MODULE_7__["NgClass"], _tabs_tabs_component__WEBPACK_IMPORTED_MODULE_2__["TabsComponent"]],
         styles: [".app-container[_ngcontent-%COMP%] {\n  height: 100vh;\n}\n@media (prefers-color-scheme: light) {\n  .theme-use-system[_ngcontent-%COMP%]   .app-container[_ngcontent-%COMP%] {\n    background-color: white;\n  }\n}\n.theme-override-light[_ngcontent-%COMP%]   .app-container[_ngcontent-%COMP%] {\n  background-color: white;\n}\n@media (prefers-color-scheme: dark) {\n  .theme-use-system[_ngcontent-%COMP%]   .app-container[_ngcontent-%COMP%] {\n    background-color: #1a1a23;\n  }\n}\n.theme-override-dark[_ngcontent-%COMP%]   .app-container[_ngcontent-%COMP%] {\n  background-color: #1a1a23;\n}\n@media (prefers-color-scheme: light) {\n  .theme-use-system[_ngcontent-%COMP%]   .nav-app[_ngcontent-%COMP%] {\n    background-color: white;\n  }\n}\n.theme-override-light[_ngcontent-%COMP%]   .nav-app[_ngcontent-%COMP%] {\n  background-color: white;\n}\n@media (prefers-color-scheme: dark) {\n  .theme-use-system[_ngcontent-%COMP%]   .nav-app[_ngcontent-%COMP%] {\n    background-color: black;\n  }\n}\n.theme-override-dark[_ngcontent-%COMP%]   .nav-app[_ngcontent-%COMP%] {\n  background-color: black;\n}\n.nav-app[_ngcontent-%COMP%]   tabs[_ngcontent-%COMP%] {\n  font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif;\n  font-size: 9pt;\n}\n.nav-app[_ngcontent-%COMP%]   .version-footer[_ngcontent-%COMP%] {\n  font-size: 7pt;\n  border: none;\n  background-color: transparent;\n  text-align: right;\n  margin-left: 16px;\n  padding: 0;\n  display: block;\n  position: fixed;\n  bottom: 16px;\n}\n@media (prefers-color-scheme: light) {\n  .theme-use-system[_ngcontent-%COMP%]   .nav-app[_ngcontent-%COMP%]   .version-footer[_ngcontent-%COMP%] {\n    color: #39434C;\n  }\n}\n.theme-override-light[_ngcontent-%COMP%]   .nav-app[_ngcontent-%COMP%]   .version-footer[_ngcontent-%COMP%] {\n  color: #39434C;\n}\n@media (prefers-color-scheme: dark) {\n  .theme-use-system[_ngcontent-%COMP%]   .nav-app[_ngcontent-%COMP%]   .version-footer[_ngcontent-%COMP%] {\n    color: #fa6341;\n  }\n}\n.theme-override-dark[_ngcontent-%COMP%]   .nav-app[_ngcontent-%COMP%]   .version-footer[_ngcontent-%COMP%] {\n  color: #fa6341;\n}\n.nav-app[_ngcontent-%COMP%]   .version-footer[_ngcontent-%COMP%]:hover {\n  text-decoration: underline;\n  cursor: pointer;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uLy4uL2NvbG9ycy5zY3NzIiwiLi4vLi4vYXBwLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQVNBOzs7Ozs7OztFQUFBO0FDUEE7RUFFRSxhQUFBO0FBT0Y7QURtR0k7RUFIRjtJQUd5Qyx1QkMzR0c7RUFZNUM7QUFDRjtBRGdHRTtFQUdFLHVCQ2hIMEM7QUFnQjlDO0FENEdJO0VBSEY7SUFHd0MseUJDNUhpQjtFQW9CekQ7QUFDRjtBRHlHRTtFQUdFLHlCQ2pJdUQ7QUF3QjNEO0FEbUZJO0VBSEY7SUFHeUMsdUJDdEdHO0VBd0I1QztBQUNGO0FEK0VFO0VBR0UsdUJDM0cwQztBQTRCOUM7QUQyRkk7RUFIRjtJQUd3Qyx1QkN2SGtCO0VBZ0MxRDtBQUNGO0FEd0ZFO0VBR0UsdUJDNUh3RDtBQW9DNUQ7QUFsQ0U7RUFFRSx3SUFBQTtFQUNBLGNBQUE7QUFtQ0o7QUFoQ0U7RUFFRSxjQUFBO0VBQ0EsWUFBQTtFQUNBLDZCQUFBO0VBQ0EsaUJBQUE7RUFDQSxpQkFBQTtFQUNBLFVBQUE7RUFDQSxjQUFBO0VBQ0EsZUFBQTtFQUNBLFlBQUE7QUFpQ0o7QURtREk7RUFIRjtJQUd5QyxjQzdGTjtFQThDbkM7QUFDRjtBRGdERTtFQUdFLGNDbEdpQztBQWtEckM7QUQ0REk7RUFIRjtJQUd3QyxjQzlHWTtFQXNEcEQ7QUFDRjtBRHlERTtFQUdFLGNDbkhrRDtBQTBEdEQ7QUFoREk7RUFDRSwwQkFBQTtFQUNBLGVBQUE7QUFrRE4iLCJmaWxlIjoiYXBwLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiJGNvbHVtbi1ob3Zlci1jb2xvcjogcmdiKDIzNSwgMjM1LCAyMzUpO1xuJGRpc2FibGVkLWNvbG9yOiBkYXJrZW4oJGNvbHVtbi1ob3Zlci1jb2xvciwgMjAlKTtcblxuLy8gQVRUJkNLIEJyYW5kIGNvbG9yc1xuJGF0dGFjay1jb2xvcnM6IChcbiAgICBhdHRhY2stb3JhbmdlOiAjYzYzZjFmLFxuICAgIGF0dGFjay1ibHVlOiAjMDYyZjRmXG4pO1xuXG4vKipcbiAqIENvbG9ycyB1c2VkIGFjcm9zcyB0aGUgTmF2aWdhdG9yLiBTaGFyZWQgYnkgdGhlIEFUVCZDSyBXZWJzaXRlLlxuICogRm9yIGVhY2ggY29sb3ItcGFpcjpcbiAqICAgLSBcImNvbG9yXCIgcmVmZXJzIHRvIHRoZSBjb2xvciBpdHNlbGZcbiAqICAgLSBcIm9uLWNvbG9yXCIgcmVmZXJzIHRvIHRoZSBtb3N0IHJlYWRhYmxlIHRleHQtY29sb3IgdG8gYXBwZWFyIG9uIHRvcCBvZiB0aGUgY29sb3IuXG4gKiBOb3RlOiBzb21lIGNvbG9ycyBkb24ndCBkZWZpbmUgb24tY29sb3JzLiBUaGlzIGlzIGJlY2F1c2UsIGZvciB0aGVzZSBjb2xvcnMsIHRoZXkgYXJlbid0IGludGVuZGVkIHRvXG4gKiBhcHBlYXIgd2l0aCBpbm5lciBjb250ZW50LiBGb3IgZXhhbXBsZSwgXCJsaW5rXCIgaXMgb25seSBpbnRlbmRlZCB0byBiZSB1c2VkIGZvciBsaW5rIHRleHQsIHdoaWNoIGluaGVyZW50bHlcbiAqIGNhbm5vdCBoYXZlIGlubmVyIHRleHQuXG4gKi9cbiRjb2xvcnM6IChcbiAgICBwcmltYXJ5OiAoY29sb3I6IG1hcC1nZXQoJGF0dGFjay1jb2xvcnMsIGF0dGFjay1vcmFuZ2UpLCBvbi1jb2xvcjogd2hpdGUpLCAgLy91c2VkIGZvciBoZWFkZXIgYW5kIHNvbWUgbmF2IGVsZW1lbnRzXG4gICAgc2Vjb25kYXJ5OiAoY29sb3I6IG1hcC1nZXQoJGF0dGFjay1jb2xvcnMsIGF0dGFjay1ibHVlKSwgb24tY29sb3I6IHdoaXRlKSwgIC8vdXNlZCBmb3IgZm9vdGVyIGFuZCBzb21lIGJ1dHRvbnNcbiAgICBib2R5OiAoY29sb3I6IHdoaXRlLCBvbi1jb2xvcjogIzM5NDM0QyksICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIC8vcHJpbWFyeSBwYWdlIGJvZHlcbiAgICBsaWdodDogKGNvbG9yOiB3aGl0ZSwgb24tY29sb3I6ICMzOTQzNEMpLFxuICAgIGRhcms6IChjb2xvcjogIzA4MDgwYiwgIG9uLWNvbG9yOiB3aGl0ZSksICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIC8vIGRhcmsgdGhlbWUgY29sb3JzIHZhcmlhdGlvbnMgMC0zIChmcm9tIGRhcmtlc3QgdG8gbGlnaHRlc3QpXG4gICAgZGFyay0xOiAoY29sb3I6ICMxYTFhMjMsICBvbi1jb2xvcjogd2hpdGUpLFxuICAgIGRhcmstMjogKGNvbG9yOiAjMmUyZTNmLCAgb24tY29sb3I6ICNmYTYzNDEpLCAgICAgICAgICAgICAgICAgICAgICAgICAgIC8vIGFjY2VudCBkYXJrIGNvbG9yIHNjaGVtZSAodXNlZCBmb3IgOmhvdmVyIHNlbGVjdG9ycylcbiAgICBkYXJrLTM6IChjb2xvcjogIzNmM2Y1NiwgIG9uLWNvbG9yOiB3aGl0ZSksXG4gICAgZGFyay00OiAoY29sb3I6ICM0YzRjNjgsICBvbi1jb2xvcjogd2hpdGUpLFxuICAgIGRhcmstZGlzYWJsZWQ6IChjb2xvcjogcmdiKDI1NSAyNTUgMjU1IC8gMjUlKSksXG4gICAgZGFyay1saW5rOiAoY29sb3I6ICM3NTg4RTgpLFxuICAgIGRhcmstbGluay1hY3RpdmU6IChjb2xvcjogI0U4NDdFOCksXG4vLyAgYm9keTogKGNvbG9yOiByZ2IoNTAsIDUwLCA1MCksIG9uLWNvbG9yOiAjY2RjZGNkKSwgICAgICAgICAgICAgICAgICAgICAgICAgICAgLy9leGFtcGxlIG9mIGEgZGFyayB0aGVtZSBmb3IgdGhlIHNpdGVcbiAgICBsaW5rOiAoY29sb3I6ICM0ZjdjYWMpLCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgLy9oeXBlcmxpbmtzXG4gICAgbWF0cml4LWhlYWRlcjogKGNvbG9yOiBncmF5LCBvbi1jb2xvcjogd2hpdGUpLCAgICAgICAgICAgICAgICAgICAgICAgICAgICAvL2NvbG9yIG9mIG1hdHJpeCBoZWFkZXJzXG5cbiAgICBjZWxsLWhpZ2hsaWdodC1jb2xvcjogKGNvbG9yOiByZ2IoOTYsIDE5NywgMjU1KSksXG4gICAgY2VsbC1oaWdobGlnaHQtZGFyay1jb2xvcjogKGNvbG9yOiAjNDY0REZGKSxcbiAgICBob3Zlci1jZWxsLWZvbnQtY29sb3I6IChjb2xvcjogcmdiKDAsIDAsIDApKSxcbiAgICBwYW5lbC1kYXJrOiAoY29sb3I6ICNkZGQpLFxuICAgIHBhbmVsLWxpZ2h0OiAoY29sb3I6IGxpZ2h0ZW4oI2RkZCwgOCUpKSxcbiAgICB0YWItdGV4dC1jb2xvcjogKGNvbG9yOiAjNTU1KSxcbiAgICBidXR0b24tZGFyazogKGNvbG9yOiAjYjhiOGI4KSxcblxuICAgIC8vYm9vdHN0cmFwIGNvbG9yc1xuICAgIGJvb3RzdHJhcC1wcmltYXJ5OiAoY29sb3I6ICM0MjhiY2EsIG9uLWNvbG9yOiB3aGl0ZSksXG4gICAgYm9vdHN0cmFwLXN1Y2Nlc3M6IChjb2xvcjogIzVjYjg1Yywgb24tY29sb3I6IHdoaXRlKSxcbiAgICBib290c3RyYXAtZGFuZ2VyOiAoY29sb3I6ICNkOTUzNGYsIG9uLWNvbG9yOiBibGFjayksXG4gICAgYm9vdHN0cmFwLXdhcm5pbmc6IChjb2xvcjogI2YwYWQ0ZSwgb24tY29sb3I6IGJsYWNrKSxcbiAgICBib290c3RyYXAtaW5mbzogKGNvbG9yOiAjNWJjMGRlLCBvbi1jb2xvcjogd2hpdGUpLFxuXG4gICAgLy9UT0RPIGRlcHJlY2F0ZSB3aXRoIHNlYXJjaCBwYWdlIGNoYW5nZXNcbiAgICBzZWFyY2gtcmVzdWx0cy1ib3JkZXI6IChjb2xvcjogYmxhY2ssIG9uLWNvbG9yOiBsaWdodGdyZXkpLFxuKTtcblxuLy8gYWNjZXNzb3IgaGVscGVyIGZvciAkY29sb3JzLiBHZXRzIHRoZSBjb2xvciBvZiB0aGUgbmFtZWQgcGFpclxuQGZ1bmN0aW9uIGNvbG9yKCRuYW1lKSB7XG4gICAgQHJldHVybiBtYXAtZ2V0KG1hcC1nZXQoJGNvbG9ycywgJG5hbWUpLCBcImNvbG9yXCIpO1xufVxuXG4vLyBnaXZlbiBhIGNvbG9yIG5hbWUsIGdldCBhbiBhbHRlcm5hdGUgdmVyc2lvbiBvZiB0aGUgY29sb3IsIGZvciBwYXR0ZXJuaW5nXG4vLyBpZiB0aGUgYmFzZSBjb2xvciBpcyBkYXJrLCB0aGUgYWx0ZXJuYXRlIHdpbGwgYmUgc2xpZ2h0bHkgbGlnaHRlci5cbi8vIGlmIHRoZSBiYXNlIGNvbG9yIGlzIGxpZ2h0LCB0aGUgYWx0ZXJuYXRlIHdpbGwgYmUgc2xpZ2h0bHkgZGFya2VyLlxuLy8gY29udHJhc3QsIGFuIG9wdGlvbmFsIGFyZ3VtZW50LCBtdWx0aXBsaWVzIHRvIGNyZWF0ZSBhIG1vcmUgZGlzdGFudCBvciBzaW1pbGFyIGNvbG9yLiA+MSBpcyBtb3JlIGRpc3RhbnQsIDwxIGlzIG1vcmUgc2ltaWxhci5cbkBmdW5jdGlvbiBjb2xvci1hbHRlcm5hdGUoJG5hbWUsICRjb250cmFzdDogMSkge1xuICAgIEByZXR1cm4gbWl4KGludmVydChjb2xvcigkbmFtZSkpLCBjb2xvcigkbmFtZSksICR3ZWlnaHQ6ICRjb250cmFzdCAqIDUlKTtcbn1cblxuLy8gYWNjZXNzb3IgaGVscGVyIGZvciAkY29sb3JzLiBHZXRzIHRoZSBvbi1jb2xvciBvZiB0aGUgbmFtZWQgcGFpclxuQGZ1bmN0aW9uIG9uLWNvbG9yKCRuYW1lKSB7XG4gICAgQHJldHVybiBtYXAtZ2V0KG1hcC1nZXQoJGNvbG9ycywgJG5hbWUpLCBcIm9uLWNvbG9yXCIpO1xufVxuXG4vLyBnaXZlbiBhIGNvbG9yLW5hbWUsIGdldCBhbiBlbXBoYXNpemVkIHZlcnNpb24gb2YgdGhlIG9uLWNvbG9yLlxuLy8gVGhlIGVtcGhhc2l6ZWQgb24tY29sb3IgaXMgbGVzcyBsaWtlIHRoZSBiYWNrZ3JvdW5kIGNvbG9yLlxuQGZ1bmN0aW9uIG9uLWNvbG9yLWVtcGhhc2lzKCRuYW1lKSB7XG4gICAgQHJldHVybiBtaXgoaW52ZXJ0KGNvbG9yKCRuYW1lKSksIG9uLWNvbG9yKCRuYW1lKSk7XG59XG4vLyBnaXZlbiBhIGNvbG9yLW5hbWUsIGdldCBhbiBkZWVtcGhhc2l6ZWQgdmVyc2lvbiBvZiB0aGUgb24tY29sb3IuXG4vLyBUaGUgZGVlbXBoYXNpemVkIG9uLWNvbG9yIGlzIG1vcmUgbGlrZSB0aGUgYmFja2dyb3VuZCBjb2xvci5cbkBmdW5jdGlvbiBvbi1jb2xvci1kZWVtcGhhc2lzKCRuYW1lKSB7XG4gICAgQHJldHVybiBtaXgoY29sb3IoJG5hbWUpLCBvbi1jb2xvcigkbmFtZSksIDI1JSk7XG59XG5cbi8vIGdpdmVuIGEgY29sb3IgbmFtZSwgY29tcHV0ZSBhIGJvcmRlciBjb2xvciBmb3IgdGhlIGNvbG9yXG5AZnVuY3Rpb24gYm9yZGVyLWNvbG9yKCRuYW1lKSB7XG4gICAgQHJldHVybiBtaXgoaW52ZXJ0KGNvbG9yKCRuYW1lKSksIGNvbG9yKCRuYW1lKSwgMTIuNSUpO1xuICAgIC8vIEByZXR1cm4gcmdiYShpbnZlcnQoY29sb3IoJG5hbWUpKSwgMC4xMjUpO1xufVxuXG4vLyBJTVBPUlRBTlQgVVNBR0UgTk9URTpcbi8vIHRvIHVzZSBhZGFwdGl2ZSBjb2xvcnMsIHlvdSBNVVNUIGRpc2FibGUgdmlldyBlbmNhcHN1bGF0aW9uIG9uIHRoZSBjb21wb25lbnRcbi8vIHlvdSdyZSBhcHBseWluZyB0aGUgc3R5bGVzIHdpdGhpbi4gT3RoZXJ3aXNlIGFuY2VzdG9yIGNsYXNzZXMgY2Fubm90IGJlIGFzc2Vzc2VkXG4vLyBieSB0aGUgbWl4aW5zIHRvIGRldGVybWluZSB0aGUgYXBwIHRoZW1lIGNvbmZpZ3VyYXRpb24uXG5cbi8vLyBhc3NpZ24gdGhlIHByb3BlcnR5IHdpdGggZGlmZmVyZW50IHZhbHVlcyBpbiB0aGUgbGlnaHQgYW5kIGRhcmsgdGhlbWVzXG4vLy8gQHBhcmFtIHtwcm9wZXJ0eX0gJHByb3BlcnR5IHRoZSBwcm9wZXJ0eSB5b3Ugd2FudCB0byBzZXQgdGhlIHZhbHVlIG9mXG4vLy8gQHBhcmFtIHt2YWx1ZX0gJGxpZ2h0LXZhbHVlIHRoZSB2YWx1ZSB0byBhc3NpZ24gd2hlbiBpbiB0aGUgbGlnaHQgdGhlbWVcbi8vLyBAcGFyYW0ge3ZhbHVlfSAkZGFyay12YWx1ZSB0aGUgdmFsdWUgdG8gYXNzaWduIHdoZW4gaW4gdGhlIGRhcmsgdGhlbWVcbkBtaXhpbiBhZGFwdGl2ZS1jb2xvcigkcHJvcGVydHksICRsaWdodC12YWx1ZSwgJGRhcmstdmFsdWUpIHtcbiAgQGluY2x1ZGUgYWRhcHRpdmUtY29sb3ItbGlnaHQtb25seSgkcHJvcGVydHksICRsaWdodC12YWx1ZSk7XG4gIEBpbmNsdWRlIGFkYXB0aXZlLWNvbG9yLWRhcmstb25seSgkcHJvcGVydHksICRkYXJrLXZhbHVlKTtcbn1cblxuLy8vIGFzc2lnbiB0aGUgcHJvcGVydHkgd2l0aCB0aGUgZ2l2ZW4gdmFsdWUgb25seSB3aGVuIGluIHRoZSBsaWdodCB0aGVtZVxuLy8vIEBwYXJhbSB7cHJvcGVydHl9ICRwcm9wZXJ0eSB0aGUgcHJvcGVydHkgeW91IHdhbnQgdG8gc2V0IHRoZSB2YWx1ZSBvZlxuLy8vIEBwYXJhbSB7dmFsdWV9ICRsaWdodC12YWx1ZSB0aGUgdmFsdWUgdG8gYXNzaWduIHdoZW4gaW4gdGhlIGxpZ2h0IHRoZW1lXG5AbWl4aW4gYWRhcHRpdmUtY29sb3ItbGlnaHQtb25seSgkcHJvcGVydHksICRsaWdodC12YWx1ZSkge1xuICAudGhlbWUtdXNlLXN5c3RlbSAmIHtcbiAgICAvLyB3aGVuIHRoZSBhbmNlc3RvciBjbGFzcyBzaG93cyB0aGF0IHRoZSBhcHAgaXMgY29uZmlndXJlZCB0byB1c2UgdGhlIHN5c3RlbSB0aGVtZSxcbiAgICAvLyB1c2UgYSBtZWRpYSBxdWVyeSB0byBhc3NpZ24gdGhlIGxpZ2h0IHZhbHVlXG4gICAgQG1lZGlhIChwcmVmZXJzLWNvbG9yLXNjaGVtZTogbGlnaHQpIHsgI3skcHJvcGVydHl9OiAkbGlnaHQtdmFsdWU7IH1cbiAgfVxuICAudGhlbWUtb3ZlcnJpZGUtbGlnaHQgJiB7XG4gICAgLy8gd2hlbiB0aGUgYW5jZXN0b3IgY2xhc3Mgc2hvd3MgdGhhdCB0aGUgYXBwIGlzIGNvbmZpZ3VyZWQgdG8gdXNlIHRoZSBsaWdodCB0aGVtZSxcbiAgICAvLyBhc3NpZ24gdGhlIGxpZ2h0IHZhbHVlXG4gICAgI3skcHJvcGVydHl9OiAkbGlnaHQtdmFsdWU7XG4gIH1cbn1cblxuLy8vIGFzc2lnbiB0aGUgcHJvcGVydHkgd2l0aCB0aGUgZ2l2ZW4gdmFsdWUgb25seSB3aGVuIGluIHRoZSBkYXJrIHRoZW1lXG4vLy8gQHBhcmFtIHtwcm9wZXJ0eX0gJHByb3BlcnR5IHRoZSBwcm9wZXJ0eSB5b3Ugd2FudCB0byBzZXQgdGhlIHZhbHVlIG9mXG4vLy8gQHBhcmFtIHt2YWx1ZX0gJGxpZ2h0LXZhbHVlIHRoZSB2YWx1ZSB0byBhc3NpZ24gd2hlbiBpbiB0aGUgbGlnaHQgdGhlbWVcbi8vLyBAcGFyYW0ge3ZhbHVlfSAkZGFyay12YWx1ZSB0aGUgdmFsdWUgdG8gYXNzaWduIHdoZW4gaW4gdGhlIGRhcmsgdGhlbWVcbkBtaXhpbiBhZGFwdGl2ZS1jb2xvci1kYXJrLW9ubHkoJHByb3BlcnR5LCAkZGFyay12YWx1ZSkge1xuICAudGhlbWUtdXNlLXN5c3RlbSAmIHtcbiAgICAvLyB3aGVuIHRoZSBhbmNlc3RvciBjbGFzcyBzaG93cyB0aGF0IHRoZSBhcHAgaXMgY29uZmlndXJlZCB0byB1c2UgdGhlIHN5c3RlbSB0aGVtZSxcbiAgICAvLyB1c2UgYSBtZWRpYSBxdWVyeSB0byBhc3NpZ24gdGhlIGRhcmsgdmFsdWVcbiAgICBAbWVkaWEgKHByZWZlcnMtY29sb3Itc2NoZW1lOiBkYXJrKSB7ICN7JHByb3BlcnR5fTogJGRhcmstdmFsdWU7IH1cbiAgfVxuICAudGhlbWUtb3ZlcnJpZGUtZGFyayAmIHtcbiAgICAvLyB3aGVuIHRoZSBhbmNlc3RvciBjbGFzcyBzaG93cyB0aGF0IHRoZSBhcHAgaXMgY29uZmlndXJlZCB0byB1c2UgdGhlIGRhcmsgdGhlbWUsXG4gICAgLy8gYXNzaWduIHRoZSBkYXJrIHZhbHVlXG4gICAgI3skcHJvcGVydHl9OiAkZGFyay12YWx1ZTtcbiAgfVxufVxuIiwiQGltcG9ydCBcIi4uL2NvbG9ycy5zY3NzXCI7XG5cbi5hcHAtY29udGFpbmVyIHtcbiAgQGluY2x1ZGUgYWRhcHRpdmUtY29sb3IoXCJiYWNrZ3JvdW5kLWNvbG9yXCIsIGNvbG9yKGJvZHkpLCBjb2xvcihkYXJrLTEpKTtcbiAgaGVpZ2h0OiAxMDB2aDtcbn1cblxuLm5hdi1hcHAge1xuICBAaW5jbHVkZSBhZGFwdGl2ZS1jb2xvcihcImJhY2tncm91bmQtY29sb3JcIiwgY29sb3IobGlnaHQpLCBkYXJrZW4oY29sb3IoZGFyayksIDglKSk7XG5cbiAgdGFicyB7XG4gICAgLy8gZm9udC1mYW1pbHk6ICdSb2JvdG8gTW9ubycsIG1vbm9zcGFjZTtcbiAgICBmb250LWZhbWlseTogLWFwcGxlLXN5c3RlbSwgQmxpbmtNYWNTeXN0ZW1Gb250LCAnU2Vnb2UgVUknLCBSb2JvdG8sIE94eWdlbiwgVWJ1bnR1LCBDYW50YXJlbGwsICdPcGVuIFNhbnMnLCAnSGVsdmV0aWNhIE5ldWUnLCBzYW5zLXNlcmlmO1xuICAgIGZvbnQtc2l6ZTogOXB0O1xuICB9XG5cbiAgLnZlcnNpb24tZm9vdGVyIHtcbiAgICBAaW5jbHVkZSBhZGFwdGl2ZS1jb2xvcihcImNvbG9yXCIsIG9uLWNvbG9yKGxpZ2h0KSwgb24tY29sb3IoZGFyay0yKSk7XG4gICAgZm9udC1zaXplOiA3cHQ7XG4gICAgYm9yZGVyOiBub25lO1xuICAgIGJhY2tncm91bmQtY29sb3I6IHRyYW5zcGFyZW50O1xuICAgIHRleHQtYWxpZ246IHJpZ2h0O1xuICAgIG1hcmdpbi1sZWZ0OiAxNnB4O1xuICAgIHBhZGRpbmc6IDA7XG4gICAgZGlzcGxheTogYmxvY2s7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIGJvdHRvbTogMTZweDtcbiAgICAmOmhvdmVyIHtcbiAgICAgIHRleHQtZGVjb3JhdGlvbjogdW5kZXJsaW5lO1xuICAgICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIH1cbiAgfVxufVxuXG4iXX0= */"]
       });
 
@@ -11567,14 +11702,16 @@
           }]
         }], function () {
           return [{
-            type: _config_service__WEBPACK_IMPORTED_MODULE_2__["ConfigService"]
+            type: _config_service__WEBPACK_IMPORTED_MODULE_3__["ConfigService"]
           }, {
-            type: _icons_service__WEBPACK_IMPORTED_MODULE_4__["IconsService"]
+            type: _icons_service__WEBPACK_IMPORTED_MODULE_5__["IconsService"]
+          }, {
+            type: _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["Title"]
           }];
         }, {
           tabsComponent: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"],
-            args: [_tabs_tabs_component__WEBPACK_IMPORTED_MODULE_1__["TabsComponent"]]
+            args: [_tabs_tabs_component__WEBPACK_IMPORTED_MODULE_2__["TabsComponent"]]
           }],
           promptNavAway: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["HostListener"],
@@ -14064,7 +14201,7 @@
         bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_20__["AppComponent"]]
       });
       AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineInjector"]({
-        providers: [],
+        providers: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["Title"]],
         imports: [[_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_19__["HttpClientModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_1__["BrowserAnimationsModule"], _angular_material_select__WEBPACK_IMPORTED_MODULE_5__["MatSelectModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_9__["FormsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_9__["ReactiveFormsModule"], _angular_material_input__WEBPACK_IMPORTED_MODULE_4__["MatInputModule"], _angular_material_button__WEBPACK_IMPORTED_MODULE_6__["MatButtonModule"], _angular_material_icon__WEBPACK_IMPORTED_MODULE_7__["MatIconModule"], _angular_material_progress_spinner__WEBPACK_IMPORTED_MODULE_8__["MatProgressSpinnerModule"], _angular_material_checkbox__WEBPACK_IMPORTED_MODULE_11__["MatCheckboxModule"], _angular_material_tooltip__WEBPACK_IMPORTED_MODULE_10__["MatTooltipModule"], _angular_material_menu__WEBPACK_IMPORTED_MODULE_13__["MatMenuModule"], _angular_material_expansion__WEBPACK_IMPORTED_MODULE_14__["MatExpansionModule"], _angular_material_dialog__WEBPACK_IMPORTED_MODULE_12__["MatDialogModule"], ngx_color_picker__WEBPACK_IMPORTED_MODULE_16__["ColorPickerModule"], ngx_drag_drop__WEBPACK_IMPORTED_MODULE_17__["DndModule"], _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_15__["MatSidenavModule"], _angular_material_card__WEBPACK_IMPORTED_MODULE_37__["MatCardModule"], _angular_material_divider__WEBPACK_IMPORTED_MODULE_38__["MatDividerModule"], _angular_material_stepper__WEBPACK_IMPORTED_MODULE_39__["MatStepperModule"], _angular_material_paginator__WEBPACK_IMPORTED_MODULE_40__["MatPaginatorModule"], ngx_markdown__WEBPACK_IMPORTED_MODULE_41__["MarkdownModule"].forRoot(), ngx_smart_popover__WEBPACK_IMPORTED_MODULE_18__["PopoverModule"], _angular_material_tabs__WEBPACK_IMPORTED_MODULE_44__["MatTabsModule"]], _angular_material_select__WEBPACK_IMPORTED_MODULE_5__["MatSelectModule"], _angular_material_input__WEBPACK_IMPORTED_MODULE_4__["MatInputModule"], _angular_material_button__WEBPACK_IMPORTED_MODULE_6__["MatButtonModule"], _angular_material_icon__WEBPACK_IMPORTED_MODULE_7__["MatIconModule"], _angular_material_tooltip__WEBPACK_IMPORTED_MODULE_10__["MatTooltipModule"], _angular_material_menu__WEBPACK_IMPORTED_MODULE_13__["MatMenuModule"], _angular_material_expansion__WEBPACK_IMPORTED_MODULE_14__["MatExpansionModule"], _angular_material_tabs__WEBPACK_IMPORTED_MODULE_44__["MatTabsModule"]]
       });
 
@@ -14083,7 +14220,7 @@
             declarations: [_app_component__WEBPACK_IMPORTED_MODULE_20__["AppComponent"], _datatable_data_table_component__WEBPACK_IMPORTED_MODULE_21__["DataTableComponent"], _tabs_tabs_component__WEBPACK_IMPORTED_MODULE_22__["TabsComponent"], _help_help_component__WEBPACK_IMPORTED_MODULE_23__["HelpComponent"], _exporter_exporter_component__WEBPACK_IMPORTED_MODULE_24__["ExporterComponent"], _matrix_technique_cell_technique_cell_component__WEBPACK_IMPORTED_MODULE_25__["TechniqueCellComponent"], _matrix_matrix_side_matrix_side_component__WEBPACK_IMPORTED_MODULE_26__["MatrixSideComponent"], _matrix_matrix_flat_matrix_flat_component__WEBPACK_IMPORTED_MODULE_27__["MatrixFlatComponent"], _matrix_matrix_mini_matrix_mini_component__WEBPACK_IMPORTED_MODULE_28__["MatrixMiniComponent"], _matrix_technique_cell_tooltip_tooltip_component__WEBPACK_IMPORTED_MODULE_29__["TooltipComponent"], _search_and_multiselect_search_and_multiselect_component__WEBPACK_IMPORTED_MODULE_30__["SearchAndMultiselectComponent"], _matrix_technique_cell_contextmenu_contextmenu_component__WEBPACK_IMPORTED_MODULE_31__["ContextmenuComponent"], _matrix_tactic_cell_tactic_cell_component__WEBPACK_IMPORTED_MODULE_32__["TacticCellComponent"], _version_upgrade_version_upgrade_component__WEBPACK_IMPORTED_MODULE_33__["VersionUpgradeComponent"], _sidebar_sidebar_component__WEBPACK_IMPORTED_MODULE_34__["SidebarComponent"], _layer_upgrade_layer_upgrade_component__WEBPACK_IMPORTED_MODULE_35__["LayerUpgradeComponent"], _layer_upgrade_changelog_cell_changelog_cell_component__WEBPACK_IMPORTED_MODULE_36__["ChangelogCellComponent"], _layer_information_layer_information_component__WEBPACK_IMPORTED_MODULE_42__["LayerInformationComponent"], _changelog_changelog_component__WEBPACK_IMPORTED_MODULE_43__["ChangelogComponent"], _list_input_list_input_component__WEBPACK_IMPORTED_MODULE_45__["ListInputComponent"]],
             imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_19__["HttpClientModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_1__["BrowserAnimationsModule"], _angular_material_select__WEBPACK_IMPORTED_MODULE_5__["MatSelectModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_9__["FormsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_9__["ReactiveFormsModule"], _angular_material_input__WEBPACK_IMPORTED_MODULE_4__["MatInputModule"], _angular_material_button__WEBPACK_IMPORTED_MODULE_6__["MatButtonModule"], _angular_material_icon__WEBPACK_IMPORTED_MODULE_7__["MatIconModule"], _angular_material_progress_spinner__WEBPACK_IMPORTED_MODULE_8__["MatProgressSpinnerModule"], _angular_material_checkbox__WEBPACK_IMPORTED_MODULE_11__["MatCheckboxModule"], _angular_material_tooltip__WEBPACK_IMPORTED_MODULE_10__["MatTooltipModule"], _angular_material_menu__WEBPACK_IMPORTED_MODULE_13__["MatMenuModule"], _angular_material_expansion__WEBPACK_IMPORTED_MODULE_14__["MatExpansionModule"], _angular_material_dialog__WEBPACK_IMPORTED_MODULE_12__["MatDialogModule"], ngx_color_picker__WEBPACK_IMPORTED_MODULE_16__["ColorPickerModule"], ngx_drag_drop__WEBPACK_IMPORTED_MODULE_17__["DndModule"], _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_15__["MatSidenavModule"], _angular_material_card__WEBPACK_IMPORTED_MODULE_37__["MatCardModule"], _angular_material_divider__WEBPACK_IMPORTED_MODULE_38__["MatDividerModule"], _angular_material_stepper__WEBPACK_IMPORTED_MODULE_39__["MatStepperModule"], _angular_material_paginator__WEBPACK_IMPORTED_MODULE_40__["MatPaginatorModule"], ngx_markdown__WEBPACK_IMPORTED_MODULE_41__["MarkdownModule"].forRoot(), ngx_smart_popover__WEBPACK_IMPORTED_MODULE_18__["PopoverModule"], _angular_material_tabs__WEBPACK_IMPORTED_MODULE_44__["MatTabsModule"]],
             exports: [_angular_material_select__WEBPACK_IMPORTED_MODULE_5__["MatSelectModule"], _angular_material_input__WEBPACK_IMPORTED_MODULE_4__["MatInputModule"], _angular_material_button__WEBPACK_IMPORTED_MODULE_6__["MatButtonModule"], _angular_material_icon__WEBPACK_IMPORTED_MODULE_7__["MatIconModule"], _angular_material_tooltip__WEBPACK_IMPORTED_MODULE_10__["MatTooltipModule"], _angular_material_menu__WEBPACK_IMPORTED_MODULE_13__["MatMenuModule"], _angular_material_expansion__WEBPACK_IMPORTED_MODULE_14__["MatExpansionModule"], _angular_material_tabs__WEBPACK_IMPORTED_MODULE_44__["MatTabsModule"]],
-            providers: [],
+            providers: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["Title"]],
             bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_20__["AppComponent"]],
             entryComponents: [_version_upgrade_version_upgrade_component__WEBPACK_IMPORTED_MODULE_33__["VersionUpgradeComponent"], _help_help_component__WEBPACK_IMPORTED_MODULE_23__["HelpComponent"], _exporter_exporter_component__WEBPACK_IMPORTED_MODULE_24__["ExporterComponent"]]
           }]
@@ -19539,12 +19676,12 @@
       var MatrixFlatComponent = /*#__PURE__*/function (_matrix_common__WEBPA3) {
         _inherits(MatrixFlatComponent, _matrix_common__WEBPA3);
 
-        var _super11 = _createSuper(MatrixFlatComponent);
+        var _super12 = _createSuper(MatrixFlatComponent);
 
         function MatrixFlatComponent(configService, viewModelsService) {
           _classCallCheck(this, MatrixFlatComponent);
 
-          return _super11.call(this, configService, viewModelsService);
+          return _super12.call(this, configService, viewModelsService);
         }
 
         _createClass(MatrixFlatComponent, [{
@@ -19649,11 +19786,11 @@
       !*** ./package.json ***!
       \**********************/
 
-    /*! exports provided: name, description, repository, version, license, scripts, dependencies, devDependencies, default */
+    /*! exports provided: name, description, repository, version, license, scripts, dependencies, devDependencies, optionalDependencies, default */
 
     /***/
     function kiQV(module) {
-      module.exports = JSON.parse("{\"name\":\"attack-navigator\",\"description\":\"Web app that provides basic navigation and annotation of ATT&CK matrices\",\"repository\":{\"type\":\"git\",\"url\":\"https://github.com/mitre-attack/attack-navigator.git\"},\"version\":\"4.6.5\",\"license\":\"Apache-2.0\",\"scripts\":{\"ng\":\"ng\",\"start\":\"ng serve --host 0.0.0.0\",\"build\":\"ng build\",\"test\":\"ng test\",\"lint\":\"ng lint\",\"e2e\":\"ng e2e\",\"postinstall\":\"node patch-webpack.js\"},\"dependencies\":{\"@angular/animations\":\"^11.0.3\",\"@angular/cdk\":\"^11.0.2\",\"@angular/common\":\"^11.0.3\",\"@angular/compiler\":\"^11.0.3\",\"@angular/core\":\"^11.0.3\",\"@angular/forms\":\"^11.0.3\",\"@angular/http\":\"^7.2.16\",\"@angular/material\":\"^11.0.2\",\"@angular/platform-browser\":\"^11.0.3\",\"@angular/platform-browser-dynamic\":\"^11.0.3\",\"@angular/router\":\"^11.0.3\",\"@fontsource/roboto\":\"^4.2.3\",\"@fontsource/roboto-mono\":\"^4.2.2\",\"@types/file-saver\":\"^2.0.1\",\"classlist.js\":\"^1.1.20150312\",\"core-js\":\"^2.6.12\",\"d3\":\"^5.16.0\",\"d3-svg-legend\":\"^2.25.6\",\"file-saver\":\"^2.0.5\",\"is_js\":\"^0.9.0\",\"load-json-file\":\"^7.0.1\",\"mathjs\":\"^10.5.3\",\"ngx-color-picker\":\"^10.1.0\",\"ngx-drag-drop\":\"^2.0.0\",\"ngx-markdown\":\"^10.1.1\",\"ngx-smart-popover\":\"^1.4.0\",\"rxjs\":\"^6.6.7\",\"rxjs-compat\":\"^6.6.7\",\"tinygradient\":\"^1.1.5\",\"tslib\":\"^2.4.0\",\"zone.js\":\"~0.10.2\"},\"devDependencies\":{\"@angular-devkit/build-angular\":\"~0.1100.3\",\"@angular/cli\":\"^11.0.3\",\"@angular/compiler-cli\":\"^11.0.3\",\"@angular/language-service\":\"^11.0.3\",\"@types/jasmine\":\"~4.0.3\",\"@types/jasminewd2\":\"^2.0.8\",\"@types/node\":\"^17.0.32\",\"codelyzer\":\"^6.0.0\",\"exceljs\":\"^2.0.1\",\"jasmine-core\":\"~4.1.1\",\"jasmine-spec-reporter\":\"~5.0.0\",\"karma\":\"~5.0.0\",\"karma-chrome-launcher\":\"~3.1.0\",\"karma-cli\":\"~1.0.1\",\"karma-coverage-istanbul-reporter\":\"~3.0.2\",\"karma-jasmine\":\"~4.0.0\",\"karma-jasmine-html-reporter\":\"^1.5.0\",\"protractor\":\"~7.0.0\",\"ts-node\":\"~10.7.0\",\"tslint\":\"~6.1.0\",\"typescript\":\"~4.0.8\"}}");
+      module.exports = JSON.parse("{\"name\":\"attack-navigator\",\"description\":\"Web app that provides basic navigation and annotation of ATT&CK matrices\",\"repository\":{\"type\":\"git\",\"url\":\"https://github.com/mitre-attack/attack-navigator.git\"},\"version\":\"4.7.1\",\"license\":\"Apache-2.0\",\"scripts\":{\"ng\":\"ng\",\"start\":\"ng serve --host 0.0.0.0\",\"build\":\"ng build\",\"test\":\"ng test\",\"lint\":\"ng lint\",\"e2e\":\"ng e2e\",\"postinstall\":\"node patch-webpack.js\"},\"dependencies\":{\"@angular/animations\":\"^11.0.3\",\"@angular/cdk\":\"^11.0.2\",\"@angular/common\":\"^11.0.3\",\"@angular/compiler\":\"^11.0.3\",\"@angular/core\":\"^11.0.3\",\"@angular/forms\":\"^11.0.3\",\"@angular/http\":\"^7.2.16\",\"@angular/material\":\"^11.0.2\",\"@angular/platform-browser\":\"^11.0.3\",\"@angular/platform-browser-dynamic\":\"^11.0.3\",\"@angular/router\":\"^11.0.3\",\"@fontsource/roboto\":\"^4.2.3\",\"@fontsource/roboto-mono\":\"^4.2.2\",\"@types/file-saver\":\"^2.0.1\",\"classlist.js\":\"^1.1.20150312\",\"core-js\":\"^2.6.12\",\"d3\":\"^5.16.0\",\"d3-svg-legend\":\"^2.25.6\",\"file-saver\":\"^2.0.5\",\"is_js\":\"^0.9.0\",\"load-json-file\":\"^7.0.1\",\"mathjs\":\"^10.5.3\",\"ngx-color-picker\":\"^10.1.0\",\"ngx-drag-drop\":\"^2.0.0\",\"ngx-markdown\":\"^10.1.1\",\"ngx-smart-popover\":\"^1.4.0\",\"rxjs\":\"^6.6.7\",\"rxjs-compat\":\"^6.6.7\",\"tinygradient\":\"^1.1.5\",\"tslib\":\"^2.4.0\",\"zone.js\":\"~0.10.2\"},\"devDependencies\":{\"@angular-devkit/build-angular\":\"~0.1100.3\",\"@angular/cli\":\"^11.0.3\",\"@angular/compiler-cli\":\"^11.0.3\",\"@angular/language-service\":\"^11.0.3\",\"@types/jasmine\":\"~4.0.3\",\"@types/jasminewd2\":\"^2.0.8\",\"@types/node\":\"^17.0.32\",\"codelyzer\":\"^6.0.0\",\"exceljs\":\"^2.0.1\",\"jasmine-core\":\"~4.1.1\",\"jasmine-spec-reporter\":\"~5.0.0\",\"karma\":\"~5.0.0\",\"karma-chrome-launcher\":\"~3.1.0\",\"karma-cli\":\"~1.0.1\",\"karma-coverage\":\"^2.2.0\",\"karma-coverage-istanbul-reporter\":\"~3.0.2\",\"karma-jasmine\":\"~4.0.0\",\"karma-jasmine-html-reporter\":\"^1.5.0\",\"protractor\":\"~7.0.0\",\"ts-node\":\"~10.7.0\",\"tslint\":\"~6.1.0\",\"typescript\":\"~4.0.8\"},\"optionalDependencies\":{\"fsevents\":\"2.1.2\"}}");
       /***/
     },
 
@@ -20113,12 +20250,16 @@
 
       ViewModelsService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({
         token: ViewModelsService,
-        factory: ViewModelsService.ɵfac
+        factory: ViewModelsService.ɵfac,
+        providedIn: 'root'
       });
 
       (function () {
         (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](ViewModelsService, [{
-          type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"]
+          type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"],
+          args: [{
+            providedIn: 'root'
+          }]
         }], function () {
           return [{
             type: _data_service__WEBPACK_IMPORTED_MODULE_1__["DataService"]
@@ -21105,12 +21246,12 @@
                 // matches this part
                 // vvvvv vvv
                 // T1001.001^TA1000
-                var _ids5 = new Set();
+                var _ids7 = new Set();
 
                 this.selectedTechniques.forEach(function (unionID) {
-                  return _ids5.add(unionID.split("^")[0]);
+                  return _ids7.add(unionID.split("^")[0]);
                 });
-                return _ids5.size;
+                return _ids7.size;
               }
             } else {
               if (this.selectSubtechniquesWithParent) {
@@ -21119,16 +21260,16 @@
                 // matches this part
                 // vvvvv     vvvvvv
                 // T1001.001^TA1000
-                var _ids6 = new Set();
+                var _ids8 = new Set();
 
                 this.selectedTechniques.forEach(function (unionID) {
                   var split = unionID.split("^");
                   var tacticID = split[1];
                   var techniqueID = split[0].split(".")[0];
 
-                  _ids6.add(techniqueID + "^" + tacticID);
+                  _ids8.add(techniqueID + "^" + tacticID);
                 });
-                return _ids6.size;
+                return _ids8.size;
               } else {
                 // differentiate tactics
                 // differentiate subtechniques and parents
@@ -21275,22 +21416,13 @@
                 this.linkMismatches = [];
                 this.metadataMismatches = [];
 
-                var _iterator56 = _createForOfIteratorHelper(this.selectedTechniques),
-                    _step56;
+                for (var _i7 = 0, _Array$from = Array.from(this.selectedTechniques.values()); _i7 < _Array$from.length; _i7++) {
+                  var technique_tactic_id = _Array$from[_i7];
 
-                try {
-                  for (_iterator56.s(); !(_step56 = _iterator56.n()).done;) {
-                    var technique_tactic_id = _step56.value;
+                  var _tvm = this.getTechniqueVM_id(technique_tactic_id);
 
-                    var _tvm = this.getTechniqueVM_id(technique_tactic_id);
-
-                    if (this.activeTvm.linkStr !== _tvm.linkStr) this.linkMismatches.push(technique_tactic_id);
-                    if (this.activeTvm.metadataStr !== _tvm.metadataStr) this.metadataMismatches.push(technique_tactic_id);
-                  }
-                } catch (err) {
-                  _iterator56.e(err);
-                } finally {
-                  _iterator56.f();
+                  if (this.activeTvm.linkStr !== _tvm.linkStr) this.linkMismatches.push(technique_tactic_id);
+                  if (this.activeTvm.metadataStr !== _tvm.metadataStr) this.metadataMismatches.push(technique_tactic_id);
                 }
               }
             }
@@ -21346,18 +21478,18 @@
 
               var platforms = new Set(technique.platforms);
 
-              var _iterator57 = _createForOfIteratorHelper(_this46.filters.platforms.selection),
-                  _step57;
+              var _iterator56 = _createForOfIteratorHelper(_this46.filters.platforms.selection),
+                  _step56;
 
               try {
-                for (_iterator57.s(); !(_step57 = _iterator57.n()).done;) {
-                  var platform = _step57.value;
+                for (_iterator56.s(); !(_step56 = _iterator56.n()).done;) {
+                  var platform = _step56.value;
                   if (platforms.has(platform)) return true; //platform match
                 }
               } catch (err) {
-                _iterator57.e(err);
+                _iterator56.e(err);
               } finally {
-                _iterator57.f();
+                _iterator56.f();
               }
 
               return false; //no platform match
@@ -21372,7 +21504,7 @@
               return technique.subtechniques.some(function (subtechnique) {
                 var sub_platforms = new Set(subtechnique.platforms);
                 var filter = new Set(_this47.filters.platforms.selection);
-                var platforms = new Set(_toConsumableArray(filter).filter(function (p) {
+                var platforms = new Set(Array.from(filter.values()).filter(function (p) {
                   return sub_platforms.has(p);
                 }));
                 return _this47.getTechniqueVM(subtechnique, tactic).enabled && platforms.size > 0;
@@ -21380,7 +21512,7 @@
             } else return false;
           }
           /**
-           * sort techniques accoding to viewModel state
+           * sort techniques according to viewModel state
            * @param {Technique[]} techniques techniques to sort
            * @param {Tactic} tactic tactic the techniques fall under
            * @returns {Technique[]} sorted techniques
@@ -21413,35 +21545,15 @@
                 techniqueVM2.aggregateScore = Number.isFinite(score2) ? score2.toString() : "";
               }
 
-              switch (_this48.sorting) {
-                default:
-                case 0:
-                  // A-Z
-                  return technique1.name.localeCompare(technique2.name);
-
-                case 1:
-                  // Z-A
-                  return technique2.name.localeCompare(technique1.name);
-
-                case 2:
-                  // ascending
-                  if (score1 === score2) {
-                    return technique1.name.localeCompare(technique2.name);
-                  } else {
-                    return score1 - score2;
-                  }
-
-                case 3:
-                  // descending
-                  if (score1 === score2) {
-                    return technique1.name.localeCompare(technique2.name);
-                  } else {
-                    return score2 - score1;
-                  }
-
-              }
+              return _this48.sortingAlgorithm(technique1, technique2, score1, score2);
             });
           }
+          /**
+           * sort subtechniques according to viewModel state
+           * @param {Technique} technique technique to sort
+           * @param {Tactic} tactic tactic the technique falls under
+           */
+
         }, {
           key: "sortSubTechniques",
           value: function sortSubTechniques(technique, tactic) {
@@ -21454,18 +21566,48 @@
 
               var score1 = techniqueVM1.score.length > 0 ? Number(techniqueVM1.score) : 0;
               var score2 = techniqueVM2.score.length > 0 ? Number(techniqueVM2.score) : 0;
-
-              switch (_this49.sorting) {
-                case 2:
-                  return score1 - score2;
-
-                case 3:
-                  return score2 - score1;
-
-                default:
-                  return 0;
-              }
+              return _this49.sortingAlgorithm(technique1, technique2, score1, score2);
             });
+          }
+          /**
+           * execute the sorting algorithm for techniques according to the viewModel state
+           * @param {Technique} technique1 the first technique in the comparison
+           * @param {Technique} technique2 the second technique in the comparison
+           * @param {number} score1 the first score in the comparison
+           * @param {number} score2 the second score in the comparison
+           * @returns technique or score comparison
+           */
+
+        }, {
+          key: "sortingAlgorithm",
+          value: function sortingAlgorithm(technique1, technique2, score1, score2) {
+            switch (this.sorting) {
+              default:
+              case 0:
+                // A-Z
+                return technique1.name.localeCompare(technique2.name);
+
+              case 1:
+                // Z-A
+                return technique2.name.localeCompare(technique1.name);
+
+              case 2:
+                // 1-2
+                if (score1 === score2) {
+                  return technique1.name.localeCompare(technique2.name);
+                } else {
+                  return score1 - score2;
+                }
+
+              case 3:
+                // 2-1
+                if (score1 === score2) {
+                  return technique1.name.localeCompare(technique2.name);
+                } else {
+                  return score2 - score1;
+                }
+
+            }
           }
         }, {
           key: "calculateAggregateScore",
@@ -21707,8 +21849,8 @@
 
             if ("techniques" in obj) {
               if (obj.techniques.length > 0) {
-                for (var _i7 = 0; _i7 < obj.techniques.length; _i7++) {
-                  var obj_technique = obj.techniques[_i7];
+                for (var _i8 = 0; _i8 < obj.techniques.length; _i8++) {
+                  var obj_technique = obj.techniques[_i8];
 
                   if ("tactic" in obj_technique) {
                     var tvm = new TechniqueVM("");
@@ -21717,24 +21859,24 @@
                   } else {
                     // occurs in multiple tactics
                     // match to Technique by attackID
-                    var _iterator58 = _createForOfIteratorHelper(this.dataService.getDomain(this.domainVersionID).techniques),
-                        _step58;
+                    var _iterator57 = _createForOfIteratorHelper(this.dataService.getDomain(this.domainVersionID).techniques),
+                        _step57;
 
                     try {
-                      for (_iterator58.s(); !(_step58 = _iterator58.n()).done;) {
-                        var technique = _step58.value;
+                      for (_iterator57.s(); !(_step57 = _iterator57.n()).done;) {
+                        var technique = _step57.value;
 
                         if (technique.attackID == obj_technique.techniqueID) {
                           // match technique
                           // don't load deprecated/revoked, causes crash since tactics don't get loaded on revoked techniques
                           if (technique.deprecated || technique.revoked) break;
 
-                          var _iterator59 = _createForOfIteratorHelper(technique.tactics),
-                              _step59;
+                          var _iterator58 = _createForOfIteratorHelper(technique.tactics),
+                              _step58;
 
                           try {
-                            for (_iterator59.s(); !(_step59 = _iterator59.n()).done;) {
-                              var tactic = _step59.value;
+                            for (_iterator58.s(); !(_step58 = _iterator58.n()).done;) {
+                              var tactic = _step58.value;
 
                               var _tvm2 = new TechniqueVM("");
 
@@ -21743,32 +21885,32 @@
                               this.setTechniqueVM(_tvm2);
                             }
                           } catch (err) {
-                            _iterator59.e(err);
+                            _iterator58.e(err);
                           } finally {
-                            _iterator59.f();
+                            _iterator58.f();
                           }
 
                           break;
                         } //check against subtechniques
 
 
-                        var _iterator60 = _createForOfIteratorHelper(technique.subtechniques),
-                            _step60;
+                        var _iterator59 = _createForOfIteratorHelper(technique.subtechniques),
+                            _step59;
 
                         try {
-                          for (_iterator60.s(); !(_step60 = _iterator60.n()).done;) {
-                            var subtechnique = _step60.value;
+                          for (_iterator59.s(); !(_step59 = _iterator59.n()).done;) {
+                            var subtechnique = _step59.value;
 
                             if (subtechnique.attackID == obj_technique.techniqueID) {
                               // don't load deprecated/revoked, causes crash since tactics don't get loaded on revoked techniques
                               if (subtechnique.deprecated || subtechnique.revoked) break;
 
-                              var _iterator61 = _createForOfIteratorHelper(subtechnique.tactics),
-                                  _step61;
+                              var _iterator60 = _createForOfIteratorHelper(subtechnique.tactics),
+                                  _step60;
 
                               try {
-                                for (_iterator61.s(); !(_step61 = _iterator61.n()).done;) {
-                                  var _tactic = _step61.value;
+                                for (_iterator60.s(); !(_step60 = _iterator60.n()).done;) {
+                                  var _tactic = _step60.value;
 
                                   var _tvm3 = new TechniqueVM("");
 
@@ -21777,24 +21919,24 @@
                                   this.setTechniqueVM(_tvm3);
                                 }
                               } catch (err) {
-                                _iterator61.e(err);
+                                _iterator60.e(err);
                               } finally {
-                                _iterator61.f();
+                                _iterator60.f();
                               }
 
                               break;
                             }
                           }
                         } catch (err) {
-                          _iterator60.e(err);
+                          _iterator59.e(err);
                         } finally {
-                          _iterator60.f();
+                          _iterator59.f();
                         }
                       }
                     } catch (err) {
-                      _iterator58.e(err);
+                      _iterator57.e(err);
                     } finally {
-                      _iterator58.f();
+                      _iterator57.f();
                     }
                   }
                 }
@@ -21802,38 +21944,38 @@
             }
 
             if ("metadata" in obj) {
-              var _iterator62 = _createForOfIteratorHelper(obj.metadata),
-                  _step62;
+              var _iterator61 = _createForOfIteratorHelper(obj.metadata),
+                  _step61;
 
               try {
-                for (_iterator62.s(); !(_step62 = _iterator62.n()).done;) {
-                  var metadataObj = _step62.value;
+                for (_iterator61.s(); !(_step61 = _iterator61.n()).done;) {
+                  var metadataObj = _step61.value;
                   var m = new Metadata();
                   m.deSerialize(metadataObj);
                   if (m.valid()) this.metadata.push(m);
                 }
               } catch (err) {
-                _iterator62.e(err);
+                _iterator61.e(err);
               } finally {
-                _iterator62.f();
+                _iterator61.f();
               }
             }
 
             if ("links" in obj) {
-              var _iterator63 = _createForOfIteratorHelper(obj.links),
-                  _step63;
+              var _iterator62 = _createForOfIteratorHelper(obj.links),
+                  _step62;
 
               try {
-                for (_iterator63.s(); !(_step63 = _iterator63.n()).done;) {
-                  var link = _step63.value;
+                for (_iterator62.s(); !(_step62 = _iterator62.n()).done;) {
+                  var link = _step62.value;
                   var l = new Link();
                   l.deSerialize(link);
                   if (l.valid()) this.links.push(l);
                 }
               } catch (err) {
-                _iterator63.e(err);
+                _iterator62.e(err);
               } finally {
-                _iterator63.f();
+                _iterator62.f();
               }
             }
 
@@ -22138,38 +22280,38 @@
             }
 
             if ("metadata" in obj) {
-              var _iterator64 = _createForOfIteratorHelper(obj.metadata),
-                  _step64;
+              var _iterator63 = _createForOfIteratorHelper(obj.metadata),
+                  _step63;
 
               try {
-                for (_iterator64.s(); !(_step64 = _iterator64.n()).done;) {
-                  var metadataObj = _step64.value;
+                for (_iterator63.s(); !(_step63 = _iterator63.n()).done;) {
+                  var metadataObj = _step63.value;
                   var m = new Metadata();
                   m.deSerialize(metadataObj);
                   if (m.valid()) this.metadata.push(m);
                 }
               } catch (err) {
-                _iterator64.e(err);
+                _iterator63.e(err);
               } finally {
-                _iterator64.f();
+                _iterator63.f();
               }
             }
 
             if ("links" in obj) {
-              var _iterator65 = _createForOfIteratorHelper(obj.links),
-                  _step65;
+              var _iterator64 = _createForOfIteratorHelper(obj.links),
+                  _step64;
 
               try {
-                for (_iterator65.s(); !(_step65 = _iterator65.n()).done;) {
-                  var linkObj = _step65.value;
+                for (_iterator64.s(); !(_step64 = _iterator64.n()).done;) {
+                  var linkObj = _step64.value;
                   var link = new Link();
                   link.deSerialize(linkObj);
                   if (link.valid()) this.links.push(link);
                 }
               } catch (err) {
-                _iterator65.e(err);
+                _iterator64.e(err);
               } finally {
-                _iterator65.f();
+                _iterator64.f();
               }
             }
           }
@@ -22710,14 +22852,14 @@
       var TechniqueCellComponent = /*#__PURE__*/function (_cell__WEBPACK_IMPORT) {
         _inherits(TechniqueCellComponent, _cell__WEBPACK_IMPORT);
 
-        var _super12 = _createSuper(TechniqueCellComponent);
+        var _super13 = _createSuper(TechniqueCellComponent);
 
         function TechniqueCellComponent(dataService, configService, viewModelsService) {
           var _this51;
 
           _classCallCheck(this, TechniqueCellComponent);
 
-          _this51 = _super12.call(this, dataService, configService);
+          _this51 = _super13.call(this, dataService, configService);
           _this51.dataService = dataService;
           _this51.configService = configService;
           _this51.viewModelsService = viewModelsService;
@@ -22751,19 +22893,19 @@
           value: function annotatedSubtechniques() {
             var annotatedSubs = [];
 
-            var _iterator66 = _createForOfIteratorHelper(this.technique.subtechniques),
-                _step66;
+            var _iterator65 = _createForOfIteratorHelper(this.technique.subtechniques),
+                _step65;
 
             try {
-              for (_iterator66.s(); !(_step66 = _iterator66.n()).done;) {
-                var s = _step66.value;
+              for (_iterator65.s(); !(_step65 = _iterator65.n()).done;) {
+                var s = _step65.value;
                 var subVM = this.viewModel.getTechniqueVM(s, this.tactic);
                 if (subVM.annotated()) annotatedSubs.push(s);
               }
             } catch (err) {
-              _iterator66.e(err);
+              _iterator65.e(err);
             } finally {
-              _iterator66.f();
+              _iterator65.f();
             }
 
             return this.applyControls(annotatedSubs, this.tactic).length;
@@ -23239,14 +23381,14 @@
       var TooltipComponent = /*#__PURE__*/function (_cell_popover__WEBPAC2) {
         _inherits(TooltipComponent, _cell_popover__WEBPAC2);
 
-        var _super13 = _createSuper(TooltipComponent);
+        var _super14 = _createSuper(TooltipComponent);
 
         function TooltipComponent(element, dataService, viewModelsService) {
           var _this52;
 
           _classCallCheck(this, TooltipComponent);
 
-          _this52 = _super13.call(this, element);
+          _this52 = _super14.call(this, element);
           _this52.element = element;
           _this52.dataService = dataService;
           _this52.viewModelsService = viewModelsService;
@@ -23475,18 +23617,18 @@
               self.link_color = config["link_color"];
               self.banner = config["banner"];
 
-              var _iterator67 = _createForOfIteratorHelper(config["custom_context_menu_items"]),
-                  _step67;
+              var _iterator66 = _createForOfIteratorHelper(config["custom_context_menu_items"]),
+                  _step66;
 
               try {
-                for (_iterator67.s(); !(_step67 = _iterator67.n()).done;) {
-                  var obj = _step67.value;
+                for (_iterator66.s(); !(_step66 = _iterator66.n()).done;) {
+                  var obj = _step66.value;
                   self.contextMenuItems.push(new ContextMenuItem(obj.label, obj.url, obj.subtechnique_url));
                 }
               } catch (err) {
-                _iterator67.e(err);
+                _iterator66.e(err);
               } finally {
-                _iterator67.f();
+                _iterator66.f();
               }
             },
             complete: function complete() {
@@ -23839,14 +23981,14 @@
       var ChangelogCellComponent = /*#__PURE__*/function (_matrix_cell__WEBPACK) {
         _inherits(ChangelogCellComponent, _matrix_cell__WEBPACK);
 
-        var _super14 = _createSuper(ChangelogCellComponent);
+        var _super15 = _createSuper(ChangelogCellComponent);
 
         function ChangelogCellComponent(configService, dataService, viewModelsService) {
           var _this54;
 
           _classCallCheck(this, ChangelogCellComponent);
 
-          _this54 = _super14.call(this, dataService, configService);
+          _this54 = _super15.call(this, dataService, configService);
           _this54.configService = configService;
           _this54.dataService = dataService;
           _this54.viewModelsService = viewModelsService;
