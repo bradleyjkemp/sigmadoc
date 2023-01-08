@@ -1,2 +1,39 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>attack.t1110.001 on My New Hugo Site</title><link>https://bradleyjkemp.dev/sigmadoc/tags/attack.t1110.001/</link><description>Recent content in attack.t1110.001 on My New Hugo Site</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 27 Dec 2021 20:25:01 +0100</lastBuildDate><atom:link href="https://bradleyjkemp.dev/sigmadoc/tags/attack.t1110.001/index.xml" rel="self" type="application/rss+xml"/><item><title>Suspicious Connection to Remote Account</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_suspicious_networkcredential.yml/</link><pubDate>Mon, 27 Dec 2021 20:25:01 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_suspicious_networkcredential.yml/</guid><description>&lt;p>Adversaries with no prior knowledge of legitimate credentials within the system or environment may guess passwords to attempt access to accounts.
-Without knowledge of the password for an account, an adversary may opt to systematically guess the password using a repetitive or iterative mechanism&lt;/p></description></item><item><title>Hydra Password Guessing Hack Tool</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_hack_hydra.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_hack_hydra.yml/</guid><description>&lt;p>Detects command line parameters used by Hydra password guessing hack tool&lt;/p></description></item><item><title>Suspicious Rejected SMB Guest Logon From IP</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/smbclient/win_susp_failed_guest_logon.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/smbclient/win_susp_failed_guest_logon.yml/</guid><description>&lt;p>Detect Attempt PrintNightmare (CVE-2021-1675) Remote code execution in Windows Spooler Service&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>attack.t1110.001 on My New Hugo Site</title>
+    <link>https://bradleyjkemp.dev/sigmadoc/tags/attack.t1110.001/</link>
+    <description>Recent content in attack.t1110.001 on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 27 Dec 2021 20:25:01 +0100</lastBuildDate><atom:link href="https://bradleyjkemp.dev/sigmadoc/tags/attack.t1110.001/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Suspicious Connection to Remote Account</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_suspicious_networkcredential.yml/</link>
+      <pubDate>Mon, 27 Dec 2021 20:25:01 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_suspicious_networkcredential.yml/</guid>
+      <description>&lt;p&gt;Adversaries with no prior knowledge of legitimate credentials within the system or environment may guess passwords to attempt access to accounts.
+Without knowledge of the password for an account, an adversary may opt to systematically guess the password using a repetitive or iterative mechanism&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Hydra Password Guessing Hack Tool</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_hack_hydra.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_hack_hydra.yml/</guid>
+      <description>&lt;p&gt;Detects command line parameters used by Hydra password guessing hack tool&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Suspicious Rejected SMB Guest Logon From IP</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/smbclient/win_susp_failed_guest_logon.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/smbclient/win_susp_failed_guest_logon.yml/</guid>
+      <description>&lt;p&gt;Detect Attempt PrintNightmare (CVE-2021-1675) Remote code execution in Windows Spooler Service&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,1 +1,101 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>attack.t1564.004 on My New Hugo Site</title><link>https://bradleyjkemp.dev/sigmadoc/tags/attack.t1564.004/</link><description>Recent content in attack.t1564.004 on My New Hugo Site</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 27 Nov 2021 10:15:24 +0100</lastBuildDate><atom:link href="https://bradleyjkemp.dev/sigmadoc/tags/attack.t1564.004/index.xml" rel="self" type="application/rss+xml"/><item><title>Suspicious Extrac32 Alternate Data Stream Execution</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_lolbas_extrac32_ads.yml/</link><pubDate>Sat, 27 Nov 2021 10:15:24 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_lolbas_extrac32_ads.yml/</guid><description>&lt;p>Extract data from cab file and hide it in an alternate data stream&lt;/p></description></item><item><title>Suspicious Diantz Alternate Data Stream Execution</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_lolbas_diantz_ads.yml/</link><pubDate>Fri, 26 Nov 2021 18:50:19 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_lolbas_diantz_ads.yml/</guid><description>&lt;p>Compress taget file into a cab file stored in the Alternate Data Stream (ADS) of the target file.&lt;/p></description></item><item><title>Suspicious Extrac32 Execution</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_lolbas_extrac32.yml/</link><pubDate>Fri, 26 Nov 2021 18:50:19 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_lolbas_extrac32.yml/</guid><description>&lt;p>Download or Copy file with Extrac32&lt;/p></description></item><item><title>NTFS Alternate Data Stream</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_ntfs_ads_access.yml/</link><pubDate>Tue, 24 Jul 2018 19:49:08 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_ntfs_ads_access.yml/</guid><description>&lt;p>Detects writing data into NTFS alternate data streams from powershell. Needs Script Block Logging.&lt;/p></description></item><item><title>Cmd Stream Redirection</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_redirect_to_stream.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_redirect_to_stream.yml/</guid><description>&lt;p>Detects the redirection of an output stream of / within a Windows command line session&lt;/p></description></item><item><title>Executable in ADS</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/create_stream_hash/sysmon_ads_executable.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/create_stream_hash/sysmon_ads_executable.yml/</guid><description>&lt;p>Detects the creation of an ADS data stream that contains an executable (non-empty imphash)&lt;/p></description></item><item><title>Execute From Alternate Data Streams</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_alternate_data_streams.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_alternate_data_streams.yml/</guid><description>&lt;p>Adversaries may use NTFS file attributes to hide their malicious data in order to evade detection&lt;/p></description></item><item><title>Exports Registry Key To an Alternate Data Stream</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/create_stream_hash/sysmon_regedit_export_to_ads.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/create_stream_hash/sysmon_regedit_export_to_ads.yml/</guid><description>&lt;p>Exports the target Registry key and hides it in the specified alternate data stream.&lt;/p></description></item><item><title>Powershell Store File In Alternate Data Stream</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_store_file_in_alternate_data_stream.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_store_file_in_alternate_data_stream.yml/</guid><description>&lt;p>Storing files in Alternate Data Stream (ADS) similar to Astaroth malware.&lt;/p></description></item><item><title>Run PowerShell Script from ADS</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_run_powershell_script_from_ads.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_run_powershell_script_from_ads.yml/</guid><description>&lt;p>Detects PowerShell script execution from Alternate Data Stream (ADS)&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>attack.t1564.004 on My New Hugo Site</title>
+    <link>https://bradleyjkemp.dev/sigmadoc/tags/attack.t1564.004/</link>
+    <description>Recent content in attack.t1564.004 on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 27 Nov 2021 10:15:24 +0100</lastBuildDate><atom:link href="https://bradleyjkemp.dev/sigmadoc/tags/attack.t1564.004/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Suspicious Extrac32 Alternate Data Stream Execution</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_lolbas_extrac32_ads.yml/</link>
+      <pubDate>Sat, 27 Nov 2021 10:15:24 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_lolbas_extrac32_ads.yml/</guid>
+      <description>&lt;p&gt;Extract data from cab file and hide it in an alternate data stream&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Suspicious Diantz Alternate Data Stream Execution</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_lolbas_diantz_ads.yml/</link>
+      <pubDate>Fri, 26 Nov 2021 18:50:19 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_lolbas_diantz_ads.yml/</guid>
+      <description>&lt;p&gt;Compress taget file into a cab file stored in the Alternate Data Stream (ADS) of the target file.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Suspicious Extrac32 Execution</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_lolbas_extrac32.yml/</link>
+      <pubDate>Fri, 26 Nov 2021 18:50:19 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_lolbas_extrac32.yml/</guid>
+      <description>&lt;p&gt;Download or Copy file with Extrac32&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>NTFS Alternate Data Stream</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_ntfs_ads_access.yml/</link>
+      <pubDate>Tue, 24 Jul 2018 19:49:08 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_ntfs_ads_access.yml/</guid>
+      <description>&lt;p&gt;Detects writing data into NTFS alternate data streams from powershell. Needs Script Block Logging.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Cmd Stream Redirection</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_redirect_to_stream.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_redirect_to_stream.yml/</guid>
+      <description>&lt;p&gt;Detects the redirection of an output stream of / within a Windows command line session&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Executable in ADS</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/create_stream_hash/sysmon_ads_executable.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/create_stream_hash/sysmon_ads_executable.yml/</guid>
+      <description>&lt;p&gt;Detects the creation of an ADS data stream that contains an executable (non-empty imphash)&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Execute From Alternate Data Streams</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_alternate_data_streams.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_alternate_data_streams.yml/</guid>
+      <description>&lt;p&gt;Adversaries may use NTFS file attributes to hide their malicious data in order to evade detection&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Exports Registry Key To an Alternate Data Stream</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/create_stream_hash/sysmon_regedit_export_to_ads.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/create_stream_hash/sysmon_regedit_export_to_ads.yml/</guid>
+      <description>&lt;p&gt;Exports the target Registry key and hides it in the specified alternate data stream.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Powershell Store File In Alternate Data Stream</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_store_file_in_alternate_data_stream.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_store_file_in_alternate_data_stream.yml/</guid>
+      <description>&lt;p&gt;Storing files in Alternate Data Stream (ADS) similar to Astaroth malware.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Run PowerShell Script from ADS</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_run_powershell_script_from_ads.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_run_powershell_script_from_ads.yml/</guid>
+      <description>&lt;p&gt;Detects PowerShell script execution from Alternate Data Stream (ADS)&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

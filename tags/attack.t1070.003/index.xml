@@ -1,1 +1,47 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>attack.t1070.003 on My New Hugo Site</title><link>https://bradleyjkemp.dev/sigmadoc/tags/attack.t1070.003/</link><description>Recent content in attack.t1070.003 on My New Hugo Site</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 25 Nov 2021 19:04:30 -0600</lastBuildDate><atom:link href="https://bradleyjkemp.dev/sigmadoc/tags/attack.t1070.003/index.xml" rel="self" type="application/rss+xml"/><item><title>Clearing Windows Console History</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_clearing_windows_console_history.yml/</link><pubDate>Thu, 25 Nov 2021 19:04:30 -0600</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_clearing_windows_console_history.yml/</guid><description>&lt;p>Identifies when a user attempts to clear console history. An adversary may clear the command history of a compromised account to conceal the actions undertaken during an intrusion.&lt;/p></description></item><item><title>Cisco Clear Logs</title><link>https://bradleyjkemp.dev/sigmadoc/rules/network/cisco/aaa/cisco_cli_clear_logs.yml/</link><pubDate>Thu, 14 Nov 2019 20:55:28 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/network/cisco/aaa/cisco_cli_clear_logs.yml/</guid><description>&lt;p>Clear command history in network OS which is used for defense evasion&lt;/p></description></item><item><title>Clear Command History</title><link>https://bradleyjkemp.dev/sigmadoc/rules/linux/builtin/lnx_shell_clear_cmd_history.yml/</link><pubDate>Sun, 24 Mar 2019 10:10:14 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/builtin/lnx_shell_clear_cmd_history.yml/</guid><description>&lt;p>Clear command history in linux which is used for defense evasion.&lt;/p></description></item><item><title>Suspicious IO.FileStream</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_suspicious_iofilestream.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_suspicious_iofilestream.yml/</guid><description>&lt;p>Open a handle on the drive volume via the \.\ DOS device path specifier and perform direct access read of the first few bytes of the volume.&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>attack.t1070.003 on My New Hugo Site</title>
+    <link>https://bradleyjkemp.dev/sigmadoc/tags/attack.t1070.003/</link>
+    <description>Recent content in attack.t1070.003 on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 25 Nov 2021 19:04:30 -0600</lastBuildDate><atom:link href="https://bradleyjkemp.dev/sigmadoc/tags/attack.t1070.003/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Clearing Windows Console History</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_clearing_windows_console_history.yml/</link>
+      <pubDate>Thu, 25 Nov 2021 19:04:30 -0600</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_clearing_windows_console_history.yml/</guid>
+      <description>&lt;p&gt;Identifies when a user attempts to clear console history. An adversary may clear the command history of a compromised account to conceal the actions undertaken during an intrusion.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Cisco Clear Logs</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/network/cisco/aaa/cisco_cli_clear_logs.yml/</link>
+      <pubDate>Thu, 14 Nov 2019 20:55:28 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/network/cisco/aaa/cisco_cli_clear_logs.yml/</guid>
+      <description>&lt;p&gt;Clear command history in network OS which is used for defense evasion&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Clear Command History</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/linux/builtin/lnx_shell_clear_cmd_history.yml/</link>
+      <pubDate>Sun, 24 Mar 2019 10:10:14 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/builtin/lnx_shell_clear_cmd_history.yml/</guid>
+      <description>&lt;p&gt;Clear command history in linux which is used for defense evasion.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Suspicious IO.FileStream</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_suspicious_iofilestream.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_suspicious_iofilestream.yml/</guid>
+      <description>&lt;p&gt;Open a handle on the drive volume via the \.\ DOS device path specifier and perform direct access read of the first few bytes of the volume.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

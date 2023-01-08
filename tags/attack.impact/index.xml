@@ -1,4 +1,950 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>attack.impact on My New Hugo Site</title><link>https://bradleyjkemp.dev/sigmadoc/tags/attack.impact/</link><description>Recent content in attack.impact on My New Hugo Site</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 28 Jan 2022 16:12:38 +0100</lastBuildDate><atom:link href="https://bradleyjkemp.dev/sigmadoc/tags/attack.impact/index.xml" rel="self" type="application/rss+xml"/><item><title>An Application Is Uninstall</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/application/win_builtin_remove_application.yml/</link><pubDate>Fri, 28 Jan 2022 16:12:38 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/application/win_builtin_remove_application.yml/</guid><description>&lt;p>An application have been remove check if it is a critical&lt;/p></description></item><item><title>Run from a Zip File</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_run_from_zip.yml/</link><pubDate>Sat, 15 Jan 2022 17:04:03 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_run_from_zip.yml/</guid><description>&lt;p>Payloads may be compressed, archived, or encrypted in order to avoid detection&lt;/p></description></item><item><title>Delete Volume Shadow Copies via WMI with PowerShell</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_susp_win32_shadowcopy.yml/</link><pubDate>Sun, 26 Dec 2021 12:09:42 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_susp_win32_shadowcopy.yml/</guid><description>&lt;p>Deletes Windows Volume Shadow Copies with PowerShell code and Get-WMIObject. This technique is used by numerous ransomware families such as Sodinokibi/REvil&lt;/p></description></item><item><title>Disable Important Scheduled Task</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_schtasks_disable.yml/</link><pubDate>Sun, 26 Dec 2021 12:09:42 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_schtasks_disable.yml/</guid><description>&lt;p>Adversaries may stop services or processes in order to conduct Data Destruction or Data Encrypted for Impact on the data stores of services like Exchange and SQL Server.&lt;/p></description></item><item><title>Overwrite Deleted Data with Cipher</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_cipher.yml/</link><pubDate>Sun, 26 Dec 2021 12:09:42 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_cipher.yml/</guid><description>&lt;p>Adversaries may destroy data and files on specific systems or in large numbers on a network to interrupt availability to systems, services, and network resources.
-Data destruction is likely to render stored data irrecoverable by forensic techniques through overwriting files or data on local and remote drives&lt;/p></description></item><item><title>Remove Account From Domain Admin Group</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_susp_remove_adgroupmember.yml/</link><pubDate>Sun, 26 Dec 2021 12:09:42 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_susp_remove_adgroupmember.yml/</guid><description>&lt;p>Adversaries may interrupt availability of system and network resources by inhibiting access to accounts utilized by legitimate users.
-Accounts may be deleted, locked, or manipulated (ex: changed credentials) to remove access to accounts.&lt;/p></description></item><item><title>Replace Desktop Wallpaper by Powershell</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_susp_wallpaper.yml/</link><pubDate>Sun, 26 Dec 2021 12:09:42 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_susp_wallpaper.yml/</guid><description>&lt;p>An adversary may deface systems internal to an organization in an attempt to intimidate or mislead users.
-This may take the form of modifications to internal websites, or directly to user systems with the replacement of the desktop wallpaper&lt;/p></description></item><item><title>Suspicious Creation TXT File in User Desktop</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_susp_desktop_txt.yml/</link><pubDate>Sun, 26 Dec 2021 12:09:42 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_susp_desktop_txt.yml/</guid><description>&lt;p>Ransomware create txt file in the user Desktop&lt;/p></description></item><item><title>Suspicious Execution of Taskkill</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_taskkill.yml/</link><pubDate>Sun, 26 Dec 2021 12:09:42 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_taskkill.yml/</guid><description>&lt;p>Adversaries may stop services or processes in order to conduct Data Destruction or Data Encrypted for Impact on the data stores of services like Exchange and SQL Server.&lt;/p></description></item><item><title>Suspicious Reg Add BitLocker</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_reg_bitlocker.yml/</link><pubDate>Mon, 15 Nov 2021 13:24:26 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_reg_bitlocker.yml/</guid><description>&lt;p>Suspicious add key for BitLocker&lt;/p></description></item><item><title>Windows Crypto Mining Indicators</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_crypto_mining_monero.yml/</link><pubDate>Tue, 26 Oct 2021 08:52:07 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_crypto_mining_monero.yml/</guid><description>&lt;p>Detects command line parameters or strings often used by crypto miners&lt;/p></description></item><item><title>Windows Crypto Mining Pool Connections</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/network_connection/net_connection_win_crypto_mining.yml/</link><pubDate>Tue, 26 Oct 2021 08:52:07 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/network_connection/net_connection_win_crypto_mining.yml/</guid><description>&lt;p>Detects process connections to a Monero crypto mining pool&lt;/p></description></item><item><title>Monero Crypto Coin Mining Pool Lookup</title><link>https://bradleyjkemp.dev/sigmadoc/rules/network/net_pua_cryptocoin_mining_xmr.yml/</link><pubDate>Sun, 24 Oct 2021 15:44:44 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/network/net_pua_cryptocoin_mining_xmr.yml/</guid><description>&lt;p>Detects suspicious DNS queries to Monero mining pools&lt;/p></description></item><item><title>Google Cloud SQL Database Modified or Deleted</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/gcp/gcp_sql_database_modified_or_deleted.yml/</link><pubDate>Fri, 15 Oct 2021 18:53:45 -0500</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/gcp/gcp_sql_database_modified_or_deleted.yml/</guid><description>&lt;p>Detect when a Cloud SQL DB has been modified or deleted.&lt;/p></description></item><item><title>Clipboard Collection with Xclip Tool</title><link>https://bradleyjkemp.dev/sigmadoc/rules/linux/process_creation/proc_creation_lnx_clipboard_collection.yml/</link><pubDate>Fri, 15 Oct 2021 15:59:11 -0400</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/process_creation/proc_creation_lnx_clipboard_collection.yml/</guid><description>&lt;p>Detects attempts to collect data stored in the clipboard from users with the usage of xclip tool. Xclip has to be installed. Highly recommended using rule on servers, due to high usage of clipboard utilities on user workstations.&lt;/p></description></item><item><title>Commands to Clear or Remove the Syslog</title><link>https://bradleyjkemp.dev/sigmadoc/rules/linux/process_creation/proc_creation_lnx_clear_syslog.yml/</link><pubDate>Fri, 15 Oct 2021 15:43:42 -0400</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/process_creation/proc_creation_lnx_clear_syslog.yml/</guid><description>&lt;p>Detects specific commands commonly used to remove or empty the syslog.&lt;/p></description></item><item><title>DD File Overwrite</title><link>https://bradleyjkemp.dev/sigmadoc/rules/linux/process_creation/proc_creation_lnx_dd_file_overwrite.yml/</link><pubDate>Fri, 15 Oct 2021 15:28:15 -0400</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/process_creation/proc_creation_lnx_dd_file_overwrite.yml/</guid><description>&lt;p>Detects potential overwriting and deletion of a file using DD.&lt;/p></description></item><item><title>Conti Ransomware Execution</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_conti_cmd_ransomware.yml/</link><pubDate>Tue, 12 Oct 2021 20:57:12 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_conti_cmd_ransomware.yml/</guid><description>&lt;p>Conti ransomware command line ioc&lt;/p></description></item><item><title>OneLogin User Account Locked</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/onelogin/onelogin_user_account_locked.yml/</link><pubDate>Mon, 11 Oct 2021 21:03:48 -0500</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/onelogin/onelogin_user_account_locked.yml/</guid><description>&lt;p>Detects when an user acount is locked or suspended.&lt;/p></description></item><item><title>OneLogin User Assumed Another User</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/onelogin/onelogin_assumed_another_user.yml/</link><pubDate>Mon, 11 Oct 2021 21:03:48 -0500</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/onelogin/onelogin_assumed_another_user.yml/</guid><description>&lt;p>Detects when an user assumed another user account.&lt;/p></description></item><item><title>Suspicious MacOS Firmware Activity</title><link>https://bradleyjkemp.dev/sigmadoc/rules/linux/macos/process_creation/proc_creation_macos_suspicious_macos_firmware_activity.yml/</link><pubDate>Thu, 30 Sep 2021 18:47:15 -0500</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/macos/process_creation/proc_creation_macos_suspicious_macos_firmware_activity.yml/</guid><description>&lt;p>Detects when a user manipulates with Firmward Password on MacOS. NOTE - this command has been disabled on silicon-based apple computers.&lt;/p></description></item><item><title>Commands to Clear or Remove the Syslog</title><link>https://bradleyjkemp.dev/sigmadoc/rules/linux/builtin/lnx_clear_syslog.yml/</link><pubDate>Tue, 21 Sep 2021 14:22:17 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/builtin/lnx_clear_syslog.yml/</guid><description>&lt;p>Detects specific commands commonly used to remove or empty the syslog&lt;/p></description></item><item><title>Okta Admin Role Assigned to an User or Group</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/okta/okta_admin_role_assigned_to_user_or_group.yml/</link><pubDate>Sun, 12 Sep 2021 19:45:57 -0500</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/okta/okta_admin_role_assigned_to_user_or_group.yml/</guid><description>&lt;p>Detects when an the Administrator role is assigned to an user or group.&lt;/p></description></item><item><title>Okta Unauthorized Access to App</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/okta/okta_unauthorized_access_to_app.yml/</link><pubDate>Sun, 12 Sep 2021 19:35:19 -0500</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/okta/okta_unauthorized_access_to_app.yml/</guid><description>&lt;p>Detects when unauthorized access to app occurs.&lt;/p></description></item><item><title>Okta User Account Locked Out</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/okta/okta_user_account_locked_out.yml/</link><pubDate>Sun, 12 Sep 2021 19:35:19 -0500</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/okta/okta_user_account_locked_out.yml/</guid><description>&lt;p>Detects when an user account is locked out.&lt;/p></description></item><item><title>Okta Network Zone Deactivated or Deleted</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/okta/okta_network_zone_deactivated_or_deleted.yml/</link><pubDate>Sun, 12 Sep 2021 19:22:15 -0500</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/okta/okta_network_zone_deactivated_or_deleted.yml/</guid><description>&lt;p>Detects when an Network Zone is Deactivated or Deleted.&lt;/p></description></item><item><title>Okta API Token Revoked</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/okta/okta_api_token_revoked.yml/</link><pubDate>Sun, 12 Sep 2021 19:17:00 -0500</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/okta/okta_api_token_revoked.yml/</guid><description>&lt;p>Detects when a API Token is revoked.&lt;/p></description></item><item><title>Okta Application Modified or Deleted</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/okta/okta_application_modified_or_deleted.yml/</link><pubDate>Sun, 12 Sep 2021 19:17:00 -0500</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/okta/okta_application_modified_or_deleted.yml/</guid><description>&lt;p>Detects when an application is modified or deleted.&lt;/p></description></item><item><title>Okta Application Sign-On Policy Modified or Deleted</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/okta/okta_application_sign_on_policy_modified_or_deleted.yml/</link><pubDate>Sun, 12 Sep 2021 19:17:00 -0500</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/okta/okta_application_sign_on_policy_modified_or_deleted.yml/</guid><description>&lt;p>Detects when an application Sign-on Policy is modified or deleted.&lt;/p></description></item><item><title>Okta Policy Rule Modified or Deleted</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/okta/okta_policy_rule_modified_or_deleted.yml/</link><pubDate>Sun, 12 Sep 2021 19:17:00 -0500</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/okta/okta_policy_rule_modified_or_deleted.yml/</guid><description>&lt;p>Detects when an Policy Rule is Modified or Deleted.&lt;/p></description></item><item><title>Okta Policy Modified or Deleted</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/okta/okta_policy_modified_or_deleted.yml/</link><pubDate>Sun, 12 Sep 2021 19:13:15 -0500</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/okta/okta_policy_modified_or_deleted.yml/</guid><description>&lt;p>Detects when an Okta policy is modified or deleted.&lt;/p></description></item><item><title>Google Workspace Application Removed</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/gworkspace/gworkspace_application_removed.yml/</link><pubDate>Thu, 26 Aug 2021 20:55:07 -0500</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/gworkspace/gworkspace_application_removed.yml/</guid><description>&lt;p>Detects when an an application is removed from Google Workspace.&lt;/p></description></item><item><title>Google Workspace MFA Disabled</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/gworkspace/gworkspace_mfa_disabled.yml/</link><pubDate>Thu, 26 Aug 2021 20:28:35 -0500</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/gworkspace/gworkspace_mfa_disabled.yml/</guid><description>&lt;p>Detects when multi-factor authentication (MFA) is disabled.&lt;/p></description></item><item><title>Google Workspace Role Modified or Deleted</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/gworkspace/gworkspace_role_modified_or_deleted.yml/</link><pubDate>Mon, 23 Aug 2021 21:19:44 -0500</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/gworkspace/gworkspace_role_modified_or_deleted.yml/</guid><description>&lt;p>Detects when an a role is modified or deleted in Google Workspace.&lt;/p></description></item><item><title>Google Workspace Role Privilege Deleted</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/gworkspace/gworkspace_role_privilege_deleted.yml/</link><pubDate>Mon, 23 Aug 2021 21:19:44 -0500</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/gworkspace/gworkspace_role_privilege_deleted.yml/</guid><description>&lt;p>Detects when an a role privilege is deleted in Google Workspace.&lt;/p></description></item><item><title>Azure Suppression Rule Created</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_suppression_rule_created.yml/</link><pubDate>Tue, 17 Aug 2021 00:04:00 -0500</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_suppression_rule_created.yml/</guid><description>&lt;p>Identifies when a suppression rule is created in Azure. Adversary&amp;rsquo;s could attempt this to evade detection.&lt;/p></description></item><item><title>Azure Keyvault Secrets Modified or Deleted</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_keyvault_secrets_modified_or_deleted.yml/</link><pubDate>Mon, 16 Aug 2021 23:54:57 -0500</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_keyvault_secrets_modified_or_deleted.yml/</guid><description>&lt;p>Identifies when secrets are modified or deleted in Azure.&lt;/p></description></item><item><title>Azure Keyvault Key Modified or Deleted</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_keyvault_key_modified_or_deleted.yml/</link><pubDate>Mon, 16 Aug 2021 23:50:56 -0500</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_keyvault_key_modified_or_deleted.yml/</guid><description>&lt;p>Identifies when a Keyvault Key is modified or deleted in Azure.&lt;/p></description></item><item><title>Azure Key Vault Modified or Deleted.</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_keyvault_modified_or_deleted.yml/</link><pubDate>Mon, 16 Aug 2021 23:41:43 -0500</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_keyvault_modified_or_deleted.yml/</guid><description>&lt;p>Identifies when a key vault is modified or deleted.&lt;/p></description></item><item><title>Azure Application Security Group Modified or Deleted</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_application_security_group_modified_or_deleted.yml/</link><pubDate>Mon, 16 Aug 2021 23:31:45 -0500</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_application_security_group_modified_or_deleted.yml/</guid><description>&lt;p>Identifies when a application security group is modified or deleted.&lt;/p></description></item><item><title>Azure Application Gateway Modified or Deleted</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_application_gateway_modified_or_deleted.yml/</link><pubDate>Mon, 16 Aug 2021 23:30:30 -0500</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_application_gateway_modified_or_deleted.yml/</guid><description>&lt;p>Identifies when a application gateway is modified or deleted.&lt;/p></description></item><item><title>AWS EKS Cluster Created or Deleted</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/aws/aws_eks_cluster_created_or_deleted.yml/</link><pubDate>Mon, 16 Aug 2021 09:58:48 -0500</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/aws/aws_eks_cluster_created_or_deleted.yml/</guid><description>&lt;p>Identifies when an EKS cluster is created or deleted.&lt;/p></description></item><item><title>Conti Volume Shadow Listing</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_malware_conti_shadowcopy.yml/</link><pubDate>Mon, 16 Aug 2021 09:10:05 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_malware_conti_shadowcopy.yml/</guid><description>&lt;p>Detects a command used by conti to access volume shadow backups&lt;/p></description></item><item><title>Conti Volume Shadow Listing</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_cmd_shadowcopy_access.yml/</link><pubDate>Mon, 16 Aug 2021 09:10:05 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_cmd_shadowcopy_access.yml/</guid><description>&lt;p>Detects a command used by conti to access volume shadow backups&lt;/p></description></item><item><title>Google Cloud VPN Tunnel Modified or Deleted</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/gcp/gcp_vpn_tunnel_modified_or_deleted.yml/</link><pubDate>Sun, 15 Aug 2021 14:37:08 -0500</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/gcp/gcp_vpn_tunnel_modified_or_deleted.yml/</guid><description>&lt;p>Identifies when a VPN Tunnel Modified or Deleted in Google Cloud.&lt;/p></description></item><item><title>Google Cloud DNS Zone Modified or Deleted</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/gcp/gcp_dns_zone_modified_or_deleted.yml/</link><pubDate>Sun, 15 Aug 2021 14:30:23 -0500</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/gcp/gcp_dns_zone_modified_or_deleted.yml/</guid><description>&lt;p>Identifies when a DNS Zone is modified or deleted in Google Cloud.&lt;/p></description></item><item><title>Google Cloud Re-identifies Sensitive Information.</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/gcp/gcp_dlp_re_identifies_sensitive_information.yml/</link><pubDate>Sun, 15 Aug 2021 14:28:10 -0500</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/gcp/gcp_dlp_re_identifies_sensitive_information.yml/</guid><description>&lt;p>Identifies when sensitive information is re-identified in google Cloud.&lt;/p></description></item><item><title>AWS EFS Fileshare Modified or Deleted</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/aws/aws_efs_fileshare_modified_or_deleted.yml/</link><pubDate>Sun, 15 Aug 2021 14:27:22 -0500</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/aws/aws_efs_fileshare_modified_or_deleted.yml/</guid><description>&lt;p>Detects when a EFS Fileshare is modified or deleted. You can&amp;rsquo;t delete a file system that is in use. If the file system has any mount targets, the adversary must first delete them, so deletion of a mount will occur before deletion of a fileshare.&lt;/p></description></item><item><title>AWS EFS Fileshare Mount Modified or Deleted</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/aws/aws_efs_fileshare_mount_modified_or_deleted.yml/</link><pubDate>Sun, 15 Aug 2021 14:26:48 -0500</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/aws/aws_efs_fileshare_mount_modified_or_deleted.yml/</guid><description>&lt;p>Detects when a EFS Fileshare Mount is modified or deleted. An adversary breaking any file system using the mount target that is being deleted, which might disrupt instances or applications using those mounts.&lt;/p></description></item><item><title>Google Cloud Service Account Disabled or Deleted</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/gcp/gcp_service_account_disabled_or_deleted.yml/</link><pubDate>Sat, 14 Aug 2021 22:26:21 -0500</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/gcp/gcp_service_account_disabled_or_deleted.yml/</guid><description>&lt;p>Identifies when a service account is disabled or deleted in Google Cloud.&lt;/p></description></item><item><title>Google Cloud Service Account Modified</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/gcp/gcp_service_account_modified.yml/</link><pubDate>Sat, 14 Aug 2021 22:25:41 -0500</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/gcp/gcp_service_account_modified.yml/</guid><description>&lt;p>Identifies when a service account is modified in Google Cloud.&lt;/p></description></item><item><title>Google Cloud Storage Buckets Modified or Deleted</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/gcp/gcp_bucket_modified_or_deleted.yml/</link><pubDate>Sat, 14 Aug 2021 21:53:56 -0500</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/gcp/gcp_bucket_modified_or_deleted.yml/</guid><description>&lt;p>Detects when storage bucket is modified or deleted in Google Cloud.&lt;/p></description></item><item><title>Azure Kubernetes Pods Deleted</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_kubernetes_pods_deleted.yml/</link><pubDate>Sat, 24 Jul 2021 10:24:29 -0500</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_kubernetes_pods_deleted.yml/</guid><description>&lt;p>Identifies the deletion of Azure Kubernetes Pods.&lt;/p></description></item><item><title>AWS ElastiCache Security Group Modified or Deleted</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/aws/aws_elasticache_security_group_modified_or_deleted.yml/</link><pubDate>Sat, 24 Jul 2021 09:23:25 -0500</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/aws/aws_elasticache_security_group_modified_or_deleted.yml/</guid><description>&lt;p>Identifies when an ElastiCache security group has been modified or deleted.&lt;/p></description></item><item><title>AWS EC2 Disable EBS Encryption</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/aws/aws_ec2_disable_encryption.yml/</link><pubDate>Tue, 29 Jun 2021 11:06:00 +0700</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/aws/aws_ec2_disable_encryption.yml/</guid><description>&lt;p>Identifies disabling of default Amazon Elastic Block Store (EBS) encryption in the current region. Disabling default encryption does not change the encryption status of your existing volumes.&lt;/p></description></item><item><title>Maze Ransomware</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_crime_maze_ransomware.yml/</link><pubDate>Mon, 11 May 2020 10:46:26 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_crime_maze_ransomware.yml/</guid><description>&lt;p>Detects specific process characteristics of Maze ransomware word document droppers&lt;/p></description></item><item><title>Audit CVE Event</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/application/win_audit_cve.yml/</link><pubDate>Wed, 15 Jan 2020 21:23:32 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/application/win_audit_cve.yml/</guid><description>&lt;p>Detects events generated by Windows to indicate the exploitation of a known vulnerability (e.g. CVE-2020-0601)&lt;/p></description></item><item><title>Silence.EDA Detection</title><link>https://bradleyjkemp.dev/sigmadoc/rules/apt/apt_silence_eda.yml/</link><pubDate>Thu, 28 Nov 2019 21:15:55 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/apt/apt_silence_eda.yml/</guid><description>&lt;p>Detects Silence empireDNSagent&lt;/p></description></item><item><title>Cisco Denial of Service</title><link>https://bradleyjkemp.dev/sigmadoc/rules/network/cisco/aaa/cisco_cli_dos.yml/</link><pubDate>Thu, 14 Nov 2019 20:55:28 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/network/cisco/aaa/cisco_cli_dos.yml/</guid><description>&lt;p>Detect a system being shutdown or put into different boot mode&lt;/p></description></item><item><title>Cisco File Deletion</title><link>https://bradleyjkemp.dev/sigmadoc/rules/network/cisco/aaa/cisco_cli_file_deletion.yml/</link><pubDate>Thu, 14 Nov 2019 20:55:28 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/network/cisco/aaa/cisco_cli_file_deletion.yml/</guid><description>&lt;p>See what files are being deleted from flash file systems&lt;/p></description></item><item><title>Cisco Modify Configuration</title><link>https://bradleyjkemp.dev/sigmadoc/rules/network/cisco/aaa/cisco_cli_modify_config.yml/</link><pubDate>Thu, 14 Nov 2019 20:55:28 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/network/cisco/aaa/cisco_cli_modify_config.yml/</guid><description>&lt;p>Modifications to a config that will serve an adversary&amp;rsquo;s impacts or persistence&lt;/p></description></item><item><title>DTRACK Process Creation</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_malware_dtrack.yml/</link><pubDate>Wed, 30 Oct 2019 15:15:57 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_malware_dtrack.yml/</guid><description>&lt;p>Detects specific process parameters as seen in DTRACK infections&lt;/p></description></item><item><title>Overwriting the File with Dev Zero or Null</title><link>https://bradleyjkemp.dev/sigmadoc/rules/linux/auditd/lnx_auditd_dd_delete_file.yml/</link><pubDate>Wed, 23 Oct 2019 11:22:33 -0700</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/auditd/lnx_auditd_dd_delete_file.yml/</guid><description>&lt;p>Detects overwriting (effectively wiping/deleting) of a file.&lt;/p></description></item><item><title>Stop Windows Service</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_service_stop.yml/</link><pubDate>Wed, 23 Oct 2019 11:22:09 -0700</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_service_stop.yml/</guid><description>&lt;p>Detects a windows service to be stopped&lt;/p></description></item><item><title>Secure Deletion with SDelete</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_sdelete.yml/</link><pubDate>Wed, 14 Jun 2017 16:55:32 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_sdelete.yml/</guid><description>&lt;p>Detects renaming of file while deletion with SDelete tool.&lt;/p></description></item><item><title>Suspicious Log Entries</title><link>https://bradleyjkemp.dev/sigmadoc/rules/linux/builtin/lnx_shell_susp_log_entries.yml/</link><pubDate>Sat, 25 Mar 2017 19:59:45 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/builtin/lnx_shell_susp_log_entries.yml/</guid><description>&lt;p>Detects suspicious log entries in Linux log files&lt;/p></description></item><item><title>Multiple Modsecurity Blocks</title><link>https://bradleyjkemp.dev/sigmadoc/rules/linux/modsecurity/modsec_mulitple_blocks.yml/</link><pubDate>Tue, 28 Feb 2017 17:53:32 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/modsecurity/modsec_mulitple_blocks.yml/</guid><description>&lt;p>Detects multiple blocks by the mod_security module (Web Application Firewall)&lt;/p></description></item><item><title>Apache Segmentation Fault</title><link>https://bradleyjkemp.dev/sigmadoc/rules/web/web_apache_segfault.yml/</link><pubDate>Tue, 28 Feb 2017 17:53:06 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/web/web_apache_segfault.yml/</guid><description>&lt;p>Detects a segmentation fault error message caused by a creashing apache worker process&lt;/p></description></item><item><title>Activity Performed by Terminated User</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/m365/microsoft365_activity_by_terminated_user.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/m365/microsoft365_activity_by_terminated_user.yml/</guid><description>&lt;p>Detects when a Microsoft Cloud App Security reported for users whose account were terminated in Azure AD, but still perform activities in other platforms such as AWS or Salesforce. This is especially relevant for users who use another account to manage resources, since these accounts are often not terminated when a user leaves the company.&lt;/p></description></item><item><title>Azure Application Credential Modified</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_app_credential_modification.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_app_credential_modification.yml/</guid><description>&lt;p>Identifies when a application credential is modified.&lt;/p></description></item><item><title>Azure Container Registry Created or Deleted</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_container_registry_created_or_deleted.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_container_registry_created_or_deleted.yml/</guid><description>&lt;p>Detects when a Container Registry is created or deleted.&lt;/p></description></item><item><title>Azure Device No Longer Managed or Compliant</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_device_no_longer_managed_or_compliant.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_device_no_longer_managed_or_compliant.yml/</guid><description>&lt;p>Identifies when a device in azure is no longer managed or compliant&lt;/p></description></item><item><title>Azure Device or Configuration Modified or Deleted</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_device_or_configuration_modified_or_deleted.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_device_or_configuration_modified_or_deleted.yml/</guid><description>&lt;p>Identifies when a device or device configuration in azure is modified or deleted.&lt;/p></description></item><item><title>Azure DNS Zone Modified or Deleted</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_dns_zone_modified_or_deleted.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_dns_zone_modified_or_deleted.yml/</guid><description>&lt;p>Identifies when DNS zone is modified or deleted.&lt;/p></description></item><item><title>Azure Firewall Modified or Deleted</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_firewall_modified_or_deleted.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_firewall_modified_or_deleted.yml/</guid><description>&lt;p>Identifies when a firewall is created, modified, or deleted.&lt;/p></description></item><item><title>Azure Firewall Rule Collection Modified or Deleted</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_firewall_rule_collection_modified_or_deleted.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_firewall_rule_collection_modified_or_deleted.yml/</guid><description>&lt;p>Identifies when Rule Collections (Application, NAT, and Network) is being modified or deleted.&lt;/p></description></item><item><title>Azure Firewall Rule Configuration Modified or Deleted</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_network_firewall_rule_modified_or_deleted.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_network_firewall_rule_modified_or_deleted.yml/</guid><description>&lt;p>Identifies when a Firewall Rule Configuration is Modified or Deleted.&lt;/p></description></item><item><title>Azure Kubernetes Cluster Created or Deleted</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_kubernetes_cluster_created_or_deleted.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_kubernetes_cluster_created_or_deleted.yml/</guid><description>&lt;p>Detects when a Azure Kubernetes Cluster is created or deleted.&lt;/p></description></item><item><title>Azure Kubernetes Network Policy Change</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_kubernetes_network_policy_change.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_kubernetes_network_policy_change.yml/</guid><description>&lt;p>Identifies when a Azure Kubernetes network policy is modified or deleted.&lt;/p></description></item><item><title>Azure Kubernetes RoleBinding/ClusterRoleBinding Modified and Deleted</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_kubernetes_rolebinding_modified_or_deleted.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_kubernetes_rolebinding_modified_or_deleted.yml/</guid><description>&lt;p>Detects the creation or patching of potential malicious RoleBinding/ClusterRoleBinding.&lt;/p></description></item><item><title>Azure Kubernetes Secret or Config Object Access</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_kubernetes_secret_or_config_object_access.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_kubernetes_secret_or_config_object_access.yml/</guid><description>&lt;p>Identifies when a Kubernetes account access a sensitive objects such as configmaps or secrets.&lt;/p></description></item><item><title>Azure Kubernetes Sensitive Role Access</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_kubernetes_role_access.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_kubernetes_role_access.yml/</guid><description>&lt;p>Identifies when ClusterRoles/Roles are being modified or deleted.&lt;/p></description></item><item><title>Azure Kubernetes Service Account Modified or Deleted</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_kubernetes_service_account_modified_or_deleted.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_kubernetes_service_account_modified_or_deleted.yml/</guid><description>&lt;p>Identifies when a service account is modified or deleted.&lt;/p></description></item><item><title>Azure Network Firewall Policy Modified or Deleted</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_network_firewall_policy_modified_or_deleted.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_network_firewall_policy_modified_or_deleted.yml/</guid><description>&lt;p>Identifies when a Firewall Policy is Modified or Deleted.&lt;/p></description></item><item><title>Azure Network Security Configuration Modified or Deleted</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_network_security_modified_or_deleted.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_network_security_modified_or_deleted.yml/</guid><description>&lt;p>Identifies when a network security configuration is modified or deleted.&lt;/p></description></item><item><title>Azure Point-to-site VPN Modified or Deleted</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_network_p2s_vpn_modified_or_deleted.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_network_p2s_vpn_modified_or_deleted.yml/</guid><description>&lt;p>Identifies when a Point-to-site VPN is Modified or Deleted.&lt;/p></description></item><item><title>Azure Virtual Network Device Modified or Deleted</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_network_virtual_device_modified_or_deleted.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_network_virtual_device_modified_or_deleted.yml/</guid><description>&lt;p>Identifies when a virtual network device is being modified or deleted. This can be a network interface, network virtual appliance, virtual hub, or virtual router.&lt;/p></description></item><item><title>Azure Virtual Network Modified or Deleted</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_virtual_network_modified_or_deleted.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_virtual_network_modified_or_deleted.yml/</guid><description>&lt;p>Identifies when a Virtual Network is modified or deleted in Azure.&lt;/p></description></item><item><title>Azure VPN Connection Modified or Deleted</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_vpn_connection_modified_or_deleted.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_vpn_connection_modified_or_deleted.yml/</guid><description>&lt;p>Identifies when a VPN connection is modified or deleted.&lt;/p></description></item><item><title>Delete Volume Shadow Copies Via WMI With PowerShell</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_classic/posh_pc_delete_volume_shadow_copies.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_classic/posh_pc_delete_volume_shadow_copies.yml/</guid><description>&lt;p>Shadow Copies deletion using operating systems utilities via PowerShell&lt;/p></description></item><item><title>Deletes Backup Files</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_delete/file_delete_win_delete_backup_file.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_delete/file_delete_win_delete_backup_file.yml/</guid><description>&lt;p>Adversaries may delete or remove built-in operating system data and turn off services designed to aid in the recovery of a corrupted system to prevent recovery.&lt;/p></description></item><item><title>Image Load of VSS_PS.dll by Uncommon Executable</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_suspicious_vss_ps_load.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_suspicious_vss_ps_load.yml/</guid><description>&lt;p>Detects the image load of vss_ps.dll by uncommon executables using OriginalFileName datapoint&lt;/p></description></item><item><title>LockerGoga Ransomware</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_mal_lockergoga_ransomware.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_mal_lockergoga_ransomware.yml/</guid><description>&lt;p>Detects LockerGoga Ransomware command line.&lt;/p></description></item><item><title>Microsoft 365 - Potential Ransomware Activity</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/m365/microsoft365_potential_ransomware_activity.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/m365/microsoft365_potential_ransomware_activity.yml/</guid><description>&lt;p>Detects when a Microsoft Cloud App Security reported when a user uploads files to the cloud that might be infected with ransomware.&lt;/p></description></item><item><title>Microsoft 365 - Unusual Volume of File Deletion</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/m365/microsoft365_unusual_volume_of_file_deletion.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/m365/microsoft365_unusual_volume_of_file_deletion.yml/</guid><description>&lt;p>Detects when a Microsoft Cloud App Security reported a user has deleted a unusual a large volume of files.&lt;/p></description></item><item><title>Nginx Core Dump</title><link>https://bradleyjkemp.dev/sigmadoc/rules/web/web_nginx_core_dump.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/web/web_nginx_core_dump.yml/</guid><description>&lt;p>Detects a core dump of a crashing Nginx worker process, which could be a signal of a serious problem or exploitation attempts.&lt;/p></description></item><item><title>NTFS Vulnerability Exploitation</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_ntfs_vuln_exploit.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_ntfs_vuln_exploit.yml/</guid><description>&lt;p>This the exploitation of a NTFS vulnerability as reported without many details via Twitter&lt;/p></description></item><item><title>Shadow Copies Deletion Using Operating Systems Utilities</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_shadow_copies_deletion.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_shadow_copies_deletion.yml/</guid><description>&lt;p>Shadow Copies deletion using operating systems utilities&lt;/p></description></item><item><title>Suspicious Execution of Shutdown</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_shutdown.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_shutdown.yml/</guid><description>&lt;p>Use of the commandline to shutdown or reboot windows&lt;/p></description></item><item><title>Suspicious Multiple File Rename Or Delete Occurred</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_multiple_files_renamed_or_deleted.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_multiple_files_renamed_or_deleted.yml/</guid><description>&lt;p>Detects multiple file rename or delete events occurrence within a specified period of time by a same user (these events may signalize about ransomware activity).&lt;/p></description></item><item><title>Sysinternals SDelete Delete File</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_sdelete.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_sdelete.yml/</guid><description>&lt;p>Use of SDelete to erase a file not the free space&lt;/p></description></item><item><title>System Shutdown/Reboot</title><link>https://bradleyjkemp.dev/sigmadoc/rules/linux/auditd/lnx_auditd_system_shutdown_reboot.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/auditd/lnx_auditd_system_shutdown_reboot.yml/</guid><description>&lt;p>Adversaries may shutdown/reboot systems to interrupt access to, or aid in the destruction of, those systems.&lt;/p></description></item><item><title>System Shutdown/Reboot</title><link>https://bradleyjkemp.dev/sigmadoc/rules/linux/macos/process_creation/proc_creation_macos_system_shutdown_reboot.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/macos/process_creation/proc_creation_macos_system_shutdown_reboot.yml/</guid><description>&lt;p>Adversaries may shutdown/reboot systems to interrupt access to, or aid in the destruction of, those systems.&lt;/p></description></item><item><title>Windows Update Error</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_susp_system_update_error.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_susp_system_update_error.yml/</guid><description>&lt;p>Windows Update get some error Check if need a 0-days KB&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>attack.impact on My New Hugo Site</title>
+    <link>https://bradleyjkemp.dev/sigmadoc/tags/attack.impact/</link>
+    <description>Recent content in attack.impact on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 28 Jan 2022 16:12:38 +0100</lastBuildDate><atom:link href="https://bradleyjkemp.dev/sigmadoc/tags/attack.impact/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>An Application Is Uninstall</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/application/win_builtin_remove_application.yml/</link>
+      <pubDate>Fri, 28 Jan 2022 16:12:38 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/application/win_builtin_remove_application.yml/</guid>
+      <description>&lt;p&gt;An application have been remove check if it is a critical&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Run from a Zip File</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_run_from_zip.yml/</link>
+      <pubDate>Sat, 15 Jan 2022 17:04:03 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_run_from_zip.yml/</guid>
+      <description>&lt;p&gt;Payloads may be compressed, archived, or encrypted in order to avoid detection&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Delete Volume Shadow Copies via WMI with PowerShell</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_susp_win32_shadowcopy.yml/</link>
+      <pubDate>Sun, 26 Dec 2021 12:09:42 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_susp_win32_shadowcopy.yml/</guid>
+      <description>&lt;p&gt;Deletes Windows Volume Shadow Copies with PowerShell code and Get-WMIObject. This technique is used by numerous ransomware families such as Sodinokibi/REvil&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Disable Important Scheduled Task</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_schtasks_disable.yml/</link>
+      <pubDate>Sun, 26 Dec 2021 12:09:42 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_schtasks_disable.yml/</guid>
+      <description>&lt;p&gt;Adversaries may stop services or processes in order to conduct Data Destruction or Data Encrypted for Impact on the data stores of services like Exchange and SQL Server.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Overwrite Deleted Data with Cipher</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_cipher.yml/</link>
+      <pubDate>Sun, 26 Dec 2021 12:09:42 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_cipher.yml/</guid>
+      <description>&lt;p&gt;Adversaries may destroy data and files on specific systems or in large numbers on a network to interrupt availability to systems, services, and network resources.
+Data destruction is likely to render stored data irrecoverable by forensic techniques through overwriting files or data on local and remote drives&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Remove Account From Domain Admin Group</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_susp_remove_adgroupmember.yml/</link>
+      <pubDate>Sun, 26 Dec 2021 12:09:42 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_susp_remove_adgroupmember.yml/</guid>
+      <description>&lt;p&gt;Adversaries may interrupt availability of system and network resources by inhibiting access to accounts utilized by legitimate users.
+Accounts may be deleted, locked, or manipulated (ex: changed credentials) to remove access to accounts.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Replace Desktop Wallpaper by Powershell</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_susp_wallpaper.yml/</link>
+      <pubDate>Sun, 26 Dec 2021 12:09:42 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_susp_wallpaper.yml/</guid>
+      <description>&lt;p&gt;An adversary may deface systems internal to an organization in an attempt to intimidate or mislead users.
+This may take the form of modifications to internal websites, or directly to user systems with the replacement of the desktop wallpaper&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Suspicious Creation TXT File in User Desktop</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_susp_desktop_txt.yml/</link>
+      <pubDate>Sun, 26 Dec 2021 12:09:42 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_susp_desktop_txt.yml/</guid>
+      <description>&lt;p&gt;Ransomware create txt file in the user Desktop&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Suspicious Execution of Taskkill</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_taskkill.yml/</link>
+      <pubDate>Sun, 26 Dec 2021 12:09:42 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_taskkill.yml/</guid>
+      <description>&lt;p&gt;Adversaries may stop services or processes in order to conduct Data Destruction or Data Encrypted for Impact on the data stores of services like Exchange and SQL Server.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Suspicious Reg Add BitLocker</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_reg_bitlocker.yml/</link>
+      <pubDate>Mon, 15 Nov 2021 13:24:26 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_reg_bitlocker.yml/</guid>
+      <description>&lt;p&gt;Suspicious add key for BitLocker&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Windows Crypto Mining Indicators</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_crypto_mining_monero.yml/</link>
+      <pubDate>Tue, 26 Oct 2021 08:52:07 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_crypto_mining_monero.yml/</guid>
+      <description>&lt;p&gt;Detects command line parameters or strings often used by crypto miners&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Windows Crypto Mining Pool Connections</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/network_connection/net_connection_win_crypto_mining.yml/</link>
+      <pubDate>Tue, 26 Oct 2021 08:52:07 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/network_connection/net_connection_win_crypto_mining.yml/</guid>
+      <description>&lt;p&gt;Detects process connections to a Monero crypto mining pool&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Monero Crypto Coin Mining Pool Lookup</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/network/net_pua_cryptocoin_mining_xmr.yml/</link>
+      <pubDate>Sun, 24 Oct 2021 15:44:44 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/network/net_pua_cryptocoin_mining_xmr.yml/</guid>
+      <description>&lt;p&gt;Detects suspicious DNS queries to Monero mining pools&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Google Cloud SQL Database Modified or Deleted</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/gcp/gcp_sql_database_modified_or_deleted.yml/</link>
+      <pubDate>Fri, 15 Oct 2021 18:53:45 -0500</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/gcp/gcp_sql_database_modified_or_deleted.yml/</guid>
+      <description>&lt;p&gt;Detect when a Cloud SQL DB has been modified or deleted.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Clipboard Collection with Xclip Tool</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/linux/process_creation/proc_creation_lnx_clipboard_collection.yml/</link>
+      <pubDate>Fri, 15 Oct 2021 15:59:11 -0400</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/process_creation/proc_creation_lnx_clipboard_collection.yml/</guid>
+      <description>&lt;p&gt;Detects attempts to collect data stored in the clipboard from users with the usage of xclip tool. Xclip has to be installed. Highly recommended using rule on servers, due to high usage of clipboard utilities on user workstations.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Commands to Clear or Remove the Syslog</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/linux/process_creation/proc_creation_lnx_clear_syslog.yml/</link>
+      <pubDate>Fri, 15 Oct 2021 15:43:42 -0400</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/process_creation/proc_creation_lnx_clear_syslog.yml/</guid>
+      <description>&lt;p&gt;Detects specific commands commonly used to remove or empty the syslog.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>DD File Overwrite</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/linux/process_creation/proc_creation_lnx_dd_file_overwrite.yml/</link>
+      <pubDate>Fri, 15 Oct 2021 15:28:15 -0400</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/process_creation/proc_creation_lnx_dd_file_overwrite.yml/</guid>
+      <description>&lt;p&gt;Detects potential overwriting and deletion of a file using DD.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Conti Ransomware Execution</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_conti_cmd_ransomware.yml/</link>
+      <pubDate>Tue, 12 Oct 2021 20:57:12 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_conti_cmd_ransomware.yml/</guid>
+      <description>&lt;p&gt;Conti ransomware command line ioc&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>OneLogin User Account Locked</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/onelogin/onelogin_user_account_locked.yml/</link>
+      <pubDate>Mon, 11 Oct 2021 21:03:48 -0500</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/onelogin/onelogin_user_account_locked.yml/</guid>
+      <description>&lt;p&gt;Detects when an user acount is locked or suspended.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>OneLogin User Assumed Another User</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/onelogin/onelogin_assumed_another_user.yml/</link>
+      <pubDate>Mon, 11 Oct 2021 21:03:48 -0500</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/onelogin/onelogin_assumed_another_user.yml/</guid>
+      <description>&lt;p&gt;Detects when an user assumed another user account.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Suspicious MacOS Firmware Activity</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/linux/macos/process_creation/proc_creation_macos_suspicious_macos_firmware_activity.yml/</link>
+      <pubDate>Thu, 30 Sep 2021 18:47:15 -0500</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/macos/process_creation/proc_creation_macos_suspicious_macos_firmware_activity.yml/</guid>
+      <description>&lt;p&gt;Detects when a user manipulates with Firmward Password on MacOS. NOTE - this command has been disabled on silicon-based apple computers.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Commands to Clear or Remove the Syslog</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/linux/builtin/lnx_clear_syslog.yml/</link>
+      <pubDate>Tue, 21 Sep 2021 14:22:17 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/builtin/lnx_clear_syslog.yml/</guid>
+      <description>&lt;p&gt;Detects specific commands commonly used to remove or empty the syslog&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Okta Admin Role Assigned to an User or Group</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/okta/okta_admin_role_assigned_to_user_or_group.yml/</link>
+      <pubDate>Sun, 12 Sep 2021 19:45:57 -0500</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/okta/okta_admin_role_assigned_to_user_or_group.yml/</guid>
+      <description>&lt;p&gt;Detects when an the Administrator role is assigned to an user or group.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Okta Unauthorized Access to App</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/okta/okta_unauthorized_access_to_app.yml/</link>
+      <pubDate>Sun, 12 Sep 2021 19:35:19 -0500</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/okta/okta_unauthorized_access_to_app.yml/</guid>
+      <description>&lt;p&gt;Detects when unauthorized access to app occurs.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Okta User Account Locked Out</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/okta/okta_user_account_locked_out.yml/</link>
+      <pubDate>Sun, 12 Sep 2021 19:35:19 -0500</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/okta/okta_user_account_locked_out.yml/</guid>
+      <description>&lt;p&gt;Detects when an user account is locked out.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Okta Network Zone Deactivated or Deleted</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/okta/okta_network_zone_deactivated_or_deleted.yml/</link>
+      <pubDate>Sun, 12 Sep 2021 19:22:15 -0500</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/okta/okta_network_zone_deactivated_or_deleted.yml/</guid>
+      <description>&lt;p&gt;Detects when an Network Zone is Deactivated or Deleted.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Okta API Token Revoked</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/okta/okta_api_token_revoked.yml/</link>
+      <pubDate>Sun, 12 Sep 2021 19:17:00 -0500</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/okta/okta_api_token_revoked.yml/</guid>
+      <description>&lt;p&gt;Detects when a API Token is revoked.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Okta Application Modified or Deleted</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/okta/okta_application_modified_or_deleted.yml/</link>
+      <pubDate>Sun, 12 Sep 2021 19:17:00 -0500</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/okta/okta_application_modified_or_deleted.yml/</guid>
+      <description>&lt;p&gt;Detects when an application is modified or deleted.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Okta Application Sign-On Policy Modified or Deleted</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/okta/okta_application_sign_on_policy_modified_or_deleted.yml/</link>
+      <pubDate>Sun, 12 Sep 2021 19:17:00 -0500</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/okta/okta_application_sign_on_policy_modified_or_deleted.yml/</guid>
+      <description>&lt;p&gt;Detects when an application Sign-on Policy is modified or deleted.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Okta Policy Rule Modified or Deleted</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/okta/okta_policy_rule_modified_or_deleted.yml/</link>
+      <pubDate>Sun, 12 Sep 2021 19:17:00 -0500</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/okta/okta_policy_rule_modified_or_deleted.yml/</guid>
+      <description>&lt;p&gt;Detects when an Policy Rule is Modified or Deleted.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Okta Policy Modified or Deleted</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/okta/okta_policy_modified_or_deleted.yml/</link>
+      <pubDate>Sun, 12 Sep 2021 19:13:15 -0500</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/okta/okta_policy_modified_or_deleted.yml/</guid>
+      <description>&lt;p&gt;Detects when an Okta policy is modified or deleted.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Google Workspace Application Removed</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/gworkspace/gworkspace_application_removed.yml/</link>
+      <pubDate>Thu, 26 Aug 2021 20:55:07 -0500</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/gworkspace/gworkspace_application_removed.yml/</guid>
+      <description>&lt;p&gt;Detects when an an application is removed from Google Workspace.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Google Workspace MFA Disabled</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/gworkspace/gworkspace_mfa_disabled.yml/</link>
+      <pubDate>Thu, 26 Aug 2021 20:28:35 -0500</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/gworkspace/gworkspace_mfa_disabled.yml/</guid>
+      <description>&lt;p&gt;Detects when multi-factor authentication (MFA) is disabled.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Google Workspace Role Modified or Deleted</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/gworkspace/gworkspace_role_modified_or_deleted.yml/</link>
+      <pubDate>Mon, 23 Aug 2021 21:19:44 -0500</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/gworkspace/gworkspace_role_modified_or_deleted.yml/</guid>
+      <description>&lt;p&gt;Detects when an a role is modified or deleted in Google Workspace.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Google Workspace Role Privilege Deleted</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/gworkspace/gworkspace_role_privilege_deleted.yml/</link>
+      <pubDate>Mon, 23 Aug 2021 21:19:44 -0500</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/gworkspace/gworkspace_role_privilege_deleted.yml/</guid>
+      <description>&lt;p&gt;Detects when an a role privilege is deleted in Google Workspace.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Azure Suppression Rule Created</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_suppression_rule_created.yml/</link>
+      <pubDate>Tue, 17 Aug 2021 00:04:00 -0500</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_suppression_rule_created.yml/</guid>
+      <description>&lt;p&gt;Identifies when a suppression rule is created in Azure. Adversary&amp;rsquo;s could attempt this to evade detection.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Azure Keyvault Secrets Modified or Deleted</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_keyvault_secrets_modified_or_deleted.yml/</link>
+      <pubDate>Mon, 16 Aug 2021 23:54:57 -0500</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_keyvault_secrets_modified_or_deleted.yml/</guid>
+      <description>&lt;p&gt;Identifies when secrets are modified or deleted in Azure.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Azure Keyvault Key Modified or Deleted</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_keyvault_key_modified_or_deleted.yml/</link>
+      <pubDate>Mon, 16 Aug 2021 23:50:56 -0500</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_keyvault_key_modified_or_deleted.yml/</guid>
+      <description>&lt;p&gt;Identifies when a Keyvault Key is modified or deleted in Azure.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Azure Key Vault Modified or Deleted.</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_keyvault_modified_or_deleted.yml/</link>
+      <pubDate>Mon, 16 Aug 2021 23:41:43 -0500</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_keyvault_modified_or_deleted.yml/</guid>
+      <description>&lt;p&gt;Identifies when a key vault is modified or deleted.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Azure Application Security Group Modified or Deleted</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_application_security_group_modified_or_deleted.yml/</link>
+      <pubDate>Mon, 16 Aug 2021 23:31:45 -0500</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_application_security_group_modified_or_deleted.yml/</guid>
+      <description>&lt;p&gt;Identifies when a application security group is modified or deleted.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Azure Application Gateway Modified or Deleted</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_application_gateway_modified_or_deleted.yml/</link>
+      <pubDate>Mon, 16 Aug 2021 23:30:30 -0500</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_application_gateway_modified_or_deleted.yml/</guid>
+      <description>&lt;p&gt;Identifies when a application gateway is modified or deleted.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>AWS EKS Cluster Created or Deleted</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/aws/aws_eks_cluster_created_or_deleted.yml/</link>
+      <pubDate>Mon, 16 Aug 2021 09:58:48 -0500</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/aws/aws_eks_cluster_created_or_deleted.yml/</guid>
+      <description>&lt;p&gt;Identifies when an EKS cluster is created or deleted.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Conti Volume Shadow Listing</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_malware_conti_shadowcopy.yml/</link>
+      <pubDate>Mon, 16 Aug 2021 09:10:05 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_malware_conti_shadowcopy.yml/</guid>
+      <description>&lt;p&gt;Detects a command used by conti to access volume shadow backups&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Conti Volume Shadow Listing</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_cmd_shadowcopy_access.yml/</link>
+      <pubDate>Mon, 16 Aug 2021 09:10:05 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_cmd_shadowcopy_access.yml/</guid>
+      <description>&lt;p&gt;Detects a command used by conti to access volume shadow backups&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Google Cloud VPN Tunnel Modified or Deleted</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/gcp/gcp_vpn_tunnel_modified_or_deleted.yml/</link>
+      <pubDate>Sun, 15 Aug 2021 14:37:08 -0500</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/gcp/gcp_vpn_tunnel_modified_or_deleted.yml/</guid>
+      <description>&lt;p&gt;Identifies when a VPN Tunnel Modified or Deleted in Google Cloud.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Google Cloud DNS Zone Modified or Deleted</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/gcp/gcp_dns_zone_modified_or_deleted.yml/</link>
+      <pubDate>Sun, 15 Aug 2021 14:30:23 -0500</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/gcp/gcp_dns_zone_modified_or_deleted.yml/</guid>
+      <description>&lt;p&gt;Identifies when a DNS Zone is modified or deleted in Google Cloud.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Google Cloud Re-identifies Sensitive Information.</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/gcp/gcp_dlp_re_identifies_sensitive_information.yml/</link>
+      <pubDate>Sun, 15 Aug 2021 14:28:10 -0500</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/gcp/gcp_dlp_re_identifies_sensitive_information.yml/</guid>
+      <description>&lt;p&gt;Identifies when sensitive information is re-identified in google Cloud.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>AWS EFS Fileshare Modified or Deleted</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/aws/aws_efs_fileshare_modified_or_deleted.yml/</link>
+      <pubDate>Sun, 15 Aug 2021 14:27:22 -0500</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/aws/aws_efs_fileshare_modified_or_deleted.yml/</guid>
+      <description>&lt;p&gt;Detects when a EFS Fileshare is modified or deleted. You can&amp;rsquo;t delete a file system that is in use. If the file system has any mount targets, the adversary must first delete them, so deletion of a mount will occur before deletion of a fileshare.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>AWS EFS Fileshare Mount Modified or Deleted</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/aws/aws_efs_fileshare_mount_modified_or_deleted.yml/</link>
+      <pubDate>Sun, 15 Aug 2021 14:26:48 -0500</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/aws/aws_efs_fileshare_mount_modified_or_deleted.yml/</guid>
+      <description>&lt;p&gt;Detects when a EFS Fileshare Mount is modified or deleted. An adversary breaking any file system using the mount target that is being deleted, which might disrupt instances or applications using those mounts.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Google Cloud Service Account Disabled or Deleted</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/gcp/gcp_service_account_disabled_or_deleted.yml/</link>
+      <pubDate>Sat, 14 Aug 2021 22:26:21 -0500</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/gcp/gcp_service_account_disabled_or_deleted.yml/</guid>
+      <description>&lt;p&gt;Identifies when a service account is disabled or deleted in Google Cloud.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Google Cloud Service Account Modified</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/gcp/gcp_service_account_modified.yml/</link>
+      <pubDate>Sat, 14 Aug 2021 22:25:41 -0500</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/gcp/gcp_service_account_modified.yml/</guid>
+      <description>&lt;p&gt;Identifies when a service account is modified in Google Cloud.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Google Cloud Storage Buckets Modified or Deleted</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/gcp/gcp_bucket_modified_or_deleted.yml/</link>
+      <pubDate>Sat, 14 Aug 2021 21:53:56 -0500</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/gcp/gcp_bucket_modified_or_deleted.yml/</guid>
+      <description>&lt;p&gt;Detects when storage bucket is modified or deleted in Google Cloud.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Azure Kubernetes Pods Deleted</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_kubernetes_pods_deleted.yml/</link>
+      <pubDate>Sat, 24 Jul 2021 10:24:29 -0500</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_kubernetes_pods_deleted.yml/</guid>
+      <description>&lt;p&gt;Identifies the deletion of Azure Kubernetes Pods.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>AWS ElastiCache Security Group Modified or Deleted</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/aws/aws_elasticache_security_group_modified_or_deleted.yml/</link>
+      <pubDate>Sat, 24 Jul 2021 09:23:25 -0500</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/aws/aws_elasticache_security_group_modified_or_deleted.yml/</guid>
+      <description>&lt;p&gt;Identifies when an ElastiCache security group has been modified or deleted.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>AWS EC2 Disable EBS Encryption</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/aws/aws_ec2_disable_encryption.yml/</link>
+      <pubDate>Tue, 29 Jun 2021 11:06:00 +0700</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/aws/aws_ec2_disable_encryption.yml/</guid>
+      <description>&lt;p&gt;Identifies disabling of default Amazon Elastic Block Store (EBS) encryption in the current region. Disabling default encryption does not change the encryption status of your existing volumes.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Maze Ransomware</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_crime_maze_ransomware.yml/</link>
+      <pubDate>Mon, 11 May 2020 10:46:26 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_crime_maze_ransomware.yml/</guid>
+      <description>&lt;p&gt;Detects specific process characteristics of Maze ransomware word document droppers&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Audit CVE Event</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/application/win_audit_cve.yml/</link>
+      <pubDate>Wed, 15 Jan 2020 21:23:32 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/application/win_audit_cve.yml/</guid>
+      <description>&lt;p&gt;Detects events generated by Windows to indicate the exploitation of a known vulnerability (e.g. CVE-2020-0601)&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Silence.EDA Detection</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/apt/apt_silence_eda.yml/</link>
+      <pubDate>Thu, 28 Nov 2019 21:15:55 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/apt/apt_silence_eda.yml/</guid>
+      <description>&lt;p&gt;Detects Silence empireDNSagent&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Cisco Denial of Service</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/network/cisco/aaa/cisco_cli_dos.yml/</link>
+      <pubDate>Thu, 14 Nov 2019 20:55:28 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/network/cisco/aaa/cisco_cli_dos.yml/</guid>
+      <description>&lt;p&gt;Detect a system being shutdown or put into different boot mode&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Cisco File Deletion</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/network/cisco/aaa/cisco_cli_file_deletion.yml/</link>
+      <pubDate>Thu, 14 Nov 2019 20:55:28 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/network/cisco/aaa/cisco_cli_file_deletion.yml/</guid>
+      <description>&lt;p&gt;See what files are being deleted from flash file systems&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Cisco Modify Configuration</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/network/cisco/aaa/cisco_cli_modify_config.yml/</link>
+      <pubDate>Thu, 14 Nov 2019 20:55:28 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/network/cisco/aaa/cisco_cli_modify_config.yml/</guid>
+      <description>&lt;p&gt;Modifications to a config that will serve an adversary&amp;rsquo;s impacts or persistence&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>DTRACK Process Creation</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_malware_dtrack.yml/</link>
+      <pubDate>Wed, 30 Oct 2019 15:15:57 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_malware_dtrack.yml/</guid>
+      <description>&lt;p&gt;Detects specific process parameters as seen in DTRACK infections&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Overwriting the File with Dev Zero or Null</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/linux/auditd/lnx_auditd_dd_delete_file.yml/</link>
+      <pubDate>Wed, 23 Oct 2019 11:22:33 -0700</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/auditd/lnx_auditd_dd_delete_file.yml/</guid>
+      <description>&lt;p&gt;Detects overwriting (effectively wiping/deleting) of a file.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Stop Windows Service</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_service_stop.yml/</link>
+      <pubDate>Wed, 23 Oct 2019 11:22:09 -0700</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_service_stop.yml/</guid>
+      <description>&lt;p&gt;Detects a windows service to be stopped&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Secure Deletion with SDelete</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_sdelete.yml/</link>
+      <pubDate>Wed, 14 Jun 2017 16:55:32 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_sdelete.yml/</guid>
+      <description>&lt;p&gt;Detects renaming of file while deletion with SDelete tool.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Suspicious Log Entries</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/linux/builtin/lnx_shell_susp_log_entries.yml/</link>
+      <pubDate>Sat, 25 Mar 2017 19:59:45 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/builtin/lnx_shell_susp_log_entries.yml/</guid>
+      <description>&lt;p&gt;Detects suspicious log entries in Linux log files&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Multiple Modsecurity Blocks</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/linux/modsecurity/modsec_mulitple_blocks.yml/</link>
+      <pubDate>Tue, 28 Feb 2017 17:53:32 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/modsecurity/modsec_mulitple_blocks.yml/</guid>
+      <description>&lt;p&gt;Detects multiple blocks by the mod_security module (Web Application Firewall)&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Apache Segmentation Fault</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/web/web_apache_segfault.yml/</link>
+      <pubDate>Tue, 28 Feb 2017 17:53:06 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/web/web_apache_segfault.yml/</guid>
+      <description>&lt;p&gt;Detects a segmentation fault error message caused by a creashing apache worker process&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Activity Performed by Terminated User</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/m365/microsoft365_activity_by_terminated_user.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/m365/microsoft365_activity_by_terminated_user.yml/</guid>
+      <description>&lt;p&gt;Detects when a Microsoft Cloud App Security reported for users whose account were terminated in Azure AD, but still perform activities in other platforms such as AWS or Salesforce. This is especially relevant for users who use another account to manage resources, since these accounts are often not terminated when a user leaves the company.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Azure Application Credential Modified</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_app_credential_modification.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_app_credential_modification.yml/</guid>
+      <description>&lt;p&gt;Identifies when a application credential is modified.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Azure Container Registry Created or Deleted</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_container_registry_created_or_deleted.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_container_registry_created_or_deleted.yml/</guid>
+      <description>&lt;p&gt;Detects when a Container Registry is created or deleted.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Azure Device No Longer Managed or Compliant</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_device_no_longer_managed_or_compliant.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_device_no_longer_managed_or_compliant.yml/</guid>
+      <description>&lt;p&gt;Identifies when a device in azure is no longer managed or compliant&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Azure Device or Configuration Modified or Deleted</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_device_or_configuration_modified_or_deleted.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_device_or_configuration_modified_or_deleted.yml/</guid>
+      <description>&lt;p&gt;Identifies when a device or device configuration in azure is modified or deleted.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Azure DNS Zone Modified or Deleted</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_dns_zone_modified_or_deleted.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_dns_zone_modified_or_deleted.yml/</guid>
+      <description>&lt;p&gt;Identifies when DNS zone is modified or deleted.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Azure Firewall Modified or Deleted</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_firewall_modified_or_deleted.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_firewall_modified_or_deleted.yml/</guid>
+      <description>&lt;p&gt;Identifies when a firewall is created, modified, or deleted.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Azure Firewall Rule Collection Modified or Deleted</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_firewall_rule_collection_modified_or_deleted.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_firewall_rule_collection_modified_or_deleted.yml/</guid>
+      <description>&lt;p&gt;Identifies when Rule Collections (Application, NAT, and Network) is being modified or deleted.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Azure Firewall Rule Configuration Modified or Deleted</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_network_firewall_rule_modified_or_deleted.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_network_firewall_rule_modified_or_deleted.yml/</guid>
+      <description>&lt;p&gt;Identifies when a Firewall Rule Configuration is Modified or Deleted.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Azure Kubernetes Cluster Created or Deleted</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_kubernetes_cluster_created_or_deleted.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_kubernetes_cluster_created_or_deleted.yml/</guid>
+      <description>&lt;p&gt;Detects when a Azure Kubernetes Cluster is created or deleted.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Azure Kubernetes Network Policy Change</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_kubernetes_network_policy_change.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_kubernetes_network_policy_change.yml/</guid>
+      <description>&lt;p&gt;Identifies when a Azure Kubernetes network policy is modified or deleted.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Azure Kubernetes RoleBinding/ClusterRoleBinding Modified and Deleted</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_kubernetes_rolebinding_modified_or_deleted.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_kubernetes_rolebinding_modified_or_deleted.yml/</guid>
+      <description>&lt;p&gt;Detects the creation or patching of potential malicious RoleBinding/ClusterRoleBinding.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Azure Kubernetes Secret or Config Object Access</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_kubernetes_secret_or_config_object_access.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_kubernetes_secret_or_config_object_access.yml/</guid>
+      <description>&lt;p&gt;Identifies when a Kubernetes account access a sensitive objects such as configmaps or secrets.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Azure Kubernetes Sensitive Role Access</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_kubernetes_role_access.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_kubernetes_role_access.yml/</guid>
+      <description>&lt;p&gt;Identifies when ClusterRoles/Roles are being modified or deleted.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Azure Kubernetes Service Account Modified or Deleted</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_kubernetes_service_account_modified_or_deleted.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_kubernetes_service_account_modified_or_deleted.yml/</guid>
+      <description>&lt;p&gt;Identifies when a service account is modified or deleted.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Azure Network Firewall Policy Modified or Deleted</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_network_firewall_policy_modified_or_deleted.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_network_firewall_policy_modified_or_deleted.yml/</guid>
+      <description>&lt;p&gt;Identifies when a Firewall Policy is Modified or Deleted.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Azure Network Security Configuration Modified or Deleted</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_network_security_modified_or_deleted.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_network_security_modified_or_deleted.yml/</guid>
+      <description>&lt;p&gt;Identifies when a network security configuration is modified or deleted.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Azure Point-to-site VPN Modified or Deleted</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_network_p2s_vpn_modified_or_deleted.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_network_p2s_vpn_modified_or_deleted.yml/</guid>
+      <description>&lt;p&gt;Identifies when a Point-to-site VPN is Modified or Deleted.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Azure Virtual Network Device Modified or Deleted</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_network_virtual_device_modified_or_deleted.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_network_virtual_device_modified_or_deleted.yml/</guid>
+      <description>&lt;p&gt;Identifies when a virtual network device is being modified or deleted. This can be a network interface, network virtual appliance, virtual hub, or virtual router.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Azure Virtual Network Modified or Deleted</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_virtual_network_modified_or_deleted.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_virtual_network_modified_or_deleted.yml/</guid>
+      <description>&lt;p&gt;Identifies when a Virtual Network is modified or deleted in Azure.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Azure VPN Connection Modified or Deleted</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_vpn_connection_modified_or_deleted.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_vpn_connection_modified_or_deleted.yml/</guid>
+      <description>&lt;p&gt;Identifies when a VPN connection is modified or deleted.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Delete Volume Shadow Copies Via WMI With PowerShell</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_classic/posh_pc_delete_volume_shadow_copies.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_classic/posh_pc_delete_volume_shadow_copies.yml/</guid>
+      <description>&lt;p&gt;Shadow Copies deletion using operating systems utilities via PowerShell&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Deletes Backup Files</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_delete/file_delete_win_delete_backup_file.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_delete/file_delete_win_delete_backup_file.yml/</guid>
+      <description>&lt;p&gt;Adversaries may delete or remove built-in operating system data and turn off services designed to aid in the recovery of a corrupted system to prevent recovery.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Image Load of VSS_PS.dll by Uncommon Executable</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_suspicious_vss_ps_load.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_suspicious_vss_ps_load.yml/</guid>
+      <description>&lt;p&gt;Detects the image load of vss_ps.dll by uncommon executables using OriginalFileName datapoint&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>LockerGoga Ransomware</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_mal_lockergoga_ransomware.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_mal_lockergoga_ransomware.yml/</guid>
+      <description>&lt;p&gt;Detects LockerGoga Ransomware command line.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Microsoft 365 - Potential Ransomware Activity</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/m365/microsoft365_potential_ransomware_activity.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/m365/microsoft365_potential_ransomware_activity.yml/</guid>
+      <description>&lt;p&gt;Detects when a Microsoft Cloud App Security reported when a user uploads files to the cloud that might be infected with ransomware.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Microsoft 365 - Unusual Volume of File Deletion</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/m365/microsoft365_unusual_volume_of_file_deletion.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/m365/microsoft365_unusual_volume_of_file_deletion.yml/</guid>
+      <description>&lt;p&gt;Detects when a Microsoft Cloud App Security reported a user has deleted a unusual a large volume of files.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Nginx Core Dump</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/web/web_nginx_core_dump.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/web/web_nginx_core_dump.yml/</guid>
+      <description>&lt;p&gt;Detects a core dump of a crashing Nginx worker process, which could be a signal of a serious problem or exploitation attempts.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>NTFS Vulnerability Exploitation</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_ntfs_vuln_exploit.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_ntfs_vuln_exploit.yml/</guid>
+      <description>&lt;p&gt;This the exploitation of a NTFS vulnerability as reported without many details via Twitter&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Shadow Copies Deletion Using Operating Systems Utilities</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_shadow_copies_deletion.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_shadow_copies_deletion.yml/</guid>
+      <description>&lt;p&gt;Shadow Copies deletion using operating systems utilities&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Suspicious Execution of Shutdown</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_shutdown.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_shutdown.yml/</guid>
+      <description>&lt;p&gt;Use of the commandline to shutdown or reboot windows&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Suspicious Multiple File Rename Or Delete Occurred</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_multiple_files_renamed_or_deleted.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_multiple_files_renamed_or_deleted.yml/</guid>
+      <description>&lt;p&gt;Detects multiple file rename or delete events occurrence within a specified period of time by a same user (these events may signalize about ransomware activity).&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Sysinternals SDelete Delete File</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_sdelete.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_sdelete.yml/</guid>
+      <description>&lt;p&gt;Use of SDelete to erase a file not the free space&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>System Shutdown/Reboot</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/linux/auditd/lnx_auditd_system_shutdown_reboot.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/auditd/lnx_auditd_system_shutdown_reboot.yml/</guid>
+      <description>&lt;p&gt;Adversaries may shutdown/reboot systems to interrupt access to, or aid in the destruction of, those systems.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>System Shutdown/Reboot</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/linux/macos/process_creation/proc_creation_macos_system_shutdown_reboot.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/macos/process_creation/proc_creation_macos_system_shutdown_reboot.yml/</guid>
+      <description>&lt;p&gt;Adversaries may shutdown/reboot systems to interrupt access to, or aid in the destruction of, those systems.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Windows Update Error</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_susp_system_update_error.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_susp_system_update_error.yml/</guid>
+      <description>&lt;p&gt;Windows Update get some error Check if need a 0-days KB&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

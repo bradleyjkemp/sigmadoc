@@ -1,1 +1,173 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>attack.t1505.003 on My New Hugo Site</title><link>https://bradleyjkemp.dev/sigmadoc/tags/attack.t1505.003/</link><description>Recent content in attack.t1505.003 on My New Hugo Site</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 25 Feb 2022 16:02:42 +0100</lastBuildDate><atom:link href="https://bradleyjkemp.dev/sigmadoc/tags/attack.t1505.003/index.xml" rel="self" type="application/rss+xml"/><item><title>Suspicious MSExchangeMailboxReplication ASPX Write</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_susp_exchange_aspx_write.yml/</link><pubDate>Fri, 25 Feb 2022 16:02:42 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_susp_exchange_aspx_write.yml/</guid><description>&lt;p>Detects suspicious activity in which the MSExchangeMailboxReplication process writes .asp and .apsx files to disk, which could be a sign of ProxyShell exploitation&lt;/p></description></item><item><title>Linux Webshell Indicators</title><link>https://bradleyjkemp.dev/sigmadoc/rules/linux/process_creation/proc_creation_lnx_webshell_detection.yml/</link><pubDate>Fri, 15 Oct 2021 14:39:32 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/process_creation/proc_creation_lnx_webshell_detection.yml/</guid><description>&lt;p>Detects suspicious sub processes of web server processes&lt;/p></description></item><item><title>CVE-2021-40539 Zoho ManageEngine ADSelfService Plus Exploit</title><link>https://bradleyjkemp.dev/sigmadoc/rules/web/web_cve_2021_40539_manageengine_adselfservice_exploit.yml/</link><pubDate>Fri, 10 Sep 2021 10:31:11 +0700</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/web/web_cve_2021_40539_manageengine_adselfservice_exploit.yml/</guid><description>&lt;p>Detects an authentication bypass vulnerability affecting the REST API URLs in ADSelfService Plus (CVE-2021-40539).&lt;/p></description></item><item><title>Certificate Request Export to Exchange Webserver</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/msexchange/win_exchange_proxyshell_certificate_generation.yml/</link><pubDate>Mon, 23 Aug 2021 11:17:10 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/msexchange/win_exchange_proxyshell_certificate_generation.yml/</guid><description>&lt;p>Detects a write of an Exchange CSR to an untypical directory or with aspx name suffix which can be used to place a webshell&lt;/p></description></item><item><title>Mailbox Export to Exchange Webserver</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/msexchange/win_exchange_proxyshell_mailbox_export.yml/</link><pubDate>Wed, 11 Aug 2021 16:38:44 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/msexchange/win_exchange_proxyshell_mailbox_export.yml/</guid><description>&lt;p>Detects a successful export of an Exchange mailbox to untypical directory or with aspx name suffix which can be used to place a webshell or the needed role assignment for it&lt;/p></description></item><item><title>Solarwinds SUPERNOVA Webshell Access</title><link>https://bradleyjkemp.dev/sigmadoc/rules/web/web_solarwinds_supernova_webshell.yml/</link><pubDate>Thu, 17 Dec 2020 09:05:08 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/web/web_solarwinds_supernova_webshell.yml/</guid><description>&lt;p>Detects access to SUPERNOVA webshell as described in Guidepoint report&lt;/p></description></item><item><title>Suspicious Shells Spawn by SQL Server</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_shell_spawn_from_mssql.yml/</link><pubDate>Fri, 11 Dec 2020 15:17:23 +0700</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_shell_spawn_from_mssql.yml/</guid><description>&lt;p>Detects suspicious shell spawn from MSSQL process, this might be sight of RCE or SQL Injection&lt;/p></description></item><item><title>Webshell Remote Command Execution</title><link>https://bradleyjkemp.dev/sigmadoc/rules/linux/auditd/lnx_auditd_web_rce.yml/</link><pubDate>Mon, 21 Oct 2019 11:14:24 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/auditd/lnx_auditd_web_rce.yml/</guid><description>&lt;p>Detects possible command execution by web application/web shell&lt;/p></description></item><item><title>Execution in Webserver Root Folder</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_execution_path_webserver.yml/</link><pubDate>Wed, 16 Jan 2019 23:36:31 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_execution_path_webserver.yml/</guid><description>&lt;p>Detects a suspicious program execution in a web service root folder (filter out false positives)&lt;/p></description></item><item><title>IIS Native-Code Module Command Line Installation</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_iss_module_install.yml/</link><pubDate>Wed, 16 Jan 2019 23:36:31 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_iss_module_install.yml/</guid><description>&lt;p>Detects suspicious IIS native-code module installations via command line&lt;/p></description></item><item><title>Shells Spawned by Web Servers</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_webshell_spawn.yml/</link><pubDate>Wed, 16 Jan 2019 23:36:31 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_webshell_spawn.yml/</guid><description>&lt;p>Web servers that spawn shell processes could be the result of a successfully placed web shell or an other attack&lt;/p></description></item><item><title>Oracle WebLogic Exploit</title><link>https://bradleyjkemp.dev/sigmadoc/rules/web/web_cve_2018_2894_weblogic_exploit.yml/</link><pubDate>Sun, 22 Jul 2018 15:09:19 -0600</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/web/web_cve_2018_2894_weblogic_exploit.yml/</guid><description>&lt;p>Detects access to a webshell dropped into a keystore folder on the WebLogic server&lt;/p></description></item><item><title>Shellshock Expression</title><link>https://bradleyjkemp.dev/sigmadoc/rules/linux/builtin/lnx_shellshock.yml/</link><pubDate>Tue, 14 Mar 2017 14:53:29 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/builtin/lnx_shellshock.yml/</guid><description>&lt;p>Detects shellshock expressions in log files&lt;/p></description></item><item><title>Webshell Detection by Keyword</title><link>https://bradleyjkemp.dev/sigmadoc/rules/web/web_webshell_keyword.yml/</link><pubDate>Fri, 10 Feb 2017 19:17:02 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/web/web_webshell_keyword.yml/</guid><description>&lt;p>Detects webshells that use GET requests by keyword searches in URL strings&lt;/p></description></item><item><title>DEWMODE Webshell Access</title><link>https://bradleyjkemp.dev/sigmadoc/rules/web/web_unc2546_dewmode_php_webshell.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/web/web_unc2546_dewmode_php_webshell.yml/</guid><description>&lt;p>Detects access to DEWMODE webshell as described in FIREEYE report&lt;/p></description></item><item><title>Exchange Set OabVirtualDirectory ExternalUrl Property</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/msexchange/win_set_oabvirtualdirectory_externalurl.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/msexchange/win_set_oabvirtualdirectory_externalurl.yml/</guid><description>&lt;p>Rule to detect an adversary setting OabVirtualDirectory External URL property to a script in Exchange Management log&lt;/p></description></item><item><title>Suspicious PowerShell Mailbox Export to Share</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_mailboxexport_share.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_mailboxexport_share.yml/</guid><description>&lt;p>Detects a PowerShell New-MailboxExportRequest that exports a mailbox to a local share, as used in ProxyShell exploitations&lt;/p></description></item><item><title>Webshell ReGeorg Detection Via Web Logs</title><link>https://bradleyjkemp.dev/sigmadoc/rules/web/win_webshell_regeorg.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/web/win_webshell_regeorg.yml/</guid><description>&lt;p>Certain strings in the uri_query field when combined with null referer and null user agent can indicate activity associated with the webshell ReGeorg.&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>attack.t1505.003 on My New Hugo Site</title>
+    <link>https://bradleyjkemp.dev/sigmadoc/tags/attack.t1505.003/</link>
+    <description>Recent content in attack.t1505.003 on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 25 Feb 2022 16:02:42 +0100</lastBuildDate><atom:link href="https://bradleyjkemp.dev/sigmadoc/tags/attack.t1505.003/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Suspicious MSExchangeMailboxReplication ASPX Write</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_susp_exchange_aspx_write.yml/</link>
+      <pubDate>Fri, 25 Feb 2022 16:02:42 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_susp_exchange_aspx_write.yml/</guid>
+      <description>&lt;p&gt;Detects suspicious activity in which the MSExchangeMailboxReplication process writes .asp and .apsx files to disk, which could be a sign of ProxyShell exploitation&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Linux Webshell Indicators</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/linux/process_creation/proc_creation_lnx_webshell_detection.yml/</link>
+      <pubDate>Fri, 15 Oct 2021 14:39:32 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/process_creation/proc_creation_lnx_webshell_detection.yml/</guid>
+      <description>&lt;p&gt;Detects suspicious sub processes of web server processes&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>CVE-2021-40539 Zoho ManageEngine ADSelfService Plus Exploit</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/web/web_cve_2021_40539_manageengine_adselfservice_exploit.yml/</link>
+      <pubDate>Fri, 10 Sep 2021 10:31:11 +0700</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/web/web_cve_2021_40539_manageengine_adselfservice_exploit.yml/</guid>
+      <description>&lt;p&gt;Detects an authentication bypass vulnerability affecting the REST API URLs in ADSelfService Plus (CVE-2021-40539).&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Certificate Request Export to Exchange Webserver</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/msexchange/win_exchange_proxyshell_certificate_generation.yml/</link>
+      <pubDate>Mon, 23 Aug 2021 11:17:10 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/msexchange/win_exchange_proxyshell_certificate_generation.yml/</guid>
+      <description>&lt;p&gt;Detects a write of an Exchange CSR to an untypical directory or with aspx name suffix which can be used to place a webshell&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Mailbox Export to Exchange Webserver</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/msexchange/win_exchange_proxyshell_mailbox_export.yml/</link>
+      <pubDate>Wed, 11 Aug 2021 16:38:44 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/msexchange/win_exchange_proxyshell_mailbox_export.yml/</guid>
+      <description>&lt;p&gt;Detects a successful export of an Exchange mailbox to untypical directory or with aspx name suffix which can be used to place a webshell or the needed role assignment for it&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Solarwinds SUPERNOVA Webshell Access</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/web/web_solarwinds_supernova_webshell.yml/</link>
+      <pubDate>Thu, 17 Dec 2020 09:05:08 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/web/web_solarwinds_supernova_webshell.yml/</guid>
+      <description>&lt;p&gt;Detects access to SUPERNOVA webshell as described in Guidepoint report&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Suspicious Shells Spawn by SQL Server</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_shell_spawn_from_mssql.yml/</link>
+      <pubDate>Fri, 11 Dec 2020 15:17:23 +0700</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_shell_spawn_from_mssql.yml/</guid>
+      <description>&lt;p&gt;Detects suspicious shell spawn from MSSQL process, this might be sight of RCE or SQL Injection&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Webshell Remote Command Execution</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/linux/auditd/lnx_auditd_web_rce.yml/</link>
+      <pubDate>Mon, 21 Oct 2019 11:14:24 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/auditd/lnx_auditd_web_rce.yml/</guid>
+      <description>&lt;p&gt;Detects possible command execution by web application/web shell&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Execution in Webserver Root Folder</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_execution_path_webserver.yml/</link>
+      <pubDate>Wed, 16 Jan 2019 23:36:31 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_execution_path_webserver.yml/</guid>
+      <description>&lt;p&gt;Detects a suspicious program execution in a web service root folder (filter out false positives)&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>IIS Native-Code Module Command Line Installation</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_iss_module_install.yml/</link>
+      <pubDate>Wed, 16 Jan 2019 23:36:31 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_iss_module_install.yml/</guid>
+      <description>&lt;p&gt;Detects suspicious IIS native-code module installations via command line&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Shells Spawned by Web Servers</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_webshell_spawn.yml/</link>
+      <pubDate>Wed, 16 Jan 2019 23:36:31 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_webshell_spawn.yml/</guid>
+      <description>&lt;p&gt;Web servers that spawn shell processes could be the result of a successfully placed web shell or an other attack&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Oracle WebLogic Exploit</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/web/web_cve_2018_2894_weblogic_exploit.yml/</link>
+      <pubDate>Sun, 22 Jul 2018 15:09:19 -0600</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/web/web_cve_2018_2894_weblogic_exploit.yml/</guid>
+      <description>&lt;p&gt;Detects access to a webshell dropped into a keystore folder on the WebLogic server&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Shellshock Expression</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/linux/builtin/lnx_shellshock.yml/</link>
+      <pubDate>Tue, 14 Mar 2017 14:53:29 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/builtin/lnx_shellshock.yml/</guid>
+      <description>&lt;p&gt;Detects shellshock expressions in log files&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Webshell Detection by Keyword</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/web/web_webshell_keyword.yml/</link>
+      <pubDate>Fri, 10 Feb 2017 19:17:02 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/web/web_webshell_keyword.yml/</guid>
+      <description>&lt;p&gt;Detects webshells that use GET requests by keyword searches in URL strings&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>DEWMODE Webshell Access</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/web/web_unc2546_dewmode_php_webshell.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/web/web_unc2546_dewmode_php_webshell.yml/</guid>
+      <description>&lt;p&gt;Detects access to DEWMODE webshell as described in FIREEYE report&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Exchange Set OabVirtualDirectory ExternalUrl Property</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/msexchange/win_set_oabvirtualdirectory_externalurl.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/msexchange/win_set_oabvirtualdirectory_externalurl.yml/</guid>
+      <description>&lt;p&gt;Rule to detect an adversary setting OabVirtualDirectory External URL property to a script in Exchange Management log&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Suspicious PowerShell Mailbox Export to Share</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_mailboxexport_share.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_mailboxexport_share.yml/</guid>
+      <description>&lt;p&gt;Detects a PowerShell New-MailboxExportRequest that exports a mailbox to a local share, as used in ProxyShell exploitations&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Webshell ReGeorg Detection Via Web Logs</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/web/win_webshell_regeorg.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/web/win_webshell_regeorg.yml/</guid>
+      <description>&lt;p&gt;Certain strings in the uri_query field when combined with null referer and null user agent can indicate activity associated with the webshell ReGeorg.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

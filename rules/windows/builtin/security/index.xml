@@ -1,7 +1,953 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>security on My New Hugo Site</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/</link><description>Recent content in security on My New Hugo Site</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 22 Dec 2021 08:50:05 +0100</lastBuildDate><atom:link href="https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/index.xml" rel="self" type="application/rss+xml"/><item><title>Suspicious Computer Account Name Change CVE-2021-42287</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_samaccountname_spoofing_cve_2021_42287.yml/</link><pubDate>Wed, 22 Dec 2021 08:50:05 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_samaccountname_spoofing_cve_2021_42287.yml/</guid><description>&lt;p>Detects the renaming of an existing computer account to a account name that doesn&amp;rsquo;t contain a $ symbol as seen in attacks against CVE-2021-42287&lt;/p></description></item><item><title>ADCS Certificate Template Configuration Vulnerability</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_adcs_certificate_template_configuration_vulnerability.yml/</link><pubDate>Thu, 18 Nov 2021 22:46:19 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_adcs_certificate_template_configuration_vulnerability.yml/</guid><description>&lt;p>Detects certificate creation with template allowing risk permission subject&lt;/p></description></item><item><title>ADCS Certificate Template Configuration Vulnerability with Risky EKU</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_adcs_certificate_template_configuration_vulnerability_eku.yml/</link><pubDate>Thu, 18 Nov 2021 22:39:08 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_adcs_certificate_template_configuration_vulnerability_eku.yml/</guid><description>&lt;p>Detects certificate creation with template allowing risk permission subject and risky EKU&lt;/p></description></item><item><title>Correct Execution of Nltest.exe</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_lolbas_execution_of_nltest.yml/</link><pubDate>Wed, 29 Sep 2021 14:33:36 -0700</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_lolbas_execution_of_nltest.yml/</guid><description>&lt;p>The attacker might use LOLBAS nltest.exe for discovery of domain controllers, domain trusts, parent domain and the current user permissions.&lt;/p></description></item><item><title>Azure AD Health Monitoring Agent Registry Keys Access</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_aadhealth_mon_agent_regkey_access.yml/</link><pubDate>Thu, 26 Aug 2021 16:10:42 -0400</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_aadhealth_mon_agent_regkey_access.yml/</guid><description>&lt;p>This detection uses Windows security events to detect suspicious access attempts to the registry key of Azure AD Health monitoring agent.
-This detection requires an access control entry (ACE) on the system access control list (SACL) of the following securable object HKLM\SOFTWARE\Microsoft\Microsoft Online\Reporting\MonitoringAgent.&lt;/p></description></item><item><title>Azure AD Health Service Agents Registry Keys Access</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_aadhealth_svc_agent_regkey_access.yml/</link><pubDate>Thu, 26 Aug 2021 16:10:42 -0400</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_aadhealth_svc_agent_regkey_access.yml/</guid><description>&lt;p>This detection uses Windows security events to detect suspicious access attempts to the registry key values and sub-keys of Azure AD Health service agents (e.g AD FS).
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>security on My New Hugo Site</title>
+    <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/</link>
+    <description>Recent content in security on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 22 Dec 2021 08:50:05 +0100</lastBuildDate><atom:link href="https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Suspicious Computer Account Name Change CVE-2021-42287</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_samaccountname_spoofing_cve_2021_42287.yml/</link>
+      <pubDate>Wed, 22 Dec 2021 08:50:05 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_samaccountname_spoofing_cve_2021_42287.yml/</guid>
+      <description>&lt;p&gt;Detects the renaming of an existing computer account to a account name that doesn&amp;rsquo;t contain a $ symbol as seen in attacks against CVE-2021-42287&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>ADCS Certificate Template Configuration Vulnerability</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_adcs_certificate_template_configuration_vulnerability.yml/</link>
+      <pubDate>Thu, 18 Nov 2021 22:46:19 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_adcs_certificate_template_configuration_vulnerability.yml/</guid>
+      <description>&lt;p&gt;Detects certificate creation with template allowing risk permission subject&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>ADCS Certificate Template Configuration Vulnerability with Risky EKU</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_adcs_certificate_template_configuration_vulnerability_eku.yml/</link>
+      <pubDate>Thu, 18 Nov 2021 22:39:08 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_adcs_certificate_template_configuration_vulnerability_eku.yml/</guid>
+      <description>&lt;p&gt;Detects certificate creation with template allowing risk permission subject and risky EKU&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Correct Execution of Nltest.exe</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_lolbas_execution_of_nltest.yml/</link>
+      <pubDate>Wed, 29 Sep 2021 14:33:36 -0700</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_lolbas_execution_of_nltest.yml/</guid>
+      <description>&lt;p&gt;The attacker might use LOLBAS nltest.exe for discovery of domain controllers, domain trusts, parent domain and the current user permissions.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Azure AD Health Monitoring Agent Registry Keys Access</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_aadhealth_mon_agent_regkey_access.yml/</link>
+      <pubDate>Thu, 26 Aug 2021 16:10:42 -0400</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_aadhealth_mon_agent_regkey_access.yml/</guid>
+      <description>&lt;p&gt;This detection uses Windows security events to detect suspicious access attempts to the registry key of Azure AD Health monitoring agent.
+This detection requires an access control entry (ACE) on the system access control list (SACL) of the following securable object HKLM\SOFTWARE\Microsoft\Microsoft Online\Reporting\MonitoringAgent.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Azure AD Health Service Agents Registry Keys Access</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_aadhealth_svc_agent_regkey_access.yml/</link>
+      <pubDate>Thu, 26 Aug 2021 16:10:42 -0400</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_aadhealth_svc_agent_regkey_access.yml/</guid>
+      <description>&lt;p&gt;This detection uses Windows security events to detect suspicious access attempts to the registry key values and sub-keys of Azure AD Health service agents (e.g AD FS).
 Information from AD Health service agents can be used to potentially abuse some of the features provided by those services in the cloud (e.g. Federation).
 This detection requires an access control entry (ACE) on the system access control list (SACL) of the following securable object: HKLM:\SOFTWARE\Microsoft\ADHealthAgent.
-Make sure you set the SACL to propagate to its sub-keys.&lt;/p></description></item><item><title>Security Event Log Cleared</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_event_log_cleared.yml/</link><pubDate>Sun, 15 Aug 2021 16:00:14 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_event_log_cleared.yml/</guid><description>&lt;p>Checks for event id 1102 which indicates the security event log was cleared.&lt;/p></description></item><item><title>Impacket PsExec Execution</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_impacket_psexec.yml/</link><pubDate>Mon, 14 Dec 2020 12:48:26 +0545</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_impacket_psexec.yml/</guid><description>&lt;p>Detects execution of Impacket&amp;rsquo;s psexec.py.&lt;/p></description></item><item><title>Denied Access To Remote Desktop</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_not_allowed_rdp_access.yml/</link><pubDate>Fri, 26 Jun 2020 22:15:53 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_not_allowed_rdp_access.yml/</guid><description>&lt;p>This event is generated when an authenticated user who is not allowed to log on remotely attempts to connect to this computer through Remote Desktop. Often, this event can be generated by attackers when searching for available windows servers in the network.&lt;/p></description></item><item><title>Enumeration via the Global Catalog</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_global_catalog_enumeration.yml/</link><pubDate>Mon, 11 May 2020 17:40:47 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_global_catalog_enumeration.yml/</guid><description>&lt;p>Detects enumeration of the global catalog (that can be performed using BloodHound or others AD reconnaissance tools). Adjust Threshold according to domain width.&lt;/p></description></item><item><title>Suspicious LDAP-Attributes Used</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_ldap_dataexchange.yml/</link><pubDate>Thu, 26 Mar 2020 15:13:36 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_ldap_dataexchange.yml/</guid><description>&lt;p>Detects the usage of particular AttributeLDAPDisplayNames, which are known for data exchange via LDAP by the tool LDAPFragger and are additionally not commonly used in companies.&lt;/p></description></item><item><title>Operation Wocao Activity</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_apt_wocao.yml/</link><pubDate>Fri, 20 Dec 2019 15:00:07 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_apt_wocao.yml/</guid><description>&lt;p>Detects activity mentioned in Operation Wocao report&lt;/p></description></item><item><title>External Disk Drive Or USB Storage Device</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_external_device.yml/</link><pubDate>Wed, 20 Nov 2019 16:07:29 -0600</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_external_device.yml/</guid><description>&lt;p>Detects external diskdrives or plugged in USB devices , EventID 6416 on windows 10 or later&lt;/p></description></item><item><title>RottenPotato Like Attack Pattern</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_rottenpotato.yml/</link><pubDate>Fri, 15 Nov 2019 11:44:18 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_rottenpotato.yml/</guid><description>&lt;p>Detects logon events that have characteristics of events generated during an attack with RottenPotato and the like&lt;/p></description></item><item><title>DPAPI Domain Backup Key Extraction</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_dpapi_domain_backupkey_extraction.yml/</link><pubDate>Sun, 10 Nov 2019 18:43:41 +0300</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_dpapi_domain_backupkey_extraction.yml/</guid><description>&lt;p>Detects tools extracting LSA secret DPAPI domain backup key from Domain Controllers&lt;/p></description></item><item><title>DPAPI Domain Master Key Backup Attempt</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_dpapi_domain_masterkey_backup_attempt.yml/</link><pubDate>Sun, 10 Nov 2019 18:43:41 +0300</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_dpapi_domain_masterkey_backup_attempt.yml/</guid><description>&lt;p>Detects anyone attempting a backup for the DPAPI Master Key. This events gets generated at the source and not the Domain Controller.&lt;/p></description></item><item><title>LSASS Access from Non System Account</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_lsass_access_non_system_account.yml/</link><pubDate>Sun, 10 Nov 2019 18:43:41 +0300</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_lsass_access_non_system_account.yml/</guid><description>&lt;p>Detects potential mimikatz-like tools accessing LSASS from non system account&lt;/p></description></item><item><title>Protected Storage Service Access</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_protected_storage_service_access.yml/</link><pubDate>Sun, 10 Nov 2019 18:43:41 +0300</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_protected_storage_service_access.yml/</guid><description>&lt;p>Detects access to a protected_storage service over the network. Potential abuse of DPAPI to extract domain backup keys from Domain Controllers&lt;/p></description></item><item><title>SAM Registry Hive Handle Request</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_sam_registry_hive_handle_request.yml/</link><pubDate>Sun, 10 Nov 2019 18:43:41 +0300</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_sam_registry_hive_handle_request.yml/</guid><description>&lt;p>Detects handles requested to SAM registry hive&lt;/p></description></item><item><title>Suspicious Windows ANONYMOUS LOGON Local Account Created</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_local_anon_logon_created.yml/</link><pubDate>Thu, 31 Oct 2019 21:56:30 +1100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_local_anon_logon_created.yml/</guid><description>&lt;p>Detects the creation of suspicious accounts similar to ANONYMOUS LOGON, such as using additional spaces. Created as an covering detection for exclusion of Logon Type 3 from ANONYMOUS LOGON accounts.&lt;/p></description></item><item><title>New or Renamed User Account with '$' in Attribute 'SamAccountName'.</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_new_or_renamed_user_account_with_dollar_sign.yml/</link><pubDate>Tue, 29 Oct 2019 03:44:22 +0300</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_new_or_renamed_user_account_with_dollar_sign.yml/</guid><description>&lt;p>Detects possible bypass EDR and SIEM via abnormal user account name.&lt;/p></description></item><item><title>Possible DC Shadow</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_possible_dc_shadow.yml/</link><pubDate>Tue, 29 Oct 2019 03:44:22 +0300</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_possible_dc_shadow.yml/</guid><description>&lt;p>Detects DCShadow via create new SPN&lt;/p></description></item><item><title>Register new Logon Process by Rubeus</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_register_new_logon_process_by_rubeus.yml/</link><pubDate>Tue, 29 Oct 2019 03:44:22 +0300</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_register_new_logon_process_by_rubeus.yml/</guid><description>&lt;p>Detects potential use of Rubeus via registered new trusted logon process&lt;/p></description></item><item><title>Suspicious Outbound Kerberos Connection</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_suspicious_outbound_kerberos_connection.yml/</link><pubDate>Tue, 29 Oct 2019 03:44:22 +0300</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_suspicious_outbound_kerberos_connection.yml/</guid><description>&lt;p>Detects suspicious outbound network activity via kerberos default port indicating possible lateral movement or first stage PrivEsc via delegation.&lt;/p></description></item><item><title>User Couldn't Call a Privileged Service 'LsaRegisterLogonProcess'</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_user_couldnt_call_privileged_service_lsaregisterlogonprocess.yml/</link><pubDate>Tue, 29 Oct 2019 03:44:22 +0300</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_user_couldnt_call_privileged_service_lsaregisterlogonprocess.yml/</guid><description>&lt;p>The &amp;lsquo;LsaRegisterLogonProcess&amp;rsquo; function verifies that the application making the function call is a logon process by checking that it has the SeTcbPrivilege privilege set. Possible Rubeus tries to get a handle to LSA.&lt;/p></description></item><item><title>Windows Defender Exclusion Set</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_defender_bypass.yml/</link><pubDate>Sun, 27 Oct 2019 00:06:49 +0800</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_defender_bypass.yml/</guid><description>&lt;p>Detects scenarios where an windows defender exclusion was added in registry where an entity would want to bypass antivirus scanning from windows defender&lt;/p></description></item><item><title>Remote PowerShell Sessions Network Connections (WinRM)</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_remote_powershell_session.yml/</link><pubDate>Thu, 24 Oct 2019 15:48:38 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_remote_powershell_session.yml/</guid><description>&lt;p>Detects basic PowerShell Remoting (WinRM) by monitoring for network inbound connections to ports 5985 OR 5986&lt;/p></description></item><item><title>AD Object WriteDAC Access</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_ad_object_writedac_access.yml/</link><pubDate>Thu, 24 Oct 2019 14:34:16 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_ad_object_writedac_access.yml/</guid><description>&lt;p>Detects WRITE_DAC access to a domain object&lt;/p></description></item><item><title>SCM Database Handle Failure</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_scm_database_handle_failure.yml/</link><pubDate>Thu, 24 Oct 2019 02:40:11 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_scm_database_handle_failure.yml/</guid><description>&lt;p>Detects non-system users failing to get a handle of the SCM database.&lt;/p></description></item><item><title>SCM Database Privileged Operation</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_scm_database_privileged_operation.yml/</link><pubDate>Thu, 24 Oct 2019 02:40:11 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_scm_database_privileged_operation.yml/</guid><description>&lt;p>Detects non-system users performing privileged operation os the SCM database&lt;/p></description></item><item><title>SysKey Registry Keys Access</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_syskey_registry_access.yml/</link><pubDate>Thu, 24 Oct 2019 02:40:11 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_syskey_registry_access.yml/</guid><description>&lt;p>Detects handle requests and access operations to specific registry keys to calculate the SysKey&lt;/p></description></item><item><title>Hacktool Ruler</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_alert_ruler.yml/</link><pubDate>Fri, 26 Jul 2019 14:49:09 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_alert_ruler.yml/</guid><description>&lt;p>This events that are generated when using the hacktool Ruler by Sensepost&lt;/p></description></item><item><title>Local User Creation</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_user_creation.yml/</link><pubDate>Thu, 18 Apr 2019 19:59:43 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_user_creation.yml/</guid><description>&lt;p>Detects local user creation on windows servers, which shouldn&amp;rsquo;t happen in an Active Directory environment. Apply this Sigma Use Case on your windows server logs and not on your DC logs.&lt;/p></description></item><item><title>RDP over Reverse SSH Tunnel WFP</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_rdp_reverse_tunnel.yml/</link><pubDate>Sat, 16 Feb 2019 19:36:01 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_rdp_reverse_tunnel.yml/</guid><description>&lt;p>Detects svchost hosting RDP termsvcs communicating with the loopback address&lt;/p></description></item><item><title>RDP Login from Localhost</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_rdp_localhost_login.yml/</link><pubDate>Mon, 28 Jan 2019 22:43:22 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_rdp_localhost_login.yml/</guid><description>&lt;p>RDP login with localhost source address may be a tunnelled login&lt;/p></description></item><item><title>Successful Overpass the Hash Attempt</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_overpass_the_hash.yml/</link><pubDate>Mon, 12 Feb 2018 21:57:22 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_overpass_the_hash.yml/</guid><description>&lt;p>Detects successful logon with logon type 9 (NewCredentials) which matches the Overpass the Hash behavior of e.g Mimikatz&amp;rsquo;s sekurlsa::pth module.&lt;/p></description></item><item><title>Disabling Windows Event Auditing</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_disable_event_logging.yml/</link><pubDate>Sun, 19 Nov 2017 22:49:40 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_disable_event_logging.yml/</guid><description>&lt;p>Detects scenarios where system auditing (ie: windows event log auditing) is disabled. This may be used in a scenario where an entity would want to bypass local logging to evade detection when windows event logging is enabled and reviewed. Also, it is recommended to turn off &amp;ldquo;Local Group Policy Object Processing&amp;rdquo; via GPO, which will make sure that Active Directory GPOs take precedence over local/edited computer policies via something such as &amp;ldquo;gpedit.msc&amp;rdquo;. Please note, that disabling &amp;ldquo;Local Group Policy Object Processing&amp;rdquo; may cause an issue in scenarios of one off specific GPO modifications &amp;ndash; however it is recommended to perform these modifications in Active Directory anyways.&lt;/p></description></item><item><title>Admin User Remote Logon</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_admin_rdp_login.yml/</link><pubDate>Sun, 29 Oct 2017 14:15:33 -0400</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_admin_rdp_login.yml/</guid><description>&lt;p>Detect remote login by Administrator user (depending on internal pattern).&lt;/p></description></item><item><title>Secure Deletion with SDelete</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_sdelete.yml/</link><pubDate>Wed, 14 Jun 2017 16:55:32 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_sdelete.yml/</guid><description>&lt;p>Detects renaming of file while deletion with SDelete tool.&lt;/p></description></item><item><title>WCE wceaux.dll Access</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_mal_wceaux_dll.yml/</link><pubDate>Wed, 14 Jun 2017 15:59:45 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_mal_wceaux_dll.yml/</guid><description>&lt;p>Detects wceaux.dll access while WCE pass-the-hash remote command execution on source host&lt;/p></description></item><item><title>Interactive Logon to Server Systems</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_interactive_logons.yml/</link><pubDate>Fri, 17 Mar 2017 09:44:24 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_interactive_logons.yml/</guid><description>&lt;p>Detects interactive console logons to Server Systems&lt;/p></description></item><item><title>Access to ADMIN$ Share</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_admin_share_access.yml/</link><pubDate>Tue, 14 Mar 2017 12:51:50 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_admin_share_access.yml/</guid><description>&lt;p>Detects access to $ADMIN share&lt;/p></description></item><item><title>User Added to Local Administrators</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_user_added_to_local_administrators.yml/</link><pubDate>Tue, 14 Mar 2017 12:51:50 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_user_added_to_local_administrators.yml/</guid><description>&lt;p>This rule triggers on user accounts that are added to the local Administrators group, which could be legitimate activity or a sign of privilege escalation activity&lt;/p></description></item><item><title>Addition of SID History to Active Directory Object</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_add_sid_history.yml/</link><pubDate>Sun, 19 Feb 2017 22:43:27 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_add_sid_history.yml/</guid><description>&lt;p>An attacker can use the SID history attribute to gain additional privileges.&lt;/p></description></item><item><title>Password Change on Directory Service Restore Mode (DSRM) Account</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_dsrm_password_change.yml/</link><pubDate>Sun, 19 Feb 2017 22:43:27 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_dsrm_password_change.yml/</guid><description>&lt;p>The Directory Service Restore Mode (DSRM) account is a local administrator account on Domain Controllers. Attackers may change the password to gain persistence.&lt;/p></description></item><item><title>Kerberos Manipulation</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_kerberos_manipulation.yml/</link><pubDate>Fri, 10 Feb 2017 19:17:02 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_kerberos_manipulation.yml/</guid><description>&lt;p>This method triggers on rare Kerberos Failure Codes caused by manipulations of Kerberos messages&lt;/p></description></item><item><title>Password Dumper Activity on LSASS</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_lsass_dump.yml/</link><pubDate>Fri, 10 Feb 2017 19:17:02 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_lsass_dump.yml/</guid><description>&lt;p>Detects process handle on LSASS process with certain access mask and object type SAM_DOMAIN&lt;/p></description></item><item><title>Failed Logins with Different Accounts from Single Source System</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_failed_logons_single_source.yml/</link><pubDate>Tue, 27 Dec 2016 14:49:54 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_failed_logons_single_source.yml/</guid><description>&lt;p>Detects suspicious failed logins with different user accounts from a single source system&lt;/p></description></item><item><title>Account Tampering - Suspicious Failed Logon Reasons</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_failed_logon_reasons.yml/</link><pubDate>Sat, 24 Dec 2016 12:23:47 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_failed_logon_reasons.yml/</guid><description>&lt;p>This method uses uncommon error codes on failed logons to determine suspicious activity and tampering with accounts that have been disabled or somehow restricted.&lt;/p></description></item><item><title>Addition of Domain Trusts</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_add_domain_trust.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_add_domain_trust.yml/</guid><description>&lt;p>Addition of domains is seldom and should be verified for legitimacy.&lt;/p></description></item><item><title>Arbitrary Shell Command Execution Via Settingcontent-Ms</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_arbitrary_shell_execution_via_settingcontent.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_arbitrary_shell_execution_via_settingcontent.yml/</guid><description>&lt;p>The .SettingContent-ms file type was introduced in Windows 10 and allows a user to create &amp;ldquo;shortcuts&amp;rdquo; to various Windows 10 setting pages. These files are simply XML and contain paths to various Windows 10 settings binaries.&lt;/p></description></item><item><title>COMPlus_ETWEnabled Registry Modification</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_etw_modification.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_etw_modification.yml/</guid><description>&lt;p>Potential adversaries stopping ETW providers recording loaded .NET assemblies.&lt;/p></description></item><item><title>CVE-2021-1675 Print Spooler Exploitation IPC Access</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_exploit_cve_2021_1675_printspooler_security.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_exploit_cve_2021_1675_printspooler_security.yml/</guid><description>&lt;p>Detects remote printer driver load from Detailed File Share in Security logs that are a sign of successful exploitation attempts against print spooler vulnerability CVE-2021-1675 and CVE-2021-34527&lt;/p></description></item><item><title>DCERPC SMB Spoolss Named Pipe</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_dce_rpc_smb_spoolss_named_pipe.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_dce_rpc_smb_spoolss_named_pipe.yml/</guid><description>&lt;p>Detects the use of the spoolss named pipe over SMB. This can be used to trigger the authentication via NTLM of any machine that has the spoolservice enabled.&lt;/p></description></item><item><title>Disabled Users Failing To Authenticate From Source Using Kerberos</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_failed_logons_single_source_kerberos2.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_failed_logons_single_source_kerberos2.yml/</guid><description>&lt;p>Detects failed logins with multiple disabled domain accounts from a single source system using the Kerberos protocol.&lt;/p></description></item><item><title>Enabled User Right in AD to Control User Objects</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_alert_active_directory_user_control.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_alert_active_directory_user_control.yml/</guid><description>&lt;p>Detects scenario where if a user is assigned the SeEnableDelegationPrivilege right in Active Directory it would allow control of other AD user objects.&lt;/p></description></item><item><title>Failed Code Integrity Checks</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_codeintegrity_check_failure.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_codeintegrity_check_failure.yml/</guid><description>&lt;p>Code integrity failures may indicate tampered executables.&lt;/p></description></item><item><title>First Time Seen Remote Named Pipe</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_lm_namedpipe.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_lm_namedpipe.yml/</guid><description>&lt;p>This detection excludes known namped pipes accessible remotely and notify on newly observed ones, may help to detect lateral movement and remote exec using named pipes&lt;/p></description></item><item><title>Generic Password Dumper Activity on LSASS</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_lsass_dump_generic.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_lsass_dump_generic.yml/</guid><description>&lt;p>Detects process handle on LSASS process with certain access mask&lt;/p></description></item><item><title>Hidden Local User Creation</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_hidden_user_creation.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_hidden_user_creation.yml/</guid><description>&lt;p>Detects the creation of a local hidden user account which should not happen for event ID 4720.&lt;/p></description></item><item><title>HybridConnectionManager Service Installation</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_hybridconnectionmgr_svc_installation.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_hybridconnectionmgr_svc_installation.yml/</guid><description>&lt;p>Rule to detect the Hybrid Connection Manager service installation.&lt;/p></description></item><item><title>Invalid Users Failing To Authenticate From Single Source Using NTLM</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_failed_logons_single_source_ntlm2.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_failed_logons_single_source_ntlm2.yml/</guid><description>&lt;p>Detects failed logins with multiple invalid domain accounts from a single source system using the NTLM protocol.&lt;/p></description></item><item><title>Invalid Users Failing To Authenticate From Source Using Kerberos</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_failed_logons_single_source_kerberos3.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_failed_logons_single_source_kerberos3.yml/</guid><description>&lt;p>Detects failed logins with multiple invalid domain accounts from a single source system using the Kerberos protocol.&lt;/p></description></item><item><title>ISO Image Mount</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_iso_mount.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_iso_mount.yml/</guid><description>&lt;p>Detects the mount of ISO images on an endpoint&lt;/p></description></item><item><title>Lateral Movement Indicator ConDrv</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_lateral_movement_condrv.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_lateral_movement_condrv.yml/</guid><description>&lt;p>This event was observed on the target host during lateral movement. The process name within the event contains the process spawned post compromise. Account Name within the event contains the compromised user account name. This event should to be correlated with 4624 and 4688 for further intrusion context.&lt;/p></description></item><item><title>Login with WMI</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_wmi_login.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_wmi_login.yml/</guid><description>&lt;p>Detection of logins performed with WMI&lt;/p></description></item><item><title>Metasploit SMB Authentication</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_metasploit_authentication.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_metasploit_authentication.yml/</guid><description>&lt;p>Alerts on Metasploit host&amp;rsquo;s authentications on the domain.&lt;/p></description></item><item><title>Mimikatz DC Sync</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_dcsync.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_dcsync.yml/</guid><description>&lt;p>Detects Mimikatz DC sync security events&lt;/p></description></item><item><title>Multiple Users Attempting To Authenticate Using Explicit Credentials</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_failed_logons_explicit_credentials.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_failed_logons_explicit_credentials.yml/</guid><description>&lt;p>Detects a source user failing to authenticate with multiple users using explicit credentials on a host.&lt;/p></description></item><item><title>Multiple Users Failing to Authenticate from Single Process</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_failed_logons_single_process.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_failed_logons_single_process.yml/</guid><description>&lt;p>Detects failed logins with multiple accounts from a single process on the system.&lt;/p></description></item><item><title>Multiple Users Remotely Failing To Authenticate From Single Source</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_failed_remote_logons_single_source.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_failed_remote_logons_single_source.yml/</guid><description>&lt;p>Detects a source system failing to authenticate against a remote host with multiple users.&lt;/p></description></item><item><title>Pass the Hash Activity</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_pass_the_hash.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_pass_the_hash.yml/</guid><description>&lt;p>Detects the attack technique pass the hash which is used to move laterally inside the network&lt;/p></description></item><item><title>Persistence and Execution at Scale via GPO Scheduled Task</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_gpo_scheduledtasks.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_gpo_scheduledtasks.yml/</guid><description>&lt;p>Detect lateral movement using GPO scheduled task, usually used to deploy ransomware at scale&lt;/p></description></item><item><title>PetitPotam Suspicious Kerberos TGT Request</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_petitpotam_susp_tgt_request.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_petitpotam_susp_tgt_request.yml/</guid><description>&lt;p>Detect suspicious Kerberos TGT requests. Once an attacer obtains a computer certificate by abusing Active Directory Certificate Services in combination with PetitPotam, the next step would be to leverage the certificate for malicious purposes. One way of doing this is to request a Kerberos Ticket Granting Ticket using a tool like Rubeus. This request will generate a 4768 event with some unusual fields depending on the environment. This analytic will require tuning, we recommend filtering Account_Name to the Domain Controller computer accounts.&lt;/p></description></item><item><title>Possible Impacket SecretDump Remote Activity</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_impacket_secretdump.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_impacket_secretdump.yml/</guid><description>&lt;p>Detect AD credential dumping using impacket secretdump HKTL&lt;/p></description></item><item><title>Possible PetitPotam Coerce Authentication Attempt</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_petitpotam_network_share.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_petitpotam_network_share.yml/</guid><description>&lt;p>Detect PetitPotam coerced authentication activity.&lt;/p></description></item><item><title>Possible Zerologon (CVE-2020-1472) Exploitation</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_privesc_cve_2020_1472.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_privesc_cve_2020_1472.yml/</guid><description>&lt;p>Detects Netlogon Elevation of Privilege Vulnerability aka Zerologon (CVE-2020-1472)&lt;/p></description></item><item><title>Powerview Add-DomainObjectAcl DCSync AD Extend Right</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_account_backdoor_dcsync_rights.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_account_backdoor_dcsync_rights.yml/</guid><description>&lt;p>backdooring domain object to grant the rights associated with DCSync to a regular user or machine account using Powerview\Add-DomainObjectAcl DCSync Extended Right cmdlet, will allow to re-obtain the pwd hashes of any user/computer&lt;/p></description></item><item><title>Processes Accessing the Microphone and Webcam</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_camera_microphone_access.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_camera_microphone_access.yml/</guid><description>&lt;p>Potential adversaries accessing the microphone and webcam in an endpoint.&lt;/p></description></item><item><title>Reconnaissance Activity</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_net_recon_activity.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_net_recon_activity.yml/</guid><description>&lt;p>Detects activity as &amp;ldquo;net user administrator /domain&amp;rdquo; and &amp;ldquo;net group domain admins /domain&amp;rdquo;&lt;/p></description></item><item><title>Remote Registry Management Using Reg Utility</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_remote_registry_management_using_reg_utility.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_remote_registry_management_using_reg_utility.yml/</guid><description>&lt;p>Remote registry management using REG utility from non-admin workstation&lt;/p></description></item><item><title>Remote Service Activity via SVCCTL Named Pipe</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_svcctl_remote_service.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_svcctl_remote_service.yml/</guid><description>&lt;p>Detects remote service activity via remote access to the svcctl named pipe&lt;/p></description></item><item><title>Remote Task Creation via ATSVC Named Pipe</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_atsvc_task.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_atsvc_task.yml/</guid><description>&lt;p>Detects remote task creation via at.exe or API interacting with ATSVC namedpipe&lt;/p></description></item><item><title>Remote WMI ActiveScriptEventConsumers</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_scrcons_remote_wmi_scripteventconsumer.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_scrcons_remote_wmi_scripteventconsumer.yml/</guid><description>&lt;p>Detect potential adversaries leveraging WMI ActiveScriptEventConsumers remotely to move laterally in a network&lt;/p></description></item><item><title>Scanner PoC for CVE-2019-0708 RDP RCE Vuln</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_rdp_bluekeep_poc_scanner.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_rdp_bluekeep_poc_scanner.yml/</guid><description>&lt;p>Detects the use of a scanner by zerosum0x0 that discovers targets vulnerable to CVE-2019-0708 RDP RCE aka BlueKeep&lt;/p></description></item><item><title>Scheduled Task Deletion</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_scheduled_task_deletion.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_scheduled_task_deletion.yml/</guid><description>&lt;p>Detects scheduled task deletion events. Scheduled tasks are likely to be deleted if not used for persistence. Malicious Software often creates tasks directly under the root node e.g. \TASKNAME&lt;/p></description></item><item><title>SMB Create Remote File Admin Share</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_smb_file_creation_admin_shares.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_smb_file_creation_admin_shares.yml/</guid><description>&lt;p>Look for non-system accounts SMB accessing a file with write (0x2) access mask via administrative share (i.e C$).&lt;/p></description></item><item><title>Suspicious Access to Sensitive File Extensions</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_raccess_sensitive_fext.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_raccess_sensitive_fext.yml/</guid><description>&lt;p>Detects known sensitive file extensions accessed on a network share&lt;/p></description></item><item><title>Suspicious Driver Loaded By User</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_user_driver_loaded.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_user_driver_loaded.yml/</guid><description>&lt;p>Detects the loading of drivers via &amp;lsquo;SeLoadDriverPrivilege&amp;rsquo; required to load or unload a device driver. With this privilege, the user can dynamically load and unload device drivers or other code in to kernel mode. This user right does not apply to Plug and Play device drivers. If you exclude privileged users/admins and processes, which are allowed to do so, you are maybe left with bad programs trying to load malicious kernel drivers. This will detect Ghost-In-The-Logs (&lt;a href="https://github.com/bats3c/Ghost-In-The-Logs">https://github.com/bats3c/Ghost-In-The-Logs&lt;/a>) and the usage of Sysinternals and various other tools. So you have to work with a whitelist to find the bad stuff.&lt;/p></description></item><item><title>Suspicious Kerberos RC4 Ticket Encryption</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_rc4_kerberos.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_rc4_kerberos.yml/</guid><description>&lt;p>Detects service ticket requests using RC4 encryption type&lt;/p></description></item><item><title>Suspicious Multiple File Rename Or Delete Occurred</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_multiple_files_renamed_or_deleted.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_multiple_files_renamed_or_deleted.yml/</guid><description>&lt;p>Detects multiple file rename or delete events occurrence within a specified period of time by a same user (these events may signalize about ransomware activity).&lt;/p></description></item><item><title>Suspicious PsExec Execution</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_psexec.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_psexec.yml/</guid><description>&lt;p>detects execution of psexec or paexec with renamed service name, this rule helps to filter out the noise if psexec is used for legit purposes or if attacker uses a different psexec client other than sysinternal one&lt;/p></description></item><item><title>Suspicious Remote Logon with Explicit Credentials</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_logon_explicit_credentials.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_logon_explicit_credentials.yml/</guid><description>&lt;p>Detects suspicious processes logging on with explicit credentials&lt;/p></description></item><item><title>Sysmon Channel Reference Deletion</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_sysmon_channel_reference_deletion.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_sysmon_channel_reference_deletion.yml/</guid><description>&lt;p>Potential threat actor tampering with Sysmon manifest and eventually disabling it&lt;/p></description></item><item><title>T1021 DCOM InternetExplorer.Application Iertutil DLL Hijack</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_dcom_iertutil_dll_hijack.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_dcom_iertutil_dll_hijack.yml/</guid><description>&lt;p>Detects a threat actor creating a file named &lt;code>iertutil.dll&lt;/code> in the &lt;code>C:\Program Files\Internet Explorer\&lt;/code> directory over the network for a DCOM InternetExplorer DLL Hijack scenario.&lt;/p></description></item><item><title>T1047 Wmiprvse Wbemcomn DLL Hijack</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_wmiprvse_wbemcomn_dll_hijack.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_wmiprvse_wbemcomn_dll_hijack.yml/</guid><description>&lt;p>Detects a threat actor creating a file named &lt;code>wbemcomn.dll&lt;/code> in the &lt;code>C:\Windows\System32\wbem\&lt;/code> directory over the network for a WMI DLL Hijack scenario.&lt;/p></description></item><item><title>Transferring Files with Credential Data via Network Shares</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_transferring_files_with_credential_data_via_network_shares.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_transferring_files_with_credential_data_via_network_shares.yml/</guid><description>&lt;p>Transferring files with well-known filenames (sensitive files with credential data) using network shares&lt;/p></description></item><item><title>Unauthorized System Time Modification</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_time_modification.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_time_modification.yml/</guid><description>&lt;p>Detect scenarios where a potentially unauthorized application or user is modifying the system time.&lt;/p></description></item><item><title>Using AppVLP To Circumvent ASR File Path Rule</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_asr_bypass_via_appvlp_re.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_asr_bypass_via_appvlp_re.yml/</guid><description>&lt;p>Application Virtualization Utility is included with Microsoft Office. We are able to abuse &amp;ldquo;AppVLP&amp;rdquo; to execute shell commands.
+Make sure you set the SACL to propagate to its sub-keys.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Security Event Log Cleared</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_event_log_cleared.yml/</link>
+      <pubDate>Sun, 15 Aug 2021 16:00:14 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_event_log_cleared.yml/</guid>
+      <description>&lt;p&gt;Checks for event id 1102 which indicates the security event log was cleared.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Impacket PsExec Execution</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_impacket_psexec.yml/</link>
+      <pubDate>Mon, 14 Dec 2020 12:48:26 +0545</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_impacket_psexec.yml/</guid>
+      <description>&lt;p&gt;Detects execution of Impacket&amp;rsquo;s psexec.py.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Denied Access To Remote Desktop</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_not_allowed_rdp_access.yml/</link>
+      <pubDate>Fri, 26 Jun 2020 22:15:53 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_not_allowed_rdp_access.yml/</guid>
+      <description>&lt;p&gt;This event is generated when an authenticated user who is not allowed to log on remotely attempts to connect to this computer through Remote Desktop. Often, this event can be generated by attackers when searching for available windows servers in the network.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Enumeration via the Global Catalog</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_global_catalog_enumeration.yml/</link>
+      <pubDate>Mon, 11 May 2020 17:40:47 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_global_catalog_enumeration.yml/</guid>
+      <description>&lt;p&gt;Detects enumeration of the global catalog (that can be performed using BloodHound or others AD reconnaissance tools). Adjust Threshold according to domain width.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Suspicious LDAP-Attributes Used</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_ldap_dataexchange.yml/</link>
+      <pubDate>Thu, 26 Mar 2020 15:13:36 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_ldap_dataexchange.yml/</guid>
+      <description>&lt;p&gt;Detects the usage of particular AttributeLDAPDisplayNames, which are known for data exchange via LDAP by the tool LDAPFragger and are additionally not commonly used in companies.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Operation Wocao Activity</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_apt_wocao.yml/</link>
+      <pubDate>Fri, 20 Dec 2019 15:00:07 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_apt_wocao.yml/</guid>
+      <description>&lt;p&gt;Detects activity mentioned in Operation Wocao report&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>External Disk Drive Or USB Storage Device</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_external_device.yml/</link>
+      <pubDate>Wed, 20 Nov 2019 16:07:29 -0600</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_external_device.yml/</guid>
+      <description>&lt;p&gt;Detects external diskdrives or plugged in USB devices , EventID 6416 on windows 10 or later&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>RottenPotato Like Attack Pattern</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_rottenpotato.yml/</link>
+      <pubDate>Fri, 15 Nov 2019 11:44:18 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_rottenpotato.yml/</guid>
+      <description>&lt;p&gt;Detects logon events that have characteristics of events generated during an attack with RottenPotato and the like&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>DPAPI Domain Backup Key Extraction</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_dpapi_domain_backupkey_extraction.yml/</link>
+      <pubDate>Sun, 10 Nov 2019 18:43:41 +0300</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_dpapi_domain_backupkey_extraction.yml/</guid>
+      <description>&lt;p&gt;Detects tools extracting LSA secret DPAPI domain backup key from Domain Controllers&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>DPAPI Domain Master Key Backup Attempt</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_dpapi_domain_masterkey_backup_attempt.yml/</link>
+      <pubDate>Sun, 10 Nov 2019 18:43:41 +0300</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_dpapi_domain_masterkey_backup_attempt.yml/</guid>
+      <description>&lt;p&gt;Detects anyone attempting a backup for the DPAPI Master Key. This events gets generated at the source and not the Domain Controller.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>LSASS Access from Non System Account</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_lsass_access_non_system_account.yml/</link>
+      <pubDate>Sun, 10 Nov 2019 18:43:41 +0300</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_lsass_access_non_system_account.yml/</guid>
+      <description>&lt;p&gt;Detects potential mimikatz-like tools accessing LSASS from non system account&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Protected Storage Service Access</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_protected_storage_service_access.yml/</link>
+      <pubDate>Sun, 10 Nov 2019 18:43:41 +0300</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_protected_storage_service_access.yml/</guid>
+      <description>&lt;p&gt;Detects access to a protected_storage service over the network. Potential abuse of DPAPI to extract domain backup keys from Domain Controllers&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>SAM Registry Hive Handle Request</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_sam_registry_hive_handle_request.yml/</link>
+      <pubDate>Sun, 10 Nov 2019 18:43:41 +0300</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_sam_registry_hive_handle_request.yml/</guid>
+      <description>&lt;p&gt;Detects handles requested to SAM registry hive&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Suspicious Windows ANONYMOUS LOGON Local Account Created</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_local_anon_logon_created.yml/</link>
+      <pubDate>Thu, 31 Oct 2019 21:56:30 +1100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_local_anon_logon_created.yml/</guid>
+      <description>&lt;p&gt;Detects the creation of suspicious accounts similar to ANONYMOUS LOGON, such as using additional spaces. Created as an covering detection for exclusion of Logon Type 3 from ANONYMOUS LOGON accounts.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>New or Renamed User Account with &#39;$&#39; in Attribute &#39;SamAccountName&#39;.</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_new_or_renamed_user_account_with_dollar_sign.yml/</link>
+      <pubDate>Tue, 29 Oct 2019 03:44:22 +0300</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_new_or_renamed_user_account_with_dollar_sign.yml/</guid>
+      <description>&lt;p&gt;Detects possible bypass EDR and SIEM via abnormal user account name.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Possible DC Shadow</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_possible_dc_shadow.yml/</link>
+      <pubDate>Tue, 29 Oct 2019 03:44:22 +0300</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_possible_dc_shadow.yml/</guid>
+      <description>&lt;p&gt;Detects DCShadow via create new SPN&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Register new Logon Process by Rubeus</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_register_new_logon_process_by_rubeus.yml/</link>
+      <pubDate>Tue, 29 Oct 2019 03:44:22 +0300</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_register_new_logon_process_by_rubeus.yml/</guid>
+      <description>&lt;p&gt;Detects potential use of Rubeus via registered new trusted logon process&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Suspicious Outbound Kerberos Connection</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_suspicious_outbound_kerberos_connection.yml/</link>
+      <pubDate>Tue, 29 Oct 2019 03:44:22 +0300</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_suspicious_outbound_kerberos_connection.yml/</guid>
+      <description>&lt;p&gt;Detects suspicious outbound network activity via kerberos default port indicating possible lateral movement or first stage PrivEsc via delegation.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>User Couldn&#39;t Call a Privileged Service &#39;LsaRegisterLogonProcess&#39;</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_user_couldnt_call_privileged_service_lsaregisterlogonprocess.yml/</link>
+      <pubDate>Tue, 29 Oct 2019 03:44:22 +0300</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_user_couldnt_call_privileged_service_lsaregisterlogonprocess.yml/</guid>
+      <description>&lt;p&gt;The &amp;lsquo;LsaRegisterLogonProcess&amp;rsquo; function verifies that the application making the function call is a logon process by checking that it has the SeTcbPrivilege privilege set. Possible Rubeus tries to get a handle to LSA.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Windows Defender Exclusion Set</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_defender_bypass.yml/</link>
+      <pubDate>Sun, 27 Oct 2019 00:06:49 +0800</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_defender_bypass.yml/</guid>
+      <description>&lt;p&gt;Detects scenarios where an windows defender exclusion was added in registry where an entity would want to bypass antivirus scanning from windows defender&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Remote PowerShell Sessions Network Connections (WinRM)</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_remote_powershell_session.yml/</link>
+      <pubDate>Thu, 24 Oct 2019 15:48:38 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_remote_powershell_session.yml/</guid>
+      <description>&lt;p&gt;Detects basic PowerShell Remoting (WinRM) by monitoring for network inbound connections to ports 5985 OR 5986&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>AD Object WriteDAC Access</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_ad_object_writedac_access.yml/</link>
+      <pubDate>Thu, 24 Oct 2019 14:34:16 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_ad_object_writedac_access.yml/</guid>
+      <description>&lt;p&gt;Detects WRITE_DAC access to a domain object&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>SCM Database Handle Failure</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_scm_database_handle_failure.yml/</link>
+      <pubDate>Thu, 24 Oct 2019 02:40:11 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_scm_database_handle_failure.yml/</guid>
+      <description>&lt;p&gt;Detects non-system users failing to get a handle of the SCM database.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>SCM Database Privileged Operation</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_scm_database_privileged_operation.yml/</link>
+      <pubDate>Thu, 24 Oct 2019 02:40:11 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_scm_database_privileged_operation.yml/</guid>
+      <description>&lt;p&gt;Detects non-system users performing privileged operation os the SCM database&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>SysKey Registry Keys Access</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_syskey_registry_access.yml/</link>
+      <pubDate>Thu, 24 Oct 2019 02:40:11 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_syskey_registry_access.yml/</guid>
+      <description>&lt;p&gt;Detects handle requests and access operations to specific registry keys to calculate the SysKey&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Hacktool Ruler</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_alert_ruler.yml/</link>
+      <pubDate>Fri, 26 Jul 2019 14:49:09 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_alert_ruler.yml/</guid>
+      <description>&lt;p&gt;This events that are generated when using the hacktool Ruler by Sensepost&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Local User Creation</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_user_creation.yml/</link>
+      <pubDate>Thu, 18 Apr 2019 19:59:43 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_user_creation.yml/</guid>
+      <description>&lt;p&gt;Detects local user creation on windows servers, which shouldn&amp;rsquo;t happen in an Active Directory environment. Apply this Sigma Use Case on your windows server logs and not on your DC logs.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>RDP over Reverse SSH Tunnel WFP</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_rdp_reverse_tunnel.yml/</link>
+      <pubDate>Sat, 16 Feb 2019 19:36:01 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_rdp_reverse_tunnel.yml/</guid>
+      <description>&lt;p&gt;Detects svchost hosting RDP termsvcs communicating with the loopback address&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>RDP Login from Localhost</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_rdp_localhost_login.yml/</link>
+      <pubDate>Mon, 28 Jan 2019 22:43:22 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_rdp_localhost_login.yml/</guid>
+      <description>&lt;p&gt;RDP login with localhost source address may be a tunnelled login&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Successful Overpass the Hash Attempt</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_overpass_the_hash.yml/</link>
+      <pubDate>Mon, 12 Feb 2018 21:57:22 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_overpass_the_hash.yml/</guid>
+      <description>&lt;p&gt;Detects successful logon with logon type 9 (NewCredentials) which matches the Overpass the Hash behavior of e.g Mimikatz&amp;rsquo;s sekurlsa::pth module.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Disabling Windows Event Auditing</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_disable_event_logging.yml/</link>
+      <pubDate>Sun, 19 Nov 2017 22:49:40 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_disable_event_logging.yml/</guid>
+      <description>&lt;p&gt;Detects scenarios where system auditing (ie: windows event log auditing) is disabled. This may be used in a scenario where an entity would want to bypass local logging to evade detection when windows event logging is enabled and reviewed. Also, it is recommended to turn off &amp;ldquo;Local Group Policy Object Processing&amp;rdquo; via GPO, which will make sure that Active Directory GPOs take precedence over local/edited computer policies via something such as &amp;ldquo;gpedit.msc&amp;rdquo;. Please note, that disabling &amp;ldquo;Local Group Policy Object Processing&amp;rdquo; may cause an issue in scenarios of one off specific GPO modifications &amp;ndash; however it is recommended to perform these modifications in Active Directory anyways.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Admin User Remote Logon</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_admin_rdp_login.yml/</link>
+      <pubDate>Sun, 29 Oct 2017 14:15:33 -0400</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_admin_rdp_login.yml/</guid>
+      <description>&lt;p&gt;Detect remote login by Administrator user (depending on internal pattern).&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Secure Deletion with SDelete</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_sdelete.yml/</link>
+      <pubDate>Wed, 14 Jun 2017 16:55:32 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_sdelete.yml/</guid>
+      <description>&lt;p&gt;Detects renaming of file while deletion with SDelete tool.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>WCE wceaux.dll Access</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_mal_wceaux_dll.yml/</link>
+      <pubDate>Wed, 14 Jun 2017 15:59:45 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_mal_wceaux_dll.yml/</guid>
+      <description>&lt;p&gt;Detects wceaux.dll access while WCE pass-the-hash remote command execution on source host&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Interactive Logon to Server Systems</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_interactive_logons.yml/</link>
+      <pubDate>Fri, 17 Mar 2017 09:44:24 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_interactive_logons.yml/</guid>
+      <description>&lt;p&gt;Detects interactive console logons to Server Systems&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Access to ADMIN$ Share</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_admin_share_access.yml/</link>
+      <pubDate>Tue, 14 Mar 2017 12:51:50 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_admin_share_access.yml/</guid>
+      <description>&lt;p&gt;Detects access to $ADMIN share&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>User Added to Local Administrators</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_user_added_to_local_administrators.yml/</link>
+      <pubDate>Tue, 14 Mar 2017 12:51:50 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_user_added_to_local_administrators.yml/</guid>
+      <description>&lt;p&gt;This rule triggers on user accounts that are added to the local Administrators group, which could be legitimate activity or a sign of privilege escalation activity&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Addition of SID History to Active Directory Object</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_add_sid_history.yml/</link>
+      <pubDate>Sun, 19 Feb 2017 22:43:27 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_add_sid_history.yml/</guid>
+      <description>&lt;p&gt;An attacker can use the SID history attribute to gain additional privileges.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Password Change on Directory Service Restore Mode (DSRM) Account</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_dsrm_password_change.yml/</link>
+      <pubDate>Sun, 19 Feb 2017 22:43:27 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_dsrm_password_change.yml/</guid>
+      <description>&lt;p&gt;The Directory Service Restore Mode (DSRM) account is a local administrator account on Domain Controllers. Attackers may change the password to gain persistence.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Kerberos Manipulation</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_kerberos_manipulation.yml/</link>
+      <pubDate>Fri, 10 Feb 2017 19:17:02 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_kerberos_manipulation.yml/</guid>
+      <description>&lt;p&gt;This method triggers on rare Kerberos Failure Codes caused by manipulations of Kerberos messages&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Password Dumper Activity on LSASS</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_lsass_dump.yml/</link>
+      <pubDate>Fri, 10 Feb 2017 19:17:02 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_lsass_dump.yml/</guid>
+      <description>&lt;p&gt;Detects process handle on LSASS process with certain access mask and object type SAM_DOMAIN&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Failed Logins with Different Accounts from Single Source System</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_failed_logons_single_source.yml/</link>
+      <pubDate>Tue, 27 Dec 2016 14:49:54 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_failed_logons_single_source.yml/</guid>
+      <description>&lt;p&gt;Detects suspicious failed logins with different user accounts from a single source system&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Account Tampering - Suspicious Failed Logon Reasons</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_failed_logon_reasons.yml/</link>
+      <pubDate>Sat, 24 Dec 2016 12:23:47 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_failed_logon_reasons.yml/</guid>
+      <description>&lt;p&gt;This method uses uncommon error codes on failed logons to determine suspicious activity and tampering with accounts that have been disabled or somehow restricted.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Addition of Domain Trusts</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_add_domain_trust.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_add_domain_trust.yml/</guid>
+      <description>&lt;p&gt;Addition of domains is seldom and should be verified for legitimacy.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Arbitrary Shell Command Execution Via Settingcontent-Ms</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_arbitrary_shell_execution_via_settingcontent.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_arbitrary_shell_execution_via_settingcontent.yml/</guid>
+      <description>&lt;p&gt;The .SettingContent-ms file type was introduced in Windows 10 and allows a user to create &amp;ldquo;shortcuts&amp;rdquo; to various Windows 10 setting pages. These files are simply XML and contain paths to various Windows 10 settings binaries.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>COMPlus_ETWEnabled Registry Modification</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_etw_modification.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_etw_modification.yml/</guid>
+      <description>&lt;p&gt;Potential adversaries stopping ETW providers recording loaded .NET assemblies.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>CVE-2021-1675 Print Spooler Exploitation IPC Access</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_exploit_cve_2021_1675_printspooler_security.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_exploit_cve_2021_1675_printspooler_security.yml/</guid>
+      <description>&lt;p&gt;Detects remote printer driver load from Detailed File Share in Security logs that are a sign of successful exploitation attempts against print spooler vulnerability CVE-2021-1675 and CVE-2021-34527&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>DCERPC SMB Spoolss Named Pipe</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_dce_rpc_smb_spoolss_named_pipe.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_dce_rpc_smb_spoolss_named_pipe.yml/</guid>
+      <description>&lt;p&gt;Detects the use of the spoolss named pipe over SMB. This can be used to trigger the authentication via NTLM of any machine that has the spoolservice enabled.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Disabled Users Failing To Authenticate From Source Using Kerberos</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_failed_logons_single_source_kerberos2.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_failed_logons_single_source_kerberos2.yml/</guid>
+      <description>&lt;p&gt;Detects failed logins with multiple disabled domain accounts from a single source system using the Kerberos protocol.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Enabled User Right in AD to Control User Objects</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_alert_active_directory_user_control.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_alert_active_directory_user_control.yml/</guid>
+      <description>&lt;p&gt;Detects scenario where if a user is assigned the SeEnableDelegationPrivilege right in Active Directory it would allow control of other AD user objects.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Failed Code Integrity Checks</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_codeintegrity_check_failure.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_codeintegrity_check_failure.yml/</guid>
+      <description>&lt;p&gt;Code integrity failures may indicate tampered executables.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>First Time Seen Remote Named Pipe</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_lm_namedpipe.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_lm_namedpipe.yml/</guid>
+      <description>&lt;p&gt;This detection excludes known namped pipes accessible remotely and notify on newly observed ones, may help to detect lateral movement and remote exec using named pipes&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Generic Password Dumper Activity on LSASS</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_lsass_dump_generic.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_lsass_dump_generic.yml/</guid>
+      <description>&lt;p&gt;Detects process handle on LSASS process with certain access mask&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Hidden Local User Creation</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_hidden_user_creation.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_hidden_user_creation.yml/</guid>
+      <description>&lt;p&gt;Detects the creation of a local hidden user account which should not happen for event ID 4720.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>HybridConnectionManager Service Installation</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_hybridconnectionmgr_svc_installation.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_hybridconnectionmgr_svc_installation.yml/</guid>
+      <description>&lt;p&gt;Rule to detect the Hybrid Connection Manager service installation.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Invalid Users Failing To Authenticate From Single Source Using NTLM</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_failed_logons_single_source_ntlm2.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_failed_logons_single_source_ntlm2.yml/</guid>
+      <description>&lt;p&gt;Detects failed logins with multiple invalid domain accounts from a single source system using the NTLM protocol.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Invalid Users Failing To Authenticate From Source Using Kerberos</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_failed_logons_single_source_kerberos3.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_failed_logons_single_source_kerberos3.yml/</guid>
+      <description>&lt;p&gt;Detects failed logins with multiple invalid domain accounts from a single source system using the Kerberos protocol.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>ISO Image Mount</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_iso_mount.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_iso_mount.yml/</guid>
+      <description>&lt;p&gt;Detects the mount of ISO images on an endpoint&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Lateral Movement Indicator ConDrv</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_lateral_movement_condrv.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_lateral_movement_condrv.yml/</guid>
+      <description>&lt;p&gt;This event was observed on the target host during lateral movement. The process name within the event contains the process spawned post compromise. Account Name within the event contains the compromised user account name. This event should to be correlated with 4624 and 4688 for further intrusion context.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Login with WMI</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_wmi_login.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_wmi_login.yml/</guid>
+      <description>&lt;p&gt;Detection of logins performed with WMI&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Metasploit SMB Authentication</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_metasploit_authentication.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_metasploit_authentication.yml/</guid>
+      <description>&lt;p&gt;Alerts on Metasploit host&amp;rsquo;s authentications on the domain.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Mimikatz DC Sync</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_dcsync.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_dcsync.yml/</guid>
+      <description>&lt;p&gt;Detects Mimikatz DC sync security events&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Multiple Users Attempting To Authenticate Using Explicit Credentials</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_failed_logons_explicit_credentials.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_failed_logons_explicit_credentials.yml/</guid>
+      <description>&lt;p&gt;Detects a source user failing to authenticate with multiple users using explicit credentials on a host.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Multiple Users Failing to Authenticate from Single Process</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_failed_logons_single_process.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_failed_logons_single_process.yml/</guid>
+      <description>&lt;p&gt;Detects failed logins with multiple accounts from a single process on the system.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Multiple Users Remotely Failing To Authenticate From Single Source</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_failed_remote_logons_single_source.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_failed_remote_logons_single_source.yml/</guid>
+      <description>&lt;p&gt;Detects a source system failing to authenticate against a remote host with multiple users.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Pass the Hash Activity</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_pass_the_hash.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_pass_the_hash.yml/</guid>
+      <description>&lt;p&gt;Detects the attack technique pass the hash which is used to move laterally inside the network&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Persistence and Execution at Scale via GPO Scheduled Task</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_gpo_scheduledtasks.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_gpo_scheduledtasks.yml/</guid>
+      <description>&lt;p&gt;Detect lateral movement using GPO scheduled task, usually used to deploy ransomware at scale&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>PetitPotam Suspicious Kerberos TGT Request</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_petitpotam_susp_tgt_request.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_petitpotam_susp_tgt_request.yml/</guid>
+      <description>&lt;p&gt;Detect suspicious Kerberos TGT requests. Once an attacer obtains a computer certificate by abusing Active Directory Certificate Services in combination with PetitPotam, the next step would be to leverage the certificate for malicious purposes. One way of doing this is to request a Kerberos Ticket Granting Ticket using a tool like Rubeus. This request will generate a 4768 event with some unusual fields depending on the environment. This analytic will require tuning, we recommend filtering Account_Name to the Domain Controller computer accounts.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Possible Impacket SecretDump Remote Activity</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_impacket_secretdump.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_impacket_secretdump.yml/</guid>
+      <description>&lt;p&gt;Detect AD credential dumping using impacket secretdump HKTL&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Possible PetitPotam Coerce Authentication Attempt</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_petitpotam_network_share.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_petitpotam_network_share.yml/</guid>
+      <description>&lt;p&gt;Detect PetitPotam coerced authentication activity.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Possible Zerologon (CVE-2020-1472) Exploitation</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_privesc_cve_2020_1472.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_privesc_cve_2020_1472.yml/</guid>
+      <description>&lt;p&gt;Detects Netlogon Elevation of Privilege Vulnerability aka Zerologon (CVE-2020-1472)&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Powerview Add-DomainObjectAcl DCSync AD Extend Right</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_account_backdoor_dcsync_rights.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_account_backdoor_dcsync_rights.yml/</guid>
+      <description>&lt;p&gt;backdooring domain object to grant the rights associated with DCSync to a regular user or machine account using Powerview\Add-DomainObjectAcl DCSync Extended Right cmdlet, will allow to re-obtain the pwd hashes of any user/computer&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Processes Accessing the Microphone and Webcam</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_camera_microphone_access.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_camera_microphone_access.yml/</guid>
+      <description>&lt;p&gt;Potential adversaries accessing the microphone and webcam in an endpoint.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Reconnaissance Activity</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_net_recon_activity.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_net_recon_activity.yml/</guid>
+      <description>&lt;p&gt;Detects activity as &amp;ldquo;net user administrator /domain&amp;rdquo; and &amp;ldquo;net group domain admins /domain&amp;rdquo;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Remote Registry Management Using Reg Utility</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_remote_registry_management_using_reg_utility.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_remote_registry_management_using_reg_utility.yml/</guid>
+      <description>&lt;p&gt;Remote registry management using REG utility from non-admin workstation&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Remote Service Activity via SVCCTL Named Pipe</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_svcctl_remote_service.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_svcctl_remote_service.yml/</guid>
+      <description>&lt;p&gt;Detects remote service activity via remote access to the svcctl named pipe&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Remote Task Creation via ATSVC Named Pipe</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_atsvc_task.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_atsvc_task.yml/</guid>
+      <description>&lt;p&gt;Detects remote task creation via at.exe or API interacting with ATSVC namedpipe&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Remote WMI ActiveScriptEventConsumers</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_scrcons_remote_wmi_scripteventconsumer.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_scrcons_remote_wmi_scripteventconsumer.yml/</guid>
+      <description>&lt;p&gt;Detect potential adversaries leveraging WMI ActiveScriptEventConsumers remotely to move laterally in a network&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Scanner PoC for CVE-2019-0708 RDP RCE Vuln</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_rdp_bluekeep_poc_scanner.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_rdp_bluekeep_poc_scanner.yml/</guid>
+      <description>&lt;p&gt;Detects the use of a scanner by zerosum0x0 that discovers targets vulnerable to  CVE-2019-0708 RDP RCE aka BlueKeep&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Scheduled Task Deletion</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_scheduled_task_deletion.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_scheduled_task_deletion.yml/</guid>
+      <description>&lt;p&gt;Detects scheduled task deletion events. Scheduled tasks are likely to be deleted if not used for persistence. Malicious Software often creates tasks directly under the root node e.g. \TASKNAME&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>SMB Create Remote File Admin Share</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_smb_file_creation_admin_shares.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_smb_file_creation_admin_shares.yml/</guid>
+      <description>&lt;p&gt;Look for non-system accounts SMB accessing a file with write (0x2) access mask via administrative share (i.e C$).&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Suspicious Access to Sensitive File Extensions</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_raccess_sensitive_fext.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_raccess_sensitive_fext.yml/</guid>
+      <description>&lt;p&gt;Detects known sensitive file extensions accessed on a network share&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Suspicious Driver Loaded By User</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_user_driver_loaded.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_user_driver_loaded.yml/</guid>
+      <description>&lt;p&gt;Detects the loading of drivers via &amp;lsquo;SeLoadDriverPrivilege&amp;rsquo; required to load or unload a device driver. With this privilege, the user can dynamically load and unload device drivers or other code in to kernel mode. This user right does not apply to Plug and Play device drivers. If you exclude privileged users/admins and processes, which are allowed to do so, you are maybe left with bad programs trying to load malicious kernel drivers. This will detect Ghost-In-The-Logs (&lt;a href=&#34;https://github.com/bats3c/Ghost-In-The-Logs&#34;&gt;https://github.com/bats3c/Ghost-In-The-Logs&lt;/a&gt;) and the usage of Sysinternals and various other tools. So you have to work with a whitelist to find the bad stuff.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Suspicious Kerberos RC4 Ticket Encryption</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_rc4_kerberos.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_rc4_kerberos.yml/</guid>
+      <description>&lt;p&gt;Detects service ticket requests using RC4 encryption type&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Suspicious Multiple File Rename Or Delete Occurred</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_multiple_files_renamed_or_deleted.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_multiple_files_renamed_or_deleted.yml/</guid>
+      <description>&lt;p&gt;Detects multiple file rename or delete events occurrence within a specified period of time by a same user (these events may signalize about ransomware activity).&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Suspicious PsExec Execution</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_psexec.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_psexec.yml/</guid>
+      <description>&lt;p&gt;detects execution of psexec or paexec with renamed service name, this rule helps to filter out the noise if psexec is used for legit purposes or if attacker uses a different psexec client other than sysinternal one&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Suspicious Remote Logon with Explicit Credentials</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_logon_explicit_credentials.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_logon_explicit_credentials.yml/</guid>
+      <description>&lt;p&gt;Detects suspicious processes logging on with explicit credentials&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Sysmon Channel Reference Deletion</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_sysmon_channel_reference_deletion.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_sysmon_channel_reference_deletion.yml/</guid>
+      <description>&lt;p&gt;Potential threat actor tampering with Sysmon manifest and eventually disabling it&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>T1021 DCOM InternetExplorer.Application Iertutil DLL Hijack</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_dcom_iertutil_dll_hijack.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_dcom_iertutil_dll_hijack.yml/</guid>
+      <description>&lt;p&gt;Detects a threat actor creating a file named &lt;code&gt;iertutil.dll&lt;/code&gt; in the &lt;code&gt;C:\Program Files\Internet Explorer\&lt;/code&gt; directory over the network for a DCOM InternetExplorer DLL Hijack scenario.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>T1047 Wmiprvse Wbemcomn DLL Hijack</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_wmiprvse_wbemcomn_dll_hijack.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_wmiprvse_wbemcomn_dll_hijack.yml/</guid>
+      <description>&lt;p&gt;Detects a threat actor creating a file named &lt;code&gt;wbemcomn.dll&lt;/code&gt; in the &lt;code&gt;C:\Windows\System32\wbem\&lt;/code&gt; directory over the network for a WMI DLL Hijack scenario.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Transferring Files with Credential Data via Network Shares</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_transferring_files_with_credential_data_via_network_shares.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_transferring_files_with_credential_data_via_network_shares.yml/</guid>
+      <description>&lt;p&gt;Transferring files with well-known filenames (sensitive files with credential data) using network shares&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Unauthorized System Time Modification</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_time_modification.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_time_modification.yml/</guid>
+      <description>&lt;p&gt;Detect scenarios where a potentially unauthorized application or user is modifying the system time.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Using AppVLP To Circumvent ASR File Path Rule</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_asr_bypass_via_appvlp_re.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_asr_bypass_via_appvlp_re.yml/</guid>
+      <description>&lt;p&gt;Application Virtualization Utility is included with Microsoft Office. We are able to abuse &amp;ldquo;AppVLP&amp;rdquo; to execute shell commands.
 Normally, this binary is used for Application Virtualization, but we can use it as an abuse binary to circumvent the ASR file path rule folder
-or to mark a file as a system file.&lt;/p></description></item><item><title>Valid Users Failing to Authenticate From Single Source Using Kerberos</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_failed_logons_single_source_kerberos.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_failed_logons_single_source_kerberos.yml/</guid><description>&lt;p>Detects multiple failed logins with multiple valid domain accounts from a single source system using the Kerberos protocol.&lt;/p></description></item><item><title>Valid Users Failing to Authenticate from Single Source Using NTLM</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_failed_logons_single_source_ntlm.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_failed_logons_single_source_ntlm.yml/</guid><description>&lt;p>Detects failed logins with multiple valid domain accounts from a single source system using the NTLM protocol.&lt;/p></description></item><item><title>VSSAudit Security Event Source Registration</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_vssaudit_secevent_source_registration.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_vssaudit_secevent_source_registration.yml/</guid><description>&lt;p>Detects the registration of the security event source VSSAudit. It would usually trigger when volume shadow copy operations happen.&lt;/p></description></item><item><title>Weak Encryption Enabled and Kerberoast</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_alert_enable_weak_encryption.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_alert_enable_weak_encryption.yml/</guid><description>&lt;p>Detects scenario where weak encryption is enabled for a user profile which could be used for hash/password cracking.&lt;/p></description></item><item><title>Windows Network Access Suspicious desktop.ini Action</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_net_share_obj_susp_desktop_ini.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_net_share_obj_susp_desktop_ini.yml/</guid><description>&lt;p>Detects unusual processes accessing desktop.ini remotely over network share, which can be leveraged to alter how Explorer displays a folder&amp;rsquo;s content (i.e. renaming files) without changing them on disk.&lt;/p></description></item></channel></rss>
+or to mark a file as a system file.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Valid Users Failing to Authenticate From Single Source Using Kerberos</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_failed_logons_single_source_kerberos.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_failed_logons_single_source_kerberos.yml/</guid>
+      <description>&lt;p&gt;Detects multiple failed logins with multiple valid domain accounts from a single source system using the Kerberos protocol.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Valid Users Failing to Authenticate from Single Source Using NTLM</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_failed_logons_single_source_ntlm.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_failed_logons_single_source_ntlm.yml/</guid>
+      <description>&lt;p&gt;Detects failed logins with multiple valid domain accounts from a single source system using the NTLM protocol.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>VSSAudit Security Event Source Registration</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_vssaudit_secevent_source_registration.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_vssaudit_secevent_source_registration.yml/</guid>
+      <description>&lt;p&gt;Detects the registration of the security event source VSSAudit. It would usually trigger when volume shadow copy operations happen.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Weak Encryption Enabled and Kerberoast</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_alert_enable_weak_encryption.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_alert_enable_weak_encryption.yml/</guid>
+      <description>&lt;p&gt;Detects scenario where weak encryption is enabled for a user profile which could be used for hash/password cracking.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Windows Network Access Suspicious desktop.ini Action</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_net_share_obj_susp_desktop_ini.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_net_share_obj_susp_desktop_ini.yml/</guid>
+      <description>&lt;p&gt;Detects unusual processes accessing desktop.ini remotely over network share, which can be leveraged to alter how Explorer displays a folder&amp;rsquo;s content (i.e. renaming files) without changing them on disk.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,2 +1,1407 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>attack.privilege_escalation on My New Hugo Site</title><link>https://bradleyjkemp.dev/sigmadoc/tags/attack.privilege_escalation/</link><description>Recent content in attack.privilege_escalation on My New Hugo Site</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 13 Feb 2022 11:04:00 +0100</lastBuildDate><atom:link href="https://bradleyjkemp.dev/sigmadoc/tags/attack.privilege_escalation/index.xml" rel="self" type="application/rss+xml"/><item><title>Rundll32 Registered COM Objects</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_rundll32_registered_com_objects.yml/</link><pubDate>Sun, 13 Feb 2022 11:04:00 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_rundll32_registered_com_objects.yml/</guid><description>&lt;p>load malicious registered COM objects&lt;/p></description></item><item><title>PwnKit Local Privilege Escalation</title><link>https://bradleyjkemp.dev/sigmadoc/rules/linux/builtin/lnx_pwnkit_local_privilege_escalation.yml/</link><pubDate>Sat, 29 Jan 2022 10:07:54 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/builtin/lnx_pwnkit_local_privilege_escalation.yml/</guid><description>&lt;p>Detects potential PwnKit exploitation CVE-2021-4034 in auth logs&lt;/p></description></item><item><title>Run Whoami as Privileged User</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_whoami_as_priv_user.yml/</link><pubDate>Fri, 28 Jan 2022 11:30:30 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_whoami_as_priv_user.yml/</guid><description>&lt;p>Detects a whoami.exe executed by privileged accounts that are often misused by threat actors&lt;/p></description></item><item><title>CVE-2021-4034 Exploitation Attempt</title><link>https://bradleyjkemp.dev/sigmadoc/rules/linux/auditd/lnx_auditd_cve_2021_4034.yml/</link><pubDate>Thu, 27 Jan 2022 12:36:19 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/auditd/lnx_auditd_cve_2021_4034.yml/</guid><description>&lt;p>Detects exploitation attempt of vulnerability described in CVE-2021-4034.&lt;/p></description></item><item><title>Linux Doas Conf File Creation</title><link>https://bradleyjkemp.dev/sigmadoc/rules/linux/file_create/lnx_doas_conf_creation.yml/</link><pubDate>Thu, 20 Jan 2022 09:50:41 +0700</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/file_create/lnx_doas_conf_creation.yml/</guid><description>&lt;p>Detects the creation of doas.conf file in linux host platform.&lt;/p></description></item><item><title>Linux Doas Tool Execution</title><link>https://bradleyjkemp.dev/sigmadoc/rules/linux/process_creation/proc_creation_lnx_doas_execution.yml/</link><pubDate>Thu, 20 Jan 2022 09:46:17 +0700</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/process_creation/proc_creation_lnx_doas_execution.yml/</guid><description>&lt;p>Detects the doas tool execution in linux host platform.&lt;/p></description></item><item><title>Abuse of Service Permissions to Hide Services in Tools</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_using_sc_to_hide_sevices.yml/</link><pubDate>Mon, 20 Dec 2021 23:36:23 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_using_sc_to_hide_sevices.yml/</guid><description>&lt;p>Detection of sc.exe utility adding a new service with special permission which hides that service.&lt;/p></description></item><item><title>Shells Spawn by Java</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_shell_spawn_by_java.yml/</link><pubDate>Sat, 18 Dec 2021 06:39:14 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_shell_spawn_by_java.yml/</guid><description>&lt;p>Detects shell spawn from Java host process, which could a maintenance task or some kind of exploitation (e.g. log4j exploitation)&lt;/p></description></item><item><title>Suspicious Shells Spawn by Java</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_shell_spawn_by_java.yml/</link><pubDate>Sat, 18 Dec 2021 06:39:14 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_shell_spawn_by_java.yml/</guid><description>&lt;p>Detects suspicious shell spawn from Java host process (e.g. log4j exploitation)&lt;/p></description></item><item><title>Suspicious Shells Spawn by Java Utility Keytool</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_shell_spawn_by_java_keytool.yml/</link><pubDate>Sat, 18 Dec 2021 06:39:14 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_shell_spawn_by_java_keytool.yml/</guid><description>&lt;p>Detects suspicious shell spawn from Java utility keytool process (e.g. adselfservice plus exploitation)&lt;/p></description></item><item><title>Linux Capabilities Discovery</title><link>https://bradleyjkemp.dev/sigmadoc/rules/linux/auditd/lnx_auditd_capabilities_discovery.yml/</link><pubDate>Sun, 28 Nov 2021 16:48:37 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/auditd/lnx_auditd_capabilities_discovery.yml/</guid><description>&lt;p>Detects attempts to discover the files with setuid/setgid capabilitiy on them. That would allow adversary to escalate their privileges.&lt;/p></description></item><item><title>Azure Kubernetes CronJob</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_kubernetes_cronjob.yml/</link><pubDate>Mon, 22 Nov 2021 22:40:06 -0600</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_kubernetes_cronjob.yml/</guid><description>&lt;p>Identifies when a Azure Kubernetes CronJob runs in Azure Cloud. Kubernetes Job is a controller that creates one or more pods and ensures that a specified number of them successfully terminate. Kubernetes Job can be used to run containers that perform finite tasks for batch jobs. Kubernetes CronJob is used to schedule Jobs. An Adversary may use Kubernetes CronJob for scheduling execution of malicious code that would run as a container in the cluster.&lt;/p></description></item><item><title>Google Cloud Kubernetes CronJob</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/gcp/gcp_kubernetes_cronjob.yml/</link><pubDate>Mon, 22 Nov 2021 22:39:39 -0600</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/gcp/gcp_kubernetes_cronjob.yml/</guid><description>&lt;p>Identifies when a Google Cloud Kubernetes CronJob runs in Azure Cloud. Kubernetes Job is a controller that creates one or more pods and ensures that a specified number of them successfully terminate. Kubernetes Job can be used to run containers that perform finite tasks for batch jobs. Kubernetes CronJob is used to schedule Jobs. An Adversary may use Kubernetes CronJob for scheduling execution of malicious code that would run as a container in the cluster.&lt;/p></description></item><item><title>InstallerFileTakeOver LPE CVE-2021-41379 File Create Event</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_cve_2021_41379_msi_lpe.yml/</link><pubDate>Mon, 22 Nov 2021 14:15:51 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_cve_2021_41379_msi_lpe.yml/</guid><description>&lt;p>Detects signs of the exploitation of LPE CVE-2021-41379 that include an msiexec process that creates an elevation_service.exe file&lt;/p></description></item><item><title>Possible InstallerFileTakeOver LPE CVE-2021-41379</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_exploit_lpe_cve_2021_41379.yml/</link><pubDate>Mon, 22 Nov 2021 14:03:59 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_exploit_lpe_cve_2021_41379.yml/</guid><description>&lt;p>Detects signs of the exploitation of LPE CVE-2021-41379 to spawn a cmd.exe with LOCAL_SYSTEM rights&lt;/p></description></item><item><title>ADCS Certificate Template Configuration Vulnerability</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_adcs_certificate_template_configuration_vulnerability.yml/</link><pubDate>Thu, 18 Nov 2021 22:46:19 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_adcs_certificate_template_configuration_vulnerability.yml/</guid><description>&lt;p>Detects certificate creation with template allowing risk permission subject&lt;/p></description></item><item><title>ADCS Certificate Template Configuration Vulnerability with Risky EKU</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_adcs_certificate_template_configuration_vulnerability_eku.yml/</link><pubDate>Thu, 18 Nov 2021 22:39:08 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_adcs_certificate_template_configuration_vulnerability_eku.yml/</guid><description>&lt;p>Detects certificate creation with template allowing risk permission subject and risky EKU&lt;/p></description></item><item><title>AWS Attached Malicious Lambda Layer</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/aws/aws_attached_malicious_lambda_layer.yml/</link><pubDate>Thu, 23 Sep 2021 08:38:02 -0500</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/aws/aws_attached_malicious_lambda_layer.yml/</guid><description>&lt;p>Detects when an user attached a Lambda layer to an existing function to override a library that is in use by the function, where their malicious code could utilize the function&amp;rsquo;s IAM role for AWS API calls. This would give an adversary access to the privileges associated with the Lambda service role that is attached to that function.&lt;/p></description></item><item><title>AWS Suspicious SAML Activity</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/aws/aws_suspicious_saml_activity.yml/</link><pubDate>Wed, 22 Sep 2021 20:15:36 -0500</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/aws/aws_suspicious_saml_activity.yml/</guid><description>&lt;p>Identifies when suspicious SAML activity has occurred in AWS. An adversary could gain backdoor access via SAML.&lt;/p></description></item><item><title>OMIGOD HTTP No Authentication RCE</title><link>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_http_omigod_no_auth_rce.yml/</link><pubDate>Mon, 20 Sep 2021 12:26:01 -0400</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_http_omigod_no_auth_rce.yml/</guid><description>&lt;p>Detects the exploitation of OMIGOD (CVE-2021-38647) which allows remote execute (RCE) commands as root with just a single unauthenticated HTTP request. Verify, successful, exploitation by viewing the HTTP client (request) body to see what was passed to the server (using PCAP). Within the client body is where the code execution would occur. Additionally, check the endpoint logs to see if suspicious commands or activity occurred within the timeframe of this HTTP request.&lt;/p></description></item><item><title>OMIGOD SCX RunAsProvider ExecuteScript</title><link>https://bradleyjkemp.dev/sigmadoc/rules/linux/process_creation/proc_creation_lnx_omigod_scx_runasprovider_executescript.yml/</link><pubDate>Sat, 18 Sep 2021 03:50:37 -0400</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/process_creation/proc_creation_lnx_omigod_scx_runasprovider_executescript.yml/</guid><description>&lt;p>Rule to detect the use of the SCX RunAsProvider ExecuteScript to execute any UNIX/Linux script using the /bin/sh shell. Script being executed gets created as a temp file in /tmp folder with a scx* prefix. Then it is invoked from the following directory /etc/opt/microsoft/scx/conf/tmpdir/. The file in that directory has the same prefix scx*. SCXcore, started as the Microsoft Operations Manager UNIX/Linux Agent, is now used in a host of products including Microsoft Operations Manager. Microsoft Azure, and Microsoft Operations Management Suite.&lt;/p></description></item><item><title>OMIGOD SCX RunAsProvider ExecuteShellCommand</title><link>https://bradleyjkemp.dev/sigmadoc/rules/linux/auditd/lnx_auditd_omigod_scx_runasprovider_executeshellcommand.yml/</link><pubDate>Fri, 17 Sep 2021 04:23:11 -0400</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/auditd/lnx_auditd_omigod_scx_runasprovider_executeshellcommand.yml/</guid><description>&lt;p>Rule to detect the use of the SCX RunAsProvider Invoke_ExecuteShellCommand to execute any UNIX/Linux command using the /bin/sh shell. SCXcore, started as the Microsoft Operations Manager UNIX/Linux Agent, is now used in a host of products including Microsoft Operations Manager. Microsoft Azure, and Microsoft Operations Management Suite.&lt;/p></description></item><item><title>OMIGOD SCX RunAsProvider ExecuteShellCommand</title><link>https://bradleyjkemp.dev/sigmadoc/rules/linux/process_creation/proc_creation_lnx_omigod_scx_runasprovider_executeshellcommand.yml/</link><pubDate>Fri, 17 Sep 2021 04:23:11 -0400</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/process_creation/proc_creation_lnx_omigod_scx_runasprovider_executeshellcommand.yml/</guid><description>&lt;p>Rule to detect the use of the SCX RunAsProvider Invoke_ExecuteShellCommand to execute any UNIX/Linux command using the /bin/sh shell. SCXcore, started as the Microsoft Operations Manager UNIX/Linux Agent, is now used in a host of products including Microsoft Operations Manager. Microsoft Azure, and Microsoft Operations Management Suite.&lt;/p></description></item><item><title>UAC Bypass Using ComputerDefaults</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_uac_bypass_computerdefaults.yml/</link><pubDate>Tue, 31 Aug 2021 16:23:32 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_uac_bypass_computerdefaults.yml/</guid><description>&lt;p>Detects the pattern of UAC Bypass using computerdefaults.exe (UACMe 59)&lt;/p></description></item><item><title>Shell Open Registry Keys Manipulation</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_shell_open_keys_manipulation.yml/</link><pubDate>Tue, 31 Aug 2021 12:45:07 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_shell_open_keys_manipulation.yml/</guid><description>&lt;p>Detects the shell open key manipulation (exefile and ms-settings) used for persistence and the pattern of UAC Bypass using fodhelper.exe, computerdefaults.exe, slui.exe via registry keys (e.g. UACMe 33 or 62)&lt;/p></description></item><item><title>UAC Bypass Abusing Winsat Path Parsing - File</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_uac_bypass_winsat.yml/</link><pubDate>Tue, 31 Aug 2021 12:45:07 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_uac_bypass_winsat.yml/</guid><description>&lt;p>Detects the pattern of UAC Bypass using a path parsing issue in winsat.exe (UACMe 52)&lt;/p></description></item><item><title>UAC Bypass Abusing Winsat Path Parsing - Process</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_uac_bypass_winsat.yml/</link><pubDate>Tue, 31 Aug 2021 12:45:07 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_uac_bypass_winsat.yml/</guid><description>&lt;p>Detects the pattern of UAC Bypass using a path parsing issue in winsat.exe (UACMe 52)&lt;/p></description></item><item><title>UAC Bypass Abusing Winsat Path Parsing - Registry</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_uac_bypass_winsat.yml/</link><pubDate>Tue, 31 Aug 2021 12:45:07 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_uac_bypass_winsat.yml/</guid><description>&lt;p>Detects the pattern of UAC Bypass using a path parsing issue in winsat.exe (UACMe 52)&lt;/p></description></item><item><title>UAC Bypass Using .NET Code Profiler on MMC</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_uac_bypass_dotnet_profiler.yml/</link><pubDate>Tue, 31 Aug 2021 12:45:07 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_uac_bypass_dotnet_profiler.yml/</guid><description>&lt;p>Detects the pattern of UAC Bypass using .NET Code Profiler and mmc.exe DLL hijacking (UACMe 39)&lt;/p></description></item><item><title>UAC Bypass Using ChangePK and SLUI</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_uac_bypass_changepk_slui.yml/</link><pubDate>Tue, 31 Aug 2021 12:45:07 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_uac_bypass_changepk_slui.yml/</guid><description>&lt;p>Detects an UAC bypass that uses changepk.exe and slui.exe (UACMe 61)&lt;/p></description></item><item><title>UAC Bypass Using Consent and Comctl32 - File</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_uac_bypass_consent_comctl32.yml/</link><pubDate>Tue, 31 Aug 2021 12:45:07 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_uac_bypass_consent_comctl32.yml/</guid><description>&lt;p>Detects the pattern of UAC Bypass using consent.exe and comctl32.dll (UACMe 22)&lt;/p></description></item><item><title>UAC Bypass Using Consent and Comctl32 - Process</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_uac_bypass_consent_comctl32.yml/</link><pubDate>Tue, 31 Aug 2021 12:45:07 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_uac_bypass_consent_comctl32.yml/</guid><description>&lt;p>Detects the pattern of UAC Bypass using consent.exe and comctl32.dll (UACMe 22)&lt;/p></description></item><item><title>UAC Bypass Using Disk Cleanup</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_uac_bypass_cleanmgr.yml/</link><pubDate>Tue, 31 Aug 2021 12:45:07 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_uac_bypass_cleanmgr.yml/</guid><description>&lt;p>Detects the pattern of UAC Bypass using scheduled tasks and variable expansion of cleanmgr.exe (UACMe 34)&lt;/p></description></item><item><title>UAC Bypass Using DismHost</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_uac_bypass_dismhost.yml/</link><pubDate>Tue, 31 Aug 2021 12:45:07 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_uac_bypass_dismhost.yml/</guid><description>&lt;p>Detects the pattern of UAC Bypass using DismHost DLL hijacking (UACMe 63)&lt;/p></description></item><item><title>UAC Bypass Using IEInstal - File</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_uac_bypass_ieinstal.yml/</link><pubDate>Tue, 31 Aug 2021 12:45:07 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_uac_bypass_ieinstal.yml/</guid><description>&lt;p>Detects the pattern of UAC Bypass using IEInstal.exe (UACMe 64)&lt;/p></description></item><item><title>UAC Bypass Using IEInstal - Process</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_uac_bypass_ieinstal.yml/</link><pubDate>Tue, 31 Aug 2021 12:45:07 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_uac_bypass_ieinstal.yml/</guid><description>&lt;p>Detects the pattern of UAC Bypass using IEInstal.exe (UACMe 64)&lt;/p></description></item><item><title>UAC Bypass Using MSConfig Token Modification - File</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_uac_bypass_msconfig_gui.yml/</link><pubDate>Tue, 31 Aug 2021 12:45:07 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_uac_bypass_msconfig_gui.yml/</guid><description>&lt;p>Detects the pattern of UAC Bypass using a msconfig GUI hack (UACMe 55)&lt;/p></description></item><item><title>UAC Bypass Using MSConfig Token Modification - Process</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_uac_bypass_msconfig_gui.yml/</link><pubDate>Tue, 31 Aug 2021 12:45:07 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_uac_bypass_msconfig_gui.yml/</guid><description>&lt;p>Detects the pattern of UAC Bypass using a msconfig GUI hack (UACMe 55)&lt;/p></description></item><item><title>UAC Bypass Using NTFS Reparse Point - File</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_uac_bypass_ntfs_reparse_point.yml/</link><pubDate>Tue, 31 Aug 2021 12:45:07 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_uac_bypass_ntfs_reparse_point.yml/</guid><description>&lt;p>Detects the pattern of UAC Bypass using NTFS reparse point and wusa.exe DLL hijacking (UACMe 36)&lt;/p></description></item><item><title>UAC Bypass Using NTFS Reparse Point - Process</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_uac_bypass_ntfs_reparse_point.yml/</link><pubDate>Tue, 31 Aug 2021 12:45:07 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_uac_bypass_ntfs_reparse_point.yml/</guid><description>&lt;p>Detects the pattern of UAC Bypass using NTFS reparse point and wusa.exe DLL hijacking (UACMe 36)&lt;/p></description></item><item><title>UAC Bypass Using PkgMgr and DISM</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_uac_bypass_pkgmgr_dism.yml/</link><pubDate>Tue, 31 Aug 2021 12:45:07 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_uac_bypass_pkgmgr_dism.yml/</guid><description>&lt;p>Detects the pattern of UAC Bypass using pkgmgr.exe and dism.exe (UACMe 23)&lt;/p></description></item><item><title>UAC Bypass Using Windows Media Player - File</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_uac_bypass_wmp.yml/</link><pubDate>Tue, 31 Aug 2021 12:45:07 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_uac_bypass_wmp.yml/</guid><description>&lt;p>Detects the pattern of UAC Bypass using Windows Media Player osksupport.dll (UACMe 32)&lt;/p></description></item><item><title>UAC Bypass Using Windows Media Player - Process</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_uac_bypass_wmp.yml/</link><pubDate>Tue, 31 Aug 2021 12:45:07 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_uac_bypass_wmp.yml/</guid><description>&lt;p>Detects the pattern of UAC Bypass using Windows Media Player osksupport.dll (UACMe 32)&lt;/p></description></item><item><title>UAC Bypass Using Windows Media Player - Registry</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_uac_bypass_wmp.yml/</link><pubDate>Tue, 31 Aug 2021 12:45:07 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_uac_bypass_wmp.yml/</guid><description>&lt;p>Detects the pattern of UAC Bypass using Windows Media Player osksupport.dll (UACMe 32)&lt;/p></description></item><item><title>UAC Bypass Using WOW64 Logger DLL Hijack</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_access/proc_access_win_uac_bypass_wow64_logger.yml/</link><pubDate>Tue, 31 Aug 2021 12:45:07 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_access/proc_access_win_uac_bypass_wow64_logger.yml/</guid><description>&lt;p>Detects the pattern of UAC Bypass using a WoW64 logger DLL hijack (UACMe 30)&lt;/p></description></item><item><title>UAC Bypass WSReset</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_uac_bypass_wsreset.yml/</link><pubDate>Tue, 31 Aug 2021 12:45:07 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_uac_bypass_wsreset.yml/</guid><description>&lt;p>Detects the pattern of UAC Bypass via WSReset usable by default sysmon-config&lt;/p></description></item><item><title>Suspicious RazerInstaller Explorer Subprocess</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_razorinstaller_explorer.yml/</link><pubDate>Mon, 23 Aug 2021 18:44:15 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_razorinstaller_explorer.yml/</guid><description>&lt;p>Detects a explorer.exe sub process of the RazerInstaller software which can be invoked from the installer to select a different installation folder but can also be exploited to escalate privileges to LOCAL SYSTEM&lt;/p></description></item><item><title>EfsPotato Named Pipe</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/pipe_created/pipe_created_efspotato_namedpipe.yml/</link><pubDate>Mon, 23 Aug 2021 08:32:50 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/pipe_created/pipe_created_efspotato_namedpipe.yml/</guid><description>&lt;p>Detects the pattern of a pipe name as used by the tool EfsPotato&lt;/p></description></item><item><title>Powerup Write Hijack DLL</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_detect_powerup_dllhijacking.yml/</link><pubDate>Sat, 21 Aug 2021 17:47:56 +0530</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_detect_powerup_dllhijacking.yml/</guid><description>&lt;p>Powerup tool&amp;rsquo;s Write Hijack DLL exploits DLL hijacking for privilege escalation. In it&amp;rsquo;s default mode, it builds a self deleting .bat file which executes malicious command. The detection rule relies on creation of the malicious bat file (debug.bat by default).&lt;/p></description></item><item><title>Suspicious ScreenSave Change by Reg.exe</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_screensaver_reg.yml/</link><pubDate>Thu, 19 Aug 2021 13:55:09 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_screensaver_reg.yml/</guid><description>&lt;p>Adversaries may establish persistence by executing malicious content triggered by user inactivity.
-Screensavers are programs that execute after a configurable time of user inactivity and consist of Portable Executable (PE) files with a .scr file extension&lt;/p></description></item><item><title>Powershell Trigger Profiles by Add_Content</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_trigger_profiles.yml/</link><pubDate>Wed, 18 Aug 2021 14:29:50 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_trigger_profiles.yml/</guid><description>&lt;p>Adversaries may gain persistence and elevate privileges by executing malicious content triggered by PowerShell profiles.&lt;/p></description></item><item><title>PrintNightmare Powershell Exploitation</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_invoke_nightmare.yml/</link><pubDate>Mon, 16 Aug 2021 09:10:05 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_invoke_nightmare.yml/</guid><description>&lt;p>Detects Commandlet name for PrintNightmare exploitation.&lt;/p></description></item><item><title>SystemNightmare Exploitation Script Execution</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_exploit_systemnightmare.yml/</link><pubDate>Wed, 11 Aug 2021 10:10:30 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_exploit_systemnightmare.yml/</guid><description>&lt;p>Detects the exploitation of PrinterNightmare to get a shell as LOCAL_SYSTEM&lt;/p></description></item><item><title>AWS STS GetSessionToken Misuse</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/aws/aws_sts_getsessiontoken_misuse.yml/</link><pubDate>Sat, 24 Jul 2021 12:05:44 -0500</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/aws/aws_sts_getsessiontoken_misuse.yml/</guid><description>&lt;p>Identifies the suspicious use of GetSessionToken. Tokens could be created and used by attackers to move laterally and escalate privileges.&lt;/p></description></item><item><title>AWS STS AssumeRole Misuse</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/aws/aws_sts_assumerole_misuse.yml/</link><pubDate>Sat, 24 Jul 2021 12:03:35 -0500</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/aws/aws_sts_assumerole_misuse.yml/</guid><description>&lt;p>Identifies the suspicious use of AssumeRole. Attackers could move laterally and escalate privileges.&lt;/p></description></item><item><title>SOURGUM Actor Behaviours</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_apt_sourgrum.yml/</link><pubDate>Fri, 16 Jul 2021 14:13:48 +0700</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_apt_sourgrum.yml/</guid><description>&lt;p>Suspicious behaviours related to an actor tracked by Microsoft as SOURGUM&lt;/p></description></item><item><title>Suspicious Spool Service Child Process</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_spoolsv_child_processes.yml/</link><pubDate>Mon, 12 Jul 2021 08:48:59 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_spoolsv_child_processes.yml/</guid><description>&lt;p>Detects suspicious print spool service (spoolsv.exe) child processes.&lt;/p></description></item><item><title>Suspicious Shells Spawn by SQL Server</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_shell_spawn_from_mssql.yml/</link><pubDate>Fri, 11 Dec 2020 15:17:23 +0700</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_shell_spawn_from_mssql.yml/</guid><description>&lt;p>Detects suspicious shell spawn from MSSQL process, this might be sight of RCE or SQL Injection&lt;/p></description></item><item><title>COM Hijack via Sdclt</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_comhijack_sdclt.yml/</link><pubDate>Sun, 27 Sep 2020 21:19:04 +0530</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_comhijack_sdclt.yml/</guid><description>&lt;p>Detects changes to &amp;lsquo;HKCU\Software\Classes\Folder\shell\open\command\DelegateExecute&amp;rsquo;&lt;/p></description></item><item><title>Vulnerable Netlogon Secure Channel Connection Allowed</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_vul_cve_2020_1472.yml/</link><pubDate>Tue, 15 Sep 2020 15:13:53 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_vul_cve_2020_1472.yml/</guid><description>&lt;p>Detects that a vulnerable Netlogon secure channel connection was allowed, which could be an indicator of CVE-2020-1472.&lt;/p></description></item><item><title>Wsreset UAC Bypass</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_wsreset_uac_bypass.yml/</link><pubDate>Thu, 30 Jan 2020 18:05:47 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_wsreset_uac_bypass.yml/</guid><description>&lt;p>Detects a method that uses Wsreset.exe tool that can be used to reset the Windows Store to bypass UAC&lt;/p></description></item><item><title>AWS Root Credentials</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/aws/aws_root_account_usage.yml/</link><pubDate>Tue, 21 Jan 2020 15:07:32 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/aws/aws_root_account_usage.yml/</guid><description>&lt;p>Detects AWS root account usage&lt;/p></description></item><item><title>Audit CVE Event</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/application/win_audit_cve.yml/</link><pubDate>Wed, 15 Jan 2020 21:23:32 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/application/win_audit_cve.yml/</guid><description>&lt;p>Detects events generated by Windows to indicate the exploitation of a known vulnerability (e.g. CVE-2020-0601)&lt;/p></description></item><item><title>Exploiting CVE-2019-1388</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_exploit_cve_2019_1388.yml/</link><pubDate>Wed, 20 Nov 2019 09:12:02 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_exploit_cve_2019_1388.yml/</guid><description>&lt;p>Detects an exploitation attempt in which the UAC consent dialogue is used to invoke an Internet Explorer process running as LOCAL_SYSTEM&lt;/p></description></item><item><title>RottenPotato Like Attack Pattern</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_rottenpotato.yml/</link><pubDate>Fri, 15 Nov 2019 11:44:18 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_rottenpotato.yml/</guid><description>&lt;p>Detects logon events that have characteristics of events generated during an attack with RottenPotato and the like&lt;/p></description></item><item><title>Exploiting SetupComplete.cmd CVE-2019-1378</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_exploit_cve_2019_1378.yml/</link><pubDate>Fri, 15 Nov 2019 00:26:18 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_exploit_cve_2019_1378.yml/</guid><description>&lt;p>Detects exploitation attempt of privilege escalation vulnerability via SetupComplete.cmd and PartnerSetupComplete.cmd described in CVE-2019-1378&lt;/p></description></item><item><title>Suspicious Remote Thread Created</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/create_remote_thread/sysmon_suspicious_remote_thread.yml/</link><pubDate>Mon, 28 Oct 2019 22:12:57 -0700</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/create_remote_thread/sysmon_suspicious_remote_thread.yml/</guid><description>&lt;p>Offensive tradecraft is switching away from using APIs like &amp;ldquo;CreateRemoteThread&amp;rdquo;, however, this is still largely observed in the wild. This rule aims to detect suspicious processes (those we would not expect to behave in this way like word.exe or outlook.exe) creating remote threads on other processes. It is a generalistic rule, but it should have a low FP ratio due to the selected range of processes.&lt;/p></description></item><item><title>Register new Logon Process by Rubeus</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_register_new_logon_process_by_rubeus.yml/</link><pubDate>Tue, 29 Oct 2019 03:44:22 +0300</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_register_new_logon_process_by_rubeus.yml/</guid><description>&lt;p>Detects potential use of Rubeus via registered new trusted logon process&lt;/p></description></item><item><title>User Couldn't Call a Privileged Service 'LsaRegisterLogonProcess'</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_user_couldnt_call_privileged_service_lsaregisterlogonprocess.yml/</link><pubDate>Tue, 29 Oct 2019 03:44:22 +0300</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_user_couldnt_call_privileged_service_lsaregisterlogonprocess.yml/</guid><description>&lt;p>The &amp;lsquo;LsaRegisterLogonProcess&amp;rsquo; function verifies that the application making the function call is a logon process by checking that it has the SeTcbPrivilege privilege set. Possible Rubeus tries to get a handle to LSA.&lt;/p></description></item><item><title>Bypass UAC via CMSTP</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_uac_cmstp.yml/</link><pubDate>Mon, 28 Oct 2019 11:59:49 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_uac_cmstp.yml/</guid><description>&lt;p>Detect child processes of automatically elevated instances of Microsoft Connection Manager Profile Installer (cmstp.exe).&lt;/p></description></item><item><title>Bypass UAC via Fodhelper.exe</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_uac_fodhelper.yml/</link><pubDate>Mon, 28 Oct 2019 11:59:49 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_uac_fodhelper.yml/</guid><description>&lt;p>Identifies use of Fodhelper.exe to bypass User Account Control. Adversaries use this technique to execute privileged processes.&lt;/p></description></item><item><title>Bypass UAC via WSReset.exe</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_uac_wsreset.yml/</link><pubDate>Mon, 28 Oct 2019 11:59:49 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_uac_wsreset.yml/</guid><description>&lt;p>Identifies use of WSReset.exe to bypass User Account Control. Adversaries use this technique to execute privileged processes.&lt;/p></description></item><item><title>Interactive AT Job</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_interactive_at.yml/</link><pubDate>Mon, 28 Oct 2019 11:59:49 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_interactive_at.yml/</guid><description>&lt;p>Detect an interactive AT job, which may be used as a form of privilege escalation.&lt;/p></description></item><item><title>Possible Privilege Escalation via Service Permissions Weakness</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_possible_privilege_escalation_via_service_reg_perm.yml/</link><pubDate>Sun, 27 Oct 2019 20:54:07 +0300</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_possible_privilege_escalation_via_service_reg_perm.yml/</guid><description>&lt;p>Detect modification of services configuration (ImagePath, FailureCommand and ServiceDLL) in registry by processes with Medium integrity level&lt;/p></description></item><item><title>Possible Privilege Escalation via Weak Service Permissions</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_using_sc_to_change_sevice_image_path_by_non_admin.yml/</link><pubDate>Sun, 27 Oct 2019 20:54:07 +0300</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_using_sc_to_change_sevice_image_path_by_non_admin.yml/</guid><description>&lt;p>Detection of sc.exe utility spawning by user with Medium integrity level to change service ImagePath or FailureCommand&lt;/p></description></item><item><title>Suspicious Child Process Created as System</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_child_process_as_system_.yml/</link><pubDate>Sun, 27 Oct 2019 20:54:07 +0300</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_child_process_as_system_.yml/</guid><description>&lt;p>Detection of child processes spawned with SYSTEM privileges by parents with LOCAL SERVICE or NETWORK SERVICE accounts&lt;/p></description></item><item><title>Suspicious Netsh DLL Persistence</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_netsh_dll_persistence.yml/</link><pubDate>Fri, 25 Oct 2019 15:38:47 +0400</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_netsh_dll_persistence.yml/</guid><description>&lt;p>Detects persitence via netsh helper&lt;/p></description></item><item><title>Suspicious Service Path Modification</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_service_path_modification.yml/</link><pubDate>Fri, 25 Oct 2019 15:38:47 +0400</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_service_path_modification.yml/</guid><description>&lt;p>Detects service path modification to PowerShell or cmd.&lt;/p></description></item><item><title>Powershell Profile.ps1 Modification</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_suspicious_powershell_profile_create.yml/</link><pubDate>Fri, 25 Oct 2019 00:14:21 +0700</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_suspicious_powershell_profile_create.yml/</guid><description>&lt;p>Detects a change in profile.ps1 of the Powershell profile&lt;/p></description></item><item><title>SCM Database Privileged Operation</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_scm_database_privileged_operation.yml/</link><pubDate>Thu, 24 Oct 2019 02:40:11 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_scm_database_privileged_operation.yml/</guid><description>&lt;p>Detects non-system users performing privileged operation os the SCM database&lt;/p></description></item><item><title>Sudo Privilege Escalation CVE-2019-14287</title><link>https://bradleyjkemp.dev/sigmadoc/rules/linux/builtin/lnx_sudo_cve_2019_14287.yml/</link><pubDate>Tue, 15 Oct 2019 09:39:08 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/builtin/lnx_sudo_cve_2019_14287.yml/</guid><description>&lt;p>Detects users trying to exploit sudo vulnerability reported in CVE-2019-14287&lt;/p></description></item><item><title>Windows 10 Scheduled Task SandboxEscaper 0-day</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_win10_sched_task_0day.yml/</link><pubDate>Wed, 22 May 2019 12:28:42 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_win10_sched_task_0day.yml/</guid><description>&lt;p>Detects Task Scheduler .job import arbitrary DACL write\par&lt;/p></description></item><item><title>CMSTP UAC Bypass via COM Object Access</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_cmstp_com_object_access.yml/</link><pubDate>Wed, 16 Jan 2019 23:36:31 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_cmstp_com_object_access.yml/</guid><description>&lt;p>Detects UAC Bypass Attempt Using Microsoft Connection Manager Profile Installer Autoelevate-capable COM Objects (e.g. UACMe ID of 41, 43, 58 or 65)&lt;/p></description></item><item><title>Dridex Process Pattern</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_malware_dridex.yml/</link><pubDate>Wed, 16 Jan 2019 23:36:31 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_malware_dridex.yml/</guid><description>&lt;p>Detects typical Dridex process patterns&lt;/p></description></item><item><title>Possible Shim Database Persistence via sdbinst.exe</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_sdbinst_shim_persistence.yml/</link><pubDate>Wed, 16 Jan 2019 23:36:31 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_sdbinst_shim_persistence.yml/</guid><description>&lt;p>Detects installation of a new shim using sdbinst.exe. A shim can be used to load malicious DLLs into applications.&lt;/p></description></item><item><title>Scheduled Task Creation</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_schtask_creation.yml/</link><pubDate>Wed, 16 Jan 2019 23:36:31 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_schtask_creation.yml/</guid><description>&lt;p>Detects the creation of scheduled tasks in user session&lt;/p></description></item><item><title>WMI Persistence - Script Event Consumer</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_wmi_persistence_script_event_consumer.yml/</link><pubDate>Wed, 16 Jan 2019 23:36:31 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_wmi_persistence_script_event_consumer.yml/</guid><description>&lt;p>Detects WMI script event consumers&lt;/p></description></item><item><title>PowerShell ShellCode</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_shellcode_b64.yml/</link><pubDate>Sat, 17 Nov 2018 09:10:09 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_shellcode_b64.yml/</guid><description>&lt;p>Detects Base64 encoded Shellcode&lt;/p></description></item><item><title>Default PowerSploit and Empire Schtasks Persistence</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_powersploit_empire_schtasks.yml/</link><pubDate>Sat, 23 Jun 2018 15:45:58 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_powersploit_empire_schtasks.yml/</guid><description>&lt;p>Detects the creation of a schtask via PowerSploit or Empire Default Configuration.&lt;/p></description></item><item><title>Sticky Key Like Backdoor Usage</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_stickykey_like_backdoor.yml/</link><pubDate>Thu, 15 Mar 2018 19:53:34 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_stickykey_like_backdoor.yml/</guid><description>&lt;p>Detects the usage and installation of a backdoor that uses an option to register a malicious debugger for built-in tools that are accessible in the login screen&lt;/p></description></item><item><title>WMI Persistence</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/wmi/win_wmi_persistence.yml/</link><pubDate>Tue, 22 Aug 2017 10:02:54 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/wmi/win_wmi_persistence.yml/</guid><description>&lt;p>Detects suspicious WMI event filter and command line event consumer based on WMI and Security Logs.&lt;/p></description></item><item><title>UAC Bypass via Event Viewer</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_uac_bypass_eventvwr.yml/</link><pubDate>Sun, 19 Mar 2017 19:34:06 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_uac_bypass_eventvwr.yml/</guid><description>&lt;p>Detects UAC bypass method using Windows event viewer&lt;/p></description></item><item><title>UAC Bypass via Sdclt</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_uac_bypass_sdclt.yml/</link><pubDate>Fri, 17 Mar 2017 14:31:26 -0400</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_uac_bypass_sdclt.yml/</guid><description>&lt;p>Detects the pattern of UAC Bypass using registry key manipulation of sdclt.exe (e.g. UACMe 53)&lt;/p></description></item><item><title>User Added to Local Administrators</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_user_added_to_local_administrators.yml/</link><pubDate>Tue, 14 Mar 2017 12:51:50 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_user_added_to_local_administrators.yml/</guid><description>&lt;p>This rule triggers on user accounts that are added to the local Administrators group, which could be legitimate activity or a sign of privilege escalation activity&lt;/p></description></item><item><title>Addition of SID History to Active Directory Object</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_add_sid_history.yml/</link><pubDate>Sun, 19 Feb 2017 22:43:27 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_add_sid_history.yml/</guid><description>&lt;p>An attacker can use the SID history attribute to gain additional privileges.&lt;/p></description></item><item><title>Suspicious Driver Load from Temp</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/driver_load/driver_load_susp_temp_use.yml/</link><pubDate>Sun, 12 Feb 2017 15:50:39 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/driver_load/driver_load_susp_temp_use.yml/</guid><description>&lt;p>Detects a driver load from a temporary directory&lt;/p></description></item><item><title>Failed Logins with Different Accounts from Single Source System</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_failed_logons_single_source.yml/</link><pubDate>Tue, 27 Dec 2016 14:49:54 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_failed_logons_single_source.yml/</guid><description>&lt;p>Detects suspicious failed logins with different user accounts from a single source system&lt;/p></description></item><item><title>Account Tampering - Suspicious Failed Logon Reasons</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_failed_logon_reasons.yml/</link><pubDate>Sat, 24 Dec 2016 12:23:47 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_failed_logon_reasons.yml/</guid><description>&lt;p>This method uses uncommon error codes on failed logons to determine suspicious activity and tampering with accounts that have been disabled or somehow restricted.&lt;/p></description></item><item><title>Abused Debug Privilege by Arbitrary Parent Processes</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_abusing_debug_privilege.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_abusing_debug_privilege.yml/</guid><description>&lt;p>Detection of unusual child processes by different system processes&lt;/p></description></item><item><title>Always Install Elevated MSI Spawned Cmd And Powershell</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_always_install_elevated_msi_spawned_cmd_powershell.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_always_install_elevated_msi_spawned_cmd_powershell.yml/</guid><description>&lt;p>This rule looks for Windows Installer service (msiexec.exe) spawned command line and/or powershell&lt;/p></description></item><item><title>Antivirus PrinterNightmare CVE-2021-34527 Exploit Detection</title><link>https://bradleyjkemp.dev/sigmadoc/rules/application/antivirus/av_printernightmare_cve_2021_34527.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/application/antivirus/av_printernightmare_cve_2021_34527.yml/</guid><description>&lt;p>Detects the suspicious file that is created from PoC code against Windows Print Spooler Remote Code Execution Vulnerability CVE-2021-34527 (PrinterNightmare), CVE-2021-1675 .&lt;/p></description></item><item><title>APT PRIVATELOG Image Load Pattern</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_usp_svchost_clfsw32.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_usp_svchost_clfsw32.yml/</guid><description>&lt;p>Detects an image load pattern as seen when a tool named PRIVATELOG is used and rarely observed under legitimate circumstances&lt;/p></description></item><item><title>AWS Glue Development Endpoint Activity</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/aws/aws_passed_role_to_glue_development_endpoint.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/aws/aws_passed_role_to_glue_development_endpoint.yml/</guid><description>&lt;p>Detects possible suspicious glue development endpoint activity.&lt;/p></description></item><item><title>Buffer Overflow Attempts</title><link>https://bradleyjkemp.dev/sigmadoc/rules/linux/builtin/lnx_buffer_overflows.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/builtin/lnx_buffer_overflows.yml/</guid><description>&lt;p>Detects buffer overflow attempts in Unix system log files&lt;/p></description></item><item><title>Bypass UAC Using DelegateExecute</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_bypass_uac_using_delegateexecute.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_bypass_uac_using_delegateexecute.yml/</guid><description>&lt;p>Bypasses User Account Control using a fileless method&lt;/p></description></item><item><title>Bypass UAC Using SilentCleanup Task</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_bypass_uac_using_silentcleanup_task.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_bypass_uac_using_silentcleanup_task.yml/</guid><description>&lt;p>There is an auto-elevated task called SilentCleanup located in %windir%\system32\cleanmgr.exe This can be abused to elevate any file with Administrator privileges without prompting UAC&lt;/p></description></item><item><title>CLR DLL Loaded Via Scripting Applications</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_susp_script_dotnet_clr_dll_load.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_susp_script_dotnet_clr_dll_load.yml/</guid><description>&lt;p>Detects CLR DLL being loaded by an scripting applications&lt;/p></description></item><item><title>CobaltStrike Named Pipe</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/pipe_created/pipe_created_mal_cobaltstrike.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/pipe_created/pipe_created_mal_cobaltstrike.yml/</guid><description>&lt;p>Detects the creation of a named pipe as used by CobaltStrike&lt;/p></description></item><item><title>CobaltStrike Service Installations</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_cobaltstrike_service_installs.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_cobaltstrike_service_installs.yml/</guid><description>&lt;p>Detects known malicious service installs that appear in cases in which a Cobalt Strike beacon elevates privileges or lateral movement&lt;/p></description></item><item><title>CobaltStrike Service Installations in Registry</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_cobaltstrike_service_installs.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_cobaltstrike_service_installs.yml/</guid><description>&lt;p>Detects known malicious service installs that appear in cases in which a Cobalt Strike beacon elevates privileges or lateral movement. We can also catch this by system log 7045 (&lt;a href="https://github.com/SigmaHQ/sigma/blob/master/rules/windows/builtin/win_cobaltstrike_service_installs.yml">https://github.com/SigmaHQ/sigma/blob/master/rules/windows/builtin/win_cobaltstrike_service_installs.yml&lt;/a>) In some SIEM you can catch those events also in HKLM\System\ControlSet001\Services or HKLM\System\ControlSet002\Services, however, this rule is based on a regular sysmon&amp;rsquo;s events.&lt;/p></description></item><item><title>Code Injection by ld.so Preload</title><link>https://bradleyjkemp.dev/sigmadoc/rules/linux/builtin/lnx_ldso_preload_injection.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/builtin/lnx_ldso_preload_injection.yml/</guid><description>&lt;p>Detects the ld.so preload persistence file. See &lt;code>man ld.so&lt;/code> for more information.&lt;/p></description></item><item><title>CVE-2021-1675 Print Spooler Exploitation Filename Pattern</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_cve_2021_1675_printspooler.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_cve_2021_1675_printspooler.yml/</guid><description>&lt;p>Detects the default filename used in PoC code against print spooler vulnerability CVE-2021-1675&lt;/p></description></item><item><title>CVE-2021-3156 Exploitation Attempt</title><link>https://bradleyjkemp.dev/sigmadoc/rules/linux/auditd/lnx_auditd_cve_2021_3156_sudo_buffer_overflow.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/auditd/lnx_auditd_cve_2021_3156_sudo_buffer_overflow.yml/</guid><description>&lt;p>Detects exploitation attempt of vulnerability described in CVE-2021-3156. | Alternative approach might be to look for flooding of auditd logs due to bruteforcing | required to trigger the heap-based buffer overflow.&lt;/p></description></item><item><title>Disable UAC Using Registry</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_disable_uac_registry.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_disable_uac_registry.yml/</guid><description>&lt;p>Disable User Account Conrol (UAC) by changing its registry key HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System\EnableLUA from 1 to 0&lt;/p></description></item><item><title>Disabled Users Failing To Authenticate From Source Using Kerberos</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_failed_logons_single_source_kerberos2.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_failed_logons_single_source_kerberos2.yml/</guid><description>&lt;p>Detects failed logins with multiple disabled domain accounts from a single source system using the Kerberos protocol.&lt;/p></description></item><item><title>Empire PowerShell UAC Bypass</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_powershell_empire_uac_bypass.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_powershell_empire_uac_bypass.yml/</guid><description>&lt;p>Detects some Empire PowerShell UAC bypass methods&lt;/p></description></item><item><title>Enabling COR Profiler Environment Variables</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_enabling_cor_profiler_env_variables.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_enabling_cor_profiler_env_variables.yml/</guid><description>&lt;p>This rule detects cor_enable_profiling and cor_profiler environment variables being set and configured.&lt;/p></description></item><item><title>High Integrity Sdclt Process</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_high_integrity_sdclt.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_high_integrity_sdclt.yml/</guid><description>&lt;p>A General detection for sdclt being spawned as an elevated process. This could be an indicator of sdclt being used for bypass UAC techniques.&lt;/p></description></item><item><title>Invalid Users Failing To Authenticate From Single Source Using NTLM</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_failed_logons_single_source_ntlm2.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_failed_logons_single_source_ntlm2.yml/</guid><description>&lt;p>Detects failed logins with multiple invalid domain accounts from a single source system using the NTLM protocol.&lt;/p></description></item><item><title>Invalid Users Failing To Authenticate From Source Using Kerberos</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_failed_logons_single_source_kerberos3.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_failed_logons_single_source_kerberos3.yml/</guid><description>&lt;p>Detects failed logins with multiple invalid domain accounts from a single source system using the Kerberos protocol.&lt;/p></description></item><item><title>Load Undocumented Autoelevated COM Interface</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_access/proc_access_win_load_undocumented_autoelevated_com_interface.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_access/proc_access_win_load_undocumented_autoelevated_com_interface.yml/</guid><description>&lt;p>COM interface (EditionUpgradeManager) that is not used by standard executables.&lt;/p></description></item><item><title>Loading of Kernel Module via Insmod</title><link>https://bradleyjkemp.dev/sigmadoc/rules/linux/auditd/lnx_auditd_load_module_insmod.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/auditd/lnx_auditd_load_module_insmod.yml/</guid><description>&lt;p>Detects loading of kernel modules with insmod command. Loadable Kernel Modules (LKMs) are pieces of code that can be loaded and unloaded into the kernel upon demand. Adversaries may use LKMs to obtain persistence within the system or elevate the privileges.&lt;/p></description></item><item><title>MacOS Emond Launch Daemon</title><link>https://bradleyjkemp.dev/sigmadoc/rules/linux/macos/file_event/file_event_macos_emond_launch_daemon.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/macos/file_event/file_event_macos_emond_launch_daemon.yml/</guid><description>&lt;p>Detects additions to the Emond Launch Daemon that adversaries may use to gain persistence and elevate privileges.&lt;/p></description></item><item><title>Malicious Named Pipe</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/pipe_created/pipe_created_mal_namedpipes.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/pipe_created/pipe_created_mal_namedpipes.yml/</guid><description>&lt;p>Detects the creation of a named pipe used by known APT malware&lt;/p></description></item><item><title>Malware Shellcode in Verclsid Target Process</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_access/proc_access_win_malware_verclsid_shellcode.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_access/proc_access_win_malware_verclsid_shellcode.yml/</guid><description>&lt;p>Detects a process access to verclsid.exe that injects shellcode from a Microsoft Office application / VBA macro&lt;/p></description></item><item><title>Moriya Rootkit</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_moriya_rootkit.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_moriya_rootkit.yml/</guid><description>&lt;p>Detects the use of Moriya rootkit as described in the securelist&amp;rsquo;s Operation TunnelSnake report&lt;/p></description></item><item><title>Multiple Users Attempting To Authenticate Using Explicit Credentials</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_failed_logons_explicit_credentials.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_failed_logons_explicit_credentials.yml/</guid><description>&lt;p>Detects a source user failing to authenticate with multiple users using explicit credentials on a host.&lt;/p></description></item><item><title>Multiple Users Failing to Authenticate from Single Process</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_failed_logons_single_process.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_failed_logons_single_process.yml/</guid><description>&lt;p>Detects failed logins with multiple accounts from a single process on the system.&lt;/p></description></item><item><title>Multiple Users Remotely Failing To Authenticate From Single Source</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_failed_remote_logons_single_source.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_failed_remote_logons_single_source.yml/</guid><description>&lt;p>Detects a source system failing to authenticate against a remote host with multiple users.&lt;/p></description></item><item><title>Path To Screensaver Binary Modified</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_modify_screensaver_binary_path.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_modify_screensaver_binary_path.yml/</guid><description>&lt;p>Detects value modification of registry key containing path to binary used as screensaver.&lt;/p></description></item><item><title>Possible Coin Miner CPU Priority Param</title><link>https://bradleyjkemp.dev/sigmadoc/rules/linux/auditd/lnx_auditd_coinminer.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/auditd/lnx_auditd_coinminer.yml/</guid><description>&lt;p>Detects command line parameter very often used with coin miners&lt;/p></description></item><item><title>Possible Zerologon (CVE-2020-1472) Exploitation</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_privesc_cve_2020_1472.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_privesc_cve_2020_1472.yml/</guid><description>&lt;p>Detects Netlogon Elevation of Privilege Vulnerability aka Zerologon (CVE-2020-1472)&lt;/p></description></item><item><title>ProcessHacker Privilege Elevation</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_susp_proceshacker.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_susp_proceshacker.yml/</guid><description>&lt;p>Detects a ProcessHacker tool that elevated privileges to a very high level&lt;/p></description></item><item><title>Regedit as Trusted Installer</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_regedit_trustedinstaller.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_regedit_trustedinstaller.yml/</guid><description>&lt;p>Detects a regedit started with TrustedInstaller privileges or by ProcessHacker.exe&lt;/p></description></item><item><title>Remote WMI ActiveScriptEventConsumers</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_scrcons_remote_wmi_scripteventconsumer.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_scrcons_remote_wmi_scripteventconsumer.yml/</guid><description>&lt;p>Detect potential adversaries leveraging WMI ActiveScriptEventConsumers remotely to move laterally in a network&lt;/p></description></item><item><title>Run Whoami as SYSTEM</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_whoami_as_system.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_whoami_as_system.yml/</guid><description>&lt;p>Detects a whoami.exe executed by LOCAL SYSTEM. This may be a sign of a successful local privilege escalation.&lt;/p></description></item><item><title>Run Whoami Showing Privileges</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_whoami_priv.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_whoami_priv.yml/</guid><description>&lt;p>Detects a whoami.exe executed with the /priv command line flag instructing the tool to show all current user privieleges. This is often used after a privilege escalation attempt.&lt;/p></description></item><item><title>Scheduled Cron Task/Job</title><link>https://bradleyjkemp.dev/sigmadoc/rules/linux/macos/process_creation/proc_creation_macos_schedule_task_job_cron.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/macos/process_creation/proc_creation_macos_schedule_task_job_cron.yml/</guid><description>&lt;p>Detects abuse of the cron utility to perform task scheduling for initial or recurring execution of malicious code. Detection will focus on crontab jobs uploaded from the tmp folder.&lt;/p></description></item><item><title>Scheduled Cron Task/Job</title><link>https://bradleyjkemp.dev/sigmadoc/rules/linux/process_creation/proc_creation_lnx_schedule_task_job_cron.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/process_creation/proc_creation_lnx_schedule_task_job_cron.yml/</guid><description>&lt;p>Detects abuse of the cron utility to perform task scheduling for initial or recurring execution of malicious code. Detection will focus on crontab jobs uploaded from the tmp folder.&lt;/p></description></item><item><title>Scheduled Task Deletion</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_scheduled_task_deletion.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_scheduled_task_deletion.yml/</guid><description>&lt;p>Detects scheduled task deletion events. Scheduled tasks are likely to be deleted if not used for persistence. Malicious Software often creates tasks directly under the root node e.g. \TASKNAME&lt;/p></description></item><item><title>Sdclt Child Processes</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_sdclt_child_process.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_sdclt_child_process.yml/</guid><description>&lt;p>A General detection for sdclt spawning new processes. This could be an indicator of sdclt being used for bypass UAC techniques.&lt;/p></description></item><item><title>ServiceDll Modification</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_set_servicedll.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_set_servicedll.yml/</guid><description>&lt;p>Detects the modification of a ServiceDLL value in the service settings&lt;/p></description></item><item><title>Startup Items</title><link>https://bradleyjkemp.dev/sigmadoc/rules/linux/macos/file_event/file_event_macos_startup_items.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/macos/file_event/file_event_macos_startup_items.yml/</guid><description>&lt;p>Detects creation of startup item plist files that automatically get executed at boot initialization to establish persistence.&lt;/p></description></item><item><title>Suspicious Debugger Registration Cmdline</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_install_reg_debugger_backdoor.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_install_reg_debugger_backdoor.yml/</guid><description>&lt;p>Detects the registration of a debugger for a program that is available in the logon screen (sticky key backdoor).&lt;/p></description></item><item><title>Suspicious Printer Driver Empty Manufacturer</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_susp_printer_driver.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_susp_printer_driver.yml/</guid><description>&lt;p>Detects a suspicious printer driver installation with an empty Manufacturer value&lt;/p></description></item><item><title>Suspicious Shells Spawn by WinRM</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_shell_spawn_from_winrm.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_shell_spawn_from_winrm.yml/</guid><description>&lt;p>Detects suspicious shell spawn from WinRM host process&lt;/p></description></item><item><title>UAC Bypass Via Wsreset</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_bypass_via_wsreset.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_bypass_via_wsreset.yml/</guid><description>&lt;p>Unfixed method for UAC bypass from windows 10. WSReset.exe file associated with the Windows Store. It will run a binary file contained in a low-privilege registry.&lt;/p></description></item><item><title>UAC Bypass With Fake DLL</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_uac_bypass_via_dism.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_uac_bypass_via_dism.yml/</guid><description>&lt;p>Attempts to load dismcore.dll after dropping it&lt;/p></description></item><item><title>Using Sticky-keys To Obtain Unauthenticated, Privileged Console Access</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_sticky_keys_unauthenticated_privileged_cmd_access.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_sticky_keys_unauthenticated_privileged_cmd_access.yml/</guid><description>&lt;p>By replacing the sticky keys executable with the local admins CMD executable, an attacker is able to access a privileged windows console session without authenticating to the system. When the sticky keys are &amp;ldquo;activated&amp;rdquo; the privilleged shell is launched.&lt;/p></description></item><item><title>Valid Users Failing to Authenticate From Single Source Using Kerberos</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_failed_logons_single_source_kerberos.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_failed_logons_single_source_kerberos.yml/</guid><description>&lt;p>Detects multiple failed logins with multiple valid domain accounts from a single source system using the Kerberos protocol.&lt;/p></description></item><item><title>Valid Users Failing to Authenticate from Single Source Using NTLM</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_failed_logons_single_source_ntlm.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_failed_logons_single_source_ntlm.yml/</guid><description>&lt;p>Detects failed logins with multiple valid domain accounts from a single source system using the NTLM protocol.&lt;/p></description></item><item><title>Vulnerable Dell BIOS Update Driver Load</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/driver_load/driver_load_vuln_dell_driver.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/driver_load/driver_load_vuln_dell_driver.yml/</guid><description>&lt;p>Detects the load of the vulnerable Dell BIOS update driver as reported in CVE-2021-21551&lt;/p></description></item><item><title>Windows Spooler Service Suspicious Binary Load</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_spoolsv_dll_load.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_spoolsv_dll_load.yml/</guid><description>&lt;p>Detect DLL Load from Spooler Service backup folder&lt;/p></description></item><item><title>Windows Spooler Service Suspicious File Deletion</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_delete/file_delete_win_cve_2021_1675_printspooler_del.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_delete/file_delete_win_cve_2021_1675_printspooler_del.yml/</guid><description>&lt;p>Detect DLL deletions from Spooler Service driver folder&lt;/p></description></item><item><title>WMI Script Host Process Image Loaded</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_scrcons_imageload_wmi_scripteventconsumer.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_scrcons_imageload_wmi_scripteventconsumer.yml/</guid><description>&lt;p>Detects signs of the WMI script host process %SystemRoot%\system32\wbem\scrcons.exe functionality being used via images being loaded by a process.&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>attack.privilege_escalation on My New Hugo Site</title>
+    <link>https://bradleyjkemp.dev/sigmadoc/tags/attack.privilege_escalation/</link>
+    <description>Recent content in attack.privilege_escalation on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 13 Feb 2022 11:04:00 +0100</lastBuildDate><atom:link href="https://bradleyjkemp.dev/sigmadoc/tags/attack.privilege_escalation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Rundll32 Registered COM Objects</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_rundll32_registered_com_objects.yml/</link>
+      <pubDate>Sun, 13 Feb 2022 11:04:00 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_rundll32_registered_com_objects.yml/</guid>
+      <description>&lt;p&gt;load malicious registered COM objects&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>PwnKit Local Privilege Escalation</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/linux/builtin/lnx_pwnkit_local_privilege_escalation.yml/</link>
+      <pubDate>Sat, 29 Jan 2022 10:07:54 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/builtin/lnx_pwnkit_local_privilege_escalation.yml/</guid>
+      <description>&lt;p&gt;Detects potential PwnKit exploitation CVE-2021-4034 in auth logs&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Run Whoami as Privileged User</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_whoami_as_priv_user.yml/</link>
+      <pubDate>Fri, 28 Jan 2022 11:30:30 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_whoami_as_priv_user.yml/</guid>
+      <description>&lt;p&gt;Detects a whoami.exe executed by privileged accounts that are often misused by threat actors&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>CVE-2021-4034 Exploitation Attempt</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/linux/auditd/lnx_auditd_cve_2021_4034.yml/</link>
+      <pubDate>Thu, 27 Jan 2022 12:36:19 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/auditd/lnx_auditd_cve_2021_4034.yml/</guid>
+      <description>&lt;p&gt;Detects exploitation attempt of vulnerability described in CVE-2021-4034.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Linux Doas Conf File Creation</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/linux/file_create/lnx_doas_conf_creation.yml/</link>
+      <pubDate>Thu, 20 Jan 2022 09:50:41 +0700</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/file_create/lnx_doas_conf_creation.yml/</guid>
+      <description>&lt;p&gt;Detects the creation of doas.conf file in linux host platform.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Linux Doas Tool Execution</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/linux/process_creation/proc_creation_lnx_doas_execution.yml/</link>
+      <pubDate>Thu, 20 Jan 2022 09:46:17 +0700</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/process_creation/proc_creation_lnx_doas_execution.yml/</guid>
+      <description>&lt;p&gt;Detects the doas tool execution in linux host platform.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Abuse of Service Permissions to Hide Services in Tools</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_using_sc_to_hide_sevices.yml/</link>
+      <pubDate>Mon, 20 Dec 2021 23:36:23 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_using_sc_to_hide_sevices.yml/</guid>
+      <description>&lt;p&gt;Detection of sc.exe utility adding a new service with special permission which hides that service.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Shells Spawn by Java</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_shell_spawn_by_java.yml/</link>
+      <pubDate>Sat, 18 Dec 2021 06:39:14 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_shell_spawn_by_java.yml/</guid>
+      <description>&lt;p&gt;Detects shell spawn from Java host process, which could a maintenance task or some kind of exploitation (e.g. log4j exploitation)&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Suspicious Shells Spawn by Java</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_shell_spawn_by_java.yml/</link>
+      <pubDate>Sat, 18 Dec 2021 06:39:14 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_shell_spawn_by_java.yml/</guid>
+      <description>&lt;p&gt;Detects suspicious shell spawn from Java host process (e.g. log4j exploitation)&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Suspicious Shells Spawn by Java Utility Keytool</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_shell_spawn_by_java_keytool.yml/</link>
+      <pubDate>Sat, 18 Dec 2021 06:39:14 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_shell_spawn_by_java_keytool.yml/</guid>
+      <description>&lt;p&gt;Detects suspicious shell spawn from Java utility keytool process (e.g. adselfservice plus exploitation)&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Linux Capabilities Discovery</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/linux/auditd/lnx_auditd_capabilities_discovery.yml/</link>
+      <pubDate>Sun, 28 Nov 2021 16:48:37 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/auditd/lnx_auditd_capabilities_discovery.yml/</guid>
+      <description>&lt;p&gt;Detects attempts to discover the files with setuid/setgid capabilitiy on them. That would allow adversary to escalate their privileges.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Azure Kubernetes CronJob</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_kubernetes_cronjob.yml/</link>
+      <pubDate>Mon, 22 Nov 2021 22:40:06 -0600</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_kubernetes_cronjob.yml/</guid>
+      <description>&lt;p&gt;Identifies when a Azure Kubernetes CronJob runs in Azure Cloud. Kubernetes Job is a controller that creates one or more pods and ensures that a specified number of them successfully terminate. Kubernetes Job can be used to run containers that perform finite tasks for batch jobs. Kubernetes CronJob is used to schedule Jobs. An Adversary may use Kubernetes CronJob for scheduling execution of malicious code that would run as a container in the cluster.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Google Cloud Kubernetes CronJob</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/gcp/gcp_kubernetes_cronjob.yml/</link>
+      <pubDate>Mon, 22 Nov 2021 22:39:39 -0600</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/gcp/gcp_kubernetes_cronjob.yml/</guid>
+      <description>&lt;p&gt;Identifies when a Google Cloud Kubernetes CronJob runs in Azure Cloud. Kubernetes Job is a controller that creates one or more pods and ensures that a specified number of them successfully terminate. Kubernetes Job can be used to run containers that perform finite tasks for batch jobs. Kubernetes CronJob is used to schedule Jobs. An Adversary may use Kubernetes CronJob for scheduling execution of malicious code that would run as a container in the cluster.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>InstallerFileTakeOver LPE CVE-2021-41379 File Create Event</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_cve_2021_41379_msi_lpe.yml/</link>
+      <pubDate>Mon, 22 Nov 2021 14:15:51 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_cve_2021_41379_msi_lpe.yml/</guid>
+      <description>&lt;p&gt;Detects signs of the exploitation of LPE CVE-2021-41379 that include an msiexec process that creates an elevation_service.exe file&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Possible InstallerFileTakeOver LPE CVE-2021-41379</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_exploit_lpe_cve_2021_41379.yml/</link>
+      <pubDate>Mon, 22 Nov 2021 14:03:59 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_exploit_lpe_cve_2021_41379.yml/</guid>
+      <description>&lt;p&gt;Detects signs of the exploitation of LPE CVE-2021-41379 to spawn a cmd.exe with LOCAL_SYSTEM rights&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>ADCS Certificate Template Configuration Vulnerability</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_adcs_certificate_template_configuration_vulnerability.yml/</link>
+      <pubDate>Thu, 18 Nov 2021 22:46:19 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_adcs_certificate_template_configuration_vulnerability.yml/</guid>
+      <description>&lt;p&gt;Detects certificate creation with template allowing risk permission subject&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>ADCS Certificate Template Configuration Vulnerability with Risky EKU</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_adcs_certificate_template_configuration_vulnerability_eku.yml/</link>
+      <pubDate>Thu, 18 Nov 2021 22:39:08 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_adcs_certificate_template_configuration_vulnerability_eku.yml/</guid>
+      <description>&lt;p&gt;Detects certificate creation with template allowing risk permission subject and risky EKU&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>AWS Attached Malicious Lambda Layer</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/aws/aws_attached_malicious_lambda_layer.yml/</link>
+      <pubDate>Thu, 23 Sep 2021 08:38:02 -0500</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/aws/aws_attached_malicious_lambda_layer.yml/</guid>
+      <description>&lt;p&gt;Detects when an user attached a Lambda layer to an existing function to override a library that is in use by the function, where their malicious code could utilize the function&amp;rsquo;s IAM role for AWS API calls. This would give an adversary access to the privileges associated with the Lambda service role that is attached to that function.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>AWS Suspicious SAML Activity</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/aws/aws_suspicious_saml_activity.yml/</link>
+      <pubDate>Wed, 22 Sep 2021 20:15:36 -0500</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/aws/aws_suspicious_saml_activity.yml/</guid>
+      <description>&lt;p&gt;Identifies when suspicious SAML activity has occurred in AWS. An adversary could gain backdoor access via SAML.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>OMIGOD HTTP No Authentication RCE</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_http_omigod_no_auth_rce.yml/</link>
+      <pubDate>Mon, 20 Sep 2021 12:26:01 -0400</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_http_omigod_no_auth_rce.yml/</guid>
+      <description>&lt;p&gt;Detects the exploitation of OMIGOD (CVE-2021-38647) which allows remote execute (RCE) commands as root with just a single unauthenticated HTTP request. Verify, successful, exploitation by viewing the HTTP client (request) body to see what was passed to the server (using PCAP). Within the client body is where the code execution would occur. Additionally, check the endpoint logs to see if suspicious commands or activity occurred within the timeframe of this HTTP request.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>OMIGOD SCX RunAsProvider ExecuteScript</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/linux/process_creation/proc_creation_lnx_omigod_scx_runasprovider_executescript.yml/</link>
+      <pubDate>Sat, 18 Sep 2021 03:50:37 -0400</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/process_creation/proc_creation_lnx_omigod_scx_runasprovider_executescript.yml/</guid>
+      <description>&lt;p&gt;Rule to detect the use of the SCX RunAsProvider ExecuteScript to execute any UNIX/Linux script using the /bin/sh shell. Script being executed gets created as a temp file in /tmp folder with a scx* prefix. Then it is invoked from the following directory /etc/opt/microsoft/scx/conf/tmpdir/. The file in that directory has the same prefix scx*. SCXcore, started as the Microsoft Operations Manager UNIX/Linux Agent, is now used in a host of products including Microsoft Operations Manager. Microsoft Azure, and Microsoft Operations Management Suite.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>OMIGOD SCX RunAsProvider ExecuteShellCommand</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/linux/auditd/lnx_auditd_omigod_scx_runasprovider_executeshellcommand.yml/</link>
+      <pubDate>Fri, 17 Sep 2021 04:23:11 -0400</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/auditd/lnx_auditd_omigod_scx_runasprovider_executeshellcommand.yml/</guid>
+      <description>&lt;p&gt;Rule to detect the use of the SCX RunAsProvider Invoke_ExecuteShellCommand to execute any UNIX/Linux command using the /bin/sh shell. SCXcore, started as the Microsoft Operations Manager UNIX/Linux Agent, is now used in a host of products including Microsoft Operations Manager. Microsoft Azure, and Microsoft Operations Management Suite.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>OMIGOD SCX RunAsProvider ExecuteShellCommand</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/linux/process_creation/proc_creation_lnx_omigod_scx_runasprovider_executeshellcommand.yml/</link>
+      <pubDate>Fri, 17 Sep 2021 04:23:11 -0400</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/process_creation/proc_creation_lnx_omigod_scx_runasprovider_executeshellcommand.yml/</guid>
+      <description>&lt;p&gt;Rule to detect the use of the SCX RunAsProvider Invoke_ExecuteShellCommand to execute any UNIX/Linux command using the /bin/sh shell. SCXcore, started as the Microsoft Operations Manager UNIX/Linux Agent, is now used in a host of products including Microsoft Operations Manager. Microsoft Azure, and Microsoft Operations Management Suite.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>UAC Bypass Using ComputerDefaults</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_uac_bypass_computerdefaults.yml/</link>
+      <pubDate>Tue, 31 Aug 2021 16:23:32 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_uac_bypass_computerdefaults.yml/</guid>
+      <description>&lt;p&gt;Detects the pattern of UAC Bypass using computerdefaults.exe (UACMe 59)&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Shell Open Registry Keys Manipulation</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_shell_open_keys_manipulation.yml/</link>
+      <pubDate>Tue, 31 Aug 2021 12:45:07 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_shell_open_keys_manipulation.yml/</guid>
+      <description>&lt;p&gt;Detects the shell open key manipulation (exefile and ms-settings) used for persistence and the pattern of UAC Bypass using fodhelper.exe, computerdefaults.exe, slui.exe via registry keys (e.g. UACMe 33 or 62)&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>UAC Bypass Abusing Winsat Path Parsing - File</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_uac_bypass_winsat.yml/</link>
+      <pubDate>Tue, 31 Aug 2021 12:45:07 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_uac_bypass_winsat.yml/</guid>
+      <description>&lt;p&gt;Detects the pattern of UAC Bypass using a path parsing issue in winsat.exe (UACMe 52)&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>UAC Bypass Abusing Winsat Path Parsing - Process</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_uac_bypass_winsat.yml/</link>
+      <pubDate>Tue, 31 Aug 2021 12:45:07 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_uac_bypass_winsat.yml/</guid>
+      <description>&lt;p&gt;Detects the pattern of UAC Bypass using a path parsing issue in winsat.exe (UACMe 52)&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>UAC Bypass Abusing Winsat Path Parsing - Registry</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_uac_bypass_winsat.yml/</link>
+      <pubDate>Tue, 31 Aug 2021 12:45:07 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_uac_bypass_winsat.yml/</guid>
+      <description>&lt;p&gt;Detects the pattern of UAC Bypass using a path parsing issue in winsat.exe (UACMe 52)&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>UAC Bypass Using .NET Code Profiler on MMC</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_uac_bypass_dotnet_profiler.yml/</link>
+      <pubDate>Tue, 31 Aug 2021 12:45:07 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_uac_bypass_dotnet_profiler.yml/</guid>
+      <description>&lt;p&gt;Detects the pattern of UAC Bypass using .NET Code Profiler and mmc.exe DLL hijacking (UACMe 39)&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>UAC Bypass Using ChangePK and SLUI</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_uac_bypass_changepk_slui.yml/</link>
+      <pubDate>Tue, 31 Aug 2021 12:45:07 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_uac_bypass_changepk_slui.yml/</guid>
+      <description>&lt;p&gt;Detects an UAC bypass that uses changepk.exe and slui.exe (UACMe 61)&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>UAC Bypass Using Consent and Comctl32 - File</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_uac_bypass_consent_comctl32.yml/</link>
+      <pubDate>Tue, 31 Aug 2021 12:45:07 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_uac_bypass_consent_comctl32.yml/</guid>
+      <description>&lt;p&gt;Detects the pattern of UAC Bypass using consent.exe and comctl32.dll (UACMe 22)&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>UAC Bypass Using Consent and Comctl32 - Process</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_uac_bypass_consent_comctl32.yml/</link>
+      <pubDate>Tue, 31 Aug 2021 12:45:07 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_uac_bypass_consent_comctl32.yml/</guid>
+      <description>&lt;p&gt;Detects the pattern of UAC Bypass using consent.exe and comctl32.dll (UACMe 22)&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>UAC Bypass Using Disk Cleanup</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_uac_bypass_cleanmgr.yml/</link>
+      <pubDate>Tue, 31 Aug 2021 12:45:07 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_uac_bypass_cleanmgr.yml/</guid>
+      <description>&lt;p&gt;Detects the pattern of UAC Bypass using scheduled tasks and variable expansion of cleanmgr.exe (UACMe 34)&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>UAC Bypass Using DismHost</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_uac_bypass_dismhost.yml/</link>
+      <pubDate>Tue, 31 Aug 2021 12:45:07 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_uac_bypass_dismhost.yml/</guid>
+      <description>&lt;p&gt;Detects the pattern of UAC Bypass using DismHost DLL hijacking (UACMe 63)&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>UAC Bypass Using IEInstal - File</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_uac_bypass_ieinstal.yml/</link>
+      <pubDate>Tue, 31 Aug 2021 12:45:07 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_uac_bypass_ieinstal.yml/</guid>
+      <description>&lt;p&gt;Detects the pattern of UAC Bypass using IEInstal.exe (UACMe 64)&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>UAC Bypass Using IEInstal - Process</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_uac_bypass_ieinstal.yml/</link>
+      <pubDate>Tue, 31 Aug 2021 12:45:07 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_uac_bypass_ieinstal.yml/</guid>
+      <description>&lt;p&gt;Detects the pattern of UAC Bypass using IEInstal.exe (UACMe 64)&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>UAC Bypass Using MSConfig Token Modification - File</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_uac_bypass_msconfig_gui.yml/</link>
+      <pubDate>Tue, 31 Aug 2021 12:45:07 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_uac_bypass_msconfig_gui.yml/</guid>
+      <description>&lt;p&gt;Detects the pattern of UAC Bypass using a msconfig GUI hack (UACMe 55)&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>UAC Bypass Using MSConfig Token Modification - Process</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_uac_bypass_msconfig_gui.yml/</link>
+      <pubDate>Tue, 31 Aug 2021 12:45:07 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_uac_bypass_msconfig_gui.yml/</guid>
+      <description>&lt;p&gt;Detects the pattern of UAC Bypass using a msconfig GUI hack (UACMe 55)&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>UAC Bypass Using NTFS Reparse Point - File</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_uac_bypass_ntfs_reparse_point.yml/</link>
+      <pubDate>Tue, 31 Aug 2021 12:45:07 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_uac_bypass_ntfs_reparse_point.yml/</guid>
+      <description>&lt;p&gt;Detects the pattern of UAC Bypass using NTFS reparse point and wusa.exe DLL hijacking (UACMe 36)&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>UAC Bypass Using NTFS Reparse Point - Process</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_uac_bypass_ntfs_reparse_point.yml/</link>
+      <pubDate>Tue, 31 Aug 2021 12:45:07 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_uac_bypass_ntfs_reparse_point.yml/</guid>
+      <description>&lt;p&gt;Detects the pattern of UAC Bypass using NTFS reparse point and wusa.exe DLL hijacking (UACMe 36)&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>UAC Bypass Using PkgMgr and DISM</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_uac_bypass_pkgmgr_dism.yml/</link>
+      <pubDate>Tue, 31 Aug 2021 12:45:07 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_uac_bypass_pkgmgr_dism.yml/</guid>
+      <description>&lt;p&gt;Detects the pattern of UAC Bypass using pkgmgr.exe and dism.exe (UACMe 23)&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>UAC Bypass Using Windows Media Player - File</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_uac_bypass_wmp.yml/</link>
+      <pubDate>Tue, 31 Aug 2021 12:45:07 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_uac_bypass_wmp.yml/</guid>
+      <description>&lt;p&gt;Detects the pattern of UAC Bypass using Windows Media Player osksupport.dll (UACMe 32)&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>UAC Bypass Using Windows Media Player - Process</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_uac_bypass_wmp.yml/</link>
+      <pubDate>Tue, 31 Aug 2021 12:45:07 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_uac_bypass_wmp.yml/</guid>
+      <description>&lt;p&gt;Detects the pattern of UAC Bypass using Windows Media Player osksupport.dll (UACMe 32)&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>UAC Bypass Using Windows Media Player - Registry</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_uac_bypass_wmp.yml/</link>
+      <pubDate>Tue, 31 Aug 2021 12:45:07 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_uac_bypass_wmp.yml/</guid>
+      <description>&lt;p&gt;Detects the pattern of UAC Bypass using Windows Media Player osksupport.dll (UACMe 32)&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>UAC Bypass Using WOW64 Logger DLL Hijack</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_access/proc_access_win_uac_bypass_wow64_logger.yml/</link>
+      <pubDate>Tue, 31 Aug 2021 12:45:07 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_access/proc_access_win_uac_bypass_wow64_logger.yml/</guid>
+      <description>&lt;p&gt;Detects the pattern of UAC Bypass using a WoW64 logger DLL hijack (UACMe 30)&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>UAC Bypass WSReset</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_uac_bypass_wsreset.yml/</link>
+      <pubDate>Tue, 31 Aug 2021 12:45:07 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_uac_bypass_wsreset.yml/</guid>
+      <description>&lt;p&gt;Detects the pattern of UAC Bypass via WSReset usable by default sysmon-config&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Suspicious RazerInstaller Explorer Subprocess</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_razorinstaller_explorer.yml/</link>
+      <pubDate>Mon, 23 Aug 2021 18:44:15 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_razorinstaller_explorer.yml/</guid>
+      <description>&lt;p&gt;Detects a explorer.exe sub process of the RazerInstaller software which can be invoked from the installer to select a different installation folder but can also be exploited to escalate privileges to LOCAL SYSTEM&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>EfsPotato Named Pipe</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/pipe_created/pipe_created_efspotato_namedpipe.yml/</link>
+      <pubDate>Mon, 23 Aug 2021 08:32:50 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/pipe_created/pipe_created_efspotato_namedpipe.yml/</guid>
+      <description>&lt;p&gt;Detects the pattern of a pipe name as used by the tool EfsPotato&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Powerup Write Hijack DLL</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_detect_powerup_dllhijacking.yml/</link>
+      <pubDate>Sat, 21 Aug 2021 17:47:56 +0530</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_detect_powerup_dllhijacking.yml/</guid>
+      <description>&lt;p&gt;Powerup tool&amp;rsquo;s Write Hijack DLL exploits DLL hijacking for privilege escalation. In it&amp;rsquo;s default mode, it builds a self deleting .bat file which executes malicious command. The detection rule relies on creation of the malicious bat file (debug.bat by default).&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Suspicious ScreenSave Change by Reg.exe</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_screensaver_reg.yml/</link>
+      <pubDate>Thu, 19 Aug 2021 13:55:09 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_screensaver_reg.yml/</guid>
+      <description>&lt;p&gt;Adversaries may establish persistence by executing malicious content triggered by user inactivity.
+Screensavers are programs that execute after a configurable time of user inactivity and consist of Portable Executable (PE) files with a .scr file extension&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Powershell Trigger Profiles by Add_Content</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_trigger_profiles.yml/</link>
+      <pubDate>Wed, 18 Aug 2021 14:29:50 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_trigger_profiles.yml/</guid>
+      <description>&lt;p&gt;Adversaries may gain persistence and elevate privileges by executing malicious content triggered by PowerShell profiles.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>PrintNightmare Powershell Exploitation</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_invoke_nightmare.yml/</link>
+      <pubDate>Mon, 16 Aug 2021 09:10:05 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_invoke_nightmare.yml/</guid>
+      <description>&lt;p&gt;Detects Commandlet name for PrintNightmare exploitation.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>SystemNightmare Exploitation Script Execution</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_exploit_systemnightmare.yml/</link>
+      <pubDate>Wed, 11 Aug 2021 10:10:30 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_exploit_systemnightmare.yml/</guid>
+      <description>&lt;p&gt;Detects the exploitation of PrinterNightmare to get a shell as LOCAL_SYSTEM&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>AWS STS GetSessionToken Misuse</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/aws/aws_sts_getsessiontoken_misuse.yml/</link>
+      <pubDate>Sat, 24 Jul 2021 12:05:44 -0500</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/aws/aws_sts_getsessiontoken_misuse.yml/</guid>
+      <description>&lt;p&gt;Identifies the suspicious use of GetSessionToken. Tokens could be created and used by attackers to move laterally and escalate privileges.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>AWS STS AssumeRole Misuse</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/aws/aws_sts_assumerole_misuse.yml/</link>
+      <pubDate>Sat, 24 Jul 2021 12:03:35 -0500</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/aws/aws_sts_assumerole_misuse.yml/</guid>
+      <description>&lt;p&gt;Identifies the suspicious use of AssumeRole. Attackers could move laterally and escalate privileges.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>SOURGUM Actor Behaviours</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_apt_sourgrum.yml/</link>
+      <pubDate>Fri, 16 Jul 2021 14:13:48 +0700</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_apt_sourgrum.yml/</guid>
+      <description>&lt;p&gt;Suspicious behaviours related to an actor tracked by Microsoft as SOURGUM&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Suspicious Spool Service Child Process</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_spoolsv_child_processes.yml/</link>
+      <pubDate>Mon, 12 Jul 2021 08:48:59 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_spoolsv_child_processes.yml/</guid>
+      <description>&lt;p&gt;Detects suspicious print spool service (spoolsv.exe) child processes.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Suspicious Shells Spawn by SQL Server</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_shell_spawn_from_mssql.yml/</link>
+      <pubDate>Fri, 11 Dec 2020 15:17:23 +0700</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_shell_spawn_from_mssql.yml/</guid>
+      <description>&lt;p&gt;Detects suspicious shell spawn from MSSQL process, this might be sight of RCE or SQL Injection&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>COM Hijack via Sdclt</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_comhijack_sdclt.yml/</link>
+      <pubDate>Sun, 27 Sep 2020 21:19:04 +0530</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_comhijack_sdclt.yml/</guid>
+      <description>&lt;p&gt;Detects changes to &amp;lsquo;HKCU\Software\Classes\Folder\shell\open\command\DelegateExecute&amp;rsquo;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Vulnerable Netlogon Secure Channel Connection Allowed</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_vul_cve_2020_1472.yml/</link>
+      <pubDate>Tue, 15 Sep 2020 15:13:53 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_vul_cve_2020_1472.yml/</guid>
+      <description>&lt;p&gt;Detects that a vulnerable Netlogon secure channel connection was allowed, which could be an indicator of CVE-2020-1472.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Wsreset UAC Bypass</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_wsreset_uac_bypass.yml/</link>
+      <pubDate>Thu, 30 Jan 2020 18:05:47 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_wsreset_uac_bypass.yml/</guid>
+      <description>&lt;p&gt;Detects a method that uses Wsreset.exe tool that can be used to reset the Windows Store to bypass UAC&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>AWS Root Credentials</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/aws/aws_root_account_usage.yml/</link>
+      <pubDate>Tue, 21 Jan 2020 15:07:32 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/aws/aws_root_account_usage.yml/</guid>
+      <description>&lt;p&gt;Detects AWS root account usage&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Audit CVE Event</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/application/win_audit_cve.yml/</link>
+      <pubDate>Wed, 15 Jan 2020 21:23:32 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/application/win_audit_cve.yml/</guid>
+      <description>&lt;p&gt;Detects events generated by Windows to indicate the exploitation of a known vulnerability (e.g. CVE-2020-0601)&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Exploiting CVE-2019-1388</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_exploit_cve_2019_1388.yml/</link>
+      <pubDate>Wed, 20 Nov 2019 09:12:02 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_exploit_cve_2019_1388.yml/</guid>
+      <description>&lt;p&gt;Detects an exploitation attempt in which the UAC consent dialogue is used to invoke an Internet Explorer process running as LOCAL_SYSTEM&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>RottenPotato Like Attack Pattern</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_rottenpotato.yml/</link>
+      <pubDate>Fri, 15 Nov 2019 11:44:18 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_rottenpotato.yml/</guid>
+      <description>&lt;p&gt;Detects logon events that have characteristics of events generated during an attack with RottenPotato and the like&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Exploiting SetupComplete.cmd CVE-2019-1378</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_exploit_cve_2019_1378.yml/</link>
+      <pubDate>Fri, 15 Nov 2019 00:26:18 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_exploit_cve_2019_1378.yml/</guid>
+      <description>&lt;p&gt;Detects exploitation attempt of privilege escalation vulnerability via SetupComplete.cmd and PartnerSetupComplete.cmd described in CVE-2019-1378&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Suspicious Remote Thread Created</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/create_remote_thread/sysmon_suspicious_remote_thread.yml/</link>
+      <pubDate>Mon, 28 Oct 2019 22:12:57 -0700</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/create_remote_thread/sysmon_suspicious_remote_thread.yml/</guid>
+      <description>&lt;p&gt;Offensive tradecraft is switching away from using APIs like &amp;ldquo;CreateRemoteThread&amp;rdquo;, however, this is still largely observed in the wild. This rule aims to detect suspicious processes (those we would not expect to behave in this way like word.exe or outlook.exe) creating remote threads on other processes. It is a generalistic rule, but it should have a low FP ratio due to the selected range of processes.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Register new Logon Process by Rubeus</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_register_new_logon_process_by_rubeus.yml/</link>
+      <pubDate>Tue, 29 Oct 2019 03:44:22 +0300</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_register_new_logon_process_by_rubeus.yml/</guid>
+      <description>&lt;p&gt;Detects potential use of Rubeus via registered new trusted logon process&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>User Couldn&#39;t Call a Privileged Service &#39;LsaRegisterLogonProcess&#39;</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_user_couldnt_call_privileged_service_lsaregisterlogonprocess.yml/</link>
+      <pubDate>Tue, 29 Oct 2019 03:44:22 +0300</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_user_couldnt_call_privileged_service_lsaregisterlogonprocess.yml/</guid>
+      <description>&lt;p&gt;The &amp;lsquo;LsaRegisterLogonProcess&amp;rsquo; function verifies that the application making the function call is a logon process by checking that it has the SeTcbPrivilege privilege set. Possible Rubeus tries to get a handle to LSA.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Bypass UAC via CMSTP</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_uac_cmstp.yml/</link>
+      <pubDate>Mon, 28 Oct 2019 11:59:49 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_uac_cmstp.yml/</guid>
+      <description>&lt;p&gt;Detect child processes of automatically elevated instances of Microsoft Connection Manager Profile Installer (cmstp.exe).&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Bypass UAC via Fodhelper.exe</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_uac_fodhelper.yml/</link>
+      <pubDate>Mon, 28 Oct 2019 11:59:49 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_uac_fodhelper.yml/</guid>
+      <description>&lt;p&gt;Identifies use of Fodhelper.exe to bypass User Account Control. Adversaries use this technique to execute privileged processes.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Bypass UAC via WSReset.exe</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_uac_wsreset.yml/</link>
+      <pubDate>Mon, 28 Oct 2019 11:59:49 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_uac_wsreset.yml/</guid>
+      <description>&lt;p&gt;Identifies use of WSReset.exe to bypass User Account Control. Adversaries use this technique to execute privileged processes.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Interactive AT Job</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_interactive_at.yml/</link>
+      <pubDate>Mon, 28 Oct 2019 11:59:49 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_interactive_at.yml/</guid>
+      <description>&lt;p&gt;Detect an interactive AT job, which may be used as a form of privilege escalation.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Possible Privilege Escalation via Service Permissions Weakness</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_possible_privilege_escalation_via_service_reg_perm.yml/</link>
+      <pubDate>Sun, 27 Oct 2019 20:54:07 +0300</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_possible_privilege_escalation_via_service_reg_perm.yml/</guid>
+      <description>&lt;p&gt;Detect modification of services configuration (ImagePath, FailureCommand and ServiceDLL) in registry by processes with Medium integrity level&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Possible Privilege Escalation via Weak Service Permissions</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_using_sc_to_change_sevice_image_path_by_non_admin.yml/</link>
+      <pubDate>Sun, 27 Oct 2019 20:54:07 +0300</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_using_sc_to_change_sevice_image_path_by_non_admin.yml/</guid>
+      <description>&lt;p&gt;Detection of sc.exe utility spawning by user with Medium integrity level to change service ImagePath or FailureCommand&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Suspicious Child Process Created as System</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_child_process_as_system_.yml/</link>
+      <pubDate>Sun, 27 Oct 2019 20:54:07 +0300</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_child_process_as_system_.yml/</guid>
+      <description>&lt;p&gt;Detection of child processes spawned with SYSTEM privileges by parents with LOCAL SERVICE or NETWORK SERVICE accounts&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Suspicious Netsh DLL Persistence</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_netsh_dll_persistence.yml/</link>
+      <pubDate>Fri, 25 Oct 2019 15:38:47 +0400</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_netsh_dll_persistence.yml/</guid>
+      <description>&lt;p&gt;Detects persitence via netsh helper&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Suspicious Service Path Modification</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_service_path_modification.yml/</link>
+      <pubDate>Fri, 25 Oct 2019 15:38:47 +0400</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_service_path_modification.yml/</guid>
+      <description>&lt;p&gt;Detects service path modification to PowerShell or cmd.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Powershell Profile.ps1 Modification</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_suspicious_powershell_profile_create.yml/</link>
+      <pubDate>Fri, 25 Oct 2019 00:14:21 +0700</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_suspicious_powershell_profile_create.yml/</guid>
+      <description>&lt;p&gt;Detects a change in profile.ps1 of the Powershell profile&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>SCM Database Privileged Operation</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_scm_database_privileged_operation.yml/</link>
+      <pubDate>Thu, 24 Oct 2019 02:40:11 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_scm_database_privileged_operation.yml/</guid>
+      <description>&lt;p&gt;Detects non-system users performing privileged operation os the SCM database&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Sudo Privilege Escalation CVE-2019-14287</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/linux/builtin/lnx_sudo_cve_2019_14287.yml/</link>
+      <pubDate>Tue, 15 Oct 2019 09:39:08 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/builtin/lnx_sudo_cve_2019_14287.yml/</guid>
+      <description>&lt;p&gt;Detects users trying to exploit sudo vulnerability reported in CVE-2019-14287&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Windows 10 Scheduled Task SandboxEscaper 0-day</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_win10_sched_task_0day.yml/</link>
+      <pubDate>Wed, 22 May 2019 12:28:42 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_win10_sched_task_0day.yml/</guid>
+      <description>&lt;p&gt;Detects Task Scheduler .job import arbitrary DACL write\par&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>CMSTP UAC Bypass via COM Object Access</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_cmstp_com_object_access.yml/</link>
+      <pubDate>Wed, 16 Jan 2019 23:36:31 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_cmstp_com_object_access.yml/</guid>
+      <description>&lt;p&gt;Detects UAC Bypass Attempt Using Microsoft Connection Manager Profile Installer Autoelevate-capable COM Objects (e.g. UACMe ID of 41, 43, 58 or 65)&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Dridex Process Pattern</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_malware_dridex.yml/</link>
+      <pubDate>Wed, 16 Jan 2019 23:36:31 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_malware_dridex.yml/</guid>
+      <description>&lt;p&gt;Detects typical Dridex process patterns&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Possible Shim Database Persistence via sdbinst.exe</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_sdbinst_shim_persistence.yml/</link>
+      <pubDate>Wed, 16 Jan 2019 23:36:31 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_sdbinst_shim_persistence.yml/</guid>
+      <description>&lt;p&gt;Detects installation of a new shim using sdbinst.exe. A shim can be used to load malicious DLLs into applications.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Scheduled Task Creation</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_schtask_creation.yml/</link>
+      <pubDate>Wed, 16 Jan 2019 23:36:31 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_schtask_creation.yml/</guid>
+      <description>&lt;p&gt;Detects the creation of scheduled tasks in user session&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>WMI Persistence - Script Event Consumer</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_wmi_persistence_script_event_consumer.yml/</link>
+      <pubDate>Wed, 16 Jan 2019 23:36:31 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_wmi_persistence_script_event_consumer.yml/</guid>
+      <description>&lt;p&gt;Detects WMI script event consumers&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>PowerShell ShellCode</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_shellcode_b64.yml/</link>
+      <pubDate>Sat, 17 Nov 2018 09:10:09 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_shellcode_b64.yml/</guid>
+      <description>&lt;p&gt;Detects Base64 encoded Shellcode&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Default PowerSploit and Empire Schtasks Persistence</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_powersploit_empire_schtasks.yml/</link>
+      <pubDate>Sat, 23 Jun 2018 15:45:58 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_powersploit_empire_schtasks.yml/</guid>
+      <description>&lt;p&gt;Detects the creation of a schtask via PowerSploit or Empire Default Configuration.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Sticky Key Like Backdoor Usage</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_stickykey_like_backdoor.yml/</link>
+      <pubDate>Thu, 15 Mar 2018 19:53:34 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_stickykey_like_backdoor.yml/</guid>
+      <description>&lt;p&gt;Detects the usage and installation of a backdoor that uses an option to register a malicious debugger for built-in tools that are accessible in the login screen&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>WMI Persistence</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/wmi/win_wmi_persistence.yml/</link>
+      <pubDate>Tue, 22 Aug 2017 10:02:54 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/wmi/win_wmi_persistence.yml/</guid>
+      <description>&lt;p&gt;Detects suspicious WMI event filter and command line event consumer based on WMI and Security Logs.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>UAC Bypass via Event Viewer</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_uac_bypass_eventvwr.yml/</link>
+      <pubDate>Sun, 19 Mar 2017 19:34:06 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_uac_bypass_eventvwr.yml/</guid>
+      <description>&lt;p&gt;Detects UAC bypass method using Windows event viewer&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>UAC Bypass via Sdclt</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_uac_bypass_sdclt.yml/</link>
+      <pubDate>Fri, 17 Mar 2017 14:31:26 -0400</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_uac_bypass_sdclt.yml/</guid>
+      <description>&lt;p&gt;Detects the pattern of UAC Bypass using registry key manipulation of sdclt.exe (e.g. UACMe 53)&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>User Added to Local Administrators</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_user_added_to_local_administrators.yml/</link>
+      <pubDate>Tue, 14 Mar 2017 12:51:50 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_user_added_to_local_administrators.yml/</guid>
+      <description>&lt;p&gt;This rule triggers on user accounts that are added to the local Administrators group, which could be legitimate activity or a sign of privilege escalation activity&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Addition of SID History to Active Directory Object</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_add_sid_history.yml/</link>
+      <pubDate>Sun, 19 Feb 2017 22:43:27 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_add_sid_history.yml/</guid>
+      <description>&lt;p&gt;An attacker can use the SID history attribute to gain additional privileges.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Suspicious Driver Load from Temp</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/driver_load/driver_load_susp_temp_use.yml/</link>
+      <pubDate>Sun, 12 Feb 2017 15:50:39 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/driver_load/driver_load_susp_temp_use.yml/</guid>
+      <description>&lt;p&gt;Detects a driver load from a temporary directory&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Failed Logins with Different Accounts from Single Source System</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_failed_logons_single_source.yml/</link>
+      <pubDate>Tue, 27 Dec 2016 14:49:54 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_failed_logons_single_source.yml/</guid>
+      <description>&lt;p&gt;Detects suspicious failed logins with different user accounts from a single source system&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Account Tampering - Suspicious Failed Logon Reasons</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_failed_logon_reasons.yml/</link>
+      <pubDate>Sat, 24 Dec 2016 12:23:47 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_failed_logon_reasons.yml/</guid>
+      <description>&lt;p&gt;This method uses uncommon error codes on failed logons to determine suspicious activity and tampering with accounts that have been disabled or somehow restricted.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Abused Debug Privilege by Arbitrary Parent Processes</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_abusing_debug_privilege.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_abusing_debug_privilege.yml/</guid>
+      <description>&lt;p&gt;Detection of unusual child processes by different system processes&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Always Install Elevated MSI Spawned Cmd And Powershell</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_always_install_elevated_msi_spawned_cmd_powershell.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_always_install_elevated_msi_spawned_cmd_powershell.yml/</guid>
+      <description>&lt;p&gt;This rule looks for Windows Installer service (msiexec.exe) spawned command line and/or powershell&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Antivirus PrinterNightmare CVE-2021-34527 Exploit Detection</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/application/antivirus/av_printernightmare_cve_2021_34527.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/application/antivirus/av_printernightmare_cve_2021_34527.yml/</guid>
+      <description>&lt;p&gt;Detects the suspicious file that is created from PoC code against Windows Print Spooler Remote Code Execution Vulnerability CVE-2021-34527 (PrinterNightmare), CVE-2021-1675 .&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>APT PRIVATELOG Image Load Pattern</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_usp_svchost_clfsw32.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_usp_svchost_clfsw32.yml/</guid>
+      <description>&lt;p&gt;Detects an image load pattern as seen when a tool named PRIVATELOG is used and rarely observed under legitimate circumstances&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>AWS Glue Development Endpoint Activity</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/aws/aws_passed_role_to_glue_development_endpoint.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/aws/aws_passed_role_to_glue_development_endpoint.yml/</guid>
+      <description>&lt;p&gt;Detects possible suspicious glue development endpoint activity.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Buffer Overflow Attempts</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/linux/builtin/lnx_buffer_overflows.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/builtin/lnx_buffer_overflows.yml/</guid>
+      <description>&lt;p&gt;Detects buffer overflow attempts in Unix system log files&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Bypass UAC Using DelegateExecute</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_bypass_uac_using_delegateexecute.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_bypass_uac_using_delegateexecute.yml/</guid>
+      <description>&lt;p&gt;Bypasses User Account Control using a fileless method&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Bypass UAC Using SilentCleanup Task</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_bypass_uac_using_silentcleanup_task.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_bypass_uac_using_silentcleanup_task.yml/</guid>
+      <description>&lt;p&gt;There is an auto-elevated task called SilentCleanup located in %windir%\system32\cleanmgr.exe This can be abused to elevate any file with Administrator privileges without prompting UAC&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>CLR DLL Loaded Via Scripting Applications</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_susp_script_dotnet_clr_dll_load.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_susp_script_dotnet_clr_dll_load.yml/</guid>
+      <description>&lt;p&gt;Detects CLR DLL being loaded by an scripting applications&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>CobaltStrike Named Pipe</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/pipe_created/pipe_created_mal_cobaltstrike.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/pipe_created/pipe_created_mal_cobaltstrike.yml/</guid>
+      <description>&lt;p&gt;Detects the creation of a named pipe as used by CobaltStrike&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>CobaltStrike Service Installations</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_cobaltstrike_service_installs.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_cobaltstrike_service_installs.yml/</guid>
+      <description>&lt;p&gt;Detects known malicious service installs that appear in cases in which a Cobalt Strike beacon elevates privileges or lateral movement&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>CobaltStrike Service Installations in Registry</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_cobaltstrike_service_installs.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_cobaltstrike_service_installs.yml/</guid>
+      <description>&lt;p&gt;Detects known malicious service installs that appear in cases in which a Cobalt Strike beacon elevates privileges or lateral movement. We can also catch this by system log 7045 (&lt;a href=&#34;https://github.com/SigmaHQ/sigma/blob/master/rules/windows/builtin/win_cobaltstrike_service_installs.yml&#34;&gt;https://github.com/SigmaHQ/sigma/blob/master/rules/windows/builtin/win_cobaltstrike_service_installs.yml&lt;/a&gt;) In some SIEM you can catch those events also in HKLM\System\ControlSet001\Services or HKLM\System\ControlSet002\Services, however, this rule is based on a regular sysmon&amp;rsquo;s events.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Code Injection by ld.so Preload</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/linux/builtin/lnx_ldso_preload_injection.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/builtin/lnx_ldso_preload_injection.yml/</guid>
+      <description>&lt;p&gt;Detects the ld.so preload persistence file. See &lt;code&gt;man ld.so&lt;/code&gt; for more information.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>CVE-2021-1675 Print Spooler Exploitation Filename Pattern</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_cve_2021_1675_printspooler.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_cve_2021_1675_printspooler.yml/</guid>
+      <description>&lt;p&gt;Detects the default filename used in PoC code against print spooler vulnerability CVE-2021-1675&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>CVE-2021-3156 Exploitation Attempt</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/linux/auditd/lnx_auditd_cve_2021_3156_sudo_buffer_overflow.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/auditd/lnx_auditd_cve_2021_3156_sudo_buffer_overflow.yml/</guid>
+      <description>&lt;p&gt;Detects exploitation attempt of vulnerability described in CVE-2021-3156. | Alternative approach might be to look for flooding of auditd logs due to bruteforcing | required to trigger the heap-based buffer overflow.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Disable UAC Using Registry</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_disable_uac_registry.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_disable_uac_registry.yml/</guid>
+      <description>&lt;p&gt;Disable User Account Conrol (UAC) by changing its registry key HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System\EnableLUA from 1 to 0&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Disabled Users Failing To Authenticate From Source Using Kerberos</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_failed_logons_single_source_kerberos2.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_failed_logons_single_source_kerberos2.yml/</guid>
+      <description>&lt;p&gt;Detects failed logins with multiple disabled domain accounts from a single source system using the Kerberos protocol.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Empire PowerShell UAC Bypass</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_powershell_empire_uac_bypass.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_powershell_empire_uac_bypass.yml/</guid>
+      <description>&lt;p&gt;Detects some Empire PowerShell UAC bypass methods&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Enabling COR Profiler Environment Variables</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_enabling_cor_profiler_env_variables.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_enabling_cor_profiler_env_variables.yml/</guid>
+      <description>&lt;p&gt;This rule detects cor_enable_profiling and cor_profiler environment variables being set and configured.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>High Integrity Sdclt Process</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_high_integrity_sdclt.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_high_integrity_sdclt.yml/</guid>
+      <description>&lt;p&gt;A General detection for sdclt being spawned as an elevated process. This could be an indicator of sdclt being used for bypass UAC techniques.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Invalid Users Failing To Authenticate From Single Source Using NTLM</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_failed_logons_single_source_ntlm2.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_failed_logons_single_source_ntlm2.yml/</guid>
+      <description>&lt;p&gt;Detects failed logins with multiple invalid domain accounts from a single source system using the NTLM protocol.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Invalid Users Failing To Authenticate From Source Using Kerberos</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_failed_logons_single_source_kerberos3.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_failed_logons_single_source_kerberos3.yml/</guid>
+      <description>&lt;p&gt;Detects failed logins with multiple invalid domain accounts from a single source system using the Kerberos protocol.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Load Undocumented Autoelevated COM Interface</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_access/proc_access_win_load_undocumented_autoelevated_com_interface.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_access/proc_access_win_load_undocumented_autoelevated_com_interface.yml/</guid>
+      <description>&lt;p&gt;COM interface (EditionUpgradeManager) that is not used by standard executables.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Loading of Kernel Module via Insmod</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/linux/auditd/lnx_auditd_load_module_insmod.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/auditd/lnx_auditd_load_module_insmod.yml/</guid>
+      <description>&lt;p&gt;Detects loading of kernel modules with insmod command. Loadable Kernel Modules (LKMs) are pieces of code that can be loaded and unloaded into the kernel upon demand. Adversaries may use LKMs to obtain persistence within the system or elevate the privileges.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>MacOS Emond Launch Daemon</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/linux/macos/file_event/file_event_macos_emond_launch_daemon.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/macos/file_event/file_event_macos_emond_launch_daemon.yml/</guid>
+      <description>&lt;p&gt;Detects additions to the Emond Launch Daemon that adversaries may use to gain persistence and elevate privileges.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Malicious Named Pipe</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/pipe_created/pipe_created_mal_namedpipes.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/pipe_created/pipe_created_mal_namedpipes.yml/</guid>
+      <description>&lt;p&gt;Detects the creation of a named pipe used by known APT malware&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Malware Shellcode in Verclsid Target Process</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_access/proc_access_win_malware_verclsid_shellcode.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_access/proc_access_win_malware_verclsid_shellcode.yml/</guid>
+      <description>&lt;p&gt;Detects a process access to verclsid.exe that injects shellcode from a Microsoft Office application / VBA macro&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Moriya Rootkit</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_moriya_rootkit.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_moriya_rootkit.yml/</guid>
+      <description>&lt;p&gt;Detects the use of Moriya rootkit as described in the securelist&amp;rsquo;s Operation TunnelSnake report&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Multiple Users Attempting To Authenticate Using Explicit Credentials</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_failed_logons_explicit_credentials.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_failed_logons_explicit_credentials.yml/</guid>
+      <description>&lt;p&gt;Detects a source user failing to authenticate with multiple users using explicit credentials on a host.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Multiple Users Failing to Authenticate from Single Process</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_failed_logons_single_process.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_failed_logons_single_process.yml/</guid>
+      <description>&lt;p&gt;Detects failed logins with multiple accounts from a single process on the system.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Multiple Users Remotely Failing To Authenticate From Single Source</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_failed_remote_logons_single_source.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_failed_remote_logons_single_source.yml/</guid>
+      <description>&lt;p&gt;Detects a source system failing to authenticate against a remote host with multiple users.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Path To Screensaver Binary Modified</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_modify_screensaver_binary_path.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_modify_screensaver_binary_path.yml/</guid>
+      <description>&lt;p&gt;Detects value modification of registry key containing path to binary used as screensaver.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Possible Coin Miner CPU Priority Param</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/linux/auditd/lnx_auditd_coinminer.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/auditd/lnx_auditd_coinminer.yml/</guid>
+      <description>&lt;p&gt;Detects command line parameter very often used with coin miners&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Possible Zerologon (CVE-2020-1472) Exploitation</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_privesc_cve_2020_1472.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_privesc_cve_2020_1472.yml/</guid>
+      <description>&lt;p&gt;Detects Netlogon Elevation of Privilege Vulnerability aka Zerologon (CVE-2020-1472)&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>ProcessHacker Privilege Elevation</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_susp_proceshacker.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_susp_proceshacker.yml/</guid>
+      <description>&lt;p&gt;Detects a ProcessHacker tool that elevated privileges to a very high level&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Regedit as Trusted Installer</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_regedit_trustedinstaller.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_regedit_trustedinstaller.yml/</guid>
+      <description>&lt;p&gt;Detects a regedit started with TrustedInstaller privileges or by ProcessHacker.exe&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Remote WMI ActiveScriptEventConsumers</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_scrcons_remote_wmi_scripteventconsumer.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_scrcons_remote_wmi_scripteventconsumer.yml/</guid>
+      <description>&lt;p&gt;Detect potential adversaries leveraging WMI ActiveScriptEventConsumers remotely to move laterally in a network&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Run Whoami as SYSTEM</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_whoami_as_system.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_whoami_as_system.yml/</guid>
+      <description>&lt;p&gt;Detects a whoami.exe executed by LOCAL SYSTEM. This may be a sign of a successful local privilege escalation.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Run Whoami Showing Privileges</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_whoami_priv.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_whoami_priv.yml/</guid>
+      <description>&lt;p&gt;Detects a whoami.exe executed with the /priv command line flag instructing the tool to show all current user privieleges. This is often used after a privilege escalation attempt.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Scheduled Cron Task/Job</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/linux/macos/process_creation/proc_creation_macos_schedule_task_job_cron.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/macos/process_creation/proc_creation_macos_schedule_task_job_cron.yml/</guid>
+      <description>&lt;p&gt;Detects abuse of the cron utility to perform task scheduling for initial or recurring execution of malicious code. Detection will focus on crontab jobs uploaded from the tmp folder.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Scheduled Cron Task/Job</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/linux/process_creation/proc_creation_lnx_schedule_task_job_cron.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/process_creation/proc_creation_lnx_schedule_task_job_cron.yml/</guid>
+      <description>&lt;p&gt;Detects abuse of the cron utility to perform task scheduling for initial or recurring execution of malicious code. Detection will focus on crontab jobs uploaded from the tmp folder.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Scheduled Task Deletion</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_scheduled_task_deletion.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_scheduled_task_deletion.yml/</guid>
+      <description>&lt;p&gt;Detects scheduled task deletion events. Scheduled tasks are likely to be deleted if not used for persistence. Malicious Software often creates tasks directly under the root node e.g. \TASKNAME&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Sdclt Child Processes</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_sdclt_child_process.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_sdclt_child_process.yml/</guid>
+      <description>&lt;p&gt;A General detection for sdclt spawning new processes. This could be an indicator of sdclt being used for bypass UAC techniques.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>ServiceDll Modification</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_set_servicedll.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_set_servicedll.yml/</guid>
+      <description>&lt;p&gt;Detects the modification of a ServiceDLL value in the service settings&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Startup Items</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/linux/macos/file_event/file_event_macos_startup_items.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/macos/file_event/file_event_macos_startup_items.yml/</guid>
+      <description>&lt;p&gt;Detects creation of startup item plist files that automatically get executed at boot initialization to establish persistence.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Suspicious Debugger Registration Cmdline</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_install_reg_debugger_backdoor.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_install_reg_debugger_backdoor.yml/</guid>
+      <description>&lt;p&gt;Detects the registration of a debugger for a program that is available in the logon screen (sticky key backdoor).&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Suspicious Printer Driver Empty Manufacturer</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_susp_printer_driver.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_susp_printer_driver.yml/</guid>
+      <description>&lt;p&gt;Detects a suspicious printer driver installation with an empty Manufacturer value&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Suspicious Shells Spawn by WinRM</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_shell_spawn_from_winrm.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_shell_spawn_from_winrm.yml/</guid>
+      <description>&lt;p&gt;Detects suspicious shell spawn from WinRM host process&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>UAC Bypass Via Wsreset</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_bypass_via_wsreset.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_bypass_via_wsreset.yml/</guid>
+      <description>&lt;p&gt;Unfixed method for UAC bypass from windows 10. WSReset.exe file associated with the Windows Store. It will run a binary file contained in a low-privilege registry.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>UAC Bypass With Fake DLL</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_uac_bypass_via_dism.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_uac_bypass_via_dism.yml/</guid>
+      <description>&lt;p&gt;Attempts to load dismcore.dll after dropping it&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Using Sticky-keys To Obtain Unauthenticated, Privileged Console Access</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_sticky_keys_unauthenticated_privileged_cmd_access.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_sticky_keys_unauthenticated_privileged_cmd_access.yml/</guid>
+      <description>&lt;p&gt;By replacing the sticky keys executable with the local admins CMD executable, an attacker is able to access a privileged windows console session without authenticating to the system. When the sticky keys are &amp;ldquo;activated&amp;rdquo; the privilleged shell is launched.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Valid Users Failing to Authenticate From Single Source Using Kerberos</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_failed_logons_single_source_kerberos.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_failed_logons_single_source_kerberos.yml/</guid>
+      <description>&lt;p&gt;Detects multiple failed logins with multiple valid domain accounts from a single source system using the Kerberos protocol.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Valid Users Failing to Authenticate from Single Source Using NTLM</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_failed_logons_single_source_ntlm.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_failed_logons_single_source_ntlm.yml/</guid>
+      <description>&lt;p&gt;Detects failed logins with multiple valid domain accounts from a single source system using the NTLM protocol.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Vulnerable Dell BIOS Update Driver Load</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/driver_load/driver_load_vuln_dell_driver.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/driver_load/driver_load_vuln_dell_driver.yml/</guid>
+      <description>&lt;p&gt;Detects the load of the vulnerable Dell BIOS update driver as reported in CVE-2021-21551&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Windows Spooler Service Suspicious Binary Load</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_spoolsv_dll_load.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_spoolsv_dll_load.yml/</guid>
+      <description>&lt;p&gt;Detect DLL Load from Spooler Service backup folder&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Windows Spooler Service Suspicious File Deletion</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_delete/file_delete_win_cve_2021_1675_printspooler_del.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_delete/file_delete_win_cve_2021_1675_printspooler_del.yml/</guid>
+      <description>&lt;p&gt;Detect DLL deletions from Spooler Service driver folder&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>WMI Script Host Process Image Loaded</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_scrcons_imageload_wmi_scripteventconsumer.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_scrcons_imageload_wmi_scripteventconsumer.yml/</guid>
+      <description>&lt;p&gt;Detects signs of the WMI script host process %SystemRoot%\system32\wbem\scrcons.exe functionality being used via images being loaded by a process.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,2 +1,102 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>attack.t1485 on My New Hugo Site</title><link>https://bradleyjkemp.dev/sigmadoc/tags/attack.t1485/</link><description>Recent content in attack.t1485 on My New Hugo Site</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 15 Jan 2022 17:04:03 +0100</lastBuildDate><atom:link href="https://bradleyjkemp.dev/sigmadoc/tags/attack.t1485/index.xml" rel="self" type="application/rss+xml"/><item><title>Run from a Zip File</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_run_from_zip.yml/</link><pubDate>Sat, 15 Jan 2022 17:04:03 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_run_from_zip.yml/</guid><description>&lt;p>Payloads may be compressed, archived, or encrypted in order to avoid detection&lt;/p></description></item><item><title>Overwrite Deleted Data with Cipher</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_cipher.yml/</link><pubDate>Sun, 26 Dec 2021 12:09:42 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_cipher.yml/</guid><description>&lt;p>Adversaries may destroy data and files on specific systems or in large numbers on a network to interrupt availability to systems, services, and network resources.
-Data destruction is likely to render stored data irrecoverable by forensic techniques through overwriting files or data on local and remote drives&lt;/p></description></item><item><title>Clipboard Collection with Xclip Tool</title><link>https://bradleyjkemp.dev/sigmadoc/rules/linux/process_creation/proc_creation_lnx_clipboard_collection.yml/</link><pubDate>Fri, 15 Oct 2021 15:59:11 -0400</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/process_creation/proc_creation_lnx_clipboard_collection.yml/</guid><description>&lt;p>Detects attempts to collect data stored in the clipboard from users with the usage of xclip tool. Xclip has to be installed. Highly recommended using rule on servers, due to high usage of clipboard utilities on user workstations.&lt;/p></description></item><item><title>DD File Overwrite</title><link>https://bradleyjkemp.dev/sigmadoc/rules/linux/process_creation/proc_creation_lnx_dd_file_overwrite.yml/</link><pubDate>Fri, 15 Oct 2021 15:28:15 -0400</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/process_creation/proc_creation_lnx_dd_file_overwrite.yml/</guid><description>&lt;p>Detects potential overwriting and deletion of a file using DD.&lt;/p></description></item><item><title>AWS EKS Cluster Created or Deleted</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/aws/aws_eks_cluster_created_or_deleted.yml/</link><pubDate>Mon, 16 Aug 2021 09:58:48 -0500</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/aws/aws_eks_cluster_created_or_deleted.yml/</guid><description>&lt;p>Identifies when an EKS cluster is created or deleted.&lt;/p></description></item><item><title>AWS EFS Fileshare Mount Modified or Deleted</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/aws/aws_efs_fileshare_mount_modified_or_deleted.yml/</link><pubDate>Sun, 15 Aug 2021 14:26:48 -0500</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/aws/aws_efs_fileshare_mount_modified_or_deleted.yml/</guid><description>&lt;p>Detects when a EFS Fileshare Mount is modified or deleted. An adversary breaking any file system using the mount target that is being deleted, which might disrupt instances or applications using those mounts.&lt;/p></description></item><item><title>Overwriting the File with Dev Zero or Null</title><link>https://bradleyjkemp.dev/sigmadoc/rules/linux/auditd/lnx_auditd_dd_delete_file.yml/</link><pubDate>Wed, 23 Oct 2019 11:22:33 -0700</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/auditd/lnx_auditd_dd_delete_file.yml/</guid><description>&lt;p>Detects overwriting (effectively wiping/deleting) of a file.&lt;/p></description></item><item><title>Secure Deletion with SDelete</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_sdelete.yml/</link><pubDate>Wed, 14 Jun 2017 16:55:32 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_sdelete.yml/</guid><description>&lt;p>Detects renaming of file while deletion with SDelete tool.&lt;/p></description></item><item><title>Microsoft 365 - Unusual Volume of File Deletion</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/m365/microsoft365_unusual_volume_of_file_deletion.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/m365/microsoft365_unusual_volume_of_file_deletion.yml/</guid><description>&lt;p>Detects when a Microsoft Cloud App Security reported a user has deleted a unusual a large volume of files.&lt;/p></description></item><item><title>Sysinternals SDelete Delete File</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_sdelete.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_sdelete.yml/</guid><description>&lt;p>Use of SDelete to erase a file not the free space&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>attack.t1485 on My New Hugo Site</title>
+    <link>https://bradleyjkemp.dev/sigmadoc/tags/attack.t1485/</link>
+    <description>Recent content in attack.t1485 on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 15 Jan 2022 17:04:03 +0100</lastBuildDate><atom:link href="https://bradleyjkemp.dev/sigmadoc/tags/attack.t1485/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Run from a Zip File</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_run_from_zip.yml/</link>
+      <pubDate>Sat, 15 Jan 2022 17:04:03 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_run_from_zip.yml/</guid>
+      <description>&lt;p&gt;Payloads may be compressed, archived, or encrypted in order to avoid detection&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Overwrite Deleted Data with Cipher</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_cipher.yml/</link>
+      <pubDate>Sun, 26 Dec 2021 12:09:42 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_cipher.yml/</guid>
+      <description>&lt;p&gt;Adversaries may destroy data and files on specific systems or in large numbers on a network to interrupt availability to systems, services, and network resources.
+Data destruction is likely to render stored data irrecoverable by forensic techniques through overwriting files or data on local and remote drives&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Clipboard Collection with Xclip Tool</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/linux/process_creation/proc_creation_lnx_clipboard_collection.yml/</link>
+      <pubDate>Fri, 15 Oct 2021 15:59:11 -0400</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/process_creation/proc_creation_lnx_clipboard_collection.yml/</guid>
+      <description>&lt;p&gt;Detects attempts to collect data stored in the clipboard from users with the usage of xclip tool. Xclip has to be installed. Highly recommended using rule on servers, due to high usage of clipboard utilities on user workstations.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>DD File Overwrite</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/linux/process_creation/proc_creation_lnx_dd_file_overwrite.yml/</link>
+      <pubDate>Fri, 15 Oct 2021 15:28:15 -0400</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/process_creation/proc_creation_lnx_dd_file_overwrite.yml/</guid>
+      <description>&lt;p&gt;Detects potential overwriting and deletion of a file using DD.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>AWS EKS Cluster Created or Deleted</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/aws/aws_eks_cluster_created_or_deleted.yml/</link>
+      <pubDate>Mon, 16 Aug 2021 09:58:48 -0500</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/aws/aws_eks_cluster_created_or_deleted.yml/</guid>
+      <description>&lt;p&gt;Identifies when an EKS cluster is created or deleted.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>AWS EFS Fileshare Mount Modified or Deleted</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/aws/aws_efs_fileshare_mount_modified_or_deleted.yml/</link>
+      <pubDate>Sun, 15 Aug 2021 14:26:48 -0500</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/aws/aws_efs_fileshare_mount_modified_or_deleted.yml/</guid>
+      <description>&lt;p&gt;Detects when a EFS Fileshare Mount is modified or deleted. An adversary breaking any file system using the mount target that is being deleted, which might disrupt instances or applications using those mounts.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Overwriting the File with Dev Zero or Null</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/linux/auditd/lnx_auditd_dd_delete_file.yml/</link>
+      <pubDate>Wed, 23 Oct 2019 11:22:33 -0700</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/auditd/lnx_auditd_dd_delete_file.yml/</guid>
+      <description>&lt;p&gt;Detects overwriting (effectively wiping/deleting) of a file.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Secure Deletion with SDelete</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_sdelete.yml/</link>
+      <pubDate>Wed, 14 Jun 2017 16:55:32 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_sdelete.yml/</guid>
+      <description>&lt;p&gt;Detects renaming of file while deletion with SDelete tool.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Microsoft 365 - Unusual Volume of File Deletion</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/m365/microsoft365_unusual_volume_of_file_deletion.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/m365/microsoft365_unusual_volume_of_file_deletion.yml/</guid>
+      <description>&lt;p&gt;Detects when a Microsoft Cloud App Security reported a user has deleted a unusual a large volume of files.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Sysinternals SDelete Delete File</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_sdelete.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_sdelete.yml/</guid>
+      <description>&lt;p&gt;Use of SDelete to erase a file not the free space&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

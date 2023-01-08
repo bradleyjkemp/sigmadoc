@@ -1,1 +1,119 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>aaa on My New Hugo Site</title><link>https://bradleyjkemp.dev/sigmadoc/rules/network/cisco/aaa/</link><description>Recent content in aaa on My New Hugo Site</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 14 Nov 2019 20:55:28 +0100</lastBuildDate><atom:link href="https://bradleyjkemp.dev/sigmadoc/rules/network/cisco/aaa/index.xml" rel="self" type="application/rss+xml"/><item><title>Cisco Clear Logs</title><link>https://bradleyjkemp.dev/sigmadoc/rules/network/cisco/aaa/cisco_cli_clear_logs.yml/</link><pubDate>Thu, 14 Nov 2019 20:55:28 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/network/cisco/aaa/cisco_cli_clear_logs.yml/</guid><description>&lt;p>Clear command history in network OS which is used for defense evasion&lt;/p></description></item><item><title>Cisco Collect Data</title><link>https://bradleyjkemp.dev/sigmadoc/rules/network/cisco/aaa/cisco_cli_collect_data.yml/</link><pubDate>Thu, 14 Nov 2019 20:55:28 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/network/cisco/aaa/cisco_cli_collect_data.yml/</guid><description>&lt;p>Collect pertinent data from the configuration files&lt;/p></description></item><item><title>Cisco Crypto Commands</title><link>https://bradleyjkemp.dev/sigmadoc/rules/network/cisco/aaa/cisco_cli_crypto_actions.yml/</link><pubDate>Thu, 14 Nov 2019 20:55:28 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/network/cisco/aaa/cisco_cli_crypto_actions.yml/</guid><description>&lt;p>Show when private keys are being exported from the device, or when new certificates are installed&lt;/p></description></item><item><title>Cisco Denial of Service</title><link>https://bradleyjkemp.dev/sigmadoc/rules/network/cisco/aaa/cisco_cli_dos.yml/</link><pubDate>Thu, 14 Nov 2019 20:55:28 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/network/cisco/aaa/cisco_cli_dos.yml/</guid><description>&lt;p>Detect a system being shutdown or put into different boot mode&lt;/p></description></item><item><title>Cisco Disabling Logging</title><link>https://bradleyjkemp.dev/sigmadoc/rules/network/cisco/aaa/cisco_cli_disable_logging.yml/</link><pubDate>Thu, 14 Nov 2019 20:55:28 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/network/cisco/aaa/cisco_cli_disable_logging.yml/</guid><description>&lt;p>Turn off logging locally or remote&lt;/p></description></item><item><title>Cisco Discovery</title><link>https://bradleyjkemp.dev/sigmadoc/rules/network/cisco/aaa/cisco_cli_discovery.yml/</link><pubDate>Thu, 14 Nov 2019 20:55:28 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/network/cisco/aaa/cisco_cli_discovery.yml/</guid><description>&lt;p>Find information about network devices that is not stored in config files&lt;/p></description></item><item><title>Cisco File Deletion</title><link>https://bradleyjkemp.dev/sigmadoc/rules/network/cisco/aaa/cisco_cli_file_deletion.yml/</link><pubDate>Thu, 14 Nov 2019 20:55:28 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/network/cisco/aaa/cisco_cli_file_deletion.yml/</guid><description>&lt;p>See what files are being deleted from flash file systems&lt;/p></description></item><item><title>Cisco Local Accounts</title><link>https://bradleyjkemp.dev/sigmadoc/rules/network/cisco/aaa/cisco_cli_local_accounts.yml/</link><pubDate>Thu, 14 Nov 2019 20:55:28 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/network/cisco/aaa/cisco_cli_local_accounts.yml/</guid><description>&lt;p>Find local accounts being created or modified as well as remote authentication configurations&lt;/p></description></item><item><title>Cisco Modify Configuration</title><link>https://bradleyjkemp.dev/sigmadoc/rules/network/cisco/aaa/cisco_cli_modify_config.yml/</link><pubDate>Thu, 14 Nov 2019 20:55:28 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/network/cisco/aaa/cisco_cli_modify_config.yml/</guid><description>&lt;p>Modifications to a config that will serve an adversary&amp;rsquo;s impacts or persistence&lt;/p></description></item><item><title>Cisco Show Commands Input</title><link>https://bradleyjkemp.dev/sigmadoc/rules/network/cisco/aaa/cisco_cli_input_capture.yml/</link><pubDate>Thu, 14 Nov 2019 20:55:28 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/network/cisco/aaa/cisco_cli_input_capture.yml/</guid><description>&lt;p>See what commands are being input into the device by other people, full credentials can be in the history&lt;/p></description></item><item><title>Cisco Sniffing</title><link>https://bradleyjkemp.dev/sigmadoc/rules/network/cisco/aaa/cisco_cli_net_sniff.yml/</link><pubDate>Thu, 14 Nov 2019 20:55:28 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/network/cisco/aaa/cisco_cli_net_sniff.yml/</guid><description>&lt;p>Show when a monitor or a span/rspan is setup or modified&lt;/p></description></item><item><title>Cisco Stage Data</title><link>https://bradleyjkemp.dev/sigmadoc/rules/network/cisco/aaa/cisco_cli_moving_data.yml/</link><pubDate>Thu, 14 Nov 2019 20:55:28 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/network/cisco/aaa/cisco_cli_moving_data.yml/</guid><description>&lt;p>Various protocols maybe used to put data on the device for exfil or infil&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>aaa on My New Hugo Site</title>
+    <link>https://bradleyjkemp.dev/sigmadoc/rules/network/cisco/aaa/</link>
+    <description>Recent content in aaa on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 14 Nov 2019 20:55:28 +0100</lastBuildDate><atom:link href="https://bradleyjkemp.dev/sigmadoc/rules/network/cisco/aaa/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cisco Clear Logs</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/network/cisco/aaa/cisco_cli_clear_logs.yml/</link>
+      <pubDate>Thu, 14 Nov 2019 20:55:28 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/network/cisco/aaa/cisco_cli_clear_logs.yml/</guid>
+      <description>&lt;p&gt;Clear command history in network OS which is used for defense evasion&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Cisco Collect Data</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/network/cisco/aaa/cisco_cli_collect_data.yml/</link>
+      <pubDate>Thu, 14 Nov 2019 20:55:28 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/network/cisco/aaa/cisco_cli_collect_data.yml/</guid>
+      <description>&lt;p&gt;Collect pertinent data from the configuration files&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Cisco Crypto Commands</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/network/cisco/aaa/cisco_cli_crypto_actions.yml/</link>
+      <pubDate>Thu, 14 Nov 2019 20:55:28 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/network/cisco/aaa/cisco_cli_crypto_actions.yml/</guid>
+      <description>&lt;p&gt;Show when private keys are being exported from the device, or when new certificates are installed&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Cisco Denial of Service</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/network/cisco/aaa/cisco_cli_dos.yml/</link>
+      <pubDate>Thu, 14 Nov 2019 20:55:28 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/network/cisco/aaa/cisco_cli_dos.yml/</guid>
+      <description>&lt;p&gt;Detect a system being shutdown or put into different boot mode&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Cisco Disabling Logging</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/network/cisco/aaa/cisco_cli_disable_logging.yml/</link>
+      <pubDate>Thu, 14 Nov 2019 20:55:28 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/network/cisco/aaa/cisco_cli_disable_logging.yml/</guid>
+      <description>&lt;p&gt;Turn off logging locally or remote&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Cisco Discovery</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/network/cisco/aaa/cisco_cli_discovery.yml/</link>
+      <pubDate>Thu, 14 Nov 2019 20:55:28 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/network/cisco/aaa/cisco_cli_discovery.yml/</guid>
+      <description>&lt;p&gt;Find information about network devices that is not stored in config files&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Cisco File Deletion</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/network/cisco/aaa/cisco_cli_file_deletion.yml/</link>
+      <pubDate>Thu, 14 Nov 2019 20:55:28 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/network/cisco/aaa/cisco_cli_file_deletion.yml/</guid>
+      <description>&lt;p&gt;See what files are being deleted from flash file systems&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Cisco Local Accounts</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/network/cisco/aaa/cisco_cli_local_accounts.yml/</link>
+      <pubDate>Thu, 14 Nov 2019 20:55:28 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/network/cisco/aaa/cisco_cli_local_accounts.yml/</guid>
+      <description>&lt;p&gt;Find local accounts being created or modified as well as remote authentication configurations&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Cisco Modify Configuration</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/network/cisco/aaa/cisco_cli_modify_config.yml/</link>
+      <pubDate>Thu, 14 Nov 2019 20:55:28 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/network/cisco/aaa/cisco_cli_modify_config.yml/</guid>
+      <description>&lt;p&gt;Modifications to a config that will serve an adversary&amp;rsquo;s impacts or persistence&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Cisco Show Commands Input</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/network/cisco/aaa/cisco_cli_input_capture.yml/</link>
+      <pubDate>Thu, 14 Nov 2019 20:55:28 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/network/cisco/aaa/cisco_cli_input_capture.yml/</guid>
+      <description>&lt;p&gt;See what commands are being input into the device by other people, full credentials can be in the history&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Cisco Sniffing</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/network/cisco/aaa/cisco_cli_net_sniff.yml/</link>
+      <pubDate>Thu, 14 Nov 2019 20:55:28 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/network/cisco/aaa/cisco_cli_net_sniff.yml/</guid>
+      <description>&lt;p&gt;Show when a monitor or a span/rspan is setup or modified&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Cisco Stage Data</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/network/cisco/aaa/cisco_cli_moving_data.yml/</link>
+      <pubDate>Thu, 14 Nov 2019 20:55:28 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/network/cisco/aaa/cisco_cli_moving_data.yml/</guid>
+      <description>&lt;p&gt;Various protocols maybe used to put data on the device for exfil or infil&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,1 +1,434 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>attack.t1027 on My New Hugo Site</title><link>https://bradleyjkemp.dev/sigmadoc/tags/attack.t1027/</link><description>Recent content in attack.t1027 on My New Hugo Site</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 15 Jan 2022 17:04:03 +0100</lastBuildDate><atom:link href="https://bradleyjkemp.dev/sigmadoc/tags/attack.t1027/index.xml" rel="self" type="application/rss+xml"/><item><title>Obfuscated Command Line Using Special Unicode Characters</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_char_in_cmd.yml/</link><pubDate>Sat, 15 Jan 2022 17:04:03 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_char_in_cmd.yml/</guid><description>&lt;p>Adversaries may attempt to make an executable or file difficult to discover or analyze by encrypting, encoding, or otherwise obfuscating its contents on the system or in transit.&lt;/p></description></item><item><title>FromBase64String Command Line</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_powershell_frombase64string.yml/</link><pubDate>Wed, 29 Jan 2020 16:05:12 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_powershell_frombase64string.yml/</guid><description>&lt;p>Detects suspicious FromBase64String expressions in command line arguments&lt;/p></description></item><item><title>Operation Wocao Activity</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_apt_wocao.yml/</link><pubDate>Fri, 20 Dec 2019 15:00:07 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_apt_wocao.yml/</guid><description>&lt;p>Detects activity mentioned in Operation Wocao report&lt;/p></description></item><item><title>Emotet Process Creation</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_malware_emotet.yml/</link><pubDate>Mon, 30 Sep 2019 15:53:23 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_malware_emotet.yml/</guid><description>&lt;p>Detects all Emotet like process executions that are not covered by the more generic rules&lt;/p></description></item><item><title>Ping Hex IP</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_ping_hex_ip.yml/</link><pubDate>Wed, 16 Jan 2019 23:36:31 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_ping_hex_ip.yml/</guid><description>&lt;p>Detects a ping command that uses a hex encoded IP address&lt;/p></description></item><item><title>PowerShell Base64 Encoded Shellcode</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_powershell_b64_shellcode.yml/</link><pubDate>Wed, 16 Jan 2019 23:36:31 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_powershell_b64_shellcode.yml/</guid><description>&lt;p>Detects Base64 encoded Shellcode&lt;/p></description></item><item><title>Base64 Encoded Listing of Shadowcopy</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_base64_listing_shadowcopy.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_base64_listing_shadowcopy.yml/</guid><description>&lt;p>Detects base64 encoded listing Win32_Shadowcopy&lt;/p></description></item><item><title>Base64 Encoded Reflective Assembly Load</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_base64_reflective_assembly_load.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_base64_reflective_assembly_load.yml/</guid><description>&lt;p>Detects base64 encoded .NET reflective loading of Assembly&lt;/p></description></item><item><title>Certutil Encode</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_certutil_encode.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_certutil_encode.yml/</guid><description>&lt;p>Detects suspicious a certutil command that used to encode files, which is sometimes used for data exfiltration&lt;/p></description></item><item><title>Decode Base64 Encoded Text</title><link>https://bradleyjkemp.dev/sigmadoc/rules/linux/macos/process_creation/proc_creation_macos_base64_decode.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/macos/process_creation/proc_creation_macos_base64_decode.yml/</guid><description>&lt;p>Detects usage of base64 utility to decode arbitrary base64-encoded text&lt;/p></description></item><item><title>Decode Base64 Encoded Text</title><link>https://bradleyjkemp.dev/sigmadoc/rules/linux/process_creation/proc_creation_lnx_base64_decode.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/process_creation/proc_creation_lnx_base64_decode.yml/</guid><description>&lt;p>Detects usage of base64 utility to decode arbitrary base64-encoded text&lt;/p></description></item><item><title>Encoded PowerShell Command Line</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_powershell_cmdline_specific_comb_methods.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_powershell_cmdline_specific_comb_methods.yml/</guid><description>&lt;p>Detects specific combinations of encoding methods in the PowerShell command lines&lt;/p></description></item><item><title>Invoke-Obfuscation CLIP+ Launcher</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_invoke_obfuscation_clip_services.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_invoke_obfuscation_clip_services.yml/</guid><description>&lt;p>Detects Obfuscated use of Clip.exe to execute PowerShell&lt;/p></description></item><item><title>Invoke-Obfuscation CLIP+ Launcher</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_invoke_obfuscation_clip.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_invoke_obfuscation_clip.yml/</guid><description>&lt;p>Detects Obfuscated use of Clip.exe to execute PowerShell&lt;/p></description></item><item><title>Invoke-Obfuscation CLIP+ Launcher</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_invoke_obfuscation_clip.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_invoke_obfuscation_clip.yml/</guid><description>&lt;p>Detects Obfuscated use of Clip.exe to execute PowerShell&lt;/p></description></item><item><title>Invoke-Obfuscation COMPRESS OBFUSCATION</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_invoke_obfuscation_via_compress_services.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_invoke_obfuscation_via_compress_services.yml/</guid><description>&lt;p>Detects Obfuscated Powershell via COMPRESS OBFUSCATION&lt;/p></description></item><item><title>Invoke-Obfuscation COMPRESS OBFUSCATION</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_invoke_obfuscation_via_compress.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_invoke_obfuscation_via_compress.yml/</guid><description>&lt;p>Detects Obfuscated Powershell via COMPRESS OBFUSCATION&lt;/p></description></item><item><title>Invoke-Obfuscation COMPRESS OBFUSCATION</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_invoke_obfuscation_via_compress.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_invoke_obfuscation_via_compress.yml/</guid><description>&lt;p>Detects Obfuscated Powershell via COMPRESS OBFUSCATION&lt;/p></description></item><item><title>Invoke-Obfuscation RUNDLL LAUNCHER</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_invoke_obfuscation_via_rundll_services.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_invoke_obfuscation_via_rundll_services.yml/</guid><description>&lt;p>Detects Obfuscated Powershell via RUNDLL LAUNCHER&lt;/p></description></item><item><title>Invoke-Obfuscation RUNDLL LAUNCHER</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_invoke_obfuscation_via_rundll.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_invoke_obfuscation_via_rundll.yml/</guid><description>&lt;p>Detects Obfuscated Powershell via RUNDLL LAUNCHER&lt;/p></description></item><item><title>Invoke-Obfuscation RUNDLL LAUNCHER</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_invoke_obfuscation_via_rundll.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_invoke_obfuscation_via_rundll.yml/</guid><description>&lt;p>Detects Obfuscated Powershell via RUNDLL LAUNCHER&lt;/p></description></item><item><title>Invoke-Obfuscation STDIN+ Launcher</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_invoke_obfuscation_stdin_services.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_invoke_obfuscation_stdin_services.yml/</guid><description>&lt;p>Detects Obfuscated use of stdin to execute PowerShell&lt;/p></description></item><item><title>Invoke-Obfuscation STDIN+ Launcher</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_invoke_obfuscation_stdin.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_invoke_obfuscation_stdin.yml/</guid><description>&lt;p>Detects Obfuscated use of stdin to execute PowerShell&lt;/p></description></item><item><title>Invoke-Obfuscation STDIN+ Launcher</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_invoke_obfuscation_stdin.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_invoke_obfuscation_stdin.yml/</guid><description>&lt;p>Detects Obfuscated use of stdin to execute PowerShell&lt;/p></description></item><item><title>Invoke-Obfuscation VAR+ Launcher</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_invoke_obfuscation_var_services.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_invoke_obfuscation_var_services.yml/</guid><description>&lt;p>Detects Obfuscated use of Environment Variables to execute PowerShell&lt;/p></description></item><item><title>Invoke-Obfuscation VAR+ Launcher</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_invoke_obfuscation_var.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_invoke_obfuscation_var.yml/</guid><description>&lt;p>Detects Obfuscated use of Environment Variables to execute PowerShell&lt;/p></description></item><item><title>Invoke-Obfuscation VAR+ Launcher</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_invoke_obfuscation_var.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_invoke_obfuscation_var.yml/</guid><description>&lt;p>Detects Obfuscated use of Environment Variables to execute PowerShell&lt;/p></description></item><item><title>Invoke-Obfuscation VAR++ LAUNCHER OBFUSCATION</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_invoke_obfuscation_via_var_services.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_invoke_obfuscation_via_var_services.yml/</guid><description>&lt;p>Detects Obfuscated Powershell via VAR++ LAUNCHER&lt;/p></description></item><item><title>Invoke-Obfuscation VAR++ LAUNCHER OBFUSCATION</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_invoke_obfuscation_via_var.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_invoke_obfuscation_via_var.yml/</guid><description>&lt;p>Detects Obfuscated Powershell via VAR++ LAUNCHER&lt;/p></description></item><item><title>Invoke-Obfuscation VAR++ LAUNCHER OBFUSCATION</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_invoke_obfuscation_via_var.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_invoke_obfuscation_via_var.yml/</guid><description>&lt;p>Detects Obfuscated Powershell via VAR++ LAUNCHER&lt;/p></description></item><item><title>Invoke-Obfuscation Via Stdin</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_invoke_obfuscation_via_stdin_services.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_invoke_obfuscation_via_stdin_services.yml/</guid><description>&lt;p>Detects Obfuscated Powershell via Stdin in Scripts&lt;/p></description></item><item><title>Invoke-Obfuscation Via Stdin</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_invoke_obfuscation_via_stdin.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_invoke_obfuscation_via_stdin.yml/</guid><description>&lt;p>Detects Obfuscated Powershell via Stdin in Scripts&lt;/p></description></item><item><title>Invoke-Obfuscation Via Stdin</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_invoke_obfuscation_via_stdin.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_invoke_obfuscation_via_stdin.yml/</guid><description>&lt;p>Detects Obfuscated Powershell via Stdin in Scripts&lt;/p></description></item><item><title>Invoke-Obfuscation Via Use Clip</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_invoke_obfuscation_via_use_clip_services.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_invoke_obfuscation_via_use_clip_services.yml/</guid><description>&lt;p>Detects Obfuscated Powershell via use Clip.exe in Scripts&lt;/p></description></item><item><title>Invoke-Obfuscation Via Use Clip</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_invoke_obfuscation_via_use_clip.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_invoke_obfuscation_via_use_clip.yml/</guid><description>&lt;p>Detects Obfuscated Powershell via use Clip.exe in Scripts&lt;/p></description></item><item><title>Invoke-Obfuscation Via Use Clip</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_invoke_obfuscation_via_use_clip.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_invoke_obfuscation_via_use_clip.yml/</guid><description>&lt;p>Detects Obfuscated Powershell via use Clip.exe in Scripts&lt;/p></description></item><item><title>Invoke-Obfuscation Via Use MSHTA</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_invoke_obfuscation_via_use_mshta_services.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_invoke_obfuscation_via_use_mshta_services.yml/</guid><description>&lt;p>Detects Obfuscated Powershell via use MSHTA in Scripts&lt;/p></description></item><item><title>Invoke-Obfuscation Via Use MSHTA</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_invoke_obfuscation_via_use_mhsta.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_invoke_obfuscation_via_use_mhsta.yml/</guid><description>&lt;p>Detects Obfuscated Powershell via use MSHTA in Scripts&lt;/p></description></item><item><title>Invoke-Obfuscation Via Use MSHTA</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_invoke_obfuscation_via_use_mhsta.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_invoke_obfuscation_via_use_mhsta.yml/</guid><description>&lt;p>Detects Obfuscated Powershell via use MSHTA in Scripts&lt;/p></description></item><item><title>Invoke-Obfuscation Via Use Rundll32</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_invoke_obfuscation_via_use_rundll32_services.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_invoke_obfuscation_via_use_rundll32_services.yml/</guid><description>&lt;p>Detects Obfuscated Powershell via use Rundll32 in Scripts&lt;/p></description></item><item><title>Invoke-Obfuscation Via Use Rundll32</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_invoke_obfuscation_via_use_rundll32.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_invoke_obfuscation_via_use_rundll32.yml/</guid><description>&lt;p>Detects Obfuscated Powershell via use Rundll32 in Scripts&lt;/p></description></item><item><title>Invoke-Obfuscation Via Use Rundll32</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_invoke_obfuscation_via_use_rundll32.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_invoke_obfuscation_via_use_rundll32.yml/</guid><description>&lt;p>Detects Obfuscated Powershell via use Rundll32 in Scripts&lt;/p></description></item><item><title>PowerShell Encoded Character Syntax</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_powershell_encoded_param.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_powershell_encoded_param.yml/</guid><description>&lt;p>Detects suspicious encoded character syntax often used for defense evasion&lt;/p></description></item><item><title>RedMimicry Winnti Playbook Dropped File</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_redmimicry_winnti_filedrop.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_redmimicry_winnti_filedrop.yml/</guid><description>&lt;p>Detects actions caused by the RedMimicry Winnti playbook&lt;/p></description></item><item><title>Suspicious PowerShell Cmdline</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_powershell_cmdline_reversed_strings.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_powershell_cmdline_reversed_strings.yml/</guid><description>&lt;p>Detects the PowerShell command lines with reversed strings&lt;/p></description></item><item><title>Suspicious PowerShell Command Line</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_powershell_cmdline_special_characters.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_powershell_cmdline_special_characters.yml/</guid><description>&lt;p>Detects the PowerShell command lines with special characters&lt;/p></description></item><item><title>Turla Group Commands May 2020</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_apt_turla_comrat_may20.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_apt_turla_comrat_may20.yml/</guid><description>&lt;p>Detects commands used by Turla group as reported by ESET in May 2020&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>attack.t1027 on My New Hugo Site</title>
+    <link>https://bradleyjkemp.dev/sigmadoc/tags/attack.t1027/</link>
+    <description>Recent content in attack.t1027 on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 15 Jan 2022 17:04:03 +0100</lastBuildDate><atom:link href="https://bradleyjkemp.dev/sigmadoc/tags/attack.t1027/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Obfuscated Command Line Using Special Unicode Characters</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_char_in_cmd.yml/</link>
+      <pubDate>Sat, 15 Jan 2022 17:04:03 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_char_in_cmd.yml/</guid>
+      <description>&lt;p&gt;Adversaries may attempt to make an executable or file difficult to discover or analyze by encrypting, encoding, or otherwise obfuscating its contents on the system or in transit.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>FromBase64String Command Line</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_powershell_frombase64string.yml/</link>
+      <pubDate>Wed, 29 Jan 2020 16:05:12 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_powershell_frombase64string.yml/</guid>
+      <description>&lt;p&gt;Detects suspicious FromBase64String expressions in command line arguments&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Operation Wocao Activity</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_apt_wocao.yml/</link>
+      <pubDate>Fri, 20 Dec 2019 15:00:07 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_apt_wocao.yml/</guid>
+      <description>&lt;p&gt;Detects activity mentioned in Operation Wocao report&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Emotet Process Creation</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_malware_emotet.yml/</link>
+      <pubDate>Mon, 30 Sep 2019 15:53:23 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_malware_emotet.yml/</guid>
+      <description>&lt;p&gt;Detects all Emotet like process executions that are not covered by the more generic rules&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Ping Hex IP</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_ping_hex_ip.yml/</link>
+      <pubDate>Wed, 16 Jan 2019 23:36:31 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_ping_hex_ip.yml/</guid>
+      <description>&lt;p&gt;Detects a ping command that uses a hex encoded IP address&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>PowerShell Base64 Encoded Shellcode</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_powershell_b64_shellcode.yml/</link>
+      <pubDate>Wed, 16 Jan 2019 23:36:31 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_powershell_b64_shellcode.yml/</guid>
+      <description>&lt;p&gt;Detects Base64 encoded Shellcode&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Base64 Encoded Listing of Shadowcopy</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_base64_listing_shadowcopy.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_base64_listing_shadowcopy.yml/</guid>
+      <description>&lt;p&gt;Detects base64 encoded listing Win32_Shadowcopy&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Base64 Encoded Reflective Assembly Load</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_base64_reflective_assembly_load.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_base64_reflective_assembly_load.yml/</guid>
+      <description>&lt;p&gt;Detects base64 encoded .NET reflective loading of Assembly&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Certutil Encode</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_certutil_encode.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_certutil_encode.yml/</guid>
+      <description>&lt;p&gt;Detects suspicious a certutil command that used to encode files, which is sometimes used for data exfiltration&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Decode Base64 Encoded Text</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/linux/macos/process_creation/proc_creation_macos_base64_decode.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/macos/process_creation/proc_creation_macos_base64_decode.yml/</guid>
+      <description>&lt;p&gt;Detects usage of base64 utility to decode arbitrary base64-encoded text&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Decode Base64 Encoded Text</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/linux/process_creation/proc_creation_lnx_base64_decode.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/process_creation/proc_creation_lnx_base64_decode.yml/</guid>
+      <description>&lt;p&gt;Detects usage of base64 utility to decode arbitrary base64-encoded text&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Encoded PowerShell Command Line</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_powershell_cmdline_specific_comb_methods.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_powershell_cmdline_specific_comb_methods.yml/</guid>
+      <description>&lt;p&gt;Detects specific combinations of encoding methods in the PowerShell command lines&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Invoke-Obfuscation CLIP&#43; Launcher</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_invoke_obfuscation_clip_services.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_invoke_obfuscation_clip_services.yml/</guid>
+      <description>&lt;p&gt;Detects Obfuscated use of Clip.exe to execute PowerShell&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Invoke-Obfuscation CLIP&#43; Launcher</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_invoke_obfuscation_clip.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_invoke_obfuscation_clip.yml/</guid>
+      <description>&lt;p&gt;Detects Obfuscated use of Clip.exe to execute PowerShell&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Invoke-Obfuscation CLIP&#43; Launcher</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_invoke_obfuscation_clip.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_invoke_obfuscation_clip.yml/</guid>
+      <description>&lt;p&gt;Detects Obfuscated use of Clip.exe to execute PowerShell&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Invoke-Obfuscation COMPRESS OBFUSCATION</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_invoke_obfuscation_via_compress_services.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_invoke_obfuscation_via_compress_services.yml/</guid>
+      <description>&lt;p&gt;Detects Obfuscated Powershell via COMPRESS OBFUSCATION&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Invoke-Obfuscation COMPRESS OBFUSCATION</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_invoke_obfuscation_via_compress.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_invoke_obfuscation_via_compress.yml/</guid>
+      <description>&lt;p&gt;Detects Obfuscated Powershell via COMPRESS OBFUSCATION&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Invoke-Obfuscation COMPRESS OBFUSCATION</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_invoke_obfuscation_via_compress.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_invoke_obfuscation_via_compress.yml/</guid>
+      <description>&lt;p&gt;Detects Obfuscated Powershell via COMPRESS OBFUSCATION&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Invoke-Obfuscation RUNDLL LAUNCHER</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_invoke_obfuscation_via_rundll_services.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_invoke_obfuscation_via_rundll_services.yml/</guid>
+      <description>&lt;p&gt;Detects Obfuscated Powershell via RUNDLL LAUNCHER&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Invoke-Obfuscation RUNDLL LAUNCHER</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_invoke_obfuscation_via_rundll.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_invoke_obfuscation_via_rundll.yml/</guid>
+      <description>&lt;p&gt;Detects Obfuscated Powershell via RUNDLL LAUNCHER&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Invoke-Obfuscation RUNDLL LAUNCHER</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_invoke_obfuscation_via_rundll.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_invoke_obfuscation_via_rundll.yml/</guid>
+      <description>&lt;p&gt;Detects Obfuscated Powershell via RUNDLL LAUNCHER&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Invoke-Obfuscation STDIN&#43; Launcher</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_invoke_obfuscation_stdin_services.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_invoke_obfuscation_stdin_services.yml/</guid>
+      <description>&lt;p&gt;Detects Obfuscated use of stdin to execute PowerShell&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Invoke-Obfuscation STDIN&#43; Launcher</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_invoke_obfuscation_stdin.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_invoke_obfuscation_stdin.yml/</guid>
+      <description>&lt;p&gt;Detects Obfuscated use of stdin to execute PowerShell&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Invoke-Obfuscation STDIN&#43; Launcher</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_invoke_obfuscation_stdin.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_invoke_obfuscation_stdin.yml/</guid>
+      <description>&lt;p&gt;Detects Obfuscated use of stdin to execute PowerShell&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Invoke-Obfuscation VAR&#43; Launcher</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_invoke_obfuscation_var_services.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_invoke_obfuscation_var_services.yml/</guid>
+      <description>&lt;p&gt;Detects Obfuscated use of Environment Variables to execute PowerShell&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Invoke-Obfuscation VAR&#43; Launcher</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_invoke_obfuscation_var.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_invoke_obfuscation_var.yml/</guid>
+      <description>&lt;p&gt;Detects Obfuscated use of Environment Variables to execute PowerShell&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Invoke-Obfuscation VAR&#43; Launcher</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_invoke_obfuscation_var.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_invoke_obfuscation_var.yml/</guid>
+      <description>&lt;p&gt;Detects Obfuscated use of Environment Variables to execute PowerShell&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Invoke-Obfuscation VAR&#43;&#43; LAUNCHER OBFUSCATION</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_invoke_obfuscation_via_var_services.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_invoke_obfuscation_via_var_services.yml/</guid>
+      <description>&lt;p&gt;Detects Obfuscated Powershell via VAR++ LAUNCHER&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Invoke-Obfuscation VAR&#43;&#43; LAUNCHER OBFUSCATION</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_invoke_obfuscation_via_var.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_invoke_obfuscation_via_var.yml/</guid>
+      <description>&lt;p&gt;Detects Obfuscated Powershell via VAR++ LAUNCHER&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Invoke-Obfuscation VAR&#43;&#43; LAUNCHER OBFUSCATION</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_invoke_obfuscation_via_var.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_invoke_obfuscation_via_var.yml/</guid>
+      <description>&lt;p&gt;Detects Obfuscated Powershell via VAR++ LAUNCHER&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Invoke-Obfuscation Via Stdin</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_invoke_obfuscation_via_stdin_services.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_invoke_obfuscation_via_stdin_services.yml/</guid>
+      <description>&lt;p&gt;Detects Obfuscated Powershell via Stdin in Scripts&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Invoke-Obfuscation Via Stdin</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_invoke_obfuscation_via_stdin.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_invoke_obfuscation_via_stdin.yml/</guid>
+      <description>&lt;p&gt;Detects Obfuscated Powershell via Stdin in Scripts&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Invoke-Obfuscation Via Stdin</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_invoke_obfuscation_via_stdin.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_invoke_obfuscation_via_stdin.yml/</guid>
+      <description>&lt;p&gt;Detects Obfuscated Powershell via Stdin in Scripts&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Invoke-Obfuscation Via Use Clip</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_invoke_obfuscation_via_use_clip_services.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_invoke_obfuscation_via_use_clip_services.yml/</guid>
+      <description>&lt;p&gt;Detects Obfuscated Powershell via use Clip.exe in Scripts&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Invoke-Obfuscation Via Use Clip</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_invoke_obfuscation_via_use_clip.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_invoke_obfuscation_via_use_clip.yml/</guid>
+      <description>&lt;p&gt;Detects Obfuscated Powershell via use Clip.exe in Scripts&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Invoke-Obfuscation Via Use Clip</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_invoke_obfuscation_via_use_clip.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_invoke_obfuscation_via_use_clip.yml/</guid>
+      <description>&lt;p&gt;Detects Obfuscated Powershell via use Clip.exe in Scripts&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Invoke-Obfuscation Via Use MSHTA</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_invoke_obfuscation_via_use_mshta_services.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_invoke_obfuscation_via_use_mshta_services.yml/</guid>
+      <description>&lt;p&gt;Detects Obfuscated Powershell via use MSHTA in Scripts&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Invoke-Obfuscation Via Use MSHTA</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_invoke_obfuscation_via_use_mhsta.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_invoke_obfuscation_via_use_mhsta.yml/</guid>
+      <description>&lt;p&gt;Detects Obfuscated Powershell via use MSHTA in Scripts&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Invoke-Obfuscation Via Use MSHTA</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_invoke_obfuscation_via_use_mhsta.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_invoke_obfuscation_via_use_mhsta.yml/</guid>
+      <description>&lt;p&gt;Detects Obfuscated Powershell via use MSHTA in Scripts&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Invoke-Obfuscation Via Use Rundll32</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_invoke_obfuscation_via_use_rundll32_services.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_invoke_obfuscation_via_use_rundll32_services.yml/</guid>
+      <description>&lt;p&gt;Detects Obfuscated Powershell via use Rundll32 in Scripts&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Invoke-Obfuscation Via Use Rundll32</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_invoke_obfuscation_via_use_rundll32.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_invoke_obfuscation_via_use_rundll32.yml/</guid>
+      <description>&lt;p&gt;Detects Obfuscated Powershell via use Rundll32 in Scripts&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Invoke-Obfuscation Via Use Rundll32</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_invoke_obfuscation_via_use_rundll32.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_invoke_obfuscation_via_use_rundll32.yml/</guid>
+      <description>&lt;p&gt;Detects Obfuscated Powershell via use Rundll32 in Scripts&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>PowerShell Encoded Character Syntax</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_powershell_encoded_param.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_powershell_encoded_param.yml/</guid>
+      <description>&lt;p&gt;Detects suspicious encoded character syntax often used for defense evasion&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>RedMimicry Winnti Playbook Dropped File</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_redmimicry_winnti_filedrop.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_redmimicry_winnti_filedrop.yml/</guid>
+      <description>&lt;p&gt;Detects actions caused by the RedMimicry Winnti playbook&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Suspicious PowerShell Cmdline</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_powershell_cmdline_reversed_strings.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_powershell_cmdline_reversed_strings.yml/</guid>
+      <description>&lt;p&gt;Detects the PowerShell command lines with reversed strings&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Suspicious PowerShell Command Line</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_powershell_cmdline_special_characters.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_powershell_cmdline_special_characters.yml/</guid>
+      <description>&lt;p&gt;Detects the PowerShell command lines with special characters&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Turla Group Commands May 2020</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_apt_turla_comrat_may20.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_apt_turla_comrat_may20.yml/</guid>
+      <description>&lt;p&gt;Detects commands used by Turla group as reported by ESET in May 2020&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

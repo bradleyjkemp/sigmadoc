@@ -1,1 +1,38 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>attack.t1095 on My New Hugo Site</title><link>https://bradleyjkemp.dev/sigmadoc/tags/attack.t1095/</link><description>Recent content in attack.t1095 on My New Hugo Site</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 21 Jul 2021 13:04:27 +0200</lastBuildDate><atom:link href="https://bradleyjkemp.dev/sigmadoc/tags/attack.t1095/index.xml" rel="self" type="application/rss+xml"/><item><title>Netcat The Powershell Version</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_module/posh_pm_powercat.yml/</link><pubDate>Wed, 21 Jul 2021 13:04:27 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_module/posh_pm_powercat.yml/</guid><description>&lt;p>Adversaries may use a non-application layer protocol for communication between host and C2 server or among infected hosts within a network&lt;/p></description></item><item><title>Ncat Execution</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_netcat_execution.yml/</link><pubDate>Wed, 21 Jul 2021 10:55:54 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_netcat_execution.yml/</guid><description>&lt;p>Adversaries may use a non-application layer protocol for communication between host and C2 server or among infected hosts within a network&lt;/p></description></item><item><title>Suspicious DNS Z Flag Bit Set</title><link>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_dns_suspicious_zbit_flag.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_dns_suspicious_zbit_flag.yml/</guid><description>&lt;p>The DNS Z flag is bit within the DNS protocol header that is, per the IETF design, meant to be used reserved (unused). Although recently it has been used in DNSSec, the value being set to anything other than 0 should be rare. Otherwise if it is set to non 0 and DNSSec is being used, then excluding the legitimate domains is low effort and high reward. Determine if multiple of these files were accessed in a short period of time to further enhance the possibility of seeing if this was a one off or the possibility of larger sensitive file gathering. This Sigma query is designed to accompany the Corelight Threat Hunting Guide, which can be found here: &lt;a href="https://www3.corelight.com/corelights-introductory-guide-to-threat-hunting-with-zeek-bro-logs">https://www3.corelight.com/corelights-introductory-guide-to-threat-hunting-with-zeek-bro-logs&lt;/a>&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>attack.t1095 on My New Hugo Site</title>
+    <link>https://bradleyjkemp.dev/sigmadoc/tags/attack.t1095/</link>
+    <description>Recent content in attack.t1095 on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 21 Jul 2021 13:04:27 +0200</lastBuildDate><atom:link href="https://bradleyjkemp.dev/sigmadoc/tags/attack.t1095/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Netcat The Powershell Version</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_module/posh_pm_powercat.yml/</link>
+      <pubDate>Wed, 21 Jul 2021 13:04:27 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_module/posh_pm_powercat.yml/</guid>
+      <description>&lt;p&gt;Adversaries may use a non-application layer protocol for communication between host and C2 server or among infected hosts within a network&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Ncat Execution</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_netcat_execution.yml/</link>
+      <pubDate>Wed, 21 Jul 2021 10:55:54 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_netcat_execution.yml/</guid>
+      <description>&lt;p&gt;Adversaries may use a non-application layer protocol for communication between host and C2 server or among infected hosts within a network&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Suspicious DNS Z Flag Bit Set</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_dns_suspicious_zbit_flag.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_dns_suspicious_zbit_flag.yml/</guid>
+      <description>&lt;p&gt;The DNS Z flag is bit within the DNS protocol header that is, per the IETF design, meant to be used reserved (unused). Although recently it has been used in DNSSec, the value being set to anything other than 0 should be rare. Otherwise if it is set to non 0 and DNSSec is being used, then excluding the legitimate domains is low effort and high reward. Determine if multiple of these files were accessed in a short period of time to further enhance the possibility of seeing if this was a one off or the possibility of larger sensitive file gathering. This Sigma query is designed to accompany the Corelight Threat Hunting Guide, which can be found here: &lt;a href=&#34;https://www3.corelight.com/corelights-introductory-guide-to-threat-hunting-with-zeek-bro-logs&#34;&gt;https://www3.corelight.com/corelights-introductory-guide-to-threat-hunting-with-zeek-bro-logs&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

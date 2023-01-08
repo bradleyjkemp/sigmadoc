@@ -1,1 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>spring on My New Hugo Site</title><link>https://bradleyjkemp.dev/sigmadoc/rules/application/spring/</link><description>Recent content in spring on My New Hugo Site</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://bradleyjkemp.dev/sigmadoc/rules/application/spring/index.xml" rel="self" type="application/rss+xml"/><item><title>Spring Framework Exceptions</title><link>https://bradleyjkemp.dev/sigmadoc/rules/application/spring/appframework_spring_exceptions.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/application/spring/appframework_spring_exceptions.yml/</guid><description>&lt;p>Detects suspicious Spring framework exceptions that could indicate exploitation attempts&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>spring on My New Hugo Site</title>
+    <link>https://bradleyjkemp.dev/sigmadoc/rules/application/spring/</link>
+    <description>Recent content in spring on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://bradleyjkemp.dev/sigmadoc/rules/application/spring/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Spring Framework Exceptions</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/application/spring/appframework_spring_exceptions.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/application/spring/appframework_spring_exceptions.yml/</guid>
+      <description>&lt;p&gt;Detects suspicious Spring framework exceptions that could indicate exploitation attempts&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

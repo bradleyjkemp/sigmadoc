@@ -1,1 +1,65 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>attack.t1087 on My New Hugo Site</title><link>https://bradleyjkemp.dev/sigmadoc/tags/attack.t1087/</link><description>Recent content in attack.t1087 on My New Hugo Site</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 10 Jan 2022 18:04:43 +0200</lastBuildDate><atom:link href="https://bradleyjkemp.dev/sigmadoc/tags/attack.t1087/index.xml" rel="self" type="application/rss+xml"/><item><title>SharpHound Recon Account Discovery</title><link>https://bradleyjkemp.dev/sigmadoc/rules/application/rpc_firewall/rpc_firewall_sharphound_recon_account.yml/</link><pubDate>Mon, 10 Jan 2022 18:04:43 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/application/rpc_firewall/rpc_firewall_sharphound_recon_account.yml/</guid><description>&lt;p>Detects remote RPC calls useb by SharpHound to map remote connections and local group membership.&lt;/p></description></item><item><title>Suspicious Use of PsLogList</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_psloglist.yml/</link><pubDate>Sat, 18 Dec 2021 21:52:05 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_psloglist.yml/</guid><description>&lt;p>Threat actors can use the PsLogList utility to dump event log in order to extract admin accounts and perform account discovery.&lt;/p></description></item><item><title>AzureHound PowerShell Commands</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_azurehound_commands.yml/</link><pubDate>Sat, 23 Oct 2021 18:27:36 -0500</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_azurehound_commands.yml/</guid><description>&lt;p>Detects the execution of AzureHound in PowerShell, a tool to gather data from Azure for BloodHound&lt;/p></description></item><item><title>Hacktool Ruler</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_alert_ruler.yml/</link><pubDate>Fri, 26 Jul 2019 14:49:09 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_alert_ruler.yml/</guid><description>&lt;p>This events that are generated when using the hacktool Ruler by Sensepost&lt;/p></description></item><item><title>CrackMapExecWin</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_apt_dragonfly.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_apt_dragonfly.yml/</guid><description>&lt;p>Detects CrackMapExecWin Activity as Described by NCSC&lt;/p></description></item><item><title>Network Reconnaissance Activity</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_recon_net_activity.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_recon_net_activity.yml/</guid><description>&lt;p>Detects a set of suspicious network related commands often used in recon stages&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>attack.t1087 on My New Hugo Site</title>
+    <link>https://bradleyjkemp.dev/sigmadoc/tags/attack.t1087/</link>
+    <description>Recent content in attack.t1087 on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 10 Jan 2022 18:04:43 +0200</lastBuildDate><atom:link href="https://bradleyjkemp.dev/sigmadoc/tags/attack.t1087/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SharpHound Recon Account Discovery</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/application/rpc_firewall/rpc_firewall_sharphound_recon_account.yml/</link>
+      <pubDate>Mon, 10 Jan 2022 18:04:43 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/application/rpc_firewall/rpc_firewall_sharphound_recon_account.yml/</guid>
+      <description>&lt;p&gt;Detects remote RPC calls useb by SharpHound to map remote connections and local group membership.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Suspicious Use of PsLogList</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_psloglist.yml/</link>
+      <pubDate>Sat, 18 Dec 2021 21:52:05 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_psloglist.yml/</guid>
+      <description>&lt;p&gt;Threat actors can use the PsLogList utility to dump event log in order to extract admin accounts and perform account discovery.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>AzureHound PowerShell Commands</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_azurehound_commands.yml/</link>
+      <pubDate>Sat, 23 Oct 2021 18:27:36 -0500</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_azurehound_commands.yml/</guid>
+      <description>&lt;p&gt;Detects the execution of AzureHound in PowerShell, a tool to gather data from Azure for BloodHound&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Hacktool Ruler</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_alert_ruler.yml/</link>
+      <pubDate>Fri, 26 Jul 2019 14:49:09 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_alert_ruler.yml/</guid>
+      <description>&lt;p&gt;This events that are generated when using the hacktool Ruler by Sensepost&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>CrackMapExecWin</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_apt_dragonfly.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_apt_dragonfly.yml/</guid>
+      <description>&lt;p&gt;Detects CrackMapExecWin Activity as Described by NCSC&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Network Reconnaissance Activity</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_recon_net_activity.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_recon_net_activity.yml/</guid>
+      <description>&lt;p&gt;Detects a set of suspicious network related commands often used in recon stages&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

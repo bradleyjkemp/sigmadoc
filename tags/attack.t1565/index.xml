@@ -1,1 +1,29 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>attack.t1565 on My New Hugo Site</title><link>https://bradleyjkemp.dev/sigmadoc/tags/attack.t1565/</link><description>Recent content in attack.t1565 on My New Hugo Site</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 15 Aug 2021 14:28:10 -0500</lastBuildDate><atom:link href="https://bradleyjkemp.dev/sigmadoc/tags/attack.t1565/index.xml" rel="self" type="application/rss+xml"/><item><title>Google Cloud Re-identifies Sensitive Information.</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/gcp/gcp_dlp_re_identifies_sensitive_information.yml/</link><pubDate>Sun, 15 Aug 2021 14:28:10 -0500</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/gcp/gcp_dlp_re_identifies_sensitive_information.yml/</guid><description>&lt;p>Identifies when sensitive information is re-identified in google Cloud.&lt;/p></description></item><item><title>AWS EC2 Disable EBS Encryption</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/aws/aws_ec2_disable_encryption.yml/</link><pubDate>Tue, 29 Jun 2021 11:06:00 +0700</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/aws/aws_ec2_disable_encryption.yml/</guid><description>&lt;p>Identifies disabling of default Amazon Elastic Block Store (EBS) encryption in the current region. Disabling default encryption does not change the encryption status of your existing volumes.&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>attack.t1565 on My New Hugo Site</title>
+    <link>https://bradleyjkemp.dev/sigmadoc/tags/attack.t1565/</link>
+    <description>Recent content in attack.t1565 on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 15 Aug 2021 14:28:10 -0500</lastBuildDate><atom:link href="https://bradleyjkemp.dev/sigmadoc/tags/attack.t1565/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Google Cloud Re-identifies Sensitive Information.</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/gcp/gcp_dlp_re_identifies_sensitive_information.yml/</link>
+      <pubDate>Sun, 15 Aug 2021 14:28:10 -0500</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/gcp/gcp_dlp_re_identifies_sensitive_information.yml/</guid>
+      <description>&lt;p&gt;Identifies when sensitive information is re-identified in google Cloud.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>AWS EC2 Disable EBS Encryption</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/aws/aws_ec2_disable_encryption.yml/</link>
+      <pubDate>Tue, 29 Jun 2021 11:06:00 +0700</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/aws/aws_ec2_disable_encryption.yml/</guid>
+      <description>&lt;p&gt;Identifies disabling of default Amazon Elastic Block Store (EBS) encryption in the current region. Disabling default encryption does not change the encryption status of your existing volumes.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,1 +1,47 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>attack.t1572 on My New Hugo Site</title><link>https://bradleyjkemp.dev/sigmadoc/tags/attack.t1572/</link><description>Recent content in attack.t1572 on My New Hugo Site</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 28 Nov 2019 21:15:55 +0100</lastBuildDate><atom:link href="https://bradleyjkemp.dev/sigmadoc/tags/attack.t1572/index.xml" rel="self" type="application/rss+xml"/><item><title>Silence.EDA Detection</title><link>https://bradleyjkemp.dev/sigmadoc/rules/apt/apt_silence_eda.yml/</link><pubDate>Thu, 28 Nov 2019 21:15:55 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/apt/apt_silence_eda.yml/</guid><description>&lt;p>Detects Silence empireDNSagent&lt;/p></description></item><item><title>Exfiltration and Tunneling Tools Execution</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_exfiltration_and_tunneling_tools_execution.yml/</link><pubDate>Fri, 25 Oct 2019 04:30:55 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_exfiltration_and_tunneling_tools_execution.yml/</guid><description>&lt;p>Execution of well known tools for data exfiltration and tunneling&lt;/p></description></item><item><title>Ngrok Usage</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_ngrok_pua.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_ngrok_pua.yml/</guid><description>&lt;p>Detects the use of Ngrok, a utility used for port forwarding and tunneling, often used by threat actors to make local protected services publicly available. Involved domains are bin.equinox.io for download and *.ngrok.io for connections.&lt;/p></description></item><item><title>Suspicious Plink Remote Forwarding</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_plink_remote_forward.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_plink_remote_forward.yml/</guid><description>&lt;p>Detects suspicious Plink tunnel remote forarding to a local port&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>attack.t1572 on My New Hugo Site</title>
+    <link>https://bradleyjkemp.dev/sigmadoc/tags/attack.t1572/</link>
+    <description>Recent content in attack.t1572 on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 28 Nov 2019 21:15:55 +0100</lastBuildDate><atom:link href="https://bradleyjkemp.dev/sigmadoc/tags/attack.t1572/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Silence.EDA Detection</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/apt/apt_silence_eda.yml/</link>
+      <pubDate>Thu, 28 Nov 2019 21:15:55 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/apt/apt_silence_eda.yml/</guid>
+      <description>&lt;p&gt;Detects Silence empireDNSagent&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Exfiltration and Tunneling Tools Execution</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_exfiltration_and_tunneling_tools_execution.yml/</link>
+      <pubDate>Fri, 25 Oct 2019 04:30:55 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_exfiltration_and_tunneling_tools_execution.yml/</guid>
+      <description>&lt;p&gt;Execution of well known tools for data exfiltration and tunneling&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Ngrok Usage</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_ngrok_pua.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_ngrok_pua.yml/</guid>
+      <description>&lt;p&gt;Detects the use of Ngrok, a utility used for port forwarding and tunneling, often used by threat actors to make local protected services publicly available. Involved domains are bin.equinox.io for download and *.ngrok.io for connections.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Suspicious Plink Remote Forwarding</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_plink_remote_forward.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_plink_remote_forward.yml/</guid>
+      <description>&lt;p&gt;Detects suspicious Plink tunnel remote forarding to a local port&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

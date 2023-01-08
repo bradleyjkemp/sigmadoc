@@ -1,1 +1,155 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>attack.t1078 on My New Hugo Site</title><link>https://bradleyjkemp.dev/sigmadoc/tags/attack.t1078/</link><description>Recent content in attack.t1078 on My New Hugo Site</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 22 Feb 2022 13:44:51 +0100</lastBuildDate><atom:link href="https://bradleyjkemp.dev/sigmadoc/tags/attack.t1078/index.xml" rel="self" type="application/rss+xml"/><item><title>Suspicious Computer Machine Password by PowerShell</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_module/posh_pm_suspicious_reset_computermachinepassword.yml/</link><pubDate>Tue, 22 Feb 2022 13:44:51 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_module/posh_pm_suspicious_reset_computermachinepassword.yml/</guid><description>&lt;p>The Reset-ComputerMachinePassword cmdlet changes the computer account password that the computers use to authenticate to the domain controllers in the domain. You can use it to reset the password of the local computer.&lt;/p></description></item><item><title>Azure Subscription Permission Elevation Via ActivityLogs</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_subscription_permissions_elevation_via_activitylogs.yml/</link><pubDate>Fri, 26 Nov 2021 11:32:57 -0600</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_subscription_permissions_elevation_via_activitylogs.yml/</guid><description>&lt;p>Detects when a user has been elevated to manage all Azure Subscriptions. This change should be investigated immediately if it isn&amp;rsquo;t planned. This setting could allow an attacker access to Azure subscriptions in your environment.&lt;/p></description></item><item><title>Azure Subscription Permission Elevation Via AuditLogs</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_subscription_permissions_elevation_via_auditlogs.yml/</link><pubDate>Fri, 26 Nov 2021 11:32:57 -0600</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_subscription_permissions_elevation_via_auditlogs.yml/</guid><description>&lt;p>Detects when a user has been elevated to manage all Azure Subscriptions. This change should be investigated immediately if it isn&amp;rsquo;t planned. This setting could allow an attacker access to Azure subscriptions in your environment.&lt;/p></description></item><item><title>Azure Unusual Authentication Interruption</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_unusual_authentication_interruption.yml/</link><pubDate>Fri, 26 Nov 2021 11:07:53 -0600</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_unusual_authentication_interruption.yml/</guid><description>&lt;p>Detects when there is a interruption in the authentication process.&lt;/p></description></item><item><title>Azure Kubernetes Admission Controller</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_kubernetes_admission_controller.yml/</link><pubDate>Wed, 24 Nov 2021 23:58:33 -0600</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_kubernetes_admission_controller.yml/</guid><description>&lt;p>Identifies when an admission controller is executed in Azure Kubernetes. A Kubernetes Admission controller intercepts, and possibly modifies, requests to the Kubernetes API server. The behavior of this admission controller is determined by an admission webhook (MutatingAdmissionWebhook or ValidatingAdmissionWebhook) that the user deploys in the cluster. An adversary can use such webhooks as the MutatingAdmissionWebhook for obtaining persistence in the cluster. For example, attackers can intercept and modify the pod creation operations in the cluster and add their malicious container to every created pod. An adversary can use the webhook ValidatingAdmissionWebhook, which could be used to obtain access credentials. An adversary could use the webhook to intercept the requests to the API server, record secrets, and other sensitive information.&lt;/p></description></item><item><title>Google Cloud Kubernetes Admission Controller</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/gcp/gcp_kubernetes_admission_controller.yml/</link><pubDate>Wed, 24 Nov 2021 23:53:57 -0600</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/gcp/gcp_kubernetes_admission_controller.yml/</guid><description>&lt;p>Identifies when an admission controller is executed in GCP Kubernetes. A Kubernetes Admission controller intercepts, and possibly modifies, requests to the Kubernetes API server. The behavior of this admission controller is determined by an admission webhook (MutatingAdmissionWebhook or ValidatingAdmissionWebhook) that the user deploys in the cluster. An adversary can use such webhooks as the MutatingAdmissionWebhook for obtaining persistence in the cluster. For example, attackers can intercept and modify the pod creation operations in the cluster and add their malicious container to every created pod. An adversary can use the webhook ValidatingAdmissionWebhook, which could be used to obtain access credentials. An adversary could use the webhook to intercept the requests to the API server, record secrets, and other sensitive information.&lt;/p></description></item><item><title>Login to Disabled Account</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_login_to_disabled_account.yml/</link><pubDate>Sun, 10 Oct 2021 16:06:28 +0400</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_login_to_disabled_account.yml/</guid><description>&lt;p>Detect failed attempts to sign in to disabled accounts.&lt;/p></description></item><item><title>AWS Suspicious SAML Activity</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/aws/aws_suspicious_saml_activity.yml/</link><pubDate>Wed, 22 Sep 2021 20:15:36 -0500</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/aws/aws_suspicious_saml_activity.yml/</guid><description>&lt;p>Identifies when suspicious SAML activity has occurred in AWS. An adversary could gain backdoor access via SAML.&lt;/p></description></item><item><title>Interactive Logon to Server Systems</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_interactive_logons.yml/</link><pubDate>Fri, 17 Mar 2017 09:44:24 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_interactive_logons.yml/</guid><description>&lt;p>Detects interactive console logons to Server Systems&lt;/p></description></item><item><title>User Added to Local Administrators</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_user_added_to_local_administrators.yml/</link><pubDate>Tue, 14 Mar 2017 12:51:50 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_user_added_to_local_administrators.yml/</guid><description>&lt;p>This rule triggers on user accounts that are added to the local Administrators group, which could be legitimate activity or a sign of privilege escalation activity&lt;/p></description></item><item><title>Failed Logins with Different Accounts from Single Source System</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_failed_logons_single_source.yml/</link><pubDate>Tue, 27 Dec 2016 14:49:54 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_failed_logons_single_source.yml/</guid><description>&lt;p>Detects suspicious failed logins with different user accounts from a single source system&lt;/p></description></item><item><title>Account Tampering - Suspicious Failed Logon Reasons</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_failed_logon_reasons.yml/</link><pubDate>Sat, 24 Dec 2016 12:23:47 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_failed_logon_reasons.yml/</guid><description>&lt;p>This method uses uncommon error codes on failed logons to determine suspicious activity and tampering with accounts that have been disabled or somehow restricted.&lt;/p></description></item><item><title>Azure Domain Federation Settings Modified</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_federation_modified.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_federation_modified.yml/</guid><description>&lt;p>Identifies when an user or application modified the federation settings on the domain.&lt;/p></description></item><item><title>Logon from a Risky IP Address</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/m365/microsoft365_logon_from_risky_ip_address.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/m365/microsoft365_logon_from_risky_ip_address.yml/</guid><description>&lt;p>Detects when a Microsoft Cloud App Security reported when a user signs into your sanctioned apps from a risky IP address.&lt;/p></description></item><item><title>Microsoft 365 - Impossible Travel Activity</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/m365/microsoft365_impossible_travel_activity.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/m365/microsoft365_impossible_travel_activity.yml/</guid><description>&lt;p>Detects when a Microsoft Cloud App Security reported a risky sign-in attempt due to a login associated with an impossible travel.&lt;/p></description></item><item><title>Suspicious Remote Logon with Explicit Credentials</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_logon_explicit_credentials.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_logon_explicit_credentials.yml/</guid><description>&lt;p>Detects suspicious processes logging on with explicit credentials&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>attack.t1078 on My New Hugo Site</title>
+    <link>https://bradleyjkemp.dev/sigmadoc/tags/attack.t1078/</link>
+    <description>Recent content in attack.t1078 on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 22 Feb 2022 13:44:51 +0100</lastBuildDate><atom:link href="https://bradleyjkemp.dev/sigmadoc/tags/attack.t1078/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Suspicious Computer Machine Password by PowerShell</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_module/posh_pm_suspicious_reset_computermachinepassword.yml/</link>
+      <pubDate>Tue, 22 Feb 2022 13:44:51 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_module/posh_pm_suspicious_reset_computermachinepassword.yml/</guid>
+      <description>&lt;p&gt;The Reset-ComputerMachinePassword cmdlet changes the computer account password that the computers use to authenticate to the domain controllers in the domain. You can use it to reset the password of the local computer.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Azure Subscription Permission Elevation Via ActivityLogs</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_subscription_permissions_elevation_via_activitylogs.yml/</link>
+      <pubDate>Fri, 26 Nov 2021 11:32:57 -0600</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_subscription_permissions_elevation_via_activitylogs.yml/</guid>
+      <description>&lt;p&gt;Detects when a user has been elevated to manage all Azure Subscriptions. This change should be investigated immediately if it isn&amp;rsquo;t planned. This setting could allow an attacker access to Azure subscriptions in your environment.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Azure Subscription Permission Elevation Via AuditLogs</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_subscription_permissions_elevation_via_auditlogs.yml/</link>
+      <pubDate>Fri, 26 Nov 2021 11:32:57 -0600</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_subscription_permissions_elevation_via_auditlogs.yml/</guid>
+      <description>&lt;p&gt;Detects when a user has been elevated to manage all Azure Subscriptions. This change should be investigated immediately if it isn&amp;rsquo;t planned. This setting could allow an attacker access to Azure subscriptions in your environment.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Azure Unusual Authentication Interruption</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_unusual_authentication_interruption.yml/</link>
+      <pubDate>Fri, 26 Nov 2021 11:07:53 -0600</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_unusual_authentication_interruption.yml/</guid>
+      <description>&lt;p&gt;Detects when there is a interruption in the authentication process.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Azure Kubernetes Admission Controller</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_kubernetes_admission_controller.yml/</link>
+      <pubDate>Wed, 24 Nov 2021 23:58:33 -0600</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_kubernetes_admission_controller.yml/</guid>
+      <description>&lt;p&gt;Identifies when an admission controller is executed in Azure Kubernetes. A Kubernetes Admission controller intercepts, and possibly modifies, requests to the Kubernetes API server. The behavior of this admission controller is determined by an admission webhook (MutatingAdmissionWebhook or ValidatingAdmissionWebhook) that the user deploys in the cluster. An adversary can use such webhooks as the MutatingAdmissionWebhook for obtaining persistence in the cluster. For example, attackers can intercept and modify the pod creation operations in the cluster and add their malicious container to every created pod. An adversary can use the webhook ValidatingAdmissionWebhook, which could be used to obtain access credentials. An adversary could use the webhook to intercept the requests to the API server, record secrets, and other sensitive information.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Google Cloud Kubernetes Admission Controller</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/gcp/gcp_kubernetes_admission_controller.yml/</link>
+      <pubDate>Wed, 24 Nov 2021 23:53:57 -0600</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/gcp/gcp_kubernetes_admission_controller.yml/</guid>
+      <description>&lt;p&gt;Identifies when an admission controller is executed in GCP Kubernetes. A Kubernetes Admission controller intercepts, and possibly modifies, requests to the Kubernetes API server. The behavior of this admission controller is determined by an admission webhook (MutatingAdmissionWebhook or ValidatingAdmissionWebhook) that the user deploys in the cluster. An adversary can use such webhooks as the MutatingAdmissionWebhook for obtaining persistence in the cluster. For example, attackers can intercept and modify the pod creation operations in the cluster and add their malicious container to every created pod. An adversary can use the webhook ValidatingAdmissionWebhook, which could be used to obtain access credentials. An adversary could use the webhook to intercept the requests to the API server, record secrets, and other sensitive information.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Login to Disabled Account</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_login_to_disabled_account.yml/</link>
+      <pubDate>Sun, 10 Oct 2021 16:06:28 +0400</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_login_to_disabled_account.yml/</guid>
+      <description>&lt;p&gt;Detect failed attempts to sign in to disabled accounts.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>AWS Suspicious SAML Activity</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/aws/aws_suspicious_saml_activity.yml/</link>
+      <pubDate>Wed, 22 Sep 2021 20:15:36 -0500</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/aws/aws_suspicious_saml_activity.yml/</guid>
+      <description>&lt;p&gt;Identifies when suspicious SAML activity has occurred in AWS. An adversary could gain backdoor access via SAML.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Interactive Logon to Server Systems</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_interactive_logons.yml/</link>
+      <pubDate>Fri, 17 Mar 2017 09:44:24 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_interactive_logons.yml/</guid>
+      <description>&lt;p&gt;Detects interactive console logons to Server Systems&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>User Added to Local Administrators</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_user_added_to_local_administrators.yml/</link>
+      <pubDate>Tue, 14 Mar 2017 12:51:50 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_user_added_to_local_administrators.yml/</guid>
+      <description>&lt;p&gt;This rule triggers on user accounts that are added to the local Administrators group, which could be legitimate activity or a sign of privilege escalation activity&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Failed Logins with Different Accounts from Single Source System</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_failed_logons_single_source.yml/</link>
+      <pubDate>Tue, 27 Dec 2016 14:49:54 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_failed_logons_single_source.yml/</guid>
+      <description>&lt;p&gt;Detects suspicious failed logins with different user accounts from a single source system&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Account Tampering - Suspicious Failed Logon Reasons</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_failed_logon_reasons.yml/</link>
+      <pubDate>Sat, 24 Dec 2016 12:23:47 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_failed_logon_reasons.yml/</guid>
+      <description>&lt;p&gt;This method uses uncommon error codes on failed logons to determine suspicious activity and tampering with accounts that have been disabled or somehow restricted.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Azure Domain Federation Settings Modified</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_federation_modified.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_federation_modified.yml/</guid>
+      <description>&lt;p&gt;Identifies when an user or application modified the federation settings on the domain.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Logon from a Risky IP Address</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/m365/microsoft365_logon_from_risky_ip_address.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/m365/microsoft365_logon_from_risky_ip_address.yml/</guid>
+      <description>&lt;p&gt;Detects when a Microsoft Cloud App Security reported when a user signs into your sanctioned apps from a risky IP address.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Microsoft 365 - Impossible Travel Activity</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/m365/microsoft365_impossible_travel_activity.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/m365/microsoft365_impossible_travel_activity.yml/</guid>
+      <description>&lt;p&gt;Detects when a Microsoft Cloud App Security reported a risky sign-in attempt due to a login associated with an impossible travel.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Suspicious Remote Logon with Explicit Credentials</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_logon_explicit_credentials.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_logon_explicit_credentials.yml/</guid>
+      <description>&lt;p&gt;Detects suspicious processes logging on with explicit credentials&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

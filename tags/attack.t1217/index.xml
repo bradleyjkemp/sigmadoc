@@ -1,5 +1,42 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>attack.t1217 on My New Hugo Site</title><link>https://bradleyjkemp.dev/sigmadoc/tags/attack.t1217/</link><description>Recent content in attack.t1217 on My New Hugo Site</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 13 Dec 2021 11:02:33 +0100</lastBuildDate><atom:link href="https://bradleyjkemp.dev/sigmadoc/tags/attack.t1217/index.xml" rel="self" type="application/rss+xml"/><item><title>Automated Collection Bookmarks Using Get-ChildItem PowerShell</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_get_childitem_bookmarks.yml/</link><pubDate>Mon, 13 Dec 2021 11:02:33 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_get_childitem_bookmarks.yml/</guid><description>&lt;p>Adversaries may enumerate browser bookmarks to learn more about compromised hosts.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>attack.t1217 on My New Hugo Site</title>
+    <link>https://bradleyjkemp.dev/sigmadoc/tags/attack.t1217/</link>
+    <description>Recent content in attack.t1217 on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 13 Dec 2021 11:02:33 +0100</lastBuildDate><atom:link href="https://bradleyjkemp.dev/sigmadoc/tags/attack.t1217/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Automated Collection Bookmarks Using Get-ChildItem PowerShell</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_get_childitem_bookmarks.yml/</link>
+      <pubDate>Mon, 13 Dec 2021 11:02:33 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_get_childitem_bookmarks.yml/</guid>
+      <description>&lt;p&gt;Adversaries may enumerate browser bookmarks to learn more about compromised hosts.
 Browser bookmarks may reveal personal information about users (ex: banking sites, interests, social media, etc.) as well as details about
-internal network resources such as servers, tools/dashboards, or other related infrastructure.&lt;/p></description></item><item><title>Suspicious DIR Execution</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_dir.yml/</link><pubDate>Mon, 13 Dec 2021 11:02:33 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_dir.yml/</guid><description>&lt;p>Use dir to collect information&lt;/p></description></item><item><title>Suspicious Where Execution</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_where_execution.yml/</link><pubDate>Mon, 13 Dec 2021 11:02:33 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_where_execution.yml/</guid><description>&lt;p>Adversaries may enumerate browser bookmarks to learn more about compromised hosts.
+internal network resources such as servers, tools/dashboards, or other related infrastructure.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Suspicious DIR Execution</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_dir.yml/</link>
+      <pubDate>Mon, 13 Dec 2021 11:02:33 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_dir.yml/</guid>
+      <description>&lt;p&gt;Use dir to collect information&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Suspicious Where Execution</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_where_execution.yml/</link>
+      <pubDate>Mon, 13 Dec 2021 11:02:33 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_where_execution.yml/</guid>
+      <description>&lt;p&gt;Adversaries may enumerate browser bookmarks to learn more about compromised hosts.
 Browser bookmarks may reveal personal information about users (ex: banking sites, interests, social media, etc.) as well as details about
-internal network resources such as servers, tools/dashboards, or other related infrastructure.&lt;/p></description></item></channel></rss>
+internal network resources such as servers, tools/dashboards, or other related infrastructure.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

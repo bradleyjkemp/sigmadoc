@@ -1,5 +1,474 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>azure on My New Hugo Site</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/</link><description>Recent content in azure on My New Hugo Site</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 26 Nov 2021 11:32:57 -0600</lastBuildDate><atom:link href="https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/index.xml" rel="self" type="application/rss+xml"/><item><title>Azure Subscription Permission Elevation Via ActivityLogs</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_subscription_permissions_elevation_via_activitylogs.yml/</link><pubDate>Fri, 26 Nov 2021 11:32:57 -0600</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_subscription_permissions_elevation_via_activitylogs.yml/</guid><description>&lt;p>Detects when a user has been elevated to manage all Azure Subscriptions. This change should be investigated immediately if it isn&amp;rsquo;t planned. This setting could allow an attacker access to Azure subscriptions in your environment.&lt;/p></description></item><item><title>Azure Subscription Permission Elevation Via AuditLogs</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_subscription_permissions_elevation_via_auditlogs.yml/</link><pubDate>Fri, 26 Nov 2021 11:32:57 -0600</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_subscription_permissions_elevation_via_auditlogs.yml/</guid><description>&lt;p>Detects when a user has been elevated to manage all Azure Subscriptions. This change should be investigated immediately if it isn&amp;rsquo;t planned. This setting could allow an attacker access to Azure subscriptions in your environment.&lt;/p></description></item><item><title>Azure Unusual Authentication Interruption</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_unusual_authentication_interruption.yml/</link><pubDate>Fri, 26 Nov 2021 11:07:53 -0600</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_unusual_authentication_interruption.yml/</guid><description>&lt;p>Detects when there is a interruption in the authentication process.&lt;/p></description></item><item><title>Azure Kubernetes Admission Controller</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_kubernetes_admission_controller.yml/</link><pubDate>Wed, 24 Nov 2021 23:58:33 -0600</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_kubernetes_admission_controller.yml/</guid><description>&lt;p>Identifies when an admission controller is executed in Azure Kubernetes. A Kubernetes Admission controller intercepts, and possibly modifies, requests to the Kubernetes API server. The behavior of this admission controller is determined by an admission webhook (MutatingAdmissionWebhook or ValidatingAdmissionWebhook) that the user deploys in the cluster. An adversary can use such webhooks as the MutatingAdmissionWebhook for obtaining persistence in the cluster. For example, attackers can intercept and modify the pod creation operations in the cluster and add their malicious container to every created pod. An adversary can use the webhook ValidatingAdmissionWebhook, which could be used to obtain access credentials. An adversary could use the webhook to intercept the requests to the API server, record secrets, and other sensitive information.&lt;/p></description></item><item><title>Azure Kubernetes CronJob</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_kubernetes_cronjob.yml/</link><pubDate>Mon, 22 Nov 2021 22:40:06 -0600</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_kubernetes_cronjob.yml/</guid><description>&lt;p>Identifies when a Azure Kubernetes CronJob runs in Azure Cloud. Kubernetes Job is a controller that creates one or more pods and ensures that a specified number of them successfully terminate. Kubernetes Job can be used to run containers that perform finite tasks for batch jobs. Kubernetes CronJob is used to schedule Jobs. An Adversary may use Kubernetes CronJob for scheduling execution of malicious code that would run as a container in the cluster.&lt;/p></description></item><item><title>Account Lockout</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_account_lockout.yml/</link><pubDate>Sun, 10 Oct 2021 16:06:28 +0400</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_account_lockout.yml/</guid><description>&lt;p>Identifies user account which has been locked because the user tried to sign in too many times with an incorrect user ID or password.&lt;/p></description></item><item><title>Change to Authentication Method</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_change_to_authentication_method.yml/</link><pubDate>Sun, 10 Oct 2021 16:06:28 +0400</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_change_to_authentication_method.yml/</guid><description>&lt;p>Change to authentication method could be an indicated of an attacker adding an auth method to the account so they can have continued access.&lt;/p></description></item><item><title>Login to Disabled Account</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_login_to_disabled_account.yml/</link><pubDate>Sun, 10 Oct 2021 16:06:28 +0400</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_login_to_disabled_account.yml/</guid><description>&lt;p>Detect failed attempts to sign in to disabled accounts.&lt;/p></description></item><item><title>Multifactor Authentication Interupted</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_mfa_interrupted.yml/</link><pubDate>Sun, 10 Oct 2021 16:06:28 +0400</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_mfa_interrupted.yml/</guid><description>&lt;p>Identifies user login with multifactor authentication failures, which might be an indication an attacker has the password for the account but can&amp;rsquo;t pass the MFA challenge.&lt;/p></description></item><item><title>User Access Blocked by Azure Conditional Access</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_user_login_blocked_by_conditional_access.yml/</link><pubDate>Sun, 10 Oct 2021 16:06:28 +0400</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_user_login_blocked_by_conditional_access.yml/</guid><description>&lt;p>Detect access has been blocked by Conditional Access policies. The access policy does not allow token issuance which might be sights≈ of unauthorizeed login to valid accounts.&lt;/p></description></item><item><title>User Added to an Administrator's Azure AD Role</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_ad_user_added_to_admin_role.yml/</link><pubDate>Sat, 25 Sep 2021 21:57:10 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_ad_user_added_to_admin_role.yml/</guid><description>&lt;p>User Added to an Administrator&amp;rsquo;s Azure AD Role&lt;/p></description></item><item><title>Azure New CloudShell Created</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_new_cloudshell_created.yml/</link><pubDate>Sun, 12 Sep 2021 20:00:08 -0500</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_new_cloudshell_created.yml/</guid><description>&lt;p>Identifies when a new cloudshell is created inside of Azure portal.&lt;/p></description></item><item><title>Azure Active Directory Hybrid Health AD FS New Server</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_aadhybridhealth_adfs_new_server.yml/</link><pubDate>Thu, 26 Aug 2021 16:10:42 -0400</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_aadhybridhealth_adfs_new_server.yml/</guid><description>&lt;p>This detection uses AzureActivity logs (Administrative category) to identify the creation or update of a server instance in an Azure AD Hybrid health AD FS service.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>azure on My New Hugo Site</title>
+    <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/</link>
+    <description>Recent content in azure on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 26 Nov 2021 11:32:57 -0600</lastBuildDate><atom:link href="https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Azure Subscription Permission Elevation Via ActivityLogs</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_subscription_permissions_elevation_via_activitylogs.yml/</link>
+      <pubDate>Fri, 26 Nov 2021 11:32:57 -0600</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_subscription_permissions_elevation_via_activitylogs.yml/</guid>
+      <description>&lt;p&gt;Detects when a user has been elevated to manage all Azure Subscriptions. This change should be investigated immediately if it isn&amp;rsquo;t planned. This setting could allow an attacker access to Azure subscriptions in your environment.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Azure Subscription Permission Elevation Via AuditLogs</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_subscription_permissions_elevation_via_auditlogs.yml/</link>
+      <pubDate>Fri, 26 Nov 2021 11:32:57 -0600</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_subscription_permissions_elevation_via_auditlogs.yml/</guid>
+      <description>&lt;p&gt;Detects when a user has been elevated to manage all Azure Subscriptions. This change should be investigated immediately if it isn&amp;rsquo;t planned. This setting could allow an attacker access to Azure subscriptions in your environment.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Azure Unusual Authentication Interruption</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_unusual_authentication_interruption.yml/</link>
+      <pubDate>Fri, 26 Nov 2021 11:07:53 -0600</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_unusual_authentication_interruption.yml/</guid>
+      <description>&lt;p&gt;Detects when there is a interruption in the authentication process.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Azure Kubernetes Admission Controller</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_kubernetes_admission_controller.yml/</link>
+      <pubDate>Wed, 24 Nov 2021 23:58:33 -0600</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_kubernetes_admission_controller.yml/</guid>
+      <description>&lt;p&gt;Identifies when an admission controller is executed in Azure Kubernetes. A Kubernetes Admission controller intercepts, and possibly modifies, requests to the Kubernetes API server. The behavior of this admission controller is determined by an admission webhook (MutatingAdmissionWebhook or ValidatingAdmissionWebhook) that the user deploys in the cluster. An adversary can use such webhooks as the MutatingAdmissionWebhook for obtaining persistence in the cluster. For example, attackers can intercept and modify the pod creation operations in the cluster and add their malicious container to every created pod. An adversary can use the webhook ValidatingAdmissionWebhook, which could be used to obtain access credentials. An adversary could use the webhook to intercept the requests to the API server, record secrets, and other sensitive information.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Azure Kubernetes CronJob</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_kubernetes_cronjob.yml/</link>
+      <pubDate>Mon, 22 Nov 2021 22:40:06 -0600</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_kubernetes_cronjob.yml/</guid>
+      <description>&lt;p&gt;Identifies when a Azure Kubernetes CronJob runs in Azure Cloud. Kubernetes Job is a controller that creates one or more pods and ensures that a specified number of them successfully terminate. Kubernetes Job can be used to run containers that perform finite tasks for batch jobs. Kubernetes CronJob is used to schedule Jobs. An Adversary may use Kubernetes CronJob for scheduling execution of malicious code that would run as a container in the cluster.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Account Lockout</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_account_lockout.yml/</link>
+      <pubDate>Sun, 10 Oct 2021 16:06:28 +0400</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_account_lockout.yml/</guid>
+      <description>&lt;p&gt;Identifies user account which has been locked because the user tried to sign in too many times with an incorrect user ID or password.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Change to Authentication Method</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_change_to_authentication_method.yml/</link>
+      <pubDate>Sun, 10 Oct 2021 16:06:28 +0400</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_change_to_authentication_method.yml/</guid>
+      <description>&lt;p&gt;Change to authentication method could be an indicated of an attacker adding an auth method to the account so they can have continued access.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Login to Disabled Account</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_login_to_disabled_account.yml/</link>
+      <pubDate>Sun, 10 Oct 2021 16:06:28 +0400</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_login_to_disabled_account.yml/</guid>
+      <description>&lt;p&gt;Detect failed attempts to sign in to disabled accounts.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Multifactor Authentication Interupted</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_mfa_interrupted.yml/</link>
+      <pubDate>Sun, 10 Oct 2021 16:06:28 +0400</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_mfa_interrupted.yml/</guid>
+      <description>&lt;p&gt;Identifies user login with multifactor authentication failures, which might be an indication an attacker has the password for the account but can&amp;rsquo;t pass the MFA challenge.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>User Access Blocked by Azure Conditional Access</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_user_login_blocked_by_conditional_access.yml/</link>
+      <pubDate>Sun, 10 Oct 2021 16:06:28 +0400</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_user_login_blocked_by_conditional_access.yml/</guid>
+      <description>&lt;p&gt;Detect access has been blocked by Conditional Access policies. The access policy does not allow token issuance which might be sights≈ of unauthorizeed login to valid accounts.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>User Added to an Administrator&#39;s Azure AD Role</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_ad_user_added_to_admin_role.yml/</link>
+      <pubDate>Sat, 25 Sep 2021 21:57:10 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_ad_user_added_to_admin_role.yml/</guid>
+      <description>&lt;p&gt;User Added to an Administrator&amp;rsquo;s Azure AD Role&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Azure New CloudShell Created</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_new_cloudshell_created.yml/</link>
+      <pubDate>Sun, 12 Sep 2021 20:00:08 -0500</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_new_cloudshell_created.yml/</guid>
+      <description>&lt;p&gt;Identifies when a new cloudshell is created inside of Azure portal.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Azure Active Directory Hybrid Health AD FS New Server</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_aadhybridhealth_adfs_new_server.yml/</link>
+      <pubDate>Thu, 26 Aug 2021 16:10:42 -0400</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_aadhybridhealth_adfs_new_server.yml/</guid>
+      <description>&lt;p&gt;This detection uses AzureActivity logs (Administrative category) to identify the creation or update of a server instance in an Azure AD Hybrid health AD FS service.
 A threat actor can create a new AD Health ADFS service and create a fake server instance to spoof AD FS signing logs. There is no need to compromise an on-prem AD FS server.
-This can be done programmatically via HTTP requests to Azure.&lt;/p></description></item><item><title>Azure Active Directory Hybrid Health AD FS Service Delete</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_aadhybridhealth_adfs_service_delete.yml/</link><pubDate>Thu, 26 Aug 2021 16:10:42 -0400</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_aadhybridhealth_adfs_service_delete.yml/</guid><description>&lt;p>This detection uses AzureActivity logs (Administrative category) to identify the deletion of an Azure AD Hybrid health AD FS service instance in a tenant.
+This can be done programmatically via HTTP requests to Azure.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Azure Active Directory Hybrid Health AD FS Service Delete</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_aadhybridhealth_adfs_service_delete.yml/</link>
+      <pubDate>Thu, 26 Aug 2021 16:10:42 -0400</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_aadhybridhealth_adfs_service_delete.yml/</guid>
+      <description>&lt;p&gt;This detection uses AzureActivity logs (Administrative category) to identify the deletion of an Azure AD Hybrid health AD FS service instance in a tenant.
 A threat actor can create a new AD Health ADFS service and create a fake server to spoof AD FS signing logs.
-The health AD FS service can then be deleted after it is not longer needed via HTTP requests to Azure.&lt;/p></description></item><item><title>Azure Suppression Rule Created</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_suppression_rule_created.yml/</link><pubDate>Tue, 17 Aug 2021 00:04:00 -0500</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_suppression_rule_created.yml/</guid><description>&lt;p>Identifies when a suppression rule is created in Azure. Adversary&amp;rsquo;s could attempt this to evade detection.&lt;/p></description></item><item><title>Azure Keyvault Secrets Modified or Deleted</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_keyvault_secrets_modified_or_deleted.yml/</link><pubDate>Mon, 16 Aug 2021 23:54:57 -0500</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_keyvault_secrets_modified_or_deleted.yml/</guid><description>&lt;p>Identifies when secrets are modified or deleted in Azure.&lt;/p></description></item><item><title>Azure Keyvault Key Modified or Deleted</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_keyvault_key_modified_or_deleted.yml/</link><pubDate>Mon, 16 Aug 2021 23:50:56 -0500</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_keyvault_key_modified_or_deleted.yml/</guid><description>&lt;p>Identifies when a Keyvault Key is modified or deleted in Azure.&lt;/p></description></item><item><title>Azure Key Vault Modified or Deleted.</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_keyvault_modified_or_deleted.yml/</link><pubDate>Mon, 16 Aug 2021 23:41:43 -0500</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_keyvault_modified_or_deleted.yml/</guid><description>&lt;p>Identifies when a key vault is modified or deleted.&lt;/p></description></item><item><title>Azure Application Security Group Modified or Deleted</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_application_security_group_modified_or_deleted.yml/</link><pubDate>Mon, 16 Aug 2021 23:31:45 -0500</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_application_security_group_modified_or_deleted.yml/</guid><description>&lt;p>Identifies when a application security group is modified or deleted.&lt;/p></description></item><item><title>Azure Application Gateway Modified or Deleted</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_application_gateway_modified_or_deleted.yml/</link><pubDate>Mon, 16 Aug 2021 23:30:30 -0500</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_application_gateway_modified_or_deleted.yml/</guid><description>&lt;p>Identifies when a application gateway is modified or deleted.&lt;/p></description></item><item><title>Granting Of Permissions To An Account</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_granting_permission_detection.yml/</link><pubDate>Sun, 15 Aug 2021 16:00:14 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_granting_permission_detection.yml/</guid><description>&lt;p>Identifies IPs from which users grant access to other users on azure resources and alerts when a previously unseen source IP address is used.&lt;/p></description></item><item><title>Number Of Resource Creation Or Deployment Activities</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_creating_number_of_resources_detection.yml/</link><pubDate>Sun, 15 Aug 2021 16:00:14 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_creating_number_of_resources_detection.yml/</guid><description>&lt;p>Number of VM creations or deployment activities occur in Azure via the AzureActivity log.&lt;/p></description></item><item><title>Rare Subscription-level Operations In Azure</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_rare_operations.yml/</link><pubDate>Sun, 15 Aug 2021 16:00:14 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_rare_operations.yml/</guid><description>&lt;p>Identifies IPs from which users grant access to other users on azure resources and alerts when a previously unseen source IP address is used.&lt;/p></description></item><item><title>Azure Kubernetes Pods Deleted</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_kubernetes_pods_deleted.yml/</link><pubDate>Sat, 24 Jul 2021 10:24:29 -0500</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_kubernetes_pods_deleted.yml/</guid><description>&lt;p>Identifies the deletion of Azure Kubernetes Pods.&lt;/p></description></item><item><title>Azure Kubernetes Events Deleted</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_kubernetes_events_deleted.yml/</link><pubDate>Sat, 24 Jul 2021 10:20:11 -0500</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_kubernetes_events_deleted.yml/</guid><description>&lt;p>Detects when Events are deleted in Azure Kubernetes. An adversary may delete events in Azure Kubernetes in an attempt to evade detection.&lt;/p></description></item><item><title>Azure Application Credential Modified</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_app_credential_modification.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_app_credential_modification.yml/</guid><description>&lt;p>Identifies when a application credential is modified.&lt;/p></description></item><item><title>Azure Application Deleted</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_application_deleted.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_application_deleted.yml/</guid><description>&lt;p>Identifies when a application is deleted in Azure.&lt;/p></description></item><item><title>Azure Container Registry Created or Deleted</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_container_registry_created_or_deleted.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_container_registry_created_or_deleted.yml/</guid><description>&lt;p>Detects when a Container Registry is created or deleted.&lt;/p></description></item><item><title>Azure Device No Longer Managed or Compliant</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_device_no_longer_managed_or_compliant.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_device_no_longer_managed_or_compliant.yml/</guid><description>&lt;p>Identifies when a device in azure is no longer managed or compliant&lt;/p></description></item><item><title>Azure Device or Configuration Modified or Deleted</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_device_or_configuration_modified_or_deleted.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_device_or_configuration_modified_or_deleted.yml/</guid><description>&lt;p>Identifies when a device or device configuration in azure is modified or deleted.&lt;/p></description></item><item><title>Azure DNS Zone Modified or Deleted</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_dns_zone_modified_or_deleted.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_dns_zone_modified_or_deleted.yml/</guid><description>&lt;p>Identifies when DNS zone is modified or deleted.&lt;/p></description></item><item><title>Azure Domain Federation Settings Modified</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_federation_modified.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_federation_modified.yml/</guid><description>&lt;p>Identifies when an user or application modified the federation settings on the domain.&lt;/p></description></item><item><title>Azure Firewall Modified or Deleted</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_firewall_modified_or_deleted.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_firewall_modified_or_deleted.yml/</guid><description>&lt;p>Identifies when a firewall is created, modified, or deleted.&lt;/p></description></item><item><title>Azure Firewall Rule Collection Modified or Deleted</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_firewall_rule_collection_modified_or_deleted.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_firewall_rule_collection_modified_or_deleted.yml/</guid><description>&lt;p>Identifies when Rule Collections (Application, NAT, and Network) is being modified or deleted.&lt;/p></description></item><item><title>Azure Firewall Rule Configuration Modified or Deleted</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_network_firewall_rule_modified_or_deleted.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_network_firewall_rule_modified_or_deleted.yml/</guid><description>&lt;p>Identifies when a Firewall Rule Configuration is Modified or Deleted.&lt;/p></description></item><item><title>Azure Kubernetes Cluster Created or Deleted</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_kubernetes_cluster_created_or_deleted.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_kubernetes_cluster_created_or_deleted.yml/</guid><description>&lt;p>Detects when a Azure Kubernetes Cluster is created or deleted.&lt;/p></description></item><item><title>Azure Kubernetes Network Policy Change</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_kubernetes_network_policy_change.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_kubernetes_network_policy_change.yml/</guid><description>&lt;p>Identifies when a Azure Kubernetes network policy is modified or deleted.&lt;/p></description></item><item><title>Azure Kubernetes RoleBinding/ClusterRoleBinding Modified and Deleted</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_kubernetes_rolebinding_modified_or_deleted.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_kubernetes_rolebinding_modified_or_deleted.yml/</guid><description>&lt;p>Detects the creation or patching of potential malicious RoleBinding/ClusterRoleBinding.&lt;/p></description></item><item><title>Azure Kubernetes Secret or Config Object Access</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_kubernetes_secret_or_config_object_access.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_kubernetes_secret_or_config_object_access.yml/</guid><description>&lt;p>Identifies when a Kubernetes account access a sensitive objects such as configmaps or secrets.&lt;/p></description></item><item><title>Azure Kubernetes Sensitive Role Access</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_kubernetes_role_access.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_kubernetes_role_access.yml/</guid><description>&lt;p>Identifies when ClusterRoles/Roles are being modified or deleted.&lt;/p></description></item><item><title>Azure Kubernetes Service Account Modified or Deleted</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_kubernetes_service_account_modified_or_deleted.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_kubernetes_service_account_modified_or_deleted.yml/</guid><description>&lt;p>Identifies when a service account is modified or deleted.&lt;/p></description></item><item><title>Azure Network Firewall Policy Modified or Deleted</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_network_firewall_policy_modified_or_deleted.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_network_firewall_policy_modified_or_deleted.yml/</guid><description>&lt;p>Identifies when a Firewall Policy is Modified or Deleted.&lt;/p></description></item><item><title>Azure Network Security Configuration Modified or Deleted</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_network_security_modified_or_deleted.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_network_security_modified_or_deleted.yml/</guid><description>&lt;p>Identifies when a network security configuration is modified or deleted.&lt;/p></description></item><item><title>Azure Owner Removed From Application or Service Principal</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_owner_removed_from_application_or_service_principal.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_owner_removed_from_application_or_service_principal.yml/</guid><description>&lt;p>Identifies when a owner is was removed from a application or service principal in Azure.&lt;/p></description></item><item><title>Azure Point-to-site VPN Modified or Deleted</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_network_p2s_vpn_modified_or_deleted.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_network_p2s_vpn_modified_or_deleted.yml/</guid><description>&lt;p>Identifies when a Point-to-site VPN is Modified or Deleted.&lt;/p></description></item><item><title>Azure Service Principal Created</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_service_principal_created.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_service_principal_created.yml/</guid><description>&lt;p>Identifies when a service principal is created in Azure.&lt;/p></description></item><item><title>Azure Service Principal Removed</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_service_principal_removed.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_service_principal_removed.yml/</guid><description>&lt;p>Identifies when a service principal was removed in Azure.&lt;/p></description></item><item><title>Azure Virtual Network Device Modified or Deleted</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_network_virtual_device_modified_or_deleted.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_network_virtual_device_modified_or_deleted.yml/</guid><description>&lt;p>Identifies when a virtual network device is being modified or deleted. This can be a network interface, network virtual appliance, virtual hub, or virtual router.&lt;/p></description></item><item><title>Azure Virtual Network Modified or Deleted</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_virtual_network_modified_or_deleted.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_virtual_network_modified_or_deleted.yml/</guid><description>&lt;p>Identifies when a Virtual Network is modified or deleted in Azure.&lt;/p></description></item><item><title>Azure VPN Connection Modified or Deleted</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_vpn_connection_modified_or_deleted.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_vpn_connection_modified_or_deleted.yml/</guid><description>&lt;p>Identifies when a VPN connection is modified or deleted.&lt;/p></description></item><item><title>Disabled MFA to Bypass Authentication Mechanisms</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_mfa_disabled.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_mfa_disabled.yml/</guid><description>&lt;p>Detection for when multi factor authentication has been disabled, which might indicate a malicious activity to bypass authentication mechanisms.&lt;/p></description></item></channel></rss>
+The health AD FS service can then be deleted after it is not longer needed via HTTP requests to Azure.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Azure Suppression Rule Created</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_suppression_rule_created.yml/</link>
+      <pubDate>Tue, 17 Aug 2021 00:04:00 -0500</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_suppression_rule_created.yml/</guid>
+      <description>&lt;p&gt;Identifies when a suppression rule is created in Azure. Adversary&amp;rsquo;s could attempt this to evade detection.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Azure Keyvault Secrets Modified or Deleted</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_keyvault_secrets_modified_or_deleted.yml/</link>
+      <pubDate>Mon, 16 Aug 2021 23:54:57 -0500</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_keyvault_secrets_modified_or_deleted.yml/</guid>
+      <description>&lt;p&gt;Identifies when secrets are modified or deleted in Azure.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Azure Keyvault Key Modified or Deleted</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_keyvault_key_modified_or_deleted.yml/</link>
+      <pubDate>Mon, 16 Aug 2021 23:50:56 -0500</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_keyvault_key_modified_or_deleted.yml/</guid>
+      <description>&lt;p&gt;Identifies when a Keyvault Key is modified or deleted in Azure.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Azure Key Vault Modified or Deleted.</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_keyvault_modified_or_deleted.yml/</link>
+      <pubDate>Mon, 16 Aug 2021 23:41:43 -0500</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_keyvault_modified_or_deleted.yml/</guid>
+      <description>&lt;p&gt;Identifies when a key vault is modified or deleted.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Azure Application Security Group Modified or Deleted</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_application_security_group_modified_or_deleted.yml/</link>
+      <pubDate>Mon, 16 Aug 2021 23:31:45 -0500</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_application_security_group_modified_or_deleted.yml/</guid>
+      <description>&lt;p&gt;Identifies when a application security group is modified or deleted.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Azure Application Gateway Modified or Deleted</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_application_gateway_modified_or_deleted.yml/</link>
+      <pubDate>Mon, 16 Aug 2021 23:30:30 -0500</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_application_gateway_modified_or_deleted.yml/</guid>
+      <description>&lt;p&gt;Identifies when a application gateway is modified or deleted.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Granting Of Permissions To An Account</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_granting_permission_detection.yml/</link>
+      <pubDate>Sun, 15 Aug 2021 16:00:14 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_granting_permission_detection.yml/</guid>
+      <description>&lt;p&gt;Identifies IPs from which users grant access to other users on azure resources and alerts when a previously unseen source IP address is used.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Number Of Resource Creation Or Deployment Activities</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_creating_number_of_resources_detection.yml/</link>
+      <pubDate>Sun, 15 Aug 2021 16:00:14 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_creating_number_of_resources_detection.yml/</guid>
+      <description>&lt;p&gt;Number of VM creations or deployment activities occur in Azure via the AzureActivity log.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Rare Subscription-level Operations In Azure</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_rare_operations.yml/</link>
+      <pubDate>Sun, 15 Aug 2021 16:00:14 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_rare_operations.yml/</guid>
+      <description>&lt;p&gt;Identifies IPs from which users grant access to other users on azure resources and alerts when a previously unseen source IP address is used.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Azure Kubernetes Pods Deleted</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_kubernetes_pods_deleted.yml/</link>
+      <pubDate>Sat, 24 Jul 2021 10:24:29 -0500</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_kubernetes_pods_deleted.yml/</guid>
+      <description>&lt;p&gt;Identifies the deletion of Azure Kubernetes Pods.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Azure Kubernetes Events Deleted</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_kubernetes_events_deleted.yml/</link>
+      <pubDate>Sat, 24 Jul 2021 10:20:11 -0500</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_kubernetes_events_deleted.yml/</guid>
+      <description>&lt;p&gt;Detects when Events are deleted in Azure Kubernetes. An adversary may delete events in Azure Kubernetes in an attempt to evade detection.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Azure Application Credential Modified</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_app_credential_modification.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_app_credential_modification.yml/</guid>
+      <description>&lt;p&gt;Identifies when a application credential is modified.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Azure Application Deleted</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_application_deleted.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_application_deleted.yml/</guid>
+      <description>&lt;p&gt;Identifies when a application is deleted in Azure.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Azure Container Registry Created or Deleted</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_container_registry_created_or_deleted.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_container_registry_created_or_deleted.yml/</guid>
+      <description>&lt;p&gt;Detects when a Container Registry is created or deleted.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Azure Device No Longer Managed or Compliant</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_device_no_longer_managed_or_compliant.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_device_no_longer_managed_or_compliant.yml/</guid>
+      <description>&lt;p&gt;Identifies when a device in azure is no longer managed or compliant&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Azure Device or Configuration Modified or Deleted</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_device_or_configuration_modified_or_deleted.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_device_or_configuration_modified_or_deleted.yml/</guid>
+      <description>&lt;p&gt;Identifies when a device or device configuration in azure is modified or deleted.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Azure DNS Zone Modified or Deleted</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_dns_zone_modified_or_deleted.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_dns_zone_modified_or_deleted.yml/</guid>
+      <description>&lt;p&gt;Identifies when DNS zone is modified or deleted.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Azure Domain Federation Settings Modified</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_federation_modified.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_federation_modified.yml/</guid>
+      <description>&lt;p&gt;Identifies when an user or application modified the federation settings on the domain.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Azure Firewall Modified or Deleted</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_firewall_modified_or_deleted.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_firewall_modified_or_deleted.yml/</guid>
+      <description>&lt;p&gt;Identifies when a firewall is created, modified, or deleted.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Azure Firewall Rule Collection Modified or Deleted</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_firewall_rule_collection_modified_or_deleted.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_firewall_rule_collection_modified_or_deleted.yml/</guid>
+      <description>&lt;p&gt;Identifies when Rule Collections (Application, NAT, and Network) is being modified or deleted.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Azure Firewall Rule Configuration Modified or Deleted</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_network_firewall_rule_modified_or_deleted.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_network_firewall_rule_modified_or_deleted.yml/</guid>
+      <description>&lt;p&gt;Identifies when a Firewall Rule Configuration is Modified or Deleted.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Azure Kubernetes Cluster Created or Deleted</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_kubernetes_cluster_created_or_deleted.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_kubernetes_cluster_created_or_deleted.yml/</guid>
+      <description>&lt;p&gt;Detects when a Azure Kubernetes Cluster is created or deleted.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Azure Kubernetes Network Policy Change</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_kubernetes_network_policy_change.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_kubernetes_network_policy_change.yml/</guid>
+      <description>&lt;p&gt;Identifies when a Azure Kubernetes network policy is modified or deleted.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Azure Kubernetes RoleBinding/ClusterRoleBinding Modified and Deleted</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_kubernetes_rolebinding_modified_or_deleted.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_kubernetes_rolebinding_modified_or_deleted.yml/</guid>
+      <description>&lt;p&gt;Detects the creation or patching of potential malicious RoleBinding/ClusterRoleBinding.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Azure Kubernetes Secret or Config Object Access</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_kubernetes_secret_or_config_object_access.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_kubernetes_secret_or_config_object_access.yml/</guid>
+      <description>&lt;p&gt;Identifies when a Kubernetes account access a sensitive objects such as configmaps or secrets.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Azure Kubernetes Sensitive Role Access</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_kubernetes_role_access.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_kubernetes_role_access.yml/</guid>
+      <description>&lt;p&gt;Identifies when ClusterRoles/Roles are being modified or deleted.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Azure Kubernetes Service Account Modified or Deleted</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_kubernetes_service_account_modified_or_deleted.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_kubernetes_service_account_modified_or_deleted.yml/</guid>
+      <description>&lt;p&gt;Identifies when a service account is modified or deleted.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Azure Network Firewall Policy Modified or Deleted</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_network_firewall_policy_modified_or_deleted.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_network_firewall_policy_modified_or_deleted.yml/</guid>
+      <description>&lt;p&gt;Identifies when a Firewall Policy is Modified or Deleted.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Azure Network Security Configuration Modified or Deleted</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_network_security_modified_or_deleted.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_network_security_modified_or_deleted.yml/</guid>
+      <description>&lt;p&gt;Identifies when a network security configuration is modified or deleted.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Azure Owner Removed From Application or Service Principal</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_owner_removed_from_application_or_service_principal.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_owner_removed_from_application_or_service_principal.yml/</guid>
+      <description>&lt;p&gt;Identifies when a owner is was removed from a application or service principal in Azure.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Azure Point-to-site VPN Modified or Deleted</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_network_p2s_vpn_modified_or_deleted.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_network_p2s_vpn_modified_or_deleted.yml/</guid>
+      <description>&lt;p&gt;Identifies when a Point-to-site VPN is Modified or Deleted.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Azure Service Principal Created</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_service_principal_created.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_service_principal_created.yml/</guid>
+      <description>&lt;p&gt;Identifies when a service principal is created in Azure.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Azure Service Principal Removed</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_service_principal_removed.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_service_principal_removed.yml/</guid>
+      <description>&lt;p&gt;Identifies when a service principal was removed in Azure.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Azure Virtual Network Device Modified or Deleted</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_network_virtual_device_modified_or_deleted.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_network_virtual_device_modified_or_deleted.yml/</guid>
+      <description>&lt;p&gt;Identifies when a virtual network device is being modified or deleted. This can be a network interface, network virtual appliance, virtual hub, or virtual router.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Azure Virtual Network Modified or Deleted</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_virtual_network_modified_or_deleted.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_virtual_network_modified_or_deleted.yml/</guid>
+      <description>&lt;p&gt;Identifies when a Virtual Network is modified or deleted in Azure.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Azure VPN Connection Modified or Deleted</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_vpn_connection_modified_or_deleted.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_vpn_connection_modified_or_deleted.yml/</guid>
+      <description>&lt;p&gt;Identifies when a VPN connection is modified or deleted.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Disabled MFA to Bypass Authentication Mechanisms</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_mfa_disabled.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_mfa_disabled.yml/</guid>
+      <description>&lt;p&gt;Detection for when multi factor authentication has been disabled, which might indicate a malicious activity to bypass authentication mechanisms.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

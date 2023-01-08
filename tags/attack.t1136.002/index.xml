@@ -1,2 +1,30 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>attack.t1136.002 on My New Hugo Site</title><link>https://bradleyjkemp.dev/sigmadoc/tags/attack.t1136.002/</link><description>Recent content in attack.t1136.002 on My New Hugo Site</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 29 Dec 2021 17:47:43 +0100</lastBuildDate><atom:link href="https://bradleyjkemp.dev/sigmadoc/tags/attack.t1136.002/index.xml" rel="self" type="application/rss+xml"/><item><title>Manipulation of User Computer or Group Security Principals Across AD</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_directoryservices_accountmanagement.yml/</link><pubDate>Wed, 29 Dec 2021 17:47:43 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_directoryservices_accountmanagement.yml/</guid><description>&lt;p>Adversaries may create a domain account to maintain access to victim systems.
-Domain accounts are those managed by Active Directory Domain Services where access and permissions are configured across systems and services that are part of that domain..&lt;/p></description></item><item><title>Suspicious Windows ANONYMOUS LOGON Local Account Created</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_local_anon_logon_created.yml/</link><pubDate>Thu, 31 Oct 2019 21:56:30 +1100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_local_anon_logon_created.yml/</guid><description>&lt;p>Detects the creation of suspicious accounts similar to ANONYMOUS LOGON, such as using additional spaces. Created as an covering detection for exclusion of Logon Type 3 from ANONYMOUS LOGON accounts.&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>attack.t1136.002 on My New Hugo Site</title>
+    <link>https://bradleyjkemp.dev/sigmadoc/tags/attack.t1136.002/</link>
+    <description>Recent content in attack.t1136.002 on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 29 Dec 2021 17:47:43 +0100</lastBuildDate><atom:link href="https://bradleyjkemp.dev/sigmadoc/tags/attack.t1136.002/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Manipulation of User Computer or Group Security Principals Across AD</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_directoryservices_accountmanagement.yml/</link>
+      <pubDate>Wed, 29 Dec 2021 17:47:43 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_directoryservices_accountmanagement.yml/</guid>
+      <description>&lt;p&gt;Adversaries may create a domain account to maintain access to victim systems.
+Domain accounts are those managed by Active Directory Domain Services where access and permissions are configured across systems and services that are part of that domain..&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Suspicious Windows ANONYMOUS LOGON Local Account Created</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_local_anon_logon_created.yml/</link>
+      <pubDate>Thu, 31 Oct 2019 21:56:30 +1100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_local_anon_logon_created.yml/</guid>
+      <description>&lt;p&gt;Detects the creation of suspicious accounts similar to ANONYMOUS LOGON, such as using additional spaces. Created as an covering detection for exclusion of Logon Type 3 from ANONYMOUS LOGON accounts.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

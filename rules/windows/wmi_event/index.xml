@@ -1,1 +1,29 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>wmi_event on My New Hugo Site</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/wmi_event/</link><description>Recent content in wmi_event on My New Hugo Site</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 12 Jan 2019 12:02:26 +0100</lastBuildDate><atom:link href="https://bradleyjkemp.dev/sigmadoc/rules/windows/wmi_event/index.xml" rel="self" type="application/rss+xml"/><item><title>WMI Event Subscription</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/wmi_event/sysmon_wmi_event_subscription.yml/</link><pubDate>Sat, 12 Jan 2019 12:02:26 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/wmi_event/sysmon_wmi_event_subscription.yml/</guid><description>&lt;p>Detects creation of WMI event subscription persistence method&lt;/p></description></item><item><title>Suspicious Encoded Scripts in a WMI Consumer</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/wmi_event/sysmon_wmi_susp_encoded_scripts.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/wmi_event/sysmon_wmi_susp_encoded_scripts.yml/</guid><description>&lt;p>Detects suspicious encoded payloads in WMI Event Consumers&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>wmi_event on My New Hugo Site</title>
+    <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/wmi_event/</link>
+    <description>Recent content in wmi_event on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 12 Jan 2019 12:02:26 +0100</lastBuildDate><atom:link href="https://bradleyjkemp.dev/sigmadoc/rules/windows/wmi_event/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>WMI Event Subscription</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/wmi_event/sysmon_wmi_event_subscription.yml/</link>
+      <pubDate>Sat, 12 Jan 2019 12:02:26 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/wmi_event/sysmon_wmi_event_subscription.yml/</guid>
+      <description>&lt;p&gt;Detects creation of WMI event subscription persistence method&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Suspicious Encoded Scripts in a WMI Consumer</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/wmi_event/sysmon_wmi_susp_encoded_scripts.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/wmi_event/sysmon_wmi_susp_encoded_scripts.yml/</guid>
+      <description>&lt;p&gt;Detects suspicious encoded payloads in WMI Event Consumers&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

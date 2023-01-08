@@ -1,1 +1,191 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>attack.t1569.002 on My New Hugo Site</title><link>https://bradleyjkemp.dev/sigmadoc/tags/attack.t1569.002/</link><description>Recent content in attack.t1569.002 on My New Hugo Site</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 24 Jan 2022 13:37:28 +0100</lastBuildDate><atom:link href="https://bradleyjkemp.dev/sigmadoc/tags/attack.t1569.002/index.xml" rel="self" type="application/rss+xml"/><item><title>NirCmd Tool Execution</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_tool_nircmd.yml/</link><pubDate>Mon, 24 Jan 2022 13:37:28 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_tool_nircmd.yml/</guid><description>&lt;p>Detects the use of NirCmd tool for command execution, which could be the result of legitimate administrative activity&lt;/p></description></item><item><title>NirCmd Tool Execution As LOCAL SYSTEM</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_tool_nircmd_as_system.yml/</link><pubDate>Mon, 24 Jan 2022 13:37:28 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_tool_nircmd_as_system.yml/</guid><description>&lt;p>Detects the use of NirCmd tool for command execution as SYSTEM user&lt;/p></description></item><item><title>NSudo Tool Execution As System</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_tool_nsudo_as_system.yml/</link><pubDate>Mon, 24 Jan 2022 13:37:28 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_tool_nsudo_as_system.yml/</guid><description>&lt;p>Detects the use of NSudo tool for command execution&lt;/p></description></item><item><title>RunXCmd Tool Execution As System</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_tool_runx_as_system.yml/</link><pubDate>Mon, 24 Jan 2022 13:37:28 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_tool_runx_as_system.yml/</guid><description>&lt;p>Detects the use of RunXCmd tool for command execution&lt;/p></description></item><item><title>Remote Server Service Abuse for Lateral Movement</title><link>https://bradleyjkemp.dev/sigmadoc/rules/application/rpc_firewall/rpc_firewall_remote_service_lateral_movement.yml/</link><pubDate>Mon, 10 Jan 2022 18:04:43 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/application/rpc_firewall/rpc_firewall_remote_service_lateral_movement.yml/</guid><description>&lt;p>Detects remote RPC calls to possibly abuse remote encryption service via MS-EFSR&lt;/p></description></item><item><title>DNS Events Related To Mining Pools</title><link>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_dns_mining_pools.yml/</link><pubDate>Sun, 15 Aug 2021 16:00:14 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_dns_mining_pools.yml/</guid><description>&lt;p>Identifies clients that may be performing DNS lookups associated with common currency mining pools.&lt;/p></description></item><item><title>DNS RCE CVE-2020-1350</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_exploit_cve_2020_1350.yml/</link><pubDate>Wed, 15 Jul 2020 11:03:31 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_exploit_cve_2020_1350.yml/</guid><description>&lt;p>Detects exploitation of DNS RCE bug reported in CVE-2020-1350 by the detection of suspicious sub process&lt;/p></description></item><item><title>PSExec and WMI Process Creations Block</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/windefend/win_defender_psexec_wmi_asr.yml/</link><pubDate>Tue, 14 Jul 2020 14:01:43 +0545</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/windefend/win_defender_psexec_wmi_asr.yml/</guid><description>&lt;p>Detects blocking of process creations originating from PSExec and WMI commands&lt;/p></description></item><item><title>Service Execution</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_service_execution.yml/</link><pubDate>Tue, 29 Oct 2019 20:58:52 +0300</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_service_execution.yml/</guid><description>&lt;p>Detects manual service execution (start) via system utilities.&lt;/p></description></item><item><title>PsExec Service Start</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_psexesvc_start.yml/</link><pubDate>Wed, 16 Jan 2019 23:36:31 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_psexesvc_start.yml/</guid><description>&lt;p>Detects a PsExec service start&lt;/p></description></item><item><title>smbexec.py Service Installation</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_hack_smbexec.yml/</link><pubDate>Wed, 21 Mar 2018 10:44:14 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_hack_smbexec.yml/</guid><description>&lt;p>Detects the use of smbexec.py tool by detecting a specific service installation&lt;/p></description></item><item><title>PsExec Tool Execution</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_tool_psexec.yml/</link><pubDate>Mon, 12 Jun 2017 23:57:06 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_tool_psexec.yml/</guid><description>&lt;p>Detects PsExec service installation and execution events (service and Sysmon)&lt;/p></description></item><item><title>CobaltStrike Service Installations</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_cobaltstrike_service_installs.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_cobaltstrike_service_installs.yml/</guid><description>&lt;p>Detects known malicious service installs that appear in cases in which a Cobalt Strike beacon elevates privileges or lateral movement&lt;/p></description></item><item><title>CobaltStrike Service Installations in Registry</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_cobaltstrike_service_installs.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_cobaltstrike_service_installs.yml/</guid><description>&lt;p>Detects known malicious service installs that appear in cases in which a Cobalt Strike beacon elevates privileges or lateral movement. We can also catch this by system log 7045 (&lt;a href="https://github.com/SigmaHQ/sigma/blob/master/rules/windows/builtin/win_cobaltstrike_service_installs.yml">https://github.com/SigmaHQ/sigma/blob/master/rules/windows/builtin/win_cobaltstrike_service_installs.yml&lt;/a>) In some SIEM you can catch those events also in HKLM\System\ControlSet001\Services or HKLM\System\ControlSet002\Services, however, this rule is based on a regular sysmon&amp;rsquo;s events.&lt;/p></description></item><item><title>Credential Dumping Tools Service Execution</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_mal_creddumper.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_mal_creddumper.yml/</guid><description>&lt;p>Detects well-known credential dumping tools execution via service execution events&lt;/p></description></item><item><title>MITRE BZAR Indicators for Execution</title><link>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_dce_rpc_mitre_bzar_execution.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_dce_rpc_mitre_bzar_execution.yml/</guid><description>&lt;p>Windows DCE-RPC functions which indicate an execution techniques on the remote system. All credit for the Zeek mapping of the suspicious endpoint/operation field goes to MITRE&lt;/p></description></item><item><title>PowerShell as a Service in Registry</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_powershell_as_service.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_powershell_as_service.yml/</guid><description>&lt;p>Detects that a powershell code is written to the registry as a service.&lt;/p></description></item><item><title>PowerShell Scripts Installed as Services</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_powershell_script_installed_as_service.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_powershell_script_installed_as_service.yml/</guid><description>&lt;p>Detects powershell script installed as a Service&lt;/p></description></item><item><title>ProcessHacker Privilege Elevation</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_susp_proceshacker.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_susp_proceshacker.yml/</guid><description>&lt;p>Detects a ProcessHacker tool that elevated privileges to a very high level&lt;/p></description></item><item><title>Rundll32 Without Parameters</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_rundll32_without_parameters.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_rundll32_without_parameters.yml/</guid><description>&lt;p>Detects rundll32 execution without parameters as observed when running Metasploit windows/smb/psexec exploit module&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>attack.t1569.002 on My New Hugo Site</title>
+    <link>https://bradleyjkemp.dev/sigmadoc/tags/attack.t1569.002/</link>
+    <description>Recent content in attack.t1569.002 on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 24 Jan 2022 13:37:28 +0100</lastBuildDate><atom:link href="https://bradleyjkemp.dev/sigmadoc/tags/attack.t1569.002/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>NirCmd Tool Execution</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_tool_nircmd.yml/</link>
+      <pubDate>Mon, 24 Jan 2022 13:37:28 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_tool_nircmd.yml/</guid>
+      <description>&lt;p&gt;Detects the use of NirCmd tool for command execution, which could be the result of legitimate administrative activity&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>NirCmd Tool Execution As LOCAL SYSTEM</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_tool_nircmd_as_system.yml/</link>
+      <pubDate>Mon, 24 Jan 2022 13:37:28 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_tool_nircmd_as_system.yml/</guid>
+      <description>&lt;p&gt;Detects the use of NirCmd tool for command execution as SYSTEM user&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>NSudo Tool Execution As System</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_tool_nsudo_as_system.yml/</link>
+      <pubDate>Mon, 24 Jan 2022 13:37:28 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_tool_nsudo_as_system.yml/</guid>
+      <description>&lt;p&gt;Detects the use of NSudo tool for command execution&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>RunXCmd Tool Execution As System</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_tool_runx_as_system.yml/</link>
+      <pubDate>Mon, 24 Jan 2022 13:37:28 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_tool_runx_as_system.yml/</guid>
+      <description>&lt;p&gt;Detects the use of RunXCmd tool for command execution&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Remote Server Service Abuse for Lateral Movement</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/application/rpc_firewall/rpc_firewall_remote_service_lateral_movement.yml/</link>
+      <pubDate>Mon, 10 Jan 2022 18:04:43 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/application/rpc_firewall/rpc_firewall_remote_service_lateral_movement.yml/</guid>
+      <description>&lt;p&gt;Detects remote RPC calls to possibly abuse remote encryption service via MS-EFSR&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>DNS Events Related To Mining Pools</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_dns_mining_pools.yml/</link>
+      <pubDate>Sun, 15 Aug 2021 16:00:14 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_dns_mining_pools.yml/</guid>
+      <description>&lt;p&gt;Identifies clients that may be performing DNS lookups associated with common currency mining pools.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>DNS RCE CVE-2020-1350</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_exploit_cve_2020_1350.yml/</link>
+      <pubDate>Wed, 15 Jul 2020 11:03:31 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_exploit_cve_2020_1350.yml/</guid>
+      <description>&lt;p&gt;Detects exploitation of DNS RCE bug reported in CVE-2020-1350 by the detection of suspicious sub process&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>PSExec and WMI Process Creations Block</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/windefend/win_defender_psexec_wmi_asr.yml/</link>
+      <pubDate>Tue, 14 Jul 2020 14:01:43 +0545</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/windefend/win_defender_psexec_wmi_asr.yml/</guid>
+      <description>&lt;p&gt;Detects blocking of process creations originating from PSExec and WMI commands&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Service Execution</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_service_execution.yml/</link>
+      <pubDate>Tue, 29 Oct 2019 20:58:52 +0300</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_service_execution.yml/</guid>
+      <description>&lt;p&gt;Detects manual service execution (start) via system utilities.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>PsExec Service Start</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_psexesvc_start.yml/</link>
+      <pubDate>Wed, 16 Jan 2019 23:36:31 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_psexesvc_start.yml/</guid>
+      <description>&lt;p&gt;Detects a PsExec service start&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>smbexec.py Service Installation</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_hack_smbexec.yml/</link>
+      <pubDate>Wed, 21 Mar 2018 10:44:14 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_hack_smbexec.yml/</guid>
+      <description>&lt;p&gt;Detects the use of smbexec.py tool by detecting a specific service installation&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>PsExec Tool Execution</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_tool_psexec.yml/</link>
+      <pubDate>Mon, 12 Jun 2017 23:57:06 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_tool_psexec.yml/</guid>
+      <description>&lt;p&gt;Detects PsExec service installation and execution events (service and Sysmon)&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>CobaltStrike Service Installations</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_cobaltstrike_service_installs.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_cobaltstrike_service_installs.yml/</guid>
+      <description>&lt;p&gt;Detects known malicious service installs that appear in cases in which a Cobalt Strike beacon elevates privileges or lateral movement&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>CobaltStrike Service Installations in Registry</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_cobaltstrike_service_installs.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_cobaltstrike_service_installs.yml/</guid>
+      <description>&lt;p&gt;Detects known malicious service installs that appear in cases in which a Cobalt Strike beacon elevates privileges or lateral movement. We can also catch this by system log 7045 (&lt;a href=&#34;https://github.com/SigmaHQ/sigma/blob/master/rules/windows/builtin/win_cobaltstrike_service_installs.yml&#34;&gt;https://github.com/SigmaHQ/sigma/blob/master/rules/windows/builtin/win_cobaltstrike_service_installs.yml&lt;/a&gt;) In some SIEM you can catch those events also in HKLM\System\ControlSet001\Services or HKLM\System\ControlSet002\Services, however, this rule is based on a regular sysmon&amp;rsquo;s events.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Credential Dumping Tools Service Execution</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_mal_creddumper.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_mal_creddumper.yml/</guid>
+      <description>&lt;p&gt;Detects well-known credential dumping tools execution via service execution events&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>MITRE BZAR Indicators for Execution</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_dce_rpc_mitre_bzar_execution.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_dce_rpc_mitre_bzar_execution.yml/</guid>
+      <description>&lt;p&gt;Windows DCE-RPC functions which indicate an execution techniques on the remote system. All credit for the Zeek mapping of the suspicious endpoint/operation field goes to MITRE&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>PowerShell as a Service in Registry</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_powershell_as_service.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_powershell_as_service.yml/</guid>
+      <description>&lt;p&gt;Detects that a powershell code is written to the registry as a service.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>PowerShell Scripts Installed as Services</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_powershell_script_installed_as_service.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_powershell_script_installed_as_service.yml/</guid>
+      <description>&lt;p&gt;Detects powershell script installed as a Service&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>ProcessHacker Privilege Elevation</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_susp_proceshacker.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_susp_proceshacker.yml/</guid>
+      <description>&lt;p&gt;Detects a ProcessHacker tool that elevated privileges to a very high level&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Rundll32 Without Parameters</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_rundll32_without_parameters.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_rundll32_without_parameters.yml/</guid>
+      <description>&lt;p&gt;Detects rundll32 execution without parameters as observed when running Metasploit windows/smb/psexec exploit module&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

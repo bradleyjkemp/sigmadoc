@@ -1,1 +1,56 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>attack.t1003.006 on My New Hugo Site</title><link>https://bradleyjkemp.dev/sigmadoc/tags/attack.t1003.006/</link><description>Recent content in attack.t1003.006 on My New Hugo Site</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 27 Dec 2016 14:49:54 +0100</lastBuildDate><atom:link href="https://bradleyjkemp.dev/sigmadoc/tags/attack.t1003.006/index.xml" rel="self" type="application/rss+xml"/><item><title>Mimikatz Use</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/win_alert_mimikatz_keywords.yml/</link><pubDate>Tue, 27 Dec 2016 14:49:54 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/win_alert_mimikatz_keywords.yml/</guid><description>&lt;p>This method detects mimikatz keywords in different Eventlogs (some of them only appear in older Mimikatz version that are however still used by different threat groups)&lt;/p></description></item><item><title>Credential Dumping Tools Service Execution</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_mal_creddumper.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_mal_creddumper.yml/</guid><description>&lt;p>Detects well-known credential dumping tools execution via service execution events&lt;/p></description></item><item><title>Mimikatz Command Line</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_mimikatz_command_line.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_mimikatz_command_line.yml/</guid><description>&lt;p>Detection well-known mimikatz command line arguments&lt;/p></description></item><item><title>Mimikatz DC Sync</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_dcsync.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_dcsync.yml/</guid><description>&lt;p>Detects Mimikatz DC sync security events&lt;/p></description></item><item><title>Suspicious Get-ADReplAccount</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_get_adreplaccount.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_get_adreplaccount.yml/</guid><description>&lt;p>The DSInternals PowerShell Module exposes several internal features of Active Directory and Azure Active Directory. These include FIDO2 and NGC key auditing, offline ntds.dit file manipulation, password auditing, DC recovery from IFM backups and password hash calculation.&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>attack.t1003.006 on My New Hugo Site</title>
+    <link>https://bradleyjkemp.dev/sigmadoc/tags/attack.t1003.006/</link>
+    <description>Recent content in attack.t1003.006 on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 27 Dec 2016 14:49:54 +0100</lastBuildDate><atom:link href="https://bradleyjkemp.dev/sigmadoc/tags/attack.t1003.006/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mimikatz Use</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/win_alert_mimikatz_keywords.yml/</link>
+      <pubDate>Tue, 27 Dec 2016 14:49:54 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/win_alert_mimikatz_keywords.yml/</guid>
+      <description>&lt;p&gt;This method detects mimikatz keywords in different Eventlogs (some of them only appear in older Mimikatz version that are however still used by different threat groups)&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Credential Dumping Tools Service Execution</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_mal_creddumper.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_mal_creddumper.yml/</guid>
+      <description>&lt;p&gt;Detects well-known credential dumping tools execution via service execution events&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Mimikatz Command Line</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_mimikatz_command_line.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_mimikatz_command_line.yml/</guid>
+      <description>&lt;p&gt;Detection well-known mimikatz command line arguments&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Mimikatz DC Sync</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_dcsync.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_dcsync.yml/</guid>
+      <description>&lt;p&gt;Detects Mimikatz DC sync security events&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Suspicious Get-ADReplAccount</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_get_adreplaccount.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_get_adreplaccount.yml/</guid>
+      <description>&lt;p&gt;The DSInternals PowerShell Module exposes several internal features of Active Directory and Azure Active Directory. These include FIDO2 and NGC key auditing, offline ntds.dit file manipulation, password auditing, DC recovery from IFM backups and password hash calculation.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
