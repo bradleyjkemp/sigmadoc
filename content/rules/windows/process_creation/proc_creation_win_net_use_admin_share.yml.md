@@ -2,7 +2,7 @@
 title: "Mounted Windows Admin Shares with net.exe"
 aliases:
   - "/rule/3abd6094-7027-475f-9630-8ab9be7b9725"
-
+ruleid: 3abd6094-7027-475f-9630-8ab9be7b9725
 
 tags:
   - attack.lateral_movement

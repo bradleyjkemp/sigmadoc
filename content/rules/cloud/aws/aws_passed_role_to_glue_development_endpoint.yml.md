@@ -2,7 +2,7 @@
 title: "AWS Glue Development Endpoint Activity"
 aliases:
   - "/rule/4990c2e3-f4b8-45e3-bc3c-30b14ff0ed26"
-
+ruleid: 4990c2e3-f4b8-45e3-bc3c-30b14ff0ed26
 
 tags:
   - attack.privilege_escalation

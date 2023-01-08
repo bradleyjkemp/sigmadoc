@@ -2,7 +2,7 @@
 title: "Winword.exe Loads Suspicious DLL"
 aliases:
   - "/rule/2621b3a6-3840-4810-ac14-a02426086171"
-
+ruleid: 2621b3a6-3840-4810-ac14-a02426086171
 
 tags:
   - attack.defense_evasion

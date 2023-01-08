@@ -2,7 +2,7 @@
 title: "Accessing WinAPI in PowerShell. Code Injection."
 aliases:
   - "/rule/eeb2e3dc-c1f4-40dd-9bd5-149ee465ad50"
-
+ruleid: eeb2e3dc-c1f4-40dd-9bd5-149ee465ad50
 
 tags:
   - attack.execution

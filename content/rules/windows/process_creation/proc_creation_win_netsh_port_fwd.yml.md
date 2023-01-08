@@ -2,7 +2,7 @@
 title: "Netsh Port Forwarding"
 aliases:
   - "/rule/322ed9ec-fcab-4f67-9a34-e7c6aef43614"
-
+ruleid: 322ed9ec-fcab-4f67-9a34-e7c6aef43614
 
 tags:
   - attack.lateral_movement

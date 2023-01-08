@@ -2,7 +2,7 @@
 title: "OMIGOD SCX RunAsProvider ExecuteScript"
 aliases:
   - "/rule/6eea1bf6-f8d2-488a-a742-e6ef6c1b67db"
-
+ruleid: 6eea1bf6-f8d2-488a-a742-e6ef6c1b67db
 
 tags:
   - attack.privilege_escalation

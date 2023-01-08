@@ -2,7 +2,7 @@
 title: "Okta Security Threat Detected"
 aliases:
   - "/rule/5c82f0b9-3c6d-477f-a318-0e14a1df73e0"
-
+ruleid: 5c82f0b9-3c6d-477f-a318-0e14a1df73e0
 
 
 

@@ -2,7 +2,7 @@
 title: "Use IE Registry for Persistence"
 aliases:
   - "/rule/d88d0ab2-e696-4d40-a2ed-9790064e66b3"
-
+ruleid: d88d0ab2-e696-4d40-a2ed-9790064e66b3
 
 tags:
   - attack.defense_evasion

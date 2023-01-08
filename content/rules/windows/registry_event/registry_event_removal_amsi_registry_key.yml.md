@@ -2,7 +2,7 @@
 title: "Removal Amsi Provider Reg Key"
 aliases:
   - "/rule/41d1058a-aea7-4952-9293-29eaaf516465"
-
+ruleid: 41d1058a-aea7-4952-9293-29eaaf516465
 
 tags:
   - attack.defense_evasion

@@ -2,7 +2,7 @@
 title: "Run PowerShell Script from ADS"
 aliases:
   - "/rule/45a594aa-1fbd-4972-a809-ff5a99dd81b8"
-
+ruleid: 45a594aa-1fbd-4972-a809-ff5a99dd81b8
 
 tags:
   - attack.defense_evasion

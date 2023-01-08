@@ -2,7 +2,7 @@
 title: "CVE-2020-0688 Exploitation via Eventlog"
 aliases:
   - "/rule/d6266bf5-935e-4661-b477-78772735a7cb"
-
+ruleid: d6266bf5-935e-4661-b477-78772735a7cb
 
 tags:
   - attack.initial_access

@@ -2,7 +2,7 @@
 title: "Remote Printing Abuse for Lateral Movement"
 aliases:
   - "/rule/bc3a4b0c-e167-48e1-aa88-b3020950e560"
-
+ruleid: bc3a4b0c-e167-48e1-aa88-b3020950e560
 
 tags:
   - attack.lateral_movement

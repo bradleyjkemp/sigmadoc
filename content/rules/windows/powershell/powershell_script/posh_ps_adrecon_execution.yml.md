@@ -2,7 +2,7 @@
 title: "PowerShell ADRecon Execution"
 aliases:
   - "/rule/bf72941a-cba0-41ea-b18c-9aca3925690d"
-
+ruleid: bf72941a-cba0-41ea-b18c-9aca3925690d
 
 tags:
   - attack.discovery

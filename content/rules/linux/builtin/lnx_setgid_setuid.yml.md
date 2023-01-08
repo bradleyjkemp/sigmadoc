@@ -2,7 +2,7 @@
 title: "Setuid and Setgid"
 aliases:
   - "/rule/c21c4eaa-ba2e-419a-92b2-8371703cbe21"
-
+ruleid: c21c4eaa-ba2e-419a-92b2-8371703cbe21
 
 tags:
   - attack.persistence

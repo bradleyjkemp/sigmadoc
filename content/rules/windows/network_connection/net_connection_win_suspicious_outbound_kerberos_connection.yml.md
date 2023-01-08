@@ -2,7 +2,7 @@
 title: "Suspicious Outbound Kerberos Connection"
 aliases:
   - "/rule/e54979bd-c5f9-4d6c-967b-a04b19ac4c74"
-
+ruleid: e54979bd-c5f9-4d6c-967b-a04b19ac4c74
 
 tags:
   - attack.credential_access

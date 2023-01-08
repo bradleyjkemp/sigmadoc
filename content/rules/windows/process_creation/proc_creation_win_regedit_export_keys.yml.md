@@ -2,7 +2,7 @@
 title: "Exports Registry Key To a File"
 aliases:
   - "/rule/f0e53e89-8d22-46ea-9db5-9d4796ee2f8a"
-
+ruleid: f0e53e89-8d22-46ea-9db5-9d4796ee2f8a
 
 tags:
   - attack.exfiltration

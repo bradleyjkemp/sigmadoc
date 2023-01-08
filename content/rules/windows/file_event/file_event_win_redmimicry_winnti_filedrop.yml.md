@@ -2,7 +2,7 @@
 title: "RedMimicry Winnti Playbook Dropped File"
 aliases:
   - "/rule/130c9e58-28ac-4f83-8574-0a4cc913b97e"
-
+ruleid: 130c9e58-28ac-4f83-8574-0a4cc913b97e
 
 tags:
   - attack.defense_evasion

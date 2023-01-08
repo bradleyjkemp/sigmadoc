@@ -2,7 +2,7 @@
 title: "Suspicious Execution of InstallUtil Without Log"
 aliases:
   - "/rule/d042284c-a296-4988-9be5-f424fadcc28c"
-
+ruleid: d042284c-a296-4988-9be5-f424fadcc28c
 
 tags:
   - attack.defense_evasion

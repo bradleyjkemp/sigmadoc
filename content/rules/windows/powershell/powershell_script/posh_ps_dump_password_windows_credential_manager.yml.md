@@ -2,7 +2,7 @@
 title: "Dump Credentials from Windows Credential Manager With PowerShell"
 aliases:
   - "/rule/99c49d9c-34ea-45f7-84a7-4751ae6b2cbc"
-
+ruleid: 99c49d9c-34ea-45f7-84a7-4751ae6b2cbc
 
 tags:
   - attack.credential_access

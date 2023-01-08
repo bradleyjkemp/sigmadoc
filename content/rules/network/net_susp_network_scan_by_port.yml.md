@@ -2,7 +2,7 @@
 title: "Network Scans Count By Destination Port"
 aliases:
   - "/rule/fab0ddf0-b8a9-4d70-91ce-a20547209afb"
-
+ruleid: fab0ddf0-b8a9-4d70-91ce-a20547209afb
 
 tags:
   - attack.discovery

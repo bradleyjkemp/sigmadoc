@@ -2,7 +2,7 @@
 title: "Password Policy Discovery"
 aliases:
   - "/rule/ca94a6db-8106-4737-9ed2-3e3bb826af0a"
-
+ruleid: ca94a6db-8106-4737-9ed2-3e3bb826af0a
 
 tags:
   - attack.discovery

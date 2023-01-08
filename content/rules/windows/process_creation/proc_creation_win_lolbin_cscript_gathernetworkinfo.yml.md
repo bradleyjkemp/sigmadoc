@@ -2,7 +2,7 @@
 title: "GatherNetworkInfo.vbs Script Usage"
 aliases:
   - "/rule/575dce0c-8139-4e30-9295-1ee75969f7fe"
-
+ruleid: 575dce0c-8139-4e30-9295-1ee75969f7fe
 
 tags:
   - attack.discovery

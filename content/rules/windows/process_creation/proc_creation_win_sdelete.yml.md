@@ -2,7 +2,7 @@
 title: "Sysinternals SDelete Delete File"
 aliases:
   - "/rule/a4824fca-976f-4964-b334-0621379e84c4"
-
+ruleid: a4824fca-976f-4964-b334-0621379e84c4
 
 tags:
   - attack.impact

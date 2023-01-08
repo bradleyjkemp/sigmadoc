@@ -2,7 +2,7 @@
 title: "CobaltStrike BOF Injection Pattern"
 aliases:
   - "/rule/09706624-b7f6-455d-9d02-adee024cee1d"
-
+ruleid: 09706624-b7f6-455d-9d02-adee024cee1d
 
 tags:
   - attack.execution

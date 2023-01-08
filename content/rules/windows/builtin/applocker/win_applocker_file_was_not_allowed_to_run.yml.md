@@ -2,7 +2,7 @@
 title: "File Was Not Allowed To Run"
 aliases:
   - "/rule/401e5d00-b944-11ea-8f9a-00163ecd60ae"
-
+ruleid: 401e5d00-b944-11ea-8f9a-00163ecd60ae
 
 tags:
   - attack.execution

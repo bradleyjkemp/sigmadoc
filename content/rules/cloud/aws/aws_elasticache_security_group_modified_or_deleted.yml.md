@@ -2,7 +2,7 @@
 title: "AWS ElastiCache Security Group Modified or Deleted"
 aliases:
   - "/rule/7c797da2-9cf2-4523-ba64-33b06339f0cc"
-
+ruleid: 7c797da2-9cf2-4523-ba64-33b06339f0cc
 
 tags:
   - attack.impact

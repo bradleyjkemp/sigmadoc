@@ -2,7 +2,7 @@
 title: "Remote Registry Lateral Movement"
 aliases:
   - "/rule/35c55673-84ca-4e99-8d09-e334f3c29539"
-
+ruleid: 35c55673-84ca-4e99-8d09-e334f3c29539
 
 tags:
   - attack.lateral_movement

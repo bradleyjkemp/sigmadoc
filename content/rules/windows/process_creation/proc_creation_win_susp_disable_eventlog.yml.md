@@ -2,7 +2,7 @@
 title: "Disable or Delete Windows Eventlog"
 aliases:
   - "/rule/cd1f961e-0b96-436b-b7c6-38da4583ec00"
-
+ruleid: cd1f961e-0b96-436b-b7c6-38da4583ec00
 
 tags:
   - attack.defense_evasion

@@ -2,7 +2,7 @@
 title: "Ke3chang Registry Key Modifications"
 aliases:
   - "/rule/7b544661-69fc-419f-9a59-82ccc328f205"
-
+ruleid: 7b544661-69fc-419f-9a59-82ccc328f205
 
 tags:
   - attack.g0004

@@ -2,7 +2,7 @@
 title: "COMPlus_ETWEnabled Registry Modification"
 aliases:
   - "/rule/bf4fc428-dcc3-4bbd-99fe-2422aeee2544"
-
+ruleid: bf4fc428-dcc3-4bbd-99fe-2422aeee2544
 
 tags:
   - attack.defense_evasion

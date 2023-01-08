@@ -2,7 +2,7 @@
 title: "Azure AD Health Service Agents Registry Keys Access"
 aliases:
   - "/rule/1d2ab8ac-1a01-423b-9c39-001510eae8e8"
-
+ruleid: 1d2ab8ac-1a01-423b-9c39-001510eae8e8
 
 tags:
   - attack.discovery

@@ -2,7 +2,7 @@
 title: "Local Groups Discovery"
 aliases:
   - "/rule/676381a6-15ca-4d73-a9c8-6a22e970b90d"
-
+ruleid: 676381a6-15ca-4d73-a9c8-6a22e970b90d
 
 tags:
   - attack.discovery

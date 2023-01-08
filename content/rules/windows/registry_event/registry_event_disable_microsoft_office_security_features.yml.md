@@ -2,7 +2,7 @@
 title: "Disable Microsoft Office Security Features"
 aliases:
   - "/rule/7c637634-c95d-4bbf-b26c-a82510874b34"
-
+ruleid: 7c637634-c95d-4bbf-b26c-a82510874b34
 
 tags:
   - attack.defense_evasion

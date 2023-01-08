@@ -2,7 +2,7 @@
 title: "AWS EFS Fileshare Mount Modified or Deleted"
 aliases:
   - "/rule/6a7ba45c-63d8-473e-9736-2eaabff79964"
-
+ruleid: 6a7ba45c-63d8-473e-9736-2eaabff79964
 
 tags:
   - attack.impact

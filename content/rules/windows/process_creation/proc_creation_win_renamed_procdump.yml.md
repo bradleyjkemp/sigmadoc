@@ -2,7 +2,7 @@
 title: "Renamed ProcDump"
 aliases:
   - "/rule/4a0b2c7e-7cb2-495d-8b63-5f268e7bfd67"
-
+ruleid: 4a0b2c7e-7cb2-495d-8b63-5f268e7bfd67
 
 tags:
   - attack.defense_evasion

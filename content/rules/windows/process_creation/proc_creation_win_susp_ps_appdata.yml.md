@@ -2,7 +2,7 @@
 title: "PowerShell Script Run in AppData"
 aliases:
   - "/rule/ac175779-025a-4f12-98b0-acdaeb77ea85"
-
+ruleid: ac175779-025a-4f12-98b0-acdaeb77ea85
 
 tags:
   - attack.execution

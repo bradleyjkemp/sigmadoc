@@ -2,7 +2,7 @@
 title: "Suspicious Windows Update Agent Empty Cmdline"
 aliases:
   - "/rule/52d097e2-063e-4c9c-8fbb-855c8948d135"
-
+ruleid: 52d097e2-063e-4c9c-8fbb-855c8948d135
 
 
 

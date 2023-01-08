@@ -2,7 +2,7 @@
 title: "AWS EC2 Download Userdata"
 aliases:
   - "/rule/26ff4080-194e-47e7-9889-ef7602efed0c"
-
+ruleid: 26ff4080-194e-47e7-9889-ef7602efed0c
 
 tags:
   - attack.exfiltration

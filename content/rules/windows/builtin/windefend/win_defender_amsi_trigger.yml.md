@@ -2,7 +2,7 @@
 title: "Windows Defender AMSI Trigger Detected"
 aliases:
   - "/rule/ea9bf0fa-edec-4fb8-8b78-b119f2528186"
-
+ruleid: ea9bf0fa-edec-4fb8-8b78-b119f2528186
 
 tags:
   - attack.execution

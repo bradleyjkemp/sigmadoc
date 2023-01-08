@@ -2,7 +2,7 @@
 title: "Backup Catalog Deleted"
 aliases:
   - "/rule/9703792d-fd9a-456d-a672-ff92efe4806a"
-
+ruleid: 9703792d-fd9a-456d-a672-ff92efe4806a
 
 tags:
   - attack.defense_evasion

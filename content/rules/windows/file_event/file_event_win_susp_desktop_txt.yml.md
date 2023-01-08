@@ -2,7 +2,7 @@
 title: "Suspicious Creation TXT File in User Desktop"
 aliases:
   - "/rule/caf02a0a-1e1c-4552-9b48-5e070bd88d11"
-
+ruleid: caf02a0a-1e1c-4552-9b48-5e070bd88d11
 
 tags:
   - attack.impact

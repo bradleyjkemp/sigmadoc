@@ -2,7 +2,7 @@
 title: "WSF/JSE/JS/VBA/VBE File Execution"
 aliases:
   - "/rule/1e33157c-53b1-41ad-bbcc-780b80b58288"
-
+ruleid: 1e33157c-53b1-41ad-bbcc-780b80b58288
 
 tags:
   - attack.execution

@@ -2,7 +2,7 @@
 title: "SyncAppvPublishingServer Execution to Bypass Powershell Restriction"
 aliases:
   - "/rule/fde7929d-8beb-4a4c-b922-be9974671667"
-
+ruleid: fde7929d-8beb-4a4c-b922-be9974671667
 
 tags:
   - attack.defense_evasion

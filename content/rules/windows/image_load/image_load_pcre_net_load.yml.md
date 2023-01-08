@@ -2,7 +2,7 @@
 title: "PCRE.NET Package Image Load"
 aliases:
   - "/rule/84b0a8f3-680b-4096-a45b-e9a89221727c"
-
+ruleid: 84b0a8f3-680b-4096-a45b-e9a89221727c
 
 tags:
   - attack.execution

@@ -2,7 +2,7 @@
 title: "Azure Device or Configuration Modified or Deleted"
 aliases:
   - "/rule/46530378-f9db-4af9-a9e5-889c177d3881"
-
+ruleid: 46530378-f9db-4af9-a9e5-889c177d3881
 
 tags:
   - attack.impact

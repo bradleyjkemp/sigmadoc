@@ -2,7 +2,7 @@
 title: "Screen Capture with Xwd"
 aliases:
   - "/rule/e2f17c5d-b02a-442b-9052-6eb89c9fec9c"
-
+ruleid: e2f17c5d-b02a-442b-9052-6eb89c9fec9c
 
 tags:
   - attack.collection

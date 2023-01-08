@@ -2,7 +2,7 @@
 title: "Azure Subscription Permission Elevation Via AuditLogs"
 aliases:
   - "/rule/ca9bf243-465e-494a-9e54-bf9fc239057d"
-
+ruleid: ca9bf243-465e-494a-9e54-bf9fc239057d
 
 tags:
   - attack.initial_access

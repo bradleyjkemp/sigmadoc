@@ -2,7 +2,7 @@
 title: "Azure Kubernetes Admission Controller"
 aliases:
   - "/rule/a61a3c56-4ce2-4351-a079-88ae4cbd2b58"
-
+ruleid: a61a3c56-4ce2-4351-a079-88ae4cbd2b58
 
 tags:
   - attack.persistence

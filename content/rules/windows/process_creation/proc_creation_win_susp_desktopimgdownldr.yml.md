@@ -2,7 +2,7 @@
 title: "Suspicious Desktopimgdownldr Command"
 aliases:
   - "/rule/bb58aa4a-b80b-415a-a2c0-2f65a4c81009"
-
+ruleid: bb58aa4a-b80b-415a-a2c0-2f65a4c81009
 
 tags:
   - attack.command_and_control

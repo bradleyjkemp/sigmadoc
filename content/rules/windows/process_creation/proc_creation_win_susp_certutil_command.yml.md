@@ -2,7 +2,7 @@
 title: "Suspicious Certutil Command"
 aliases:
   - "/rule/e011a729-98a6-4139-b5c4-bf6f6dd8239a"
-
+ruleid: e011a729-98a6-4139-b5c4-bf6f6dd8239a
 
 tags:
   - attack.defense_evasion

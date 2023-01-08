@@ -2,7 +2,7 @@
 title: "Suspicious Splwow64 Without Params"
 aliases:
   - "/rule/1f1a8509-2cbb-44f5-8751-8e1571518ce2"
-
+ruleid: 1f1a8509-2cbb-44f5-8751-8e1571518ce2
 
 tags:
   - attack.defense_evasion

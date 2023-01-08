@@ -2,7 +2,7 @@
 title: "Google Cloud SQL Database Modified or Deleted"
 aliases:
   - "/rule/f346bbd5-2c4e-4789-a221-72de7685090d"
-
+ruleid: f346bbd5-2c4e-4789-a221-72de7685090d
 
 tags:
   - attack.impact

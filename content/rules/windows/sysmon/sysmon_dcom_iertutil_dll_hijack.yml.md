@@ -2,7 +2,7 @@
 title: "T1021 DCOM InternetExplorer.Application Iertutil DLL Hijack"
 aliases:
   - "/rule/e554f142-5cf3-4e55-ace9-a1b59e0def65"
-
+ruleid: e554f142-5cf3-4e55-ace9-a1b59e0def65
 
 tags:
   - attack.lateral_movement

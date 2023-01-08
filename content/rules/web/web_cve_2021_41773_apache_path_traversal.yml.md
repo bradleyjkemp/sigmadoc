@@ -2,7 +2,7 @@
 title: "CVE-2021-41773 Exploitation Attempt"
 aliases:
   - "/rule/3007fec6-e761-4319-91af-e32e20ac43f5"
-
+ruleid: 3007fec6-e761-4319-91af-e32e20ac43f5
 
 tags:
   - attack.initial_access

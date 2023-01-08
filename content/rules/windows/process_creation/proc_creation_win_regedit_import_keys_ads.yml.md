@@ -2,7 +2,7 @@
 title: "Imports Registry Key From an ADS"
 aliases:
   - "/rule/0b80ade5-6997-4b1d-99a1-71701778ea61"
-
+ruleid: 0b80ade5-6997-4b1d-99a1-71701778ea61
 
 tags:
   - attack.t1112

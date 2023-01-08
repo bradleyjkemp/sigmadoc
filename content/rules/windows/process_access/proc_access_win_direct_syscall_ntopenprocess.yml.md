@@ -2,7 +2,7 @@
 title: "Direct Syscall of NtOpenProcess"
 aliases:
   - "/rule/3f3f3506-1895-401b-9cc3-e86b16e630d0"
-
+ruleid: 3f3f3506-1895-401b-9cc3-e86b16e630d0
 
 tags:
   - attack.execution

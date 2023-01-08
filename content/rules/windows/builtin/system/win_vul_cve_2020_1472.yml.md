@@ -2,7 +2,7 @@
 title: "Vulnerable Netlogon Secure Channel Connection Allowed"
 aliases:
   - "/rule/a0cb7110-edf0-47a4-9177-541a4083128a"
-
+ruleid: a0cb7110-edf0-47a4-9177-541a4083128a
 
 tags:
   - attack.privilege_escalation

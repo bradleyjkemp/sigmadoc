@@ -2,7 +2,7 @@
 title: "Suspicious Remote Logon with Explicit Credentials"
 aliases:
   - "/rule/941e5c45-cda7-4864-8cea-bbb7458d194a"
-
+ruleid: 941e5c45-cda7-4864-8cea-bbb7458d194a
 
 tags:
   - attack.t1078

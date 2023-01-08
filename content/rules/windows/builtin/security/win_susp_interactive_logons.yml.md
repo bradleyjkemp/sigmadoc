@@ -2,7 +2,7 @@
 title: "Interactive Logon to Server Systems"
 aliases:
   - "/rule/3ff152b2-1388-4984-9cd9-a323323fdadf"
-
+ruleid: 3ff152b2-1388-4984-9cd9-a323323fdadf
 
 tags:
   - attack.lateral_movement

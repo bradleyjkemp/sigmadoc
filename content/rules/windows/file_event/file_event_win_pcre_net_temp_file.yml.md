@@ -2,7 +2,7 @@
 title: "PCRE.NET Package Temp Files"
 aliases:
   - "/rule/6e90ae7a-7cd3-473f-a035-4ebb72d961da"
-
+ruleid: 6e90ae7a-7cd3-473f-a035-4ebb72d961da
 
 tags:
   - attack.execution

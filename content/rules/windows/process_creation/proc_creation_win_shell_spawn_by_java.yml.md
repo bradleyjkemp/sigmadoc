@@ -2,7 +2,7 @@
 title: "Shells Spawn by Java"
 aliases:
   - "/rule/dff1e1cc-d3fd-47c8-bfc2-aeb878a754c0"
-
+ruleid: dff1e1cc-d3fd-47c8-bfc2-aeb878a754c0
 
 tags:
   - attack.initial_access

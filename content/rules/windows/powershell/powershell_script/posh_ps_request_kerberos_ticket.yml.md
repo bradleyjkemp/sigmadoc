@@ -2,7 +2,7 @@
 title: "Request A Single Ticket via PowerShell"
 aliases:
   - "/rule/a861d835-af37-4930-bcd6-5b178bfb54df"
-
+ruleid: a861d835-af37-4930-bcd6-5b178bfb54df
 
 tags:
   - attack.credential_access

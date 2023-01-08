@@ -2,7 +2,7 @@
 title: "Possible Exploitation of Exchange RCE CVE-2021-42321"
 aliases:
   - "/rule/c92f1896-d1d2-43c3-92d5-7a5b35c217bb"
-
+ruleid: c92f1896-d1d2-43c3-92d5-7a5b35c217bb
 
 tags:
   - attack.lateral_movement

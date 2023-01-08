@@ -2,7 +2,7 @@
 title: "Activity from Infrequent Country"
 aliases:
   - "/rule/0f2468a2-5055-4212-a368-7321198ee706"
-
+ruleid: 0f2468a2-5055-4212-a368-7321198ee706
 
 tags:
   - attack.command_and_control

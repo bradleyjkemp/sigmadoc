@@ -2,7 +2,7 @@
 title: "Suspicious Rundll32 Setupapi.dll Activity"
 aliases:
   - "/rule/285b85b1-a555-4095-8652-a8a4106af63f"
-
+ruleid: 285b85b1-a555-4095-8652-a8a4106af63f
 
 tags:
   - attack.defense_evasion

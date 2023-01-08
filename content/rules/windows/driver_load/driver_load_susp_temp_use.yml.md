@@ -2,7 +2,7 @@
 title: "Suspicious Driver Load from Temp"
 aliases:
   - "/rule/2c4523d5-d481-4ed0-8ec3-7fbf0cb41a75"
-
+ruleid: 2c4523d5-d481-4ed0-8ec3-7fbf0cb41a75
 
 tags:
   - attack.persistence

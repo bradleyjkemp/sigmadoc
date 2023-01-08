@@ -2,7 +2,7 @@
 title: "HybridConnectionManager Service Running"
 aliases:
   - "/rule/b55d23e5-6821-44ff-8a6e-67218891e49f"
-
+ruleid: b55d23e5-6821-44ff-8a6e-67218891e49f
 
 tags:
   - attack.persistence

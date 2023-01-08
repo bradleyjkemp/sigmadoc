@@ -2,7 +2,7 @@
 title: "LSASS Memory Dump"
 aliases:
   - "/rule/5ef9853e-4d0e-4a70-846f-a9ca37d876da"
-
+ruleid: 5ef9853e-4d0e-4a70-846f-a9ca37d876da
 
 tags:
   - attack.credential_access

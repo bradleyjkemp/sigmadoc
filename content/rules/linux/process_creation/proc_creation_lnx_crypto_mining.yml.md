@@ -2,7 +2,7 @@
 title: "Linux Crypto Mining Indicators"
 aliases:
   - "/rule/9069ea3c-b213-4c52-be13-86506a227ab1"
-
+ruleid: 9069ea3c-b213-4c52-be13-86506a227ab1
 
 
 

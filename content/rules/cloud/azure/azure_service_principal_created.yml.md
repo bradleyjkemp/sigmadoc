@@ -2,7 +2,7 @@
 title: "Azure Service Principal Created"
 aliases:
   - "/rule/0ddcff6d-d262-40b0-804b-80eb592de8e3"
-
+ruleid: 0ddcff6d-d262-40b0-804b-80eb592de8e3
 
 tags:
   - attack.defense_evasion

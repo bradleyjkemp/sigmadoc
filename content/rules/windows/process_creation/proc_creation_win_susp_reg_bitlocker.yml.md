@@ -2,7 +2,7 @@
 title: "Suspicious Reg Add BitLocker"
 aliases:
   - "/rule/0e0255bf-2548-47b8-9582-c0955c9283f5"
-
+ruleid: 0e0255bf-2548-47b8-9582-c0955c9283f5
 
 tags:
   - attack.impact

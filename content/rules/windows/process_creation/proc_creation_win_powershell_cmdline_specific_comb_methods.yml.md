@@ -2,7 +2,7 @@
 title: "Encoded PowerShell Command Line"
 aliases:
   - "/rule/cdf05894-89e7-4ead-b2b0-0a5f97a90f2f"
-
+ruleid: cdf05894-89e7-4ead-b2b0-0a5f97a90f2f
 
 tags:
   - attack.defense_evasion

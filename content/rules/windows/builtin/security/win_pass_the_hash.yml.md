@@ -2,7 +2,7 @@
 title: "Pass the Hash Activity"
 aliases:
   - "/rule/f8d98d6c-7a07-4d74-b064-dd4a3c244528"
-
+ruleid: f8d98d6c-7a07-4d74-b064-dd4a3c244528
 
 tags:
   - attack.lateral_movement

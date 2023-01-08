@@ -2,7 +2,7 @@
 title: "Activity from Suspicious IP Addresses"
 aliases:
   - "/rule/a3501e8e-af9e-43c6-8cd6-9360bdaae498"
-
+ruleid: a3501e8e-af9e-43c6-8cd6-9360bdaae498
 
 tags:
   - attack.command_and_control

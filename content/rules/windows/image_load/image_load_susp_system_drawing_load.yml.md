@@ -2,7 +2,7 @@
 title: "Suspicious System.Drawing Load"
 aliases:
   - "/rule/666ecfc7-229d-42b8-821e-1a8f8cb7057c"
-
+ruleid: 666ecfc7-229d-42b8-821e-1a8f8cb7057c
 
 tags:
   - attack.collection

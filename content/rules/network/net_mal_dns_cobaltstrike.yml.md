@@ -2,7 +2,7 @@
 title: "Cobalt Strike DNS Beaconing"
 aliases:
   - "/rule/2975af79-28c4-4d2f-a951-9095f229df29"
-
+ruleid: 2975af79-28c4-4d2f-a951-9095f229df29
 
 tags:
   - attack.command_and_control

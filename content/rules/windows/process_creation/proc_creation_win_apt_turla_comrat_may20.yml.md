@@ -2,7 +2,7 @@
 title: "Turla Group Commands May 2020"
 aliases:
   - "/rule/9e2e51c5-c699-4794-ba5a-29f5da40ac0c"
-
+ruleid: 9e2e51c5-c699-4794-ba5a-29f5da40ac0c
 
 tags:
   - attack.g0010

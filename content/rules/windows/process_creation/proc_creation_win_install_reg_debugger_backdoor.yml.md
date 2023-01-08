@@ -2,7 +2,7 @@
 title: "Suspicious Debugger Registration Cmdline"
 aliases:
   - "/rule/ae215552-081e-44c7-805f-be16f975c8a2"
-
+ruleid: ae215552-081e-44c7-805f-be16f975c8a2
 
 tags:
   - attack.persistence

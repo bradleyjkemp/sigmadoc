@@ -2,7 +2,7 @@
 title: "Equation Group C2 Communication"
 aliases:
   - "/rule/881834a4-6659-4773-821e-1c151789d873"
-
+ruleid: 881834a4-6659-4773-821e-1c151789d873
 
 tags:
   - attack.command_and_control

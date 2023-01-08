@@ -2,7 +2,7 @@
 title: "Suspicious Reverse Shell Command Line"
 aliases:
   - "/rule/738d9bcf-6999-4fdb-b4ac-3033037db8ab"
-
+ruleid: 738d9bcf-6999-4fdb-b4ac-3033037db8ab
 
 tags:
   - attack.execution

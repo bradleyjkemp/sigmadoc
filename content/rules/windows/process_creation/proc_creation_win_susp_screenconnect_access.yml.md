@@ -2,7 +2,7 @@
 title: "ScreenConnect Remote Access"
 aliases:
   - "/rule/75bfe6e6-cd8e-429e-91d3-03921e1d7962"
-
+ruleid: 75bfe6e6-cd8e-429e-91d3-03921e1d7962
 
 tags:
   - attack.initial_access

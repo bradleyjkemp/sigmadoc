@@ -2,7 +2,7 @@
 title: "LittleCorporal Generated Maldoc Injection"
 aliases:
   - "/rule/7bdde3bf-2a42-4c39-aa31-a92b3e17afac"
-
+ruleid: 7bdde3bf-2a42-4c39-aa31-a92b3e17afac
 
 tags:
   - attack.execution

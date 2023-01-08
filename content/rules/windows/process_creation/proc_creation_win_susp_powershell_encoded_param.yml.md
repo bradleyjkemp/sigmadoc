@@ -2,7 +2,7 @@
 title: "PowerShell Encoded Character Syntax"
 aliases:
   - "/rule/e312efd0-35a1-407f-8439-b8d434b438a6"
-
+ruleid: e312efd0-35a1-407f-8439-b8d434b438a6
 
 tags:
   - attack.execution

@@ -2,7 +2,7 @@
 title: "Powershell AMSI Bypass via .NET Reflection"
 aliases:
   - "/rule/30edb182-aa75-42c0-b0a9-e998bb29067c"
-
+ruleid: 30edb182-aa75-42c0-b0a9-e998bb29067c
 
 tags:
   - attack.defense_evasion

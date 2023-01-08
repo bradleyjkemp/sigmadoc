@@ -2,7 +2,7 @@
 title: "Hack Tool User Agent"
 aliases:
   - "/rule/c42a3073-30fb-48ae-8c99-c23ada84b103"
-
+ruleid: c42a3073-30fb-48ae-8c99-c23ada84b103
 
 tags:
   - attack.initial_access

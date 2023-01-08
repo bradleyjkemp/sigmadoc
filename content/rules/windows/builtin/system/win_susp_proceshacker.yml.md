@@ -2,7 +2,7 @@
 title: "ProcessHacker Privilege Elevation"
 aliases:
   - "/rule/c4ff1eac-84ad-44dd-a6fb-d56a92fc43a9"
-
+ruleid: c4ff1eac-84ad-44dd-a6fb-d56a92fc43a9
 
 tags:
   - attack.execution

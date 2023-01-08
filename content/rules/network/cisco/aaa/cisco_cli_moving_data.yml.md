@@ -2,7 +2,7 @@
 title: "Cisco Stage Data"
 aliases:
   - "/rule/5e51acb2-bcbe-435b-99c6-0e3cd5e2aa59"
-
+ruleid: 5e51acb2-bcbe-435b-99c6-0e3cd5e2aa59
 
 tags:
   - attack.collection

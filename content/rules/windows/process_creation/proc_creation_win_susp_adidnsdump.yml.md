@@ -2,7 +2,7 @@
 title: "Suspicious Execution of Adidnsdump"
 aliases:
   - "/rule/26d3f0a2-f514-4a3f-a8a7-e7e48a8d9160"
-
+ruleid: 26d3f0a2-f514-4a3f-a8a7-e7e48a8d9160
 
 tags:
   - attack.discovery

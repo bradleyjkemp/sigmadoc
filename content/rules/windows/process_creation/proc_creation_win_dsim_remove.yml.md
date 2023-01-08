@@ -2,7 +2,7 @@
 title: "Dism Remove Online Package"
 aliases:
   - "/rule/43e32da2-fdd0-4156-90de-50dfd62636f9"
-
+ruleid: 43e32da2-fdd0-4156-90de-50dfd62636f9
 
 tags:
   - attack.defense_evasion

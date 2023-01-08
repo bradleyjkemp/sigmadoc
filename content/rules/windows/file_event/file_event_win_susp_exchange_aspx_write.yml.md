@@ -2,7 +2,7 @@
 title: "Suspicious MSExchangeMailboxReplication ASPX Write"
 aliases:
   - "/rule/7280c9f3-a5af-45d0-916a-bc01cb4151c9"
-
+ruleid: 7280c9f3-a5af-45d0-916a-bc01cb4151c9
 
 tags:
   - attack.initial_access

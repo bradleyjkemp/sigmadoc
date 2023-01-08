@@ -2,7 +2,7 @@
 title: "Lazarus Loaders"
 aliases:
   - "/rule/7b49c990-4a9a-4e65-ba95-47c9cc448f6e"
-
+ruleid: 7b49c990-4a9a-4e65-ba95-47c9cc448f6e
 
 tags:
   - attack.g0032

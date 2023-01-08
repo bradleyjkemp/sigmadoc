@@ -2,7 +2,7 @@
 title: "Successful Overpass the Hash Attempt"
 aliases:
   - "/rule/192a0330-c20b-4356-90b6-7b7049ae0b87"
-
+ruleid: 192a0330-c20b-4356-90b6-7b7049ae0b87
 
 tags:
   - attack.lateral_movement

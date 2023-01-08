@@ -2,7 +2,7 @@
 title: "Direct Autorun Keys Modification"
 aliases:
   - "/rule/24357373-078f-44ed-9ac4-6d334a668a11"
-
+ruleid: 24357373-078f-44ed-9ac4-6d334a668a11
 
 tags:
   - attack.persistence

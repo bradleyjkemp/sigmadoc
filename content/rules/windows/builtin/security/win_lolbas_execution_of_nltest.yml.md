@@ -2,7 +2,7 @@
 title: "Correct Execution of Nltest.exe"
 aliases:
   - "/rule/eeb66bbb-3dde-4582-815a-584aee9fe6d1"
-
+ruleid: eeb66bbb-3dde-4582-815a-584aee9fe6d1
 
 tags:
   - attack.discovery

@@ -2,7 +2,7 @@
 title: "DarkSide Ransomware Pattern"
 aliases:
   - "/rule/965fff6c-1d7e-4e25-91fd-cdccd75f7d2c"
-
+ruleid: 965fff6c-1d7e-4e25-91fd-cdccd75f7d2c
 
 tags:
   - attack.execution

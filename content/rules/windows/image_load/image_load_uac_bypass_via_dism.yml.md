@@ -2,7 +2,7 @@
 title: "UAC Bypass With Fake DLL"
 aliases:
   - "/rule/a5ea83a7-05a5-44c1-be2e-addccbbd8c03"
-
+ruleid: a5ea83a7-05a5-44c1-be2e-addccbbd8c03
 
 tags:
   - attack.persistence

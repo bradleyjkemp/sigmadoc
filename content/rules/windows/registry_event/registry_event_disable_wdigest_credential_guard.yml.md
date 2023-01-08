@@ -2,7 +2,7 @@
 title: "Wdigest CredGuard Registry Modification"
 aliases:
   - "/rule/1a2d6c47-75b0-45bd-b133-2c0be75349fd"
-
+ruleid: 1a2d6c47-75b0-45bd-b133-2c0be75349fd
 
 tags:
   - attack.defense_evasion

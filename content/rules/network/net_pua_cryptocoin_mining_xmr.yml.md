@@ -2,7 +2,7 @@
 title: "Monero Crypto Coin Mining Pool Lookup"
 aliases:
   - "/rule/b593fd50-7335-4682-a36c-4edcb68e4641"
-
+ruleid: b593fd50-7335-4682-a36c-4edcb68e4641
 
 tags:
   - attack.impact

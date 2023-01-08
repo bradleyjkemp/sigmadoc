@@ -2,7 +2,7 @@
 title: "Netsh RDP Port Forwarding"
 aliases:
   - "/rule/782d6f3e-4c5d-4b8c-92a3-1d05fed72e63"
-
+ruleid: 782d6f3e-4c5d-4b8c-92a3-1d05fed72e63
 
 tags:
   - attack.lateral_movement

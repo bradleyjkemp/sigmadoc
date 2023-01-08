@@ -2,7 +2,7 @@
 title: "Suspicious Use of CSharp Interactive Console"
 aliases:
   - "/rule/a9e416a8-e613-4f8b-88b8-a7d1d1af2f61"
-
+ruleid: a9e416a8-e613-4f8b-88b8-a7d1d1af2f61
 
 tags:
   - attack.execution

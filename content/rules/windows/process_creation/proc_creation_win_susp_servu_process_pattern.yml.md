@@ -2,7 +2,7 @@
 title: "Suspicious Serv-U Process Pattern"
 aliases:
   - "/rule/58f4ea09-0fc2-4520-ba18-b85c540b0eaf"
-
+ruleid: 58f4ea09-0fc2-4520-ba18-b85c540b0eaf
 
 tags:
   - attack.credential_access

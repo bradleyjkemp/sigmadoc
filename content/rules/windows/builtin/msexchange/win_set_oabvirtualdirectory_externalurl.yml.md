@@ -2,7 +2,7 @@
 title: "Exchange Set OabVirtualDirectory ExternalUrl Property"
 aliases:
   - "/rule/9db37458-4df2-46a5-95ab-307e7f29e675"
-
+ruleid: 9db37458-4df2-46a5-95ab-307e7f29e675
 
 tags:
   - attack.persistence

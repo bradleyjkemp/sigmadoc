@@ -2,7 +2,7 @@
 title: "Valid Users Failing to Authenticate From Single Source Using Kerberos"
 aliases:
   - "/rule/5d1d946e-32e6-4d9a-a0dc-0ac022c7eb98"
-
+ruleid: 5d1d946e-32e6-4d9a-a0dc-0ac022c7eb98
 
 tags:
   - attack.t1110.003

@@ -2,7 +2,7 @@
 title: "WCE wceaux.dll Access"
 aliases:
   - "/rule/1de68c67-af5c-4097-9c85-fe5578e09e67"
-
+ruleid: 1de68c67-af5c-4097-9c85-fe5578e09e67
 
 tags:
   - attack.credential_access

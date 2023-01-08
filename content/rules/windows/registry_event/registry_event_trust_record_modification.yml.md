@@ -2,7 +2,7 @@
 title: "Windows Registry Trust Record Modification"
 aliases:
   - "/rule/295a59c1-7b79-4b47-a930-df12c15fc9c2"
-
+ruleid: 295a59c1-7b79-4b47-a930-df12c15fc9c2
 
 tags:
   - attack.initial_access

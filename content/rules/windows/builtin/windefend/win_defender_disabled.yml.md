@@ -2,7 +2,7 @@
 title: "Windows Defender Threat Detection Disabled"
 aliases:
   - "/rule/fe34868f-6e0e-4882-81f6-c43aa8f15b62"
-
+ruleid: fe34868f-6e0e-4882-81f6-c43aa8f15b62
 
 tags:
   - attack.defense_evasion

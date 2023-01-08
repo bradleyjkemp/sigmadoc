@@ -2,7 +2,7 @@
 title: "Logon from a Risky IP Address"
 aliases:
   - "/rule/c191e2fa-f9d6-4ccf-82af-4f2aba08359f"
-
+ruleid: c191e2fa-f9d6-4ccf-82af-4f2aba08359f
 
 tags:
   - attack.initial_access

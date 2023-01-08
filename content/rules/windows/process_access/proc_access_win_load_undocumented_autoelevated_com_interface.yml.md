@@ -2,7 +2,7 @@
 title: "Load Undocumented Autoelevated COM Interface"
 aliases:
   - "/rule/fb3722e4-1a06-46b6-b772-253e2e7db933"
-
+ruleid: fb3722e4-1a06-46b6-b772-253e2e7db933
 
 tags:
   - attack.defense_evasion

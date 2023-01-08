@@ -2,7 +2,7 @@
 title: "DLL Execution Via Register-cimprovider.exe"
 aliases:
   - "/rule/a2910908-e86f-4687-aeba-76a5f996e652"
-
+ruleid: a2910908-e86f-4687-aeba-76a5f996e652
 
 tags:
   - attack.defense_evasion

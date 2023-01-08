@@ -2,7 +2,7 @@
 title: "AWL Bypass with Winrm.vbs and Malicious WsmPty.xsl/WsmTxt.xsl"
 aliases:
   - "/rule/074e0ded-6ced-4ebd-8b4d-53f55908119d"
-
+ruleid: 074e0ded-6ced-4ebd-8b4d-53f55908119d
 
 tags:
   - attack.defense_evasion

@@ -2,7 +2,7 @@
 title: "CACTUSTORCH Remote Thread Creation"
 aliases:
   - "/rule/2e4e488a-6164-4811-9ea1-f960c7359c40"
-
+ruleid: 2e4e488a-6164-4811-9ea1-f960c7359c40
 
 tags:
   - attack.defense_evasion

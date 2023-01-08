@@ -2,7 +2,7 @@
 title: "Powerup Write Hijack DLL"
 aliases:
   - "/rule/602a1f13-c640-4d73-b053-be9a2fa58b96"
-
+ruleid: 602a1f13-c640-4d73-b053-be9a2fa58b96
 
 tags:
   - attack.persistence

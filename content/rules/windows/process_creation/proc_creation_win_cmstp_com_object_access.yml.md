@@ -2,7 +2,7 @@
 title: "CMSTP UAC Bypass via COM Object Access"
 aliases:
   - "/rule/4b60e6f2-bf39-47b4-b4ea-398e33cfe253"
-
+ruleid: 4b60e6f2-bf39-47b4-b4ea-398e33cfe253
 
 tags:
   - attack.execution

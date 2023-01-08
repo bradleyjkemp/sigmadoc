@@ -2,7 +2,7 @@
 title: "Raccine Uninstall"
 aliases:
   - "/rule/a31eeaed-3fd5-478e-a8ba-e62c6b3f9ecc"
-
+ruleid: a31eeaed-3fd5-478e-a8ba-e62c6b3f9ecc
 
 tags:
   - attack.defense_evasion

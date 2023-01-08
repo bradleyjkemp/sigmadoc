@@ -2,7 +2,7 @@
 title: "Regsvr32 Command Line Without DLL"
 aliases:
   - "/rule/50919691-7302-437f-8e10-1fe088afa145"
-
+ruleid: 50919691-7302-437f-8e10-1fe088afa145
 
 tags:
   - attack.defense_evasion

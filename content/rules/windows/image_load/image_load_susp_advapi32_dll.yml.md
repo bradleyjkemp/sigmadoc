@@ -2,7 +2,7 @@
 title: "Suspicious Load of Advapi31.dll"
 aliases:
   - "/rule/d813d662-785b-42ca-8b4a-f7457d78d5a9"
-
+ruleid: d813d662-785b-42ca-8b4a-f7457d78d5a9
 
 tags:
   - attack.defense_evasion

@@ -2,7 +2,7 @@
 title: "High DNS Bytes Out"
 aliases:
   - "/rule/0f6c1bf5-70a5-4963-aef9-aab1eefb50bd"
-
+ruleid: 0f6c1bf5-70a5-4963-aef9-aab1eefb50bd
 
 tags:
   - attack.exfiltration

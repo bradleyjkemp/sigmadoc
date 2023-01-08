@@ -2,7 +2,7 @@
 title: "Executable Used by PlugX in Uncommon Location"
 aliases:
   - "/rule/aeab5ec5-be14-471a-80e8-e344418305c2"
-
+ruleid: aeab5ec5-be14-471a-80e8-e344418305c2
 
 tags:
   - attack.s0013

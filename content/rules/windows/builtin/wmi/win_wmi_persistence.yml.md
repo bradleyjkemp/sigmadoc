@@ -2,7 +2,7 @@
 title: "WMI Persistence"
 aliases:
   - "/rule/0b7889b4-5577-4521-a60a-3376ee7f9f7b"
-
+ruleid: 0b7889b4-5577-4521-a60a-3376ee7f9f7b
 
 tags:
   - attack.persistence

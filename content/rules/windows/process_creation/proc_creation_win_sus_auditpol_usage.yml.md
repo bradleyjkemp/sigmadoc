@@ -2,7 +2,7 @@
 title: "Suspicious Auditpol Usage"
 aliases:
   - "/rule/0a13e132-651d-11eb-ae93-0242ac130002"
-
+ruleid: 0a13e132-651d-11eb-ae93-0242ac130002
 
 tags:
   - attack.defense_evasion

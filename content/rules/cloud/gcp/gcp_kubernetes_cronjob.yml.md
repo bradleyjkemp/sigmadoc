@@ -2,7 +2,7 @@
 title: "Google Cloud Kubernetes CronJob"
 aliases:
   - "/rule/cd3a808c-c7b7-4c50-a2f3-f4cfcd436435"
-
+ruleid: cd3a808c-c7b7-4c50-a2f3-f4cfcd436435
 
 tags:
   - attack.persistence

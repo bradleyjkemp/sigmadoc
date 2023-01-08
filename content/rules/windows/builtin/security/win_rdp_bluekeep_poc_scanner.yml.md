@@ -2,7 +2,7 @@
 title: "Scanner PoC for CVE-2019-0708 RDP RCE Vuln"
 aliases:
   - "/rule/8400629e-79a9-4737-b387-5db940ab2367"
-
+ruleid: 8400629e-79a9-4737-b387-5db940ab2367
 
 tags:
   - attack.lateral_movement

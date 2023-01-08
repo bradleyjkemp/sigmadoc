@@ -2,7 +2,7 @@
 title: "Granting Of Permissions To An Account"
 aliases:
   - "/rule/a622fcd2-4b5a-436a-b8a2-a4171161833c"
-
+ruleid: a622fcd2-4b5a-436a-b8a2-a4171161833c
 
 tags:
   - attack.t1098

@@ -2,7 +2,7 @@
 title: "Suspicious ZipExec Execution"
 aliases:
   - "/rule/90dcf730-1b71-4ae7-9ffc-6fcf62bd0132"
-
+ruleid: 90dcf730-1b71-4ae7-9ffc-6fcf62bd0132
 
 tags:
   - attack.execution

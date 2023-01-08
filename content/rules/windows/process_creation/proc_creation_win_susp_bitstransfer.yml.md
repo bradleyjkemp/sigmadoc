@@ -2,7 +2,7 @@
 title: "Suspicious Bitstransfer via PowerShell"
 aliases:
   - "/rule/cd5c8085-4070-4e22-908d-a5b3342deb74"
-
+ruleid: cd5c8085-4070-4e22-908d-a5b3342deb74
 
 tags:
   - attack.exfiltration

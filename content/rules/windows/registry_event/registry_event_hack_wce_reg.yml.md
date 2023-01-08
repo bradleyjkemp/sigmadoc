@@ -2,7 +2,7 @@
 title: "Windows Credential Editor Registry"
 aliases:
   - "/rule/a6b33c02-8305-488f-8585-03cb2a7763f2"
-
+ruleid: a6b33c02-8305-488f-8585-03cb2a7763f2
 
 tags:
   - attack.credential_access

@@ -2,7 +2,7 @@
 title: "Suspicious New Printer Ports in Registry (CVE-2020-1048)"
 aliases:
   - "/rule/7ec912f2-5175-4868-b811-ec13ad0f8567"
-
+ruleid: 7ec912f2-5175-4868-b811-ec13ad0f8567
 
 tags:
   - attack.persistence

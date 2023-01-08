@@ -2,7 +2,7 @@
 title: "Turla Group Named Pipes"
 aliases:
   - "/rule/739915e4-1e70-4778-8b8a-17db02f66db1"
-
+ruleid: 739915e4-1e70-4778-8b8a-17db02f66db1
 
 tags:
   - attack.g0010

@@ -2,7 +2,7 @@
 title: "CobaltStrike Malleable (OCSP) Profile"
 aliases:
   - "/rule/37325383-740a-403d-b1a2-b2b4ab7992e7"
-
+ruleid: 37325383-740a-403d-b1a2-b2b4ab7992e7
 
 tags:
   - attack.defense_evasion

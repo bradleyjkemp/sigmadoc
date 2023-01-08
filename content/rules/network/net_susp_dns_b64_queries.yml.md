@@ -2,7 +2,7 @@
 title: "Suspicious DNS Query with B64 Encoded String"
 aliases:
   - "/rule/4153a907-2451-4e4f-a578-c52bb6881432"
-
+ruleid: 4153a907-2451-4e4f-a578-c52bb6881432
 
 tags:
   - attack.exfiltration

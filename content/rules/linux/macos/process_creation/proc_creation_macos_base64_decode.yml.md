@@ -2,7 +2,7 @@
 title: "Decode Base64 Encoded Text"
 aliases:
   - "/rule/719c22d7-c11a-4f2c-93a6-2cfdd5412f68"
-
+ruleid: 719c22d7-c11a-4f2c-93a6-2cfdd5412f68
 
 tags:
   - attack.defense_evasion

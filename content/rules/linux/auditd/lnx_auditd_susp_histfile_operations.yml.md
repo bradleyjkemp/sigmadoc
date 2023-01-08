@@ -2,7 +2,7 @@
 title: "Suspicious History File Operations"
 aliases:
   - "/rule/eae8ce9f-bde9-47a6-8e79-f20d18419910"
-
+ruleid: eae8ce9f-bde9-47a6-8e79-f20d18419910
 
 tags:
   - attack.credential_access

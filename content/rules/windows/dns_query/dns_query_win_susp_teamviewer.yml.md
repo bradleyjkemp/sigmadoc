@@ -2,7 +2,7 @@
 title: "Suspicious TeamViewer Domain Access"
 aliases:
   - "/rule/778ba9a8-45e4-4b80-8e3e-34a419f0b85e"
-
+ruleid: 778ba9a8-45e4-4b80-8e3e-34a419f0b85e
 
 tags:
   - attack.command_and_control

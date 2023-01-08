@@ -2,7 +2,7 @@
 title: "Abusing Findstr for Defense Evasion"
 aliases:
   - "/rule/bf6c39fc-e203-45b9-9538-05397c1b4f3f"
-
+ruleid: bf6c39fc-e203-45b9-9538-05397c1b4f3f
 
 tags:
   - attack.defense_evasion

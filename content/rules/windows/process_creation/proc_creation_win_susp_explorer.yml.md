@@ -2,7 +2,7 @@
 title: "Proxy Execution Via Explorer.exe"
 aliases:
   - "/rule/9eb271b9-24ae-4cd4-9465-19cfc1047f3e"
-
+ruleid: 9eb271b9-24ae-4cd4-9465-19cfc1047f3e
 
 tags:
   - attack.defense_evasion

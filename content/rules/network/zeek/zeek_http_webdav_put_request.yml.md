@@ -2,7 +2,7 @@
 title: "WebDav Put Request"
 aliases:
   - "/rule/705072a5-bb6f-4ced-95b6-ecfa6602090b"
-
+ruleid: 705072a5-bb6f-4ced-95b6-ecfa6602090b
 
 tags:
   - attack.exfiltration

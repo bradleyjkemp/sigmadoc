@@ -2,7 +2,7 @@
 title: "CobaltStrike Load by Rundll32"
 aliases:
   - "/rule/ae9c6a7c-9521-42a6-915e-5aaa8689d529"
-
+ruleid: ae9c6a7c-9521-42a6-915e-5aaa8689d529
 
 tags:
   - attack.defense_evasion

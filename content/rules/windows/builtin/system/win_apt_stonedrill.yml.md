@@ -2,7 +2,7 @@
 title: "StoneDrill Service Install"
 aliases:
   - "/rule/9e987c6c-4c1e-40d8-bd85-dd26fba8fdd6"
-
+ruleid: 9e987c6c-4c1e-40d8-bd85-dd26fba8fdd6
 
 tags:
   - attack.persistence

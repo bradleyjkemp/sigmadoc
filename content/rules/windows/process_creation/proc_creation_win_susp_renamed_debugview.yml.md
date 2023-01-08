@@ -2,7 +2,7 @@
 title: "Renamed SysInternals Debug View"
 aliases:
   - "/rule/cd764533-2e07-40d6-a718-cfeec7f2da7f"
-
+ruleid: cd764533-2e07-40d6-a718-cfeec7f2da7f
 
 tags:
   - attack.resource_development

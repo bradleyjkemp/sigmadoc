@@ -2,7 +2,7 @@
 title: "Suspicious Dosfuscation Character in Commandline"
 aliases:
   - "/rule/a77c1610-fc73-4019-8e29-0f51efc04a51"
-
+ruleid: a77c1610-fc73-4019-8e29-0f51efc04a51
 
 tags:
   - attack.execution

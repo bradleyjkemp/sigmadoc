@@ -2,7 +2,7 @@
 title: "Cisco Disabling Logging"
 aliases:
   - "/rule/9e8f6035-88bf-4a63-96b6-b17c0508257e"
-
+ruleid: 9e8f6035-88bf-4a63-96b6-b17c0508257e
 
 tags:
   - attack.defense_evasion

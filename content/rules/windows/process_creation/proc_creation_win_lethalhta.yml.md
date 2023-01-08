@@ -2,7 +2,7 @@
 title: "MSHTA Spwaned by SVCHOST"
 aliases:
   - "/rule/ed5d72a6-f8f4-479d-ba79-02f6a80d7471"
-
+ruleid: ed5d72a6-f8f4-479d-ba79-02f6a80d7471
 
 tags:
   - attack.defense_evasion

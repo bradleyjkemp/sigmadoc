@@ -2,7 +2,7 @@
 title: "Tap Driver Installation"
 aliases:
   - "/rule/8e4cf0e5-aa5d-4dc3-beff-dc26917744a9"
-
+ruleid: 8e4cf0e5-aa5d-4dc3-beff-dc26917744a9
 
 tags:
   - attack.exfiltration

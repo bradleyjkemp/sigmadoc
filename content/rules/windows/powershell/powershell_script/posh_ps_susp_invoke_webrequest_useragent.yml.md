@@ -2,7 +2,7 @@
 title: "Change User Agents with WebRequest"
 aliases:
   - "/rule/d4488827-73af-4f8d-9244-7b7662ef046e"
-
+ruleid: d4488827-73af-4f8d-9244-7b7662ef046e
 
 tags:
   - attack.command_and_control

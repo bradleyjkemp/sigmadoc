@@ -2,7 +2,7 @@
 title: "Audit CVE Event"
 aliases:
   - "/rule/48d91a3a-2363-43ba-a456-ca71ac3da5c2"
-
+ruleid: 48d91a3a-2363-43ba-a456-ca71ac3da5c2
 
 tags:
   - attack.execution

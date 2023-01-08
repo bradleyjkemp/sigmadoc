@@ -2,7 +2,7 @@
 title: "UAC Bypass Using DismHost"
 aliases:
   - "/rule/853e74f9-9392-4935-ad3b-2e8c040dae86"
-
+ruleid: 853e74f9-9392-4935-ad3b-2e8c040dae86
 
 tags:
   - attack.defense_evasion

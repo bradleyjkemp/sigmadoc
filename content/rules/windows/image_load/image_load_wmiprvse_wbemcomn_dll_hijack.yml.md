@@ -2,7 +2,7 @@
 title: "Wmiprvse Wbemcomn DLL Hijack"
 aliases:
   - "/rule/7707a579-e0d8-4886-a853-ce47e4575aaa"
-
+ruleid: 7707a579-e0d8-4886-a853-ce47e4575aaa
 
 tags:
   - attack.execution

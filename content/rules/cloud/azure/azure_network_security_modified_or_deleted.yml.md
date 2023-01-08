@@ -2,7 +2,7 @@
 title: "Azure Network Security Configuration Modified or Deleted"
 aliases:
   - "/rule/d22b4df4-5a67-4859-a578-8c9a0b5af9df"
-
+ruleid: d22b4df4-5a67-4859-a578-8c9a0b5af9df
 
 tags:
   - attack.impact

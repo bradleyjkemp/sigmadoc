@@ -2,7 +2,7 @@
 title: "Possible PetitPotam Coerce Authentication Attempt"
 aliases:
   - "/rule/1ce8c8a3-2723-48ed-8246-906ac91061a6"
-
+ruleid: 1ce8c8a3-2723-48ed-8246-906ac91061a6
 
 tags:
   - attack.credential_access

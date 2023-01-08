@@ -2,7 +2,7 @@
 title: "LSASS Memory Dump File Creation"
 aliases:
   - "/rule/5e3d3601-0662-4af0-b1d2-36a05e90c40a"
-
+ruleid: 5e3d3601-0662-4af0-b1d2-36a05e90c40a
 
 tags:
   - attack.credential_access

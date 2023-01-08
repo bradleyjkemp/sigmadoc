@@ -2,7 +2,7 @@
 title: "PwnKit Local Privilege Escalation"
 aliases:
   - "/rule/0506a799-698b-43b4-85a1-ac4c84c720e9"
-
+ruleid: 0506a799-698b-43b4-85a1-ac4c84c720e9
 
 tags:
   - attack.privilege_escalation

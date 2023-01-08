@@ -2,7 +2,7 @@
 title: "Modified Rule in Windows Firewall with Advanced Security"
 aliases:
   - "/rule/5570c4d9-8fdd-4622-965b-403a5a101aa0"
-
+ruleid: 5570c4d9-8fdd-4622-965b-403a5a101aa0
 
 
 

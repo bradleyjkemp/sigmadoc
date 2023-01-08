@@ -2,7 +2,7 @@
 title: "Addition of Domain Trusts"
 aliases:
   - "/rule/0255a820-e564-4e40-af2b-6ac61160335c"
-
+ruleid: 0255a820-e564-4e40-af2b-6ac61160335c
 
 tags:
   - attack.persistence

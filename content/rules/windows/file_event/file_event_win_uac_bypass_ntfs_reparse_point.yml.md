@@ -2,7 +2,7 @@
 title: "UAC Bypass Using NTFS Reparse Point - File"
 aliases:
   - "/rule/7fff6773-2baa-46de-a24a-b6eec1aba2d1"
-
+ruleid: 7fff6773-2baa-46de-a24a-b6eec1aba2d1
 
 tags:
   - attack.defense_evasion

@@ -2,7 +2,7 @@
 title: "System Owner or User Discovery"
 aliases:
   - "/rule/9a0d8ca0-2385-4020-b6c6-cb6153ca56f3"
-
+ruleid: 9a0d8ca0-2385-4020-b6c6-cb6153ca56f3
 
 tags:
   - attack.discovery

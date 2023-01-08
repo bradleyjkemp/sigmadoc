@@ -2,7 +2,7 @@
 title: "Indicator Removal on Host - Clear Mac System Logs"
 aliases:
   - "/rule/acf61bd8-d814-4272-81f0-a7a269aa69aa"
-
+ruleid: acf61bd8-d814-4272-81f0-a7a269aa69aa
 
 tags:
   - attack.defense_evasion

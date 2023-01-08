@@ -2,7 +2,7 @@
 title: "Powershell Suspicious Win32_PnPEntity"
 aliases:
   - "/rule/b26647de-4feb-4283-af6b-6117661283c5"
-
+ruleid: b26647de-4feb-4283-af6b-6117661283c5
 
 tags:
   - attack.discovery

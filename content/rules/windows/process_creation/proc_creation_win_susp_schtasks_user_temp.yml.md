@@ -2,7 +2,7 @@
 title: "Suspicious Add Scheduled Task From User AppData Temp"
 aliases:
   - "/rule/43f487f0-755f-4c2a-bce7-d6d2eec2fcf8"
-
+ruleid: 43f487f0-755f-4c2a-bce7-d6d2eec2fcf8
 
 tags:
   - attack.execution

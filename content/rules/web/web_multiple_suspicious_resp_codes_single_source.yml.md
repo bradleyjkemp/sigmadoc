@@ -2,7 +2,7 @@
 title: "Multiple Suspicious Resp Codes Caused by Single Client"
 aliases:
   - "/rule/6fdfc796-06b3-46e8-af08-58f3505318af"
-
+ruleid: 6fdfc796-06b3-46e8-af08-58f3505318af
 
 tags:
   - attack.initial_access

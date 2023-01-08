@@ -2,7 +2,7 @@
 title: "Blackbyte Ransomware Registry"
 aliases:
   - "/rule/83314318-052a-4c90-a1ad-660ece38d276"
-
+ruleid: 83314318-052a-4c90-a1ad-660ece38d276
 
 tags:
   - attack.defense_evasion

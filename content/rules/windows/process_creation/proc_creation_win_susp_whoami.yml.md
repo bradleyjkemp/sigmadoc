@@ -2,7 +2,7 @@
 title: "Whoami Execution"
 aliases:
   - "/rule/e28a5a99-da44-436d-b7a0-2afc20a5f413"
-
+ruleid: e28a5a99-da44-436d-b7a0-2afc20a5f413
 
 tags:
   - attack.discovery

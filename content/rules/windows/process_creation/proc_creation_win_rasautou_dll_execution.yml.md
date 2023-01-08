@@ -2,7 +2,7 @@
 title: "DLL Execution via Rasautou.exe"
 aliases:
   - "/rule/cd3d1298-eb3b-476c-ac67-12847de55813"
-
+ruleid: cd3d1298-eb3b-476c-ac67-12847de55813
 
 tags:
   - attack.defense_evasion

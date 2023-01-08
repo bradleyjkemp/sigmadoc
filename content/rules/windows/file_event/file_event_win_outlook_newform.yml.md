@@ -2,7 +2,7 @@
 title: "Outlook Form Installation"
 aliases:
   - "/rule/c3edc6a5-d9d4-48d8-930e-aab518390917"
-
+ruleid: c3edc6a5-d9d4-48d8-930e-aab518390917
 
 tags:
   - attack.persistence

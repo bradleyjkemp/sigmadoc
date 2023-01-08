@@ -2,7 +2,7 @@
 title: "CVE-2021-3156 Exploitation Attempt"
 aliases:
   - "/rule/5ee37487-4eb8-4ac2-9be1-d7d14cdc559f"
-
+ruleid: 5ee37487-4eb8-4ac2-9be1-d7d14cdc559f
 
 tags:
   - attack.privilege_escalation

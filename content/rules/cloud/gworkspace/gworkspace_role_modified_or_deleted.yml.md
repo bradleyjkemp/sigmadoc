@@ -2,7 +2,7 @@
 title: "Google Workspace Role Modified or Deleted"
 aliases:
   - "/rule/6aef64e3-60c6-4782-8db3-8448759c714e"
-
+ruleid: 6aef64e3-60c6-4782-8db3-8448759c714e
 
 tags:
   - attack.impact

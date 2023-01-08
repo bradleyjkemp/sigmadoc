@@ -2,7 +2,7 @@
 title: "IIS Native-Code Module Command Line Installation"
 aliases:
   - "/rule/9465ddf4-f9e4-4ebd-8d98-702df3a93239"
-
+ruleid: 9465ddf4-f9e4-4ebd-8d98-702df3a93239
 
 tags:
   - attack.persistence

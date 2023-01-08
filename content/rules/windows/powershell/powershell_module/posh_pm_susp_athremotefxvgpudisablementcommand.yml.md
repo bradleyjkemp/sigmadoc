@@ -2,7 +2,7 @@
 title: "Abusable Invoke-ATHRemoteFXvGPUDisablementCommand"
 aliases:
   - "/rule/38a7625e-b2cb-485d-b83d-aff137d859f4"
-
+ruleid: 38a7625e-b2cb-485d-b83d-aff137d859f4
 
 tags:
   - attack.defense_evasion

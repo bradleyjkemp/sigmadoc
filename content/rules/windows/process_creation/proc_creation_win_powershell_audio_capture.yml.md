@@ -2,7 +2,7 @@
 title: "Audio Capture via PowerShell"
 aliases:
   - "/rule/932fb0d8-692b-4b0f-a26e-5643a50fe7d6"
-
+ruleid: 932fb0d8-692b-4b0f-a26e-5643a50fe7d6
 
 tags:
   - attack.collection

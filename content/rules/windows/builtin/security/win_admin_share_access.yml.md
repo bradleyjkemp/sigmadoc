@@ -2,7 +2,7 @@
 title: "Access to ADMIN$ Share"
 aliases:
   - "/rule/098d7118-55bc-4912-a836-dc6483a8d150"
-
+ruleid: 098d7118-55bc-4912-a836-dc6483a8d150
 
 tags:
   - attack.lateral_movement

@@ -2,7 +2,7 @@
 title: "Service ImagePath Change with Reg.exe"
 aliases:
   - "/rule/9b0b7ac3-6223-47aa-a3fd-e8f211e637db"
-
+ruleid: 9b0b7ac3-6223-47aa-a3fd-e8f211e637db
 
 tags:
   - attack.persistence

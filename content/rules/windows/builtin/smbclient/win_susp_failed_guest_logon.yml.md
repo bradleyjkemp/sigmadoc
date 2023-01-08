@@ -2,7 +2,7 @@
 title: "Suspicious Rejected SMB Guest Logon From IP"
 aliases:
   - "/rule/71886b70-d7b4-4dbf-acce-87d2ca135262"
-
+ruleid: 71886b70-d7b4-4dbf-acce-87d2ca135262
 
 tags:
   - attack.credential_access

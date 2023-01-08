@@ -2,7 +2,7 @@
 title: "False Sysinternals Suite Tools"
 aliases:
   - "/rule/7cce6fc8-a07f-4d84-a53e-96e1879843c9"
-
+ruleid: 7cce6fc8-a07f-4d84-a53e-96e1879843c9
 
 tags:
   - attack.execution

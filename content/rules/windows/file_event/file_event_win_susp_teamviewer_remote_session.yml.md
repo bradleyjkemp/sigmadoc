@@ -2,7 +2,7 @@
 title: "TeamViewer Remote Session"
 aliases:
   - "/rule/162ab1e4-6874-4564-853c-53ec3ab8be01"
-
+ruleid: 162ab1e4-6874-4564-853c-53ec3ab8be01
 
 tags:
   - attack.command_and_control

@@ -2,7 +2,7 @@
 title: "Masquerading as Linux Crond Process"
 aliases:
   - "/rule/9d4548fa-bba0-4e88-bd66-5d5bf516cda0"
-
+ruleid: 9d4548fa-bba0-4e88-bd66-5d5bf516cda0
 
 tags:
   - attack.defense_evasion

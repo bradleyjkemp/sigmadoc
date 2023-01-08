@@ -2,7 +2,7 @@
 title: "PwnDrp Access"
 aliases:
   - "/rule/2b1ee7e4-89b6-4739-b7bb-b811b6607e5e"
-
+ruleid: 2b1ee7e4-89b6-4739-b7bb-b811b6607e5e
 
 tags:
   - attack.command_and_control

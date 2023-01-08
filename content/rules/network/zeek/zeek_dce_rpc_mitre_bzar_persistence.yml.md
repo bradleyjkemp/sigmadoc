@@ -2,7 +2,7 @@
 title: "MITRE BZAR Indicators for Persistence"
 aliases:
   - "/rule/53389db6-ba46-48e3-a94c-e0f2cefe1583"
-
+ruleid: 53389db6-ba46-48e3-a94c-e0f2cefe1583
 
 tags:
   - attack.persistence

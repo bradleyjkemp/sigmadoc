@@ -2,7 +2,7 @@
 title: "New or Renamed User Account with '$' in Attribute 'SamAccountName'."
 aliases:
   - "/rule/cfeed607-6aa4-4bbd-9627-b637deb723c8"
-
+ruleid: cfeed607-6aa4-4bbd-9627-b637deb723c8
 
 tags:
   - attack.defense_evasion

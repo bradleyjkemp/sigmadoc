@@ -2,7 +2,7 @@
 title: "Explorer Root Flag Process Tree Break"
 aliases:
   - "/rule/949f1ffb-6e85-4f00-ae1e-c3c5b190d605"
-
+ruleid: 949f1ffb-6e85-4f00-ae1e-c3c5b190d605
 
 tags:
   - attack.defense_evasion

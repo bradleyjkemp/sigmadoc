@@ -2,7 +2,7 @@
 title: "Malicious PowerView PowerShell Commandlets"
 aliases:
   - "/rule/dcd74b95-3f36-4ed9-9598-0490951643aa"
-
+ruleid: dcd74b95-3f36-4ed9-9598-0490951643aa
 
 tags:
   - attack.execution

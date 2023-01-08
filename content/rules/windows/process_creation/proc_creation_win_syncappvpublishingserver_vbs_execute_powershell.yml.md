@@ -2,7 +2,7 @@
 title: "SyncAppvPublishingServer VBS Execute Arbitrary PowerShell Code"
 aliases:
   - "/rule/36475a7d-0f6d-4dce-9b01-6aeb473bbaf1"
-
+ruleid: 36475a7d-0f6d-4dce-9b01-6aeb473bbaf1
 
 tags:
   - attack.defense_evasion

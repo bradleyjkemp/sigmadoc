@@ -2,7 +2,7 @@
 title: "User Couldn't Call a Privileged Service 'LsaRegisterLogonProcess'"
 aliases:
   - "/rule/6daac7fc-77d1-449a-a71a-e6b4d59a0e54"
-
+ruleid: 6daac7fc-77d1-449a-a71a-e6b4d59a0e54
 
 tags:
   - attack.lateral_movement

@@ -2,7 +2,7 @@
 title: "Suspicious Recursif Takeown"
 aliases:
   - "/rule/554601fb-9b71-4bcc-abf4-21a611be4fde"
-
+ruleid: 554601fb-9b71-4bcc-abf4-21a611be4fde
 
 tags:
   - attack.defense_evasion

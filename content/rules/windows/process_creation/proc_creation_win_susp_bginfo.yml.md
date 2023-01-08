@@ -2,7 +2,7 @@
 title: "Application Whitelisting Bypass via Bginfo"
 aliases:
   - "/rule/aaf46cdc-934e-4284-b329-34aa701e3771"
-
+ruleid: aaf46cdc-934e-4284-b329-34aa701e3771
 
 tags:
   - attack.execution

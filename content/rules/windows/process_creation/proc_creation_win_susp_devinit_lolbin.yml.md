@@ -2,7 +2,7 @@
 title: "DevInit Lolbin Download"
 aliases:
   - "/rule/90d50722-0483-4065-8e35-57efaadd354d"
-
+ruleid: 90d50722-0483-4065-8e35-57efaadd354d
 
 tags:
   - attack.execution

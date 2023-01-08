@@ -2,7 +2,7 @@
 title: "Sudo Privilege Escalation CVE-2019-14287"
 aliases:
   - "/rule/f74107df-b6c6-4e80-bf00-4170b658162b"
-
+ruleid: f74107df-b6c6-4e80-bf00-4170b658162b
 
 tags:
   - attack.privilege_escalation

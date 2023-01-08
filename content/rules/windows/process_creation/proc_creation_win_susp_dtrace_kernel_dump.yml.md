@@ -2,7 +2,7 @@
 title: "Suspicious Kernel Dump Using Dtrace"
 aliases:
   - "/rule/7124aebe-4cd7-4ccb-8df0-6d6b93c96795"
-
+ruleid: 7124aebe-4cd7-4ccb-8df0-6d6b93c96795
 
 
 

@@ -2,7 +2,7 @@
 title: "Suspicious Get Information for SMB Share"
 aliases:
   - "/rule/95f0643a-ed40-467c-806b-aac9542ec5ab"
-
+ruleid: 95f0643a-ed40-467c-806b-aac9542ec5ab
 
 tags:
   - attack.discovery

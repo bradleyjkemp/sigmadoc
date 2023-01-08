@@ -2,7 +2,7 @@
 title: "Account Lockout"
 aliases:
   - "/rule/2b7d6fc0-71ac-4cf7-8ed1-b5788ee5257a"
-
+ruleid: 2b7d6fc0-71ac-4cf7-8ed1-b5788ee5257a
 
 tags:
   - attack.credential_access

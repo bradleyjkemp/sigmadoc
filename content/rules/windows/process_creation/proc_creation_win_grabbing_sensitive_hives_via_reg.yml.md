@@ -2,7 +2,7 @@
 title: "Grabbing Sensitive Hives via Reg Utility"
 aliases:
   - "/rule/fd877b94-9bb5-4191-bb25-d79cbd93c167"
-
+ruleid: fd877b94-9bb5-4191-bb25-d79cbd93c167
 
 tags:
   - attack.credential_access

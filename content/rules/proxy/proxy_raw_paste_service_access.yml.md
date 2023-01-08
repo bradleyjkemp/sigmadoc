@@ -2,7 +2,7 @@
 title: "Raw Paste Service Access"
 aliases:
   - "/rule/5468045b-4fcc-4d1a-973c-c9c9578edacb"
-
+ruleid: 5468045b-4fcc-4d1a-973c-c9c9578edacb
 
 tags:
   - attack.command_and_control

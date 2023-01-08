@@ -2,7 +2,7 @@
 title: "Scheduled Task Creation"
 aliases:
   - "/rule/92626ddd-662c-49e3-ac59-f6535f12d189"
-
+ruleid: 92626ddd-662c-49e3-ac59-f6535f12d189
 
 tags:
   - attack.execution

@@ -2,7 +2,7 @@
 title: "Time Travel Debugging Utility Usage"
 aliases:
   - "/rule/e76c8240-d68f-4773-8880-5c6f63595aaf"
-
+ruleid: e76c8240-d68f-4773-8880-5c6f63595aaf
 
 tags:
   - attack.defense_evasion

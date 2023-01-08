@@ -2,7 +2,7 @@
 title: "Possible DNS Rebinding"
 aliases:
   - "/rule/eb07e747-2552-44cd-af36-b659ae0958e4"
-
+ruleid: eb07e747-2552-44cd-af36-b659ae0958e4
 
 tags:
   - attack.initial_access

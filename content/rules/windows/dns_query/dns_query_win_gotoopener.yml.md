@@ -2,7 +2,7 @@
 title: "Query to GoToAssist Remote Access Software Domain"
 aliases:
   - "/rule/7c4cf8e0-1362-48b2-a512-b606d2065d7d"
-
+ruleid: 7c4cf8e0-1362-48b2-a512-b606d2065d7d
 
 
 

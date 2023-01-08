@@ -2,7 +2,7 @@
 title: "Sysprep on AppData Folder"
 aliases:
   - "/rule/d5b9ae7a-e6fc-405e-80ff-2ff9dcc64e7e"
-
+ruleid: d5b9ae7a-e6fc-405e-80ff-2ff9dcc64e7e
 
 tags:
   - attack.execution

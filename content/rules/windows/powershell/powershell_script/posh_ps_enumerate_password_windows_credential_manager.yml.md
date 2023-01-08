@@ -2,7 +2,7 @@
 title: "Enumerate Credentials from Windows Credential Manager With PowerShell"
 aliases:
   - "/rule/603c6630-5225-49c1-8047-26c964553e0e"
-
+ruleid: 603c6630-5225-49c1-8047-26c964553e0e
 
 tags:
   - attack.credential_access

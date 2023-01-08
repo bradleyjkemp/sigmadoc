@@ -2,7 +2,7 @@
 title: "Security Software Discovery"
 aliases:
   - "/rule/c9d8b7fd-78e4-44fe-88f6-599135d46d60"
-
+ruleid: c9d8b7fd-78e4-44fe-88f6-599135d46d60
 
 tags:
   - attack.discovery

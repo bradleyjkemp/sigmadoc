@@ -2,7 +2,7 @@
 title: "DEWMODE Webshell Access"
 aliases:
   - "/rule/fdf96c90-42d5-4406-8a9c-14a2c9a016b5"
-
+ruleid: fdf96c90-42d5-4406-8a9c-14a2c9a016b5
 
 tags:
   - attack.persistence

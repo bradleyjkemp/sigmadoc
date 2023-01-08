@@ -2,7 +2,7 @@
 title: "WMI Persistence - Script Event Consumer File Write"
 aliases:
   - "/rule/33f41cdd-35ac-4ba8-814b-c6a4244a1ad4"
-
+ruleid: 33f41cdd-35ac-4ba8-814b-c6a4244a1ad4
 
 tags:
   - attack.t1546.003

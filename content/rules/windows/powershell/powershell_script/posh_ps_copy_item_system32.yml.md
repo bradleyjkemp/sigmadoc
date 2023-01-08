@@ -2,7 +2,7 @@
 title: "Powershell Install a DLL in System32"
 aliases:
   - "/rule/63bf8794-9917-45bc-88dd-e1b5abc0ecfd"
-
+ruleid: 63bf8794-9917-45bc-88dd-e1b5abc0ecfd
 
 tags:
   - attack.credential_access

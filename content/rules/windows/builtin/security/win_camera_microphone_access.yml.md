@@ -2,7 +2,7 @@
 title: "Processes Accessing the Microphone and Webcam"
 aliases:
   - "/rule/8cd538a4-62d5-4e83-810b-12d41e428d6e"
-
+ruleid: 8cd538a4-62d5-4e83-810b-12d41e428d6e
 
 tags:
   - attack.collection

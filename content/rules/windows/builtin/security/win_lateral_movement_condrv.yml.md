@@ -2,7 +2,7 @@
 title: "Lateral Movement Indicator ConDrv"
 aliases:
   - "/rule/29d31aee-30f4-4006-85a9-a4a02d65306c"
-
+ruleid: 29d31aee-30f4-4006-85a9-a4a02d65306c
 
 tags:
   - attack.lateral_movement

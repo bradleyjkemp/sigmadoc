@@ -2,7 +2,7 @@
 title: "SCM Database Privileged Operation"
 aliases:
   - "/rule/dae8171c-5ec6-4396-b210-8466585b53e9"
-
+ruleid: dae8171c-5ec6-4396-b210-8466585b53e9
 
 tags:
   - attack.privilege_escalation

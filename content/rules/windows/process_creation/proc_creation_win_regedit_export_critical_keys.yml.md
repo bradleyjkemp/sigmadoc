@@ -2,7 +2,7 @@
 title: "Exports Critical Registry Keys To a File"
 aliases:
   - "/rule/82880171-b475-4201-b811-e9c826cd5eaa"
-
+ruleid: 82880171-b475-4201-b811-e9c826cd5eaa
 
 tags:
   - attack.exfiltration

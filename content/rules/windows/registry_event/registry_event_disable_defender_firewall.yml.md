@@ -2,7 +2,7 @@
 title: "Disable Microsoft Defender Firewall via Registry"
 aliases:
   - "/rule/974515da-6cc5-4c95-ae65-f97f9150ec7f"
-
+ruleid: 974515da-6cc5-4c95-ae65-f97f9150ec7f
 
 tags:
   - attack.defense_evasion

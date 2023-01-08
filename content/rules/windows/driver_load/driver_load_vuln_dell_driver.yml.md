@@ -2,7 +2,7 @@
 title: "Vulnerable Dell BIOS Update Driver Load"
 aliases:
   - "/rule/21b23707-60d6-41bb-96e3-0f0481b0fed9"
-
+ruleid: 21b23707-60d6-41bb-96e3-0f0481b0fed9
 
 tags:
   - attack.privilege_escalation

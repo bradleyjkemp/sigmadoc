@@ -2,7 +2,7 @@
 title: "Renamed PAExec"
 aliases:
   - "/rule/c4e49831-1496-40cf-8ce1-b53f942b02f9"
-
+ruleid: c4e49831-1496-40cf-8ce1-b53f942b02f9
 
 tags:
   - attack.defense_evasion

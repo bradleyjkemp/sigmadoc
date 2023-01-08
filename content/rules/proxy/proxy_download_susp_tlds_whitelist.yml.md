@@ -2,7 +2,7 @@
 title: "Download EXE from Suspicious TLD"
 aliases:
   - "/rule/b5de2919-b74a-4805-91a7-5049accbaefe"
-
+ruleid: b5de2919-b74a-4805-91a7-5049accbaefe
 
 tags:
   - attack.initial_access

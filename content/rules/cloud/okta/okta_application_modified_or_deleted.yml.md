@@ -2,7 +2,7 @@
 title: "Okta Application Modified or Deleted"
 aliases:
   - "/rule/7899144b-e416-4c28-b0b5-ab8f9e0a541d"
-
+ruleid: 7899144b-e416-4c28-b0b5-ab8f9e0a541d
 
 tags:
   - attack.impact

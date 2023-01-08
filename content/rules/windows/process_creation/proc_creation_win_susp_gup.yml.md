@@ -2,7 +2,7 @@
 title: "Suspicious GUP Usage"
 aliases:
   - "/rule/0a4f6091-223b-41f6-8743-f322ec84930b"
-
+ruleid: 0a4f6091-223b-41f6-8743-f322ec84930b
 
 tags:
   - attack.defense_evasion

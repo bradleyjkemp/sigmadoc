@@ -2,7 +2,7 @@
 title: "Gatekeeper Bypass via Xattr"
 aliases:
   - "/rule/f5141b6d-9f42-41c6-a7bf-2a780678b29b"
-
+ruleid: f5141b6d-9f42-41c6-a7bf-2a780678b29b
 
 tags:
   - attack.defense_evasion

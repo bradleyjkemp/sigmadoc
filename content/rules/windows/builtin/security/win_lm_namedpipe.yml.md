@@ -2,7 +2,7 @@
 title: "First Time Seen Remote Named Pipe"
 aliases:
   - "/rule/52d8b0c6-53d6-439a-9e41-52ad442ad9ad"
-
+ruleid: 52d8b0c6-53d6-439a-9e41-52ad442ad9ad
 
 tags:
   - attack.lateral_movement

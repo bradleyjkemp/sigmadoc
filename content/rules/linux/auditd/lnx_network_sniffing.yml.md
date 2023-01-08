@@ -2,7 +2,7 @@
 title: "Network Sniffing"
 aliases:
   - "/rule/f4d3748a-65d1-4806-bd23-e25728081d01"
-
+ruleid: f4d3748a-65d1-4806-bd23-e25728081d01
 
 tags:
   - attack.credential_access

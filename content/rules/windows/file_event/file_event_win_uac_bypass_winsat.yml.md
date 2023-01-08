@@ -2,7 +2,7 @@
 title: "UAC Bypass Abusing Winsat Path Parsing - File"
 aliases:
   - "/rule/155dbf56-e0a4-4dd0-8905-8a98705045e8"
-
+ruleid: 155dbf56-e0a4-4dd0-8905-8a98705045e8
 
 tags:
   - attack.defense_evasion

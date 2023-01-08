@@ -2,7 +2,7 @@
 title: "System Information Discovery"
 aliases:
   - "/rule/42df45e7-e6e9-43b5-8f26-bec5b39cc239"
-
+ruleid: 42df45e7-e6e9-43b5-8f26-bec5b39cc239
 
 tags:
   - attack.discovery

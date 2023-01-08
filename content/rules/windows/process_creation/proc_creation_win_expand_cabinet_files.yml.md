@@ -2,7 +2,7 @@
 title: "Cabinet File Expansion"
 aliases:
   - "/rule/9f107a84-532c-41af-b005-8d12a607639f"
-
+ruleid: 9f107a84-532c-41af-b005-8d12a607639f
 
 tags:
   - attack.execution

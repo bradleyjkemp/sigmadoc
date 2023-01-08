@@ -2,7 +2,7 @@
 title: "Suspicious Double Extension"
 aliases:
   - "/rule/1cdd9a09-06c9-4769-99ff-626e2b3991b8"
-
+ruleid: 1cdd9a09-06c9-4769-99ff-626e2b3991b8
 
 tags:
   - attack.initial_access

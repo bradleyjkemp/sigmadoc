@@ -2,7 +2,7 @@
 title: "Invoke-Obfuscation Via Use Rundll32"
 aliases:
   - "/rule/36c5146c-d127-4f85-8e21-01bf62355d5a"
-
+ruleid: 36c5146c-d127-4f85-8e21-01bf62355d5a
 
 tags:
   - attack.defense_evasion

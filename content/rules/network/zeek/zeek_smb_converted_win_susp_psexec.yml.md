@@ -2,7 +2,7 @@
 title: "Suspicious PsExec Execution - Zeek"
 aliases:
   - "/rule/f1b3a22a-45e6-4004-afb5-4291f9c21166"
-
+ruleid: f1b3a22a-45e6-4004-afb5-4291f9c21166
 
 tags:
   - attack.lateral_movement

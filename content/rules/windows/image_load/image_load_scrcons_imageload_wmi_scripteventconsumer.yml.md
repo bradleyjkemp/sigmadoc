@@ -2,7 +2,7 @@
 title: "WMI Script Host Process Image Loaded"
 aliases:
   - "/rule/b439f47d-ef52-4b29-9a2f-57d8a96cb6b8"
-
+ruleid: b439f47d-ef52-4b29-9a2f-57d8a96cb6b8
 
 tags:
   - attack.lateral_movement

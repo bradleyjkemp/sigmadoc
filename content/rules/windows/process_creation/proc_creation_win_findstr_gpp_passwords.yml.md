@@ -2,7 +2,7 @@
 title: "Findstr GPP Passwords"
 aliases:
   - "/rule/91a2c315-9ee6-4052-a853-6f6a8238f90d"
-
+ruleid: 91a2c315-9ee6-4052-a853-6f6a8238f90d
 
 tags:
   - attack.credential_access

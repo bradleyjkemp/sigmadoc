@@ -2,7 +2,7 @@
 title: "AWS EC2 Disable EBS Encryption"
 aliases:
   - "/rule/16124c2d-e40b-4fcc-8f2c-5ab7870a2223"
-
+ruleid: 16124c2d-e40b-4fcc-8f2c-5ab7870a2223
 
 tags:
   - attack.impact

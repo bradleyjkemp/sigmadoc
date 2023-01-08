@@ -2,7 +2,7 @@
 title: "Winnti Malware HK University Campaign"
 aliases:
   - "/rule/3121461b-5aa0-4a41-b910-66d25524edbb"
-
+ruleid: 3121461b-5aa0-4a41-b910-66d25524edbb
 
 tags:
   - attack.defense_evasion

@@ -2,7 +2,7 @@
 title: "Findstr Launching .lnk File"
 aliases:
   - "/rule/33339be3-148b-4e16-af56-ad16ec6c7e7b"
-
+ruleid: 33339be3-148b-4e16-af56-ad16ec6c7e7b
 
 tags:
   - attack.defense_evasion

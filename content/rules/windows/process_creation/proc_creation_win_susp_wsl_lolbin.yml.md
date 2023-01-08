@@ -2,7 +2,7 @@
 title: "WSL Execution"
 aliases:
   - "/rule/dec44ca7-61ad-493c-bfd7-8819c5faa09b"
-
+ruleid: dec44ca7-61ad-493c-bfd7-8819c5faa09b
 
 tags:
   - attack.execution

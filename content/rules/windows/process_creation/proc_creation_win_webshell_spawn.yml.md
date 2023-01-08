@@ -2,7 +2,7 @@
 title: "Shells Spawned by Web Servers"
 aliases:
   - "/rule/8202070f-edeb-4d31-a010-a26c72ac5600"
-
+ruleid: 8202070f-edeb-4d31-a010-a26c72ac5600
 
 tags:
   - attack.persistence

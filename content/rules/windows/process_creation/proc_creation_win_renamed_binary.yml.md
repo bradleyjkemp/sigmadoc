@@ -2,7 +2,7 @@
 title: "Renamed Binary"
 aliases:
   - "/rule/36480ae1-a1cb-4eaa-a0d6-29801d7e9142"
-
+ruleid: 36480ae1-a1cb-4eaa-a0d6-29801d7e9142
 
 tags:
   - attack.defense_evasion

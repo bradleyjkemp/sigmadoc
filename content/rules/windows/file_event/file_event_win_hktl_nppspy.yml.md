@@ -2,7 +2,7 @@
 title: "NPPSpy Hacktool Usage"
 aliases:
   - "/rule/cad1fe90-2406-44dc-bd03-59d0b58fe722"
-
+ruleid: cad1fe90-2406-44dc-bd03-59d0b58fe722
 
 tags:
   - attack.credential_access

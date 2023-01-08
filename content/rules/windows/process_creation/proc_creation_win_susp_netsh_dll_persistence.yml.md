@@ -2,7 +2,7 @@
 title: "Suspicious Netsh DLL Persistence"
 aliases:
   - "/rule/56321594-9087-49d9-bf10-524fe8479452"
-
+ruleid: 56321594-9087-49d9-bf10-524fe8479452
 
 tags:
   - attack.privilege_escalation

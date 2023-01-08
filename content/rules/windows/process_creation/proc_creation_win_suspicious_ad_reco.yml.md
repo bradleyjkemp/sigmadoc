@@ -2,7 +2,7 @@
 title: "Suspicious Get Local Groups Information with WMIC"
 aliases:
   - "/rule/164eda96-11b2-430b-85ff-6a265c15bf32"
-
+ruleid: 164eda96-11b2-430b-85ff-6a265c15bf32
 
 tags:
   - attack.discovery

@@ -2,7 +2,7 @@
 title: "Brute Force"
 aliases:
   - "/rule/53c7cca0-2901-493a-95db-d00d6fcf0a37"
-
+ruleid: 53c7cca0-2901-493a-95db-d00d6fcf0a37
 
 tags:
   - attack.credential_access

@@ -2,7 +2,7 @@
 title: "DNS ServerLevelPluginDll Install"
 aliases:
   - "/rule/e61e8a88-59a9-451c-874e-70fcc9740d67"
-
+ruleid: e61e8a88-59a9-451c-874e-70fcc9740d67
 
 tags:
   - attack.defense_evasion

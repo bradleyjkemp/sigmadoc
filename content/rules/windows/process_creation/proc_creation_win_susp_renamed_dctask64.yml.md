@@ -2,7 +2,7 @@
 title: "Renamed ZOHO Dctask64"
 aliases:
   - "/rule/340a090b-c4e9-412e-bb36-b4b16fe96f9b"
-
+ruleid: 340a090b-c4e9-412e-bb36-b4b16fe96f9b
 
 tags:
   - attack.defense_evasion

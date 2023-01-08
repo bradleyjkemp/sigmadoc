@@ -2,7 +2,7 @@
 title: "Turla Service Install"
 aliases:
   - "/rule/1df8b3da-b0ac-4d8a-b7c7-6cb7c24160e4"
-
+ruleid: 1df8b3da-b0ac-4d8a-b7c7-6cb7c24160e4
 
 tags:
   - attack.persistence

@@ -2,7 +2,7 @@
 title: "DNS TXT Answer with Possible Execution Strings"
 aliases:
   - "/rule/8ae51330-899c-4641-8125-e39f2e07da72"
-
+ruleid: 8ae51330-899c-4641-8125-e39f2e07da72
 
 tags:
   - attack.command_and_control

@@ -2,7 +2,7 @@
 title: "Reset to Default Configuration Windows Firewall with Advanced Security"
 aliases:
   - "/rule/04b60639-39c0-412a-9fbe-e82499c881a3"
-
+ruleid: 04b60639-39c0-412a-9fbe-e82499c881a3
 
 
 

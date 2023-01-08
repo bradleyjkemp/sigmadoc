@@ -2,7 +2,7 @@
 title: "Suspicious Screensaver Binary File Creation"
 aliases:
   - "/rule/97aa2e88-555c-450d-85a6-229bcd87efb8"
-
+ruleid: 97aa2e88-555c-450d-85a6-229bcd87efb8
 
 tags:
   - attack.persistence

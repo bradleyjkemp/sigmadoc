@@ -2,7 +2,7 @@
 title: "Cisco Sniffing"
 aliases:
   - "/rule/b9e1f193-d236-4451-aaae-2f3d2102120d"
-
+ruleid: b9e1f193-d236-4451-aaae-2f3d2102120d
 
 tags:
   - attack.credential_access

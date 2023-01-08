@@ -2,7 +2,7 @@
 title: "Regsvr32 Network Activity"
 aliases:
   - "/rule/c7e91a02-d771-4a6d-a700-42587e0b1095"
-
+ruleid: c7e91a02-d771-4a6d-a700-42587e0b1095
 
 tags:
   - attack.execution

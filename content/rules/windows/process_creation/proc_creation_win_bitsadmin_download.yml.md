@@ -2,7 +2,7 @@
 title: "Bitsadmin Download"
 aliases:
   - "/rule/d059842b-6b9d-4ed1-b5c3-5b89143c6ede"
-
+ruleid: d059842b-6b9d-4ed1-b5c3-5b89143c6ede
 
 tags:
   - attack.defense_evasion

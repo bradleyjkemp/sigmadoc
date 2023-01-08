@@ -2,7 +2,7 @@
 title: "Svchost DLL Search Order Hijack"
 aliases:
   - "/rule/602a1f13-c640-4d73-b053-be9a2fa58b77"
-
+ruleid: 602a1f13-c640-4d73-b053-be9a2fa58b77
 
 tags:
   - attack.persistence

@@ -2,7 +2,7 @@
 title: "Detection of SafetyKatz"
 aliases:
   - "/rule/e074832a-eada-4fd7-94a1-10642b130e16"
-
+ruleid: e074832a-eada-4fd7-94a1-10642b130e16
 
 tags:
   - attack.credential_access

@@ -2,7 +2,7 @@
 title: "PowerShell Rundll32 Remote Thread Creation"
 aliases:
   - "/rule/99b97608-3e21-4bfe-8217-2a127c396a0e"
-
+ruleid: 99b97608-3e21-4bfe-8217-2a127c396a0e
 
 tags:
   - attack.defense_evasion

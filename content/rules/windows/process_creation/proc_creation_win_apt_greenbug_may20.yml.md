@@ -2,7 +2,7 @@
 title: "Greenbug Campaign Indicators"
 aliases:
   - "/rule/3711eee4-a808-4849-8a14-faf733da3612"
-
+ruleid: 3711eee4-a808-4849-8a14-faf733da3612
 
 tags:
   - attack.g0049

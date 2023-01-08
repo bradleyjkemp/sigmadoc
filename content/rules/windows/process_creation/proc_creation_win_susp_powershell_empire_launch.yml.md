@@ -2,7 +2,7 @@
 title: "Empire PowerShell Launch Parameters"
 aliases:
   - "/rule/79f4ede3-402e-41c8-bc3e-ebbf5f162581"
-
+ruleid: 79f4ede3-402e-41c8-bc3e-ebbf5f162581
 
 tags:
   - attack.execution

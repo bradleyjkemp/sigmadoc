@@ -2,7 +2,7 @@
 title: "Highly Relevant Renamed Binary"
 aliases:
   - "/rule/0ba1da6d-b6ce-4366-828c-18826c9de23e"
-
+ruleid: 0ba1da6d-b6ce-4366-828c-18826c9de23e
 
 tags:
   - attack.defense_evasion

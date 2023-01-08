@@ -2,7 +2,7 @@
 title: "Monitoring Wuauclt.exe For Lolbas Execution Of DLL"
 aliases:
   - "/rule/ba1bb0cb-73da-42de-ad3a-de10c643a5d0"
-
+ruleid: ba1bb0cb-73da-42de-ad3a-de10c643a5d0
 
 tags:
   - attack.defense_evasion

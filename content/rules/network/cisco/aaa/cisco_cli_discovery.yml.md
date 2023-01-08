@@ -2,7 +2,7 @@
 title: "Cisco Discovery"
 aliases:
   - "/rule/9705a6a1-6db6-4a16-a987-15b7151e299b"
-
+ruleid: 9705a6a1-6db6-4a16-a987-15b7151e299b
 
 tags:
   - attack.discovery

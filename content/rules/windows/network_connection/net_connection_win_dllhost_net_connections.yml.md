@@ -2,7 +2,7 @@
 title: "Dllhost Internet Connection"
 aliases:
   - "/rule/cfed2f44-16df-4bf3-833a-79405198b277"
-
+ruleid: cfed2f44-16df-4bf3-833a-79405198b277
 
 tags:
   - attack.defense_evasion

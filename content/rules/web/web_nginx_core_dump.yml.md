@@ -2,7 +2,7 @@
 title: "Nginx Core Dump"
 aliases:
   - "/rule/59ec40bb-322e-40ab-808d-84fa690d7e56"
-
+ruleid: 59ec40bb-322e-40ab-808d-84fa690d7e56
 
 tags:
   - attack.impact

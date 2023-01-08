@@ -2,7 +2,7 @@
 title: "Cisco ASA FTD Exploit CVE-2020-3452"
 aliases:
   - "/rule/aba47adc-4847-4970-95c1-61dce62a8b29"
-
+ruleid: aba47adc-4847-4970-95c1-61dce62a8b29
 
 tags:
   - attack.t1190

@@ -2,7 +2,7 @@
 title: "Rare Subscription-level Operations In Azure"
 aliases:
   - "/rule/c1182e02-49a3-481c-b3de-0fadc4091488"
-
+ruleid: c1182e02-49a3-481c-b3de-0fadc4091488
 
 tags:
   - attack.t1003

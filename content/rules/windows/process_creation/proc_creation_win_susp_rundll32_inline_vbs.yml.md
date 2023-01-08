@@ -2,7 +2,7 @@
 title: "Suspicious Rundll32 Invoking Inline VBScript"
 aliases:
   - "/rule/1cc50f3f-1fc8-4acf-b2e9-6f172e1fdebd"
-
+ruleid: 1cc50f3f-1fc8-4acf-b2e9-6f172e1fdebd
 
 tags:
   - attack.defense_evasion

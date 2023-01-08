@@ -2,7 +2,7 @@
 title: "AWS STS GetSessionToken Misuse"
 aliases:
   - "/rule/b45ab1d2-712f-4f01-a751-df3826969807"
-
+ruleid: b45ab1d2-712f-4f01-a751-df3826969807
 
 tags:
   - attack.lateral_movement

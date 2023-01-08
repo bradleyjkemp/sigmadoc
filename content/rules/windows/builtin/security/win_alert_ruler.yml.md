@@ -2,7 +2,7 @@
 title: "Hacktool Ruler"
 aliases:
   - "/rule/24549159-ac1b-479c-8175-d42aea947cae"
-
+ruleid: 24549159-ac1b-479c-8175-d42aea947cae
 
 tags:
   - attack.discovery

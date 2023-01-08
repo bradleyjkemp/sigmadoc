@@ -2,7 +2,7 @@
 title: "AzureHound PowerShell Commands"
 aliases:
   - "/rule/83083ac6-1816-4e76-97d7-59af9a9ae46e"
-
+ruleid: 83083ac6-1816-4e76-97d7-59af9a9ae46e
 
 tags:
   - attack.discovery

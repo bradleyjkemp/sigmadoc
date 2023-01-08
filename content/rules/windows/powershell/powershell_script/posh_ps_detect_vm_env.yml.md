@@ -2,7 +2,7 @@
 title: "Powershell Detect Virtualization Environment"
 aliases:
   - "/rule/d93129cd-1ee0-479f-bc03-ca6f129882e3"
-
+ruleid: d93129cd-1ee0-479f-bc03-ca6f129882e3
 
 tags:
   - attack.defense_evasion

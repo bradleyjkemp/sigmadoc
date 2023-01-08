@@ -2,7 +2,7 @@
 title: "Psexec Accepteula Condition"
 aliases:
   - "/rule/730fc21b-eaff-474b-ad23-90fd265d4988"
-
+ruleid: 730fc21b-eaff-474b-ad23-90fd265d4988
 
 tags:
   - attack.execution

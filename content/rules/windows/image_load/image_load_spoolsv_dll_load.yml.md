@@ -2,7 +2,7 @@
 title: "Windows Spooler Service Suspicious Binary Load"
 aliases:
   - "/rule/02fb90de-c321-4e63-a6b9-25f4b03dfd14"
-
+ruleid: 02fb90de-c321-4e63-a6b9-25f4b03dfd14
 
 tags:
   - attack.persistence

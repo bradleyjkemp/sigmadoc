@@ -2,7 +2,7 @@
 title: "Windows Defender Exclusion Set"
 aliases:
   - "/rule/e9c8808f-4cfb-4ba9-97d4-e5f3beaa244d"
-
+ruleid: e9c8808f-4cfb-4ba9-97d4-e5f3beaa244d
 
 tags:
   - attack.defense_evasion

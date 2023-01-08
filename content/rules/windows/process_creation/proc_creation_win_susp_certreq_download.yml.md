@@ -2,7 +2,7 @@
 title: "Suspicious Certreq Command to Download"
 aliases:
   - "/rule/4480827a-9799-4232-b2c4-ccc6c4e9e12b"
-
+ruleid: 4480827a-9799-4232-b2c4-ccc6c4e9e12b
 
 tags:
   - attack.command_and_control

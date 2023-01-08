@@ -2,7 +2,7 @@
 title: "Finger.exe Suspicious Invocation"
 aliases:
   - "/rule/af491bca-e752-4b44-9c86-df5680533dbc"
-
+ruleid: af491bca-e752-4b44-9c86-df5680533dbc
 
 tags:
   - attack.command_and_control

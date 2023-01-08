@@ -2,7 +2,7 @@
 title: "Suspicious Task Added by Bitsadmin"
 aliases:
   - "/rule/1ff315dc-2a3a-4b71-8dde-873818d25d39"
-
+ruleid: 1ff315dc-2a3a-4b71-8dde-873818d25d39
 
 tags:
   - attack.defense_evasion

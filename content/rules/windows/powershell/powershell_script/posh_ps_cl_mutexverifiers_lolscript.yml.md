@@ -2,7 +2,7 @@
 title: "Execution via CL_Mutexverifiers.ps1"
 aliases:
   - "/rule/39776c99-1c7b-4ba0-b5aa-641525eee1a4"
-
+ruleid: 39776c99-1c7b-4ba0-b5aa-641525eee1a4
 
 tags:
   - attack.defense_evasion

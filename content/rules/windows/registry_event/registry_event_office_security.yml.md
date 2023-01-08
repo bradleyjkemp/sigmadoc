@@ -2,7 +2,7 @@
 title: "Office Security Settings Changed"
 aliases:
   - "/rule/a166f74e-bf44-409d-b9ba-ea4b2dd8b3cd"
-
+ruleid: a166f74e-bf44-409d-b9ba-ea4b2dd8b3cd
 
 tags:
   - attack.defense_evasion

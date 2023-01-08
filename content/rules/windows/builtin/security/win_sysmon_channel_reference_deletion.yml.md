@@ -2,7 +2,7 @@
 title: "Sysmon Channel Reference Deletion"
 aliases:
   - "/rule/18beca67-ab3e-4ee3-ba7a-a46ca8d7d0cc"
-
+ruleid: 18beca67-ab3e-4ee3-ba7a-a46ca8d7d0cc
 
 tags:
   - attack.defense_evasion

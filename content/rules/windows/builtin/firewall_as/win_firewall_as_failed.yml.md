@@ -2,7 +2,7 @@
 title: "Failed to Load Policy in Windows Firewall with Advanced Security"
 aliases:
   - "/rule/7ec15688-fd24-4177-ba43-1a950537ee39"
-
+ruleid: 7ec15688-fd24-4177-ba43-1a950537ee39
 
 
 

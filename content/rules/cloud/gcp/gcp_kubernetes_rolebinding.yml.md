@@ -2,7 +2,7 @@
 title: "Google Cloud Kubernetes RoleBinding"
 aliases:
   - "/rule/0322d9f2-289a-47c2-b5e1-b63c90901a3e"
-
+ruleid: 0322d9f2-289a-47c2-b5e1-b63c90901a3e
 
 tags:
   - attack.credential_access

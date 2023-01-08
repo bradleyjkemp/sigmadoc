@@ -2,7 +2,7 @@
 title: "Google Workspace Application Removed"
 aliases:
   - "/rule/ee2803f0-71c8-4831-b48b-a1fc57601ee4"
-
+ruleid: ee2803f0-71c8-4831-b48b-a1fc57601ee4
 
 tags:
   - attack.impact

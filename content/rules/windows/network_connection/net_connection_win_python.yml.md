@@ -2,7 +2,7 @@
 title: "Python Initiated Connection"
 aliases:
   - "/rule/bef0bc5a-b9ae-425d-85c6-7b2d705980c6"
-
+ruleid: bef0bc5a-b9ae-425d-85c6-7b2d705980c6
 
 tags:
   - attack.discovery

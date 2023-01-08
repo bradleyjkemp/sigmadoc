@@ -2,7 +2,7 @@
 title: "Capture a Network Trace with netsh.exe"
 aliases:
   - "/rule/d3c3861d-c504-4c77-ba55-224ba82d0118"
-
+ruleid: d3c3861d-c504-4c77-ba55-224ba82d0118
 
 tags:
   - attack.discovery

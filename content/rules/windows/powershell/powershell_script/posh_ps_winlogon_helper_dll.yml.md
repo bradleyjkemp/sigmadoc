@@ -2,7 +2,7 @@
 title: "Winlogon Helper DLL"
 aliases:
   - "/rule/851c506b-6b7c-4ce2-8802-c703009d03c0"
-
+ruleid: 851c506b-6b7c-4ce2-8802-c703009d03c0
 
 tags:
   - attack.persistence

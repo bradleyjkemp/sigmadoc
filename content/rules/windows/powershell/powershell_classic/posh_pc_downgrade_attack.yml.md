@@ -2,7 +2,7 @@
 title: "PowerShell Downgrade Attack"
 aliases:
   - "/rule/6331d09b-4785-4c13-980f-f96661356249"
-
+ruleid: 6331d09b-4785-4c13-980f-f96661356249
 
 tags:
   - attack.defense_evasion

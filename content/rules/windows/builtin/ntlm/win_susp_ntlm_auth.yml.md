@@ -2,7 +2,7 @@
 title: "NTLM Logon"
 aliases:
   - "/rule/98c3bcf1-56f2-49dc-9d8d-c66cf190238b"
-
+ruleid: 98c3bcf1-56f2-49dc-9d8d-c66cf190238b
 
 tags:
   - attack.lateral_movement

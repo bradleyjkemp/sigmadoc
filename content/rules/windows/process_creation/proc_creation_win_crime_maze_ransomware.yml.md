@@ -2,7 +2,7 @@
 title: "Maze Ransomware"
 aliases:
   - "/rule/29fd07fc-9cfd-4331-b7fd-cc18dfa21052"
-
+ruleid: 29fd07fc-9cfd-4331-b7fd-cc18dfa21052
 
 tags:
   - attack.execution

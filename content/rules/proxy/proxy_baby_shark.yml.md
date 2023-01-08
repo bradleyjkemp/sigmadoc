@@ -2,7 +2,7 @@
 title: "BabyShark Agent Pattern"
 aliases:
   - "/rule/304810ed-8853-437f-9e36-c4975c3dfd7e"
-
+ruleid: 304810ed-8853-437f-9e36-c4975c3dfd7e
 
 tags:
   - attack.command_and_control

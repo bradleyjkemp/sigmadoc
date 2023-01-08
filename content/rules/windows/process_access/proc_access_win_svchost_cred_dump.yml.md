@@ -2,7 +2,7 @@
 title: "SVCHOST Credential Dump"
 aliases:
   - "/rule/174afcfa-6e40-4ae9-af64-496546389294"
-
+ruleid: 174afcfa-6e40-4ae9-af64-496546389294
 
 tags:
   - attack.t1548

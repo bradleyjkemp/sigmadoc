@@ -2,7 +2,7 @@
 title: "Suspicious Connection to Remote Account"
 aliases:
   - "/rule/1883444f-084b-419b-ac62-e0d0c5b3693f"
-
+ruleid: 1883444f-084b-419b-ac62-e0d0c5b3693f
 
 tags:
   - attack.credential_access

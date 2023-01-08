@@ -2,7 +2,7 @@
 title: "Suspicious ADSI-Cache Usage By Unknown Tool"
 aliases:
   - "/rule/75bf09fa-1dd7-4d18-9af9-dd9e492562eb"
-
+ruleid: 75bf09fa-1dd7-4d18-9af9-dd9e492562eb
 
 tags:
   - attack.t1001.003

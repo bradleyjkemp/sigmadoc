@@ -2,7 +2,7 @@
 title: "SOURGUM Actor Behaviours"
 aliases:
   - "/rule/7ba08e95-1e0b-40cd-9db5-b980555e42fd"
-
+ruleid: 7ba08e95-1e0b-40cd-9db5-b980555e42fd
 
 tags:
   - attack.t1546

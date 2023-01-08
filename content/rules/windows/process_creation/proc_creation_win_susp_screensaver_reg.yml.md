@@ -2,7 +2,7 @@
 title: "Suspicious ScreenSave Change by Reg.exe"
 aliases:
   - "/rule/0fc35fc3-efe6-4898-8a37-0b233339524f"
-
+ruleid: 0fc35fc3-efe6-4898-8a37-0b233339524f
 
 tags:
   - attack.privilege_escalation

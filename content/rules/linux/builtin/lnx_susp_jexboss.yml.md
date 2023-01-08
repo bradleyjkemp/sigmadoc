@@ -2,7 +2,7 @@
 title: "JexBoss Command Sequence"
 aliases:
   - "/rule/8ec2c8b4-557a-4121-b87c-5dfb3a602fae"
-
+ruleid: 8ec2c8b4-557a-4121-b87c-5dfb3a602fae
 
 tags:
   - attack.execution

@@ -2,7 +2,7 @@
 title: "AdFind Usage Detection"
 aliases:
   - "/rule/9a132afa-654e-11eb-ae93-0242ac130002"
-
+ruleid: 9a132afa-654e-11eb-ae93-0242ac130002
 
 tags:
   - attack.discovery

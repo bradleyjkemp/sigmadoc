@@ -2,7 +2,7 @@
 title: "Apache Segmentation Fault"
 aliases:
   - "/rule/1da8ce0b-855d-4004-8860-7d64d42063b1"
-
+ruleid: 1da8ce0b-855d-4004-8860-7d64d42063b1
 
 tags:
   - attack.impact

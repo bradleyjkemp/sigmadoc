@@ -2,7 +2,7 @@
 title: "Rclone Config File Creation"
 aliases:
   - "/rule/34986307-b7f4-49be-92f3-e7a4d01ac5db"
-
+ruleid: 34986307-b7f4-49be-92f3-e7a4d01ac5db
 
 tags:
   - attack.exfiltration

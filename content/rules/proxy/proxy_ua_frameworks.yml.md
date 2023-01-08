@@ -2,7 +2,7 @@
 title: "Exploit Framework User Agent"
 aliases:
   - "/rule/fdd1bfb5-f60b-4a35-910e-f36ed3d0b32f"
-
+ruleid: fdd1bfb5-f60b-4a35-910e-f36ed3d0b32f
 
 tags:
   - attack.command_and_control

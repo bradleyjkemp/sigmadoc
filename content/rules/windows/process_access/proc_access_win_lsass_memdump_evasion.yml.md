@@ -2,7 +2,7 @@
 title: "LSASS Access from White-Listed Processes"
 aliases:
   - "/rule/4be8b654-0c01-4c9d-a10c-6b28467fc651"
-
+ruleid: 4be8b654-0c01-4c9d-a10c-6b28467fc651
 
 tags:
   - attack.credential_access

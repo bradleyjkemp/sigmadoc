@@ -2,7 +2,7 @@
 title: "Possible PrintNightmare Print Driver Install"
 aliases:
   - "/rule/7b33baef-2a75-4ca3-9da4-34f9a15382d8"
-
+ruleid: 7b33baef-2a75-4ca3-9da4-34f9a15382d8
 
 tags:
   - attack.execution

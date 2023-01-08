@@ -2,7 +2,7 @@
 title: "Alternate PowerShell Hosts"
 aliases:
   - "/rule/64e8e417-c19a-475a-8d19-98ea705394cc"
-
+ruleid: 64e8e417-c19a-475a-8d19-98ea705394cc
 
 tags:
   - attack.execution

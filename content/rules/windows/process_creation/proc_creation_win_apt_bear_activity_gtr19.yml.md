@@ -2,7 +2,7 @@
 title: "Judgement Panda Credential Access Activity"
 aliases:
   - "/rule/b83f5166-9237-4b5e-9cd4-7b5d52f4d8ee"
-
+ruleid: b83f5166-9237-4b5e-9cd4-7b5d52f4d8ee
 
 tags:
   - attack.credential_access

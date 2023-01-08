@@ -2,7 +2,7 @@
 title: "SecurityXploded Tool"
 aliases:
   - "/rule/7679d464-4f74-45e2-9e01-ac66c5eb041a"
-
+ruleid: 7679d464-4f74-45e2-9e01-ac66c5eb041a
 
 tags:
   - attack.credential_access

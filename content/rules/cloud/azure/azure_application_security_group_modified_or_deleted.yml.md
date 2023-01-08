@@ -2,7 +2,7 @@
 title: "Azure Application Security Group Modified or Deleted"
 aliases:
   - "/rule/835747f1-9329-40b5-9cc3-97d465754ce6"
-
+ruleid: 835747f1-9329-40b5-9cc3-97d465754ce6
 
 tags:
   - attack.impact

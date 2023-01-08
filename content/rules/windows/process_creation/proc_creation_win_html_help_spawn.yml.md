@@ -2,7 +2,7 @@
 title: "HTML Help Shell Spawn"
 aliases:
   - "/rule/52cad028-0ff0-4854-8f67-d25dfcbc78b4"
-
+ruleid: 52cad028-0ff0-4854-8f67-d25dfcbc78b4
 
 tags:
   - attack.defense_evasion

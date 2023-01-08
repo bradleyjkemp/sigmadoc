@@ -2,7 +2,7 @@
 title: "MacOS Network Service Scanning"
 aliases:
   - "/rule/84bae5d4-b518-4ae0-b331-6d4afd34d00f"
-
+ruleid: 84bae5d4-b518-4ae0-b331-6d4afd34d00f
 
 tags:
   - attack.discovery

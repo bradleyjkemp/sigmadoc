@@ -2,7 +2,7 @@
 title: "Registry Parse with Pypykatz"
 aliases:
   - "/rule/a29808fd-ef50-49ff-9c7a-59a9b040b404"
-
+ruleid: a29808fd-ef50-49ff-9c7a-59a9b040b404
 
 tags:
   - attack.credential_access

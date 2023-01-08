@@ -2,7 +2,7 @@
 title: "Reconnaissance Activity"
 aliases:
   - "/rule/968eef52-9cff-4454-8992-1e74b9cbad6c"
-
+ruleid: 968eef52-9cff-4454-8992-1e74b9cbad6c
 
 tags:
   - attack.discovery

@@ -2,7 +2,7 @@
 title: "Suspicious Process Writes Ntds.dit"
 aliases:
   - "/rule/11b1ed55-154d-4e82-8ad7-83739298f720"
-
+ruleid: 11b1ed55-154d-4e82-8ad7-83739298f720
 
 tags:
   - attack.credential_access

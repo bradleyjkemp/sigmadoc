@@ -2,7 +2,7 @@
 title: "Credential Dumping by LaZagne"
 aliases:
   - "/rule/4b9a8556-99c4-470b-a40c-9c8d02c77ed0"
-
+ruleid: 4b9a8556-99c4-470b-a40c-9c8d02c77ed0
 
 tags:
   - attack.credential_access

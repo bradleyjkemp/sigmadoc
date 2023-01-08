@@ -2,7 +2,7 @@
 title: "CobaltStrike Service Installations"
 aliases:
   - "/rule/5a105d34-05fc-401e-8553-272b45c1522d"
-
+ruleid: 5a105d34-05fc-401e-8553-272b45c1522d
 
 tags:
   - attack.execution

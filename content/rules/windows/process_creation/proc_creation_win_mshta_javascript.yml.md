@@ -2,7 +2,7 @@
 title: "Mshta JavaScript Execution"
 aliases:
   - "/rule/67f113fa-e23d-4271-befa-30113b3e08b1"
-
+ruleid: 67f113fa-e23d-4271-befa-30113b3e08b1
 
 tags:
   - attack.defense_evasion

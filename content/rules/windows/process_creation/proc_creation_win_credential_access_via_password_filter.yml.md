@@ -2,7 +2,7 @@
 title: "Dropping Of Password Filter DLL"
 aliases:
   - "/rule/b7966f4a-b333-455b-8370-8ca53c229762"
-
+ruleid: b7966f4a-b333-455b-8370-8ca53c229762
 
 tags:
   - attack.credential_access

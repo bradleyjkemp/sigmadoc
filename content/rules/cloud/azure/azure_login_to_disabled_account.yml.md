@@ -2,7 +2,7 @@
 title: "Login to Disabled Account"
 aliases:
   - "/rule/908655e0-25cf-4ae1-b775-1c8ce9cf43d8"
-
+ruleid: 908655e0-25cf-4ae1-b775-1c8ce9cf43d8
 
 tags:
   - attack.initial_access

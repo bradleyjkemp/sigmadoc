@@ -2,7 +2,7 @@
 title: "Script Event Consumer Spawning Process"
 aliases:
   - "/rule/f6d1dd2f-b8ce-40ca-bc23-062efb686b34"
-
+ruleid: f6d1dd2f-b8ce-40ca-bc23-062efb686b34
 
 tags:
   - attack.execution

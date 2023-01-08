@@ -2,7 +2,7 @@
 title: "HybridConnectionManager Service Installation"
 aliases:
   - "/rule/0ee4d8a5-4e67-4faf-acfa-62a78457d1f2"
-
+ruleid: 0ee4d8a5-4e67-4faf-acfa-62a78457d1f2
 
 tags:
   - attack.persistence

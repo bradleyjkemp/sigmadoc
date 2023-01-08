@@ -2,7 +2,7 @@
 title: "Tasks Folder Evasion"
 aliases:
   - "/rule/cc4e02ba-9c06-48e2-b09e-2500cace9ae0"
-
+ruleid: cc4e02ba-9c06-48e2-b09e-2500cace9ae0
 
 tags:
   - attack.defense_evasion

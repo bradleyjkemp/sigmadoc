@@ -2,7 +2,7 @@
 title: "AWS EC2 VM Export Failure"
 aliases:
   - "/rule/54b9a76a-3c71-4673-b4b3-2edb4566ea7b"
-
+ruleid: 54b9a76a-3c71-4673-b4b3-2edb4566ea7b
 
 tags:
   - attack.collection

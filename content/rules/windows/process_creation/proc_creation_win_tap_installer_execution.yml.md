@@ -2,7 +2,7 @@
 title: "Tap Installer Execution"
 aliases:
   - "/rule/99793437-3e16-439b-be0f-078782cf953d"
-
+ruleid: 99793437-3e16-439b-be0f-078782cf953d
 
 tags:
   - attack.exfiltration

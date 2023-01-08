@@ -2,7 +2,7 @@
 title: "Shellshock Expression"
 aliases:
   - "/rule/c67e0c98-4d39-46ee-8f6b-437ebf6b950e"
-
+ruleid: c67e0c98-4d39-46ee-8f6b-437ebf6b950e
 
 tags:
   - attack.persistence

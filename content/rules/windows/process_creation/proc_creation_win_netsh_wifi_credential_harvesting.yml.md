@@ -2,7 +2,7 @@
 title: "Harvesting of Wifi Credentials Using netsh.exe"
 aliases:
   - "/rule/42b1a5b8-353f-4f10-b256-39de4467faff"
-
+ruleid: 42b1a5b8-353f-4f10-b256-39de4467faff
 
 tags:
   - attack.discovery

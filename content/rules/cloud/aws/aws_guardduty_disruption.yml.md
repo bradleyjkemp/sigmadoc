@@ -2,7 +2,7 @@
 title: "AWS GuardDuty Important Change"
 aliases:
   - "/rule/6e61ee20-ce00-4f8d-8aee-bedd8216f7e3"
-
+ruleid: 6e61ee20-ce00-4f8d-8aee-bedd8216f7e3
 
 tags:
   - attack.defense_evasion

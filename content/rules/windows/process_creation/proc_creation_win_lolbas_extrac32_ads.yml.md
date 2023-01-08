@@ -2,7 +2,7 @@
 title: "Suspicious Extrac32 Alternate Data Stream Execution"
 aliases:
   - "/rule/4b13db67-0c45-40f1-aba8-66a1a7198a1e"
-
+ruleid: 4b13db67-0c45-40f1-aba8-66a1a7198a1e
 
 tags:
   - attack.defense_evasion

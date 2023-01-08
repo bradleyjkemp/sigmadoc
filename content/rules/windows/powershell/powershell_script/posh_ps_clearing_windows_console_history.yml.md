@@ -2,7 +2,7 @@
 title: "Clearing Windows Console History"
 aliases:
   - "/rule/bde47d4b-9987-405c-94c7-b080410e8ea7"
-
+ruleid: bde47d4b-9987-405c-94c7-b080410e8ea7
 
 tags:
   - attack.defense_evasion

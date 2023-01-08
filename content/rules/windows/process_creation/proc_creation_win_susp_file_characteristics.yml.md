@@ -2,7 +2,7 @@
 title: "Suspicious File Characteristics Due to Missing Fields"
 aliases:
   - "/rule/9637e8a5-7131-4f7f-bdc7-2b05d8670c43"
-
+ruleid: 9637e8a5-7131-4f7f-bdc7-2b05d8670c43
 
 tags:
   - attack.execution

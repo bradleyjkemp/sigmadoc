@@ -2,7 +2,7 @@
 title: "Suspicious Commandline Escape"
 aliases:
   - "/rule/f0cdd048-82dc-4f7a-8a7a-b87a52b6d0fd"
-
+ruleid: f0cdd048-82dc-4f7a-8a7a-b87a52b6d0fd
 
 tags:
   - attack.defense_evasion

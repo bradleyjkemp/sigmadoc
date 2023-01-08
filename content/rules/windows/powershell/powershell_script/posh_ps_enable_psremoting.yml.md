@@ -2,7 +2,7 @@
 title: "Enable Windows Remote Management"
 aliases:
   - "/rule/991a9744-f2f0-44f2-bd33-9092eba17dc3"
-
+ruleid: 991a9744-f2f0-44f2-bd33-9092eba17dc3
 
 tags:
   - attack.lateral_movement

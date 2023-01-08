@@ -2,7 +2,7 @@
 title: "LockerGoga Ransomware"
 aliases:
   - "/rule/74db3488-fd28-480a-95aa-b7af626de068"
-
+ruleid: 74db3488-fd28-480a-95aa-b7af626de068
 
 tags:
   - attack.impact

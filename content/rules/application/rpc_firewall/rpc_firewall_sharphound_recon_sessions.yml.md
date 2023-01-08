@@ -2,7 +2,7 @@
 title: "SharpHound Recon Sessions"
 aliases:
   - "/rule/6d580420-ff3f-4e0e-b6b0-41b90c787e28"
-
+ruleid: 6d580420-ff3f-4e0e-b6b0-41b90c787e28
 
 tags:
   - attack.t1033

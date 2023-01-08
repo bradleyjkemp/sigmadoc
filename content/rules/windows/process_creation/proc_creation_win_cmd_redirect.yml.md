@@ -2,7 +2,7 @@
 title: "Redirect Output in CommandLine"
 aliases:
   - "/rule/4f4eaa9f-5ad4-410c-a4be-bc6132b0175a"
-
+ruleid: 4f4eaa9f-5ad4-410c-a4be-bc6132b0175a
 
 tags:
   - attack.discovery

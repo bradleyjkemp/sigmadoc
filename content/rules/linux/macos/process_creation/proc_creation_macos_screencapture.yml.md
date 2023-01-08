@@ -2,7 +2,7 @@
 title: "Screen Capture - macOS"
 aliases:
   - "/rule/0877ed01-da46-4c49-8476-d49cdd80dfa7"
-
+ruleid: 0877ed01-da46-4c49-8476-d49cdd80dfa7
 
 tags:
   - attack.collection

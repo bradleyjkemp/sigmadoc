@@ -2,7 +2,7 @@
 title: "Suspicious MSHTA Process Patterns"
 aliases:
   - "/rule/e32f92d1-523e-49c3-9374-bdb13b46a3ba"
-
+ruleid: e32f92d1-523e-49c3-9374-bdb13b46a3ba
 
 tags:
   - attack.execution

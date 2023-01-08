@@ -2,7 +2,7 @@
 title: "Equation Group DLL_U Load"
 aliases:
   - "/rule/d465d1d8-27a2-4cca-9621-a800f37cf72e"
-
+ruleid: d465d1d8-27a2-4cca-9621-a800f37cf72e
 
 tags:
   - attack.g0020

@@ -2,7 +2,7 @@
 title: "Powershell Trigger Profiles by Add_Content"
 aliases:
   - "/rule/05b3e303-faf0-4f4a-9b30-46cc13e69152"
-
+ruleid: 05b3e303-faf0-4f4a-9b30-46cc13e69152
 
 tags:
   - attack.privilege_escalation

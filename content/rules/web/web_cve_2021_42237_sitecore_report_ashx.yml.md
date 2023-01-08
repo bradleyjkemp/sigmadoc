@@ -2,7 +2,7 @@
 title: "Sitecore Pre-Auth RCE CVE-2021-42237"
 aliases:
   - "/rule/20c6ed1c-f7f0-4ea3-aa65-4f198e6acb0f"
-
+ruleid: 20c6ed1c-f7f0-4ea3-aa65-4f198e6acb0f
 
 tags:
   - attack.initial_access

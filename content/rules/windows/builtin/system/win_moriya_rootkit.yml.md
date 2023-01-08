@@ -2,7 +2,7 @@
 title: "Moriya Rootkit"
 aliases:
   - "/rule/25b9c01c-350d-4b95-bed1-836d04a4f324"
-
+ruleid: 25b9c01c-350d-4b95-bed1-836d04a4f324
 
 tags:
   - attack.persistence

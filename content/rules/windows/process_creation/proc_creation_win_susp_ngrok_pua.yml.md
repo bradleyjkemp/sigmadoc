@@ -2,7 +2,7 @@
 title: "Ngrok Usage"
 aliases:
   - "/rule/ee37eb7c-a4e7-4cd5-8fa4-efa27f1c3f31"
-
+ruleid: ee37eb7c-a4e7-4cd5-8fa4-efa27f1c3f31
 
 tags:
   - attack.command_and_control

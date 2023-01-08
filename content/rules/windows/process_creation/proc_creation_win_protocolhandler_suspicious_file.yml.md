@@ -2,7 +2,7 @@
 title: "ProtocolHandler.exe Downloaded Suspicious File"
 aliases:
   - "/rule/104cdb48-a7a8-4ca7-a453-32942c6e5dcb"
-
+ruleid: 104cdb48-a7a8-4ca7-a453-32942c6e5dcb
 
 tags:
   - attack.defense_evasion

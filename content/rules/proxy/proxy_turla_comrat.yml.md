@@ -2,7 +2,7 @@
 title: "Turla ComRAT"
 aliases:
   - "/rule/7857f021-007f-4928-8b2c-7aedbe64bb82"
-
+ruleid: 7857f021-007f-4928-8b2c-7aedbe64bb82
 
 tags:
   - attack.defense_evasion

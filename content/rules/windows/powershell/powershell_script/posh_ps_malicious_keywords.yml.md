@@ -2,7 +2,7 @@
 title: "Malicious PowerShell Keywords"
 aliases:
   - "/rule/f62176f3-8128-4faa-bf6c-83261322e5eb"
-
+ruleid: f62176f3-8128-4faa-bf6c-83261322e5eb
 
 tags:
   - attack.execution

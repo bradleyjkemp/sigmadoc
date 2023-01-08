@@ -2,7 +2,7 @@
 title: "File and Directory Discovery"
 aliases:
   - "/rule/d3feb4ee-ff1d-4d3d-bd10-5b28a238cc72"
-
+ruleid: d3feb4ee-ff1d-4d3d-bd10-5b28a238cc72
 
 tags:
   - attack.discovery

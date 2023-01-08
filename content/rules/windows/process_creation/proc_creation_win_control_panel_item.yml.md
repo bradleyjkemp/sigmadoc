@@ -2,7 +2,7 @@
 title: "Control Panel Items"
 aliases:
   - "/rule/0ba863e6-def5-4e50-9cea-4dd8c7dc46a4"
-
+ruleid: 0ba863e6-def5-4e50-9cea-4dd8c7dc46a4
 
 tags:
   - attack.execution

@@ -2,7 +2,7 @@
 title: "WMI Event Subscription"
 aliases:
   - "/rule/0f06a3a5-6a09-413f-8743-e6cf35561297"
-
+ruleid: 0f06a3a5-6a09-413f-8743-e6cf35561297
 
 tags:
   - attack.persistence

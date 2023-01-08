@@ -2,7 +2,7 @@
 title: "Credential Dumping Tools Service Execution"
 aliases:
   - "/rule/4976aa50-8f41-45c6-8b15-ab3fc10e79ed"
-
+ruleid: 4976aa50-8f41-45c6-8b15-ab3fc10e79ed
 
 tags:
   - attack.credential_access

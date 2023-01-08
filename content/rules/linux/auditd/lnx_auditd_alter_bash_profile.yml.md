@@ -2,7 +2,7 @@
 title: "Edit of .bash_profile and .bashrc"
 aliases:
   - "/rule/e74e15cc-c4b6-4c80-b7eb-dfe49feb7fe9"
-
+ruleid: e74e15cc-c4b6-4c80-b7eb-dfe49feb7fe9
 
 tags:
   - attack.s0003

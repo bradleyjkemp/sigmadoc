@@ -2,7 +2,7 @@
 title: "Suspicious Add User to Remote Desktop Users Group"
 aliases:
   - "/rule/ffa28e60-bdb1-46e0-9f82-05f7a61cc06e"
-
+ruleid: ffa28e60-bdb1-46e0-9f82-05f7a61cc06e
 
 tags:
   - attack.persistence

@@ -2,7 +2,7 @@
 title: "Query Registry"
 aliases:
   - "/rule/970007b7-ce32-49d0-a4a4-fbef016950bd"
-
+ruleid: 970007b7-ce32-49d0-a4a4-fbef016950bd
 
 tags:
   - attack.discovery

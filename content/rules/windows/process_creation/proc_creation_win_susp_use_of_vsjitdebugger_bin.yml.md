@@ -2,7 +2,7 @@
 title: "Malicious PE Execution by Microsoft Visual Studio Debugger"
 aliases:
   - "/rule/15c7904e-6ad1-4a45-9b46-5fb25df37fd2"
-
+ruleid: 15c7904e-6ad1-4a45-9b46-5fb25df37fd2
 
 tags:
   - attack.t1218

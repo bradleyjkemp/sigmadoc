@@ -2,7 +2,7 @@
 title: "AWS Route 53 Domain Transfer Lock Disabled"
 aliases:
   - "/rule/3940b5f1-3f46-44aa-b746-ebe615b879e0"
-
+ruleid: 3940b5f1-3f46-44aa-b746-ebe615b879e0
 
 tags:
   - attack.persistence

@@ -2,7 +2,7 @@
 title: "Remote Encrypting File System Abuse"
 aliases:
   - "/rule/5f92fff9-82e2-48eb-8fc1-8b133556a551"
-
+ruleid: 5f92fff9-82e2-48eb-8fc1-8b133556a551
 
 tags:
   - attack.lateral_movement

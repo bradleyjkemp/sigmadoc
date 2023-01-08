@@ -2,7 +2,7 @@
 title: "Remote PowerShell Sessions Network Connections (WinRM)"
 aliases:
   - "/rule/13acf386-b8c6-4fe0-9a6e-c4756b974698"
-
+ruleid: 13acf386-b8c6-4fe0-9a6e-c4756b974698
 
 tags:
   - attack.execution

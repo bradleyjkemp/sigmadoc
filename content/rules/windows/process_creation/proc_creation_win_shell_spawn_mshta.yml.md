@@ -2,7 +2,7 @@
 title: "Mshta Spawning Windows Shell"
 aliases:
   - "/rule/772bb24c-8df2-4be0-9157-ae4dfa794037"
-
+ruleid: 772bb24c-8df2-4be0-9157-ae4dfa794037
 
 tags:
   - attack.execution

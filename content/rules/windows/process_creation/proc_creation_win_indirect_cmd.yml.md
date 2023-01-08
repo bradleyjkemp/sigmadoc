@@ -2,7 +2,7 @@
 title: "Indirect Command Execution"
 aliases:
   - "/rule/fa47597e-90e9-41cd-ab72-c3b74cfb0d02"
-
+ruleid: fa47597e-90e9-41cd-ab72-c3b74cfb0d02
 
 tags:
   - attack.defense_evasion

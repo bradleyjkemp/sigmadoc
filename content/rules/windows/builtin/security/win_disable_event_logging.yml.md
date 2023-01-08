@@ -2,7 +2,7 @@
 title: "Disabling Windows Event Auditing"
 aliases:
   - "/rule/69aeb277-f15f-4d2d-b32a-55e883609563"
-
+ruleid: 69aeb277-f15f-4d2d-b32a-55e883609563
 
 tags:
   - attack.defense_evasion

@@ -2,7 +2,7 @@
 title: "CVE-2021-1675 Print Spooler Exploitation Filename Pattern"
 aliases:
   - "/rule/2131cfb3-8c12-45e8-8fa0-31f5924e9f07"
-
+ruleid: 2131cfb3-8c12-45e8-8fa0-31f5924e9f07
 
 tags:
   - attack.execution

@@ -2,7 +2,7 @@
 title: "Azure Kubernetes Sensitive Role Access"
 aliases:
   - "/rule/818fee0c-e0ec-4e45-824e-83e4817b0887"
-
+ruleid: 818fee0c-e0ec-4e45-824e-83e4817b0887
 
 tags:
   - attack.impact

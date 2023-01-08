@@ -2,7 +2,7 @@
 title: "Manipulation of User Computer or Group Security Principals Across AD"
 aliases:
   - "/rule/b29a93fb-087c-4b5b-a84d-ee3309e69d08"
-
+ruleid: b29a93fb-087c-4b5b-a84d-ee3309e69d08
 
 tags:
   - attack.persistence

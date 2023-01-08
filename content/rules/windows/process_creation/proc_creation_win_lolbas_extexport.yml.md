@@ -2,7 +2,7 @@
 title: "Suspicious Extexport Execution"
 aliases:
   - "/rule/fb0b815b-f5f6-4f50-970f-ffe21f253f7a"
-
+ruleid: fb0b815b-f5f6-4f50-970f-ffe21f253f7a
 
 tags:
   - attack.defense_evasion

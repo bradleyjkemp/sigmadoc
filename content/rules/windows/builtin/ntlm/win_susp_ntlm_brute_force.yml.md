@@ -2,7 +2,7 @@
 title: "NTLM Brute Force"
 aliases:
   - "/rule/9c8acf1a-cbf9-4db6-b63c-74baabe03e59"
-
+ruleid: 9c8acf1a-cbf9-4db6-b63c-74baabe03e59
 
 tags:
   - attack.credential_access

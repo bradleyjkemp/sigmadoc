@@ -2,7 +2,7 @@
 title: "Exchange ProxyShell Pattern"
 aliases:
   - "/rule/23eee45e-933b-49f9-ae1b-df706d2d52ef"
-
+ruleid: 23eee45e-933b-49f9-ae1b-df706d2d52ef
 
 tags:
   - attack.initial_access

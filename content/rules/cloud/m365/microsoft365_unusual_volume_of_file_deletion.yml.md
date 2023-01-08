@@ -2,7 +2,7 @@
 title: "Microsoft 365 - Unusual Volume of File Deletion"
 aliases:
   - "/rule/78a34b67-3c39-4886-8fb4-61c46dc18ecd"
-
+ruleid: 78a34b67-3c39-4886-8fb4-61c46dc18ecd
 
 tags:
   - attack.impact

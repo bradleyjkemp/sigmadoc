@@ -2,7 +2,7 @@
 title: "PowerShell Create Local User"
 aliases:
   - "/rule/243de76f-4725-4f2e-8225-a8a69b15ad61"
-
+ruleid: 243de76f-4725-4f2e-8225-a8a69b15ad61
 
 tags:
   - attack.execution

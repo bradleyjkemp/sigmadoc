@@ -2,7 +2,7 @@
 title: "Steganography Unzip Hidden Information From Picture File"
 aliases:
   - "/rule/edd595d7-7895-4fa7-acb3-85a18a8772ca"
-
+ruleid: edd595d7-7895-4fa7-acb3-85a18a8772ca
 
 tags:
   - attack.defense_evasion

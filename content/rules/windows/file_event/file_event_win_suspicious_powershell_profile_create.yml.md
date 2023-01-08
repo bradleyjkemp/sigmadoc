@@ -2,7 +2,7 @@
 title: "Powershell Profile.ps1 Modification"
 aliases:
   - "/rule/b5b78988-486d-4a80-b991-930eff3ff8bf"
-
+ruleid: b5b78988-486d-4a80-b991-930eff3ff8bf
 
 tags:
   - attack.persistence

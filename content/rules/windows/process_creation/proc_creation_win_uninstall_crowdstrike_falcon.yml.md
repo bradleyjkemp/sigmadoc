@@ -2,7 +2,7 @@
 title: "Uninstall Crowdstrike Falcon"
 aliases:
   - "/rule/f0f7be61-9cf5-43be-9836-99d6ef448a18"
-
+ruleid: f0f7be61-9cf5-43be-9836-99d6ef448a18
 
 tags:
   - attack.defense_evasion

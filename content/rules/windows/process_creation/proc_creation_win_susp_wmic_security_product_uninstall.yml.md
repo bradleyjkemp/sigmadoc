@@ -2,7 +2,7 @@
 title: "Wmic Uninstall Security Product"
 aliases:
   - "/rule/847d5ff3-8a31-4737-a970-aeae8fe21765"
-
+ruleid: 847d5ff3-8a31-4737-a970-aeae8fe21765
 
 tags:
   - attack.defense_evasion

@@ -2,7 +2,7 @@
 title: "Suspicious Scheduled Task Write to System32 Tasks"
 aliases:
   - "/rule/80e1f67a-4596-4351-98f5-a9c3efabac95"
-
+ruleid: 80e1f67a-4596-4351-98f5-a9c3efabac95
 
 tags:
   - attack.persistence

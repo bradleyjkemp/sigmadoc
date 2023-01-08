@@ -2,7 +2,7 @@
 title: "Wdigest Enable UseLogonCredential"
 aliases:
   - "/rule/d6a9b252-c666-4de6-8806-5561bbbd3bdc"
-
+ruleid: d6a9b252-c666-4de6-8806-5561bbbd3bdc
 
 tags:
   - attack.defense_evasion

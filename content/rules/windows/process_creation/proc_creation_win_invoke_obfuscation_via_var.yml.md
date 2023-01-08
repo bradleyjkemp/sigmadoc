@@ -2,7 +2,7 @@
 title: "Invoke-Obfuscation VAR++ LAUNCHER OBFUSCATION"
 aliases:
   - "/rule/e9f55347-2928-4c06-88e5-1a7f8169942e"
-
+ruleid: e9f55347-2928-4c06-88e5-1a7f8169942e
 
 tags:
   - attack.defense_evasion

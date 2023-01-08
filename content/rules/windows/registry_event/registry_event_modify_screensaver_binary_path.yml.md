@@ -2,7 +2,7 @@
 title: "Path To Screensaver Binary Modified"
 aliases:
   - "/rule/67a6c006-3fbe-46a7-9074-2ba3b82c3000"
-
+ruleid: 67a6c006-3fbe-46a7-9074-2ba3b82c3000
 
 tags:
   - attack.persistence

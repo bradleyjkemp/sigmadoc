@@ -2,7 +2,7 @@
 title: "Suspicious Copy From or To System32"
 aliases:
   - "/rule/fff9d2b7-e11c-4a69-93d3-40ef66189767"
-
+ruleid: fff9d2b7-e11c-4a69-93d3-40ef66189767
 
 tags:
   - attack.defense_evasion

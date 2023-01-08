@@ -2,7 +2,7 @@
 title: "Suspicious Where Execution"
 aliases:
   - "/rule/725a9768-0f5e-4cb3-aec2-bc5719c6831a"
-
+ruleid: 725a9768-0f5e-4cb3-aec2-bc5719c6831a
 
 tags:
   - attack.discovery

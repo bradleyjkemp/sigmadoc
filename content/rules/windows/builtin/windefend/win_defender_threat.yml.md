@@ -2,7 +2,7 @@
 title: "Windows Defender Threat Detected"
 aliases:
   - "/rule/57b649ef-ff42-4fb0-8bf6-62da243a1708"
-
+ruleid: 57b649ef-ff42-4fb0-8bf6-62da243a1708
 
 tags:
   - attack.execution

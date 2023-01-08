@@ -2,7 +2,7 @@
 title: "Accesschk Usage After Privilege Escalation"
 aliases:
   - "/rule/c625d754-6a3d-4f65-9c9a-536aea960d37"
-
+ruleid: c625d754-6a3d-4f65-9c9a-536aea960d37
 
 tags:
   - attack.discovery

@@ -2,7 +2,7 @@
 title: "Hijack Legit RDP Session to Move Laterally"
 aliases:
   - "/rule/52753ea4-b3a0-4365-910d-36cff487b789"
-
+ruleid: 52753ea4-b3a0-4365-910d-36cff487b789
 
 tags:
   - attack.command_and_control

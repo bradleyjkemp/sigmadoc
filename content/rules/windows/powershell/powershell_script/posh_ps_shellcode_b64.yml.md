@@ -2,7 +2,7 @@
 title: "PowerShell ShellCode"
 aliases:
   - "/rule/16b37b70-6fcf-4814-a092-c36bd3aafcbd"
-
+ruleid: 16b37b70-6fcf-4814-a092-c36bd3aafcbd
 
 tags:
   - attack.defense_evasion

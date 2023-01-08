@@ -2,7 +2,7 @@
 title: "Disable Tamper Protection on Windows Defender"
 aliases:
   - "/rule/93d298a1-d28f-47f1-a468-d971e7796679"
-
+ruleid: 93d298a1-d28f-47f1-a468-d971e7796679
 
 tags:
   - attack.defense_evasion

@@ -2,7 +2,7 @@
 title: "Powershell XML Execute Command"
 aliases:
   - "/rule/6c6c6282-7671-4fe9-a0ce-a2dcebdc342b"
-
+ruleid: 6c6c6282-7671-4fe9-a0ce-a2dcebdc342b
 
 tags:
   - attack.execution

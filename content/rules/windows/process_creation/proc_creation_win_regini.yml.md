@@ -2,7 +2,7 @@
 title: "Modifies the Registry From a File"
 aliases:
   - "/rule/5f60740a-f57b-4e76-82a1-15b6ff2cb134"
-
+ruleid: 5f60740a-f57b-4e76-82a1-15b6ff2cb134
 
 tags:
   - attack.t1112

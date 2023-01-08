@@ -2,7 +2,7 @@
 title: "Hidden Powershell in Link File Pattern"
 aliases:
   - "/rule/30e92f50-bb5a-4884-98b5-d20aa80f3d7a"
-
+ruleid: 30e92f50-bb5a-4884-98b5-d20aa80f3d7a
 
 tags:
   - attack.execution

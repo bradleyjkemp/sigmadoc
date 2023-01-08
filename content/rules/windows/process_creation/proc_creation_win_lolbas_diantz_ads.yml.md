@@ -2,7 +2,7 @@
 title: "Suspicious Diantz Alternate Data Stream Execution"
 aliases:
   - "/rule/6b369ced-4b1d-48f1-b427-fdc0de0790bd"
-
+ruleid: 6b369ced-4b1d-48f1-b427-fdc0de0790bd
 
 tags:
   - attack.defense_evasion

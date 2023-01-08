@@ -2,7 +2,7 @@
 title: "Enabling COR Profiler Environment Variables"
 aliases:
   - "/rule/ad89044a-8f49-4673-9a55-cbd88a1b374f"
-
+ruleid: ad89044a-8f49-4673-9a55-cbd88a1b374f
 
 tags:
   - attack.persistence

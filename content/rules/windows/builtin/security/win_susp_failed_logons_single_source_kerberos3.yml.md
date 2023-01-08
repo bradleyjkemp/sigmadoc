@@ -2,7 +2,7 @@
 title: "Invalid Users Failing To Authenticate From Source Using Kerberos"
 aliases:
   - "/rule/bc93dfe6-8242-411e-a2dd-d16fa0cc8564"
-
+ruleid: bc93dfe6-8242-411e-a2dd-d16fa0cc8564
 
 tags:
   - attack.t1110.003

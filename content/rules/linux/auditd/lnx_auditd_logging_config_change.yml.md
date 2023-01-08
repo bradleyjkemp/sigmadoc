@@ -2,7 +2,7 @@
 title: "Logging Configuration Changes on Linux Host"
 aliases:
   - "/rule/c830f15d-6f6e-430f-8074-6f73d6807841"
-
+ruleid: c830f15d-6f6e-430f-8074-6f73d6807841
 
 tags:
   - attack.defense_evasion

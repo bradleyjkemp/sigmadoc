@@ -2,7 +2,7 @@
 title: "Suspicious Interactive PowerShell as SYSTEM"
 aliases:
   - "/rule/5b40a734-99b6-4b98-a1d0-1cea51a08ab2"
-
+ruleid: 5b40a734-99b6-4b98-a1d0-1cea51a08ab2
 
 
 

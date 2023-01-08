@@ -2,7 +2,7 @@
 title: "Suspicious Cobalt Strike DNS Beaconing"
 aliases:
   - "/rule/f356a9c4-effd-4608-bbf8-408afd5cd006"
-
+ruleid: f356a9c4-effd-4608-bbf8-408afd5cd006
 
 tags:
   - attack.command_and_control

@@ -2,7 +2,7 @@
 title: "Application Whitelisting Bypass via Dnx.exe"
 aliases:
   - "/rule/81ebd28b-9607-4478-bf06-974ed9d53ed7"
-
+ruleid: 81ebd28b-9607-4478-bf06-974ed9d53ed7
 
 tags:
   - attack.defense_evasion

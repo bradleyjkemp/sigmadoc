@@ -2,7 +2,7 @@
 title: "Activity Performed by Terminated User"
 aliases:
   - "/rule/2e669ed8-742e-4fe5-b3c4-5a59b486c2ee"
-
+ruleid: 2e669ed8-742e-4fe5-b3c4-5a59b486c2ee
 
 tags:
   - attack.impact

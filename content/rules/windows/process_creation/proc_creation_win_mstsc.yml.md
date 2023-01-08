@@ -2,7 +2,7 @@
 title: "Remote Desktop Protocol Use Mstsc"
 aliases:
   - "/rule/954f0af7-62dd-418f-b3df-a84bc2c7a774"
-
+ruleid: 954f0af7-62dd-418f-b3df-a84bc2c7a774
 
 tags:
   - attack.lateral_movement

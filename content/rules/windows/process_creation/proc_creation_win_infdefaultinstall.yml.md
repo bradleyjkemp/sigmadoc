@@ -2,7 +2,7 @@
 title: "InfDefaultInstall.exe .inf Execution"
 aliases:
   - "/rule/ce7cf472-6fcc-490a-9481-3786840b5d9b"
-
+ruleid: ce7cf472-6fcc-490a-9481-3786840b5d9b
 
 tags:
   - attack.defense_evasion

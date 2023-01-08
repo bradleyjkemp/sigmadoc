@@ -2,7 +2,7 @@
 title: "VSSAudit Security Event Source Registration"
 aliases:
   - "/rule/e9faba72-4974-4ab2-a4c5-46e25ad59e9b"
-
+ruleid: e9faba72-4974-4ab2-a4c5-46e25ad59e9b
 
 tags:
   - attack.credential_access

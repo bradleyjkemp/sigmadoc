@@ -2,7 +2,7 @@
 title: "Suspicious VBScript UN2452 Pattern"
 aliases:
   - "/rule/20c3f09d-c53d-4e85-8b74-6aa50e2f1b61"
-
+ruleid: 20c3f09d-c53d-4e85-8b74-6aa50e2f1b61
 
 tags:
   - attack.persistence

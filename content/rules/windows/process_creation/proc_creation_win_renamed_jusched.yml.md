@@ -2,7 +2,7 @@
 title: "Renamed jusched.exe"
 aliases:
   - "/rule/edd8a48c-1b9f-4ba1-83aa-490338cd1ccb"
-
+ruleid: edd8a48c-1b9f-4ba1-83aa-490338cd1ccb
 
 tags:
   - attack.execution

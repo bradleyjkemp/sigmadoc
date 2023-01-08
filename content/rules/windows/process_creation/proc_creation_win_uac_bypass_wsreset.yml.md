@@ -2,7 +2,7 @@
 title: "UAC Bypass WSReset"
 aliases:
   - "/rule/89a9a0e0-f61a-42e5-8957-b1479565a658"
-
+ruleid: 89a9a0e0-f61a-42e5-8957-b1479565a658
 
 tags:
   - attack.defense_evasion

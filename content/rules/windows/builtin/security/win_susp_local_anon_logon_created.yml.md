@@ -2,7 +2,7 @@
 title: "Suspicious Windows ANONYMOUS LOGON Local Account Created"
 aliases:
   - "/rule/1bbf25b9-8038-4154-a50b-118f2a32be27"
-
+ruleid: 1bbf25b9-8038-4154-a50b-118f2a32be27
 
 tags:
   - attack.persistence

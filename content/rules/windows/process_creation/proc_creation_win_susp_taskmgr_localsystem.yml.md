@@ -2,7 +2,7 @@
 title: "Taskmgr as LOCAL_SYSTEM"
 aliases:
   - "/rule/9fff585c-c33e-4a86-b3cd-39312079a65f"
-
+ruleid: 9fff585c-c33e-4a86-b3cd-39312079a65f
 
 tags:
   - attack.defense_evasion

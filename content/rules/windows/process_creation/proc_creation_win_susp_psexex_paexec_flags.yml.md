@@ -2,7 +2,7 @@
 title: "PsExec/PAExec Flags"
 aliases:
   - "/rule/207b0396-3689-42d9-8399-4222658efc99"
-
+ruleid: 207b0396-3689-42d9-8399-4222658efc99
 
 tags:
   - attack.develop_capabilities

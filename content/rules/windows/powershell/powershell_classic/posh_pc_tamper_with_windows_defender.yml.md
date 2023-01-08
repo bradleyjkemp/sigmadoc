@@ -2,7 +2,7 @@
 title: "Tamper Windows Defender"
 aliases:
   - "/rule/ec19ebab-72dc-40e1-9728-4c0b805d722c"
-
+ruleid: ec19ebab-72dc-40e1-9728-4c0b805d722c
 
 tags:
   - attack.defense_evasion

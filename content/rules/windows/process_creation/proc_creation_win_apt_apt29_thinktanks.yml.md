@@ -2,7 +2,7 @@
 title: "APT29"
 aliases:
   - "/rule/033fe7d6-66d1-4240-ac6b-28908009c71f"
-
+ruleid: 033fe7d6-66d1-4240-ac6b-28908009c71f
 
 tags:
   - attack.execution

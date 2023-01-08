@@ -2,7 +2,7 @@
 title: "Powershell Store File In Alternate Data Stream"
 aliases:
   - "/rule/a699b30e-d010-46c8-bbd1-ee2e26765fe9"
-
+ruleid: a699b30e-d010-46c8-bbd1-ee2e26765fe9
 
 tags:
   - attack.defense_evasion

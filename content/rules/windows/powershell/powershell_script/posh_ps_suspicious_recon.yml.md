@@ -2,7 +2,7 @@
 title: "Recon Information for Export with PowerShell"
 aliases:
   - "/rule/a9723fcc-881c-424c-8709-fd61442ab3c3"
-
+ruleid: a9723fcc-881c-424c-8709-fd61442ab3c3
 
 tags:
   - attack.collection

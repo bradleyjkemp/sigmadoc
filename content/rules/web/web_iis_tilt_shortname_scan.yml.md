@@ -2,7 +2,7 @@
 title: "Successful IIS Shortname Fuzzing Scan"
 aliases:
   - "/rule/7cb02516-6d95-4ffc-8eee-162075e111ac"
-
+ruleid: 7cb02516-6d95-4ffc-8eee-162075e111ac
 
 tags:
   - attack.initial_access

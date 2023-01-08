@@ -2,7 +2,7 @@
 title: "Credentials In Files"
 aliases:
   - "/rule/df3fcaea-2715-4214-99c5-0056ea59eb35"
-
+ruleid: df3fcaea-2715-4214-99c5-0056ea59eb35
 
 tags:
   - attack.credential_access

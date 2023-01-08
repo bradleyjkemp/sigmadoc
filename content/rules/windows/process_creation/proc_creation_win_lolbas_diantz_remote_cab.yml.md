@@ -2,7 +2,7 @@
 title: "Suspicious Diantz Download and Compress Into a CAB File"
 aliases:
   - "/rule/185d7418-f250-42d0-b72e-0c8b70661e93"
-
+ruleid: 185d7418-f250-42d0-b72e-0c8b70661e93
 
 tags:
   - attack.command_and_control

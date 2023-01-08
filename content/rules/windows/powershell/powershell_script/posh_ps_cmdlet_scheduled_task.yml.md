@@ -2,7 +2,7 @@
 title: "Powershell Create Scheduled Task"
 aliases:
   - "/rule/363eccc0-279a-4ccf-a3ab-24c2e63b11fb"
-
+ruleid: 363eccc0-279a-4ccf-a3ab-24c2e63b11fb
 
 tags:
   - attack.persistence

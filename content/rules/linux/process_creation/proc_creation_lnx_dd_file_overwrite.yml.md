@@ -2,7 +2,7 @@
 title: "DD File Overwrite"
 aliases:
   - "/rule/2953194b-e33c-4859-b9e8-05948c167447"
-
+ruleid: 2953194b-e33c-4859-b9e8-05948c167447
 
 tags:
   - attack.impact

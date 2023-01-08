@@ -2,7 +2,7 @@
 title: "Windows WebDAV User Agent"
 aliases:
   - "/rule/e09aed7a-09e0-4c9a-90dd-f0d52507347e"
-
+ruleid: e09aed7a-09e0-4c9a-90dd-f0d52507347e
 
 tags:
   - attack.command_and_control

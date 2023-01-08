@@ -2,7 +2,7 @@
 title: "Possible Zerologon (CVE-2020-1472) Exploitation"
 aliases:
   - "/rule/dd7876d8-0f09-11eb-adc1-0242ac120002"
-
+ruleid: dd7876d8-0f09-11eb-adc1-0242ac120002
 
 tags:
   - attack.t1068

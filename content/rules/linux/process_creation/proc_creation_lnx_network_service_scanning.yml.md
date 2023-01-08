@@ -2,7 +2,7 @@
 title: "Linux Network Service Scanning"
 aliases:
   - "/rule/3e102cd9-a70d-4a7a-9508-403963092f31"
-
+ruleid: 3e102cd9-a70d-4a7a-9508-403963092f31
 
 tags:
   - attack.discovery

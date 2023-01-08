@@ -2,7 +2,7 @@
 title: "Detection of PowerShell Execution via Sqlps.exe"
 aliases:
   - "/rule/0152550d-3a26-4efd-9f0e-54a0b28ae2f3"
-
+ruleid: 0152550d-3a26-4efd-9f0e-54a0b28ae2f3
 
 tags:
   - attack.execution

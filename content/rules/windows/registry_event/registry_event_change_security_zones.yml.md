@@ -2,7 +2,7 @@
 title: "IE Change Domain Zone"
 aliases:
   - "/rule/45e112d0-7759-4c2a-aa36-9f8fb79d3393"
-
+ruleid: 45e112d0-7759-4c2a-aa36-9f8fb79d3393
 
 tags:
   - attack.persistence

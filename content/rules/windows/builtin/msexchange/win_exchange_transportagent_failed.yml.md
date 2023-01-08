@@ -2,7 +2,7 @@
 title: "Failed MSExchange Transport Agent Installation"
 aliases:
   - "/rule/c7d16cae-aaf3-42e5-9c1c-fb8553faa6fa"
-
+ruleid: c7d16cae-aaf3-42e5-9c1c-fb8553faa6fa
 
 tags:
   - attack.persistence

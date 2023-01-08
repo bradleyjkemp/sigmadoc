@@ -2,7 +2,7 @@
 title: "Raw Disk Access Using Illegitimate Tools"
 aliases:
   - "/rule/db809f10-56ce-4420-8c86-d6a7d793c79c"
-
+ruleid: db809f10-56ce-4420-8c86-d6a7d793c79c
 
 tags:
   - attack.defense_evasion

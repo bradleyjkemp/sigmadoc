@@ -2,7 +2,7 @@
 title: "Java Class Proxy Download"
 aliases:
   - "/rule/53c15703-b04c-42bb-9055-1937ddfb3392"
-
+ruleid: 53c15703-b04c-42bb-9055-1937ddfb3392
 
 tags:
   - attack.initial_access

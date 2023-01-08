@@ -2,7 +2,7 @@
 title: "Windows Update Error"
 aliases:
   - "/rule/13cfeb75-9e33-4d04-b0f7-ab8faaa95a59"
-
+ruleid: 13cfeb75-9e33-4d04-b0f7-ab8faaa95a59
 
 tags:
   - attack.impact

@@ -2,7 +2,7 @@
 title: "GUI Input Capture - macOS"
 aliases:
   - "/rule/60f1ce20-484e-41bd-85f4-ac4afec2c541"
-
+ruleid: 60f1ce20-484e-41bd-85f4-ac4afec2c541
 
 tags:
   - attack.credential_access

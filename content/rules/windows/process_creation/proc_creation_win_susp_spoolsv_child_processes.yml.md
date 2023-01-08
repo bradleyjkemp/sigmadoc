@@ -2,7 +2,7 @@
 title: "Suspicious Spool Service Child Process"
 aliases:
   - "/rule/dcdbc940-0bff-46b2-95f3-2d73f848e33b"
-
+ruleid: dcdbc940-0bff-46b2-95f3-2d73f848e33b
 
 tags:
   - attack.execution

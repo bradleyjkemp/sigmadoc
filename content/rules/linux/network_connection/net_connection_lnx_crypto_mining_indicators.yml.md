@@ -2,7 +2,7 @@
 title: "Linux Crypto Mining Pool Connections"
 aliases:
   - "/rule/a46c93b7-55ed-4d27-a41b-c259456c4746"
-
+ruleid: a46c93b7-55ed-4d27-a41b-c259456c4746
 
 
 

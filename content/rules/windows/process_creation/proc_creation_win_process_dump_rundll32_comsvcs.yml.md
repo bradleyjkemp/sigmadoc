@@ -2,7 +2,7 @@
 title: "Process Dump via Rundll32 and Comsvcs.dll"
 aliases:
   - "/rule/646ea171-dded-4578-8a4d-65e9822892e3"
-
+ruleid: 646ea171-dded-4578-8a4d-65e9822892e3
 
 tags:
   - attack.defense_evasion

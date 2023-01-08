@@ -2,7 +2,7 @@
 title: "Azure Key Vault Modified or Deleted."
 aliases:
   - "/rule/459a2970-bb84-4e6a-a32e-ff0fbd99448d"
-
+ruleid: 459a2970-bb84-4e6a-a32e-ff0fbd99448d
 
 tags:
   - attack.impact

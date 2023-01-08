@@ -2,7 +2,7 @@
 title: "Telegram Bot API Request"
 aliases:
   - "/rule/c64c5175-5189-431b-a55e-6d9882158251"
-
+ruleid: c64c5175-5189-431b-a55e-6d9882158251
 
 tags:
   - attack.command_and_control

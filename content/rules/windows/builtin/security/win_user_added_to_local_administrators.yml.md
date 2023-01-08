@@ -2,7 +2,7 @@
 title: "User Added to Local Administrators"
 aliases:
   - "/rule/c265cf08-3f99-46c1-8d59-328247057d57"
-
+ruleid: c265cf08-3f99-46c1-8d59-328247057d57
 
 tags:
   - attack.privilege_escalation

@@ -2,7 +2,7 @@
 title: "Remote WMI ActiveScriptEventConsumers"
 aliases:
   - "/rule/9599c180-e3a8-4743-8f92-7fb96d3be648"
-
+ruleid: 9599c180-e3a8-4743-8f92-7fb96d3be648
 
 tags:
   - attack.lateral_movement

@@ -2,7 +2,7 @@
 title: "Hidden User Creation"
 aliases:
   - "/rule/b22a5b36-2431-493a-8be1-0bae56c28ef3"
-
+ruleid: b22a5b36-2431-493a-8be1-0bae56c28ef3
 
 tags:
   - attack.defense_evasion

@@ -2,7 +2,7 @@
 title: "Remove Exported Mailbox from Exchange Webserver"
 aliases:
   - "/rule/09570ae5-889e-43ea-aac0-0e1221fb3d95"
-
+ruleid: 09570ae5-889e-43ea-aac0-0e1221fb3d95
 
 tags:
   - attack.defense_evasion

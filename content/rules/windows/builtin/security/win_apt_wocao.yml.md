@@ -2,7 +2,7 @@
 title: "Operation Wocao Activity"
 aliases:
   - "/rule/74ad4314-482e-4c3e-b237-3f7ed3b9ca8d"
-
+ruleid: 74ad4314-482e-4c3e-b237-3f7ed3b9ca8d
 
 tags:
   - attack.discovery

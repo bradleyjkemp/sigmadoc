@@ -2,7 +2,7 @@
 title: "Unsigned Image Loaded Into LSASS Process"
 aliases:
   - "/rule/857c8db3-c89b-42fb-882b-f681c7cf4da2"
-
+ruleid: 857c8db3-c89b-42fb-882b-f681c7cf4da2
 
 tags:
   - attack.credential_access

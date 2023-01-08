@@ -2,7 +2,7 @@
 title: "Wuauclt Network Connection"
 aliases:
   - "/rule/c649a6c7-cd8c-4a78-9c04-000fc76df954"
-
+ruleid: c649a6c7-cd8c-4a78-9c04-000fc76df954
 
 tags:
   - attack.defense_evasion

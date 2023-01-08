@@ -2,7 +2,7 @@
 title: "Antivirus PrinterNightmare CVE-2021-34527 Exploit Detection"
 aliases:
   - "/rule/6fe1719e-ecdf-4caf-bffe-4f501cb0a561"
-
+ruleid: 6fe1719e-ecdf-4caf-bffe-4f501cb0a561
 
 tags:
   - attack.privilege_escalation

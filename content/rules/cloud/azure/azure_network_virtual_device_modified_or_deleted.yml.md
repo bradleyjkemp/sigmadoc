@@ -2,7 +2,7 @@
 title: "Azure Virtual Network Device Modified or Deleted"
 aliases:
   - "/rule/15ef3fac-f0f0-4dc4-ada0-660aa72980b3"
-
+ruleid: 15ef3fac-f0f0-4dc4-ada0-660aa72980b3
 
 tags:
   - attack.impact

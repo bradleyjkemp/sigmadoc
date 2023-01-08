@@ -2,7 +2,7 @@
 title: "CobaltStrike Named Pipe"
 aliases:
   - "/rule/d5601f8c-b26f-4ab0-9035-69e11a8d4ad2"
-
+ruleid: d5601f8c-b26f-4ab0-9035-69e11a8d4ad2
 
 tags:
   - attack.defense_evasion

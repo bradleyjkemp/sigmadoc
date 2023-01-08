@@ -2,7 +2,7 @@
 title: "WhoAmI as Parameter"
 aliases:
   - "/rule/e9142d84-fbe0-401d-ac50-3e519fb00c89"
-
+ruleid: e9142d84-fbe0-401d-ac50-3e519fb00c89
 
 tags:
   - attack.discovery

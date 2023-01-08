@@ -2,7 +2,7 @@
 title: "CLR DLL Loaded Via Office Applications"
 aliases:
   - "/rule/d13c43f0-f66b-4279-8b2c-5912077c1780"
-
+ruleid: d13c43f0-f66b-4279-8b2c-5912077c1780
 
 tags:
   - attack.execution

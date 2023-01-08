@@ -2,7 +2,7 @@
 title: "New Lolbin Process by Office Applications"
 aliases:
   - "/rule/23daeb52-e6eb-493c-8607-c4f0246cb7d8"
-
+ruleid: 23daeb52-e6eb-493c-8607-c4f0246cb7d8
 
 tags:
   - attack.t1204.002

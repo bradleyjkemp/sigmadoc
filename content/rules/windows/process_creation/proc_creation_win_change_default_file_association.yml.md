@@ -2,7 +2,7 @@
 title: "Change Default File Association"
 aliases:
   - "/rule/3d3aa6cd-6272-44d6-8afc-7e88dfef7061"
-
+ruleid: 3d3aa6cd-6272-44d6-8afc-7e88dfef7061
 
 tags:
   - attack.persistence

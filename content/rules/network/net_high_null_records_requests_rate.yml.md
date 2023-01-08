@@ -2,7 +2,7 @@
 title: "High NULL Records Requests Rate"
 aliases:
   - "/rule/44ae5117-9c44-40cf-9c7c-7edad385ca70"
-
+ruleid: 44ae5117-9c44-40cf-9c7c-7edad385ca70
 
 tags:
   - attack.exfiltration

@@ -2,7 +2,7 @@
 title: "DirectorySearcher Powershell Exploitation"
 aliases:
   - "/rule/1f6399cf-2c80-4924-ace1-6fcff3393480"
-
+ruleid: 1f6399cf-2c80-4924-ace1-6fcff3393480
 
 tags:
   - attack.discovery

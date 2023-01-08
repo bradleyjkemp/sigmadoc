@@ -2,7 +2,7 @@
 title: "Registry Key Creation or Modification for Shim DataBase"
 aliases:
   - "/rule/dfb5b4e8-91d0-4291-b40a-e3b0d3942c45"
-
+ruleid: dfb5b4e8-91d0-4291-b40a-e3b0d3942c45
 
 tags:
   - attack.persistence

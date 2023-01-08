@@ -2,7 +2,7 @@
 title: "Suspicious Replace.exe Execution"
 aliases:
   - "/rule/9292293b-8496-4715-9db6-37028dcda4b3"
-
+ruleid: 9292293b-8496-4715-9db6-37028dcda4b3
 
 tags:
   - attack.command_and_control

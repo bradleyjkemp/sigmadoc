@@ -2,7 +2,7 @@
 title: "Potential RDP Exploit CVE-2019-0708"
 aliases:
   - "/rule/aaa5b30d-f418-420b-83a0-299cb6024885"
-
+ruleid: aaa5b30d-f418-420b-83a0-299cb6024885
 
 tags:
   - attack.lateral_movement

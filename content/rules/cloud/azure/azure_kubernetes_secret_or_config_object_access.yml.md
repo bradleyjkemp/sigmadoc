@@ -2,7 +2,7 @@
 title: "Azure Kubernetes Secret or Config Object Access"
 aliases:
   - "/rule/7ee0b4aa-d8d4-4088-b661-20efdf41a04c"
-
+ruleid: 7ee0b4aa-d8d4-4088-b661-20efdf41a04c
 
 tags:
   - attack.impact

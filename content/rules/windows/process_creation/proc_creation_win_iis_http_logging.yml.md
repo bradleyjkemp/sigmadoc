@@ -2,7 +2,7 @@
 title: "Disable Windows IIS HTTP Logging"
 aliases:
   - "/rule/e4ed6030-ffe5-4e6a-8a8a-ab3c1ab9d94e"
-
+ruleid: e4ed6030-ffe5-4e6a-8a8a-ab3c1ab9d94e
 
 tags:
   - attack.defense_evasion

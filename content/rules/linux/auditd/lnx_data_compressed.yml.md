@@ -2,7 +2,7 @@
 title: "Data Compressed"
 aliases:
   - "/rule/a3b5e3e9-1b49-4119-8b8e-0344a01f21ee"
-
+ruleid: a3b5e3e9-1b49-4119-8b8e-0344a01f21ee
 
 tags:
   - attack.exfiltration

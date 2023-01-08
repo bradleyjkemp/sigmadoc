@@ -2,7 +2,7 @@
 title: "Suspicious Invoke-Item From Mount-DiskImage"
 aliases:
   - "/rule/902cedee-0398-4e3a-8183-6f3a89773a96"
-
+ruleid: 902cedee-0398-4e3a-8183-6f3a89773a96
 
 tags:
   - attack.defense_evasion

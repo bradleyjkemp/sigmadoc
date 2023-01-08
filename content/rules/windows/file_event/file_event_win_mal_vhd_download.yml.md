@@ -2,7 +2,7 @@
 title: "Suspicious VHD Image Download From Browser"
 aliases:
   - "/rule/8468111a-ef07-4654-903b-b863a80bbc95"
-
+ruleid: 8468111a-ef07-4654-903b-b863a80bbc95
 
 tags:
   - attack.resource_development

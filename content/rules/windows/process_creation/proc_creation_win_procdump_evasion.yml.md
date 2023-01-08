@@ -2,7 +2,7 @@
 title: "Procdump Evasion"
 aliases:
   - "/rule/79b06761-465f-4f88-9ef2-150e24d3d737"
-
+ruleid: 79b06761-465f-4f88-9ef2-150e24d3d737
 
 tags:
   - attack.defense_evasion

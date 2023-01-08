@@ -2,7 +2,7 @@
 title: "Ncat Execution"
 aliases:
   - "/rule/e31033fc-33f0-4020-9a16-faf9b31cbf08"
-
+ruleid: e31033fc-33f0-4020-9a16-faf9b31cbf08
 
 tags:
   - attack.command_and_control

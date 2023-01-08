@@ -2,7 +2,7 @@
 title: "Interactive AT Job"
 aliases:
   - "/rule/60fc936d-2eb0-4543-8a13-911c750a1dfc"
-
+ruleid: 60fc936d-2eb0-4543-8a13-911c750a1dfc
 
 tags:
   - attack.privilege_escalation

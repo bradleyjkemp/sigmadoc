@@ -2,7 +2,7 @@
 title: "MavInject Process Injection"
 aliases:
   - "/rule/17eb8e57-9983-420d-ad8a-2c4976c22eb8"
-
+ruleid: 17eb8e57-9983-420d-ad8a-2c4976c22eb8
 
 tags:
   - attack.t1055.001

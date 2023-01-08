@@ -2,7 +2,7 @@
 title: "User Access Blocked by Azure Conditional Access"
 aliases:
   - "/rule/9a60e676-26ac-44c3-814b-0c2a8b977adf"
-
+ruleid: 9a60e676-26ac-44c3-814b-0c2a8b977adf
 
 tags:
   - attack.credential_access

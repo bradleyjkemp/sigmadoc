@@ -2,7 +2,7 @@
 title: "Rundll32 Registered COM Objects"
 aliases:
   - "/rule/f1edd233-30b5-4823-9e6a-c4171b24d316"
-
+ruleid: f1edd233-30b5-4823-9e6a-c4171b24d316
 
 tags:
   - attack.privilege_escalation

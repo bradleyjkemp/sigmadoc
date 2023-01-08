@@ -2,7 +2,7 @@
 title: "APT User Agent"
 aliases:
   - "/rule/6ec820f2-e963-4801-9127-d8b2dce4d31b"
-
+ruleid: 6ec820f2-e963-4801-9127-d8b2dce4d31b
 
 tags:
   - attack.command_and_control

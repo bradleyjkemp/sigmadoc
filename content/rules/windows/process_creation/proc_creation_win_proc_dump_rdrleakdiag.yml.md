@@ -2,7 +2,7 @@
 title: "RdrLeakDiag Process Dump"
 aliases:
   - "/rule/6355a919-2e97-4285-a673-74645566340d"
-
+ruleid: 6355a919-2e97-4285-a673-74645566340d
 
 tags:
   - attack.defense_evasion

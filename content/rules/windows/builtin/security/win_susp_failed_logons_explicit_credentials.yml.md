@@ -2,7 +2,7 @@
 title: "Multiple Users Attempting To Authenticate Using Explicit Credentials"
 aliases:
   - "/rule/196a29c2-e378-48d8-ba07-8a9e61f7fab9"
-
+ruleid: 196a29c2-e378-48d8-ba07-8a9e61f7fab9
 
 tags:
   - attack.t1110.003

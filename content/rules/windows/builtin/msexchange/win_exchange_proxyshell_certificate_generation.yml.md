@@ -2,7 +2,7 @@
 title: "Certificate Request Export to Exchange Webserver"
 aliases:
   - "/rule/b7bc7038-638b-4ffd-880c-292c692209ef"
-
+ruleid: b7bc7038-638b-4ffd-880c-292c692209ef
 
 tags:
   - attack.persistence

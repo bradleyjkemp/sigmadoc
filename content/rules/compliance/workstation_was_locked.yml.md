@@ -2,7 +2,7 @@
 title: "Locked Workstation"
 aliases:
   - "/rule/411742ad-89b0-49cb-a7b0-3971b5c1e0a4"
-
+ruleid: 411742ad-89b0-49cb-a7b0-3971b5c1e0a4
 
 
 

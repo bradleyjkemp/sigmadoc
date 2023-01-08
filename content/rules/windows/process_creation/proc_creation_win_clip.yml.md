@@ -2,7 +2,7 @@
 title: "Use of CLIP"
 aliases:
   - "/rule/ddeff553-5233-4ae9-bbab-d64d2bd634be"
-
+ruleid: ddeff553-5233-4ae9-bbab-d64d2bd634be
 
 tags:
   - attack.collection

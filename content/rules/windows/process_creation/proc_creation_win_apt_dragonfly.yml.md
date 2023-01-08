@@ -2,7 +2,7 @@
 title: "CrackMapExecWin"
 aliases:
   - "/rule/04d9079e-3905-4b70-ad37-6bdf11304965"
-
+ruleid: 04d9079e-3905-4b70-ad37-6bdf11304965
 
 tags:
   - attack.g0035

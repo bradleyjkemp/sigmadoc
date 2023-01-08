@@ -2,7 +2,7 @@
 title: "Relevant ClamAV Message"
 aliases:
   - "/rule/36aa86ca-fd9d-4456-814e-d3b1b8e1e0bb"
-
+ruleid: 36aa86ca-fd9d-4456-814e-d3b1b8e1e0bb
 
 tags:
   - attack.resource_development

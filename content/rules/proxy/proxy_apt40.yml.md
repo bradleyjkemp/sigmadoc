@@ -2,7 +2,7 @@
 title: "APT40 Dropbox Tool User Agent"
 aliases:
   - "/rule/5ba715b6-71b7-44fd-8245-f66893e81b3d"
-
+ruleid: 5ba715b6-71b7-44fd-8245-f66893e81b3d
 
 tags:
   - attack.command_and_control

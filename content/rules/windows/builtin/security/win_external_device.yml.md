@@ -2,7 +2,7 @@
 title: "External Disk Drive Or USB Storage Device"
 aliases:
   - "/rule/f69a87ea-955e-4fb4-adb2-bb9fd6685632"
-
+ruleid: f69a87ea-955e-4fb4-adb2-bb9fd6685632
 
 tags:
   - attack.t1091

@@ -2,7 +2,7 @@
 title: "Powershell File and Directory Discovery"
 aliases:
   - "/rule/d23f2ba5-9da0-4463-8908-8ee47f614bb9"
-
+ruleid: d23f2ba5-9da0-4463-8908-8ee47f614bb9
 
 tags:
   - attack.discovery

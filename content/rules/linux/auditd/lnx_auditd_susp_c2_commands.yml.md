@@ -2,7 +2,7 @@
 title: "Suspicious C2 Activities"
 aliases:
   - "/rule/f7158a64-6204-4d6d-868a-6e6378b467e0"
-
+ruleid: f7158a64-6204-4d6d-868a-6e6378b467e0
 
 tags:
   - attack.command_and_control

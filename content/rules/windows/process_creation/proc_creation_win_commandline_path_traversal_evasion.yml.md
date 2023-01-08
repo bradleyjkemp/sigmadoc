@@ -2,7 +2,7 @@
 title: "Command Line Path Traversal Evasion"
 aliases:
   - "/rule/1327381e-6ab0-4f38-b583-4c1b8346a56b"
-
+ruleid: 1327381e-6ab0-4f38-b583-4c1b8346a56b
 
 tags:
   - attack.defense_evasion

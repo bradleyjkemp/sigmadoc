@@ -2,7 +2,7 @@
 title: "Suspicious Eventlog Clear or Configuration Using Wevtutil"
 aliases:
   - "/rule/cc36992a-4671-4f21-a91d-6c2b72a2edf5"
-
+ruleid: cc36992a-4671-4f21-a91d-6c2b72a2edf5
 
 tags:
   - attack.defense_evasion

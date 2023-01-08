@@ -2,7 +2,7 @@
 title: "Grafana Path Traversal Exploitation CVE-2021-43798"
 aliases:
   - "/rule/7b72b328-5708-414f-9a2a-6a6867c26e16"
-
+ruleid: 7b72b328-5708-414f-9a2a-6a6867c26e16
 
 tags:
   - attack.initial_access

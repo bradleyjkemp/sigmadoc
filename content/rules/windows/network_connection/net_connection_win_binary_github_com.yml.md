@@ -2,7 +2,7 @@
 title: "Microsoft Binary Github Communication"
 aliases:
   - "/rule/635dbb88-67b3-4b41-9ea5-a3af2dd88153"
-
+ruleid: 635dbb88-67b3-4b41-9ea5-a3af2dd88153
 
 tags:
   - attack.lateral_movement

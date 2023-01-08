@@ -2,7 +2,7 @@
 title: "Shell Open Registry Keys Manipulation"
 aliases:
   - "/rule/152f3630-77c1-4284-bcc0-4cc68ab2f6e7"
-
+ruleid: 152f3630-77c1-4284-bcc0-4cc68ab2f6e7
 
 tags:
   - attack.defense_evasion

@@ -2,7 +2,7 @@
 title: "SilentProcessExit Monitor Registrytion for LSASS"
 aliases:
   - "/rule/55e29995-75e7-451a-bef0-6225e2f13597"
-
+ruleid: 55e29995-75e7-451a-bef0-6225e2f13597
 
 tags:
   - attack.credential_access

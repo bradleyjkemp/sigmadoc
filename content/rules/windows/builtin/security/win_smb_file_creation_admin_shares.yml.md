@@ -2,7 +2,7 @@
 title: "SMB Create Remote File Admin Share"
 aliases:
   - "/rule/b210394c-ba12-4f89-9117-44a2464b9511"
-
+ruleid: b210394c-ba12-4f89-9117-44a2464b9511
 
 tags:
   - attack.lateral_movement

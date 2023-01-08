@@ -2,7 +2,7 @@
 title: "Turla PNG Dropper Service"
 aliases:
   - "/rule/1228f8e2-7e79-4dea-b0ad-c91f1d5016c1"
-
+ruleid: 1228f8e2-7e79-4dea-b0ad-c91f1d5016c1
 
 tags:
   - attack.persistence

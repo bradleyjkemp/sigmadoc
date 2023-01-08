@@ -2,7 +2,7 @@
 title: "Execute From Alternate Data Streams"
 aliases:
   - "/rule/7f43c430-5001-4f8b-aaa9-c3b88f18fa5c"
-
+ruleid: 7f43c430-5001-4f8b-aaa9-c3b88f18fa5c
 
 tags:
   - attack.defense_evasion

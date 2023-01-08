@@ -2,7 +2,7 @@
 title: "Non-privileged Usage of Reg or Powershell"
 aliases:
   - "/rule/8f02c935-effe-45b3-8fc9-ef8696a9e41d"
-
+ruleid: 8f02c935-effe-45b3-8fc9-ef8696a9e41d
 
 tags:
   - attack.defense_evasion

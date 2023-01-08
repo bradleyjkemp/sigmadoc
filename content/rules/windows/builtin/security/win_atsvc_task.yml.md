@@ -2,7 +2,7 @@
 title: "Remote Task Creation via ATSVC Named Pipe"
 aliases:
   - "/rule/f6de6525-4509-495a-8a82-1f8b0ed73a00"
-
+ruleid: f6de6525-4509-495a-8a82-1f8b0ed73a00
 
 tags:
   - attack.lateral_movement

@@ -2,7 +2,7 @@
 title: "Disabled Users Failing To Authenticate From Source Using Kerberos"
 aliases:
   - "/rule/4b6fe998-b69c-46d8-901b-13677c9fb663"
-
+ruleid: 4b6fe998-b69c-46d8-901b-13677c9fb663
 
 tags:
   - attack.t1110.003

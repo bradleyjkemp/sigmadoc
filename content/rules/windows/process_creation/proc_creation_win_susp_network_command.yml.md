@@ -2,7 +2,7 @@
 title: "Suspicious Network Command"
 aliases:
   - "/rule/a29c1813-ab1f-4dde-b489-330b952e91ae"
-
+ruleid: a29c1813-ab1f-4dde-b489-330b952e91ae
 
 tags:
   - attack.discovery

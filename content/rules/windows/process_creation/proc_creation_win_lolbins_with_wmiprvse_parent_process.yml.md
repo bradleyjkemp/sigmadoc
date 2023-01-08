@@ -2,7 +2,7 @@
 title: "Lolbins Process Creation with WmiPrvse"
 aliases:
   - "/rule/8a582fe2-0882-4b89-a82a-da6b2dc32937"
-
+ruleid: 8a582fe2-0882-4b89-a82a-da6b2dc32937
 
 tags:
   - attack.t1204.002

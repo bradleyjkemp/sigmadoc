@@ -2,7 +2,7 @@
 title: "Registry-Free Process Scope COR_PROFILER"
 aliases:
   - "/rule/23590215-4702-4a70-8805-8dc9e58314a2"
-
+ruleid: 23590215-4702-4a70-8805-8dc9e58314a2
 
 tags:
   - attack.persistence

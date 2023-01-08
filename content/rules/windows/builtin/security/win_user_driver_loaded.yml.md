@@ -2,7 +2,7 @@
 title: "Suspicious Driver Loaded By User"
 aliases:
   - "/rule/f63508a0-c809-4435-b3be-ed819394d612"
-
+ruleid: f63508a0-c809-4435-b3be-ed819394d612
 
 tags:
   - attack.defense_evasion

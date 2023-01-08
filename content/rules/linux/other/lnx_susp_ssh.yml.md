@@ -2,7 +2,7 @@
 title: "Suspicious OpenSSH Daemon Error"
 aliases:
   - "/rule/e76b413a-83d0-4b94-8e4c-85db4a5b8bdc"
-
+ruleid: e76b413a-83d0-4b94-8e4c-85db4a5b8bdc
 
 tags:
   - attack.initial_access

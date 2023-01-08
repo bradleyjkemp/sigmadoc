@@ -2,7 +2,7 @@
 title: "SMB Spoolss Name Piped Usage"
 aliases:
   - "/rule/bae2865c-5565-470d-b505-9496c87d0c30"
-
+ruleid: bae2865c-5565-470d-b505-9496c87d0c30
 
 tags:
   - attack.lateral_movement

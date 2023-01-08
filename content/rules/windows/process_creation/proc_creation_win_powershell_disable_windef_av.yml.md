@@ -2,7 +2,7 @@
 title: "Powershell Used To Disable Windows Defender AV Security Monitoring"
 aliases:
   - "/rule/a7ee1722-c3c5-aeff-3212-c777e4733217"
-
+ruleid: a7ee1722-c3c5-aeff-3212-c777e4733217
 
 tags:
   - attack.defense_evasion

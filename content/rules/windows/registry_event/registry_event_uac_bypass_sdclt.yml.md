@@ -2,7 +2,7 @@
 title: "UAC Bypass via Sdclt"
 aliases:
   - "/rule/5b872a46-3b90-45c1-8419-f675db8053aa"
-
+ruleid: 5b872a46-3b90-45c1-8419-f675db8053aa
 
 tags:
   - attack.defense_evasion

@@ -2,7 +2,7 @@
 title: "Possible Applocker Bypass"
 aliases:
   - "/rule/82a19e3a-2bfe-4a91-8c0d-5d4c98fbb719"
-
+ruleid: 82a19e3a-2bfe-4a91-8c0d-5d4c98fbb719
 
 tags:
   - attack.defense_evasion

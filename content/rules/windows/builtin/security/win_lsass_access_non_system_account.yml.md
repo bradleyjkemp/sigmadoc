@@ -2,7 +2,7 @@
 title: "LSASS Access from Non System Account"
 aliases:
   - "/rule/962fe167-e48d-4fd6-9974-11e5b9a5d6d1"
-
+ruleid: 962fe167-e48d-4fd6-9974-11e5b9a5d6d1
 
 tags:
   - attack.credential_access

@@ -2,7 +2,7 @@
 title: "Recon Activity with NLTEST"
 aliases:
   - "/rule/5cc90652-4cbd-4241-aa3b-4b462fa5a248"
-
+ruleid: 5cc90652-4cbd-4241-aa3b-4b462fa5a248
 
 tags:
   - attack.discovery

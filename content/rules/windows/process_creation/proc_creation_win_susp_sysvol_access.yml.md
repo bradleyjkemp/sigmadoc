@@ -2,7 +2,7 @@
 title: "Suspicious SYSVOL Domain Group Policy Access"
 aliases:
   - "/rule/05f3c945-dcc8-4393-9f3d-af65077a8f86"
-
+ruleid: 05f3c945-dcc8-4393-9f3d-af65077a8f86
 
 tags:
   - attack.credential_access

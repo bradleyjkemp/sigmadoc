@@ -2,7 +2,7 @@
 title: "Explorer NOUACCHECK Flag"
 aliases:
   - "/rule/534f2ef7-e8a2-4433-816d-c91bccde289b"
-
+ruleid: 534f2ef7-e8a2-4433-816d-c91bccde289b
 
 tags:
   - attack.defense_evasion

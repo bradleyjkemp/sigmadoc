@@ -2,7 +2,7 @@
 title: "Suspicious UltraVNC Execution"
 aliases:
   - "/rule/871b9555-69ca-4993-99d3-35a59f9f3599"
-
+ruleid: 871b9555-69ca-4993-99d3-35a59f9f3599
 
 tags:
   - attack.lateral_movement

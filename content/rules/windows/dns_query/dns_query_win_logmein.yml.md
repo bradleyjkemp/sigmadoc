@@ -2,7 +2,7 @@
 title: "Query to LogMeIn Remote Access Software Domain"
 aliases:
   - "/rule/ed785237-70fa-46f3-83b6-d264d1dc6eb4"
-
+ruleid: ed785237-70fa-46f3-83b6-d264d1dc6eb4
 
 tags:
   - attack.command_and_control

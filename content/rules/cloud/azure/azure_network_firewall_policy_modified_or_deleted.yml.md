@@ -2,7 +2,7 @@
 title: "Azure Network Firewall Policy Modified or Deleted"
 aliases:
   - "/rule/83c17918-746e-4bd9-920b-8e098bf88c23"
-
+ruleid: 83c17918-746e-4bd9-920b-8e098bf88c23
 
 tags:
   - attack.impact

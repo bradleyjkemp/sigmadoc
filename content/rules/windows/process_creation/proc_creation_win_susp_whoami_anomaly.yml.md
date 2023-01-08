@@ -2,7 +2,7 @@
 title: "Whoami Execution Anomaly"
 aliases:
   - "/rule/8de1cbe8-d6f5-496d-8237-5f44a721c7a0"
-
+ruleid: 8de1cbe8-d6f5-496d-8237-5f44a721c7a0
 
 tags:
   - attack.discovery

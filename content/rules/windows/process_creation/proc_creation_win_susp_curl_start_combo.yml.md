@@ -2,7 +2,7 @@
 title: "Curl Start Combination"
 aliases:
   - "/rule/21dd6d38-2b18-4453-9404-a0fe4a0cc288"
-
+ruleid: 21dd6d38-2b18-4453-9404-a0fe4a0cc288
 
 tags:
   - attack.execution

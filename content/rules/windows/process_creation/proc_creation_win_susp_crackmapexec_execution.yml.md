@@ -2,7 +2,7 @@
 title: "CrackMapExec Command Execution"
 aliases:
   - "/rule/058f4380-962d-40a5-afce-50207d36d7e2"
-
+ruleid: 058f4380-962d-40a5-afce-50207d36d7e2
 
 tags:
   - attack.execution

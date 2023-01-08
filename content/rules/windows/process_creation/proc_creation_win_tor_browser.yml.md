@@ -2,7 +2,7 @@
 title: "Tor Client or Tor Browser Use"
 aliases:
   - "/rule/62f7c9bf-9135-49b2-8aeb-1e54a6ecc13c"
-
+ruleid: 62f7c9bf-9135-49b2-8aeb-1e54a6ecc13c
 
 tags:
   - attack.command_and_control

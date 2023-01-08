@@ -2,7 +2,7 @@
 title: "ScreenConnect Backstage Mode Anomaly"
 aliases:
   - "/rule/7b582f1a-b318-4c6a-bf4e-66fe49bf55a5"
-
+ruleid: 7b582f1a-b318-4c6a-bf4e-66fe49bf55a5
 
 tags:
   - attack.command_and_control

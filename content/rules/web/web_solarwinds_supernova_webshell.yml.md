@@ -2,7 +2,7 @@
 title: "Solarwinds SUPERNOVA Webshell Access"
 aliases:
   - "/rule/a2cee20b-eacc-459f-861d-c02e5d12f1db"
-
+ruleid: a2cee20b-eacc-459f-861d-c02e5d12f1db
 
 tags:
   - attack.persistence

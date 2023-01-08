@@ -2,7 +2,7 @@
 title: "Cleartext Protocol Usage"
 aliases:
   - "/rule/d7fb8f0e-bd5f-45c2-b467-19571c490d7e"
-
+ruleid: d7fb8f0e-bd5f-45c2-b467-19571c490d7e
 
 
 

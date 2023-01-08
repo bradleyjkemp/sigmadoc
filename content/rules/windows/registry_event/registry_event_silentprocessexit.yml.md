@@ -2,7 +2,7 @@
 title: "SilentProcessExit Monitor Registrytion"
 aliases:
   - "/rule/c81fe886-cac0-4913-a511-2822d72ff505"
-
+ruleid: c81fe886-cac0-4913-a511-2822d72ff505
 
 tags:
   - attack.persistence

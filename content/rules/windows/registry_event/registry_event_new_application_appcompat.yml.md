@@ -2,7 +2,7 @@
 title: "New Application in AppCompat"
 aliases:
   - "/rule/60936b49-fca0-4f32-993d-7415edcf9a5d"
-
+ruleid: 60936b49-fca0-4f32-993d-7415edcf9a5d
 
 tags:
   - attack.execution

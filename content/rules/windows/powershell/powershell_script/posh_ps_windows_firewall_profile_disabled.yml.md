@@ -2,7 +2,7 @@
 title: "Windows Firewall Profile Disabled"
 aliases:
   - "/rule/488b44e7-3781-4a71-888d-c95abfacf44d"
-
+ruleid: 488b44e7-3781-4a71-888d-c95abfacf44d
 
 tags:
   - attack.defense_evasion

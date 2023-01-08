@@ -2,7 +2,7 @@
 title: "Suspicious Plink Remote Forwarding"
 aliases:
   - "/rule/48a61b29-389f-4032-b317-b30de6b95314"
-
+ruleid: 48a61b29-389f-4032-b317-b30de6b95314
 
 tags:
   - attack.command_and_control

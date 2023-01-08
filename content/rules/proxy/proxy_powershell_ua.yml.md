@@ -2,7 +2,7 @@
 title: "Windows PowerShell User Agent"
 aliases:
   - "/rule/c8557060-9221-4448-8794-96320e6f3e74"
-
+ruleid: c8557060-9221-4448-8794-96320e6f3e74
 
 tags:
   - attack.defense_evasion

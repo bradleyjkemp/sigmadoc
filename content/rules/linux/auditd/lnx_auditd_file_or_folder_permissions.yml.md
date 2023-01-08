@@ -2,7 +2,7 @@
 title: "File or Folder Permissions Change"
 aliases:
   - "/rule/74c01ace-0152-4094-8ae2-6fd776dd43e5"
-
+ruleid: 74c01ace-0152-4094-8ae2-6fd776dd43e5
 
 tags:
   - attack.defense_evasion

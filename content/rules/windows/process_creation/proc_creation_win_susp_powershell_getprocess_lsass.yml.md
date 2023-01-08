@@ -2,7 +2,7 @@
 title: "PowerShell Get-Process LSASS"
 aliases:
   - "/rule/b2815d0d-7481-4bf0-9b6c-a4c48a94b349"
-
+ruleid: b2815d0d-7481-4bf0-9b6c-a4c48a94b349
 
 tags:
   - attack.credential_access

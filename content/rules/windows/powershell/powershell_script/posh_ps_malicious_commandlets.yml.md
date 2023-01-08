@@ -2,7 +2,7 @@
 title: "Malicious PowerShell Commandlets"
 aliases:
   - "/rule/89819aa4-bbd6-46bc-88ec-c7f7fe30efa6"
-
+ruleid: 89819aa4-bbd6-46bc-88ec-c7f7fe30efa6
 
 tags:
   - attack.execution

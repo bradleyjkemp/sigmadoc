@@ -2,7 +2,7 @@
 title: "PsExec Service Start"
 aliases:
   - "/rule/3ede524d-21cc-472d-a3ce-d21b568d8db7"
-
+ruleid: 3ede524d-21cc-472d-a3ce-d21b568d8db7
 
 tags:
   - attack.execution

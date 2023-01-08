@@ -2,7 +2,7 @@
 title: "DHCP Server Loaded the CallOut DLL"
 aliases:
   - "/rule/13fc89a9-971e-4ca6-b9dc-aa53a445bf40"
-
+ruleid: 13fc89a9-971e-4ca6-b9dc-aa53a445bf40
 
 tags:
   - attack.defense_evasion

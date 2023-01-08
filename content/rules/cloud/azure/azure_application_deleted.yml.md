@@ -2,7 +2,7 @@
 title: "Azure Application Deleted"
 aliases:
   - "/rule/410d2a41-1e6d-452f-85e5-abdd8257a823"
-
+ruleid: 410d2a41-1e6d-452f-85e5-abdd8257a823
 
 tags:
   - attack.defense_evasion

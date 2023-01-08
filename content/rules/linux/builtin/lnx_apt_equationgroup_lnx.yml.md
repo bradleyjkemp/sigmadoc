@@ -2,7 +2,7 @@
 title: "Equation Group Indicators"
 aliases:
   - "/rule/41e5c73d-9983-4b69-bd03-e13b67e9623c"
-
+ruleid: 41e5c73d-9983-4b69-bd03-e13b67e9623c
 
 tags:
   - attack.execution

@@ -2,7 +2,7 @@
 title: "Procdump Usage"
 aliases:
   - "/rule/2e65275c-8288-4ab4-aeb7-6274f58b6b20"
-
+ruleid: 2e65275c-8288-4ab4-aeb7-6274f58b6b20
 
 tags:
   - attack.defense_evasion

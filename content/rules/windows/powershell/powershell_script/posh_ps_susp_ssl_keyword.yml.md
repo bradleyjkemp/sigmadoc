@@ -2,7 +2,7 @@
 title: "Suspicious SSL Connection"
 aliases:
   - "/rule/195626f3-5f1b-4403-93b7-e6cfd4d6a078"
-
+ruleid: 195626f3-5f1b-4403-93b7-e6cfd4d6a078
 
 tags:
   - attack.command_and_control

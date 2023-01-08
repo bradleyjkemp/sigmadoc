@@ -2,7 +2,7 @@
 title: "Abuse of Service Permissions to Hide Services in Tools"
 aliases:
   - "/rule/a537cfc3-4297-4789-92b5-345bfd845ad0"
-
+ruleid: a537cfc3-4297-4789-92b5-345bfd845ad0
 
 tags:
   - attack.persistence

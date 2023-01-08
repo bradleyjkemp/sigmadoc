@@ -2,7 +2,7 @@
 title: "Windows Defender Malware Detection History Deletion"
 aliases:
   - "/rule/2afe6582-e149-11ea-87d0-0242ac130003"
-
+ruleid: 2afe6582-e149-11ea-87d0-0242ac130003
 
 tags:
   - attack.defense_evasion

@@ -2,7 +2,7 @@
 title: "Remote Schedule Task Lateral Movement via ITaskSchedulerService"
 aliases:
   - "/rule/ace3ff54-e7fd-46bd-8ea0-74b49a0aca1d"
-
+ruleid: ace3ff54-e7fd-46bd-8ea0-74b49a0aca1d
 
 tags:
   - attack.lateral_movement

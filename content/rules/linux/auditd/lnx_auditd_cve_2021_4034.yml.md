@@ -2,7 +2,7 @@
 title: "CVE-2021-4034 Exploitation Attempt"
 aliases:
   - "/rule/40a016ab-4f48-4eee-adde-bbf612695c53"
-
+ruleid: 40a016ab-4f48-4eee-adde-bbf612695c53
 
 tags:
   - attack.privilege_escalation

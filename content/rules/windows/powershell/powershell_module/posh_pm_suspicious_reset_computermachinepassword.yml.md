@@ -2,7 +2,7 @@
 title: "Suspicious Computer Machine Password by PowerShell"
 aliases:
   - "/rule/e3818659-5016-4811-a73c-dde4679169d2"
-
+ruleid: e3818659-5016-4811-a73c-dde4679169d2
 
 tags:
   - attack.initial_access

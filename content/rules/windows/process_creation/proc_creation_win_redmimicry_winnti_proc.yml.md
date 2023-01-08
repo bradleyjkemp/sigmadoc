@@ -2,7 +2,7 @@
 title: "RedMimicry Winnti Playbook Execute"
 aliases:
   - "/rule/95022b85-ff2a-49fa-939a-d7b8f56eeb9b"
-
+ruleid: 95022b85-ff2a-49fa-939a-d7b8f56eeb9b
 
 tags:
   - attack.execution

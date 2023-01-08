@@ -2,7 +2,7 @@
 title: "WMI Persistence - Script Event Consumer"
 aliases:
   - "/rule/ec1d5e28-8f3b-4188-a6f8-6e8df81dc28e"
-
+ruleid: ec1d5e28-8f3b-4188-a6f8-6e8df81dc28e
 
 tags:
   - attack.persistence

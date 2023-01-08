@@ -2,7 +2,7 @@
 title: "Empire UserAgent URI Combo"
 aliases:
   - "/rule/b923f7d6-ac89-4a50-a71a-89fb846b4aa8"
-
+ruleid: b923f7d6-ac89-4a50-a71a-89fb846b4aa8
 
 tags:
   - attack.defense_evasion

@@ -2,7 +2,7 @@
 title: "Netcat The Powershell Version"
 aliases:
   - "/rule/bf7286e7-c0be-460b-a7e8-5b2e07ecc2f2"
-
+ruleid: bf7286e7-c0be-460b-a7e8-5b2e07ecc2f2
 
 tags:
   - attack.command_and_control

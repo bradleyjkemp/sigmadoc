@@ -2,7 +2,7 @@
 title: "Suspicious Start-Process PassThru"
 aliases:
   - "/rule/0718cd72-f316-4aa2-988f-838ea8533277"
-
+ruleid: 0718cd72-f316-4aa2-988f-838ea8533277
 
 tags:
   - attack.defense_evasion

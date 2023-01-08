@@ -2,7 +2,7 @@
 title: "WMI Spawning Windows PowerShell"
 aliases:
   - "/rule/692f0bec-83ba-4d04-af7e-e884a96059b6"
-
+ruleid: 692f0bec-83ba-4d04-af7e-e884a96059b6
 
 tags:
   - attack.execution

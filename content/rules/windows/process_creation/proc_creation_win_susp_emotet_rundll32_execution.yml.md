@@ -2,7 +2,7 @@
 title: "Emotet RunDLL32 Process Creation"
 aliases:
   - "/rule/54e57ce3-0672-46eb-a402-2c0948d5e3e9"
-
+ruleid: 54e57ce3-0672-46eb-a402-2c0948d5e3e9
 
 tags:
   - attack.defense_evasion

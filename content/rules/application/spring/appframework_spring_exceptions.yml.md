@@ -2,7 +2,7 @@
 title: "Spring Framework Exceptions"
 aliases:
   - "/rule/ae48ab93-45f7-4051-9dfe-5d30a3f78e33"
-
+ruleid: ae48ab93-45f7-4051-9dfe-5d30a3f78e33
 
 tags:
   - attack.initial_access

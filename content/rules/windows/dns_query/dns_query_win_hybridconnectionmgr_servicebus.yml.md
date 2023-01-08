@@ -2,7 +2,7 @@
 title: "DNS HybridConnectionManager Service Bus"
 aliases:
   - "/rule/7bd3902d-8b8b-4dd4-838a-c6862d40150d"
-
+ruleid: 7bd3902d-8b8b-4dd4-838a-c6862d40150d
 
 tags:
   - attack.persistence

@@ -2,7 +2,7 @@
 title: "Suspicious Execution of Shutdown"
 aliases:
   - "/rule/34ebb878-1b15-4895-b352-ca2eeb99b274"
-
+ruleid: 34ebb878-1b15-4895-b352-ca2eeb99b274
 
 tags:
   - attack.impact

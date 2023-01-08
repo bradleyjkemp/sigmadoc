@@ -2,7 +2,7 @@
 title: "Enable Microsoft Dynamic Data Exchange"
 aliases:
   - "/rule/63647769-326d-4dde-a419-b925cc0caf42"
-
+ruleid: 63647769-326d-4dde-a419-b925cc0caf42
 
 tags:
   - attack.execution

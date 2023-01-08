@@ -2,7 +2,7 @@
 title: "PowerShell Base64 Encoded Shellcode"
 aliases:
   - "/rule/2d117e49-e626-4c7c-bd1f-c3c0147774c8"
-
+ruleid: 2d117e49-e626-4c7c-bd1f-c3c0147774c8
 
 tags:
   - attack.defense_evasion

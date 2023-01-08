@@ -2,7 +2,7 @@
 title: "MsiExec Web Install"
 aliases:
   - "/rule/f7b5f842-a6af-4da5-9e95-e32478f3cd2f"
-
+ruleid: f7b5f842-a6af-4da5-9e95-e32478f3cd2f
 
 tags:
   - attack.defense_evasion

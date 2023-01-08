@@ -2,7 +2,7 @@
 title: "Bypass UAC Using Event Viewer"
 aliases:
   - "/rule/674202d0-b22a-4af4-ae5f-2eda1f3da1af"
-
+ruleid: 674202d0-b22a-4af4-ae5f-2eda1f3da1af
 
 tags:
   - attack.persistence

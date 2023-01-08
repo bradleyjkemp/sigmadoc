@@ -2,7 +2,7 @@
 title: "AWS EKS Cluster Created or Deleted"
 aliases:
   - "/rule/33d50d03-20ec-4b74-a74e-1e65a38af1c0"
-
+ruleid: 33d50d03-20ec-4b74-a74e-1e65a38af1c0
 
 tags:
   - attack.impact

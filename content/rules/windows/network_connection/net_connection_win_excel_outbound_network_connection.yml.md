@@ -2,7 +2,7 @@
 title: "Excel Network Connections"
 aliases:
   - "/rule/75e33ce3-ae32-4dcc-9aa8-a2a3029d6f84"
-
+ruleid: 75e33ce3-ae32-4dcc-9aa8-a2a3029d6f84
 
 tags:
   - attack.execution

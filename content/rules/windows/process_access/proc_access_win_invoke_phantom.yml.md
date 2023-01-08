@@ -2,7 +2,7 @@
 title: "Suspect Svchost Memory Asccess"
 aliases:
   - "/rule/166e9c50-8cd9-44af-815d-d1f0c0e90dde"
-
+ruleid: 166e9c50-8cd9-44af-815d-d1f0c0e90dde
 
 tags:
   - attack.defense_evasion

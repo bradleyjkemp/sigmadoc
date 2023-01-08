@@ -2,7 +2,7 @@
 title: "PowerShell as a Service in Registry"
 aliases:
   - "/rule/4a5f5a5e-ac01-474b-9b4e-d61298c9df1d"
-
+ruleid: 4a5f5a5e-ac01-474b-9b4e-d61298c9df1d
 
 tags:
   - attack.execution

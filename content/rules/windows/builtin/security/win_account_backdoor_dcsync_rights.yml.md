@@ -2,7 +2,7 @@
 title: "Powerview Add-DomainObjectAcl DCSync AD Extend Right"
 aliases:
   - "/rule/2c99737c-585d-4431-b61a-c911d86ff32f"
-
+ruleid: 2c99737c-585d-4431-b61a-c911d86ff32f
 
 tags:
   - attack.persistence

@@ -2,7 +2,7 @@
 title: "COMPlus_ETWEnabled Command Line Arguments"
 aliases:
   - "/rule/41421f44-58f9-455d-838a-c398859841d4"
-
+ruleid: 41421f44-58f9-455d-838a-c398859841d4
 
 tags:
   - attack.defense_evasion

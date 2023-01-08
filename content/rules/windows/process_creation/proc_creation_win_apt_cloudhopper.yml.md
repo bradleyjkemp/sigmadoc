@@ -2,7 +2,7 @@
 title: "WMIExec VBS Script"
 aliases:
   - "/rule/966e4016-627f-44f7-8341-f394905c361f"
-
+ruleid: 966e4016-627f-44f7-8341-f394905c361f
 
 tags:
   - attack.execution

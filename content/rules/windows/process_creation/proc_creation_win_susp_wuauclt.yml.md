@@ -2,7 +2,7 @@
 title: "Windows Update Client LOLBIN"
 aliases:
   - "/rule/d7825193-b70a-48a4-b992-8b5b3015cc11"
-
+ruleid: d7825193-b70a-48a4-b992-8b5b3015cc11
 
 tags:
   - attack.command_and_control

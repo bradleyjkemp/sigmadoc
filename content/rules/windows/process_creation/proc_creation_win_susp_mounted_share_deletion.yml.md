@@ -2,7 +2,7 @@
 title: "Mounted Share Deleted"
 aliases:
   - "/rule/cb7c4a03-2871-43c0-9bbb-18bbdb079896"
-
+ruleid: cb7c4a03-2871-43c0-9bbb-18bbdb079896
 
 tags:
   - attack.defense_evasion

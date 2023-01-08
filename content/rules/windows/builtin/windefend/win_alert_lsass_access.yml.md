@@ -2,7 +2,7 @@
 title: "LSASS Access Detected via Attack Surface Reduction"
 aliases:
   - "/rule/a0a278fe-2c0e-4de2-ac3c-c68b08a9ba98"
-
+ruleid: a0a278fe-2c0e-4de2-ac3c-c68b08a9ba98
 
 tags:
   - attack.credential_access

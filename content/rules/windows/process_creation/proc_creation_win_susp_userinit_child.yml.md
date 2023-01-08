@@ -2,7 +2,7 @@
 title: "Suspicious Userinit Child Process"
 aliases:
   - "/rule/b655a06a-31c0-477a-95c2-3726b83d649d"
-
+ruleid: b655a06a-31c0-477a-95c2-3726b83d649d
 
 tags:
   - attack.defense_evasion

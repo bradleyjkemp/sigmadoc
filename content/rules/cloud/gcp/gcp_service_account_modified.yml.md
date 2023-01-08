@@ -2,7 +2,7 @@
 title: "Google Cloud Service Account Modified"
 aliases:
   - "/rule/6b67c12e-5e40-47c6-b3b0-1e6b571184cc"
-
+ruleid: 6b67c12e-5e40-47c6-b3b0-1e6b571184cc
 
 tags:
   - attack.impact

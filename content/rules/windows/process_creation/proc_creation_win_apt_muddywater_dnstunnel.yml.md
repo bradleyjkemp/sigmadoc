@@ -2,7 +2,7 @@
 title: "DNS Tunnel Technique from MuddyWater"
 aliases:
   - "/rule/36222790-0d43-4fe8-86e4-674b27809543"
-
+ruleid: 36222790-0d43-4fe8-86e4-674b27809543
 
 tags:
   - attack.command_and_control

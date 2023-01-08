@@ -2,7 +2,7 @@
 title: "Xwizard DLL Sideloading"
 aliases:
   - "/rule/193d5ccd-6f59-40c6-b5b0-8e32d5ddd3d1"
-
+ruleid: 193d5ccd-6f59-40c6-b5b0-8e32d5ddd3d1
 
 tags:
   - attack.defense_evasion

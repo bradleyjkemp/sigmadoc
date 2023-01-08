@@ -2,7 +2,7 @@
 title: "Azure Firewall Rule Configuration Modified or Deleted"
 aliases:
   - "/rule/2a7d64cf-81fa-4daf-ab1b-ab80b789c067"
-
+ruleid: 2a7d64cf-81fa-4daf-ab1b-ab80b789c067
 
 tags:
   - attack.impact

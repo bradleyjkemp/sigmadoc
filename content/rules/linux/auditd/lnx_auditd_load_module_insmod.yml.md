@@ -2,7 +2,7 @@
 title: "Loading of Kernel Module via Insmod"
 aliases:
   - "/rule/106d7cbd-80ff-4985-b682-a7043e5acb72"
-
+ruleid: 106d7cbd-80ff-4985-b682-a7043e5acb72
 
 tags:
   - attack.persistence

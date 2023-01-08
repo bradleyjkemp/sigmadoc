@@ -2,7 +2,7 @@
 title: "Suspicious Netsh Discovery Command"
 aliases:
   - "/rule/0e4164da-94bc-450d-a7be-a4b176179f1f"
-
+ruleid: 0e4164da-94bc-450d-a7be-a4b176179f1f
 
 tags:
   - attack.discovery

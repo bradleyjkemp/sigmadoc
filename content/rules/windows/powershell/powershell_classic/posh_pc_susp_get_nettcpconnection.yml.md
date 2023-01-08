@@ -2,7 +2,7 @@
 title: "Use Get-NetTCPConnection"
 aliases:
   - "/rule/b366adb4-d63d-422d-8a2c-186463b5ded0"
-
+ruleid: b366adb4-d63d-422d-8a2c-186463b5ded0
 
 tags:
   - attack.discovery

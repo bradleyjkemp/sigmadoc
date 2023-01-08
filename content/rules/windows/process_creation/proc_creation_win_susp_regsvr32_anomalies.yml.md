@@ -2,7 +2,7 @@
 title: "Regsvr32 Anomaly"
 aliases:
   - "/rule/8e2b24c9-4add-46a0-b4bb-0057b4e6187d"
-
+ruleid: 8e2b24c9-4add-46a0-b4bb-0057b4e6187d
 
 tags:
   - attack.defense_evasion

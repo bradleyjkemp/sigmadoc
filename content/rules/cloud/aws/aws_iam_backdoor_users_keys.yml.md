@@ -2,7 +2,7 @@
 title: "AWS IAM Backdoor Users Keys"
 aliases:
   - "/rule/0a5177f4-6ca9-44c2-aacf-d3f3d8b6e4d2"
-
+ruleid: 0a5177f4-6ca9-44c2-aacf-d3f3d8b6e4d2
 
 tags:
   - attack.persistence

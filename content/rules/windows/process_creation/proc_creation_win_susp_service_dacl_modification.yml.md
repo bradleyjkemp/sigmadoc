@@ -2,7 +2,7 @@
 title: "Suspicious Service DACL Modification"
 aliases:
   - "/rule/99cf1e02-00fb-4c0d-8375-563f978dfd37"
-
+ruleid: 99cf1e02-00fb-4c0d-8375-563f978dfd37
 
 tags:
   - attack.persistence

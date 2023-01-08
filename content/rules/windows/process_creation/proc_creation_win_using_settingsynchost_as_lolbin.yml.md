@@ -2,7 +2,7 @@
 title: "Using SettingSyncHost.exe as LOLBin"
 aliases:
   - "/rule/b2ddd389-f676-4ac4-845a-e00781a48e5f"
-
+ruleid: b2ddd389-f676-4ac4-845a-e00781a48e5f
 
 tags:
   - attack.execution

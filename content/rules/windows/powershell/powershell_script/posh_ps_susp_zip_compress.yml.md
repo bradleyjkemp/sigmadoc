@@ -2,7 +2,7 @@
 title: "Zip A Folder With PowerShell For Staging In Temp"
 aliases:
   - "/rule/b7a3c9a3-09ea-4934-8864-6a32cacd98d9"
-
+ruleid: b7a3c9a3-09ea-4934-8864-6a32cacd98d9
 
 tags:
   - attack.collection

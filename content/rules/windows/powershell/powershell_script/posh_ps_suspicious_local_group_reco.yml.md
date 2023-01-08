@@ -2,7 +2,7 @@
 title: "Suspicious Get Local Groups Information"
 aliases:
   - "/rule/fa6a5a45-3ee2-4529-aa14-ee5edc9e29cb"
-
+ruleid: fa6a5a45-3ee2-4529-aa14-ee5edc9e29cb
 
 tags:
   - attack.discovery

@@ -2,7 +2,7 @@
 title: "Protected Storage Service Access"
 aliases:
   - "/rule/45545954-4016-43c6-855e-eae8f1c369dc"
-
+ruleid: 45545954-4016-43c6-855e-eae8f1c369dc
 
 tags:
   - attack.lateral_movement

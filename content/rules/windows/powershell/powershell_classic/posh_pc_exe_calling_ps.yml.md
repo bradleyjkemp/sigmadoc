@@ -2,7 +2,7 @@
 title: "PowerShell Called from an Executable Version Mismatch"
 aliases:
   - "/rule/c70e019b-1479-4b65-b0cc-cd0c6093a599"
-
+ruleid: c70e019b-1479-4b65-b0cc-cd0c6093a599
 
 tags:
   - attack.defense_evasion

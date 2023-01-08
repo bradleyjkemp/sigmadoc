@@ -2,7 +2,7 @@
 title: "Windows Shell Spawning Suspicious Program"
 aliases:
   - "/rule/3a6586ad-127a-4d3b-a677-1e6eacdf8fde"
-
+ruleid: 3a6586ad-127a-4d3b-a677-1e6eacdf8fde
 
 tags:
   - attack.execution

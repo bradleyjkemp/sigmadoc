@@ -2,7 +2,7 @@
 title: "Failed Logins with Different Accounts from Single Source System"
 aliases:
   - "/rule/e98374a6-e2d9-4076-9b5c-11bdb2569995"
-
+ruleid: e98374a6-e2d9-4076-9b5c-11bdb2569995
 
 tags:
   - attack.persistence

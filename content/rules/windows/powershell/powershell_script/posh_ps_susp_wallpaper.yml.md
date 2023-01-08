@@ -2,7 +2,7 @@
 title: "Replace Desktop Wallpaper by Powershell"
 aliases:
   - "/rule/c5ac6a1e-9407-45f5-a0ce-ca9a0806a287"
-
+ruleid: c5ac6a1e-9407-45f5-a0ce-ca9a0806a287
 
 tags:
   - attack.impact

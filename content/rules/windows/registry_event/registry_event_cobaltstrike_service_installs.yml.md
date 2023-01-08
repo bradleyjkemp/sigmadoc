@@ -2,7 +2,7 @@
 title: "CobaltStrike Service Installations in Registry"
 aliases:
   - "/rule/61a7697c-cb79-42a8-a2ff-5f0cdfae0130"
-
+ruleid: 61a7697c-cb79-42a8-a2ff-5f0cdfae0130
 
 tags:
   - attack.execution

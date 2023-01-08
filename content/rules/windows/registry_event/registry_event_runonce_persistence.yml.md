@@ -2,7 +2,7 @@
 title: "Run Once Task Configuration in Registry"
 aliases:
   - "/rule/c74d7efc-8826-45d9-b8bb-f04fac9e4eff"
-
+ruleid: c74d7efc-8826-45d9-b8bb-f04fac9e4eff
 
 tags:
   - attack.defense_evasion

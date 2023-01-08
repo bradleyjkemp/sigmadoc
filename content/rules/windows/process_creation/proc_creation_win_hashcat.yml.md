@@ -2,7 +2,7 @@
 title: "Password Cracking with Hashcat"
 aliases:
   - "/rule/39b31e81-5f5f-4898-9c0e-2160cfc0f9bf"
-
+ruleid: 39b31e81-5f5f-4898-9c0e-2160cfc0f9bf
 
 tags:
   - attack.credential_access

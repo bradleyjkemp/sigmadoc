@@ -2,7 +2,7 @@
 title: "Suspicious IO.FileStream"
 aliases:
   - "/rule/70ad982f-67c8-40e0-a955-b920c2fa05cb"
-
+ruleid: 70ad982f-67c8-40e0-a955-b920c2fa05cb
 
 tags:
   - attack.defense_evasion

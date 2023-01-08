@@ -2,7 +2,7 @@
 title: "Azure AD Health Monitoring Agent Registry Keys Access"
 aliases:
   - "/rule/ff151c33-45fa-475d-af4f-c2f93571f4fe"
-
+ruleid: ff151c33-45fa-475d-af4f-c2f93571f4fe
 
 tags:
   - attack.discovery

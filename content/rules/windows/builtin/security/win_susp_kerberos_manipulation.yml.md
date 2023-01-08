@@ -2,7 +2,7 @@
 title: "Kerberos Manipulation"
 aliases:
   - "/rule/f7644214-0eb0-4ace-9455-331ec4c09253"
-
+ruleid: f7644214-0eb0-4ace-9455-331ec4c09253
 
 tags:
   - attack.credential_access

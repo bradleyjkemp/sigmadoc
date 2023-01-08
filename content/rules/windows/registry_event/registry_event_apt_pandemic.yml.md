@@ -2,7 +2,7 @@
 title: "Pandemic Registry Key"
 aliases:
   - "/rule/47e0852a-cf81-4494-a8e6-31864f8c86ed"
-
+ruleid: 47e0852a-cf81-4494-a8e6-31864f8c86ed
 
 tags:
   - attack.lateral_movement

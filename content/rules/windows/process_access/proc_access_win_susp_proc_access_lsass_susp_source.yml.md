@@ -2,7 +2,7 @@
 title: "LSASS Access from Program in Suspicious Folder"
 aliases:
   - "/rule/fa34b441-961a-42fa-a100-ecc28c886725"
-
+ruleid: fa34b441-961a-42fa-a100-ecc28c886725
 
 tags:
   - attack.credential_access

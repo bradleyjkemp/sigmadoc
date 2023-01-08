@@ -2,7 +2,7 @@
 title: "Mimikatz MemSSP Default Log File Creation"
 aliases:
   - "/rule/034affe8-6170-11ec-844f-0f78aa0c4d66"
-
+ruleid: 034affe8-6170-11ec-844f-0f78aa0c4d66
 
 tags:
   - attack.credential_access

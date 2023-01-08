@@ -2,7 +2,7 @@
 title: "Suspicious Nmap Execution"
 aliases:
   - "/rule/f6ecd1cf-19b8-4488-97f6-00f0924991a3"
-
+ruleid: f6ecd1cf-19b8-4488-97f6-00f0924991a3
 
 tags:
   - attack.discovery

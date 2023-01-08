@@ -2,7 +2,7 @@
 title: "Local System Accounts Discovery"
 aliases:
   - "/rule/b45e3d6f-42c6-47d8-a478-df6bd6cf534c"
-
+ruleid: b45e3d6f-42c6-47d8-a478-df6bd6cf534c
 
 tags:
   - attack.discovery

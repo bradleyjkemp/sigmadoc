@@ -2,7 +2,7 @@
 title: "Possible Process Hollowing Image Loading"
 aliases:
   - "/rule/e32ce4f5-46c6-4c47-ba69-5de3c9193cd7"
-
+ruleid: e32ce4f5-46c6-4c47-ba69-5de3c9193cd7
 
 tags:
   - attack.defense_evasion

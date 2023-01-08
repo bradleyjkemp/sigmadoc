@@ -2,7 +2,7 @@
 title: "iOS Implant URL Pattern"
 aliases:
   - "/rule/e06ac91d-b9e6-443d-8e5b-af749e7aa6b6"
-
+ruleid: e06ac91d-b9e6-443d-8e5b-af749e7aa6b6
 
 tags:
   - attack.execution

@@ -2,7 +2,7 @@
 title: "Data Compressed - rar.exe"
 aliases:
   - "/rule/6f3e2987-db24-4c78-a860-b4f4095a7095"
-
+ruleid: 6f3e2987-db24-4c78-a860-b4f4095a7095
 
 tags:
   - attack.collection

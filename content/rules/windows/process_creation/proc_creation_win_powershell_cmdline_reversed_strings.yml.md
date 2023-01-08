@@ -2,7 +2,7 @@
 title: "Suspicious PowerShell Cmdline"
 aliases:
   - "/rule/b6b49cd1-34d6-4ead-b1bf-176e9edba9a4"
-
+ruleid: b6b49cd1-34d6-4ead-b1bf-176e9edba9a4
 
 tags:
   - attack.defense_evasion

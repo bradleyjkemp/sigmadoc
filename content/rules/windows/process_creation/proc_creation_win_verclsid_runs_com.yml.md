@@ -2,7 +2,7 @@
 title: "Verclsid.exe Runs COM Object"
 aliases:
   - "/rule/d06be4b9-8045-428b-a567-740a26d9db25"
-
+ruleid: d06be4b9-8045-428b-a567-740a26d9db25
 
 tags:
   - attack.defense_evasion

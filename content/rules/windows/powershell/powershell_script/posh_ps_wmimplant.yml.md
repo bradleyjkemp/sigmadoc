@@ -2,7 +2,7 @@
 title: "WMImplant Hack Tool"
 aliases:
   - "/rule/8028c2c3-e25a-46e3-827f-bbb5abf181d7"
-
+ruleid: 8028c2c3-e25a-46e3-827f-bbb5abf181d7
 
 tags:
   - attack.execution

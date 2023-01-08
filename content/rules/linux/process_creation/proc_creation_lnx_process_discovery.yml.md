@@ -2,7 +2,7 @@
 title: "Process Discovery"
 aliases:
   - "/rule/4e2f5868-08d4-413d-899f-dc2f1508627b"
-
+ruleid: 4e2f5868-08d4-413d-899f-dc2f1508627b
 
 tags:
   - attack.discovery

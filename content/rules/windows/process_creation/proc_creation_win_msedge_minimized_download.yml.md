@@ -2,7 +2,7 @@
 title: "Suspicious Minimized MSEdge Start"
 aliases:
   - "/rule/94771a71-ba41-4b6e-a757-b531372eaab6"
-
+ruleid: 94771a71-ba41-4b6e-a757-b531372eaab6
 
 tags:
   - attack.command_and_control

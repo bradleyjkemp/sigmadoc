@@ -2,7 +2,7 @@
 title: "Invoke-Obfuscation COMPRESS OBFUSCATION"
 aliases:
   - "/rule/7eedcc9d-9fdb-4d94-9c54-474e8affc0c7"
-
+ruleid: 7eedcc9d-9fdb-4d94-9c54-474e8affc0c7
 
 tags:
   - attack.defense_evasion

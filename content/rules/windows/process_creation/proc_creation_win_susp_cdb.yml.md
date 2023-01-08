@@ -2,7 +2,7 @@
 title: "Possible App Whitelisting Bypass via WinDbg/CDB as a Shellcode Runner"
 aliases:
   - "/rule/b5c7395f-e501-4a08-94d4-57fe7a9da9d2"
-
+ruleid: b5c7395f-e501-4a08-94d4-57fe7a9da9d2
 
 tags:
   - attack.execution

@@ -2,7 +2,7 @@
 title: "Suspicious WMI Execution"
 aliases:
   - "/rule/526be59f-a573-4eea-b5f7-f0973207634d"
-
+ruleid: 526be59f-a573-4eea-b5f7-f0973207634d
 
 tags:
   - attack.execution

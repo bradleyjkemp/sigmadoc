@@ -2,7 +2,7 @@
 title: "Telegram API Access"
 aliases:
   - "/rule/b494b165-6634-483d-8c47-2026a6c52372"
-
+ruleid: b494b165-6634-483d-8c47-2026a6c52372
 
 tags:
   - attack.defense_evasion

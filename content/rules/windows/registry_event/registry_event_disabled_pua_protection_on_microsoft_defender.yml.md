@@ -2,7 +2,7 @@
 title: "Disable PUA Protection on Windows Defender"
 aliases:
   - "/rule/8ffc5407-52e3-478f-9596-0a7371eafe13"
-
+ruleid: 8ffc5407-52e3-478f-9596-0a7371eafe13
 
 tags:
   - attack.defense_evasion

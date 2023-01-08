@@ -2,7 +2,7 @@
 title: "CobaltStrike Malformed UAs in Malleable Profiles"
 aliases:
   - "/rule/41b42a36-f62c-4c34-bd40-8cb804a34ad8"
-
+ruleid: 41b42a36-f62c-4c34-bd40-8cb804a34ad8
 
 tags:
   - attack.defense_evasion

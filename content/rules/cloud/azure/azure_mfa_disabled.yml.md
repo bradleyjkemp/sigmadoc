@@ -2,7 +2,7 @@
 title: "Disabled MFA to Bypass Authentication Mechanisms"
 aliases:
   - "/rule/7ea78478-a4f9-42a6-9dcd-f861816122bf"
-
+ruleid: 7ea78478-a4f9-42a6-9dcd-f861816122bf
 
 tags:
   - attack.persistence

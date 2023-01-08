@@ -2,7 +2,7 @@
 title: "Hidden Local User Creation"
 aliases:
   - "/rule/7b449a5e-1db5-4dd0-a2dc-4e3a67282538"
-
+ruleid: 7b449a5e-1db5-4dd0-a2dc-4e3a67282538
 
 tags:
   - attack.persistence

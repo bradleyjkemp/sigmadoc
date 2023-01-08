@@ -2,7 +2,7 @@
 title: "AWS EFS Fileshare Modified or Deleted"
 aliases:
   - "/rule/25cb1ba1-8a19-4a23-a198-d252664c8cef"
-
+ruleid: 25cb1ba1-8a19-4a23-a198-d252664c8cef
 
 tags:
   - attack.impact

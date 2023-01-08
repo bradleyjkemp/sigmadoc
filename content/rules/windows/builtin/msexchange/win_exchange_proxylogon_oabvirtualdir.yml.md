@@ -2,7 +2,7 @@
 title: "ProxyLogon MSExchange OabVirtualDirectory"
 aliases:
   - "/rule/550d3350-bb8a-4ff3-9533-2ba533f4a1c0"
-
+ruleid: 550d3350-bb8a-4ff3-9533-2ba533f4a1c0
 
 tags:
   - attack.t1587.001

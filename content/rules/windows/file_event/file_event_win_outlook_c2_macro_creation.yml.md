@@ -2,7 +2,7 @@
 title: "Outlook C2 Macro Creation"
 aliases:
   - "/rule/8c31f563-f9a7-450c-bfa8-35f8f32f1f61"
-
+ruleid: 8c31f563-f9a7-450c-bfa8-35f8f32f1f61
 
 tags:
   - attack.persistence

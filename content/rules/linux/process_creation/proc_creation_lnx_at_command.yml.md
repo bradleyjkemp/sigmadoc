@@ -2,7 +2,7 @@
 title: "Scheduled Task/Job At"
 aliases:
   - "/rule/d2d642d7-b393-43fe-bae4-e81ed5915c4b"
-
+ruleid: d2d642d7-b393-43fe-bae4-e81ed5915c4b
 
 tags:
   - attack.persistence

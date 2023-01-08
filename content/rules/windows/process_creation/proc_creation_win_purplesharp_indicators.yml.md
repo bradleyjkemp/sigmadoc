@@ -2,7 +2,7 @@
 title: "PurpleSharp Indicator"
 aliases:
   - "/rule/ff23ffbc-3378-435e-992f-0624dcf93ab4"
-
+ruleid: ff23ffbc-3378-435e-992f-0624dcf93ab4
 
 tags:
   - attack.t1587

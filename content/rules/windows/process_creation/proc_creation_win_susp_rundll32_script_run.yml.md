@@ -2,7 +2,7 @@
 title: "Suspicious Rundll32 Script in CommandLine"
 aliases:
   - "/rule/73fcad2e-ff14-4c38-b11d-4172c8ac86c7"
-
+ruleid: 73fcad2e-ff14-4c38-b11d-4172c8ac86c7
 
 tags:
   - attack.defense_evasion

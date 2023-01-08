@@ -2,7 +2,7 @@
 title: "DumpStack.log Defender Evasion"
 aliases:
   - "/rule/4f647cfa-b598-4e12-ad69-c68dd16caef8"
-
+ruleid: 4f647cfa-b598-4e12-ad69-c68dd16caef8
 
 tags:
   - attack.defense_evasion

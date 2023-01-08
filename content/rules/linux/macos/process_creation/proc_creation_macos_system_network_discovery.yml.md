@@ -2,7 +2,7 @@
 title: "System Network Discovery - macOS"
 aliases:
   - "/rule/58800443-f9fc-4d55-ae0c-98a3966dfb97"
-
+ruleid: 58800443-f9fc-4d55-ae0c-98a3966dfb97
 
 tags:
   - attack.discovery

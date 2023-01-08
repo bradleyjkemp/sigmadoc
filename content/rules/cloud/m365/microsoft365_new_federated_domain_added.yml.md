@@ -2,7 +2,7 @@
 title: "New Federated Domain Added"
 aliases:
   - "/rule/42127bdd-9133-474f-a6f1-97b6c08a4339"
-
+ruleid: 42127bdd-9133-474f-a6f1-97b6c08a4339
 
 tags:
   - attack.persistence

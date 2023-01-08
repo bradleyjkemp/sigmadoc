@@ -2,7 +2,7 @@
 title: "Sysmon Configuration Change"
 aliases:
   - "/rule/8ac03a65-6c84-4116-acad-dc1558ff7a77"
-
+ruleid: 8ac03a65-6c84-4116-acad-dc1558ff7a77
 
 tags:
   - attack.defense_evasion

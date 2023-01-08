@@ -2,7 +2,7 @@
 title: "Webshell Detection by Keyword"
 aliases:
   - "/rule/7ff9db12-1b94-4a79-ba68-a2402c5d6729"
-
+ruleid: 7ff9db12-1b94-4a79-ba68-a2402c5d6729
 
 tags:
   - attack.persistence

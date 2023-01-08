@@ -2,7 +2,7 @@
 title: "OMIGOD HTTP No Authentication RCE"
 aliases:
   - "/rule/ab6b1a39-a9ee-4ab4-b075-e83acf6e346b"
-
+ruleid: ab6b1a39-a9ee-4ab4-b075-e83acf6e346b
 
 tags:
   - attack.privilege_escalation

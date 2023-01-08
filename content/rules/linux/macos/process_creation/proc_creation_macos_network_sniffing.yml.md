@@ -2,7 +2,7 @@
 title: "Network Sniffing"
 aliases:
   - "/rule/adc9bcc4-c39c-4f6b-a711-1884017bf043"
-
+ruleid: adc9bcc4-c39c-4f6b-a711-1884017bf043
 
 tags:
   - attack.discovery

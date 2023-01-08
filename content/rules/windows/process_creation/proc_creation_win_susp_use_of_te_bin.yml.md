@@ -2,7 +2,7 @@
 title: "Malicious Windows Script Components File Execution by TAEF Detection"
 aliases:
   - "/rule/634b00d5-ccc3-4a06-ae3b-0ec8444dd51b"
-
+ruleid: 634b00d5-ccc3-4a06-ae3b-0ec8444dd51b
 
 tags:
   - attack.t1218

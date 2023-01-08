@@ -2,7 +2,7 @@
 title: "T1086 PowerShell Execution"
 aliases:
   - "/rule/ac7102b4-9e1e-4802-9b4f-17c5524c015c"
-
+ruleid: ac7102b4-9e1e-4802-9b4f-17c5524c015c
 
 tags:
   - attack.execution

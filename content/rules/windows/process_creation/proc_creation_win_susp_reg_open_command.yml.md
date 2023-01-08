@@ -2,7 +2,7 @@
 title: "Suspicious Reg Add Open Command"
 aliases:
   - "/rule/dd3ee8cc-f751-41c9-ba53-5a32ed47e563"
-
+ruleid: dd3ee8cc-f751-41c9-ba53-5a32ed47e563
 
 tags:
   - attack.credential_access

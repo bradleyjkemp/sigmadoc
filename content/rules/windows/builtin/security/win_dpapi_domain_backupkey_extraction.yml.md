@@ -2,7 +2,7 @@
 title: "DPAPI Domain Backup Key Extraction"
 aliases:
   - "/rule/4ac1f50b-3bd0-4968-902d-868b4647937e"
-
+ruleid: 4ac1f50b-3bd0-4968-902d-868b4647937e
 
 tags:
   - attack.credential_access

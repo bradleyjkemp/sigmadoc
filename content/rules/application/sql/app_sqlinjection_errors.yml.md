@@ -2,7 +2,7 @@
 title: "Suspicious SQL Error Messages"
 aliases:
   - "/rule/8a670c6d-7189-4b1c-8017-a417ca84a086"
-
+ruleid: 8a670c6d-7189-4b1c-8017-a417ca84a086
 
 tags:
   - attack.initial_access

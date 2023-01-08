@@ -2,7 +2,7 @@
 title: "Wlrmdr Lolbin Use as Laucher"
 aliases:
   - "/rule/9cfc00b6-bfb7-49ce-9781-ef78503154bb"
-
+ruleid: 9cfc00b6-bfb7-49ce-9781-ef78503154bb
 
 tags:
   - attack.defense_evasion

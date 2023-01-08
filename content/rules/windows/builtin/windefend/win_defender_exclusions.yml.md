@@ -2,7 +2,7 @@
 title: "Windows Defender Exclusions Added"
 aliases:
   - "/rule/1321dc4e-a1fe-481d-a016-52c45f0c8b4f"
-
+ruleid: 1321dc4e-a1fe-481d-a016-52c45f0c8b4f
 
 tags:
   - attack.defense_evasion

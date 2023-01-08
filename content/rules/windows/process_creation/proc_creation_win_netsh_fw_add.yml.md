@@ -2,7 +2,7 @@
 title: "Netsh Port or Application Allowed"
 aliases:
   - "/rule/cd5cfd80-aa5f-44c0-9c20-108c4ae12e3c"
-
+ruleid: cd5cfd80-aa5f-44c0-9c20-108c4ae12e3c
 
 tags:
   - attack.defense_evasion

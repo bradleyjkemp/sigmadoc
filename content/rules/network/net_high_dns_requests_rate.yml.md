@@ -2,7 +2,7 @@
 title: "High DNS Requests Rate"
 aliases:
   - "/rule/b4163085-4001-46a3-a79a-55d8bbbc7a3a"
-
+ruleid: b4163085-4001-46a3-a79a-55d8bbbc7a3a
 
 tags:
   - attack.exfiltration

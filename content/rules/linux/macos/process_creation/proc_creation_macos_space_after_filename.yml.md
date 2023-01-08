@@ -2,7 +2,7 @@
 title: "Space After Filename - macOS"
 aliases:
   - "/rule/b6e2a2e3-2d30-43b1-a4ea-071e36595690"
-
+ruleid: b6e2a2e3-2d30-43b1-a4ea-071e36595690
 
 tags:
   - attack.defense_evasion

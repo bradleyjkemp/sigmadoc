@@ -2,7 +2,7 @@
 title: "PowerShell Credential Prompt"
 aliases:
   - "/rule/ca8b77a9-d499-4095-b793-5d5f330d450e"
-
+ruleid: ca8b77a9-d499-4095-b793-5d5f330d450e
 
 tags:
   - attack.credential_access

@@ -2,7 +2,7 @@
 title: "Mimikatz Command Line"
 aliases:
   - "/rule/a642964e-bead-4bed-8910-1bb4d63e3b4d"
-
+ruleid: a642964e-bead-4bed-8910-1bb4d63e3b4d
 
 tags:
   - attack.credential_access

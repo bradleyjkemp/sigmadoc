@@ -2,7 +2,7 @@
 title: "SAM Dump to AppData"
 aliases:
   - "/rule/839dd1e8-eda8-4834-8145-01beeee33acd"
-
+ruleid: 839dd1e8-eda8-4834-8145-01beeee33acd
 
 tags:
   - attack.credential_access

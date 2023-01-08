@@ -2,7 +2,7 @@
 title: "VBScript Payload Stored in Registry"
 aliases:
   - "/rule/46490193-1b22-4c29-bdd6-5bf63907216f"
-
+ruleid: 46490193-1b22-4c29-bdd6-5bf63907216f
 
 tags:
   - attack.persistence

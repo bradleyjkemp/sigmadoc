@@ -2,7 +2,7 @@
 title: "Malicious ShellIntel PowerShell Commandlets"
 aliases:
   - "/rule/402e1e1d-ad59-47b6-bf80-1ee44985b3a7"
-
+ruleid: 402e1e1d-ad59-47b6-bf80-1ee44985b3a7
 
 tags:
   - attack.execution

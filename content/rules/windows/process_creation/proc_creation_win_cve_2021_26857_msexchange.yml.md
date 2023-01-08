@@ -2,7 +2,7 @@
 title: "CVE-2021-26857 Exchange Exploitation"
 aliases:
   - "/rule/cd479ccc-d8f0-4c66-ba7d-e06286f3f887"
-
+ruleid: cd479ccc-d8f0-4c66-ba7d-e06286f3f887
 
 tags:
   - attack.t1203

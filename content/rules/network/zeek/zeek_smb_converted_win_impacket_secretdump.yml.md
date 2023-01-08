@@ -2,7 +2,7 @@
 title: "Possible Impacket SecretDump Remote Activity - Zeek"
 aliases:
   - "/rule/92dae1ed-1c9d-4eff-a567-33acbd95b00e"
-
+ruleid: 92dae1ed-1c9d-4eff-a567-33acbd95b00e
 
 tags:
   - attack.credential_access

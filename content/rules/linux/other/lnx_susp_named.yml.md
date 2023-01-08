@@ -2,7 +2,7 @@
 title: "Suspicious Named Error"
 aliases:
   - "/rule/c8e35e96-19ce-4f16-aeb6-fd5588dc5365"
-
+ruleid: c8e35e96-19ce-4f16-aeb6-fd5588dc5365
 
 tags:
   - attack.initial_access

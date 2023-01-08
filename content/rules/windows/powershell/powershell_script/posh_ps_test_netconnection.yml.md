@@ -2,7 +2,7 @@
 title: "Testing Usage of Uncommonly Used Port"
 aliases:
   - "/rule/adf876b3-f1f8-4aa9-a4e4-a64106feec06"
-
+ruleid: adf876b3-f1f8-4aa9-a4e4-a64106feec06
 
 tags:
   - attack.command_and_control

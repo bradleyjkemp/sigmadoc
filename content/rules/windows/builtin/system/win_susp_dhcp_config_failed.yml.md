@@ -2,7 +2,7 @@
 title: "DHCP Server Error Failed Loading the CallOut DLL"
 aliases:
   - "/rule/75edd3fd-7146-48e5-9848-3013d7f0282c"
-
+ruleid: 75edd3fd-7146-48e5-9848-3013d7f0282c
 
 tags:
   - attack.defense_evasion

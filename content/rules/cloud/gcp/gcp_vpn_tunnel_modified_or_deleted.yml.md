@@ -2,7 +2,7 @@
 title: "Google Cloud VPN Tunnel Modified or Deleted"
 aliases:
   - "/rule/99980a85-3a61-43d3-ac0f-b68d6b4797b1"
-
+ruleid: 99980a85-3a61-43d3-ac0f-b68d6b4797b1
 
 tags:
   - attack.impact

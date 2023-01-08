@@ -2,7 +2,7 @@
 title: "Suspicious Redirection to Local Admin Share"
 aliases:
   - "/rule/ab9e3b40-0c85-4ba1-aede-455d226fd124"
-
+ruleid: ab9e3b40-0c85-4ba1-aede-455d226fd124
 
 
 

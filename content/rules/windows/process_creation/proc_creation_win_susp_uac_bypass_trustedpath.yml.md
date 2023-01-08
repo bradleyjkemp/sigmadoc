@@ -2,7 +2,7 @@
 title: "TrustedPath UAC Bypass Pattern"
 aliases:
   - "/rule/4ac47ed3-44c2-4b1f-9d51-bf46e8914126"
-
+ruleid: 4ac47ed3-44c2-4b1f-9d51-bf46e8914126
 
 tags:
   - attack.defense_evasion

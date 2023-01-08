@@ -2,7 +2,7 @@
 title: "Google Workspace Role Privilege Deleted"
 aliases:
   - "/rule/bf638ef7-4d2d-44bb-a1dc-a238252e6267"
-
+ruleid: bf638ef7-4d2d-44bb-a1dc-a238252e6267
 
 tags:
   - attack.impact

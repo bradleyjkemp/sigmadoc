@@ -2,7 +2,7 @@
 title: "Crypto Miner User Agent"
 aliases:
   - "/rule/fa935401-513b-467b-81f4-f9e77aa0dd78"
-
+ruleid: fa935401-513b-467b-81f4-f9e77aa0dd78
 
 tags:
   - attack.command_and_control

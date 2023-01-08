@@ -2,7 +2,7 @@
 title: "RDP Login from Localhost"
 aliases:
   - "/rule/51e33403-2a37-4d66-a574-1fda1782cc31"
-
+ruleid: 51e33403-2a37-4d66-a574-1fda1782cc31
 
 tags:
   - attack.lateral_movement

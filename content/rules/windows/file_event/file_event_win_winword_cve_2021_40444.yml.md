@@ -2,7 +2,7 @@
 title: "Suspicious Word Cab File Write CVE-2021-40444"
 aliases:
   - "/rule/60c0a111-787a-4e8a-9262-ee485f3ef9d5"
-
+ruleid: 60c0a111-787a-4e8a-9262-ee485f3ef9d5
 
 tags:
   - attack.resource_development

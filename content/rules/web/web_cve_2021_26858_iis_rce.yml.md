@@ -2,7 +2,7 @@
 title: "ProxyLogon Reset Virtual Directories Based On IIS Log"
 aliases:
   - "/rule/effee1f6-a932-4297-a81f-acb44064fa3a"
-
+ruleid: effee1f6-a932-4297-a81f-acb44064fa3a
 
 
 

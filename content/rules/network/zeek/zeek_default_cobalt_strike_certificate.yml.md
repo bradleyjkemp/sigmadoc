@@ -2,7 +2,7 @@
 title: "Default Cobalt Strike Certificate"
 aliases:
   - "/rule/7100f7e3-92ce-4584-b7b7-01b40d3d4118"
-
+ruleid: 7100f7e3-92ce-4584-b7b7-01b40d3d4118
 
 tags:
   - attack.command_and_control

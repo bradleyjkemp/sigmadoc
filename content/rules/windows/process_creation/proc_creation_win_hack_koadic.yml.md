@@ -2,7 +2,7 @@
 title: "Koadic Execution"
 aliases:
   - "/rule/5cddf373-ef00-4112-ad72-960ac29bac34"
-
+ruleid: 5cddf373-ef00-4112-ad72-960ac29bac34
 
 tags:
   - attack.execution

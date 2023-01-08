@@ -2,7 +2,7 @@
 title: "Delete Log from Application"
 aliases:
   - "/rule/b1decb61-ed83-4339-8e95-53ea51901720"
-
+ruleid: b1decb61-ed83-4339-8e95-53ea51901720
 
 tags:
   - attack.defense_evasion

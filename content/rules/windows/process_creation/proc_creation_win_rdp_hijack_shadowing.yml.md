@@ -2,7 +2,7 @@
 title: "MSTSC Shadowing"
 aliases:
   - "/rule/6ba5a05f-b095-4f0a-8654-b825f4f16334"
-
+ruleid: 6ba5a05f-b095-4f0a-8654-b825f4f16334
 
 tags:
   - attack.lateral_movement

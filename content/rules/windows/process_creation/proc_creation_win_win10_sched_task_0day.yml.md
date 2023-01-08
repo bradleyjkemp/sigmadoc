@@ -2,7 +2,7 @@
 title: "Windows 10 Scheduled Task SandboxEscaper 0-day"
 aliases:
   - "/rule/931b6802-d6a6-4267-9ffa-526f57f22aaf"
-
+ruleid: 931b6802-d6a6-4267-9ffa-526f57f22aaf
 
 tags:
   - attack.privilege_escalation

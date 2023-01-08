@@ -2,7 +2,7 @@
 title: "Pingback Backdoor"
 aliases:
   - "/rule/2bd63d53-84d4-4210-80ff-bf0658f1bf78"
-
+ruleid: 2bd63d53-84d4-4210-80ff-bf0658f1bf78
 
 tags:
   - attack.persistence

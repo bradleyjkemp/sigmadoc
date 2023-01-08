@@ -2,7 +2,7 @@
 title: "ServiceDll Modification"
 aliases:
   - "/rule/612e47e9-8a59-43a6-b404-f48683f45bd6"
-
+ruleid: 612e47e9-8a59-43a6-b404-f48683f45bd6
 
 tags:
   - attack.persistence

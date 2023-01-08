@@ -2,7 +2,7 @@
 title: "Windows Screen Capture with CopyFromScreen"
 aliases:
   - "/rule/d4a11f63-2390-411c-9adf-d791fd152830"
-
+ruleid: d4a11f63-2390-411c-9adf-d791fd152830
 
 tags:
   - attack.collection

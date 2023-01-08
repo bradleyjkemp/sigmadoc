@@ -2,7 +2,7 @@
 title: "Linux Reverse Shell Indicator"
 aliases:
   - "/rule/83dcd9f6-9ca8-4af7-a16e-a1c7a6b51871"
-
+ruleid: 83dcd9f6-9ca8-4af7-a16e-a1c7a6b51871
 
 
 

@@ -2,7 +2,7 @@
 title: "Volume Shadow Copy Mount"
 aliases:
   - "/rule/f512acbf-e662-4903-843e-97ce4652b740"
-
+ruleid: f512acbf-e662-4903-843e-97ce4652b740
 
 tags:
   - attack.credential_access

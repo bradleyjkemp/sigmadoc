@@ -2,7 +2,7 @@
 title: "SharpHound Recon Account Discovery"
 aliases:
   - "/rule/65f77b1e-8e79-45bf-bb67-5988a8ce45a5"
-
+ruleid: 65f77b1e-8e79-45bf-bb67-5988a8ce45a5
 
 tags:
   - attack.t1087

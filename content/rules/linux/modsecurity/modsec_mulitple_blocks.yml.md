@@ -2,7 +2,7 @@
 title: "Multiple Modsecurity Blocks"
 aliases:
   - "/rule/a06eea10-d932-4aa6-8ba9-186df72c8d23"
-
+ruleid: a06eea10-d932-4aa6-8ba9-186df72c8d23
 
 tags:
   - attack.impact

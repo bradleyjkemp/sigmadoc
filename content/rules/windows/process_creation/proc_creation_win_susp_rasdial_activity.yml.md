@@ -2,7 +2,7 @@
 title: "Suspicious RASdial Activity"
 aliases:
   - "/rule/6bba49bf-7f8c-47d6-a1bb-6b4dece4640e"
-
+ruleid: 6bba49bf-7f8c-47d6-a1bb-6b4dece4640e
 
 tags:
   - attack.defense_evasion

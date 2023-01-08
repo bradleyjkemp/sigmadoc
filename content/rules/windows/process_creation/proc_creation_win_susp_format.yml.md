@@ -2,7 +2,7 @@
 title: "Format.com FileSystem LOLBIN"
 aliases:
   - "/rule/9fb6b26e-7f9e-4517-a48b-8cac4a1b6c60"
-
+ruleid: 9fb6b26e-7f9e-4517-a48b-8cac4a1b6c60
 
 tags:
   - attack.defense_evasion

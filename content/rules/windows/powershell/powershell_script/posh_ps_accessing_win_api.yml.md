@@ -2,7 +2,7 @@
 title: "Accessing WinAPI in PowerShell"
 aliases:
   - "/rule/03d83090-8cba-44a0-b02f-0b756a050306"
-
+ruleid: 03d83090-8cba-44a0-b02f-0b756a050306
 
 tags:
   - attack.execution

@@ -2,7 +2,7 @@
 title: "RDP Registry Modification"
 aliases:
   - "/rule/41904ebe-d56c-4904-b9ad-7a77bdf154b3"
-
+ruleid: 41904ebe-d56c-4904-b9ad-7a77bdf154b3
 
 tags:
   - attack.defense_evasion

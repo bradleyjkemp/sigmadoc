@@ -2,7 +2,7 @@
 title: "Change PowerShell Policies to an Unsecure Level"
 aliases:
   - "/rule/87e3c4e8-a6a8-4ad9-bb4f-46e7ff99a180"
-
+ruleid: 87e3c4e8-a6a8-4ad9-bb4f-46e7ff99a180
 
 tags:
   - attack.execution

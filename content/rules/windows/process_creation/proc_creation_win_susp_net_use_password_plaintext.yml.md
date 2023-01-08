@@ -2,7 +2,7 @@
 title: "Password Provided In Command Line Of Net.exe"
 aliases:
   - "/rule/d4498716-1d52-438f-8084-4a603157d131"
-
+ruleid: d4498716-1d52-438f-8084-4a603157d131
 
 
 

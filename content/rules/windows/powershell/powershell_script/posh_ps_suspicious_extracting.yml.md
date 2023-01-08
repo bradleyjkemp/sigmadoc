@@ -2,7 +2,7 @@
 title: "Extracting Information with PowerShell"
 aliases:
   - "/rule/bd5971a7-626d-46ab-8176-ed643f694f68"
-
+ruleid: bd5971a7-626d-46ab-8176-ed643f694f68
 
 tags:
   - attack.credential_access

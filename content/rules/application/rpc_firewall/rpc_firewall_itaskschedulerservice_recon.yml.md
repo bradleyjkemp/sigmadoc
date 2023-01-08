@@ -2,7 +2,7 @@
 title: "Remote Schedule Task Recon via ITaskSchedulerService"
 aliases:
   - "/rule/7f7c49eb-2977-4ac8-8ab0-ab1bae14730e"
-
+ruleid: 7f7c49eb-2977-4ac8-8ab0-ab1bae14730e
 
 
 

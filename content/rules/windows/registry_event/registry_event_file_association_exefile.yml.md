@@ -2,7 +2,7 @@
 title: "New File Association Using Exefile"
 aliases:
   - "/rule/44a22d59-b175-4f13-8c16-cbaef5b581ff"
-
+ruleid: 44a22d59-b175-4f13-8c16-cbaef5b581ff
 
 tags:
   - attack.defense_evasion

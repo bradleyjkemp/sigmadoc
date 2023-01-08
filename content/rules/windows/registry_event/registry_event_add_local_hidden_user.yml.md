@@ -2,7 +2,7 @@
 title: "Creation of a Local Hidden User Account by Registry"
 aliases:
   - "/rule/460479f3-80b7-42da-9c43-2cc1d54dbccd"
-
+ruleid: 460479f3-80b7-42da-9c43-2cc1d54dbccd
 
 tags:
   - attack.persistence

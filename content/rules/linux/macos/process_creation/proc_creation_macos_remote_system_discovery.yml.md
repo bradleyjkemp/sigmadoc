@@ -2,7 +2,7 @@
 title: "Macos Remote System Discovery"
 aliases:
   - "/rule/10227522-8429-47e6-a301-f2b2d014e7ad"
-
+ruleid: 10227522-8429-47e6-a301-f2b2d014e7ad
 
 tags:
   - attack.discovery

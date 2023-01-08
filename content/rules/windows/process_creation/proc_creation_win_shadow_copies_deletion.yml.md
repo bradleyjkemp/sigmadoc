@@ -2,7 +2,7 @@
 title: "Shadow Copies Deletion Using Operating Systems Utilities"
 aliases:
   - "/rule/c947b146-0abc-4c87-9c64-b17e9d7274a2"
-
+ruleid: c947b146-0abc-4c87-9c64-b17e9d7274a2
 
 tags:
   - attack.defense_evasion

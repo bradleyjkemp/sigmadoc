@@ -2,7 +2,7 @@
 title: "ISO or Image Mount Indicator in Recent Files"
 aliases:
   - "/rule/4358e5a5-7542-4dcb-b9f3-87667371839b"
-
+ruleid: 4358e5a5-7542-4dcb-b9f3-87667371839b
 
 
 

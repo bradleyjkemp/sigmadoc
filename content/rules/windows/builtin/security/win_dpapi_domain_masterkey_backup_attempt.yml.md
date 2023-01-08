@@ -2,7 +2,7 @@
 title: "DPAPI Domain Master Key Backup Attempt"
 aliases:
   - "/rule/39a94fd1-8c9a-4ff6-bf22-c058762f8014"
-
+ruleid: 39a94fd1-8c9a-4ff6-bf22-c058762f8014
 
 tags:
   - attack.credential_access

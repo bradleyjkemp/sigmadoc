@@ -2,7 +2,7 @@
 title: "Weak Encryption Enabled and Kerberoast"
 aliases:
   - "/rule/f6de9536-0441-4b3f-a646-f4e00f300ffd"
-
+ruleid: f6de9536-0441-4b3f-a646-f4e00f300ffd
 
 tags:
   - attack.defense_evasion

@@ -2,7 +2,7 @@
 title: "Execution DLL of Choice Using WAB.EXE"
 aliases:
   - "/rule/fc014922-5def-4da9-a0fc-28c973f41bfb"
-
+ruleid: fc014922-5def-4da9-a0fc-28c973f41bfb
 
 tags:
   - attack.defense_evasion

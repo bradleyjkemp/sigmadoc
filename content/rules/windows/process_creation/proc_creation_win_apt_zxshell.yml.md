@@ -2,7 +2,7 @@
 title: "ZxShell Malware"
 aliases:
   - "/rule/f0b70adb-0075-43b0-9745-e82a1c608fcc"
-
+ruleid: f0b70adb-0075-43b0-9745-e82a1c608fcc
 
 tags:
   - attack.execution

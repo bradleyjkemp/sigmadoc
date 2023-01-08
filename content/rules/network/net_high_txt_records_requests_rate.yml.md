@@ -2,7 +2,7 @@
 title: "High TXT Records Requests Rate"
 aliases:
   - "/rule/f0a8cedc-1d22-4453-9c44-8d9f4ebd5d35"
-
+ruleid: f0a8cedc-1d22-4453-9c44-8d9f4ebd5d35
 
 tags:
   - attack.exfiltration

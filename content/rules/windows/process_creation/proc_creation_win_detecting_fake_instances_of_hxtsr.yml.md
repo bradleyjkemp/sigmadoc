@@ -2,7 +2,7 @@
 title: "Detecting Fake Instances Of Hxtsr.exe"
 aliases:
   - "/rule/4e762605-34a8-406d-b72e-c1a089313320"
-
+ruleid: 4e762605-34a8-406d-b72e-c1a089313320
 
 tags:
   - attack.defense_evasion

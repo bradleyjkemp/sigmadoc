@@ -2,7 +2,7 @@
 title: "Suspicious Keyboard Layout Load"
 aliases:
   - "/rule/34aa0252-6039-40ff-951f-939fd6ce47d8"
-
+ruleid: 34aa0252-6039-40ff-951f-939fd6ce47d8
 
 tags:
   - attack.resource_development

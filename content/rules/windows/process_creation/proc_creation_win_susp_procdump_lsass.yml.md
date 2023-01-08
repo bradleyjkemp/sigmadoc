@@ -2,7 +2,7 @@
 title: "Suspicious Use of Procdump on LSASS"
 aliases:
   - "/rule/5afee48e-67dd-4e03-a783-f74259dcf998"
-
+ruleid: 5afee48e-67dd-4e03-a783-f74259dcf998
 
 tags:
   - attack.defense_evasion

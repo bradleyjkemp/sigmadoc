@@ -2,7 +2,7 @@
 title: "Monitoring Winget For LOLbin Execution"
 aliases:
   - "/rule/313d6012-51a0-4d93-8dfc-de8553239e25"
-
+ruleid: 313d6012-51a0-4d93-8dfc-de8553239e25
 
 tags:
   - attack.defense_evasion

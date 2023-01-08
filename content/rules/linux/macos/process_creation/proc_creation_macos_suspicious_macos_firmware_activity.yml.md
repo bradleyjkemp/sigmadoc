@@ -2,7 +2,7 @@
 title: "Suspicious MacOS Firmware Activity"
 aliases:
   - "/rule/7ed2c9f7-c59d-4c82-a7e2-f859aa676099"
-
+ruleid: 7ed2c9f7-c59d-4c82-a7e2-f859aa676099
 
 tags:
   - attack.impact

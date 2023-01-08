@@ -2,7 +2,7 @@
 title: "Suspicious Msiexec Execute Arbitrary DLL"
 aliases:
   - "/rule/6f4191bb-912b-48a8-9ce7-682769541e6d"
-
+ruleid: 6f4191bb-912b-48a8-9ce7-682769541e6d
 
 tags:
   - attack.defense_evasion

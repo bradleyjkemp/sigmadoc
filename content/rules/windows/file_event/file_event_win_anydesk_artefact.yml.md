@@ -2,7 +2,7 @@
 title: "Anydesk Temporary Artefact"
 aliases:
   - "/rule/0b9ad457-2554-44c1-82c2-d56a99c42377"
-
+ruleid: 0b9ad457-2554-44c1-82c2-d56a99c42377
 
 tags:
   - attack.command_and_control

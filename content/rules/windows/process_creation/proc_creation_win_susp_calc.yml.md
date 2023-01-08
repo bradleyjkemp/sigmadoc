@@ -2,7 +2,7 @@
 title: "Suspicious Calculator Usage"
 aliases:
   - "/rule/737e618a-a410-49b5-bec3-9e55ff7fbc15"
-
+ruleid: 737e618a-a410-49b5-bec3-9e55ff7fbc15
 
 tags:
   - attack.defense_evasion

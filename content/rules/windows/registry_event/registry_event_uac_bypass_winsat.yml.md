@@ -2,7 +2,7 @@
 title: "UAC Bypass Abusing Winsat Path Parsing - Registry"
 aliases:
   - "/rule/6597be7b-ac61-4ac8-bef4-d3ec88174853"
-
+ruleid: 6597be7b-ac61-4ac8-bef4-d3ec88174853
 
 tags:
   - attack.defense_evasion

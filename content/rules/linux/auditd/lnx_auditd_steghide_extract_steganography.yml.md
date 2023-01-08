@@ -2,7 +2,7 @@
 title: "Steganography Extract Files with Steghide"
 aliases:
   - "/rule/a5a827d9-1bbe-4952-9293-c59d897eb41b"
-
+ruleid: a5a827d9-1bbe-4952-9293-c59d897eb41b
 
 tags:
   - attack.defense_evasion

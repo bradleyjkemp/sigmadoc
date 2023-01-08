@@ -2,7 +2,7 @@
 title: "Commands to Clear or Remove the Syslog"
 aliases:
   - "/rule/e09eb557-96d2-4de9-ba2d-30f712a5afd3"
-
+ruleid: e09eb557-96d2-4de9-ba2d-30f712a5afd3
 
 tags:
   - attack.impact

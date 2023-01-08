@@ -2,7 +2,7 @@
 title: "Azure Device No Longer Managed or Compliant"
 aliases:
   - "/rule/542b9912-c01f-4e3f-89a8-014c48cdca7d"
-
+ruleid: 542b9912-c01f-4e3f-89a8-014c48cdca7d
 
 tags:
   - attack.impact

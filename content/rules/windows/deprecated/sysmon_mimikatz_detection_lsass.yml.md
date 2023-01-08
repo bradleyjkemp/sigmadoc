@@ -2,7 +2,7 @@
 title: "Mimikatz Detection LSASS Access"
 aliases:
   - "/rule/0d894093-71bc-43c3-8c4d-ecfc28dcf5d9"
-
+ruleid: 0d894093-71bc-43c3-8c4d-ecfc28dcf5d9
 
 tags:
   - attack.t1003

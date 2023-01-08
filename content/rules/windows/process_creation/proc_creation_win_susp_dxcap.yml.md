@@ -2,7 +2,7 @@
 title: "Application Whitelisting Bypass via Dxcap.exe"
 aliases:
   - "/rule/60f16a96-db70-42eb-8f76-16763e333590"
-
+ruleid: 60f16a96-db70-42eb-8f76-16763e333590
 
 tags:
   - attack.defense_evasion

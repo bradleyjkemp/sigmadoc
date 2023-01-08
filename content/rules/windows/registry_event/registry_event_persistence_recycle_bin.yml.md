@@ -2,7 +2,7 @@
 title: "Registry Persistence Mechanisms in Recycle Bin"
 aliases:
   - "/rule/277efb8f-60be-4f10-b4d3-037802f37167"
-
+ruleid: 277efb8f-60be-4f10-b4d3-037802f37167
 
 tags:
   - attack.persistence

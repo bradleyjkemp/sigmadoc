@@ -2,7 +2,7 @@
 title: "Suspicious Use of PsLogList"
 aliases:
   - "/rule/aae1243f-d8af-40d8-ab20-33fc6d0c55bc"
-
+ruleid: aae1243f-d8af-40d8-ab20-33fc6d0c55bc
 
 tags:
   - attack.discovery

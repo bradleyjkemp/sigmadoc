@@ -2,7 +2,7 @@
 title: "Run PowerShell Script from Redirected Input Stream"
 aliases:
   - "/rule/c83bf4b5-cdf0-437c-90fa-43d734f7c476"
-
+ruleid: c83bf4b5-cdf0-437c-90fa-43d734f7c476
 
 tags:
   - attack.defense_evasion

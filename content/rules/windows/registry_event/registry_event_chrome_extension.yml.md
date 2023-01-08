@@ -2,7 +2,7 @@
 title: "Running Chrome VPN Extensions via the Registry 2 VPN Extension"
 aliases:
   - "/rule/b64a026b-8deb-4c1d-92fd-98893209dff1"
-
+ruleid: b64a026b-8deb-4c1d-92fd-98893209dff1
 
 tags:
   - attack.persistence

@@ -2,7 +2,7 @@
 title: "ShimCache Flush"
 aliases:
   - "/rule/b0524451-19af-4efa-a46f-562a977f792e"
-
+ruleid: b0524451-19af-4efa-a46f-562a977f792e
 
 tags:
   - attack.defense_evasion

@@ -2,7 +2,7 @@
 title: "Program Executions in Suspicious Folders"
 aliases:
   - "/rule/a39d7fa7-3fbd-4dc2-97e1-d87f546b1bbc"
-
+ruleid: a39d7fa7-3fbd-4dc2-97e1-d87f546b1bbc
 
 tags:
   - attack.t1587

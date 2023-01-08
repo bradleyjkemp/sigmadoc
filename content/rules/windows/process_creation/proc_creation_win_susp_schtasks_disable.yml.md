@@ -2,7 +2,7 @@
 title: "Disable Important Scheduled Task"
 aliases:
   - "/rule/9ac94dc8-9042-493c-ba45-3b5e7c86b980"
-
+ruleid: 9ac94dc8-9042-493c-ba45-3b5e7c86b980
 
 tags:
   - attack.impact

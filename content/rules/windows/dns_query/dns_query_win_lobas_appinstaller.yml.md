@@ -2,7 +2,7 @@
 title: "AppInstaller Attempts From URL by DNS"
 aliases:
   - "/rule/7cff77e1-9663-46a3-8260-17f2e1aa9d0a"
-
+ruleid: 7cff77e1-9663-46a3-8260-17f2e1aa9d0a
 
 tags:
   - attack.command_and_control

@@ -2,7 +2,7 @@
 title: "Reg Disable Security Service"
 aliases:
   - "/rule/5e95028c-5229-4214-afae-d653d573d0ec"
-
+ruleid: 5e95028c-5229-4214-afae-d653d573d0ec
 
 tags:
   - attack.defense_evasion

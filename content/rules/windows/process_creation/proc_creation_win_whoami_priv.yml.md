@@ -2,7 +2,7 @@
 title: "Run Whoami Showing Privileges"
 aliases:
   - "/rule/97a80ec7-0e2f-4d05-9ef4-65760e634f6b"
-
+ruleid: 97a80ec7-0e2f-4d05-9ef4-65760e634f6b
 
 tags:
   - attack.privilege_escalation

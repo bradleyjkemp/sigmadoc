@@ -2,7 +2,7 @@
 title: "Multifactor Authentication Interupted"
 aliases:
   - "/rule/5496ff55-42ec-4369-81cb-00f417029e25"
-
+ruleid: 5496ff55-42ec-4369-81cb-00f417029e25
 
 tags:
   - attack.initial_access

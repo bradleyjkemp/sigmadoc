@@ -2,7 +2,7 @@
 title: "Execution via Diskshadow.exe"
 aliases:
   - "/rule/0c2f8629-7129-4a8a-9897-7e0768f13ff2"
-
+ruleid: 0c2f8629-7129-4a8a-9897-7e0768f13ff2
 
 tags:
   - attack.execution

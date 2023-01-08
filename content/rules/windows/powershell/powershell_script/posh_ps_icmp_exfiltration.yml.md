@@ -2,7 +2,7 @@
 title: "PowerShell ICMP Exfiltration"
 aliases:
   - "/rule/4c4af3cd-2115-479c-8193-6b8bfce9001c"
-
+ruleid: 4c4af3cd-2115-479c-8193-6b8bfce9001c
 
 tags:
   - attack.exfiltration

@@ -2,7 +2,7 @@
 title: "Linux Capabilities Discovery"
 aliases:
   - "/rule/fe10751f-1995-40a5-aaa2-c97ccb4123fe"
-
+ruleid: fe10751f-1995-40a5-aaa2-c97ccb4123fe
 
 tags:
   - attack.collection

@@ -2,7 +2,7 @@
 title: "Microsoft 365 - User Restricted from Sending Email"
 aliases:
   - "/rule/ff246f56-7f24-402a-baca-b86540e3925c"
-
+ruleid: ff246f56-7f24-402a-baca-b86540e3925c
 
 tags:
   - attack.initial_access

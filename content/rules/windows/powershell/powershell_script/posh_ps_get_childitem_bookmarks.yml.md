@@ -2,7 +2,7 @@
 title: "Automated Collection Bookmarks Using Get-ChildItem PowerShell"
 aliases:
   - "/rule/e0565f5d-d420-4e02-8a68-ac00d864f9cf"
-
+ruleid: e0565f5d-d420-4e02-8a68-ac00d864f9cf
 
 tags:
   - attack.discovery

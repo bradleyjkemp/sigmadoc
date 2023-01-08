@@ -2,7 +2,7 @@
 title: "Invoke-Obfuscation Via Use Clip"
 aliases:
   - "/rule/e1561947-b4e3-4a74-9bdd-83baed21bdb5"
-
+ruleid: e1561947-b4e3-4a74-9bdd-83baed21bdb5
 
 tags:
   - attack.defense_evasion

@@ -2,7 +2,7 @@
 title: "Suspicious PowerShell Mailbox Export to Share"
 aliases:
   - "/rule/889719ef-dd62-43df-86c3-768fb08dc7c0"
-
+ruleid: 889719ef-dd62-43df-86c3-768fb08dc7c0
 
 tags:
   - attack.persistence

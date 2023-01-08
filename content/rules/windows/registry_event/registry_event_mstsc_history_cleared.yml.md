@@ -2,7 +2,7 @@
 title: "Terminal Server Client Connection History Cleared"
 aliases:
   - "/rule/07bdd2f5-9c58-4f38-aec8-e101bb79ef8d"
-
+ruleid: 07bdd2f5-9c58-4f38-aec8-e101bb79ef8d
 
 tags:
   - attack.defense_evasion

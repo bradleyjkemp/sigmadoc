@@ -2,7 +2,7 @@
 title: "Scheduled Cron Task/Job"
 aliases:
   - "/rule/6b14bac8-3e3a-4324-8109-42f0546a347f"
-
+ruleid: 6b14bac8-3e3a-4324-8109-42f0546a347f
 
 tags:
   - attack.execution

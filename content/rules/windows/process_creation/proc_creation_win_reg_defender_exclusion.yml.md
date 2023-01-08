@@ -2,7 +2,7 @@
 title: "Registry Defender Exclusions"
 aliases:
   - "/rule/48917adc-a28e-4f5d-b729-11e75da8941f"
-
+ruleid: 48917adc-a28e-4f5d-b729-11e75da8941f
 
 tags:
   - attack.defense_evasion

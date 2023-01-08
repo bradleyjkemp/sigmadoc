@@ -2,7 +2,7 @@
 title: "Powershell Keylogging"
 aliases:
   - "/rule/34f90d3c-c297-49e9-b26d-911b05a4866c"
-
+ruleid: 34f90d3c-c297-49e9-b26d-911b05a4866c
 
 tags:
   - attack.collection

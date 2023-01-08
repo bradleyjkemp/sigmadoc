@@ -2,7 +2,7 @@
 title: "PowerShell SAM Copy"
 aliases:
   - "/rule/1af57a4b-460a-4738-9034-db68b880c665"
-
+ruleid: 1af57a4b-460a-4738-9034-db68b880c665
 
 tags:
   - attack.credential_access

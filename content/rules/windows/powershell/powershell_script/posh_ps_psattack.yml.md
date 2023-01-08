@@ -2,7 +2,7 @@
 title: "PowerShell PSAttack"
 aliases:
   - "/rule/b7ec41a4-042c-4f31-a5db-d0fcde9fa5c5"
-
+ruleid: b7ec41a4-042c-4f31-a5db-d0fcde9fa5c5
 
 tags:
   - attack.execution

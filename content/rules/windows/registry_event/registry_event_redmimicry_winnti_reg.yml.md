@@ -2,7 +2,7 @@
 title: "RedMimicry Winnti Playbook Registry Manipulation"
 aliases:
   - "/rule/5b175490-b652-4b02-b1de-5b5b4083c5f8"
-
+ruleid: 5b175490-b652-4b02-b1de-5b5b4083c5f8
 
 tags:
   - attack.defense_evasion

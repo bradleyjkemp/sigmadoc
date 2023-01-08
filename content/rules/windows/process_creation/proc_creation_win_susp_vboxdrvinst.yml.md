@@ -2,7 +2,7 @@
 title: "Suspicious VBoxDrvInst.exe Parameters"
 aliases:
   - "/rule/b7b19cb6-9b32-4fc4-a108-73f19acfe262"
-
+ruleid: b7b19cb6-9b32-4fc4-a108-73f19acfe262
 
 tags:
   - attack.defense_evasion

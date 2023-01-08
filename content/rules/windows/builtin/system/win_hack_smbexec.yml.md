@@ -2,7 +2,7 @@
 title: "smbexec.py Service Installation"
 aliases:
   - "/rule/52a85084-6989-40c3-8f32-091e12e13f09"
-
+ruleid: 52a85084-6989-40c3-8f32-091e12e13f09
 
 tags:
   - attack.lateral_movement

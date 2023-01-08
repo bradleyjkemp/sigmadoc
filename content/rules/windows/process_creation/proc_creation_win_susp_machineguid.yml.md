@@ -2,7 +2,7 @@
 title: "Suspicious Query of MachineGUID"
 aliases:
   - "/rule/f5240972-3938-4e56-8e4b-e33893176c1f"
-
+ruleid: f5240972-3938-4e56-8e4b-e33893176c1f
 
 tags:
   - attack.discovery

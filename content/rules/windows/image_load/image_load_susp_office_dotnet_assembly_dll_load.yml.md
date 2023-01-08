@@ -2,7 +2,7 @@
 title: "dotNET DLL Loaded Via Office Applications"
 aliases:
   - "/rule/ff0f2b05-09db-4095-b96d-1b75ca24894a"
-
+ruleid: ff0f2b05-09db-4095-b96d-1b75ca24894a
 
 tags:
   - attack.execution

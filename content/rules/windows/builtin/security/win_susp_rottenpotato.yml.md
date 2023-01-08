@@ -2,7 +2,7 @@
 title: "RottenPotato Like Attack Pattern"
 aliases:
   - "/rule/16f5d8ca-44bd-47c8-acbe-6fc95a16c12f"
-
+ruleid: 16f5d8ca-44bd-47c8-acbe-6fc95a16c12f
 
 tags:
   - attack.privilege_escalation

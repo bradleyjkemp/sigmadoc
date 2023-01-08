@@ -2,7 +2,7 @@
 title: "Query Tor Onion Address"
 aliases:
   - "/rule/b55ca2a3-7cff-4dda-8bdd-c7bfa63bf544"
-
+ruleid: b55ca2a3-7cff-4dda-8bdd-c7bfa63bf544
 
 tags:
   - attack.command_and_control

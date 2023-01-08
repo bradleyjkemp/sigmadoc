@@ -2,7 +2,7 @@
 title: "Notepad Making Network Connection"
 aliases:
   - "/rule/e81528db-fc02-45e8-8e98-4e84aba1f10b"
-
+ruleid: e81528db-fc02-45e8-8e98-4e84aba1f10b
 
 tags:
   - attack.command_and_control

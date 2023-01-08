@@ -2,7 +2,7 @@
 title: "Monitoring For Persistence Via BITS"
 aliases:
   - "/rule/b9cbbc17-d00d-4e3d-a827-b06d03d2380d"
-
+ruleid: b9cbbc17-d00d-4e3d-a827-b06d03d2380d
 
 tags:
   - attack.defense_evasion

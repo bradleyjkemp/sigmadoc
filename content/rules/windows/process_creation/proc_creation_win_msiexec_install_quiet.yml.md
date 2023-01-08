@@ -2,7 +2,7 @@
 title: "Suspicious Msiexec Quiet Install"
 aliases:
   - "/rule/79a87aa6-e4bd-42fc-a5bb-5e6fbdcd62f5"
-
+ruleid: 79a87aa6-e4bd-42fc-a5bb-5e6fbdcd62f5
 
 tags:
   - attack.defense_evasion

@@ -2,7 +2,7 @@
 title: "Sysmon Configuration Error"
 aliases:
   - "/rule/815cd91b-7dbc-4247-841a-d7dd1392b0a8"
-
+ruleid: 815cd91b-7dbc-4247-841a-d7dd1392b0a8
 
 tags:
   - attack.defense_evasion

@@ -2,7 +2,7 @@
 title: "Cmd.exe CommandLine Path Traversal"
 aliases:
   - "/rule/087790e3-3287-436c-bccf-cbd0184a7db1"
-
+ruleid: 087790e3-3287-436c-bccf-cbd0184a7db1
 
 tags:
   - attack.execution

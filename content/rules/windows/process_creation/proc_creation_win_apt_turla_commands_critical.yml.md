@@ -2,7 +2,7 @@
 title: "Turla Group Lateral Movement"
 aliases:
   - "/rule/c601f20d-570a-4cde-a7d6-e17f99cb8e7f"
-
+ruleid: c601f20d-570a-4cde-a7d6-e17f99cb8e7f
 
 tags:
   - attack.g0010

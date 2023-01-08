@@ -2,7 +2,7 @@
 title: "Azure Service Principal Removed"
 aliases:
   - "/rule/448fd1ea-2116-4c62-9cde-a92d120e0f08"
-
+ruleid: 448fd1ea-2116-4c62-9cde-a92d120e0f08
 
 tags:
   - attack.defense_evasion

@@ -2,7 +2,7 @@
 title: "PsExec/PAExec Escalation to LOCAL SYSTEM"
 aliases:
   - "/rule/8834e2f7-6b4b-4f09-8906-d2276470ee23"
-
+ruleid: 8834e2f7-6b4b-4f09-8906-d2276470ee23
 
 tags:
   - attack.develop_capabilities

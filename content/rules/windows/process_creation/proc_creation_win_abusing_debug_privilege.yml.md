@@ -2,7 +2,7 @@
 title: "Abused Debug Privilege by Arbitrary Parent Processes"
 aliases:
   - "/rule/d522eca2-2973-4391-a3e0-ef0374321dae"
-
+ruleid: d522eca2-2973-4391-a3e0-ef0374321dae
 
 tags:
   - attack.privilege_escalation

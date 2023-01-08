@@ -2,7 +2,7 @@
 title: "WMI Modules Loaded"
 aliases:
   - "/rule/671bb7e3-a020-4824-a00e-2ee5b55f385e"
-
+ruleid: 671bb7e3-a020-4824-a00e-2ee5b55f385e
 
 tags:
   - attack.execution

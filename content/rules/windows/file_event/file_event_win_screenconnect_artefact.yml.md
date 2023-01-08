@@ -2,7 +2,7 @@
 title: "ScreenConnect Temporary Installation Artefact"
 aliases:
   - "/rule/fec96f39-988b-4586-b746-b93d59fd1922"
-
+ruleid: fec96f39-988b-4586-b746-b93d59fd1922
 
 tags:
   - attack.command_and_control

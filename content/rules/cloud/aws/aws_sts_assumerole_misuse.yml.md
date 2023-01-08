@@ -2,7 +2,7 @@
 title: "AWS STS AssumeRole Misuse"
 aliases:
   - "/rule/905d389b-b853-46d0-9d3d-dea0d3a3cd49"
-
+ruleid: 905d389b-b853-46d0-9d3d-dea0d3a3cd49
 
 tags:
   - attack.lateral_movement

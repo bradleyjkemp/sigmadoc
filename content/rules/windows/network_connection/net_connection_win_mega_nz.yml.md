@@ -2,7 +2,7 @@
 title: "Communication To Mega.nz"
 aliases:
   - "/rule/fdeebdf0-9f3f-4d08-84a6-4c4d13e39fe4"
-
+ruleid: fdeebdf0-9f3f-4d08-84a6-4c4d13e39fe4
 
 tags:
   - attack.exfiltration

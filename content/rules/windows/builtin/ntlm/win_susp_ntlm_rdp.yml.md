@@ -2,7 +2,7 @@
 title: "Potential Remote Desktop Connection to Non-Domain Host"
 aliases:
   - "/rule/ce5678bb-b9aa-4fb5-be4b-e57f686256ad"
-
+ruleid: ce5678bb-b9aa-4fb5-be4b-e57f686256ad
 
 tags:
   - attack.command_and_control

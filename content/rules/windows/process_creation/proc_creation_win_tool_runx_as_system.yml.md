@@ -2,7 +2,7 @@
 title: "RunXCmd Tool Execution As System"
 aliases:
   - "/rule/93199800-b52a-4dec-b762-75212c196542"
-
+ruleid: 93199800-b52a-4dec-b762-75212c196542
 
 tags:
   - attack.execution

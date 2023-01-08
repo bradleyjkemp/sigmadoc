@@ -2,7 +2,7 @@
 title: "EvilNum Golden Chickens Deployment via OCX Files"
 aliases:
   - "/rule/8acf3cfa-1e8c-4099-83de-a0c4038e18f0"
-
+ruleid: 8acf3cfa-1e8c-4099-83de-a0c4038e18f0
 
 tags:
   - attack.defense_evasion

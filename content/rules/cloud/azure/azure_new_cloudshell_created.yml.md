@@ -2,7 +2,7 @@
 title: "Azure New CloudShell Created"
 aliases:
   - "/rule/72af37e2-ec32-47dc-992b-bc288a2708cb"
-
+ruleid: 72af37e2-ec32-47dc-992b-bc288a2708cb
 
 tags:
   - attack.execution

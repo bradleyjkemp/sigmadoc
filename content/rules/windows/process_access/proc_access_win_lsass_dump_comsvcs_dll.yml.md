@@ -2,7 +2,7 @@
 title: "Lsass Memory Dump via Comsvcs DLL"
 aliases:
   - "/rule/a49fa4d5-11db-418c-8473-1e014a8dd462"
-
+ruleid: a49fa4d5-11db-418c-8473-1e014a8dd462
 
 tags:
   - attack.credential_access

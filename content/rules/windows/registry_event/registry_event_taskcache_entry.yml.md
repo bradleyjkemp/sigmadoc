@@ -2,7 +2,7 @@
 title: "New TaskCache Entry"
 aliases:
   - "/rule/4720b7df-40c3-48fd-bbdf-fd4b3c464f0d"
-
+ruleid: 4720b7df-40c3-48fd-bbdf-fd4b3c464f0d
 
 tags:
   - attack.persistence

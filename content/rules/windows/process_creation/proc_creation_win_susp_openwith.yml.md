@@ -2,7 +2,7 @@
 title: "OpenWith.exe Executes Specified Binary"
 aliases:
   - "/rule/cec8e918-30f7-4e2d-9bfa-a59cc97ae60f"
-
+ruleid: cec8e918-30f7-4e2d-9bfa-a59cc97ae60f
 
 tags:
   - attack.defense_evasion

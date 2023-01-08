@@ -2,7 +2,7 @@
 title: "Indirect Command Execution By Program Compatibility Wizard"
 aliases:
   - "/rule/b97cd4b1-30b8-4a9d-bd72-6293928d52bc"
-
+ruleid: b97cd4b1-30b8-4a9d-bd72-6293928d52bc
 
 tags:
   - attack.defense_evasion

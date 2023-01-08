@@ -2,7 +2,7 @@
 title: "CreateRemoteThread API and LoadLibrary"
 aliases:
   - "/rule/052ec6f6-1adc-41e6-907a-f1c813478bee"
-
+ruleid: 052ec6f6-1adc-41e6-907a-f1c813478bee
 
 tags:
   - attack.defense_evasion

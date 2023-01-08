@@ -2,7 +2,7 @@
 title: "Suspicious WMI Reconnaissance"
 aliases:
   - "/rule/221b251a-357a-49a9-920a-271802777cc0"
-
+ruleid: 221b251a-357a-49a9-920a-271802777cc0
 
 tags:
   - attack.execution

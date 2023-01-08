@@ -2,7 +2,7 @@
 title: "CobaltStrike Process Patterns"
 aliases:
   - "/rule/f35c5d71-b489-4e22-a115-f003df287317"
-
+ruleid: f35c5d71-b489-4e22-a115-f003df287317
 
 tags:
   - attack.execution

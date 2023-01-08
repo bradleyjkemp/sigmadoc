@@ -2,7 +2,7 @@
 title: "Execution in Webserver Root Folder"
 aliases:
   - "/rule/35efb964-e6a5-47ad-bbcd-19661854018d"
-
+ruleid: 35efb964-e6a5-47ad-bbcd-19661854018d
 
 tags:
   - attack.persistence

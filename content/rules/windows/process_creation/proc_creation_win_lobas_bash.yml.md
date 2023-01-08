@@ -2,7 +2,7 @@
 title: "Suspicious Subsystem for Linux Bash Execution"
 aliases:
   - "/rule/5edc2273-c26f-406c-83f3-f4d948e740dd"
-
+ruleid: 5edc2273-c26f-406c-83f3-f4d948e740dd
 
 tags:
   - attack.defense_evasion

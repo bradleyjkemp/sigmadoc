@@ -2,7 +2,7 @@
 title: "Suspicious Kerberos RC4 Ticket Encryption"
 aliases:
   - "/rule/496a0e47-0a33-4dca-b009-9e6ca3591f39"
-
+ruleid: 496a0e47-0a33-4dca-b009-9e6ca3591f39
 
 tags:
   - attack.credential_access

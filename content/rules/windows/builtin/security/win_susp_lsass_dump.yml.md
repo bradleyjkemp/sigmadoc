@@ -2,7 +2,7 @@
 title: "Password Dumper Activity on LSASS"
 aliases:
   - "/rule/aa1697b7-d611-4f9a-9cb2-5125b4ccfd5c"
-
+ruleid: aa1697b7-d611-4f9a-9cb2-5125b4ccfd5c
 
 tags:
   - attack.credential_access

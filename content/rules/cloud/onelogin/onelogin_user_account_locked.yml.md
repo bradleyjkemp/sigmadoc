@@ -2,7 +2,7 @@
 title: "OneLogin User Account Locked"
 aliases:
   - "/rule/a717c561-d117-437e-b2d9-0118a7035d01"
-
+ruleid: a717c561-d117-437e-b2d9-0118a7035d01
 
 tags:
   - attack.impact

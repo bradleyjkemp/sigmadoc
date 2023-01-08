@@ -2,7 +2,7 @@
 title: "Suspicious Curl Usage on Windows"
 aliases:
   - "/rule/e218595b-bbe7-4ee5-8a96-f32a24ad3468"
-
+ruleid: e218595b-bbe7-4ee5-8a96-f32a24ad3468
 
 tags:
   - attack.command_and_control

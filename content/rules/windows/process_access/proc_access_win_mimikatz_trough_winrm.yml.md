@@ -2,7 +2,7 @@
 title: "Mimikatz through Windows Remote Management"
 aliases:
   - "/rule/aa35a627-33fb-4d04-a165-d33b4afca3e8"
-
+ruleid: aa35a627-33fb-4d04-a165-d33b4afca3e8
 
 tags:
   - attack.credential_access

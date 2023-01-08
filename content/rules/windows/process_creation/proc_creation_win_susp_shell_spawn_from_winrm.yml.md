@@ -2,7 +2,7 @@
 title: "Suspicious Shells Spawn by WinRM"
 aliases:
   - "/rule/5cc2cda8-f261-4d88-a2de-e9e193c86716"
-
+ruleid: 5cc2cda8-f261-4d88-a2de-e9e193c86716
 
 tags:
   - attack.t1190

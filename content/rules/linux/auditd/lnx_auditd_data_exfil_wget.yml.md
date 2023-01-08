@@ -2,7 +2,7 @@
 title: "Data Exfiltration with Wget"
 aliases:
   - "/rule/cb39d16b-b3b6-4a7a-8222-1cf24b686ffc"
-
+ruleid: cb39d16b-b3b6-4a7a-8222-1cf24b686ffc
 
 tags:
   - attack.exfiltration

@@ -2,7 +2,7 @@
 title: "Suspicious Execution of Systeminfo"
 aliases:
   - "/rule/0ef56343-059e-4cb6-adc1-4c3c967c5e46"
-
+ruleid: 0ef56343-059e-4cb6-adc1-4c3c967c5e46
 
 tags:
   - attack.discovery

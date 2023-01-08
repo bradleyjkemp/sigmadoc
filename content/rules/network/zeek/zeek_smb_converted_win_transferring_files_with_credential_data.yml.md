@@ -2,7 +2,7 @@
 title: "Transferring Files with Credential Data via Network Shares - Zeek"
 aliases:
   - "/rule/2e69f167-47b5-4ae7-a390-47764529eff5"
-
+ruleid: 2e69f167-47b5-4ae7-a390-47764529eff5
 
 tags:
   - attack.credential_access

@@ -2,7 +2,7 @@
 title: "Cisco Show Commands Input"
 aliases:
   - "/rule/b094d9fb-b1ad-4650-9f1a-fb7be9f1d34b"
-
+ruleid: b094d9fb-b1ad-4650-9f1a-fb7be9f1d34b
 
 tags:
   - attack.credential_access

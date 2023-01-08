@@ -2,7 +2,7 @@
 title: "Webshell ReGeorg Detection Via Web Logs"
 aliases:
   - "/rule/2ea44a60-cfda-11ea-87d0-0242ac130003"
-
+ruleid: 2ea44a60-cfda-11ea-87d0-0242ac130003
 
 tags:
   - attack.persistence

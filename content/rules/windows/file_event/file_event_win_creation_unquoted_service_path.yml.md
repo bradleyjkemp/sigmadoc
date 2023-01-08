@@ -2,7 +2,7 @@
 title: "Creation Exe for Service with Unquoted Path"
 aliases:
   - "/rule/8c3c76ca-8f8b-4b1d-aaf3-81aebcd367c9"
-
+ruleid: 8c3c76ca-8f8b-4b1d-aaf3-81aebcd367c9
 
 tags:
   - attack.persistence

@@ -2,7 +2,7 @@
 title: "Startup Folder File Write"
 aliases:
   - "/rule/2aa0a6b4-a865-495b-ab51-c28249537b75"
-
+ruleid: 2aa0a6b4-a865-495b-ab51-c28249537b75
 
 tags:
   - attack.persistence

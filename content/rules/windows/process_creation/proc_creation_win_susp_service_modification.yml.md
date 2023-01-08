@@ -2,7 +2,7 @@
 title: "Stop Or Remove Antivirus Service"
 aliases:
   - "/rule/6783aa9e-0dc3-49d4-a94a-8b39c5fd700b"
-
+ruleid: 6783aa9e-0dc3-49d4-a94a-8b39c5fd700b
 
 tags:
   - attack.defense_evasion

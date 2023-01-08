@@ -2,7 +2,7 @@
 title: "Installation of TeamViewer Desktop"
 aliases:
   - "/rule/9711de76-5d4f-4c50-a94f-21e4e8f8384d"
-
+ruleid: 9711de76-5d4f-4c50-a94f-21e4e8f8384d
 
 tags:
   - attack.command_and_control

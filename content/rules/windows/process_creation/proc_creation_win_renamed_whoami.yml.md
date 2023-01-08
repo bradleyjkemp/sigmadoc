@@ -2,7 +2,7 @@
 title: "Renamed Whoami Execution"
 aliases:
   - "/rule/f1086bf7-a0c4-4a37-9102-01e573caf4a0"
-
+ruleid: f1086bf7-a0c4-4a37-9102-01e573caf4a0
 
 tags:
   - attack.discovery

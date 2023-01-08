@@ -2,7 +2,7 @@
 title: "Execution via WorkFolders.exe"
 aliases:
   - "/rule/0bbc6369-43e3-453d-9944-cae58821c173"
-
+ruleid: 0bbc6369-43e3-453d-9944-cae58821c173
 
 tags:
   - attack.defense_evasion

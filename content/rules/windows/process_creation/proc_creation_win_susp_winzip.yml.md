@@ -2,7 +2,7 @@
 title: "Compress Data and Lock With Password for Exfiltration With WINZIP"
 aliases:
   - "/rule/e2e80da2-8c66-4e00-ae3c-2eebd29f6b6d"
-
+ruleid: e2e80da2-8c66-4e00-ae3c-2eebd29f6b6d
 
 tags:
   - attack.collection

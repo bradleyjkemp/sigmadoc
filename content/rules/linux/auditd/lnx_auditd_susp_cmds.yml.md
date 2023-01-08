@@ -2,7 +2,7 @@
 title: "Suspicious Commands Linux"
 aliases:
   - "/rule/1543ae20-cbdf-4ec1-8d12-7664d667a825"
-
+ruleid: 1543ae20-cbdf-4ec1-8d12-7664d667a825
 
 tags:
   - attack.execution

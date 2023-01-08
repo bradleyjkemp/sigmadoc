@@ -2,7 +2,7 @@
 title: "Suspicious Code Page Switch"
 aliases:
   - "/rule/c7942406-33dd-4377-a564-0f62db0593a3"
-
+ruleid: c7942406-33dd-4377-a564-0f62db0593a3
 
 tags:
   - attack.t1036

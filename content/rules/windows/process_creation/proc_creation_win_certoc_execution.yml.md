@@ -2,7 +2,7 @@
 title: "Suspicious Load DLL via CertOC.exe"
 aliases:
   - "/rule/242301bc-f92f-4476-8718-78004a6efd9f"
-
+ruleid: 242301bc-f92f-4476-8718-78004a6efd9f
 
 tags:
   - attack.defense_evasion

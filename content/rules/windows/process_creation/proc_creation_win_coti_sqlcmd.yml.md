@@ -2,7 +2,7 @@
 title: "Conti Backup Database"
 aliases:
   - "/rule/2f47f1fd-0901-466e-a770-3b7092834a1b"
-
+ruleid: 2f47f1fd-0901-466e-a770-3b7092834a1b
 
 tags:
   - attack.collection

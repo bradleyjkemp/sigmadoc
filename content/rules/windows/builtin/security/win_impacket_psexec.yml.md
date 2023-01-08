@@ -2,7 +2,7 @@
 title: "Impacket PsExec Execution"
 aliases:
   - "/rule/32d56ea1-417f-44ff-822b-882873f5f43b"
-
+ruleid: 32d56ea1-417f-44ff-822b-882873f5f43b
 
 tags:
   - attack.lateral_movement

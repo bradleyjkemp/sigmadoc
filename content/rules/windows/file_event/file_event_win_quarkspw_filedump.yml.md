@@ -2,7 +2,7 @@
 title: "QuarksPwDump Dump File"
 aliases:
   - "/rule/847def9e-924d-4e90-b7c4-5f581395a2b4"
-
+ruleid: 847def9e-924d-4e90-b7c4-5f581395a2b4
 
 tags:
   - attack.credential_access

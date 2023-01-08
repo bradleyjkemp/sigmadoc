@@ -2,7 +2,7 @@
 title: "Steganography Hide Zip Information in Picture File"
 aliases:
   - "/rule/45810b50-7edc-42ca-813b-bdac02fb946b"
-
+ruleid: 45810b50-7edc-42ca-813b-bdac02fb946b
 
 tags:
   - attack.defense_evasion

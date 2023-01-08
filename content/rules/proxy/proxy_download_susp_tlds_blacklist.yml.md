@@ -2,7 +2,7 @@
 title: "Download from Suspicious TLD"
 aliases:
   - "/rule/00d0b5ab-1f55-4120-8e83-487c0a7baf19"
-
+ruleid: 00d0b5ab-1f55-4120-8e83-487c0a7baf19
 
 tags:
   - attack.initial_access

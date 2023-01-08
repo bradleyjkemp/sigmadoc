@@ -2,7 +2,7 @@
 title: "Accessing WinAPI in PowerShell for Credentials Dumping"
 aliases:
   - "/rule/3f07b9d1-2082-4c56-9277-613a621983cc"
-
+ruleid: 3f07b9d1-2082-4c56-9277-613a621983cc
 
 tags:
   - attack.credential_access

@@ -2,7 +2,7 @@
 title: "Binary Padding"
 aliases:
   - "/rule/c52a914f-3d8b-4b2a-bb75-b3991e75f8ba"
-
+ruleid: c52a914f-3d8b-4b2a-bb75-b3991e75f8ba
 
 tags:
   - attack.defense_evasion

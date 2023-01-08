@@ -2,7 +2,7 @@
 title: "Suspicious Remote Thread Created"
 aliases:
   - "/rule/66d31e5f-52d6-40a4-9615-002d3789a119"
-
+ruleid: 66d31e5f-52d6-40a4-9615-002d3789a119
 
 tags:
   - attack.privilege_escalation

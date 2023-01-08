@@ -2,7 +2,7 @@
 title: "Esentutl Steals Browser Information"
 aliases:
   - "/rule/6a69f62d-ce75-4b57-8dce-6351eb55b362"
-
+ruleid: 6a69f62d-ce75-4b57-8dce-6351eb55b362
 
 tags:
   - attack.collection

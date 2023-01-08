@@ -2,7 +2,7 @@
 title: "Ping Hex IP"
 aliases:
   - "/rule/1a0d4aba-7668-4365-9ce4-6d79ab088dfd"
-
+ruleid: 1a0d4aba-7668-4365-9ce4-6d79ab088dfd
 
 tags:
   - attack.defense_evasion

@@ -2,7 +2,7 @@
 title: "UNC2452 Process Creation Patterns"
 aliases:
   - "/rule/9be34ad0-b6a7-4fbd-91cf-fc7ec1047f5f"
-
+ruleid: 9be34ad0-b6a7-4fbd-91cf-fc7ec1047f5f
 
 tags:
   - attack.execution

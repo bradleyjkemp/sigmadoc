@@ -2,7 +2,7 @@
 title: "Windows Spooler Service Suspicious File Deletion"
 aliases:
   - "/rule/5b2bbc47-dead-4ef7-8908-0cf73fcbecbf"
-
+ruleid: 5b2bbc47-dead-4ef7-8908-0cf73fcbecbf
 
 tags:
   - attack.persistence

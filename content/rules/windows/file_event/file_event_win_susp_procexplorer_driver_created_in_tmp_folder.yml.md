@@ -2,7 +2,7 @@
 title: "Suspicious PROCEXP152.sys File Created In TMP"
 aliases:
   - "/rule/3da70954-0f2c-4103-adff-b7440368f50e"
-
+ruleid: 3da70954-0f2c-4103-adff-b7440368f50e
 
 tags:
   - attack.t1562.001

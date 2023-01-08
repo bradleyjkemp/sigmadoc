@@ -2,7 +2,7 @@
 title: "ISO Image Mount"
 aliases:
   - "/rule/0248a7bc-8a9a-4cd8-a57e-3ae8e073a073"
-
+ruleid: 0248a7bc-8a9a-4cd8-a57e-3ae8e073a073
 
 tags:
   - attack.initial_access

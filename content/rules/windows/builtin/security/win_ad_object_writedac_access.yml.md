@@ -2,7 +2,7 @@
 title: "AD Object WriteDAC Access"
 aliases:
   - "/rule/028c7842-4243-41cd-be6f-12f3cf1a26c7"
-
+ruleid: 028c7842-4243-41cd-be6f-12f3cf1a26c7
 
 tags:
   - attack.defense_evasion

@@ -2,7 +2,7 @@
 title: "Script Interpreter Execution From Suspicious Folder"
 aliases:
   - "/rule/1228c958-e64e-4e71-92ad-7d429f4138ba"
-
+ruleid: 1228c958-e64e-4e71-92ad-7d429f4138ba
 
 tags:
   - attack.execution

@@ -2,7 +2,7 @@
 title: "MacOS Scripting Interpreter AppleScript"
 aliases:
   - "/rule/1bc2e6c5-0885-472b-bed6-be5ea8eace55"
-
+ruleid: 1bc2e6c5-0885-472b-bed6-be5ea8eace55
 
 tags:
   - attack.execution

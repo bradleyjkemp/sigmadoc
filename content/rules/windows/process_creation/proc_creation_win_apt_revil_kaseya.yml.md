@@ -2,7 +2,7 @@
 title: "REvil Kaseya Incident Malware Patterns"
 aliases:
   - "/rule/5de632bc-7fbd-4c8a-944a-fce55c59eae5"
-
+ruleid: 5de632bc-7fbd-4c8a-944a-fce55c59eae5
 
 tags:
   - attack.execution

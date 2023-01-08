@@ -2,7 +2,7 @@
 title: "Microsoft Office Add-In Loading"
 aliases:
   - "/rule/8e1cb247-6cf6-42fa-b440-3f27d57e9936"
-
+ruleid: 8e1cb247-6cf6-42fa-b440-3f27d57e9936
 
 tags:
   - attack.persistence

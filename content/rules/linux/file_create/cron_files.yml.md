@@ -2,7 +2,7 @@
 title: "Cron Files"
 aliases:
   - "/rule/6c4e2f43-d94d-4ead-b64d-97e53fa2bd05"
-
+ruleid: 6c4e2f43-d94d-4ead-b64d-97e53fa2bd05
 
 tags:
   - attack.persistence

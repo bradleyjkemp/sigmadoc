@@ -2,7 +2,7 @@
 title: "First Time Seen Remote Named Pipe - Zeek"
 aliases:
   - "/rule/021310d9-30a6-480a-84b7-eaa69aeb92bb"
-
+ruleid: 021310d9-30a6-480a-84b7-eaa69aeb92bb
 
 tags:
   - attack.lateral_movement

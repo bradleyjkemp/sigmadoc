@@ -2,7 +2,7 @@
 title: "WinRM Access with Evil-WinRM"
 aliases:
   - "/rule/a197e378-d31b-41c0-9635-cfdf1c1bb423"
-
+ruleid: a197e378-d31b-41c0-9635-cfdf1c1bb423
 
 tags:
   - attack.lateral_movement

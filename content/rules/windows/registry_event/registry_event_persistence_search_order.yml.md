@@ -2,7 +2,7 @@
 title: "Windows Registry Persistence COM Search Order Hijacking"
 aliases:
   - "/rule/a0ff33d8-79e4-4cef-b4f3-9dc4133ccd12"
-
+ruleid: a0ff33d8-79e4-4cef-b4f3-9dc4133ccd12
 
 tags:
   - attack.persistence

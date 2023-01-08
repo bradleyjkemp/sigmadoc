@@ -2,7 +2,7 @@
 title: "Exchange Exploitation CVE-2021-28480"
 aliases:
   - "/rule/a2a9d722-0acb-4096-bccc-daaf91a5037b"
-
+ruleid: a2a9d722-0acb-4096-bccc-daaf91a5037b
 
 tags:
   - attack.initial_access

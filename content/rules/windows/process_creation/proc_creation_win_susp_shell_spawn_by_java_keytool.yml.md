@@ -2,7 +2,7 @@
 title: "Suspicious Shells Spawn by Java Utility Keytool"
 aliases:
   - "/rule/90fb5e62-ca1f-4e22-b42e-cc521874c938"
-
+ruleid: 90fb5e62-ca1f-4e22-b42e-cc521874c938
 
 tags:
   - attack.initial_access

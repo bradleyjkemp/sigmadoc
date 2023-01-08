@@ -2,7 +2,7 @@
 title: "Python SQL Exceptions"
 aliases:
   - "/rule/19aefed0-ffd4-47dc-a7fc-f8b1425e84f9"
-
+ruleid: 19aefed0-ffd4-47dc-a7fc-f8b1425e84f9
 
 tags:
   - attack.initial_access

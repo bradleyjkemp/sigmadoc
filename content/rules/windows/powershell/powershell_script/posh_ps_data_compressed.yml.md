@@ -2,7 +2,7 @@
 title: "Data Compressed - PowerShell"
 aliases:
   - "/rule/6dc5d284-69ea-42cf-9311-fb1c3932a69a"
-
+ruleid: 6dc5d284-69ea-42cf-9311-fb1c3932a69a
 
 tags:
   - attack.exfiltration

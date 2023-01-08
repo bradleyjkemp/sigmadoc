@@ -2,7 +2,7 @@
 title: "Firewall Disabled via Netsh"
 aliases:
   - "/rule/57c4bf16-227f-4394-8ec7-1b745ee061c3"
-
+ruleid: 57c4bf16-227f-4394-8ec7-1b745ee061c3
 
 tags:
   - attack.defense_evasion

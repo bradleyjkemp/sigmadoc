@@ -2,7 +2,7 @@
 title: "UAC Bypass Using ChangePK and SLUI"
 aliases:
   - "/rule/503d581c-7df0-4bbe-b9be-5840c0ecc1fc"
-
+ruleid: 503d581c-7df0-4bbe-b9be-5840c0ecc1fc
 
 tags:
   - attack.defense_evasion

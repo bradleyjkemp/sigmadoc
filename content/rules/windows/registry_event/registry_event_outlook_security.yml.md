@@ -2,7 +2,7 @@
 title: "Change Outlook Security Setting in Registry"
 aliases:
   - "/rule/c3cefdf4-6703-4e1c-bad8-bf422fc5015a"
-
+ruleid: c3cefdf4-6703-4e1c-bad8-bf422fc5015a
 
 tags:
   - attack.persistence

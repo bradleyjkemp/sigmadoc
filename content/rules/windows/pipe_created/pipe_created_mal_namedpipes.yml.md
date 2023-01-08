@@ -2,7 +2,7 @@
 title: "Malicious Named Pipe"
 aliases:
   - "/rule/fe3ac066-98bb-432a-b1e7-a5229cb39d4a"
-
+ruleid: fe3ac066-98bb-432a-b1e7-a5229cb39d4a
 
 tags:
   - attack.defense_evasion

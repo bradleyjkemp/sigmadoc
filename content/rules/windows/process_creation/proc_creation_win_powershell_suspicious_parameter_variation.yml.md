@@ -2,7 +2,7 @@
 title: "Suspicious PowerShell Parameter Substring"
 aliases:
   - "/rule/36210e0d-5b19-485d-a087-c096088885f0"
-
+ruleid: 36210e0d-5b19-485d-a087-c096088885f0
 
 tags:
   - attack.execution

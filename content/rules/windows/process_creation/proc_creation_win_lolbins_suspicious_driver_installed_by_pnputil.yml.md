@@ -2,7 +2,7 @@
 title: "Suspicious Driver Install by pnputil.exe"
 aliases:
   - "/rule/a2ea3ae7-d3d0-40a0-a55c-25a45c87cac1"
-
+ruleid: a2ea3ae7-d3d0-40a0-a55c-25a45c87cac1
 
 tags:
   - attack.persistence

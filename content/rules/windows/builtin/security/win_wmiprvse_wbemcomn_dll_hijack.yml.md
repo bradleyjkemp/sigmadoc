@@ -2,7 +2,7 @@
 title: "T1047 Wmiprvse Wbemcomn DLL Hijack"
 aliases:
   - "/rule/f6c68d5f-e101-4b86-8c84-7d96851fd65c"
-
+ruleid: f6c68d5f-e101-4b86-8c84-7d96851fd65c
 
 tags:
   - attack.execution

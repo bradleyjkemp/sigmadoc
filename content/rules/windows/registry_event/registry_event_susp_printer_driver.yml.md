@@ -2,7 +2,7 @@
 title: "Suspicious Printer Driver Empty Manufacturer"
 aliases:
   - "/rule/e0813366-0407-449a-9869-a2db1119dc41"
-
+ruleid: e0813366-0407-449a-9869-a2db1119dc41
 
 tags:
   - attack.privilege_escalation

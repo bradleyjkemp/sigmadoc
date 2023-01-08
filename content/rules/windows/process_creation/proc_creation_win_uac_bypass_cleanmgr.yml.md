@@ -2,7 +2,7 @@
 title: "UAC Bypass Using Disk Cleanup"
 aliases:
   - "/rule/b697e69c-746f-4a86-9f59-7bfff8eab881"
-
+ruleid: b697e69c-746f-4a86-9f59-7bfff8eab881
 
 tags:
   - attack.defense_evasion

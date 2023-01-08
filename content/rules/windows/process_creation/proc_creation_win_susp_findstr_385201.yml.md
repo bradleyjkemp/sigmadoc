@@ -2,7 +2,7 @@
 title: "Suspicious Findstr 385201 Execution"
 aliases:
   - "/rule/37db85d1-b089-490a-a59a-c7b6f984f480"
-
+ruleid: 37db85d1-b089-490a-a59a-c7b6f984f480
 
 tags:
   - attack.discovery

@@ -2,7 +2,7 @@
 title: "Rundll32 Without Parameters"
 aliases:
   - "/rule/5bb68627-3198-40ca-b458-49f973db8752"
-
+ruleid: 5bb68627-3198-40ca-b458-49f973db8752
 
 tags:
   - attack.lateral_movement

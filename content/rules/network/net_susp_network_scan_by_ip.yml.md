@@ -2,7 +2,7 @@
 title: "Network Scans Count By Destination IP"
 aliases:
   - "/rule/4601eaec-6b45-4052-ad32-2d96d26ce0d8"
-
+ruleid: 4601eaec-6b45-4052-ad32-2d96d26ce0d8
 
 tags:
   - attack.discovery

@@ -2,7 +2,7 @@
 title: "Detect Virtualbox Driver Installation OR Starting Of VMs"
 aliases:
   - "/rule/bab049ca-7471-4828-9024-38279a4c04da"
-
+ruleid: bab049ca-7471-4828-9024-38279a4c04da
 
 tags:
   - attack.defense_evasion

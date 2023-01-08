@@ -2,7 +2,7 @@
 title: "Ps.exe Renamed SysInternals Tool"
 aliases:
   - "/rule/18da1007-3f26-470f-875d-f77faf1cab31"
-
+ruleid: 18da1007-3f26-470f-875d-f77faf1cab31
 
 tags:
   - attack.defense_evasion

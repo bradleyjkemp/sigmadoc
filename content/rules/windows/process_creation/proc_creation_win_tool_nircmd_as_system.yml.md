@@ -2,7 +2,7 @@
 title: "NirCmd Tool Execution As LOCAL SYSTEM"
 aliases:
   - "/rule/d9047477-0359-48c9-b8c7-792cedcdc9c4"
-
+ruleid: d9047477-0359-48c9-b8c7-792cedcdc9c4
 
 tags:
   - attack.execution

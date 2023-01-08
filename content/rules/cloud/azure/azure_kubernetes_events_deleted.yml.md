@@ -2,7 +2,7 @@
 title: "Azure Kubernetes Events Deleted"
 aliases:
   - "/rule/225d8b09-e714-479c-a0e4-55e6f29adf35"
-
+ruleid: 225d8b09-e714-479c-a0e4-55e6f29adf35
 
 tags:
   - attack.defense_evasion

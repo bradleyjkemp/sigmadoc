@@ -2,7 +2,7 @@
 title: "Bypass UAC via WSReset.exe"
 aliases:
   - "/rule/d797268e-28a9-49a7-b9a8-2f5039011c5c"
-
+ruleid: d797268e-28a9-49a7-b9a8-2f5039011c5c
 
 tags:
   - attack.privilege_escalation

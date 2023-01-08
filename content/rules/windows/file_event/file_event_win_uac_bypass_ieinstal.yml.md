@@ -2,7 +2,7 @@
 title: "UAC Bypass Using IEInstal - File"
 aliases:
   - "/rule/bdd8157d-8e85-4397-bb82-f06cc9c71dbb"
-
+ruleid: bdd8157d-8e85-4397-bb82-f06cc9c71dbb
 
 tags:
   - attack.defense_evasion

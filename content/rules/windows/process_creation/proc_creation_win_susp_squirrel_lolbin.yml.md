@@ -2,7 +2,7 @@
 title: "Squirrel Lolbin"
 aliases:
   - "/rule/fa4b21c9-0057-4493-b289-2556416ae4d7"
-
+ruleid: fa4b21c9-0057-4493-b289-2556416ae4d7
 
 tags:
   - attack.execution

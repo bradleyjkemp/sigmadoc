@@ -2,7 +2,7 @@
 title: "OneLogin User Assumed Another User"
 aliases:
   - "/rule/62fff148-278d-497e-8ecd-ad6083231a35"
-
+ruleid: 62fff148-278d-497e-8ecd-ad6083231a35
 
 tags:
   - attack.impact

@@ -2,7 +2,7 @@
 title: "CVE-2021-33766 Exchange ProxyToken Exploitation"
 aliases:
   - "/rule/56973b50-3382-4b56-bdf5-f51a3183797a"
-
+ruleid: 56973b50-3382-4b56-bdf5-f51a3183797a
 
 tags:
   - attack.initial_access

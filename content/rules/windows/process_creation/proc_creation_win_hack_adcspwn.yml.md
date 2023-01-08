@@ -2,7 +2,7 @@
 title: "ADCSPwn Hack Tool"
 aliases:
   - "/rule/cd8c163e-a19b-402e-bdd5-419ff5859f12"
-
+ruleid: cd8c163e-a19b-402e-bdd5-419ff5859f12
 
 tags:
   - attack.credential_access

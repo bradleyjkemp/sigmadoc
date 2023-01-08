@@ -2,7 +2,7 @@
 title: "NSudo Tool Execution As System"
 aliases:
   - "/rule/771d1eb5-9587-4568-95fb-9ec44153a012"
-
+ruleid: 771d1eb5-9587-4568-95fb-9ec44153a012
 
 tags:
   - attack.execution

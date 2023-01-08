@@ -2,7 +2,7 @@
 title: "Remote DCOM/WMI Lateral Movement"
 aliases:
   - "/rule/68050b10-e477-4377-a99b-3721b422d6ef"
-
+ruleid: 68050b10-e477-4377-a99b-3721b422d6ef
 
 tags:
   - attack.lateral_movement

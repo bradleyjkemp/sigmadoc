@@ -2,7 +2,7 @@
 title: "UAC Bypass Using .NET Code Profiler on MMC"
 aliases:
   - "/rule/93a19907-d4f9-4deb-9f91-aac4692776a6"
-
+ruleid: 93a19907-d4f9-4deb-9f91-aac4692776a6
 
 tags:
   - attack.defense_evasion

@@ -2,7 +2,7 @@
 title: "Remote File Copy"
 aliases:
   - "/rule/7a14080d-a048-4de8-ae58-604ce58a795b"
-
+ruleid: 7a14080d-a048-4de8-ae58-604ce58a795b
 
 tags:
   - attack.command_and_control

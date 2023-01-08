@@ -2,7 +2,7 @@
 title: "Suspicious Task Added by Powershell"
 aliases:
   - "/rule/fe3a2d49-f255-4d10-935c-bda7391108eb"
-
+ruleid: fe3a2d49-f255-4d10-935c-bda7391108eb
 
 tags:
   - attack.defense_evasion

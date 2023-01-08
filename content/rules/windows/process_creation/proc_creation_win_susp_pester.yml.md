@@ -2,7 +2,7 @@
 title: "Execute Code with Pester.bat"
 aliases:
   - "/rule/59e938ff-0d6d-4dc3-b13f-36cc28734d4e"
-
+ruleid: 59e938ff-0d6d-4dc3-b13f-36cc28734d4e
 
 tags:
   - attack.execution

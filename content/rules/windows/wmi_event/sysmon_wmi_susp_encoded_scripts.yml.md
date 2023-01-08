@@ -2,7 +2,7 @@
 title: "Suspicious Encoded Scripts in a WMI Consumer"
 aliases:
   - "/rule/83844185-1c5b-45bc-bcf3-b5bf3084ca5b"
-
+ruleid: 83844185-1c5b-45bc-bcf3-b5bf3084ca5b
 
 tags:
   - attack.execution

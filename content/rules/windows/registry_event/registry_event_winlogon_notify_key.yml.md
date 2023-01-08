@@ -2,7 +2,7 @@
 title: "Winlogon Notify Key Logon Persistence"
 aliases:
   - "/rule/bbf59793-6efb-4fa1-95ca-a7d288e52c88"
-
+ruleid: bbf59793-6efb-4fa1-95ca-a7d288e52c88
 
 tags:
   - attack.persistence

@@ -2,7 +2,7 @@
 title: "Modifies the Registry From a ADS"
 aliases:
   - "/rule/77946e79-97f1-45a2-84b4-f37b5c0d8682"
-
+ruleid: 77946e79-97f1-45a2-84b4-f37b5c0d8682
 
 tags:
   - attack.t1112

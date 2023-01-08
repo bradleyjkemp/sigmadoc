@@ -2,7 +2,7 @@
 title: "Suspicious Compression Tool Parameters"
 aliases:
   - "/rule/27a72a60-7e5e-47b1-9d17-909c9abafdcd"
-
+ruleid: 27a72a60-7e5e-47b1-9d17-909c9abafdcd
 
 tags:
   - attack.collection

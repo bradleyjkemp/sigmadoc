@@ -2,7 +2,7 @@
 title: "Changing RDP Port to Non Standard Number"
 aliases:
   - "/rule/509e84b9-a71a-40e0-834f-05470369bd1e"
-
+ruleid: 509e84b9-a71a-40e0-834f-05470369bd1e
 
 tags:
   - attack.persistence

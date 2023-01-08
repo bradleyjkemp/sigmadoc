@@ -2,7 +2,7 @@
 title: "Okta Policy Rule Modified or Deleted"
 aliases:
   - "/rule/0c97c1d3-4057-45c9-b148-1de94b631931"
-
+ruleid: 0c97c1d3-4057-45c9-b148-1de94b631931
 
 tags:
   - attack.impact

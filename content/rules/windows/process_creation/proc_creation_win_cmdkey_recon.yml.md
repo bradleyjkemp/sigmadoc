@@ -2,7 +2,7 @@
 title: "Cmdkey Cached Credentials Recon"
 aliases:
   - "/rule/07f8bdc2-c9b3-472a-9817-5a670b872f53"
-
+ruleid: 07f8bdc2-c9b3-472a-9817-5a670b872f53
 
 tags:
   - attack.credential_access

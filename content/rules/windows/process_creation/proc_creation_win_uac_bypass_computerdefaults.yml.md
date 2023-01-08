@@ -2,7 +2,7 @@
 title: "UAC Bypass Using ComputerDefaults"
 aliases:
   - "/rule/3c05e90d-7eba-4324-9972-5d7f711a60a8"
-
+ruleid: 3c05e90d-7eba-4324-9972-5d7f711a60a8
 
 tags:
   - attack.defense_evasion

@@ -2,7 +2,7 @@
 title: "InstallerFileTakeOver LPE CVE-2021-41379 File Create Event"
 aliases:
   - "/rule/3be82d5d-09fe-4d6a-a275-0d40d234d324"
-
+ruleid: 3be82d5d-09fe-4d6a-a275-0d40d234d324
 
 tags:
   - attack.privilege_escalation

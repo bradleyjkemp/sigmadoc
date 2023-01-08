@@ -2,7 +2,7 @@
 title: "DNS TOR Proxies"
 aliases:
   - "/rule/a8322756-015c-42e7-afb1-436e85ed3ff5"
-
+ruleid: a8322756-015c-42e7-afb1-436e85ed3ff5
 
 tags:
   - attack.t1048

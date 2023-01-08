@@ -2,7 +2,7 @@
 title: "Cred Dump-Tools Named Pipes"
 aliases:
   - "/rule/961d0ba2-3eea-4303-a930-2cf78bbfcc5e"
-
+ruleid: 961d0ba2-3eea-4303-a930-2cf78bbfcc5e
 
 tags:
   - attack.credential_access

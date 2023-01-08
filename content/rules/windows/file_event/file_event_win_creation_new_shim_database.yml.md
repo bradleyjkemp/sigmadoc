@@ -2,7 +2,7 @@
 title: "New Shim Database Created in the Default Directory"
 aliases:
   - "/rule/ee63c85c-6d51-4d12-ad09-04e25877a947"
-
+ruleid: ee63c85c-6d51-4d12-ad09-04e25877a947
 
 tags:
   - attack.persistence

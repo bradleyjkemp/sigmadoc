@@ -2,7 +2,7 @@
 title: "Suspicious Reconnaissance Activity"
 aliases:
   - "/rule/d95de845-b83c-4a9a-8a6a-4fc802ebf6c0"
-
+ruleid: d95de845-b83c-4a9a-8a6a-4fc802ebf6c0
 
 tags:
   - attack.discovery

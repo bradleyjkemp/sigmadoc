@@ -2,7 +2,7 @@
 title: "Abusing Print Executable"
 aliases:
   - "/rule/bafac3d6-7de9-4dd9-8874-4a1194b493ed"
-
+ruleid: bafac3d6-7de9-4dd9-8874-4a1194b493ed
 
 tags:
   - attack.defense_evasion

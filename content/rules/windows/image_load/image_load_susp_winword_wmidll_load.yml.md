@@ -2,7 +2,7 @@
 title: "Windows Management Instrumentation DLL Loaded Via Microsoft Word"
 aliases:
   - "/rule/a457f232-7df9-491d-898f-b5aabd2cbe2f"
-
+ruleid: a457f232-7df9-491d-898f-b5aabd2cbe2f
 
 tags:
   - attack.execution

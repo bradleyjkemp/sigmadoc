@@ -2,7 +2,7 @@
 title: "Devtoolslauncher.exe Executes Specified Binary"
 aliases:
   - "/rule/cc268ac1-42d9-40fd-9ed3-8c4e1a5b87e6"
-
+ruleid: cc268ac1-42d9-40fd-9ed3-8c4e1a5b87e6
 
 tags:
   - attack.defense_evasion

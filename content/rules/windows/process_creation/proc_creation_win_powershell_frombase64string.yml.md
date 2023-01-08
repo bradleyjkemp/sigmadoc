@@ -2,7 +2,7 @@
 title: "FromBase64String Command Line"
 aliases:
   - "/rule/e32d4572-9826-4738-b651-95fa63747e8a"
-
+ruleid: e32d4572-9826-4738-b651-95fa63747e8a
 
 tags:
   - attack.t1027

@@ -2,7 +2,7 @@
 title: "GAC DLL Loaded Via Office Applications"
 aliases:
   - "/rule/90217a70-13fc-48e4-b3db-0d836c5824ac"
-
+ruleid: 90217a70-13fc-48e4-b3db-0d836c5824ac
 
 tags:
   - attack.execution

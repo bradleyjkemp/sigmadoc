@@ -2,7 +2,7 @@
 title: "Suspicious DIR Execution"
 aliases:
   - "/rule/7c9340a9-e2ee-4e43-94c5-c54ebbea1006"
-
+ruleid: 7c9340a9-e2ee-4e43-94c5-c54ebbea1006
 
 tags:
   - attack.discovery

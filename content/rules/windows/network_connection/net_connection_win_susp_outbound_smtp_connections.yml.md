@@ -2,7 +2,7 @@
 title: "Suspicious Outbound SMTP Connections"
 aliases:
   - "/rule/9976fa64-2804-423c-8a5b-646ade840773"
-
+ruleid: 9976fa64-2804-423c-8a5b-646ade840773
 
 tags:
   - attack.exfiltration

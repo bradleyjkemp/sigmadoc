@@ -2,7 +2,7 @@
 title: "Empty User Agent"
 aliases:
   - "/rule/21e44d78-95e7-421b-a464-ffd8395659c4"
-
+ruleid: 21e44d78-95e7-421b-a464-ffd8395659c4
 
 tags:
   - attack.defense_evasion

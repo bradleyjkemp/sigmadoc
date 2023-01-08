@@ -2,7 +2,7 @@
 title: "Usage of Sysinternals Tools"
 aliases:
   - "/rule/25ffa65d-76d8-4da5-a832-3f2b0136e133"
-
+ruleid: 25ffa65d-76d8-4da5-a832-3f2b0136e133
 
 tags:
   - attack.resource_development

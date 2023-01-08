@@ -2,7 +2,7 @@
 title: "LOLBAS Data Exfiltration by DataSvcUtil.exe"
 aliases:
   - "/rule/e290b10b-1023-4452-a4a9-eb31a9013b3a"
-
+ruleid: e290b10b-1023-4452-a4a9-eb31a9013b3a
 
 tags:
   - attack.exfiltration

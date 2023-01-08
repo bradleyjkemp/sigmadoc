@@ -2,7 +2,7 @@
 title: "Clipboard Collection with Xclip Tool"
 aliases:
   - "/rule/214e7e6c-f21b-47ff-bb6f-551b2d143fcf"
-
+ruleid: 214e7e6c-f21b-47ff-bb6f-551b2d143fcf
 
 tags:
   - attack.collection

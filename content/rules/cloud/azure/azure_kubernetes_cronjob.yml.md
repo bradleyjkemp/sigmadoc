@@ -2,7 +2,7 @@
 title: "Azure Kubernetes CronJob"
 aliases:
   - "/rule/1c71e254-6655-42c1-b2d6-5e4718d7fc0a"
-
+ruleid: 1c71e254-6655-42c1-b2d6-5e4718d7fc0a
 
 tags:
   - attack.persistence

@@ -2,7 +2,7 @@
 title: "Execution via CL_Invocation.ps1"
 aliases:
   - "/rule/a0459f02-ac51-4c09-b511-b8c9203fc429"
-
+ruleid: a0459f02-ac51-4c09-b511-b8c9203fc429
 
 tags:
   - attack.defense_evasion

@@ -2,7 +2,7 @@
 title: "Suspicious WMI Execution Using Rundll32"
 aliases:
   - "/rule/3c89a1e8-0fba-449e-8f1b-8409d6267ec8"
-
+ruleid: 3c89a1e8-0fba-449e-8f1b-8409d6267ec8
 
 tags:
   - attack.execution

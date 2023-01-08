@@ -2,7 +2,7 @@
 title: "Exchange Exploitation Activity"
 aliases:
   - "/rule/bbb2dedd-a0e3-46ab-ba6c-6c82ae7a9aa7"
-
+ruleid: bbb2dedd-a0e3-46ab-ba6c-6c82ae7a9aa7
 
 tags:
   - attack.persistence

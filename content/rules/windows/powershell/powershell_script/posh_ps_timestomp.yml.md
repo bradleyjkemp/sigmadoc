@@ -2,7 +2,7 @@
 title: "Powershell Timestomp"
 aliases:
   - "/rule/c6438007-e081-42ce-9483-b067fbef33c3"
-
+ruleid: c6438007-e081-42ce-9483-b067fbef33c3
 
 tags:
   - attack.defense_evasion

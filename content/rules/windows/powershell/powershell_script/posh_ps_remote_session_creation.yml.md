@@ -2,7 +2,7 @@
 title: "PowerShell Remote Session Creation"
 aliases:
   - "/rule/a0edd39f-a0c6-4c17-8141-261f958e8d8f"
-
+ruleid: a0edd39f-a0c6-4c17-8141-261f958e8d8f
 
 tags:
   - attack.execution

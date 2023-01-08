@@ -2,7 +2,7 @@
 title: "Office Application Startup - Office Test"
 aliases:
   - "/rule/3d27f6dd-1c74-4687-b4fa-ca849d128d1c"
-
+ruleid: 3d27f6dd-1c74-4687-b4fa-ca849d128d1c
 
 tags:
   - attack.persistence

@@ -2,7 +2,7 @@
 title: "Suspicious ftp.exe"
 aliases:
   - "/rule/06b401f4-107c-4ff9-947f-9ec1e7649f1e"
-
+ruleid: 06b401f4-107c-4ff9-947f-9ec1e7649f1e
 
 tags:
   - attack.execution

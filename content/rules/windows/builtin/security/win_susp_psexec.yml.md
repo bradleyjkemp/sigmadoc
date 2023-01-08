@@ -2,7 +2,7 @@
 title: "Suspicious PsExec Execution"
 aliases:
   - "/rule/c462f537-a1e3-41a6-b5fc-b2c2cef9bf82"
-
+ruleid: c462f537-a1e3-41a6-b5fc-b2c2cef9bf82
 
 tags:
   - attack.lateral_movement

@@ -2,7 +2,7 @@
 title: "Using Sticky-keys To Obtain Unauthenticated, Privileged Console Access"
 aliases:
   - "/rule/1070db9a-3e5d-412e-8e7b-7183b616e1b3"
-
+ruleid: 1070db9a-3e5d-412e-8e7b-7183b616e1b3
 
 tags:
   - attack.t1546.008

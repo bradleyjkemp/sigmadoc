@@ -2,7 +2,7 @@
 title: "Renamed Powershell Under Powershell Channel"
 aliases:
   - "/rule/30a8cb77-8eb3-4cfb-8e79-ad457c5a4592"
-
+ruleid: 30a8cb77-8eb3-4cfb-8e79-ad457c5a4592
 
 tags:
   - attack.execution

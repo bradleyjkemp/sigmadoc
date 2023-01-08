@@ -2,7 +2,7 @@
 title: "PowerShell Deleted Mounted Share"
 aliases:
   - "/rule/66a4d409-451b-4151-94f4-a55d559c49b0"
-
+ruleid: 66a4d409-451b-4151-94f4-a55d559c49b0
 
 tags:
   - attack.defense_evasion

@@ -2,7 +2,7 @@
 title: "Run from a Zip File"
 aliases:
   - "/rule/1a70042a-6622-4a2b-8958-267625349abf"
-
+ruleid: 1a70042a-6622-4a2b-8958-267625349abf
 
 tags:
   - attack.impact

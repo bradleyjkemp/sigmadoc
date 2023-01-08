@@ -2,7 +2,7 @@
 title: "Msiexec Initiated Connection"
 aliases:
   - "/rule/8e5e38e4-5350-4c0b-895a-e872ce0dd54f"
-
+ruleid: 8e5e38e4-5350-4c0b-895a-e872ce0dd54f
 
 tags:
   - attack.defense_evasion

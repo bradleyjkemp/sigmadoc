@@ -2,7 +2,7 @@
 title: "Suspicious Shells Spawn by SQL Server"
 aliases:
   - "/rule/869b9ca7-9ea2-4a5a-8325-e80e62f75445"
-
+ruleid: 869b9ca7-9ea2-4a5a-8325-e80e62f75445
 
 tags:
   - attack.t1505.003

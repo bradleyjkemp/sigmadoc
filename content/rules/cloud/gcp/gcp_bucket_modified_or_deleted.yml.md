@@ -2,7 +2,7 @@
 title: "Google Cloud Storage Buckets Modified or Deleted"
 aliases:
   - "/rule/4d9f2ee2-c903-48ab-b9c1-8c0f474913d0"
-
+ruleid: 4d9f2ee2-c903-48ab-b9c1-8c0f474913d0
 
 tags:
   - attack.impact

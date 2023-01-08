@@ -2,7 +2,7 @@
 title: "Suspicious Regsvr32 Execution With Image Extension"
 aliases:
   - "/rule/089fc3d2-71e8-4763-a8a5-c97fbb0a403e"
-
+ruleid: 089fc3d2-71e8-4763-a8a5-c97fbb0a403e
 
 tags:
   - attack.defense_evasion

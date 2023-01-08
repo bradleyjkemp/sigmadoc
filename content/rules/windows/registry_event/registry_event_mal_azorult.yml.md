@@ -2,7 +2,7 @@
 title: "Registry Entries For Azorult Malware"
 aliases:
   - "/rule/f7f9ab88-7557-4a69-b30e-0a8f91b3a0e7"
-
+ruleid: f7f9ab88-7557-4a69-b30e-0a8f91b3a0e7
 
 tags:
   - attack.execution

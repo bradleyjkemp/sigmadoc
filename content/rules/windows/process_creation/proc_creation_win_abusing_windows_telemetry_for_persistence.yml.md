@@ -2,7 +2,7 @@
 title: "Abusing Windows Telemetry For Persistence"
 aliases:
   - "/rule/f548a603-c9f2-4c89-b511-b089f7e94549"
-
+ruleid: f548a603-c9f2-4c89-b511-b089f7e94549
 
 tags:
   - attack.defense_evasion

@@ -2,7 +2,7 @@
 title: "Suspicious User Agent"
 aliases:
   - "/rule/7195a772-4b3f-43a4-a210-6a003d65caa1"
-
+ruleid: 7195a772-4b3f-43a4-a210-6a003d65caa1
 
 tags:
   - attack.command_and_control

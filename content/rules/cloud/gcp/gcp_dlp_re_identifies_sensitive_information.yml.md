@@ -2,7 +2,7 @@
 title: "Google Cloud Re-identifies Sensitive Information."
 aliases:
   - "/rule/234f9f48-904b-4736-a34c-55d23919e4b7"
-
+ruleid: 234f9f48-904b-4736-a34c-55d23919e4b7
 
 tags:
   - attack.impact

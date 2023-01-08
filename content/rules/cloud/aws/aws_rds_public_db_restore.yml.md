@@ -2,7 +2,7 @@
 title: "Restore Public AWS RDS Instance"
 aliases:
   - "/rule/c3f265c7-ff03-4056-8ab2-d486227b4599"
-
+ruleid: c3f265c7-ff03-4056-8ab2-d486227b4599
 
 tags:
   - attack.exfiltration

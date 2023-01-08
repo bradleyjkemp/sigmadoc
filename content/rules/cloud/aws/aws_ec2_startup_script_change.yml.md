@@ -2,7 +2,7 @@
 title: "AWS EC2 Startup Shell Script Change"
 aliases:
   - "/rule/1ab3c5ed-5baf-417b-bb6b-78ca33f6c3df"
-
+ruleid: 1ab3c5ed-5baf-417b-bb6b-78ca33f6c3df
 
 tags:
   - attack.execution

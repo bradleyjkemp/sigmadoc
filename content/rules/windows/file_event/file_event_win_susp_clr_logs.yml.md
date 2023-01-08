@@ -2,7 +2,7 @@
 title: "Suspcious CLR Logs Creation"
 aliases:
   - "/rule/e4b63079-6198-405c-abd7-3fe8b0ce3263"
-
+ruleid: e4b63079-6198-405c-abd7-3fe8b0ce3263
 
 tags:
   - attack.execution

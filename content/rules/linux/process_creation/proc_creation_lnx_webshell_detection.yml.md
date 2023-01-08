@@ -2,7 +2,7 @@
 title: "Linux Webshell Indicators"
 aliases:
   - "/rule/818f7b24-0fba-4c49-a073-8b755573b9c7"
-
+ruleid: 818f7b24-0fba-4c49-a073-8b755573b9c7
 
 tags:
   - attack.persistence

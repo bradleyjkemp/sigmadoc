@@ -2,7 +2,7 @@
 title: "Netsh Allow Group Policy on Microsoft Defender Firewall"
 aliases:
   - "/rule/347906f3-e207-4d18-ae5b-a9403d6bcdef"
-
+ruleid: 347906f3-e207-4d18-ae5b-a9403d6bcdef
 
 tags:
   - attack.defense_evasion

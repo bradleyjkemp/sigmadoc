@@ -2,7 +2,7 @@
 title: "Exfiltration and Tunneling Tools Execution"
 aliases:
   - "/rule/c75309a3-59f8-4a8d-9c2c-4c927ad50555"
-
+ruleid: c75309a3-59f8-4a8d-9c2c-4c927ad50555
 
 tags:
   - attack.exfiltration

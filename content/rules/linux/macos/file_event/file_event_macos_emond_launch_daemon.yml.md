@@ -2,7 +2,7 @@
 title: "MacOS Emond Launch Daemon"
 aliases:
   - "/rule/23c43900-e732-45a4-8354-63e4a6c187ce"
-
+ruleid: 23c43900-e732-45a4-8354-63e4a6c187ce
 
 tags:
   - attack.persistence

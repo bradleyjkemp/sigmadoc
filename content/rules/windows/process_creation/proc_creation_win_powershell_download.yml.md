@@ -2,7 +2,7 @@
 title: "PowerShell Download from URL"
 aliases:
   - "/rule/3b6ab547-8ec2-4991-b9d2-2b06702a48d7"
-
+ruleid: 3b6ab547-8ec2-4991-b9d2-2b06702a48d7
 
 tags:
   - attack.execution

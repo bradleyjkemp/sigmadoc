@@ -2,7 +2,7 @@
 title: "Cscript Visual Basic Script Execution"
 aliases:
   - "/rule/23250293-eed5-4c39-b57a-841c8933a57d"
-
+ruleid: 23250293-eed5-4c39-b57a-841c8933a57d
 
 tags:
   - attack.execution

@@ -2,7 +2,7 @@
 title: "Suspicious Use of /dev/tcp"
 aliases:
   - "/rule/6cc5fceb-9a71-4c23-aeeb-963abe0b279c"
-
+ruleid: 6cc5fceb-9a71-4c23-aeeb-963abe0b279c
 
 tags:
   - attack.reconnaissance

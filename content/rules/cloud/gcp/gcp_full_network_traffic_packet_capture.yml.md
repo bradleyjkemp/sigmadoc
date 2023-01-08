@@ -2,7 +2,7 @@
 title: "Google Full Network Traffic Packet Capture"
 aliases:
   - "/rule/980a7598-1e7f-4962-9372-2d754c930d0e"
-
+ruleid: 980a7598-1e7f-4962-9372-2d754c930d0e
 
 tags:
   - attack.collection

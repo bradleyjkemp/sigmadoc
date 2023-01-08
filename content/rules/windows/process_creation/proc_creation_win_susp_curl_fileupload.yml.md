@@ -2,7 +2,7 @@
 title: "Suspicious Curl File Upload"
 aliases:
   - "/rule/00bca14a-df4e-4649-9054-3f2aa676bc04"
-
+ruleid: 00bca14a-df4e-4649-9054-3f2aa676bc04
 
 tags:
   - attack.exfiltration

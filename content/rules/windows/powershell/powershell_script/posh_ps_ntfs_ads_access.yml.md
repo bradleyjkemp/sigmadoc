@@ -2,7 +2,7 @@
 title: "NTFS Alternate Data Stream"
 aliases:
   - "/rule/8c521530-5169-495d-a199-0a3a881ad24e"
-
+ruleid: 8c521530-5169-495d-a199-0a3a881ad24e
 
 tags:
   - attack.defense_evasion

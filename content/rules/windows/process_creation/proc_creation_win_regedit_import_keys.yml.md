@@ -2,7 +2,7 @@
 title: "Imports Registry Key From a File"
 aliases:
   - "/rule/73bba97f-a82d-42ce-b315-9182e76c57b1"
-
+ruleid: 73bba97f-a82d-42ce-b315-9182e76c57b1
 
 tags:
   - attack.t1112

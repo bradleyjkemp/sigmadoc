@@ -2,7 +2,7 @@
 title: "Startup Items"
 aliases:
   - "/rule/dfe8b941-4e54-4242-b674-6b613d521962"
-
+ruleid: dfe8b941-4e54-4242-b674-6b613d521962
 
 tags:
   - attack.persistence

@@ -2,7 +2,7 @@
 title: "Cisco Modify Configuration"
 aliases:
   - "/rule/671ffc77-50a7-464f-9e3d-9ea2b493b26b"
-
+ruleid: 671ffc77-50a7-464f-9e3d-9ea2b493b26b
 
 tags:
   - attack.persistence

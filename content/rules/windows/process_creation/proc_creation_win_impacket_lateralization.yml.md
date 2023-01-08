@@ -2,7 +2,7 @@
 title: "Impacket Lateralization Detection"
 aliases:
   - "/rule/10c14723-61c7-4c75-92ca-9af245723ad2"
-
+ruleid: 10c14723-61c7-4c75-92ca-9af245723ad2
 
 tags:
   - attack.execution

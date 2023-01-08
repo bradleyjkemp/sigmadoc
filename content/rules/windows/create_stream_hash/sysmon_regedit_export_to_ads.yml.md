@@ -2,7 +2,7 @@
 title: "Exports Registry Key To an Alternate Data Stream"
 aliases:
   - "/rule/0d7a9363-af70-4e7b-a3b7-1a176b7fbe84"
-
+ruleid: 0d7a9363-af70-4e7b-a3b7-1a176b7fbe84
 
 tags:
   - attack.defense_evasion

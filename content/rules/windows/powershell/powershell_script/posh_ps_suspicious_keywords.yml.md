@@ -2,7 +2,7 @@
 title: "Suspicious PowerShell Keywords"
 aliases:
   - "/rule/1f49f2ab-26bc-48b3-96cc-dcffbc93eadf"
-
+ruleid: 1f49f2ab-26bc-48b3-96cc-dcffbc93eadf
 
 tags:
   - attack.execution

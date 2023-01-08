@@ -2,7 +2,7 @@
 title: "Suspicious Rundll32 Without Any CommandLine Params"
 aliases:
   - "/rule/1775e15e-b61b-4d14-a1a3-80981298085a"
-
+ruleid: 1775e15e-b61b-4d14-a1a3-80981298085a
 
 tags:
   - attack.defense_evasion

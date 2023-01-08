@@ -2,7 +2,7 @@
 title: "Run Whoami as SYSTEM"
 aliases:
   - "/rule/80167ada-7a12-41ed-b8e9-aa47195c66a1"
-
+ruleid: 80167ada-7a12-41ed-b8e9-aa47195c66a1
 
 tags:
   - attack.privilege_escalation

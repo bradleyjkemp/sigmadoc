@@ -2,7 +2,7 @@
 title: "SMB Relay Attack Tools"
 aliases:
   - "/rule/5589ab4f-a767-433c-961d-c91f3f704db1"
-
+ruleid: 5589ab4f-a767-433c-961d-c91f3f704db1
 
 tags:
   - attack.execution

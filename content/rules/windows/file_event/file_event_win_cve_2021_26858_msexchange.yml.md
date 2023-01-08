@@ -2,7 +2,7 @@
 title: "CVE-2021-26858 Exchange Exploitation"
 aliases:
   - "/rule/b06335b3-55ac-4b41-937e-16b7f5d57dfd"
-
+ruleid: b06335b3-55ac-4b41-937e-16b7f5d57dfd
 
 tags:
   - attack.t1203

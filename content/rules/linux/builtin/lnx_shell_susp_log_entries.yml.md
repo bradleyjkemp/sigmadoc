@@ -2,7 +2,7 @@
 title: "Suspicious Log Entries"
 aliases:
   - "/rule/f64b6e9a-5d9d-48a5-8289-e1dd2b3876e1"
-
+ruleid: f64b6e9a-5d9d-48a5-8289-e1dd2b3876e1
 
 tags:
   - attack.impact

@@ -2,7 +2,7 @@
 title: "Change to Authentication Method"
 aliases:
   - "/rule/4d78a000-ab52-4564-88a5-7ab5242b20c7"
-
+ruleid: 4d78a000-ab52-4564-88a5-7ab5242b20c7
 
 tags:
   - attack.credential_access

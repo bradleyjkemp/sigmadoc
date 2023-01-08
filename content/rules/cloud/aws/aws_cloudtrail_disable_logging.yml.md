@@ -2,7 +2,7 @@
 title: "AWS CloudTrail Important Change"
 aliases:
   - "/rule/4db60cc0-36fb-42b7-9b58-a5b53019fb74"
-
+ruleid: 4db60cc0-36fb-42b7-9b58-a5b53019fb74
 
 tags:
   - attack.defense_evasion

@@ -2,7 +2,7 @@
 title: "Suspicious PowerShell Invocation Based on Parent Process"
 aliases:
   - "/rule/95eadcb2-92e4-4ed1-9031-92547773a6db"
-
+ruleid: 95eadcb2-92e4-4ed1-9031-92547773a6db
 
 tags:
   - attack.execution

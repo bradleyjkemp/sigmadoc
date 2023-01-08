@@ -2,7 +2,7 @@
 title: "Unidentified Attacker November 2018"
 aliases:
   - "/rule/7453575c-a747-40b9-839b-125a0aae324b"
-
+ruleid: 7453575c-a747-40b9-839b-125a0aae324b
 
 tags:
   - attack.execution

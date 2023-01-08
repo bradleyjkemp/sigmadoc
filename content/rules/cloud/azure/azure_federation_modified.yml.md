@@ -2,7 +2,7 @@
 title: "Azure Domain Federation Settings Modified"
 aliases:
   - "/rule/352a54e1-74ba-4929-9d47-8193d67aba1e"
-
+ruleid: 352a54e1-74ba-4929-9d47-8193d67aba1e
 
 tags:
   - attack.initial_access

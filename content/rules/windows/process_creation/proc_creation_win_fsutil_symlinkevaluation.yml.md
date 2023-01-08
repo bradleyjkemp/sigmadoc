@@ -2,7 +2,7 @@
 title: "Fsutil Behavior Set SymlinkEvaluation"
 aliases:
   - "/rule/c0b2768a-dd06-4671-8339-b16ca8d1f27f"
-
+ruleid: c0b2768a-dd06-4671-8339-b16ca8d1f27f
 
 tags:
   - attack.execution

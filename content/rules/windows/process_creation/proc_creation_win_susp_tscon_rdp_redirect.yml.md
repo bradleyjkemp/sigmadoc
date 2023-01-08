@@ -2,7 +2,7 @@
 title: "Suspicious RDP Redirect Using TSCON"
 aliases:
   - "/rule/f72aa3e8-49f9-4c7d-bd74-f8ab84ff9bbb"
-
+ruleid: f72aa3e8-49f9-4c7d-bd74-f8ab84ff9bbb
 
 tags:
   - attack.lateral_movement

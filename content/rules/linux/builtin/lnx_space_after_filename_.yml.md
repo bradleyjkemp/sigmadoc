@@ -2,7 +2,7 @@
 title: "Space After Filename"
 aliases:
   - "/rule/879c3015-c88b-4782-93d7-07adf92dbcb7"
-
+ruleid: 879c3015-c88b-4782-93d7-07adf92dbcb7
 
 tags:
   - attack.execution

@@ -2,7 +2,7 @@
 title: "Service Registry Permissions Weakness Check"
 aliases:
   - "/rule/95afc12e-3cbb-40c3-9340-84a032e596a3"
-
+ruleid: 95afc12e-3cbb-40c3-9340-84a032e596a3
 
 tags:
   - attack.persistence

@@ -2,7 +2,7 @@
 title: "Suspicious Service Installed"
 aliases:
   - "/rule/f2485272-a156-4773-82d7-1d178bc4905b"
-
+ruleid: f2485272-a156-4773-82d7-1d178bc4905b
 
 tags:
   - attack.t1562.001

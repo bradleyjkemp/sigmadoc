@@ -2,7 +2,7 @@
 title: "Create Volume Shadow Copy with Powershell"
 aliases:
   - "/rule/afd12fed-b0ec-45c9-a13d-aa86625dac81"
-
+ruleid: afd12fed-b0ec-45c9-a13d-aa86625dac81
 
 tags:
   - attack.credential_access

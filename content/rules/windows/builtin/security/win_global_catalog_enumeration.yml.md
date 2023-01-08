@@ -2,7 +2,7 @@
 title: "Enumeration via the Global Catalog"
 aliases:
   - "/rule/619b020f-0fd7-4f23-87db-3f51ef837a34"
-
+ruleid: 619b020f-0fd7-4f23-87db-3f51ef837a34
 
 tags:
   - attack.discovery

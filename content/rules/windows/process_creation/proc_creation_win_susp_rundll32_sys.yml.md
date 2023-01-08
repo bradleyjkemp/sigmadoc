@@ -2,7 +2,7 @@
 title: "Suspicious Rundll32 Activity Invoking Sys File"
 aliases:
   - "/rule/731231b9-0b5d-4219-94dd-abb6959aa7ea"
-
+ruleid: 731231b9-0b5d-4219-94dd-abb6959aa7ea
 
 tags:
   - attack.defense_evasion

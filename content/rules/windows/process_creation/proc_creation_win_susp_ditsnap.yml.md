@@ -2,7 +2,7 @@
 title: "DIT Snapshot Viewer Use"
 aliases:
   - "/rule/d3b70aad-097e-409c-9df2-450f80dc476b"
-
+ruleid: d3b70aad-097e-409c-9df2-450f80dc476b
 
 tags:
   - attack.credential_access

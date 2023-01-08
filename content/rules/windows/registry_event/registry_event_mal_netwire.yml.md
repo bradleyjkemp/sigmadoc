@@ -2,7 +2,7 @@
 title: "NetWire RAT Registry Key"
 aliases:
   - "/rule/1d218616-71b0-4c40-855b-9dbe75510f7f"
-
+ruleid: 1d218616-71b0-4c40-855b-9dbe75510f7f
 
 tags:
   - attack.defense_evasion

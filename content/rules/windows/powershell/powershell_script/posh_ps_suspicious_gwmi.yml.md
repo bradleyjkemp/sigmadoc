@@ -2,7 +2,7 @@
 title: "Suspicious Get-WmiObject"
 aliases:
   - "/rule/0332a266-b584-47b4-933d-a00b103e1b37"
-
+ruleid: 0332a266-b584-47b4-933d-a00b103e1b37
 
 tags:
   - attack.persistence

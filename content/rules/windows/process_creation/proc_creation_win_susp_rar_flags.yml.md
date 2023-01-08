@@ -2,7 +2,7 @@
 title: "Rar with Password or Compression Level"
 aliases:
   - "/rule/faa48cae-6b25-4f00-a094-08947fef582f"
-
+ruleid: faa48cae-6b25-4f00-a094-08947fef582f
 
 tags:
   - attack.collection

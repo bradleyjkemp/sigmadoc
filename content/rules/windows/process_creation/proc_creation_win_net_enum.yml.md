@@ -2,7 +2,7 @@
 title: "Windows Network Enumeration"
 aliases:
   - "/rule/62510e69-616b-4078-b371-847da438cc03"
-
+ruleid: 62510e69-616b-4078-b371-847da438cc03
 
 tags:
   - attack.discovery

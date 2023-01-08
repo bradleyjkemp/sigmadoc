@@ -2,7 +2,7 @@
 title: "Powershell Defender Exclusion"
 aliases:
   - "/rule/17769c90-230e-488b-a463-e05c08e9d48f"
-
+ruleid: 17769c90-230e-488b-a463-e05c08e9d48f
 
 tags:
   - attack.defense_evasion

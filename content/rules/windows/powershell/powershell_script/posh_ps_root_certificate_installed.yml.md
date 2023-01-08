@@ -2,7 +2,7 @@
 title: "Root Certificate Installed"
 aliases:
   - "/rule/42821614-9264-4761-acfc-5772c3286f76"
-
+ruleid: 42821614-9264-4761-acfc-5772c3286f76
 
 tags:
   - attack.defense_evasion

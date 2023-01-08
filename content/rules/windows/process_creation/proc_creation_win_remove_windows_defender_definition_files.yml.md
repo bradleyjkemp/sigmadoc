@@ -2,7 +2,7 @@
 title: "Remove Windows Defender Definition Files"
 aliases:
   - "/rule/9719a8aa-401c-41af-8108-ced7ec9cd75c"
-
+ruleid: 9719a8aa-401c-41af-8108-ced7ec9cd75c
 
 tags:
   - attack.defense_evasion

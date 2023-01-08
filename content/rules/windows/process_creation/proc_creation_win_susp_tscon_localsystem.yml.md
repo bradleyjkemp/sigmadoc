@@ -2,7 +2,7 @@
 title: "Suspicious TSCON Start as SYSTEM"
 aliases:
   - "/rule/9847f263-4a81-424f-970c-875dab15b79b"
-
+ruleid: 9847f263-4a81-424f-970c-875dab15b79b
 
 tags:
   - attack.command_and_control

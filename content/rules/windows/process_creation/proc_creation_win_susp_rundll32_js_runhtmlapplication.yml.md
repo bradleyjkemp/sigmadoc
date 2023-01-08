@@ -2,7 +2,7 @@
 title: "Rundll32 JS RunHTMLApplication Pattern"
 aliases:
   - "/rule/9f06447a-a33a-4cbe-a94f-a3f43184a7a3"
-
+ruleid: 9f06447a-a33a-4cbe-a94f-a3f43184a7a3
 
 tags:
   - attack.defense_evasion

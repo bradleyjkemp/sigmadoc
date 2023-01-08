@@ -2,7 +2,7 @@
 title: "MMC20 Lateral Movement"
 aliases:
   - "/rule/f1f3bf22-deb2-418d-8cce-e1a45e46a5bd"
-
+ruleid: f1f3bf22-deb2-418d-8cce-e1a45e46a5bd
 
 tags:
   - attack.execution

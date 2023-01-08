@@ -2,7 +2,7 @@
 title: "Windows Suspicious Use Of Web Request in CommandLine"
 aliases:
   - "/rule/9fc51a3c-81b3-4fa7-b35f-7c02cf10fd2d"
-
+ruleid: 9fc51a3c-81b3-4fa7-b35f-7c02cf10fd2d
 
 tags:
   - attack.execution

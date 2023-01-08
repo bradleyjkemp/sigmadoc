@@ -2,7 +2,7 @@
 title: "Possible DNS Tunneling"
 aliases:
   - "/rule/1ec4b281-aa65-46a2-bdae-5fd830ed914e"
-
+ruleid: 1ec4b281-aa65-46a2-bdae-5fd830ed914e
 
 tags:
   - attack.command_and_control

@@ -2,7 +2,7 @@
 title: "Sdclt Child Processes"
 aliases:
   - "/rule/da2738f2-fadb-4394-afa7-0a0674885afa"
-
+ruleid: da2738f2-fadb-4394-afa7-0a0674885afa
 
 tags:
   - attack.privilege_escalation

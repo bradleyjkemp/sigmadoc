@@ -2,7 +2,7 @@
 title: "Possible DCSync Attack"
 aliases:
   - "/rule/56fda488-113e-4ce9-8076-afc2457922c3"
-
+ruleid: 56fda488-113e-4ce9-8076-afc2457922c3
 
 tags:
   - attack.t1033

@@ -2,7 +2,7 @@
 title: "TAIDOOR RAT DLL Load"
 aliases:
   - "/rule/d1aa3382-abab-446f-96ea-4de52908210b"
-
+ruleid: d1aa3382-abab-446f-96ea-4de52908210b
 
 tags:
   - attack.execution

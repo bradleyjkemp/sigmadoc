@@ -2,7 +2,7 @@
 title: "Sysmon Driver Unload"
 aliases:
   - "/rule/4d7cda18-1b12-4e52-b45c-d28653210df8"
-
+ruleid: 4d7cda18-1b12-4e52-b45c-d28653210df8
 
 tags:
   - attack.defense_evasion

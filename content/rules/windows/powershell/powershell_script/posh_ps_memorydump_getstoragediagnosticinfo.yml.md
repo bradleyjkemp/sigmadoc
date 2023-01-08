@@ -2,7 +2,7 @@
 title: "Live Memory Dump Using Powershell"
 aliases:
   - "/rule/cd185561-4760-45d6-a63e-a51325112cae"
-
+ruleid: cd185561-4760-45d6-a63e-a51325112cae
 
 tags:
   - attack.t1003

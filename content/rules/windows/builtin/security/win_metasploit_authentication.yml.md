@@ -2,7 +2,7 @@
 title: "Metasploit SMB Authentication"
 aliases:
   - "/rule/72124974-a68b-4366-b990-d30e0b2a190d"
-
+ruleid: 72124974-a68b-4366-b990-d30e0b2a190d
 
 tags:
   - attack.lateral_movement

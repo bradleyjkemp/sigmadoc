@@ -2,7 +2,7 @@
 title: "Screen Capture with Import Tool"
 aliases:
   - "/rule/dbe4b9c5-c254-4258-9688-d6af0b7967fd"
-
+ruleid: dbe4b9c5-c254-4258-9688-d6af0b7967fd
 
 tags:
   - attack.collection

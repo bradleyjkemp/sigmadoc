@@ -2,7 +2,7 @@
 title: "Google Cloud Kubernetes Secrets Modified or Deleted"
 aliases:
   - "/rule/2f0bae2d-bf20-4465-be86-1311addebaa3"
-
+ruleid: 2f0bae2d-bf20-4465-be86-1311addebaa3
 
 tags:
   - attack.credential_access

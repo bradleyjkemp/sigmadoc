@@ -2,7 +2,7 @@
 title: "CVE-2020-10148 SolarWinds Orion API Auth Bypass"
 aliases:
   - "/rule/5a35116f-43bc-4901-b62d-ef131f42a9af"
-
+ruleid: 5a35116f-43bc-4901-b62d-ef131f42a9af
 
 tags:
   - attack.initial_access

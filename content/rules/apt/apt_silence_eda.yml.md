@@ -2,7 +2,7 @@
 title: "Silence.EDA Detection"
 aliases:
   - "/rule/3ceb2083-a27f-449a-be33-14ec1b7cc973"
-
+ruleid: 3ceb2083-a27f-449a-be33-14ec1b7cc973
 
 tags:
   - attack.execution

@@ -2,7 +2,7 @@
 title: "Apache Threading Error"
 aliases:
   - "/rule/e9a2b582-3f6a-48ac-b4a1-6849cdc50b3c"
-
+ruleid: e9a2b582-3f6a-48ac-b4a1-6849cdc50b3c
 
 
 

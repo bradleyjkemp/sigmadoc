@@ -2,7 +2,7 @@
 title: "Malicious Payload Download via Office Binaries"
 aliases:
   - "/rule/0c79148b-118e-472b-bdb7-9b57b444cc19"
-
+ruleid: 0c79148b-118e-472b-bdb7-9b57b444cc19
 
 tags:
   - attack.command_and_control

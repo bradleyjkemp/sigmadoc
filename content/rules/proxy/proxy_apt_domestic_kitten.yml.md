@@ -2,7 +2,7 @@
 title: "Domestic Kitten FurBall Malware Pattern"
 aliases:
   - "/rule/6c939dfa-c710-4e12-a4dd-47e1f10e68e1"
-
+ruleid: 6c939dfa-c710-4e12-a4dd-47e1f10e68e1
 
 tags:
   - attack.command_and_control

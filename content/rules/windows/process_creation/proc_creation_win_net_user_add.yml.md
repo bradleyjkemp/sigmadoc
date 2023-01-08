@@ -2,7 +2,7 @@
 title: "Net.exe User Account Creation"
 aliases:
   - "/rule/cd219ff3-fa99-45d4-8380-a7d15116c6dc"
-
+ruleid: cd219ff3-fa99-45d4-8380-a7d15116c6dc
 
 tags:
   - attack.persistence

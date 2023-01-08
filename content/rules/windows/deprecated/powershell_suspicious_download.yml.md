@@ -2,7 +2,7 @@
 title: "Suspicious PowerShell Download"
 aliases:
   - "/rule/65531a81-a694-4e31-ae04-f8ba5bc33759"
-
+ruleid: 65531a81-a694-4e31-ae04-f8ba5bc33759
 
 tags:
   - attack.execution

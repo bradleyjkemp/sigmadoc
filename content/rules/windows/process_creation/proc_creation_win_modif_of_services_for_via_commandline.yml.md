@@ -2,7 +2,7 @@
 title: "Modification Of Existing Services For Persistence"
 aliases:
   - "/rule/38879043-7e1e-47a9-8d46-6bec88e201df"
-
+ruleid: 38879043-7e1e-47a9-8d46-6bec88e201df
 
 tags:
   - attack.persistence

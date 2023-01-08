@@ -2,7 +2,7 @@
 title: "AWS ElastiCache Security Group Created"
 aliases:
   - "/rule/4ae68615-866f-4304-b24b-ba048dfa5ca7"
-
+ruleid: 4ae68615-866f-4304-b24b-ba048dfa5ca7
 
 tags:
   - attack.persistence

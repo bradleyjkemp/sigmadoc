@@ -2,7 +2,7 @@
 title: "Overwriting the File with Dev Zero or Null"
 aliases:
   - "/rule/37222991-11e9-4b6d-8bdf-60fbe48f753e"
-
+ruleid: 37222991-11e9-4b6d-8bdf-60fbe48f753e
 
 tags:
   - attack.impact

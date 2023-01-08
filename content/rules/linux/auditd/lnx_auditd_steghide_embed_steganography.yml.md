@@ -2,7 +2,7 @@
 title: "Steganography Hide Files with Steghide"
 aliases:
   - "/rule/ce446a9e-30b9-4483-8e38-d2c9ad0a2280"
-
+ruleid: ce446a9e-30b9-4483-8e38-d2c9ad0a2280
 
 tags:
   - attack.defense_evasion

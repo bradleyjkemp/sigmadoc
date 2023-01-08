@@ -2,7 +2,7 @@
 title: "AWS Config Disabling Channel/Recorder"
 aliases:
   - "/rule/07330162-dba1-4746-8121-a9647d49d297"
-
+ruleid: 07330162-dba1-4746-8121-a9647d49d297
 
 tags:
   - attack.defense_evasion

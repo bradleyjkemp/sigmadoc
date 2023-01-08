@@ -2,7 +2,7 @@
 title: "AWS Attached Malicious Lambda Layer"
 aliases:
   - "/rule/97fbabf8-8e1b-47a2-b7d5-a418d2b95e3d"
-
+ruleid: 97fbabf8-8e1b-47a2-b7d5-a418d2b95e3d
 
 tags:
   - attack.privilege_escalation

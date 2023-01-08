@@ -2,7 +2,7 @@
 title: "AWS Root Credentials"
 aliases:
   - "/rule/8ad1600d-e9dc-4251-b0ee-a65268f29add"
-
+ruleid: 8ad1600d-e9dc-4251-b0ee-a65268f29add
 
 tags:
   - attack.privilege_escalation

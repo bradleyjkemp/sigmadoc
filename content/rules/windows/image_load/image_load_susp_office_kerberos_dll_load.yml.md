@@ -2,7 +2,7 @@
 title: "Active Directory Kerberos DLL Loaded Via Office Applications"
 aliases:
   - "/rule/7417e29e-c2e7-4cf6-a2e8-767228c64837"
-
+ruleid: 7417e29e-c2e7-4cf6-a2e8-767228c64837
 
 tags:
   - attack.execution

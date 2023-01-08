@@ -2,7 +2,7 @@
 title: "EDR WMI Command Execution by Office Applications"
 aliases:
   - "/rule/3ee1bba8-b9e2-4e35-bec5-7fb66b6b3815"
-
+ruleid: 3ee1bba8-b9e2-4e35-bec5-7fb66b6b3815
 
 tags:
   - attack.t1204.002

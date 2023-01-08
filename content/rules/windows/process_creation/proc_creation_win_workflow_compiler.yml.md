@@ -2,7 +2,7 @@
 title: "Microsoft Workflow Compiler"
 aliases:
   - "/rule/419dbf2b-8a9b-4bea-bf99-7544b050ec8d"
-
+ruleid: 419dbf2b-8a9b-4bea-bf99-7544b050ec8d
 
 tags:
   - attack.defense_evasion

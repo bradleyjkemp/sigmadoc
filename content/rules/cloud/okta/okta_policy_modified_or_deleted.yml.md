@@ -2,7 +2,7 @@
 title: "Okta Policy Modified or Deleted"
 aliases:
   - "/rule/1667a172-ed4c-463c-9969-efd92195319a"
-
+ruleid: 1667a172-ed4c-463c-9969-efd92195319a
 
 tags:
   - attack.impact

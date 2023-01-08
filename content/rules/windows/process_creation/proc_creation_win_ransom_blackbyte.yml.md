@@ -2,7 +2,7 @@
 title: "BlackByte Ransomware Patterns"
 aliases:
   - "/rule/999e8307-a775-4d5f-addc-4855632335be"
-
+ruleid: 999e8307-a775-4d5f-addc-4855632335be
 
 
 

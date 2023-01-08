@@ -2,7 +2,7 @@
 title: "Suspicious Use of Procdump"
 aliases:
   - "/rule/03795938-1387-481b-9f4c-3f6241e604fe"
-
+ruleid: 03795938-1387-481b-9f4c-3f6241e604fe
 
 tags:
   - attack.defense_evasion

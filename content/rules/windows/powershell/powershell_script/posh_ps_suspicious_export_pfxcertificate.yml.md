@@ -2,7 +2,7 @@
 title: "Suspicious Export-PfxCertificate"
 aliases:
   - "/rule/aa7a3fce-bef5-4311-9cc1-5f04bb8c308c"
-
+ruleid: aa7a3fce-bef5-4311-9cc1-5f04bb8c308c
 
 tags:
   - attack.credential_access

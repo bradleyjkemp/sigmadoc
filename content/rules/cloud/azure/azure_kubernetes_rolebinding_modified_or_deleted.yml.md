@@ -2,7 +2,7 @@
 title: "Azure Kubernetes RoleBinding/ClusterRoleBinding Modified and Deleted"
 aliases:
   - "/rule/25cb259b-bbdc-4b87-98b7-90d7c72f8743"
-
+ruleid: 25cb259b-bbdc-4b87-98b7-90d7c72f8743
 
 tags:
   - attack.impact

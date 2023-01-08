@@ -2,7 +2,7 @@
 title: "WMI Persistence - Command Line Event Consumer"
 aliases:
   - "/rule/05936ce2-ee05-4dae-9d03-9a391cf2d2c6"
-
+ruleid: 05936ce2-ee05-4dae-9d03-9a391cf2d2c6
 
 tags:
   - attack.t1546.003

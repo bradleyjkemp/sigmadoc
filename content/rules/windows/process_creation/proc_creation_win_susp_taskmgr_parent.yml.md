@@ -2,7 +2,7 @@
 title: "Taskmgr as Parent"
 aliases:
   - "/rule/3d7679bd-0c00-440c-97b0-3f204273e6c7"
-
+ruleid: 3d7679bd-0c00-440c-97b0-3f204273e6c7
 
 tags:
   - attack.defense_evasion

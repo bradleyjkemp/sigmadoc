@@ -2,7 +2,7 @@
 title: "UAC Bypass Using PkgMgr and DISM"
 aliases:
   - "/rule/a743ceba-c771-4d75-97eb-8a90f7f4844c"
-
+ruleid: a743ceba-c771-4d75-97eb-8a90f7f4844c
 
 tags:
   - attack.defense_evasion

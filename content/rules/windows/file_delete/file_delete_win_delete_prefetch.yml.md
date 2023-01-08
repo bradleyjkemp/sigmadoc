@@ -2,7 +2,7 @@
 title: "Prefetch File Deletion"
 aliases:
   - "/rule/0a1f9d29-6465-4776-b091-7f43b26e4c89"
-
+ruleid: 0a1f9d29-6465-4776-b091-7f43b26e4c89
 
 tags:
   - attack.defense_evasion

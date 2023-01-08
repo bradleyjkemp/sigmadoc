@@ -2,7 +2,7 @@
 title: "System Network Discovery - Linux"
 aliases:
   - "/rule/e7bd1cfa-b446-4c88-8afb-403bcd79e3fa"
-
+ruleid: e7bd1cfa-b446-4c88-8afb-403bcd79e3fa
 
 tags:
   - attack.discovery

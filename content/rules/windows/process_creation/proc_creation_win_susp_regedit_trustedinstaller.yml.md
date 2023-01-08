@@ -2,7 +2,7 @@
 title: "Regedit as Trusted Installer"
 aliases:
   - "/rule/883835a7-df45-43e4-bf1d-4268768afda4"
-
+ruleid: 883835a7-df45-43e4-bf1d-4268768afda4
 
 tags:
   - attack.privilege_escalation

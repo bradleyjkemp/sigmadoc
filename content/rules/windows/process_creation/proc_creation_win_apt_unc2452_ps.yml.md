@@ -2,7 +2,7 @@
 title: "UNC2452 PowerShell Pattern"
 aliases:
   - "/rule/b7155193-8a81-4d8f-805d-88de864ca50c"
-
+ruleid: b7155193-8a81-4d8f-805d-88de864ca50c
 
 tags:
   - attack.execution

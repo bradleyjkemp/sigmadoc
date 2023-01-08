@@ -2,7 +2,7 @@
 title: "Obfuscated Command Line Using Special Unicode Characters"
 aliases:
   - "/rule/e0552b19-5a83-4222-b141-b36184bb8d79"
-
+ruleid: e0552b19-5a83-4222-b141-b36184bb8d79
 
 tags:
   - attack.defense_evasion

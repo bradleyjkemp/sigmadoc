@@ -2,7 +2,7 @@
 title: "Suspicious Extrac32 Execution"
 aliases:
   - "/rule/aa8e035d-7be4-48d3-a944-102aec04400d"
-
+ruleid: aa8e035d-7be4-48d3-a944-102aec04400d
 
 tags:
   - attack.defense_evasion

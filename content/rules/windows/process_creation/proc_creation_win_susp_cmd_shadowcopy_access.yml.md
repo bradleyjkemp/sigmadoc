@@ -2,7 +2,7 @@
 title: "Conti Volume Shadow Listing"
 aliases:
   - "/rule/c73124a7-3e89-44a3-bdc1-25fe4df754b1"
-
+ruleid: c73124a7-3e89-44a3-bdc1-25fe4df754b1
 
 tags:
   - attack.impact

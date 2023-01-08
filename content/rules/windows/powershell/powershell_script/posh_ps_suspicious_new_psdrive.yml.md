@@ -2,7 +2,7 @@
 title: "Suspicious New-PSDrive to Admin Share"
 aliases:
   - "/rule/1c563233-030e-4a07-af8c-ee0490a66d3a"
-
+ruleid: 1c563233-030e-4a07-af8c-ee0490a66d3a
 
 tags:
   - attack.lateral_movement

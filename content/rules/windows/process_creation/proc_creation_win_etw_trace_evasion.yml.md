@@ -2,7 +2,7 @@
 title: "Disable of ETW Trace"
 aliases:
   - "/rule/a238b5d0-ce2d-4414-a676-7a531b3d13d6"
-
+ruleid: a238b5d0-ce2d-4414-a676-7a531b3d13d6
 
 tags:
   - attack.defense_evasion

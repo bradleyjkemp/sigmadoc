@@ -2,7 +2,7 @@
 title: "AWS RDS Master Password Change"
 aliases:
   - "/rule/8a63cdd4-6207-414a-85bc-7e032bd3c1a2"
-
+ruleid: 8a63cdd4-6207-414a-85bc-7e032bd3c1a2
 
 tags:
   - attack.exfiltration

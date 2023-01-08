@@ -2,7 +2,7 @@
 title: "LDAP Reconnaissance / Active Directory Enumeration"
 aliases:
   - "/rule/31d68132-4038-47c7-8f8e-635a39a7c174"
-
+ruleid: 31d68132-4038-47c7-8f8e-635a39a7c174
 
 tags:
   - attack.discovery

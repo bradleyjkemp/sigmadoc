@@ -2,7 +2,7 @@
 title: "Azure Virtual Network Modified or Deleted"
 aliases:
   - "/rule/bcfcc962-0e4a-4fd9-84bb-a833e672df3f"
-
+ruleid: bcfcc962-0e4a-4fd9-84bb-a833e672df3f
 
 tags:
   - attack.impact

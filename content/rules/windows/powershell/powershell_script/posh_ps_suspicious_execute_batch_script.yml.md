@@ -2,7 +2,7 @@
 title: "Powershell Execute Batch Script"
 aliases:
   - "/rule/b5522a23-82da-44e5-9c8b-e10ed8955f88"
-
+ruleid: b5522a23-82da-44e5-9c8b-e10ed8955f88
 
 tags:
   - attack.execution

@@ -2,7 +2,7 @@
 title: "Suspicious PowerShell Invocations - Generic"
 aliases:
   - "/rule/3d304fda-78aa-43ed-975c-d740798a49c1"
-
+ruleid: 3d304fda-78aa-43ed-975c-d740798a49c1
 
 tags:
   - attack.execution

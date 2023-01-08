@@ -2,7 +2,7 @@
 title: "F-Secure C3 Load by Rundll32"
 aliases:
   - "/rule/b18c9d4c-fac9-4708-bd06-dd5bfacf200f"
-
+ruleid: b18c9d4c-fac9-4708-bd06-dd5bfacf200f
 
 tags:
   - attack.defense_evasion

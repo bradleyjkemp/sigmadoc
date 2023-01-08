@@ -2,7 +2,7 @@
 title: "PowerShell Network Connections"
 aliases:
   - "/rule/1f21ec3f-810d-4b0e-8045-322202e22b4b"
-
+ruleid: 1f21ec3f-810d-4b0e-8045-322202e22b4b
 
 tags:
   - attack.execution

@@ -2,7 +2,7 @@
 title: "MS Office Product Spawning Exe in User Dir"
 aliases:
   - "/rule/aa3a6f94-890e-4e22-b634-ffdfd54792cc"
-
+ruleid: aa3a6f94-890e-4e22-b634-ffdfd54792cc
 
 tags:
   - attack.execution

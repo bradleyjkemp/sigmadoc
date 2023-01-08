@@ -2,7 +2,7 @@
 title: "Mimikatz DC Sync"
 aliases:
   - "/rule/611eab06-a145-4dfa-a295-3ccc5c20f59a"
-
+ruleid: 611eab06-a145-4dfa-a295-3ccc5c20f59a
 
 tags:
   - attack.credential_access

@@ -2,7 +2,7 @@
 title: "Powershell Reverse Shell Connection"
 aliases:
   - "/rule/edc2f8ae-2412-4dfd-b9d5-0c57727e70be"
-
+ruleid: edc2f8ae-2412-4dfd-b9d5-0c57727e70be
 
 tags:
   - attack.execution

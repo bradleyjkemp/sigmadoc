@@ -2,7 +2,7 @@
 title: "Okta Network Zone Deactivated or Deleted"
 aliases:
   - "/rule/9f308120-69ed-4506-abde-ac6da81f4310"
-
+ruleid: 9f308120-69ed-4506-abde-ac6da81f4310
 
 tags:
   - attack.impact

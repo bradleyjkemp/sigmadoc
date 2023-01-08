@@ -2,7 +2,7 @@
 title: "Remote PowerShell Session"
 aliases:
   - "/rule/c539afac-c12a-46ed-b1bd-5a5567c9f045"
-
+ruleid: c539afac-c12a-46ed-b1bd-5a5567c9f045
 
 tags:
   - attack.execution

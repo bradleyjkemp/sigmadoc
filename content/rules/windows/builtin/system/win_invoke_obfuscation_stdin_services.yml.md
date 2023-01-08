@@ -2,7 +2,7 @@
 title: "Invoke-Obfuscation STDIN+ Launcher"
 aliases:
   - "/rule/72862bf2-0eb1-11eb-adc1-0242ac120002"
-
+ruleid: 72862bf2-0eb1-11eb-adc1-0242ac120002
 
 tags:
   - attack.defense_evasion

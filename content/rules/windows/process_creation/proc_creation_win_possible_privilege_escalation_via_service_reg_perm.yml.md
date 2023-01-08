@@ -2,7 +2,7 @@
 title: "Possible Privilege Escalation via Service Permissions Weakness"
 aliases:
   - "/rule/0f9c21f1-6a73-4b0e-9809-cb562cb8d981"
-
+ruleid: 0f9c21f1-6a73-4b0e-9809-cb562cb8d981
 
 tags:
   - attack.privilege_escalation

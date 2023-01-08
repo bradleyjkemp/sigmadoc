@@ -2,7 +2,7 @@
 title: "Credential Dumping by Pypykatz"
 aliases:
   - "/rule/7186e989-4ed7-4f4e-a656-4674b9e3e48b"
-
+ruleid: 7186e989-4ed7-4f4e-a656-4674b9e3e48b
 
 tags:
   - attack.credential_access

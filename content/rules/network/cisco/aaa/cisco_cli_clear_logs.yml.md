@@ -2,7 +2,7 @@
 title: "Cisco Clear Logs"
 aliases:
   - "/rule/ceb407f6-8277-439b-951f-e4210e3ed956"
-
+ruleid: ceb407f6-8277-439b-951f-e4210e3ed956
 
 tags:
   - attack.defense_evasion

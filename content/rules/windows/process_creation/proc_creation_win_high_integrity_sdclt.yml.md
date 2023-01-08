@@ -2,7 +2,7 @@
 title: "High Integrity Sdclt Process"
 aliases:
   - "/rule/40f9af16-589d-4984-b78d-8c2aec023197"
-
+ruleid: 40f9af16-589d-4984-b78d-8c2aec023197
 
 tags:
   - attack.privilege_escalation

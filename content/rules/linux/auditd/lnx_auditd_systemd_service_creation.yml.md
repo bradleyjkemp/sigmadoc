@@ -2,7 +2,7 @@
 title: "Systemd Service Creation"
 aliases:
   - "/rule/1bac86ba-41aa-4f62-9d6b-405eac99b485"
-
+ruleid: 1bac86ba-41aa-4f62-9d6b-405eac99b485
 
 tags:
   - attack.persistence

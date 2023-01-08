@@ -2,7 +2,7 @@
 title: "Remote Service Activity via SVCCTL Named Pipe"
 aliases:
   - "/rule/586a8d6b-6bfe-4ad9-9d78-888cd2fe50c3"
-
+ruleid: 586a8d6b-6bfe-4ad9-9d78-888cd2fe50c3
 
 tags:
   - attack.lateral_movement

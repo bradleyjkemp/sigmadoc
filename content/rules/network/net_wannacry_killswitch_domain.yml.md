@@ -2,7 +2,7 @@
 title: "Wannacry Killswitch Domain"
 aliases:
   - "/rule/3eaf6218-3bed-4d8a-8707-274096f12a18"
-
+ruleid: 3eaf6218-3bed-4d8a-8707-274096f12a18
 
 tags:
   - attack.command_and_control

@@ -2,7 +2,7 @@
 title: "Powershell LocalAccount Manipulation"
 aliases:
   - "/rule/4fdc44df-bfe9-4fcc-b041-68f5a2d3031c"
-
+ruleid: 4fdc44df-bfe9-4fcc-b041-68f5a2d3031c
 
 tags:
   - attack.persistence

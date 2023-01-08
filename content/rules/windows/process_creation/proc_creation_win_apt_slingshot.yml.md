@@ -2,7 +2,7 @@
 title: "Defrag Deactivation"
 aliases:
   - "/rule/958d81aa-8566-4cea-a565-59ccd4df27b0"
-
+ruleid: 958d81aa-8566-4cea-a565-59ccd4df27b0
 
 tags:
   - attack.persistence

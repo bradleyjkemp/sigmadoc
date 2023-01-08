@@ -2,7 +2,7 @@
 title: "File Download with Headless Browser"
 aliases:
   - "/rule/0e8cfe08-02c9-4815-a2f8-0d157b7ed33e"
-
+ruleid: 0e8cfe08-02c9-4815-a2f8-0d157b7ed33e
 
 tags:
   - attack.command_and_control

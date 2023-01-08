@@ -2,7 +2,7 @@
 title: "RDP Sensitive Settings Changed"
 aliases:
   - "/rule/171b67e1-74b4-460e-8d55-b331f3e32d67"
-
+ruleid: 171b67e1-74b4-460e-8d55-b331f3e32d67
 
 tags:
   - attack.defense_evasion

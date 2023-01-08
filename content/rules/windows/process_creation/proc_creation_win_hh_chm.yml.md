@@ -2,7 +2,7 @@
 title: "HH.exe Execution"
 aliases:
   - "/rule/68c8acb4-1b60-4890-8e82-3ddf7a6dba84"
-
+ruleid: 68c8acb4-1b60-4890-8e82-3ddf7a6dba84
 
 tags:
   - attack.defense_evasion

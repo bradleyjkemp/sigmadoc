@@ -2,7 +2,7 @@
 title: "CVE-2021-40444 Process Pattern"
 aliases:
   - "/rule/894397c6-da03-425c-a589-3d09e7d1f750"
-
+ruleid: 894397c6-da03-425c-a589-3d09e7d1f750
 
 tags:
   - attack.execution

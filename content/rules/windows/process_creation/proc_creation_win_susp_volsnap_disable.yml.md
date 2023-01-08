@@ -2,7 +2,7 @@
 title: "Disabled Volume Snapshots"
 aliases:
   - "/rule/dee4af55-1f22-4e1d-a9d2-4bdc7ecb472a"
-
+ruleid: dee4af55-1f22-4e1d-a9d2-4bdc7ecb472a
 
 tags:
   - attack.defense_evasion

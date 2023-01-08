@@ -2,7 +2,7 @@
 title: "Suspicious Esentutl Use"
 aliases:
   - "/rule/56a8189f-11b2-48c8-8ca7-c54b03c2fbf7"
-
+ruleid: 56a8189f-11b2-48c8-8ca7-c54b03c2fbf7
 
 tags:
   - attack.defense_evasion

@@ -2,7 +2,7 @@
 title: "Suspicious PowerShell Download and Execute Pattern"
 aliases:
   - "/rule/e6c54d94-498c-4562-a37c-b469d8e9a275"
-
+ruleid: e6c54d94-498c-4562-a37c-b469d8e9a275
 
 tags:
   - attack.execution

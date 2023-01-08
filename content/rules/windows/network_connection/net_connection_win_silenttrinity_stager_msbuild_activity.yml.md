@@ -2,7 +2,7 @@
 title: "Silenttrinity Stager Msbuild Activity"
 aliases:
   - "/rule/50e54b8d-ad73-43f8-96a1-5191685b17a4"
-
+ruleid: 50e54b8d-ad73-43f8-96a1-5191685b17a4
 
 tags:
   - attack.execution

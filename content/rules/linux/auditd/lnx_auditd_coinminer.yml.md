@@ -2,7 +2,7 @@
 title: "Possible Coin Miner CPU Priority Param"
 aliases:
   - "/rule/071d5e5a-9cef-47ec-bc4e-a42e34d8d0ed"
-
+ruleid: 071d5e5a-9cef-47ec-bc4e-a42e34d8d0ed
 
 tags:
   - attack.privilege_escalation

@@ -2,7 +2,7 @@
 title: "MSExchange Transport Agent Installation"
 aliases:
   - "/rule/83809e84-4475-4b69-bc3e-4aad8568612f"
-
+ruleid: 83809e84-4475-4b69-bc3e-4aad8568612f
 
 tags:
   - attack.persistence

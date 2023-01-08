@@ -2,7 +2,7 @@
 title: "Suspicious Del in CommandLine"
 aliases:
   - "/rule/204b17ae-4007-471b-917b-b917b315c5db"
-
+ruleid: 204b17ae-4007-471b-917b-b917b315c5db
 
 tags:
   - attack.defense_evasion

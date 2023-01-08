@@ -2,7 +2,7 @@
 title: "Disabling Security Tools"
 aliases:
   - "/rule/e3a8a052-111f-4606-9aee-f28ebeb76776"
-
+ruleid: e3a8a052-111f-4606-9aee-f28ebeb76776
 
 tags:
   - attack.defense_evasion

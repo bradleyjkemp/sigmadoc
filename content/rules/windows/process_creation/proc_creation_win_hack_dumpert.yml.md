@@ -2,7 +2,7 @@
 title: "Dumpert Process Dumper"
 aliases:
   - "/rule/2704ab9e-afe2-4854-a3b1-0c0706d03578"
-
+ruleid: 2704ab9e-afe2-4854-a3b1-0c0706d03578
 
 tags:
   - attack.credential_access

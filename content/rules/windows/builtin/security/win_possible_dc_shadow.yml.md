@@ -2,7 +2,7 @@
 title: "Possible DC Shadow"
 aliases:
   - "/rule/32e19d25-4aed-4860-a55a-be99cb0bf7ed"
-
+ruleid: 32e19d25-4aed-4860-a55a-be99cb0bf7ed
 
 tags:
   - attack.credential_access

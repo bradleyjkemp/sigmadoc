@@ -2,7 +2,7 @@
 title: "Suspicious desktop.ini Action"
 aliases:
   - "/rule/81315b50-6b60-4d8f-9928-3466e1022515"
-
+ruleid: 81315b50-6b60-4d8f-9928-3466e1022515
 
 tags:
   - attack.persistence

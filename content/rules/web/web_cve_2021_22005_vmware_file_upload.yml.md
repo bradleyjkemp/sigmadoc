@@ -2,7 +2,7 @@
 title: "VMware vCenter Server File Upload CVE-2021-22005"
 aliases:
   - "/rule/b014ea07-8ea0-4859-b517-50a4e5b7ecec"
-
+ruleid: b014ea07-8ea0-4859-b517-50a4e5b7ecec
 
 tags:
   - attack.initial_access

@@ -2,7 +2,7 @@
 title: "FoggyWeb Backdoor DLL Loading"
 aliases:
   - "/rule/640dc51c-7713-4faa-8a0e-e7c0d9d4654c"
-
+ruleid: 640dc51c-7713-4faa-8a0e-e7c0d9d4654c
 
 tags:
   - attack.resource_development

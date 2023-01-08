@@ -2,7 +2,7 @@
 title: "UAC Bypass Using IEInstal - Process"
 aliases:
   - "/rule/80fc36aa-945e-4181-89f2-2f907ab6775d"
-
+ruleid: 80fc36aa-945e-4181-89f2-2f907ab6775d
 
 tags:
   - attack.defense_evasion

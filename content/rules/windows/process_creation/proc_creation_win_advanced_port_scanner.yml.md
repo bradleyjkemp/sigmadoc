@@ -2,7 +2,7 @@
 title: "Advanced Port Scanner"
 aliases:
   - "/rule/54773c5f-f1cc-4703-9126-2f797d96a69d"
-
+ruleid: 54773c5f-f1cc-4703-9126-2f797d96a69d
 
 tags:
   - attack.discovery

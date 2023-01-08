@@ -2,7 +2,7 @@
 title: "Deletes Backup Files"
 aliases:
   - "/rule/06125661-3814-4e03-bfa2-1e4411c60ac3"
-
+ruleid: 06125661-3814-4e03-bfa2-1e4411c60ac3
 
 tags:
   - attack.impact

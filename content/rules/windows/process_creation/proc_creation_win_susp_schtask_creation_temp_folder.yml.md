@@ -2,7 +2,7 @@
 title: "Suspicious Scheduled Task Creation Involving Temp Folder"
 aliases:
   - "/rule/39019a4e-317f-4ce3-ae63-309a8c6b53c5"
-
+ruleid: 39019a4e-317f-4ce3-ae63-309a8c6b53c5
 
 tags:
   - attack.execution

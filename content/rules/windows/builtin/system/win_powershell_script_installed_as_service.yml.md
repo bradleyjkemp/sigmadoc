@@ -2,7 +2,7 @@
 title: "PowerShell Scripts Installed as Services"
 aliases:
   - "/rule/a2e5019d-a658-4c6a-92bf-7197b54e2cae"
-
+ruleid: a2e5019d-a658-4c6a-92bf-7197b54e2cae
 
 tags:
   - attack.execution

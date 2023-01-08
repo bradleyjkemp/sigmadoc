@@ -2,7 +2,7 @@
 title: "Suspicious VSFTPD Error Messages"
 aliases:
   - "/rule/377f33a1-4b36-4ee1-acee-1dbe4b43cfbe"
-
+ruleid: 377f33a1-4b36-4ee1-acee-1dbe4b43cfbe
 
 tags:
   - attack.initial_access

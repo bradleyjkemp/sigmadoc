@@ -2,7 +2,7 @@
 title: "Powershell Exfiltration Over SMTP"
 aliases:
   - "/rule/9a7afa56-4762-43eb-807d-c3dc9ffe211b"
-
+ruleid: 9a7afa56-4762-43eb-807d-c3dc9ffe211b
 
 tags:
   - attack.exfiltration

@@ -2,7 +2,7 @@
 title: "Successful Exchange ProxyShell Attack"
 aliases:
   - "/rule/992be1eb-e5da-437e-9a54-6d13b57bb4d8"
-
+ruleid: 992be1eb-e5da-437e-9a54-6d13b57bb4d8
 
 tags:
   - attack.initial_access

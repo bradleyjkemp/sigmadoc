@@ -2,7 +2,7 @@
 title: "AWS SecurityHub Findings Evasion"
 aliases:
   - "/rule/a607e1fe-74bf-4440-a3ec-b059b9103157"
-
+ruleid: a607e1fe-74bf-4440-a3ec-b059b9103157
 
 tags:
   - attack.defense_evasion

@@ -2,7 +2,7 @@
 title: "Dumping Process via Sqldumper.exe"
 aliases:
   - "/rule/23ceaf5c-b6f1-4a32-8559-f2ff734be516"
-
+ruleid: 23ceaf5c-b6f1-4a32-8559-f2ff734be516
 
 tags:
   - attack.credential_access

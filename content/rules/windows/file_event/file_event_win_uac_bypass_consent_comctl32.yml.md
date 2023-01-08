@@ -2,7 +2,7 @@
 title: "UAC Bypass Using Consent and Comctl32 - File"
 aliases:
   - "/rule/62ed5b55-f991-406a-85d9-e8e8fdf18789"
-
+ruleid: 62ed5b55-f991-406a-85d9-e8e8fdf18789
 
 tags:
   - attack.defense_evasion

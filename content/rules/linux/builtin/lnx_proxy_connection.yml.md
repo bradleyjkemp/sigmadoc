@@ -2,7 +2,7 @@
 title: "Connection Proxy"
 aliases:
   - "/rule/72f4ab3f-787d-495d-a55d-68c2ff46cf4c"
-
+ruleid: 72f4ab3f-787d-495d-a55d-68c2ff46cf4c
 
 tags:
   - attack.defense_evasion

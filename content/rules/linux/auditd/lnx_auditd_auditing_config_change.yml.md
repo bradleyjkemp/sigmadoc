@@ -2,7 +2,7 @@
 title: "Auditing Configuration Changes on Linux Host"
 aliases:
   - "/rule/977ef627-4539-4875-adf4-ed8f780c4922"
-
+ruleid: 977ef627-4539-4875-adf4-ed8f780c4922
 
 tags:
   - attack.defense_evasion

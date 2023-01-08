@@ -2,7 +2,7 @@
 title: "AWS Suspicious SAML Activity"
 aliases:
   - "/rule/f43f5d2f-3f2a-4cc8-b1af-81fde7dbaf0e"
-
+ruleid: f43f5d2f-3f2a-4cc8-b1af-81fde7dbaf0e
 
 tags:
   - attack.initial_access

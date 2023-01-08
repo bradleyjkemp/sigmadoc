@@ -2,7 +2,7 @@
 title: "Split A File Into Pieces"
 aliases:
   - "/rule/7f2bb9d5-6395-4de5-969c-70c11fbe6b12"
-
+ruleid: 7f2bb9d5-6395-4de5-969c-70c11fbe6b12
 
 tags:
   - attack.exfiltration

@@ -2,7 +2,7 @@
 title: "WMI Uninstall An Application"
 aliases:
   - "/rule/b53317a0-8acf-4fd1-8de8-a5401e776b96"
-
+ruleid: b53317a0-8acf-4fd1-8de8-a5401e776b96
 
 tags:
   - attack.execution

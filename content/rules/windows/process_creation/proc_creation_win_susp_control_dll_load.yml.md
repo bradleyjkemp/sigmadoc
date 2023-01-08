@@ -2,7 +2,7 @@
 title: "Suspicious Control Panel DLL Load"
 aliases:
   - "/rule/d7eb979b-c2b5-4a6f-a3a7-c87ce6763819"
-
+ruleid: d7eb979b-c2b5-4a6f-a3a7-c87ce6763819
 
 tags:
   - attack.defense_evasion

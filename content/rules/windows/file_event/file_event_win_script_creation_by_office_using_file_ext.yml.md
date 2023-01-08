@@ -2,7 +2,7 @@
 title: "Created Files by Office Applications"
 aliases:
   - "/rule/c7a74c80-ba5a-486e-9974-ab9e682bc5e4"
-
+ruleid: c7a74c80-ba5a-486e-9974-ab9e682bc5e4
 
 tags:
   - attack.t1204.002

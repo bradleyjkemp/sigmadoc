@@ -2,7 +2,7 @@
 title: "WMI Event Consumer Created Named Pipe"
 aliases:
   - "/rule/493fb4ab-cdcc-4c4f-818c-0e363bd1e4bb"
-
+ruleid: 493fb4ab-cdcc-4c4f-818c-0e363bd1e4bb
 
 tags:
   - attack.t1047

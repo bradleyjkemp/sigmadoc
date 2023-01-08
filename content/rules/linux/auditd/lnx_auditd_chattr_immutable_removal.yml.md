@@ -2,7 +2,7 @@
 title: "Remove Immutable File Attribute"
 aliases:
   - "/rule/a5b977d6-8a81-4475-91b9-49dbfcd941f7"
-
+ruleid: a5b977d6-8a81-4475-91b9-49dbfcd941f7
 
 tags:
   - attack.defense_evasion

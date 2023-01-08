@@ -2,7 +2,7 @@
 title: "Failed Logins with Different Accounts from Single Source System"
 aliases:
   - "/rule/fc947f8e-ea81-4b14-9a7b-13f888f94e18"
-
+ruleid: fc947f8e-ea81-4b14-9a7b-13f888f94e18
 
 tags:
   - attack.credential_access

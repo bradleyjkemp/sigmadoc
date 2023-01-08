@@ -2,7 +2,7 @@
 title: "Azure VPN Connection Modified or Deleted"
 aliases:
   - "/rule/61171ffc-d79c-4ae5-8e10-9323dba19cd3"
-
+ruleid: 61171ffc-d79c-4ae5-8e10-9323dba19cd3
 
 tags:
   - attack.impact

@@ -2,7 +2,7 @@
 title: "Okta Admin Role Assigned to an User or Group"
 aliases:
   - "/rule/413d4a81-6c98-4479-9863-014785fd579c"
-
+ruleid: 413d4a81-6c98-4479-9863-014785fd579c
 
 tags:
   - attack.impact

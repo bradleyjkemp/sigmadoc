@@ -2,7 +2,7 @@
 title: "Advanced IP Scanner"
 aliases:
   - "/rule/bef37fa2-f205-4a7b-b484-0759bfd5f86f"
-
+ruleid: bef37fa2-f205-4a7b-b484-0759bfd5f86f
 
 tags:
   - attack.discovery

@@ -2,7 +2,7 @@
 title: "Addition of SID History to Active Directory Object"
 aliases:
   - "/rule/2632954e-db1c-49cb-9936-67d1ef1d17d2"
-
+ruleid: 2632954e-db1c-49cb-9936-67d1ef1d17d2
 
 tags:
   - attack.persistence

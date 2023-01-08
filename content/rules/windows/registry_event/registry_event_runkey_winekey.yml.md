@@ -2,7 +2,7 @@
 title: "WINEKEY Registry Modification"
 aliases:
   - "/rule/b98968aa-dbc0-4a9c-ac35-108363cbf8d5"
-
+ruleid: b98968aa-dbc0-4a9c-ac35-108363cbf8d5
 
 tags:
   - attack.persistence

@@ -2,7 +2,7 @@
 title: "Certutil Encode"
 aliases:
   - "/rule/e62a9f0c-ca1e-46b2-85d5-a6da77f86d1a"
-
+ruleid: e62a9f0c-ca1e-46b2-85d5-a6da77f86d1a
 
 tags:
   - attack.defense_evasion

@@ -2,7 +2,7 @@
 title: "Code Injection by ld.so Preload"
 aliases:
   - "/rule/7e3c4651-c347-40c4-b1d4-d48590fdf684"
-
+ruleid: 7e3c4651-c347-40c4-b1d4-d48590fdf684
 
 tags:
   - attack.persistence

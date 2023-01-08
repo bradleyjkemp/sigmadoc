@@ -2,7 +2,7 @@
 title: "Okta Unauthorized Access to App"
 aliases:
   - "/rule/6cc2b61b-d97e-42ef-a9dd-8aa8dc951657"
-
+ruleid: 6cc2b61b-d97e-42ef-a9dd-8aa8dc951657
 
 tags:
   - attack.impact

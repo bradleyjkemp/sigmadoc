@@ -2,7 +2,7 @@
 title: "Azure Owner Removed From Application or Service Principal"
 aliases:
   - "/rule/636e30d5-3736-42ea-96b1-e6e2f8429fd6"
-
+ruleid: 636e30d5-3736-42ea-96b1-e6e2f8429fd6
 
 tags:
   - attack.defense_evasion

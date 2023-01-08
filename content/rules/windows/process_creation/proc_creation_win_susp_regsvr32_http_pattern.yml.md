@@ -2,7 +2,7 @@
 title: "Suspicious Regsvr32 HTTP IP Pattern"
 aliases:
   - "/rule/2dd2c217-bf68-437a-b57c-fe9fd01d5de8"
-
+ruleid: 2dd2c217-bf68-437a-b57c-fe9fd01d5de8
 
 tags:
   - attack.defense_evasion

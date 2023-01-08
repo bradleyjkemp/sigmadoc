@@ -2,7 +2,7 @@
 title: "Base64 Encoded Listing of Shadowcopy"
 aliases:
   - "/rule/47688f1b-9f51-4656-b013-3cc49a166a36"
-
+ruleid: 47688f1b-9f51-4656-b013-3cc49a166a36
 
 tags:
   - attack.execution

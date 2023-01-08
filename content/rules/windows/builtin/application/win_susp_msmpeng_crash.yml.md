@@ -2,7 +2,7 @@
 title: "Microsoft Malware Protection Engine Crash"
 aliases:
   - "/rule/6c82cf5c-090d-4d57-9188-533577631108"
-
+ruleid: 6c82cf5c-090d-4d57-9188-533577631108
 
 tags:
   - attack.defense_evasion

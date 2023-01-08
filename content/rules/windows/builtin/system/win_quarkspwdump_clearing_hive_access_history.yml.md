@@ -2,7 +2,7 @@
 title: "QuarksPwDump Clearing Access History"
 aliases:
   - "/rule/39f919f3-980b-4e6f-a975-8af7e507ef2b"
-
+ruleid: 39f919f3-980b-4e6f-a975-8af7e507ef2b
 
 tags:
   - attack.credential_access

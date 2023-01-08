@@ -2,7 +2,7 @@
 title: "Account Enumeration on AWS"
 aliases:
   - "/rule/e9c14b23-47e2-4a8b-8a63-d36618e33d70"
-
+ruleid: e9c14b23-47e2-4a8b-8a63-d36618e33d70
 
 tags:
   - attack.discovery

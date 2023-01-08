@@ -2,7 +2,7 @@
 title: "Group Modification Logging"
 aliases:
   - "/rule/9cf01b6c-e723-4841-a868-6d7f8245ca6e"
-
+ruleid: 9cf01b6c-e723-4841-a868-6d7f8245ca6e
 
 
 

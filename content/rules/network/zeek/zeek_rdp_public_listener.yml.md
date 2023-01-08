@@ -2,7 +2,7 @@
 title: "Publicly Accessible RDP Service"
 aliases:
   - "/rule/1fc0809e-06bf-4de3-ad52-25e5263b7623"
-
+ruleid: 1fc0809e-06bf-4de3-ad52-25e5263b7623
 
 tags:
   - attack.t1021.001

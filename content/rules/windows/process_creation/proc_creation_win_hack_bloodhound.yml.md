@@ -2,7 +2,7 @@
 title: "Bloodhound and Sharphound Hack Tool"
 aliases:
   - "/rule/f376c8a7-a2d0-4ddc-aa0c-16c17236d962"
-
+ruleid: f376c8a7-a2d0-4ddc-aa0c-16c17236d962
 
 tags:
   - attack.discovery

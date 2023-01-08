@@ -2,7 +2,7 @@
 title: "Visual Basic Command Line Compiler Usage"
 aliases:
   - "/rule/7b10f171-7f04-47c7-9fa2-5be43c76e535"
-
+ruleid: 7b10f171-7f04-47c7-9fa2-5be43c76e535
 
 tags:
   - attack.defense_evasion

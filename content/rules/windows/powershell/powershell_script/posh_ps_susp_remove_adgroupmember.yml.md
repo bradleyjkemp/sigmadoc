@@ -2,7 +2,7 @@
 title: "Remove Account From Domain Admin Group"
 aliases:
   - "/rule/48a45d45-8112-416b-8a67-46e03a4b2107"
-
+ruleid: 48a45d45-8112-416b-8a67-46e03a4b2107
 
 tags:
   - attack.impact

@@ -2,7 +2,7 @@
 title: "Remote Registry Management Using Reg Utility"
 aliases:
   - "/rule/68fcba0d-73a5-475e-a915-e8b4c576827e"
-
+ruleid: 68fcba0d-73a5-475e-a915-e8b4c576827e
 
 tags:
   - attack.defense_evasion

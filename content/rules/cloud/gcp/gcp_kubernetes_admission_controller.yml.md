@@ -2,7 +2,7 @@
 title: "Google Cloud Kubernetes Admission Controller"
 aliases:
   - "/rule/6ad91e31-53df-4826-bd27-0166171c8040"
-
+ruleid: 6ad91e31-53df-4826-bd27-0166171c8040
 
 tags:
   - attack.persistence

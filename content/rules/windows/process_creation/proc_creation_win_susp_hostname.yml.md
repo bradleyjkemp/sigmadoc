@@ -2,7 +2,7 @@
 title: "Suspicious Execution of Hostname"
 aliases:
   - "/rule/7be5fb68-f9ef-476d-8b51-0256ebece19e"
-
+ruleid: 7be5fb68-f9ef-476d-8b51-0256ebece19e
 
 tags:
   - attack.discovery

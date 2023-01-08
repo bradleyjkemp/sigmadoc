@@ -2,7 +2,7 @@
 title: "Network Reconnaissance Activity"
 aliases:
   - "/rule/e6313acd-208c-44fc-a0ff-db85d572e90e"
-
+ruleid: e6313acd-208c-44fc-a0ff-db85d572e90e
 
 tags:
   - attack.discovery

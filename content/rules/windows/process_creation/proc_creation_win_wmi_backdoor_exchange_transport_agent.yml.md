@@ -2,7 +2,7 @@
 title: "WMI Backdoor Exchange Transport Agent"
 aliases:
   - "/rule/797011dc-44f4-4e6f-9f10-a8ceefbe566b"
-
+ruleid: 797011dc-44f4-4e6f-9f10-a8ceefbe566b
 
 tags:
   - attack.persistence

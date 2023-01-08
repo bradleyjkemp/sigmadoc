@@ -2,7 +2,7 @@
 title: "SCM Database Handle Failure"
 aliases:
   - "/rule/13addce7-47b2-4ca0-a98f-1de964d1d669"
-
+ruleid: 13addce7-47b2-4ca0-a98f-1de964d1d669
 
 tags:
   - attack.discovery

@@ -2,7 +2,7 @@
 title: "AWS User Login Profile Was Modified"
 aliases:
   - "/rule/055fb148-60f8-462d-ad16-26926ce050f1"
-
+ruleid: 055fb148-60f8-462d-ad16-26926ce050f1
 
 tags:
   - attack.persistence

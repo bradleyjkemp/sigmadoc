@@ -2,7 +2,7 @@
 title: "Data Exfiltration to Unsanctioned Apps"
 aliases:
   - "/rule/2b669496-d215-47d8-bd9a-f4a45bf07cda"
-
+ruleid: 2b669496-d215-47d8-bd9a-f4a45bf07cda
 
 tags:
   - attack.exfiltration

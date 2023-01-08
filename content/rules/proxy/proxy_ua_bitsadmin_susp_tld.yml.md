@@ -2,7 +2,7 @@
 title: "Bitsadmin to Uncommon TLD"
 aliases:
   - "/rule/9eb68894-7476-4cd6-8752-23b51f5883a7"
-
+ruleid: 9eb68894-7476-4cd6-8752-23b51f5883a7
 
 tags:
   - attack.command_and_control

@@ -2,7 +2,7 @@
 title: "Compress Data and Lock With Password for Exfiltration With 7-ZIP"
 aliases:
   - "/rule/9fbf5927-5261-4284-a71d-f681029ea574"
-
+ruleid: 9fbf5927-5261-4284-a71d-f681029ea574
 
 tags:
   - attack.collection

@@ -2,7 +2,7 @@
 title: "PSExec and WMI Process Creations Block"
 aliases:
   - "/rule/97b9ce1e-c5ab-11ea-87d0-0242ac130003"
-
+ruleid: 97b9ce1e-c5ab-11ea-87d0-0242ac130003
 
 tags:
   - attack.execution

@@ -2,7 +2,7 @@
 title: "Winnti Pipemon Characteristics"
 aliases:
   - "/rule/73d70463-75c9-4258-92c6-17500fe972f2"
-
+ruleid: 73d70463-75c9-4258-92c6-17500fe972f2
 
 tags:
   - attack.defense_evasion

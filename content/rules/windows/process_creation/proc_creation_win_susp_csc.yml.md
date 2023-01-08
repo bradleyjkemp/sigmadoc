@@ -2,7 +2,7 @@
 title: "Suspicious Parent of Csc.exe"
 aliases:
   - "/rule/b730a276-6b63-41b8-bcf8-55930c8fc6ee"
-
+ruleid: b730a276-6b63-41b8-bcf8-55930c8fc6ee
 
 tags:
   - attack.execution

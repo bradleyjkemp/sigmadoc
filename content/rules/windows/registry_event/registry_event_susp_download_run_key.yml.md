@@ -2,7 +2,7 @@
 title: "Suspicious Run Key from Download"
 aliases:
   - "/rule/9c5037d1-c568-49b3-88c7-9846a5bdc2be"
-
+ruleid: 9c5037d1-c568-49b3-88c7-9846a5bdc2be
 
 tags:
   - attack.persistence

@@ -2,7 +2,7 @@
 title: "SILENTTRINITY Stager Execution"
 aliases:
   - "/rule/03552375-cc2c-4883-bbe4-7958d5a980be"
-
+ruleid: 03552375-cc2c-4883-bbe4-7958d5a980be
 
 tags:
   - attack.command_and_control

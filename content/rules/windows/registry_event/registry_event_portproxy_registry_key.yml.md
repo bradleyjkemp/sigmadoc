@@ -2,7 +2,7 @@
 title: "PortProxy Registry Key"
 aliases:
   - "/rule/a54f842a-3713-4b45-8c84-5f136fdebd3c"
-
+ruleid: a54f842a-3713-4b45-8c84-5f136fdebd3c
 
 tags:
   - attack.lateral_movement

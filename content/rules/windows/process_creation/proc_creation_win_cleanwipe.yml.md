@@ -2,7 +2,7 @@
 title: "CleanWipe Usage"
 aliases:
   - "/rule/f44800ac-38ec-471f-936e-3fa7d9c53100"
-
+ruleid: f44800ac-38ec-471f-936e-3fa7d9c53100
 
 tags:
   - attack.defense_evasion

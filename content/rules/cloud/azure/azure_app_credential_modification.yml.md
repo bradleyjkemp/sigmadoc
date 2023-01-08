@@ -2,7 +2,7 @@
 title: "Azure Application Credential Modified"
 aliases:
   - "/rule/cdeef967-f9a1-4375-90ee-6978c5f23974"
-
+ruleid: cdeef967-f9a1-4375-90ee-6978c5f23974
 
 tags:
   - attack.impact

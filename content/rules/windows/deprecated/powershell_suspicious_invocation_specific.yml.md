@@ -2,7 +2,7 @@
 title: "Suspicious PowerShell Invocations - Specific"
 aliases:
   - "/rule/fce5f582-cc00-41e1-941a-c6fabf0fdb8c"
-
+ruleid: fce5f582-cc00-41e1-941a-c6fabf0fdb8c
 
 tags:
   - attack.execution

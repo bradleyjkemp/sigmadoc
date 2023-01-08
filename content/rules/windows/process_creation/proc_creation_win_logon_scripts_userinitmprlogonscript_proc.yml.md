@@ -2,7 +2,7 @@
 title: "Logon Scripts (UserInitMprLogonScript)"
 aliases:
   - "/rule/0a98a10c-685d-4ab0-bddc-b6bdd1d48458"
-
+ruleid: 0a98a10c-685d-4ab0-bddc-b6bdd1d48458
 
 tags:
   - attack.t1037.001

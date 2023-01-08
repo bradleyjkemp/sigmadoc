@@ -2,7 +2,7 @@
 title: "Creation Of An User Account"
 aliases:
   - "/rule/759d0d51-bc99-4b5e-9add-8f5b2c8e7512"
-
+ruleid: 759d0d51-bc99-4b5e-9add-8f5b2c8e7512
 
 tags:
   - attack.t1136.001

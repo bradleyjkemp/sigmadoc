@@ -2,7 +2,7 @@
 title: "PowerShell Writing Startup Shortcuts"
 aliases:
   - "/rule/92fa78e7-4d39-45f1-91a3-8b23f3f1088d"
-
+ruleid: 92fa78e7-4d39-45f1-91a3-8b23f3f1088d
 
 tags:
   - attack.registry_run_keys_/_startup_folder

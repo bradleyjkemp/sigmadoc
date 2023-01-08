@@ -2,7 +2,7 @@
 title: "Host Without Firewall"
 aliases:
   - "/rule/6b2066c8-3dc7-4db7-9db0-6cc1d7b0dde9"
-
+ruleid: 6b2066c8-3dc7-4db7-9db0-6cc1d7b0dde9
 
 
 

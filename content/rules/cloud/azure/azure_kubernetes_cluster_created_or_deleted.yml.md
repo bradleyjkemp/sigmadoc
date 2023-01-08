@@ -2,7 +2,7 @@
 title: "Azure Kubernetes Cluster Created or Deleted"
 aliases:
   - "/rule/9541f321-7cba-4b43-80fc-fbd1fb922808"
-
+ruleid: 9541f321-7cba-4b43-80fc-fbd1fb922808
 
 tags:
   - attack.impact

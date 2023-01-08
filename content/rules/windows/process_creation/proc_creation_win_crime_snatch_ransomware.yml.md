@@ -2,7 +2,7 @@
 title: "Snatch Ransomware"
 aliases:
   - "/rule/5325945e-f1f0-406e-97b8-65104d393fff"
-
+ruleid: 5325945e-f1f0-406e-97b8-65104d393fff
 
 tags:
   - attack.execution

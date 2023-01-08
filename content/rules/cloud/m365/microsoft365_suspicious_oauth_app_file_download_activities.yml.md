@@ -2,7 +2,7 @@
 title: "Suspicious OAuth App File Download Activities"
 aliases:
   - "/rule/ee111937-1fe7-40f0-962a-0eb44d57d174"
-
+ruleid: ee111937-1fe7-40f0-962a-0eb44d57d174
 
 tags:
   - attack.exfiltration

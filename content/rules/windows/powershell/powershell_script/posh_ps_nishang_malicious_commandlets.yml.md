@@ -2,7 +2,7 @@
 title: "Malicious Nishang PowerShell Commandlets"
 aliases:
   - "/rule/f772cee9-b7c2-4cb2-8f07-49870adc02e0"
-
+ruleid: f772cee9-b7c2-4cb2-8f07-49870adc02e0
 
 tags:
   - attack.execution

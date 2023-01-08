@@ -2,7 +2,7 @@
 title: "Google Cloud Service Account Disabled or Deleted"
 aliases:
   - "/rule/13f81a90-a69c-4fab-8f07-b5bb55416a9f"
-
+ruleid: 13f81a90-a69c-4fab-8f07-b5bb55416a9f
 
 tags:
   - attack.impact

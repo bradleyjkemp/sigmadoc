@@ -2,7 +2,7 @@
 title: "Suspicious Call by Ordinal"
 aliases:
   - "/rule/e79a9e79-eb72-4e78-a628-0e7e8f59e89c"
-
+ruleid: e79a9e79-eb72-4e78-a628-0e7e8f59e89c
 
 tags:
   - attack.defense_evasion

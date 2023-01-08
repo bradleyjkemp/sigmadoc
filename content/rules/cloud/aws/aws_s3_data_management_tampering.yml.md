@@ -2,7 +2,7 @@
 title: "AWS S3 Data Management Tampering"
 aliases:
   - "/rule/78b3756a-7804-4ef7-8555-7b9024a02e2d"
-
+ruleid: 78b3756a-7804-4ef7-8555-7b9024a02e2d
 
 tags:
   - attack.exfiltration

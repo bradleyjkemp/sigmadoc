@@ -2,7 +2,7 @@
 title: "Add Port Monitor Persistence in Registry"
 aliases:
   - "/rule/944e8941-f6f6-4ee8-ac05-1c224e923c0e"
-
+ruleid: 944e8941-f6f6-4ee8-ac05-1c224e923c0e
 
 tags:
   - attack.persistence

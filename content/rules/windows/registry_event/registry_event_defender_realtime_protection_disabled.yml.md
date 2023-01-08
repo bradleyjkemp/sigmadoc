@@ -2,7 +2,7 @@
 title: "Windows Defender Real-Time Protection Disabled"
 aliases:
   - "/rule/fd115e64-97c7-491f-951c-fc8da7e042fa"
-
+ruleid: fd115e64-97c7-491f-951c-fc8da7e042fa
 
 tags:
   - attack.defense_evasion

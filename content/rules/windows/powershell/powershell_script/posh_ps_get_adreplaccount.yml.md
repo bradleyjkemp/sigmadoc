@@ -2,7 +2,7 @@
 title: "Suspicious Get-ADReplAccount"
 aliases:
   - "/rule/060c3ef1-fd0a-4091-bf46-e7d625f60b73"
-
+ruleid: 060c3ef1-fd0a-4091-bf46-e7d625f60b73
 
 tags:
   - attack.credential_access

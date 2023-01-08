@@ -2,7 +2,7 @@
 title: "Terminal Service Process Spawn"
 aliases:
   - "/rule/1012f107-b8f1-4271-af30-5aed2de89b39"
-
+ruleid: 1012f107-b8f1-4271-af30-5aed2de89b39
 
 tags:
   - attack.initial_access

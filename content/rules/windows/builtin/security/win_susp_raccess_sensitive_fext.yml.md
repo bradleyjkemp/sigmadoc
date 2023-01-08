@@ -2,7 +2,7 @@
 title: "Suspicious Access to Sensitive File Extensions"
 aliases:
   - "/rule/91c945bc-2ad1-4799-a591-4d00198a1215"
-
+ruleid: 91c945bc-2ad1-4799-a591-4d00198a1215
 
 tags:
   - attack.collection

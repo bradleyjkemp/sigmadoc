@@ -2,7 +2,7 @@
 title: "Source Code Enumeration Detection by Keyword"
 aliases:
   - "/rule/953d460b-f810-420a-97a2-cfca4c98e602"
-
+ruleid: 953d460b-f810-420a-97a2-cfca4c98e602
 
 tags:
   - attack.discovery

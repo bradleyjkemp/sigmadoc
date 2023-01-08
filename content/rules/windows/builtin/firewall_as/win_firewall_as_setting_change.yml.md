@@ -2,7 +2,7 @@
 title: "Setting Change in Windows Firewall with Advanced Security"
 aliases:
   - "/rule/00bb5bd5-1379-4fcf-a965-a5b6f7478064"
-
+ruleid: 00bb5bd5-1379-4fcf-a965-a5b6f7478064
 
 
 

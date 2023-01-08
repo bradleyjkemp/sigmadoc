@@ -2,7 +2,7 @@
 title: "Windows Network Access Suspicious desktop.ini Action"
 aliases:
   - "/rule/35bc7e28-ee6b-492f-ab04-da58fcf6402e"
-
+ruleid: 35bc7e28-ee6b-492f-ab04-da58fcf6402e
 
 tags:
   - attack.persistence

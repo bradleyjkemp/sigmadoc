@@ -2,7 +2,7 @@
 title: "Suspicious DNS Query for IP Lookup Service APIs"
 aliases:
   - "/rule/ec82e2a5-81ea-4211-a1f8-37a0286df2c2"
-
+ruleid: ec82e2a5-81ea-4211-a1f8-37a0286df2c2
 
 tags:
   - attack.reconnaissance

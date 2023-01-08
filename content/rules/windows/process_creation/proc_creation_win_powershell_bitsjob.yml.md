@@ -2,7 +2,7 @@
 title: "Suspicious Bitsadmin Job via PowerShell"
 aliases:
   - "/rule/f67dbfce-93bc-440d-86ad-a95ae8858c90"
-
+ruleid: f67dbfce-93bc-440d-86ad-a95ae8858c90
 
 tags:
   - attack.defense_evasion

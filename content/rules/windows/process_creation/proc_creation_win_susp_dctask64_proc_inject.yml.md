@@ -2,7 +2,7 @@
 title: "ZOHO Dctask64 Process Injection"
 aliases:
   - "/rule/6345b048-8441-43a7-9bed-541133633d7a"
-
+ruleid: 6345b048-8441-43a7-9bed-541133633d7a
 
 tags:
   - attack.defense_evasion

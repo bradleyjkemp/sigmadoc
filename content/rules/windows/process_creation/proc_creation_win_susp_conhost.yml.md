@@ -2,7 +2,7 @@
 title: "Conhost Parent Process Executions"
 aliases:
   - "/rule/7dc2dedd-7603-461a-bc13-15803d132355"
-
+ruleid: 7dc2dedd-7603-461a-bc13-15803d132355
 
 tags:
   - attack.defense_evasion

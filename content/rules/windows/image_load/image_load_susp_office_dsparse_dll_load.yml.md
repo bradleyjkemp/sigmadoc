@@ -2,7 +2,7 @@
 title: "Active Directory Parsing DLL Loaded Via Office Applications"
 aliases:
   - "/rule/a2a3b925-7bb0-433b-b508-db9003263cc4"
-
+ruleid: a2a3b925-7bb0-433b-b508-db9003263cc4
 
 tags:
   - attack.execution

@@ -2,7 +2,7 @@
 title: "RClone Execution"
 aliases:
   - "/rule/a0d63692-a531-4912-ad39-4393325b2a9c"
-
+ruleid: a0d63692-a531-4912-ad39-4393325b2a9c
 
 tags:
   - attack.exfiltration

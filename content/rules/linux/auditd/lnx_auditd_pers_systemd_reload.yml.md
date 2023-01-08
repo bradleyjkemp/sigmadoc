@@ -2,7 +2,7 @@
 title: "Systemd Service Reload or Start"
 aliases:
   - "/rule/2625cc59-0634-40d0-821e-cb67382a3dd7"
-
+ruleid: 2625cc59-0634-40d0-821e-cb67382a3dd7
 
 tags:
   - attack.persistence

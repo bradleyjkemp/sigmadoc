@@ -2,7 +2,7 @@
 title: "Dnscat Execution"
 aliases:
   - "/rule/a6d67db4-6220-436d-8afc-f3842fe05d43"
-
+ruleid: a6d67db4-6220-436d-8afc-f3842fe05d43
 
 tags:
   - attack.exfiltration

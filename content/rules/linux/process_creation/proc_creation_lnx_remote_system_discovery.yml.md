@@ -2,7 +2,7 @@
 title: "Linux Remote System Discovery"
 aliases:
   - "/rule/11063ec2-de63-4153-935e-b1a8b9e616f1"
-
+ruleid: 11063ec2-de63-4153-935e-b1a8b9e616f1
 
 tags:
   - attack.discovery

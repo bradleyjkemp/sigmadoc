@@ -2,7 +2,7 @@
 title: "Windows Shell File Write to Suspicious Folder"
 aliases:
   - "/rule/1277f594-a7d1-4f28-a2d3-73af5cbeab43"
-
+ruleid: 1277f594-a7d1-4f28-a2d3-73af5cbeab43
 
 
 

@@ -2,7 +2,7 @@
 title: "Executable in ADS"
 aliases:
   - "/rule/b69888d4-380c-45ce-9cf9-d9ce46e67821"
-
+ruleid: b69888d4-380c-45ce-9cf9-d9ce46e67821
 
 tags:
   - attack.defense_evasion

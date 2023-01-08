@@ -2,7 +2,7 @@
 title: "Download from Suspicious Dyndns Hosts"
 aliases:
   - "/rule/195c1119-ef07-4909-bb12-e66f5e07bf3c"
-
+ruleid: 195c1119-ef07-4909-bb12-e66f5e07bf3c
 
 tags:
   - attack.defense_evasion

@@ -2,7 +2,7 @@
 title: "Suspicious Multiple File Rename Or Delete Occurred"
 aliases:
   - "/rule/97919310-06a7-482c-9639-92b67ed63cf8"
-
+ruleid: 97919310-06a7-482c-9639-92b67ed63cf8
 
 tags:
   - attack.impact

@@ -2,7 +2,7 @@
 title: "Remote Server Service Abuse for Lateral Movement"
 aliases:
   - "/rule/10018e73-06ec-46ec-8107-9172f1e04ff2"
-
+ruleid: 10018e73-06ec-46ec-8107-9172f1e04ff2
 
 tags:
   - attack.lateral_movement

@@ -2,7 +2,7 @@
 title: "LSASS Memory Dumping"
 aliases:
   - "/rule/ffa6861c-4461-4f59-8a41-578c39f3f23e"
-
+ruleid: ffa6861c-4461-4f59-8a41-578c39f3f23e
 
 tags:
   - attack.credential_access

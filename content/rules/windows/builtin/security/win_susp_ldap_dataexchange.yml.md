@@ -2,7 +2,7 @@
 title: "Suspicious LDAP-Attributes Used"
 aliases:
   - "/rule/d00a9a72-2c09-4459-ad03-5e0a23351e36"
-
+ruleid: d00a9a72-2c09-4459-ad03-5e0a23351e36
 
 tags:
   - attack.t1001.003

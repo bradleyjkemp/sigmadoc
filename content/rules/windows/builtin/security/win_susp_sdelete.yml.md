@@ -2,7 +2,7 @@
 title: "Secure Deletion with SDelete"
 aliases:
   - "/rule/39a80702-d7ca-4a83-b776-525b1f86a36d"
-
+ruleid: 39a80702-d7ca-4a83-b776-525b1f86a36d
 
 tags:
   - attack.impact

@@ -2,7 +2,7 @@
 title: "Suspicious Usage of the Manage-bde.wsf Script"
 aliases:
   - "/rule/c363385c-f75d-4753-a108-c1a8e28bdbda"
-
+ruleid: c363385c-f75d-4753-a108-c1a8e28bdbda
 
 tags:
   - attack.defense_evasion

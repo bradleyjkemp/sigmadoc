@@ -2,7 +2,7 @@
 title: "GfxDownloadWrapper.exe Downloads File from Suspicious URL"
 aliases:
   - "/rule/eee00933-a761-4cd0-be70-c42fe91731e7"
-
+ruleid: eee00933-a761-4cd0-be70-c42fe91731e7
 
 tags:
   - attack.command_and_control

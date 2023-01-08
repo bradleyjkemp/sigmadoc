@@ -2,7 +2,7 @@
 title: "Application Whitelisting Bypass via DLL Loaded by odbcconf.exe"
 aliases:
   - "/rule/65d2be45-8600-4042-b4c0-577a1ff8a60e"
-
+ruleid: 65d2be45-8600-4042-b4c0-577a1ff8a60e
 
 tags:
   - attack.defense_evasion

@@ -2,7 +2,7 @@
 title: "Mimikatz Use"
 aliases:
   - "/rule/06d71506-7beb-4f22-8888-e2e5e2ca7fd8"
-
+ruleid: 06d71506-7beb-4f22-8888-e2e5e2ca7fd8
 
 tags:
   - attack.s0002

@@ -2,7 +2,7 @@
 title: "GALLIUM Artefacts"
 aliases:
   - "/rule/440a56bf-7873-4439-940a-1c8a671073c2"
-
+ruleid: 440a56bf-7873-4439-940a-1c8a671073c2
 
 tags:
   - attack.credential_access

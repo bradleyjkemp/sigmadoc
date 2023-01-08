@@ -2,7 +2,7 @@
 title: "Delete Volume Shadow Copies Via WMI With PowerShell"
 aliases:
   - "/rule/87df9ee1-5416-453a-8a08-e8d4a51e9ce1"
-
+ruleid: 87df9ee1-5416-453a-8a08-e8d4a51e9ce1
 
 tags:
   - attack.impact

@@ -2,7 +2,7 @@
 title: "Password Change on Directory Service Restore Mode (DSRM) Account"
 aliases:
   - "/rule/53ad8e36-f573-46bf-97e4-15ba5bf4bb51"
-
+ruleid: 53ad8e36-f573-46bf-97e4-15ba5bf4bb51
 
 tags:
   - attack.persistence

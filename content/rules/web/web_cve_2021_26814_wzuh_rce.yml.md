@@ -2,7 +2,7 @@
 title: "Exploitation of CVE-2021-26814 in Wazuh"
 aliases:
   - "/rule/b9888738-29ed-4c54-96a4-f38c57b84bb3"
-
+ruleid: b9888738-29ed-4c54-96a4-f38c57b84bb3
 
 tags:
   - attack.initial_access

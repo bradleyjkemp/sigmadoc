@@ -2,7 +2,7 @@
 title: "Regsvr32 Flags Anomaly"
 aliases:
   - "/rule/b236190c-1c61-41e9-84b3-3fe03f6d76b0"
-
+ruleid: b236190c-1c61-41e9-84b3-3fe03f6d76b0
 
 tags:
   - attack.defense_evasion

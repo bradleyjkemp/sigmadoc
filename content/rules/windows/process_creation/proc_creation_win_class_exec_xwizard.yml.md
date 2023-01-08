@@ -2,7 +2,7 @@
 title: "Custom Class Execution via Xwizard"
 aliases:
   - "/rule/53d4bb30-3f36-4e8a-b078-69d36c4a79ff"
-
+ruleid: 53d4bb30-3f36-4e8a-b078-69d36c4a79ff
 
 tags:
   - attack.defense_evasion

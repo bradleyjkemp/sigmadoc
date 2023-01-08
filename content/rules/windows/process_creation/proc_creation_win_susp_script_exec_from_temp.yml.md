@@ -2,7 +2,7 @@
 title: "Suspicious Script Execution From Temp Folder"
 aliases:
   - "/rule/a6a39bdb-935c-4f0a-ab77-35f4bbf44d33"
-
+ruleid: a6a39bdb-935c-4f0a-ab77-35f4bbf44d33
 
 tags:
   - attack.execution

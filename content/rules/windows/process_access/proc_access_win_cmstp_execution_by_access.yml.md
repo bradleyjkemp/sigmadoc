@@ -2,7 +2,7 @@
 title: "CMSTP Execution Process Access"
 aliases:
   - "/rule/3b4b232a-af90-427c-a22f-30b0c0837b95"
-
+ruleid: 3b4b232a-af90-427c-a22f-30b0c0837b95
 
 tags:
   - attack.defense_evasion

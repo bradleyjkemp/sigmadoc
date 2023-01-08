@@ -2,7 +2,7 @@
 title: "Cisco Local Accounts"
 aliases:
   - "/rule/6d844f0f-1c18-41af-8f19-33e7654edfc3"
-
+ruleid: 6d844f0f-1c18-41af-8f19-33e7654edfc3
 
 tags:
   - attack.persistence

@@ -2,7 +2,7 @@
 title: "User Added to an Administrator's Azure AD Role"
 aliases:
   - "/rule/ebbeb024-5b1d-4e16-9c0c-917f86c708a7"
-
+ruleid: ebbeb024-5b1d-4e16-9c0c-917f86c708a7
 
 tags:
   - attack.persistence

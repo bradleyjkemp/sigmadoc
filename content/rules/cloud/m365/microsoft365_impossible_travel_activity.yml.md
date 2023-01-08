@@ -2,7 +2,7 @@
 title: "Microsoft 365 - Impossible Travel Activity"
 aliases:
   - "/rule/d7eab125-5f94-43df-8710-795b80fa1189"
-
+ruleid: d7eab125-5f94-43df-8710-795b80fa1189
 
 tags:
   - attack.initial_access

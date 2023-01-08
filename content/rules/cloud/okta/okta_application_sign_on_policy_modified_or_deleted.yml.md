@@ -2,7 +2,7 @@
 title: "Okta Application Sign-On Policy Modified or Deleted"
 aliases:
   - "/rule/8f668cc4-c18e-45fe-ad00-624a981cf88a"
-
+ruleid: 8f668cc4-c18e-45fe-ad00-624a981cf88a
 
 tags:
   - attack.impact

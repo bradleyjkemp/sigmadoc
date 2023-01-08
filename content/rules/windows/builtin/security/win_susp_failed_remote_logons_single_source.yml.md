@@ -2,7 +2,7 @@
 title: "Multiple Users Remotely Failing To Authenticate From Single Source"
 aliases:
   - "/rule/add2ef8d-dc91-4002-9e7e-f2702369f53a"
-
+ruleid: add2ef8d-dc91-4002-9e7e-f2702369f53a
 
 tags:
   - attack.t1110.003

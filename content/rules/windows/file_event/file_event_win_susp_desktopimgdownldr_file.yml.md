@@ -2,7 +2,7 @@
 title: "Suspicious Desktopimgdownldr Target File"
 aliases:
   - "/rule/fc4f4817-0c53-4683-a4ee-b17a64bc1039"
-
+ruleid: fc4f4817-0c53-4683-a4ee-b17a64bc1039
 
 tags:
   - attack.defense_evasion

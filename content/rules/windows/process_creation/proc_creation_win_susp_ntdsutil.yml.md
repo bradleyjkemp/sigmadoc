@@ -2,7 +2,7 @@
 title: "Invocation of Active Directory Diagnostic Tool (ntdsutil.exe)"
 aliases:
   - "/rule/2afafd61-6aae-4df4-baed-139fa1f4c345"
-
+ruleid: 2afafd61-6aae-4df4-baed-139fa1f4c345
 
 tags:
   - attack.credential_access

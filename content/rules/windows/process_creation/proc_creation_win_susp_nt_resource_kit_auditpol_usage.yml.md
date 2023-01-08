@@ -2,7 +2,7 @@
 title: "Suspicious NT Resource Kit Auditpol Usage"
 aliases:
   - "/rule/c6c56ada-612b-42d1-9a29-adad3c5c2c1e"
-
+ruleid: c6c56ada-612b-42d1-9a29-adad3c5c2c1e
 
 tags:
   - attack.defense_evasion

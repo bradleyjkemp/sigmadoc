@@ -2,7 +2,7 @@
 title: "Linux Doas Conf File Creation"
 aliases:
   - "/rule/00eee2a5-fdb0-4746-a21d-e43fbdea5681"
-
+ruleid: 00eee2a5-fdb0-4746-a21d-e43fbdea5681
 
 tags:
   - attack.privilege_escalation

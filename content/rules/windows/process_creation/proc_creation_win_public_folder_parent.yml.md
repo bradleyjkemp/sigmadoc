@@ -2,7 +2,7 @@
 title: "Parent in Public Folder Suspicious Process"
 aliases:
   - "/rule/69bd9b97-2be2-41b6-9816-fb08757a4d1a"
-
+ruleid: 69bd9b97-2be2-41b6-9816-fb08757a4d1a
 
 
 

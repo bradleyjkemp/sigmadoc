@@ -2,7 +2,7 @@
 title: "SysKey Registry Keys Access"
 aliases:
   - "/rule/9a4ff3b8-6187-4fd2-8e8b-e0eae1129495"
-
+ruleid: 9a4ff3b8-6187-4fd2-8e8b-e0eae1129495
 
 tags:
   - attack.discovery

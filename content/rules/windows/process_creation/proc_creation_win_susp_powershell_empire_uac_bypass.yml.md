@@ -2,7 +2,7 @@
 title: "Empire PowerShell UAC Bypass"
 aliases:
   - "/rule/3268b746-88d8-4cd3-bffc-30077d02c787"
-
+ruleid: 3268b746-88d8-4cd3-bffc-30077d02c787
 
 tags:
   - attack.defense_evasion

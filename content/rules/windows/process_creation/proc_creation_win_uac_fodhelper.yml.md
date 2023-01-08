@@ -2,7 +2,7 @@
 title: "Bypass UAC via Fodhelper.exe"
 aliases:
   - "/rule/7f741dcf-fc22-4759-87b4-9ae8376676a2"
-
+ruleid: 7f741dcf-fc22-4759-87b4-9ae8376676a2
 
 tags:
   - attack.privilege_escalation

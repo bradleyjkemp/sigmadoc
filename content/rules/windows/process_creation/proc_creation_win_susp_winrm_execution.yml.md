@@ -2,7 +2,7 @@
 title: "Remote Code Execute via Winrm.vbs"
 aliases:
   - "/rule/9df0dd3a-1a5c-47e3-a2bc-30ed177646a0"
-
+ruleid: 9df0dd3a-1a5c-47e3-a2bc-30ed177646a0
 
 tags:
   - attack.defense_evasion

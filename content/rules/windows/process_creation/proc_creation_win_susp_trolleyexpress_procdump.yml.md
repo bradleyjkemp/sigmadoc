@@ -2,7 +2,7 @@
 title: "Process Access via TrolleyExpress Exclusion"
 aliases:
   - "/rule/4c0aaedc-154c-4427-ada0-d80ef9c9deb6"
-
+ruleid: 4c0aaedc-154c-4427-ada0-d80ef9c9deb6
 
 tags:
   - attack.defense_evasion

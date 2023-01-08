@@ -2,7 +2,7 @@
 title: "Google Cloud Firewall Modified or Deleted"
 aliases:
   - "/rule/fe513c69-734c-4d4a-8548-ac5f609be82b"
-
+ruleid: fe513c69-734c-4d4a-8548-ac5f609be82b
 
 tags:
   - attack.defense_evasion

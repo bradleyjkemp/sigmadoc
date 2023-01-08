@@ -2,7 +2,7 @@
 title: "Suspicious Runscripthelper.exe"
 aliases:
   - "/rule/eca49c87-8a75-4f13-9c73-a5a29e845f03"
-
+ruleid: eca49c87-8a75-4f13-9c73-a5a29e845f03
 
 tags:
   - attack.execution

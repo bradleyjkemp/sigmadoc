@@ -2,7 +2,7 @@
 title: "Possible Impacket SecretDump Remote Activity"
 aliases:
   - "/rule/252902e3-5830-4cf6-bf21-c22083dfd5cf"
-
+ruleid: 252902e3-5830-4cf6-bf21-c22083dfd5cf
 
 tags:
   - attack.credential_access

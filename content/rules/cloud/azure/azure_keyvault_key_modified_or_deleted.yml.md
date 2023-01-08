@@ -2,7 +2,7 @@
 title: "Azure Keyvault Key Modified or Deleted"
 aliases:
   - "/rule/80eeab92-0979-4152-942d-96749e11df40"
-
+ruleid: 80eeab92-0979-4152-942d-96749e11df40
 
 tags:
   - attack.impact

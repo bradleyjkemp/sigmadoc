@@ -2,7 +2,7 @@
 title: "Suspicious aspnet_compiler.exe Execution"
 aliases:
   - "/rule/a01b8329-5953-4f73-ae2d-aa01e1f35f00"
-
+ruleid: a01b8329-5953-4f73-ae2d-aa01e1f35f00
 
 tags:
   - attack.defense_evasion

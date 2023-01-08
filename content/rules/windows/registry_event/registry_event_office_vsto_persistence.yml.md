@@ -2,7 +2,7 @@
 title: "Stealthy VSTO Persistence"
 aliases:
   - "/rule/9d15044a-7cfe-4d23-8085-6ebc11df7685"
-
+ruleid: 9d15044a-7cfe-4d23-8085-6ebc11df7685
 
 tags:
   - attack.t1137.006

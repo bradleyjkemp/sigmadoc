@@ -2,7 +2,7 @@
 title: "Suspicious Svchost Process"
 aliases:
   - "/rule/01d2e2a1-5f09-44f7-9fc1-24faa7479b6d"
-
+ruleid: 01d2e2a1-5f09-44f7-9fc1-24faa7479b6d
 
 tags:
   - attack.defense_evasion

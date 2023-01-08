@@ -2,7 +2,7 @@
 title: "NodejsTools PressAnyKey Lolbin"
 aliases:
   - "/rule/a20391f8-76fb-437b-abc0-dba2df1952c6"
-
+ruleid: a20391f8-76fb-437b-abc0-dba2df1952c6
 
 tags:
   - attack.execution

@@ -2,7 +2,7 @@
 title: "Powershell Defender Disable Scan Feature"
 aliases:
   - "/rule/1ec65a5f-9473-4f12-97da-622044d6df21"
-
+ruleid: 1ec65a5f-9473-4f12-97da-622044d6df21
 
 tags:
   - attack.defense_evasion

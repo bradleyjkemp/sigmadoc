@@ -2,7 +2,7 @@
 title: "Shadow Copies Creation Using Operating Systems Utilities"
 aliases:
   - "/rule/b17ea6f7-6e90-447e-a799-e6c0a493d6ce"
-
+ruleid: b17ea6f7-6e90-447e-a799-e6c0a493d6ce
 
 tags:
   - attack.credential_access

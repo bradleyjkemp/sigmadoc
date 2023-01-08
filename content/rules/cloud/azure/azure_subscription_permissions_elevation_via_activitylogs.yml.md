@@ -2,7 +2,7 @@
 title: "Azure Subscription Permission Elevation Via ActivityLogs"
 aliases:
   - "/rule/09438caa-07b1-4870-8405-1dbafe3dad95"
-
+ruleid: 09438caa-07b1-4870-8405-1dbafe3dad95
 
 tags:
   - attack.initial_access

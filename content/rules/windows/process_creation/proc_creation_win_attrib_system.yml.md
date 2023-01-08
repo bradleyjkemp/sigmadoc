@@ -2,7 +2,7 @@
 title: "Set Windows System File with Attrib"
 aliases:
   - "/rule/bb19e94c-59ae-4c15-8c12-c563d23fe52b"
-
+ruleid: bb19e94c-59ae-4c15-8c12-c563d23fe52b
 
 tags:
   - attack.defense_evasion

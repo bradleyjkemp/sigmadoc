@@ -2,7 +2,7 @@
 title: "PsExec Pipes Artifacts"
 aliases:
   - "/rule/9e77ed63-2ecf-4c7b-b09d-640834882028"
-
+ruleid: 9e77ed63-2ecf-4c7b-b09d-640834882028
 
 tags:
   - attack.lateral_movement

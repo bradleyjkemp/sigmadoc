@@ -2,7 +2,7 @@
 title: "Narrator's Feedback-Hub Persistence"
 aliases:
   - "/rule/f663a6d9-9d1b-49b8-b2b1-0637914d199a"
-
+ruleid: f663a6d9-9d1b-49b8-b2b1-0637914d199a
 
 tags:
   - attack.persistence

@@ -2,7 +2,7 @@
 title: "Security Event Log Cleared"
 aliases:
   - "/rule/a122ac13-daf8-4175-83a2-72c387be339d"
-
+ruleid: a122ac13-daf8-4175-83a2-72c387be339d
 
 tags:
   - attack.t1070.001

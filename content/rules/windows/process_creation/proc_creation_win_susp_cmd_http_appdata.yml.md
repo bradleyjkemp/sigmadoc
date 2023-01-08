@@ -2,7 +2,7 @@
 title: "Command Line Execution with Suspicious URL and AppData Strings"
 aliases:
   - "/rule/1ac8666b-046f-4201-8aba-1951aaec03a3"
-
+ruleid: 1ac8666b-046f-4201-8aba-1951aaec03a3
 
 tags:
   - attack.execution

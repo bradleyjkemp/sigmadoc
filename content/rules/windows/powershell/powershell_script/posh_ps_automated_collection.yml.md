@@ -2,7 +2,7 @@
 title: "Automated Collection Command PowerShell"
 aliases:
   - "/rule/c1dda054-d638-4c16-afc8-53e007f3fbc5"
-
+ruleid: c1dda054-d638-4c16-afc8-53e007f3fbc5
 
 tags:
   - attack.collection

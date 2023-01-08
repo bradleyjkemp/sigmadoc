@@ -2,7 +2,7 @@
 title: "Kerberos Network Traffic RC4 Ticket Encryption"
 aliases:
   - "/rule/503fe26e-b5f2-4944-a126-eab405cc06e5"
-
+ruleid: 503fe26e-b5f2-4944-a126-eab405cc06e5
 
 tags:
   - attack.credential_access

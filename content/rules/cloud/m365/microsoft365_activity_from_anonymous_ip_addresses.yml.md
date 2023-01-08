@@ -2,7 +2,7 @@
 title: "Activity from Anonymous IP Addresses"
 aliases:
   - "/rule/d8b0a4fe-07a8-41be-bd39-b14afa025d95"
-
+ruleid: d8b0a4fe-07a8-41be-bd39-b14afa025d95
 
 tags:
   - attack.command_and_control

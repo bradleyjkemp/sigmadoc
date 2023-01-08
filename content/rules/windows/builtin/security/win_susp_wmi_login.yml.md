@@ -2,7 +2,7 @@
 title: "Login with WMI"
 aliases:
   - "/rule/5af54681-df95-4c26-854f-2565e13cfab0"
-
+ruleid: 5af54681-df95-4c26-854f-2565e13cfab0
 
 tags:
   - attack.execution

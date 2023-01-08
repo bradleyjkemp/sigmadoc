@@ -2,7 +2,7 @@
 title: "Webshell Remote Command Execution"
 aliases:
   - "/rule/c0d3734d-330f-4a03-aae2-65dacc6a8222"
-
+ruleid: c0d3734d-330f-4a03-aae2-65dacc6a8222
 
 tags:
   - attack.persistence

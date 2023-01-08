@@ -2,7 +2,7 @@
 title: "TA505 Dropper Load Pattern"
 aliases:
   - "/rule/18cf6cf0-39b0-4c22-9593-e244bdc9a2d4"
-
+ruleid: 18cf6cf0-39b0-4c22-9593-e244bdc9a2d4
 
 tags:
   - attack.execution

@@ -2,7 +2,7 @@
 title: "PrintNightmare Powershell Exploitation"
 aliases:
   - "/rule/6d3f1399-a81c-4409-aff3-1ecfe9330baf"
-
+ruleid: 6d3f1399-a81c-4409-aff3-1ecfe9330baf
 
 tags:
   - attack.privilege_escalation

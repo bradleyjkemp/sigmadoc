@@ -2,7 +2,7 @@
 title: "Possible SPN Enumeration"
 aliases:
   - "/rule/1eeed653-dbc8-4187-ad0c-eeebb20e6599"
-
+ruleid: 1eeed653-dbc8-4187-ad0c-eeebb20e6599
 
 tags:
   - attack.credential_access

@@ -2,7 +2,7 @@
 title: "TropicTrooper Campaign November 2018"
 aliases:
   - "/rule/8c7090c3-e0a0-4944-bd08-08c3a0cecf79"
-
+ruleid: 8c7090c3-e0a0-4944-bd08-08c3a0cecf79
 
 tags:
   - attack.execution

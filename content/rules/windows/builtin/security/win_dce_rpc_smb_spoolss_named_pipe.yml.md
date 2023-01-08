@@ -2,7 +2,7 @@
 title: "DCERPC SMB Spoolss Named Pipe"
 aliases:
   - "/rule/214e8f95-100a-4e04-bb31-ef6cba8ce07e"
-
+ruleid: 214e8f95-100a-4e04-bb31-ef6cba8ce07e
 
 tags:
   - attack.lateral_movement

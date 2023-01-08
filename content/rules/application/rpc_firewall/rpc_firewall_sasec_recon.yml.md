@@ -2,7 +2,7 @@
 title: "Remote Schedule Task Lateral Movement via SASec"
 aliases:
   - "/rule/0a3ff354-93fc-4273-8a03-1078782de5b7"
-
+ruleid: 0a3ff354-93fc-4273-8a03-1078782de5b7
 
 
 

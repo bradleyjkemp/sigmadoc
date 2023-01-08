@@ -2,7 +2,7 @@
 title: "Suspicious Download File Extension with Bits"
 aliases:
   - "/rule/b85e5894-9b19-4d86-8c87-a2f3b81f0521"
-
+ruleid: b85e5894-9b19-4d86-8c87-a2f3b81f0521
 
 tags:
   - attack.defense_evasion

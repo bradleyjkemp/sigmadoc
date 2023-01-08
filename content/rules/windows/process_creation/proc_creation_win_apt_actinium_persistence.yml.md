@@ -2,7 +2,7 @@
 title: "Scheduled Task WScript VBScript"
 aliases:
   - "/rule/e1118a8f-82f5-44b3-bb6b-8a284e5df602"
-
+ruleid: e1118a8f-82f5-44b3-bb6b-8a284e5df602
 
 
 

@@ -2,7 +2,7 @@
 title: "Disable UAC Using Registry"
 aliases:
   - "/rule/48437c39-9e5f-47fb-af95-3d663c3f2919"
-
+ruleid: 48437c39-9e5f-47fb-af95-3d663c3f2919
 
 tags:
   - attack.privilege_escalation

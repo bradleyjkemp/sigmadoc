@@ -2,7 +2,7 @@
 title: "Creation Of A Local User Account"
 aliases:
   - "/rule/51719bf5-e4fd-4e44-8ba8-b830e7ac0731"
-
+ruleid: 51719bf5-e4fd-4e44-8ba8-b830e7ac0731
 
 tags:
   - attack.t1136.001

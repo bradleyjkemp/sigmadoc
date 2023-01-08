@@ -2,7 +2,7 @@
 title: "Domain User Enumeration Network Recon 01"
 aliases:
   - "/rule/66a0bdc6-ee04-441a-9125-99d2eb547942"
-
+ruleid: 66a0bdc6-ee04-441a-9125-99d2eb547942
 
 tags:
   - attack.discovery

@@ -2,7 +2,7 @@
 title: "Possible Shim Database Persistence via sdbinst.exe"
 aliases:
   - "/rule/517490a7-115a-48c6-8862-1a481504d5a8"
-
+ruleid: 517490a7-115a-48c6-8862-1a481504d5a8
 
 tags:
   - attack.persistence

@@ -2,7 +2,7 @@
 title: "File Deletion"
 aliases:
   - "/rule/30aed7b6-d2c1-4eaf-9382-b6bc43e50c57"
-
+ruleid: 30aed7b6-d2c1-4eaf-9382-b6bc43e50c57
 
 tags:
   - attack.defense_evasion

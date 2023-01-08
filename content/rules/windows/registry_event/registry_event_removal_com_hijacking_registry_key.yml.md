@@ -2,7 +2,7 @@
 title: "Removal of Potential COM Hijacking Registry Keys"
 aliases:
   - "/rule/96f697b0-b499-4e5d-9908-a67bec11cdb6"
-
+ruleid: 96f697b0-b499-4e5d-9908-a67bec11cdb6
 
 tags:
   - attack.defense_evasion

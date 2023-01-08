@@ -2,7 +2,7 @@
 title: "Cisco Denial of Service"
 aliases:
   - "/rule/d94a35f0-7a29-45f6-90a0-80df6159967c"
-
+ruleid: d94a35f0-7a29-45f6-90a0-80df6159967c
 
 tags:
   - attack.impact

@@ -2,7 +2,7 @@
 title: "Admin User Remote Logon"
 aliases:
   - "/rule/0f63e1ef-1eb9-4226-9d54-8927ca08520a"
-
+ruleid: 0f63e1ef-1eb9-4226-9d54-8927ca08520a
 
 tags:
   - attack.lateral_movement

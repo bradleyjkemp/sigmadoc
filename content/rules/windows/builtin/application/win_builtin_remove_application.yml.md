@@ -2,7 +2,7 @@
 title: "An Application Is Uninstall"
 aliases:
   - "/rule/570ae5ec-33dc-427c-b815-db86228ad43e"
-
+ruleid: 570ae5ec-33dc-427c-b815-db86228ad43e
 
 tags:
   - attack.impact

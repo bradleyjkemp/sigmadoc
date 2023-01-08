@@ -2,7 +2,7 @@
 title: "Suspicious Computer Account Name Change CVE-2021-42287"
 aliases:
   - "/rule/45eb2ae2-9aa2-4c3a-99a5-6e5077655466"
-
+ruleid: 45eb2ae2-9aa2-4c3a-99a5-6e5077655466
 
 
 

@@ -2,7 +2,7 @@
 title: "Recon Information for Export with Command Prompt"
 aliases:
   - "/rule/aa2efee7-34dd-446e-8a37-40790a66efd7"
-
+ruleid: aa2efee7-34dd-446e-8a37-40790a66efd7
 
 tags:
   - attack.collection

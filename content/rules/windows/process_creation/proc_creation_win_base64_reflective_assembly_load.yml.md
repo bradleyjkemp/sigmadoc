@@ -2,7 +2,7 @@
 title: "Base64 Encoded Reflective Assembly Load"
 aliases:
   - "/rule/62b7ccc9-23b4-471e-aa15-6da3663c4d59"
-
+ruleid: 62b7ccc9-23b4-471e-aa15-6da3663c4d59
 
 tags:
   - attack.execution

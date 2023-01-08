@@ -2,7 +2,7 @@
 title: "Invoke-Obfuscation Via Use MSHTA"
 aliases:
   - "/rule/ac20ae82-8758-4f38-958e-b44a3140ca88"
-
+ruleid: ac20ae82-8758-4f38-958e-b44a3140ca88
 
 tags:
   - attack.defense_evasion

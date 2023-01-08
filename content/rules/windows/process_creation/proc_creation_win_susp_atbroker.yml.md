@@ -2,7 +2,7 @@
 title: "Suspicious Atbroker Execution"
 aliases:
   - "/rule/f24bcaea-0cd1-11eb-adc1-0242ac120002"
-
+ruleid: f24bcaea-0cd1-11eb-adc1-0242ac120002
 
 tags:
   - attack.defense_evasion

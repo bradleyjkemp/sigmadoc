@@ -2,7 +2,7 @@
 title: "Potential PetitPotam Attack Via EFS RPC Calls"
 aliases:
   - "/rule/4096842a-8f9f-4d36-92b4-d0b2a62f9b2a"
-
+ruleid: 4096842a-8f9f-4d36-92b4-d0b2a62f9b2a
 
 tags:
   - attack.t1557.001

@@ -2,7 +2,7 @@
 title: "Sysmon Process Hollowing Detection"
 aliases:
   - "/rule/c4b890e5-8d8c-4496-8c66-c805753817cd"
-
+ruleid: c4b890e5-8d8c-4496-8c66-c805753817cd
 
 tags:
   - attack.process_injection

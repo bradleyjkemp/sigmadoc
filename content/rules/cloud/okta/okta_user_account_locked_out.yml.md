@@ -2,7 +2,7 @@
 title: "Okta User Account Locked Out"
 aliases:
   - "/rule/14701da0-4b0f-4ee6-9c95-2ffb4e73bb9a"
-
+ruleid: 14701da0-4b0f-4ee6-9c95-2ffb4e73bb9a
 
 tags:
   - attack.impact

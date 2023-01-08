@@ -2,7 +2,7 @@
 title: "Azure DNS Zone Modified or Deleted"
 aliases:
   - "/rule/af6925b0-8826-47f1-9324-337507a0babd"
-
+ruleid: af6925b0-8826-47f1-9324-337507a0babd
 
 tags:
   - attack.impact

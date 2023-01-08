@@ -2,7 +2,7 @@
 title: "WMIC Loading Scripting Libraries"
 aliases:
   - "/rule/06ce37c2-61ab-4f05-9ff5-b1a96d18ae32"
-
+ruleid: 06ce37c2-61ab-4f05-9ff5-b1a96d18ae32
 
 tags:
   - attack.defense_evasion

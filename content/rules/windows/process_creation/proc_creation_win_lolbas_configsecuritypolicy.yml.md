@@ -2,7 +2,7 @@
 title: "Suspicious ConfigSecurityPolicy Execution"
 aliases:
   - "/rule/1f0f6176-6482-4027-b151-00071af39d7e"
-
+ruleid: 1f0f6176-6482-4027-b151-00071af39d7e
 
 tags:
   - attack.exfiltration

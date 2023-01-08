@@ -2,7 +2,7 @@
 title: "Code Execution via Pcwutl.dll"
 aliases:
   - "/rule/9386d78a-7207-4048-9c9f-a93a7c2d1c05"
-
+ruleid: 9386d78a-7207-4048-9c9f-a93a7c2d1c05
 
 tags:
   - attack.defense_evasion

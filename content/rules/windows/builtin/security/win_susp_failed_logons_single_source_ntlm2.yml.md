@@ -2,7 +2,7 @@
 title: "Invalid Users Failing To Authenticate From Single Source Using NTLM"
 aliases:
   - "/rule/56d62ef8-3462-4890-9859-7b41e541f8d5"
-
+ruleid: 56d62ef8-3462-4890-9859-7b41e541f8d5
 
 tags:
   - attack.t1110.003

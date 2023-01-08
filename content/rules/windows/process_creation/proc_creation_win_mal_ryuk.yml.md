@@ -2,7 +2,7 @@
 title: "Ryuk Ransomware"
 aliases:
   - "/rule/0acaad27-9f02-4136-a243-c357202edd74"
-
+ruleid: 0acaad27-9f02-4136-a243-c357202edd74
 
 tags:
   - attack.execution

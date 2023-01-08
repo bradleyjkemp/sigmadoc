@@ -2,7 +2,7 @@
 title: "Automated Collection Command Prompt"
 aliases:
   - "/rule/f576a613-2392-4067-9d1a-9345fb58d8d1"
-
+ruleid: f576a613-2392-4067-9d1a-9345fb58d8d1
 
 tags:
   - attack.collection

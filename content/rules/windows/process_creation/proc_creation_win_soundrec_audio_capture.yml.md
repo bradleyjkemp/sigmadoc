@@ -2,7 +2,7 @@
 title: "Audio Capture via SoundRecorder"
 aliases:
   - "/rule/83865853-59aa-449e-9600-74b9d89a6d6e"
-
+ruleid: 83865853-59aa-449e-9600-74b9d89a6d6e
 
 tags:
   - attack.collection

@@ -2,7 +2,7 @@
 title: "Password Dumper Remote Thread in LSASS"
 aliases:
   - "/rule/f239b326-2f41-4d6b-9dfa-c846a60ef505"
-
+ruleid: f239b326-2f41-4d6b-9dfa-c846a60ef505
 
 tags:
   - attack.credential_access

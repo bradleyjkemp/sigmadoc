@@ -2,7 +2,7 @@
 title: "GoToAssist Temporary Installation Artefact"
 aliases:
   - "/rule/5d756aee-ad3e-4306-ad95-cb1abec48de2"
-
+ruleid: 5d756aee-ad3e-4306-ad95-cb1abec48de2
 
 tags:
   - attack.command_and_control

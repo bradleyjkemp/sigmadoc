@@ -2,7 +2,7 @@
 title: "Empire Monkey"
 aliases:
   - "/rule/10152a7b-b566-438f-a33c-390b607d1c8d"
-
+ruleid: 10152a7b-b566-438f-a33c-390b607d1c8d
 
 tags:
   - attack.defense_evasion

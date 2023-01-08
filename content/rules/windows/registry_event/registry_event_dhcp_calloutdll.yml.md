@@ -2,7 +2,7 @@
 title: "DHCP Callout DLL Installation"
 aliases:
   - "/rule/9d3436ef-9476-4c43-acca-90ce06bdf33a"
-
+ruleid: 9d3436ef-9476-4c43-acca-90ce06bdf33a
 
 tags:
   - attack.defense_evasion

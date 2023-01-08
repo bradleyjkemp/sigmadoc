@@ -2,7 +2,7 @@
 title: "Exchange PowerShell Snap-Ins Used by HAFNIUM"
 aliases:
   - "/rule/25676e10-2121-446e-80a4-71ff8506af47"
-
+ruleid: 25676e10-2121-446e-80a4-71ff8506af47
 
 tags:
   - attack.execution

@@ -2,7 +2,7 @@
 title: "Remote Registry Recon"
 aliases:
   - "/rule/d8ffe17e-04be-4886-beb9-c1dd1944b9a8"
-
+ruleid: d8ffe17e-04be-4886-beb9-c1dd1944b9a8
 
 
 

@@ -2,7 +2,7 @@
 title: "Atera Agent Installation"
 aliases:
   - "/rule/87261fb2-69d0-42fe-b9de-88c6b5f65a43"
-
+ruleid: 87261fb2-69d0-42fe-b9de-88c6b5f65a43
 
 tags:
   - attack.t1219

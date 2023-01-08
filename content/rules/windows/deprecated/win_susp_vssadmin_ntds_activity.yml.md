@@ -2,7 +2,7 @@
 title: "Activity Related to NTDS.dit Domain Hash Retrieval"
 aliases:
   - "/rule/b932b60f-fdda-4d53-8eda-a170c1d97bbd"
-
+ruleid: b932b60f-fdda-4d53-8eda-a170c1d97bbd
 
 tags:
   - attack.credential_access

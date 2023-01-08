@@ -2,7 +2,7 @@
 title: "Dotnet.exe Exec Dll and Execute Unsigned Code LOLBIN"
 aliases:
   - "/rule/d80d5c81-04ba-45b4-84e4-92eba40e0ad3"
-
+ruleid: d80d5c81-04ba-45b4-84e4-92eba40e0ad3
 
 tags:
   - attack.execution

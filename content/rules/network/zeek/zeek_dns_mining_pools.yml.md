@@ -2,7 +2,7 @@
 title: "DNS Events Related To Mining Pools"
 aliases:
   - "/rule/bf74135c-18e8-4a72-a926-0e4f47888c19"
-
+ruleid: bf74135c-18e8-4a72-a926-0e4f47888c19
 
 tags:
   - attack.t1569.002

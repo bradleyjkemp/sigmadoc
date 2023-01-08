@@ -2,7 +2,7 @@
 title: "Suspicious Shells Spawn by Java"
 aliases:
   - "/rule/0d34ed8b-1c12-4ff2-828c-16fc860b766d"
-
+ruleid: 0d34ed8b-1c12-4ff2-828c-16fc860b766d
 
 tags:
   - attack.initial_access

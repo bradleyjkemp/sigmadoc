@@ -2,7 +2,7 @@
 title: "Ursnif"
 aliases:
   - "/rule/21f17060-b282-4249-ade0-589ea3591558"
-
+ruleid: 21f17060-b282-4249-ade0-589ea3591558
 
 tags:
   - attack.execution

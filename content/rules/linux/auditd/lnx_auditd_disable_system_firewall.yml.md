@@ -2,7 +2,7 @@
 title: "Disable System Firewall"
 aliases:
   - "/rule/53059bc0-1472-438b-956a-7508a94a91f0"
-
+ruleid: 53059bc0-1472-438b-956a-7508a94a91f0
 
 tags:
   - attack.t1562.004

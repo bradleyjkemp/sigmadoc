@@ -2,7 +2,7 @@
 title: "Windows Crypto Mining Pool Connections"
 aliases:
   - "/rule/fa5b1358-b040-4403-9868-15f7d9ab6329"
-
+ruleid: fa5b1358-b040-4403-9868-15f7d9ab6329
 
 tags:
   - attack.impact

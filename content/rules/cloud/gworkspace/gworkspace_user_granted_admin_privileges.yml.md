@@ -2,7 +2,7 @@
 title: "Google Workspace User Granted Admin Privileges"
 aliases:
   - "/rule/2d1b83e4-17c6-4896-a37b-29140b40a788"
-
+ruleid: 2d1b83e4-17c6-4896-a37b-29140b40a788
 
 tags:
   - attack.persistence

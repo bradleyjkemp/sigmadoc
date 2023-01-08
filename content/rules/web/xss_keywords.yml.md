@@ -2,7 +2,7 @@
 title: "Detect XSS Attempts By Keywords"
 aliases:
   - "/rule/65354b83-a2ea-4ea6-8414-3ab38be0d409"
-
+ruleid: 65354b83-a2ea-4ea6-8414-3ab38be0d409
 
 
 

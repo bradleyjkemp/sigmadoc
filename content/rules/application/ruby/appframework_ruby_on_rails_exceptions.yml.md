@@ -2,7 +2,7 @@
 title: "Ruby on Rails Framework Exceptions"
 aliases:
   - "/rule/0d2c3d4c-4b48-4ac3-8f23-ea845746bb1a"
-
+ruleid: 0d2c3d4c-4b48-4ac3-8f23-ea845746bb1a
 
 tags:
   - attack.initial_access

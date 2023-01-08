@@ -2,7 +2,7 @@
 title: "Invoke-Obfuscation Via Stdin"
 aliases:
   - "/rule/487c7524-f892-4054-b263-8a0ace63fc25"
-
+ruleid: 487c7524-f892-4054-b263-8a0ace63fc25
 
 tags:
   - attack.defense_evasion

@@ -2,7 +2,7 @@
 title: "OceanLotus Registry Activity"
 aliases:
   - "/rule/4ac5fc44-a601-4c06-955b-309df8c4e9d4"
-
+ruleid: 4ac5fc44-a601-4c06-955b-309df8c4e9d4
 
 tags:
   - attack.defense_evasion

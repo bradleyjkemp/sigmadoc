@@ -2,7 +2,7 @@
 title: "Execute Invoke-command on Remote Host"
 aliases:
   - "/rule/7b836d7f-179c-4ba4-90a7-a7e60afb48e6"
-
+ruleid: 7b836d7f-179c-4ba4-90a7-a7e60afb48e6
 
 tags:
   - attack.lateral_movement

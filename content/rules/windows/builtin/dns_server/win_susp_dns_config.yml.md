@@ -2,7 +2,7 @@
 title: "DNS Server Error Failed Loading the ServerLevelPluginDLL"
 aliases:
   - "/rule/cbe51394-cd93-4473-b555-edf0144952d9"
-
+ruleid: cbe51394-cd93-4473-b555-edf0144952d9
 
 tags:
   - attack.defense_evasion

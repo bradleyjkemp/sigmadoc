@@ -2,7 +2,7 @@
 title: "File Time Attribute Change"
 aliases:
   - "/rule/88c0f9d8-30a8-4120-bb6b-ebb54abcf2a0"
-
+ruleid: 88c0f9d8-30a8-4120-bb6b-ebb54abcf2a0
 
 tags:
   - attack.defense_evasion

@@ -2,7 +2,7 @@
 title: "Registry Persistence Mechanism via Windows Telemetry"
 aliases:
   - "/rule/73a883d0-0348-4be4-a8d8-51031c2564f8"
-
+ruleid: 73a883d0-0348-4be4-a8d8-51031c2564f8
 
 tags:
   - attack.persistence

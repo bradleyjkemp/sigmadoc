@@ -2,7 +2,7 @@
 title: "Suspicious Creation with Colorcpl"
 aliases:
   - "/rule/e15b518d-b4ce-4410-a9cd-501f23ce4a18"
-
+ruleid: e15b518d-b4ce-4410-a9cd-501f23ce4a18
 
 tags:
   - attack.defense_evasion

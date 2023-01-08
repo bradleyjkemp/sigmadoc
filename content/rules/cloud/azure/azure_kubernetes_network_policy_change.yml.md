@@ -2,7 +2,7 @@
 title: "Azure Kubernetes Network Policy Change"
 aliases:
   - "/rule/08d6ac24-c927-4469-b3b7-2e422d6e3c43"
-
+ruleid: 08d6ac24-c927-4469-b3b7-2e422d6e3c43
 
 tags:
   - attack.impact

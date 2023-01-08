@@ -2,7 +2,7 @@
 title: "Suspicious Mount-DiskImage"
 aliases:
   - "/rule/29e1c216-6408-489d-8a06-ee9d151ef819"
-
+ruleid: 29e1c216-6408-489d-8a06-ee9d151ef819
 
 tags:
   - attack.defense_evasion

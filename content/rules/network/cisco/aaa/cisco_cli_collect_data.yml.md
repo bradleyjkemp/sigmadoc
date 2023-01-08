@@ -2,7 +2,7 @@
 title: "Cisco Collect Data"
 aliases:
   - "/rule/cd072b25-a418-4f98-8ebc-5093fb38fe1a"
-
+ruleid: cd072b25-a418-4f98-8ebc-5093fb38fe1a
 
 tags:
   - attack.discovery

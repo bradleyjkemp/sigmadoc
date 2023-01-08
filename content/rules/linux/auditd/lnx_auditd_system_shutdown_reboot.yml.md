@@ -2,7 +2,7 @@
 title: "System Shutdown/Reboot"
 aliases:
   - "/rule/4cb57c2f-1f29-41f8-893d-8bed8e1c1d2f"
-
+ruleid: 4cb57c2f-1f29-41f8-893d-8bed8e1c1d2f
 
 tags:
   - attack.impact

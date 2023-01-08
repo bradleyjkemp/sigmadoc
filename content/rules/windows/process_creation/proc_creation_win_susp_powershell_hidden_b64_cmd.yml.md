@@ -2,7 +2,7 @@
 title: "Malicious Base64 Encoded PowerShell Keywords in Command Lines"
 aliases:
   - "/rule/f26c6093-6f14-4b12-800f-0fcb46f5ffd0"
-
+ruleid: f26c6093-6f14-4b12-800f-0fcb46f5ffd0
 
 tags:
   - attack.execution

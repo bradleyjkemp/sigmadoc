@@ -2,7 +2,7 @@
 title: "Bypass UAC via CMSTP"
 aliases:
   - "/rule/e66779cc-383e-4224-a3a4-267eeb585c40"
-
+ruleid: e66779cc-383e-4224-a3a4-267eeb585c40
 
 tags:
   - attack.privilege_escalation

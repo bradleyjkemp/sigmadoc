@@ -2,7 +2,7 @@
 title: "CMSTP Execution Process Creation"
 aliases:
   - "/rule/7d4cdc5a-0076-40ca-aac8-f7e714570e47"
-
+ruleid: 7d4cdc5a-0076-40ca-aac8-f7e714570e47
 
 tags:
   - attack.defense_evasion

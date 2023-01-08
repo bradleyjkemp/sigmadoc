@@ -2,7 +2,7 @@
 title: "Non Interactive PowerShell"
 aliases:
   - "/rule/f4bbd493-b796-416e-bbf2-121235348529"
-
+ruleid: f4bbd493-b796-416e-bbf2-121235348529
 
 tags:
   - attack.execution

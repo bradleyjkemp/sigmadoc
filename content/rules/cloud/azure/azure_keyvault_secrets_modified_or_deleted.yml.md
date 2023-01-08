@@ -2,7 +2,7 @@
 title: "Azure Keyvault Secrets Modified or Deleted"
 aliases:
   - "/rule/b831353c-1971-477b-abb6-2828edc3bca1"
-
+ruleid: b831353c-1971-477b-abb6-2828edc3bca1
 
 tags:
   - attack.impact

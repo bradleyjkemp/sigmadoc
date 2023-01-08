@@ -2,7 +2,7 @@
 title: "ADFS Database Named Pipe Connection"
 aliases:
   - "/rule/1ea13e8c-03ea-409b-877d-ce5c3d2c1cb3"
-
+ruleid: 1ea13e8c-03ea-409b-877d-ce5c3d2c1cb3
 
 tags:
   - attack.collection

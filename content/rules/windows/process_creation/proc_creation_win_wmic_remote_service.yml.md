@@ -2,7 +2,7 @@
 title: "WMI Reconnaissance List Remote Services"
 aliases:
   - "/rule/09af397b-c5eb-4811-b2bb-08b3de464ebf"
-
+ruleid: 09af397b-c5eb-4811-b2bb-08b3de464ebf
 
 tags:
   - attack.execution

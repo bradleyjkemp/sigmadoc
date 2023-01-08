@@ -2,7 +2,7 @@
 title: "Process Start From Suspicious Folder"
 aliases:
   - "/rule/dca91cfd-d7ab-4c66-8da7-ee57d487b35b"
-
+ruleid: dca91cfd-d7ab-4c66-8da7-ee57d487b35b
 
 tags:
   - attack.execution

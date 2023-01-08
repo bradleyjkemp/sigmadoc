@@ -2,7 +2,7 @@
 title: "Default PowerSploit and Empire Schtasks Persistence"
 aliases:
   - "/rule/56c217c3-2de2-479b-990f-5c109ba8458f"
-
+ruleid: 56c217c3-2de2-479b-990f-5c109ba8458f
 
 tags:
   - attack.execution

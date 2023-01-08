@@ -2,7 +2,7 @@
 title: "MITRE BZAR Indicators for Execution"
 aliases:
   - "/rule/b640c0b8-87f8-4daa-aef8-95a24261dd1d"
-
+ruleid: b640c0b8-87f8-4daa-aef8-95a24261dd1d
 
 tags:
   - attack.execution

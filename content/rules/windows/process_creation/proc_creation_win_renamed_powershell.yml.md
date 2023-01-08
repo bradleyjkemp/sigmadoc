@@ -2,7 +2,7 @@
 title: "Renamed PowerShell"
 aliases:
   - "/rule/d178a2d7-129a-4ba4-8ee6-d6e1fecd5d20"
-
+ruleid: d178a2d7-129a-4ba4-8ee6-d6e1fecd5d20
 
 tags:
   - car.2013-05-009

@@ -2,7 +2,7 @@
 title: "Invoke-Obfuscation CLIP+ Launcher"
 aliases:
   - "/rule/73e67340-0d25-11eb-adc1-0242ac120002"
-
+ruleid: 73e67340-0d25-11eb-adc1-0242ac120002
 
 tags:
   - attack.defense_evasion

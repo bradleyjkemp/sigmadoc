@@ -2,7 +2,7 @@
 title: "Code Executed Via Office Add-in XLL File"
 aliases:
   - "/rule/36fbec91-fa1b-4d5d-8df1-8d8edcb632ad"
-
+ruleid: 36fbec91-fa1b-4d5d-8df1-8d8edcb632ad
 
 tags:
   - attack.persistence

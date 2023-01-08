@@ -2,7 +2,7 @@
 title: "PsExec Tool Execution"
 aliases:
   - "/rule/42c575ea-e41e-41f1-b248-8093c3e82a28"
-
+ruleid: 42c575ea-e41e-41f1-b248-8093c3e82a28
 
 tags:
   - attack.execution

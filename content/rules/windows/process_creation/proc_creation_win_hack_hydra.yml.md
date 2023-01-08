@@ -2,7 +2,7 @@
 title: "Hydra Password Guessing Hack Tool"
 aliases:
   - "/rule/aaafa146-074c-11eb-adc1-0242ac120002"
-
+ruleid: aaafa146-074c-11eb-adc1-0242ac120002
 
 tags:
   - attack.credential_access

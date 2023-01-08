@@ -2,7 +2,7 @@
 title: "Windows Registry Persistence COM Key Linking"
 aliases:
   - "/rule/9b0f8a61-91b2-464f-aceb-0527e0a45020"
-
+ruleid: 9b0f8a61-91b2-464f-aceb-0527e0a45020
 
 tags:
   - attack.persistence

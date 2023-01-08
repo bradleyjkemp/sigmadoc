@@ -2,7 +2,7 @@
 title: "Fax Service DLL Search Order Hijack"
 aliases:
   - "/rule/828af599-4c53-4ed2-ba4a-a9f835c434ea"
-
+ruleid: 828af599-4c53-4ed2-ba4a-a9f835c434ea
 
 tags:
   - attack.persistence

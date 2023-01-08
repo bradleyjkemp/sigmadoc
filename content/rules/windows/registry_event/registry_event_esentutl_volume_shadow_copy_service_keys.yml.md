@@ -2,7 +2,7 @@
 title: "Esentutl Volume Shadow Copy Service Keys"
 aliases:
   - "/rule/5aad0995-46ab-41bd-a9ff-724f41114971"
-
+ruleid: 5aad0995-46ab-41bd-a9ff-724f41114971
 
 tags:
   - attack.credential_access

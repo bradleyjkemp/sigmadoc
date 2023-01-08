@@ -2,7 +2,7 @@
 title: "Suspicious PowerShell WindowStyle Option"
 aliases:
   - "/rule/313fbb0a-a341-4682-848d-6d6f8c4fab7c"
-
+ruleid: 313fbb0a-a341-4682-848d-6d6f8c4fab7c
 
 tags:
   - attack.defense_evasion

@@ -2,7 +2,7 @@
 title: "Transferring Files with Credential Data via Network Shares"
 aliases:
   - "/rule/910ab938-668b-401b-b08c-b596e80fdca5"
-
+ruleid: 910ab938-668b-401b-b08c-b596e80fdca5
 
 tags:
   - attack.credential_access

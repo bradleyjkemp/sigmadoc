@@ -2,7 +2,7 @@
 title: "VBA DLL Loaded Via Microsoft Word"
 aliases:
   - "/rule/e6ce8457-68b1-485b-9bdd-3c2b5d679aa9"
-
+ruleid: e6ce8457-68b1-485b-9bdd-3c2b5d679aa9
 
 tags:
   - attack.execution

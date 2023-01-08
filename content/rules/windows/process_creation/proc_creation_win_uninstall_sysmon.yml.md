@@ -2,7 +2,7 @@
 title: "Uninstall Sysinternals Sysmon"
 aliases:
   - "/rule/6a5f68d1-c4b5-46b9-94ee-5324892ea939"
-
+ruleid: 6a5f68d1-c4b5-46b9-94ee-5324892ea939
 
 tags:
   - attack.defense_evasion

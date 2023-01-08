@@ -2,7 +2,7 @@
 title: "Suspicious LSASS Process Clone"
 aliases:
   - "/rule/c8da0dfd-4ed0-4b68-962d-13c9c884384e"
-
+ruleid: c8da0dfd-4ed0-4b68-962d-13c9c884384e
 
 tags:
   - attack.credential_access

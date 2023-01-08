@@ -2,7 +2,7 @@
 title: "Audio Capture"
 aliases:
   - "/rule/a7af2487-9c2f-42e4-9bb9-ff961f0561d5"
-
+ruleid: a7af2487-9c2f-42e4-9bb9-ff961f0561d5
 
 tags:
   - attack.collection

@@ -2,7 +2,7 @@
 title: "MSHTA Suspicious Execution 01"
 aliases:
   - "/rule/cc7abbd0-762b-41e3-8a26-57ad50d2eea3"
-
+ruleid: cc7abbd0-762b-41e3-8a26-57ad50d2eea3
 
 tags:
   - attack.defense_evasion

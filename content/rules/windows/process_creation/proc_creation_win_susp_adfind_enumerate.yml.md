@@ -2,7 +2,7 @@
 title: "Suspicious AdFind Enumerate"
 aliases:
   - "/rule/455b9d50-15a1-4b99-853f-8d37655a4c1b"
-
+ruleid: 455b9d50-15a1-4b99-853f-8d37655a4c1b
 
 tags:
   - attack.discovery

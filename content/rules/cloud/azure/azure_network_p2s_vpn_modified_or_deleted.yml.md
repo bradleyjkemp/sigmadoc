@@ -2,7 +2,7 @@
 title: "Azure Point-to-site VPN Modified or Deleted"
 aliases:
   - "/rule/d9557b75-267b-4b43-922f-a775e2d1f792"
-
+ruleid: d9557b75-267b-4b43-922f-a775e2d1f792
 
 tags:
   - attack.impact

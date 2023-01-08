@@ -2,7 +2,7 @@
 title: "Chafer Activity"
 aliases:
   - "/rule/53ba33fd-3a50-4468-a5ef-c583635cfa92"
-
+ruleid: 53ba33fd-3a50-4468-a5ef-c583635cfa92
 
 tags:
   - attack.persistence

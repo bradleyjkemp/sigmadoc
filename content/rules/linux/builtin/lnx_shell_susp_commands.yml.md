@@ -2,7 +2,7 @@
 title: "Suspicious Activity in Shell Commands"
 aliases:
   - "/rule/2aa1440c-9ae9-4d92-84a7-a9e5f5e31695"
-
+ruleid: 2aa1440c-9ae9-4d92-84a7-a9e5f5e31695
 
 tags:
   - attack.execution

@@ -2,7 +2,7 @@
 title: "Use Remove-Item to Delete File"
 aliases:
   - "/rule/b8af5f36-1361-4ebe-9e76-e36128d947bf"
-
+ruleid: b8af5f36-1361-4ebe-9e76-e36128d947bf
 
 tags:
   - attack.defense_evasion

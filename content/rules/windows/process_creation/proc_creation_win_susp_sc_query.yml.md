@@ -2,7 +2,7 @@
 title: "Suspicious Sc Query"
 aliases:
   - "/rule/57712d7a-679c-4a41-a913-87e7175ae429"
-
+ruleid: 57712d7a-679c-4a41-a913-87e7175ae429
 
 tags:
   - attack.discovery

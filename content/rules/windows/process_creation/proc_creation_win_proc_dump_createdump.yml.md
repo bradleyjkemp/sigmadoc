@@ -2,7 +2,7 @@
 title: "CreateDump Process Dump"
 aliases:
   - "/rule/515c8be5-e5df-4c5e-8f6d-a4a2f05e4b48"
-
+ruleid: 515c8be5-e5df-4c5e-8f6d-a4a2f05e4b48
 
 tags:
   - attack.defense_evasion

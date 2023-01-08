@@ -2,7 +2,7 @@
 title: "Microsoft 365 - Potential Ransomware Activity"
 aliases:
   - "/rule/bd132164-884a-48f1-aa2d-c6d646b04c69"
-
+ruleid: bd132164-884a-48f1-aa2d-c6d646b04c69
 
 tags:
   - attack.impact

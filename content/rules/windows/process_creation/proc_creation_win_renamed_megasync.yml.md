@@ -2,7 +2,7 @@
 title: "Renamed MegaSync"
 aliases:
   - "/rule/643bdcac-8b82-49f4-9fd9-25a90b929f3b"
-
+ruleid: 643bdcac-8b82-49f4-9fd9-25a90b929f3b
 
 tags:
   - attack.defense_evasion

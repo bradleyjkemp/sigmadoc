@@ -2,7 +2,7 @@
 title: "LSASS Memory Access by Tool Named Dump"
 aliases:
   - "/rule/9bd012ee-0dff-44d7-84a0-aa698cfd87a3"
-
+ruleid: 9bd012ee-0dff-44d7-84a0-aa698cfd87a3
 
 tags:
   - attack.credential_access

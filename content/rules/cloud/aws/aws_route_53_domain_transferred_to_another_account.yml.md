@@ -2,7 +2,7 @@
 title: "AWS Route 53 Domain Transferred to Another Account"
 aliases:
   - "/rule/b056de1a-6e6e-4e40-a67e-97c9808cf41b"
-
+ruleid: b056de1a-6e6e-4e40-a67e-97c9808cf41b
 
 tags:
   - attack.persistence

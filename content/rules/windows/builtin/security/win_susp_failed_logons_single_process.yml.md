@@ -2,7 +2,7 @@
 title: "Multiple Users Failing to Authenticate from Single Process"
 aliases:
   - "/rule/fe563ab6-ded4-4916-b49f-a3a8445fe280"
-
+ruleid: fe563ab6-ded4-4916-b49f-a3a8445fe280
 
 tags:
   - attack.t1110.003

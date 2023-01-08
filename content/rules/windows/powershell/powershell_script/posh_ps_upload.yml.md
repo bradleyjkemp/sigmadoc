@@ -2,7 +2,7 @@
 title: "Windows PowerShell Upload Web Request"
 aliases:
   - "/rule/d2e3f2f6-7e09-4bf2-bc5d-90186809e7fb"
-
+ruleid: d2e3f2f6-7e09-4bf2-bc5d-90186809e7fb
 
 tags:
   - attack.exfiltration

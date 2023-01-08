@@ -2,7 +2,7 @@
 title: "USB Device Plugged"
 aliases:
   - "/rule/1a4bd6e3-4c6e-405d-a9a3-53a116e341d4"
-
+ruleid: 1a4bd6e3-4c6e-405d-a9a3-53a116e341d4
 
 tags:
   - attack.initial_access

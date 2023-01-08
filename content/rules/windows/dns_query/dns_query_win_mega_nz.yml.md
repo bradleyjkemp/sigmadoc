@@ -2,7 +2,7 @@
 title: "DNS Query for MEGA.io Upload Domain"
 aliases:
   - "/rule/613c03ba-0779-4a53-8a1f-47f914a4ded3"
-
+ruleid: 613c03ba-0779-4a53-8a1f-47f914a4ded3
 
 tags:
   - attack.exfiltration

@@ -2,7 +2,7 @@
 title: "Security Software Discovery by Powershell"
 aliases:
   - "/rule/904e8e61-8edf-4350-b59c-b905fc8e810c"
-
+ruleid: 904e8e61-8edf-4350-b59c-b905fc8e810c
 
 tags:
   - attack.discovery

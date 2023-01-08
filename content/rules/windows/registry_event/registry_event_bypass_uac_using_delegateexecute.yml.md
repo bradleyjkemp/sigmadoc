@@ -2,7 +2,7 @@
 title: "Bypass UAC Using DelegateExecute"
 aliases:
   - "/rule/46dd5308-4572-4d12-aa43-8938f0184d4f"
-
+ruleid: 46dd5308-4572-4d12-aa43-8938f0184d4f
 
 tags:
   - attack.privilege_escalation

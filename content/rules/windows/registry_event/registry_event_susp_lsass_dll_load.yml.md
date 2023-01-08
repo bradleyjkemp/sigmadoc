@@ -2,7 +2,7 @@
 title: "DLL Load via LSASS"
 aliases:
   - "/rule/b3503044-60ce-4bf4-bbcb-e3db98788823"
-
+ruleid: b3503044-60ce-4bf4-bbcb-e3db98788823
 
 tags:
   - attack.execution

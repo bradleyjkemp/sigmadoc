@@ -2,7 +2,7 @@
 title: "Suspicious RazerInstaller Explorer Subprocess"
 aliases:
   - "/rule/a4eaf250-7dc1-4842-862a-5e71cd59a167"
-
+ruleid: a4eaf250-7dc1-4842-862a-5e71cd59a167
 
 tags:
   - attack.privilege_escalation

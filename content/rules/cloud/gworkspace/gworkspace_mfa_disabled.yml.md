@@ -2,7 +2,7 @@
 title: "Google Workspace MFA Disabled"
 aliases:
   - "/rule/780601d1-6376-4f2a-884e-b8d45599f78c"
-
+ruleid: 780601d1-6376-4f2a-884e-b8d45599f78c
 
 tags:
   - attack.impact

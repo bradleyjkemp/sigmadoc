@@ -2,7 +2,7 @@
 title: "CobaltStrike Malleable OneDrive Browsing Traffic Profile"
 aliases:
   - "/rule/c9b33401-cc6a-4cf6-83bb-57ddcb2407fc"
-
+ruleid: c9b33401-cc6a-4cf6-83bb-57ddcb2407fc
 
 tags:
   - attack.defense_evasion

@@ -2,7 +2,7 @@
 title: "Azure Application Gateway Modified or Deleted"
 aliases:
   - "/rule/ad87d14e-7599-4633-ba81-aeb60cfe8cd6"
-
+ruleid: ad87d14e-7599-4633-ba81-aeb60cfe8cd6
 
 tags:
   - attack.impact

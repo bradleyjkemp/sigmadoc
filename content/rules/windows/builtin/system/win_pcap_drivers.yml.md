@@ -2,7 +2,7 @@
 title: "Windows Pcap Drivers"
 aliases:
   - "/rule/7b687634-ab20-11ea-bb37-0242ac130002"
-
+ruleid: 7b687634-ab20-11ea-bb37-0242ac130002
 
 tags:
   - attack.discovery

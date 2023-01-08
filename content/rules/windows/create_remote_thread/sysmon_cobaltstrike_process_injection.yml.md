@@ -2,7 +2,7 @@
 title: "CobaltStrike Process Injection"
 aliases:
   - "/rule/6309645e-122d-4c5b-bb2b-22e4f9c2fa42"
-
+ruleid: 6309645e-122d-4c5b-bb2b-22e4f9c2fa42
 
 tags:
   - attack.defense_evasion

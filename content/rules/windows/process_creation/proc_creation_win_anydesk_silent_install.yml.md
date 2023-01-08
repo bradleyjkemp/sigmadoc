@@ -2,7 +2,7 @@
 title: "AnyDesk Silent Installation"
 aliases:
   - "/rule/114e7f1c-f137-48c8-8f54-3088c24ce4b9"
-
+ruleid: 114e7f1c-f137-48c8-8f54-3088c24ce4b9
 
 tags:
   - attack.t1219

@@ -2,7 +2,7 @@
 title: "Stop Windows Service"
 aliases:
   - "/rule/eb87818d-db5d-49cc-a987-d5da331fbd90"
-
+ruleid: eb87818d-db5d-49cc-a987-d5da331fbd90
 
 tags:
   - attack.impact

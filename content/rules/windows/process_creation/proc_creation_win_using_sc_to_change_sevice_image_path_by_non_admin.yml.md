@@ -2,7 +2,7 @@
 title: "Possible Privilege Escalation via Weak Service Permissions"
 aliases:
   - "/rule/d937b75f-a665-4480-88a5-2f20e9f9b22a"
-
+ruleid: d937b75f-a665-4480-88a5-2f20e9f9b22a
 
 tags:
   - attack.persistence

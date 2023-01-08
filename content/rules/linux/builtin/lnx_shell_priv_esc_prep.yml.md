@@ -2,7 +2,7 @@
 title: "Privilege Escalation Preparation"
 aliases:
   - "/rule/444ade84-c362-4260-b1f3-e45e20e1a905"
-
+ruleid: 444ade84-c362-4260-b1f3-e45e20e1a905
 
 tags:
   - attack.execution

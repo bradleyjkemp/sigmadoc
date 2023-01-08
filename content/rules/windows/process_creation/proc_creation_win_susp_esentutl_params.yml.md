@@ -2,7 +2,7 @@
 title: "Esentutl Gather Credentials"
 aliases:
   - "/rule/7df1713a-1a5b-4a4b-a071-dc83b144a101"
-
+ruleid: 7df1713a-1a5b-4a4b-a071-dc83b144a101
 
 tags:
   - attack.credential_access

@@ -2,7 +2,7 @@
 title: "Sysmon Configuration Modification"
 aliases:
   - "/rule/1f2b5353-573f-4880-8e33-7d04dcf97744"
-
+ruleid: 1f2b5353-573f-4880-8e33-7d04dcf97744
 
 tags:
   - attack.defense_evasion

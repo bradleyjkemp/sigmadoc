@@ -2,7 +2,7 @@
 title: "PowerShell DownloadFile"
 aliases:
   - "/rule/8f70ac5f-1f6f-4f8e-b454-db19561216c5"
-
+ruleid: 8f70ac5f-1f6f-4f8e-b454-db19561216c5
 
 tags:
   - attack.execution

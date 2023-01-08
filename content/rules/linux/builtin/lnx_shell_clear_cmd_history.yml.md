@@ -2,7 +2,7 @@
 title: "Clear Command History"
 aliases:
   - "/rule/fdc88d25-96fb-4b7c-9633-c0e417fdbd4e"
-
+ruleid: fdc88d25-96fb-4b7c-9633-c0e417fdbd4e
 
 tags:
   - attack.defense_evasion

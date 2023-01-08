@@ -2,7 +2,7 @@
 title: "VeeamBackup Database Credentials Dump"
 aliases:
   - "/rule/b57ba453-b384-4ab9-9f40-1038086b4e53"
-
+ruleid: b57ba453-b384-4ab9-9f40-1038086b4e53
 
 tags:
   - attack.collection

@@ -2,7 +2,7 @@
 title: "PetitPotam Suspicious Kerberos TGT Request"
 aliases:
   - "/rule/6a53d871-682d-40b6-83e0-b7c1a6c4e3a5"
-
+ruleid: 6a53d871-682d-40b6-83e0-b7c1a6c4e3a5
 
 tags:
   - attack.credential_access

@@ -2,7 +2,7 @@
 title: "CLR DLL Loaded Via Scripting Applications"
 aliases:
   - "/rule/4508a70e-97ef-4300-b62b-ff27992990ea"
-
+ruleid: 4508a70e-97ef-4300-b62b-ff27992990ea
 
 tags:
   - attack.execution

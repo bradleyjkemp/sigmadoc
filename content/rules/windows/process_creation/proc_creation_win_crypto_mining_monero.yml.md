@@ -2,7 +2,7 @@
 title: "Windows Crypto Mining Indicators"
 aliases:
   - "/rule/66c3b204-9f88-4d0a-a7f7-8a57d521ca55"
-
+ruleid: 66c3b204-9f88-4d0a-a7f7-8a57d521ca55
 
 tags:
   - attack.impact

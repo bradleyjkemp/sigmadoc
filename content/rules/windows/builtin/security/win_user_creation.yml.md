@@ -2,7 +2,7 @@
 title: "Local User Creation"
 aliases:
   - "/rule/66b6be3d-55d0-4f47-9855-d69df21740ea"
-
+ruleid: 66b6be3d-55d0-4f47-9855-d69df21740ea
 
 tags:
   - attack.persistence

@@ -2,7 +2,7 @@
 title: "Dynamic C Sharp Compile Artefact"
 aliases:
   - "/rule/e4a74e34-ecde-4aab-b2fb-9112dd01aed0"
-
+ruleid: e4a74e34-ecde-4aab-b2fb-9112dd01aed0
 
 tags:
   - attack.defense_evasion

@@ -2,7 +2,7 @@
 title: "Confluence Exploitation CVE-2019-3398"
 aliases:
   - "/rule/e9bc39ae-978a-4e49-91ab-5bd481fc668b"
-
+ruleid: e9bc39ae-978a-4e49-91ab-5bd481fc668b
 
 tags:
   - attack.initial_access

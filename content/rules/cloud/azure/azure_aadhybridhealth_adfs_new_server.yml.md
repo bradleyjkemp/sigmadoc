@@ -2,7 +2,7 @@
 title: "Azure Active Directory Hybrid Health AD FS New Server"
 aliases:
   - "/rule/288a39fc-4914-4831-9ada-270e9dc12cb4"
-
+ruleid: 288a39fc-4914-4831-9ada-270e9dc12cb4
 
 tags:
   - attack.defense_evasion

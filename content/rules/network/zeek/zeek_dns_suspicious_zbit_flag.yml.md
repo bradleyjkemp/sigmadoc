@@ -2,7 +2,7 @@
 title: "Suspicious DNS Z Flag Bit Set"
 aliases:
   - "/rule/ede05abc-2c9e-4624-9944-9ff17fdc0bf5"
-
+ruleid: ede05abc-2c9e-4624-9944-9ff17fdc0bf5
 
 tags:
   - attack.t1095

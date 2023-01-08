@@ -2,7 +2,7 @@
 title: "CrashControl CrashDump Disabled"
 aliases:
   - "/rule/2ff692c2-4594-41ec-8fcb-46587de769e0"
-
+ruleid: 2ff692c2-4594-41ec-8fcb-46587de769e0
 
 tags:
   - attack.t1564

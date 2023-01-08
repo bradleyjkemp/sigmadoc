@@ -2,7 +2,7 @@
 title: "Generic Password Dumper Activity on LSASS"
 aliases:
   - "/rule/4a1b6da0-d94f-4fc3-98fc-2d9cb9e5ee76"
-
+ruleid: 4a1b6da0-d94f-4fc3-98fc-2d9cb9e5ee76
 
 tags:
   - attack.credential_access

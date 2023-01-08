@@ -2,7 +2,7 @@
 title: "Execution via stordiag.exe"
 aliases:
   - "/rule/961e0abb-1b1e-4c84-a453-aafe56ad0d34"
-
+ruleid: 961e0abb-1b1e-4c84-a453-aafe56ad0d34
 
 tags:
   - attack.defense_evasion

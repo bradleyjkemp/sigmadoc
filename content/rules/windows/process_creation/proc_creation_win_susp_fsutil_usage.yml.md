@@ -2,7 +2,7 @@
 title: "Fsutil Suspicious Invocation"
 aliases:
   - "/rule/add64136-62e5-48ea-807e-88638d02df1e"
-
+ruleid: add64136-62e5-48ea-807e-88638d02df1e
 
 tags:
   - attack.defense_evasion

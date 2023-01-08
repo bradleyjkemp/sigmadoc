@@ -2,7 +2,7 @@
 title: "CVE-2020-0688 Exchange Exploitation via Web Log"
 aliases:
   - "/rule/fce2c2e2-0fb5-41ab-a14c-5391e1fd70a5"
-
+ruleid: fce2c2e2-0fb5-41ab-a14c-5391e1fd70a5
 
 tags:
   - attack.initial_access

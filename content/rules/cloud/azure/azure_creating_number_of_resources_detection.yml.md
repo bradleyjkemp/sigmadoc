@@ -2,7 +2,7 @@
 title: "Number Of Resource Creation Or Deployment Activities"
 aliases:
   - "/rule/d2d901db-7a75-45a1-bc39-0cbf00812192"
-
+ruleid: d2d901db-7a75-45a1-bc39-0cbf00812192
 
 tags:
   - attack.t1098

@@ -2,7 +2,7 @@
 title: "CMSTP Execution Registry Event"
 aliases:
   - "/rule/b6d235fc-1d38-4b12-adbe-325f06728f37"
-
+ruleid: b6d235fc-1d38-4b12-adbe-325f06728f37
 
 tags:
   - attack.defense_evasion

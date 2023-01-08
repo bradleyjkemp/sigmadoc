@@ -2,7 +2,7 @@
 title: "SAM Registry Hive Handle Request"
 aliases:
   - "/rule/f8748f2c-89dc-4d95-afb0-5a2dfdbad332"
-
+ruleid: f8748f2c-89dc-4d95-afb0-5a2dfdbad332
 
 tags:
   - attack.discovery

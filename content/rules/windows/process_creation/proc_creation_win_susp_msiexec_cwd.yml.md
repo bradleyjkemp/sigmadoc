@@ -2,7 +2,7 @@
 title: "Suspicious MsiExec Directory"
 aliases:
   - "/rule/e22a6eb2-f8a5-44b5-8b44-a2dbd47b1144"
-
+ruleid: e22a6eb2-f8a5-44b5-8b44-a2dbd47b1144
 
 tags:
   - attack.defense_evasion

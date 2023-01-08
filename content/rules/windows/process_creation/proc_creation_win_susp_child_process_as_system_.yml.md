@@ -2,7 +2,7 @@
 title: "Suspicious Child Process Created as System"
 aliases:
   - "/rule/590a5f4c-6c8c-4f10-8307-89afe9453a9d"
-
+ruleid: 590a5f4c-6c8c-4f10-8307-89afe9453a9d
 
 tags:
   - attack.privilege_escalation

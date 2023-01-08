@@ -2,7 +2,7 @@
 title: "Arbitrary Shell Command Execution Via Settingcontent-Ms"
 aliases:
   - "/rule/24de4f3b-804c-4165-b442-5a06a2302c7e"
-
+ruleid: 24de4f3b-804c-4165-b442-5a06a2302c7e
 
 tags:
   - attack.t1204

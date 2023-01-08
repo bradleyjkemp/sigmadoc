@@ -2,7 +2,7 @@
 title: "Rclone Execution via Command Line or PowerShell"
 aliases:
   - "/rule/cb7286ba-f207-44ab-b9e6-760d82b84253"
-
+ruleid: cb7286ba-f207-44ab-b9e6-760d82b84253
 
 tags:
   - attack.exfiltration

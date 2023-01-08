@@ -2,7 +2,7 @@
 title: "Copy from Admin Share"
 aliases:
   - "/rule/855bc8b5-2ae8-402e-a9ed-b889e6df1900"
-
+ruleid: 855bc8b5-2ae8-402e-a9ed-b889e6df1900
 
 tags:
   - attack.lateral_movement

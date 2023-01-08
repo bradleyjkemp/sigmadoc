@@ -2,7 +2,7 @@
 title: "Suspicious Camera and Microphone Access"
 aliases:
   - "/rule/62120148-6b7a-42be-8b91-271c04e281a3"
-
+ruleid: 62120148-6b7a-42be-8b91-271c04e281a3
 
 tags:
   - attack.collection

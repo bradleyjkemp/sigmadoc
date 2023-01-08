@@ -2,7 +2,7 @@
 title: "Suspicious Execution of Taskkill"
 aliases:
   - "/rule/86085955-ea48-42a2-9dd3-85d4c36b167d"
-
+ruleid: 86085955-ea48-42a2-9dd3-85d4c36b167d
 
 tags:
   - attack.impact

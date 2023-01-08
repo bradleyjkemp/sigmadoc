@@ -2,7 +2,7 @@
 title: "Suspicious Service Path Modification"
 aliases:
   - "/rule/138d3531-8793-4f50-a2cd-f291b2863d78"
-
+ruleid: 138d3531-8793-4f50-a2cd-f291b2863d78
 
 tags:
   - attack.persistence

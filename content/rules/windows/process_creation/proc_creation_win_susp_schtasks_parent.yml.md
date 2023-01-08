@@ -2,7 +2,7 @@
 title: "Suspicious Add Scheduled Task Parent"
 aliases:
   - "/rule/9494479d-d994-40bf-a8b1-eea890237021"
-
+ruleid: 9494479d-d994-40bf-a8b1-eea890237021
 
 tags:
   - attack.execution

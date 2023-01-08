@@ -2,7 +2,7 @@
 title: "Lazarus Session Highjacker"
 aliases:
   - "/rule/3f7f5b0b-5b16-476c-a85f-ab477f6dd24b"
-
+ruleid: 3f7f5b0b-5b16-476c-a85f-ab477f6dd24b
 
 tags:
   - attack.defense_evasion

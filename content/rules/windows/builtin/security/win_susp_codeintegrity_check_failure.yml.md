@@ -2,7 +2,7 @@
 title: "Failed Code Integrity Checks"
 aliases:
   - "/rule/470ec5fa-7b4e-4071-b200-4c753100f49b"
-
+ruleid: 470ec5fa-7b4e-4071-b200-4c753100f49b
 
 tags:
   - attack.defense_evasion

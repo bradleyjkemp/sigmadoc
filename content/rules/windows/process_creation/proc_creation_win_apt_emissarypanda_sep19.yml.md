@@ -2,7 +2,7 @@
 title: "Emissary Panda Malware SLLauncher"
 aliases:
   - "/rule/9aa01d62-7667-4d3b-acb8-8cb5103e2014"
-
+ruleid: 9aa01d62-7667-4d3b-acb8-8cb5103e2014
 
 tags:
   - attack.defense_evasion

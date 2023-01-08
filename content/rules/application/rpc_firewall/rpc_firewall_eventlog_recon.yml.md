@@ -2,7 +2,7 @@
 title: "Remote Event Log Recon"
 aliases:
   - "/rule/2053961f-44c7-4a64-b62d-f6e72800af0d"
-
+ruleid: 2053961f-44c7-4a64-b62d-f6e72800af0d
 
 
 

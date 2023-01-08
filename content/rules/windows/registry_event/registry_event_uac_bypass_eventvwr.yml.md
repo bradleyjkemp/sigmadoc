@@ -2,7 +2,7 @@
 title: "UAC Bypass via Event Viewer"
 aliases:
   - "/rule/7c81fec3-1c1d-43b0-996a-46753041b1b6"
-
+ruleid: 7c81fec3-1c1d-43b0-996a-46753041b1b6
 
 tags:
   - attack.defense_evasion

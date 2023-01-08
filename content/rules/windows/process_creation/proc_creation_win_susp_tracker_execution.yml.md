@@ -2,7 +2,7 @@
 title: "DLL Injection with Tracker.exe"
 aliases:
   - "/rule/148431ce-4b70-403d-8525-fcc2993f29ea"
-
+ruleid: 148431ce-4b70-403d-8525-fcc2993f29ea
 
 tags:
   - attack.defense_evasion

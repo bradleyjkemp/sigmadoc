@@ -2,7 +2,7 @@
 title: "Leviathan Registry Key Activity"
 aliases:
   - "/rule/70d43542-cd2d-483c-8f30-f16b436fd7db"
-
+ruleid: 70d43542-cd2d-483c-8f30-f16b436fd7db
 
 tags:
   - attack.persistence

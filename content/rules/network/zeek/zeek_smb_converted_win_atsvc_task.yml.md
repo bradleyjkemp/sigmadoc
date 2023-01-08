@@ -2,7 +2,7 @@
 title: "Remote Task Creation via ATSVC Named Pipe - Zeek"
 aliases:
   - "/rule/dde85b37-40cd-4a94-b00c-0b8794f956b5"
-
+ruleid: dde85b37-40cd-4a94-b00c-0b8794f956b5
 
 tags:
   - attack.lateral_movement

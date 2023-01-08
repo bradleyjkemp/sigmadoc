@@ -2,7 +2,7 @@
 title: "Scheduled Task Deletion"
 aliases:
   - "/rule/4f86b304-3e02-40e3-aa5d-e88a167c9617"
-
+ruleid: 4f86b304-3e02-40e3-aa5d-e88a167c9617
 
 tags:
   - attack.execution

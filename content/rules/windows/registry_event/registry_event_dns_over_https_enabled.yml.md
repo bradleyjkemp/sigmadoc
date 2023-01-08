@@ -2,7 +2,7 @@
 title: "DNS-over-HTTPS Enabled by Registry"
 aliases:
   - "/rule/04b45a8a-d11d-49e4-9acc-4a1b524407a5"
-
+ruleid: 04b45a8a-d11d-49e4-9acc-4a1b524407a5
 
 tags:
   - attack.defense_evasion

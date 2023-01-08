@@ -2,7 +2,7 @@
 title: "Suspicious PowerShell Command Line"
 aliases:
   - "/rule/d7bcd677-645d-4691-a8d4-7a5602b780d1"
-
+ruleid: d7bcd677-645d-4691-a8d4-7a5602b780d1
 
 tags:
   - attack.defense_evasion

@@ -2,7 +2,7 @@
 title: "Suspicious PFX File Creation"
 aliases:
   - "/rule/dca1b3e8-e043-4ec8-85d7-867f334b5724"
-
+ruleid: dca1b3e8-e043-4ec8-85d7-867f334b5724
 
 tags:
   - attack.credential_access

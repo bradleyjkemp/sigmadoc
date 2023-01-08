@@ -2,7 +2,7 @@
 title: "Okta API Token Revoked"
 aliases:
   - "/rule/cf1dbc6b-6205-41b4-9b88-a83980d2255b"
-
+ruleid: cf1dbc6b-6205-41b4-9b88-a83980d2255b
 
 tags:
   - attack.impact

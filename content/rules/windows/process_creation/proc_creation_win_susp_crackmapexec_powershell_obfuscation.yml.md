@@ -2,7 +2,7 @@
 title: "CrackMapExec PowerShell Obfuscation"
 aliases:
   - "/rule/6f8b3439-a203-45dc-a88b-abf57ea15ccf"
-
+ruleid: 6f8b3439-a203-45dc-a88b-abf57ea15ccf
 
 tags:
   - attack.execution

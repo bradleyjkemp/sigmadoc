@@ -2,7 +2,7 @@
 title: "Fireball Archer Install"
 aliases:
   - "/rule/3d4aebe0-6d29-45b2-a8a4-3dfde586a26d"
-
+ruleid: 3d4aebe0-6d29-45b2-a8a4-3dfde586a26d
 
 tags:
   - attack.execution

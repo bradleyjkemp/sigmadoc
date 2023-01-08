@@ -2,7 +2,7 @@
 title: "CrackMapExec Command Line Flags"
 aliases:
   - "/rule/42a993dd-bb3e-48c8-b372-4d6684c4106c"
-
+ruleid: 42a993dd-bb3e-48c8-b372-4d6684c4106c
 
 
 

@@ -2,7 +2,7 @@
 title: "Suspicious Service Binary Directory"
 aliases:
   - "/rule/883faa95-175a-4e22-8181-e5761aeb373c"
-
+ruleid: 883faa95-175a-4e22-8181-e5761aeb373c
 
 tags:
   - attack.defense_evasion

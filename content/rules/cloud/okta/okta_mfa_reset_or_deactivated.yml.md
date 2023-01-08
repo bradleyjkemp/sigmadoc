@@ -2,7 +2,7 @@
 title: "Okta MFA Reset or Deactivated"
 aliases:
   - "/rule/50e068d7-1e6b-4054-87e5-0a592c40c7e0"
-
+ruleid: 50e068d7-1e6b-4054-87e5-0a592c40c7e0
 
 tags:
   - attack.persistence

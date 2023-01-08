@@ -2,7 +2,7 @@
 title: "Outlook C2 Registry Key"
 aliases:
   - "/rule/e3b50fa5-3c3f-444e-937b-0a99d33731cd"
-
+ruleid: e3b50fa5-3c3f-444e-937b-0a99d33731cd
 
 tags:
   - attack.persistence

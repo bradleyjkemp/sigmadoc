@@ -2,7 +2,7 @@
 title: "Execution in Outlook Temp Folder"
 aliases:
   - "/rule/a018fdc3-46a3-44e5-9afb-2cd4af1d4b39"
-
+ruleid: a018fdc3-46a3-44e5-9afb-2cd4af1d4b39
 
 tags:
   - attack.initial_access

@@ -2,7 +2,7 @@
 title: "Suspicious AdFind Execution"
 aliases:
   - "/rule/75df3b17-8bcc-4565-b89b-c9898acef911"
-
+ruleid: 75df3b17-8bcc-4565-b89b-c9898acef911
 
 tags:
   - attack.discovery

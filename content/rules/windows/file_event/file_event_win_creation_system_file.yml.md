@@ -2,7 +2,7 @@
 title: "File Created with System Process Name"
 aliases:
   - "/rule/d5866ddf-ce8f-4aea-b28e-d96485a20d3d"
-
+ruleid: d5866ddf-ce8f-4aea-b28e-d96485a20d3d
 
 tags:
   - attack.defense_evasion

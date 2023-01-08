@@ -2,7 +2,7 @@
 title: "Lazarus Activity"
 aliases:
   - "/rule/24c4d154-05a4-4b99-b57d-9b977472443a"
-
+ruleid: 24c4d154-05a4-4b99-b57d-9b977472443a
 
 tags:
   - attack.g0032

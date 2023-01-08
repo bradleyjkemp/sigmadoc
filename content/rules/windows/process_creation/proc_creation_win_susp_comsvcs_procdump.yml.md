@@ -2,7 +2,7 @@
 title: "Process Dump via Comsvcs DLL"
 aliases:
   - "/rule/09e6d5c0-05b8-4ff8-9eeb-043046ec774c"
-
+ruleid: 09e6d5c0-05b8-4ff8-9eeb-043046ec774c
 
 tags:
   - attack.defense_evasion

@@ -2,7 +2,7 @@
 title: "UAC Bypass Using Windows Media Player - File"
 aliases:
   - "/rule/68578b43-65df-4f81-9a9b-92f32711a951"
-
+ruleid: 68578b43-65df-4f81-9a9b-92f32711a951
 
 tags:
   - attack.defense_evasion

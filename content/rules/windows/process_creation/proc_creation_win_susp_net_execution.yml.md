@@ -2,7 +2,7 @@
 title: "Net.exe Execution"
 aliases:
   - "/rule/183e7ea8-ac4b-4c23-9aec-b3dac4e401ac"
-
+ruleid: 183e7ea8-ac4b-4c23-9aec-b3dac4e401ac
 
 tags:
   - attack.discovery

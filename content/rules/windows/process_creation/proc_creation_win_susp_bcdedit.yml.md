@@ -2,7 +2,7 @@
 title: "Possible Ransomware or Unauthorized MBR Modifications"
 aliases:
   - "/rule/c9fbe8e9-119d-40a6-9b59-dd58a5d84429"
-
+ruleid: c9fbe8e9-119d-40a6-9b59-dd58a5d84429
 
 tags:
   - attack.defense_evasion

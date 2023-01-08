@@ -2,7 +2,7 @@
 title: "Persistence and Execution at Scale via GPO Scheduled Task"
 aliases:
   - "/rule/a8f29a7b-b137-4446-80a0-b804272f3da2"
-
+ruleid: a8f29a7b-b137-4446-80a0-b804272f3da2
 
 tags:
   - attack.persistence

@@ -2,7 +2,7 @@
 title: "Disabled IE Security Features"
 aliases:
   - "/rule/fb50eb7a-5ab1-43ae-bcc9-091818cb8424"
-
+ruleid: fb50eb7a-5ab1-43ae-bcc9-091818cb8424
 
 tags:
   - attack.defense_evasion

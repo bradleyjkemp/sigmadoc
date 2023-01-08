@@ -2,7 +2,7 @@
 title: "Powershell Defender Base64 MpPreference"
 aliases:
   - "/rule/c6fb44c6-71f5-49e6-9462-1425d328aee3"
-
+ruleid: c6fb44c6-71f5-49e6-9462-1425d328aee3
 
 tags:
   - attack.defense_evasion

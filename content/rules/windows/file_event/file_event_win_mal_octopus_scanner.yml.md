@@ -2,7 +2,7 @@
 title: "Octopus Scanner Malware"
 aliases:
   - "/rule/805c55d9-31e6-4846-9878-c34c75054fe9"
-
+ruleid: 805c55d9-31e6-4846-9878-c34c75054fe9
 
 tags:
   - attack.t1195

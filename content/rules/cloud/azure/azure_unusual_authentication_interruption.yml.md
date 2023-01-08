@@ -2,7 +2,7 @@
 title: "Azure Unusual Authentication Interruption"
 aliases:
   - "/rule/8366030e-7216-476b-9927-271d79f13cf3"
-
+ruleid: 8366030e-7216-476b-9927-271d79f13cf3
 
 tags:
   - attack.initial_access

@@ -2,7 +2,7 @@
 title: "Azure Suppression Rule Created"
 aliases:
   - "/rule/92cc3e5d-eb57-419d-8c16-5c63f325a401"
-
+ruleid: 92cc3e5d-eb57-419d-8c16-5c63f325a401
 
 tags:
   - attack.impact

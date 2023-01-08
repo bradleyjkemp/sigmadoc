@@ -2,7 +2,7 @@
 title: "PowerShell Get-Process LSASS in ScriptBlock"
 aliases:
   - "/rule/84c174ab-d3ef-481f-9c86-a50d0b8e3edb"
-
+ruleid: 84c174ab-d3ef-481f-9c86-a50d0b8e3edb
 
 tags:
   - attack.credential_access

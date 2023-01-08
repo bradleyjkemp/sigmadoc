@@ -2,7 +2,7 @@
 title: "Suspicious LOLBIN AccCheckConsole"
 aliases:
   - "/rule/0f6da907-5854-4be6-859a-e9958747b0aa"
-
+ruleid: 0f6da907-5854-4be6-859a-e9958747b0aa
 
 tags:
   - attack.execution

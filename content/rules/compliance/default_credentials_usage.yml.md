@@ -2,7 +2,7 @@
 title: "Default Credentials Usage"
 aliases:
   - "/rule/1a395cbc-a84a-463a-9086-ed8a70e573c7"
-
+ruleid: 1a395cbc-a84a-463a-9086-ed8a70e573c7
 
 
 

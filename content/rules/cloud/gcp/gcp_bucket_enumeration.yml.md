@@ -2,7 +2,7 @@
 title: "Google Cloud Storage Buckets Enumeration"
 aliases:
   - "/rule/e2feb918-4e77-4608-9697-990a1aaf74c3"
-
+ruleid: e2feb918-4e77-4608-9697-990a1aaf74c3
 
 tags:
   - attack.discovery

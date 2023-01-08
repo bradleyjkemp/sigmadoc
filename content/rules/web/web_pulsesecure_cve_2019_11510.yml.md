@@ -2,7 +2,7 @@
 title: "Pulse Secure Attack CVE-2019-11510"
 aliases:
   - "/rule/2dbc10d7-a797-49a8-8776-49efa6442e60"
-
+ruleid: 2dbc10d7-a797-49a8-8776-49efa6442e60
 
 tags:
   - attack.initial_access

@@ -2,7 +2,7 @@
 title: "Suspicious Encoded PowerShell Command Line"
 aliases:
   - "/rule/ca2092a1-c273-4878-9b4b-0d60115bf5ea"
-
+ruleid: ca2092a1-c273-4878-9b4b-0d60115bf5ea
 
 tags:
   - attack.execution

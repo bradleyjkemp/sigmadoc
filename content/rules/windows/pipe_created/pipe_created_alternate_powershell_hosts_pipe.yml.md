@@ -2,7 +2,7 @@
 title: "Alternate PowerShell Hosts Pipe"
 aliases:
   - "/rule/58cb02d5-78ce-4692-b3e1-dce850aae41a"
-
+ruleid: 58cb02d5-78ce-4692-b3e1-dce850aae41a
 
 tags:
   - attack.execution

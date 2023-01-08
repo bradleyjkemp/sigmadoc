@@ -2,7 +2,7 @@
 title: "Baby Shark Activity"
 aliases:
   - "/rule/2b30fa36-3a18-402f-a22d-bf4ce2189f35"
-
+ruleid: 2b30fa36-3a18-402f-a22d-bf4ce2189f35
 
 tags:
   - attack.execution

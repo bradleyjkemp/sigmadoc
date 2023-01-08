@@ -2,7 +2,7 @@
 title: "Okta API Token Created"
 aliases:
   - "/rule/19951c21-229d-4ccb-8774-b993c3ff3c5c"
-
+ruleid: 19951c21-229d-4ccb-8774-b993c3ff3c5c
 
 tags:
   - attack.persistence

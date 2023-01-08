@@ -2,7 +2,7 @@
 title: "Detect Sql Injection By Keywords"
 aliases:
   - "/rule/5513deaf-f49a-46c2-a6c8-3f111b5cb453"
-
+ruleid: 5513deaf-f49a-46c2-a6c8-3f111b5cb453
 
 
 

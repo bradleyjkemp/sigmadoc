@@ -2,7 +2,7 @@
 title: "Suspicious WMIC ActiveScriptEventConsumer Creation"
 aliases:
   - "/rule/ebef4391-1a81-4761-a40a-1db446c0e625"
-
+ruleid: ebef4391-1a81-4761-a40a-1db446c0e625
 
 tags:
   - attack.persistence

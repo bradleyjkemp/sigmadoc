@@ -2,7 +2,7 @@
 title: "Suspicious Execution of Powershell with Base64"
 aliases:
   - "/rule/fb843269-508c-4b76-8b8d-88679db22ce7"
-
+ruleid: fb843269-508c-4b76-8b8d-88679db22ce7
 
 tags:
   - attack.execution

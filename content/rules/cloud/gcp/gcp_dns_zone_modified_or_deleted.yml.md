@@ -2,7 +2,7 @@
 title: "Google Cloud DNS Zone Modified or Deleted"
 aliases:
   - "/rule/28268a8f-191f-4c17-85b2-f5aa4fa829c3"
-
+ruleid: 28268a8f-191f-4c17-85b2-f5aa4fa829c3
 
 tags:
   - attack.impact

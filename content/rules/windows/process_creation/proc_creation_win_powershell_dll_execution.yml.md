@@ -2,7 +2,7 @@
 title: "Detection of PowerShell Execution via DLL"
 aliases:
   - "/rule/6812a10b-60ea-420c-832f-dfcc33b646ba"
-
+ruleid: 6812a10b-60ea-420c-832f-dfcc33b646ba
 
 tags:
   - attack.defense_evasion

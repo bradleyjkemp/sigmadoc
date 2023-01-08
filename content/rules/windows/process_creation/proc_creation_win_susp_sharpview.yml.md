@@ -2,7 +2,7 @@
 title: "Suspicious Execution of SharpView Aka PowerView"
 aliases:
   - "/rule/b2317cfa-4a47-4ead-b3ff-297438c0bc2d"
-
+ruleid: b2317cfa-4a47-4ead-b3ff-297438c0bc2d
 
 tags:
   - attack.discovery

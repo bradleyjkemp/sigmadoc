@@ -2,7 +2,7 @@
 title: "Install Root Certificate"
 aliases:
   - "/rule/78a80655-a51e-4669-bc6b-e9d206a462ee"
-
+ruleid: 78a80655-a51e-4669-bc6b-e9d206a462ee
 
 tags:
   - attack.defense_evasion

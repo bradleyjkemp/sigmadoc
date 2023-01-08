@@ -2,7 +2,7 @@
 title: "Log4j RCE CVE-2021-44228 in Fields"
 aliases:
   - "/rule/9be472ed-893c-4ec0-94da-312d2765f654"
-
+ruleid: 9be472ed-893c-4ec0-94da-312d2765f654
 
 tags:
   - attack.initial_access

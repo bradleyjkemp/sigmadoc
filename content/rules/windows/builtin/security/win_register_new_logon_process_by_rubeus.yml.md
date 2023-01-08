@@ -2,7 +2,7 @@
 title: "Register new Logon Process by Rubeus"
 aliases:
   - "/rule/12e6d621-194f-4f59-90cc-1959e21e69f7"
-
+ruleid: 12e6d621-194f-4f59-90cc-1959e21e69f7
 
 tags:
   - attack.lateral_movement

@@ -2,7 +2,7 @@
 title: "Service Execution"
 aliases:
   - "/rule/2a072a96-a086-49fa-bcb5-15cc5a619093"
-
+ruleid: 2a072a96-a086-49fa-bcb5-15cc5a619093
 
 tags:
   - attack.execution

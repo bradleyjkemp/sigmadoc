@@ -2,7 +2,7 @@
 title: "Shell32 DLL Execution in Suspicious Directory"
 aliases:
   - "/rule/32b96012-7892-429e-b26c-ac2bf46066ff"
-
+ruleid: 32b96012-7892-429e-b26c-ac2bf46066ff
 
 tags:
   - attack.defense_evasion

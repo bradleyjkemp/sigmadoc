@@ -2,7 +2,7 @@
 title: "Mimikatz Kirbi File Creation"
 aliases:
   - "/rule/9e099d99-44c2-42b6-a6d8-54c3545cab29"
-
+ruleid: 9e099d99-44c2-42b6-a6d8-54c3545cab29
 
 tags:
   - attack.credential_access

@@ -2,7 +2,7 @@
 title: "Registry Modification to Hidden File Extension"
 aliases:
   - "/rule/5df86130-4e95-4a54-90f7-26541b40aec2"
-
+ruleid: 5df86130-4e95-4a54-90f7-26541b40aec2
 
 tags:
   - attack.persistence

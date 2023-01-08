@@ -2,7 +2,7 @@
 title: "Download a File with IMEWDBLD.exe"
 aliases:
   - "/rule/8d7e392e-9b28-49e1-831d-5949c6281228"
-
+ruleid: 8d7e392e-9b28-49e1-831d-5949c6281228
 
 tags:
   - attack.command_and_control

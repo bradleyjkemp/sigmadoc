@@ -2,7 +2,7 @@
 title: "AWS Snapshot Backup Exfiltration"
 aliases:
   - "/rule/abae8fec-57bd-4f87-aff6-6e3db989843d"
-
+ruleid: abae8fec-57bd-4f87-aff6-6e3db989843d
 
 tags:
   - attack.exfiltration

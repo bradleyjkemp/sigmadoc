@@ -2,7 +2,7 @@
 title: "WinDivert Driver Load"
 aliases:
   - "/rule/679085d5-f427-4484-9f58-1dc30a7c426d"
-
+ruleid: 679085d5-f427-4484-9f58-1dc30a7c426d
 
 tags:
   - attack.collection

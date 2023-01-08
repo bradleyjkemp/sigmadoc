@@ -2,7 +2,7 @@
 title: "Execute Files with Msdeploy.exe"
 aliases:
   - "/rule/646bc99f-6682-4b47-a73a-17b1b64c9d34"
-
+ruleid: 646bc99f-6682-4b47-a73a-17b1b64c9d34
 
 tags:
   - attack.execution

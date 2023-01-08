@@ -2,7 +2,7 @@
 title: "Microsoft Office Product Spawning Windows Shell"
 aliases:
   - "/rule/438025f9-5856-4663-83f7-52f878a70a50"
-
+ruleid: 438025f9-5856-4663-83f7-52f878a70a50
 
 tags:
   - attack.execution

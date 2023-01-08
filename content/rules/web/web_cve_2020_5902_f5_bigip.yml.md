@@ -2,7 +2,7 @@
 title: "CVE-2020-5902 F5 BIG-IP Exploitation Attempt"
 aliases:
   - "/rule/44b53b1c-e60f-4a7b-948e-3435a7918478"
-
+ruleid: 44b53b1c-e60f-4a7b-948e-3435a7918478
 
 tags:
   - attack.initial_access

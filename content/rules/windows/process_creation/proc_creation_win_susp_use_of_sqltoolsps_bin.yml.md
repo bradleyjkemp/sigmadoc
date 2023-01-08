@@ -2,7 +2,7 @@
 title: "SQL Client Tools PowerShell Session Detection"
 aliases:
   - "/rule/a746c9b8-a2fb-4ee5-a428-92bee9e99060"
-
+ruleid: a746c9b8-a2fb-4ee5-a428-92bee9e99060
 
 tags:
   - attack.execution

@@ -2,7 +2,7 @@
 title: "Azure Active Directory Hybrid Health AD FS Service Delete"
 aliases:
   - "/rule/48739819-8230-4ee3-a8ea-e0289d1fb0ff"
-
+ruleid: 48739819-8230-4ee3-a8ea-e0289d1fb0ff
 
 tags:
   - attack.defense_evasion

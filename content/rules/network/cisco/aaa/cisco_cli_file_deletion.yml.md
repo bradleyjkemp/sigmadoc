@@ -2,7 +2,7 @@
 title: "Cisco File Deletion"
 aliases:
   - "/rule/71d65515-c436-43c0-841b-236b1f32c21e"
-
+ruleid: 71d65515-c436-43c0-841b-236b1f32c21e
 
 tags:
   - attack.defense_evasion

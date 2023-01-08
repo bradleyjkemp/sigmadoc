@@ -2,7 +2,7 @@
 title: "Linux Doas Tool Execution"
 aliases:
   - "/rule/067d8238-7127-451c-a9ec-fa78045b618b"
-
+ruleid: 067d8238-7127-451c-a9ec-fa78045b618b
 
 tags:
   - attack.privilege_escalation

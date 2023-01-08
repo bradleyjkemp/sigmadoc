@@ -2,7 +2,7 @@
 title: "Always Install Elevated MSI Spawned Cmd And Powershell"
 aliases:
   - "/rule/1e53dd56-8d83-4eb4-a43e-b790a05510aa"
-
+ruleid: 1e53dd56-8d83-4eb4-a43e-b790a05510aa
 
 tags:
   - attack.privilege_escalation

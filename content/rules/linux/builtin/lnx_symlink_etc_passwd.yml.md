@@ -2,7 +2,7 @@
 title: "Symlink Etc Passwd"
 aliases:
   - "/rule/c67fc22a-0be5-4b4f-aad5-2b32c4b69523"
-
+ruleid: c67fc22a-0be5-4b4f-aad5-2b32c4b69523
 
 tags:
   - attack.t1204.001

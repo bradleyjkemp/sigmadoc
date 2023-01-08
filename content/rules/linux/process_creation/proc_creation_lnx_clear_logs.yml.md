@@ -2,7 +2,7 @@
 title: "Clear Linux Logs"
 aliases:
   - "/rule/80915f59-9b56-4616-9de0-fd0dea6c12fe"
-
+ruleid: 80915f59-9b56-4616-9de0-fd0dea6c12fe
 
 tags:
   - attack.defense_evasion

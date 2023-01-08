@@ -2,7 +2,7 @@
 title: "Azure Container Registry Created or Deleted"
 aliases:
   - "/rule/93e0ef48-37c8-49ed-a02c-038aab23628e"
-
+ruleid: 93e0ef48-37c8-49ed-a02c-038aab23628e
 
 tags:
   - attack.impact

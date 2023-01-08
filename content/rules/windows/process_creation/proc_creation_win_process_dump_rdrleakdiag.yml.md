@@ -2,7 +2,7 @@
 title: "Process Dump via RdrLeakDiag.exe"
 aliases:
   - "/rule/edadb1e5-5919-4e4c-8462-a9e643b02c4b"
-
+ruleid: edadb1e5-5919-4e4c-8462-a9e643b02c4b
 
 tags:
   - attack.credential_access

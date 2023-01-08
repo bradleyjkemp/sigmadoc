@@ -2,7 +2,7 @@
 title: "Hiding Files with Attrib.exe"
 aliases:
   - "/rule/4281cb20-2994-4580-aa63-c8b86d019934"
-
+ruleid: 4281cb20-2994-4580-aa63-c8b86d019934
 
 tags:
   - attack.defense_evasion

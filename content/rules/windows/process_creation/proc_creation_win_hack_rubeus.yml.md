@@ -2,7 +2,7 @@
 title: "Rubeus Hack Tool"
 aliases:
   - "/rule/7ec2c172-dceb-4c10-92c9-87c1881b7e18"
-
+ruleid: 7ec2c172-dceb-4c10-92c9-87c1881b7e18
 
 tags:
   - attack.credential_access

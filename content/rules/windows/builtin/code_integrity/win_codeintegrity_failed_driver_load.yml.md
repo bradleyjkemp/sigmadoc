@@ -2,7 +2,7 @@
 title: "Code Integrity Blocked Driver Load"
 aliases:
   - "/rule/f8931561-97f5-4c46-907f-0a4a592e47a7"
-
+ruleid: f8931561-97f5-4c46-907f-0a4a592e47a7
 
 tags:
   - attack.execution

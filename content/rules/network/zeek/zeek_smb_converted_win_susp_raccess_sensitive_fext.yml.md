@@ -2,7 +2,7 @@
 title: "Suspicious Access to Sensitive File Extensions - Zeek"
 aliases:
   - "/rule/286b47ed-f6fe-40b3-b3a8-35129acd43bc"
-
+ruleid: 286b47ed-f6fe-40b3-b3a8-35129acd43bc
 
 tags:
   - attack.collection

@@ -2,7 +2,7 @@
 title: "UAC Bypass Using MSConfig Token Modification - Process"
 aliases:
   - "/rule/ad92e3f9-7eb6-460e-96b1-582b0ccbb980"
-
+ruleid: ad92e3f9-7eb6-460e-96b1-582b0ccbb980
 
 tags:
   - attack.defense_evasion

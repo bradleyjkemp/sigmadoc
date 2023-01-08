@@ -2,7 +2,7 @@
 title: "Accessing Encrypted Credentials from Google Chrome Login Database"
 aliases:
   - "/rule/98f4c75c-3089-44f3-b733-b327b9cd9c9d"
-
+ruleid: 98f4c75c-3089-44f3-b733-b327b9cd9c9d
 
 tags:
   - attack.credential_access

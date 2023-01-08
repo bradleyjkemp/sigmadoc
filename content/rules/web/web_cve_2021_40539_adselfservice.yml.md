@@ -2,7 +2,7 @@
 title: "ADSelfService Exploitation"
 aliases:
   - "/rule/6702b13c-e421-44cc-ab33-42cc25570f11"
-
+ruleid: 6702b13c-e421-44cc-ab33-42cc25570f11
 
 
 

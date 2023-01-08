@@ -2,7 +2,7 @@
 title: "UAC Bypass Using WOW64 Logger DLL Hijack"
 aliases:
   - "/rule/4f6c43e2-f989-4ea5-bcd8-843b49a0317c"
-
+ruleid: 4f6c43e2-f989-4ea5-bcd8-843b49a0317c
 
 tags:
   - attack.defense_evasion

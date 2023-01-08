@@ -2,7 +2,7 @@
 title: "Reg Add RUN Key"
 aliases:
   - "/rule/de587dce-915e-4218-aac4-835ca6af6f70"
-
+ruleid: de587dce-915e-4218-aac4-835ca6af6f70
 
 tags:
   - attack.persistence

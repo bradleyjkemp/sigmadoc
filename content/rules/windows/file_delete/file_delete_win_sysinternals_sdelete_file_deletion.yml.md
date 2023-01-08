@@ -2,7 +2,7 @@
 title: "Sysinternals SDelete File Deletion"
 aliases:
   - "/rule/6ddab845-b1b8-49c2-bbf7-1a11967f64bc"
-
+ruleid: 6ddab845-b1b8-49c2-bbf7-1a11967f64bc
 
 tags:
   - attack.defense_evasion

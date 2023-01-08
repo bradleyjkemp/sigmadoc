@@ -2,7 +2,7 @@
 title: "Netsh RDP Port Opening"
 aliases:
   - "/rule/01aeb693-138d-49d2-9403-c4f52d7d3d62"
-
+ruleid: 01aeb693-138d-49d2-9403-c4f52d7d3d62
 
 tags:
   - attack.defense_evasion

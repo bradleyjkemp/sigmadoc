@@ -2,7 +2,7 @@
 title: "Suspicious Execution from Outlook"
 aliases:
   - "/rule/e212d415-0e93-435f-9e1a-f29005bb4723"
-
+ruleid: e212d415-0e93-435f-9e1a-f29005bb4723
 
 tags:
   - attack.execution

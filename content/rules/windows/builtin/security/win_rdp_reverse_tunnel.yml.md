@@ -2,7 +2,7 @@
 title: "RDP over Reverse SSH Tunnel WFP"
 aliases:
   - "/rule/5bed80b6-b3e8-428e-a3ae-d3c757589e41"
-
+ruleid: 5bed80b6-b3e8-428e-a3ae-d3c757589e41
 
 tags:
   - attack.defense_evasion

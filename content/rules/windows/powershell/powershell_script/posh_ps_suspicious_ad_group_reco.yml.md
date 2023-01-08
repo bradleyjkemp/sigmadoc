@@ -2,7 +2,7 @@
 title: "Suspicious Get Information for AD Groups or DoesNotRequirePreAuth User"
 aliases:
   - "/rule/88f0884b-331d-403d-a3a1-b668cf035603"
-
+ruleid: 88f0884b-331d-403d-a3a1-b668cf035603
 
 tags:
   - attack.discovery

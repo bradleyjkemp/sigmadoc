@@ -2,7 +2,7 @@
 title: "EfsPotato Named Pipe"
 aliases:
   - "/rule/637f689e-b4a5-4a86-be0e-0100a0a33ba2"
-
+ruleid: 637f689e-b4a5-4a86-be0e-0100a0a33ba2
 
 tags:
   - attack.defense_evasion

@@ -2,7 +2,7 @@
 title: "Powershell Local Email Collection"
 aliases:
   - "/rule/2837e152-93c8-43d2-85ba-c3cd3c2ae614"
-
+ruleid: 2837e152-93c8-43d2-85ba-c3cd3c2ae614
 
 tags:
   - attack.collection

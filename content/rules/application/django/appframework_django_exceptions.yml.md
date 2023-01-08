@@ -2,7 +2,7 @@
 title: "Django Framework Exceptions"
 aliases:
   - "/rule/fd435618-981e-4a7c-81f8-f78ce480d616"
-
+ruleid: fd435618-981e-4a7c-81f8-f78ce480d616
 
 tags:
   - attack.initial_access

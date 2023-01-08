@@ -2,7 +2,7 @@
 title: "Azure Kubernetes Service Account Modified or Deleted"
 aliases:
   - "/rule/12d027c3-b48c-4d9d-8bb6-a732200034b2"
-
+ruleid: 12d027c3-b48c-4d9d-8bb6-a732200034b2
 
 tags:
   - attack.impact

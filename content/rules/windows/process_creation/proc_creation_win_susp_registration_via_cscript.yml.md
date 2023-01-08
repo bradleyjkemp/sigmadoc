@@ -2,7 +2,7 @@
 title: "Suspicious Registration via cscript.exe"
 aliases:
   - "/rule/28c8f68b-098d-45af-8d43-8089f3e35403"
-
+ruleid: 28c8f68b-098d-45af-8d43-8089f3e35403
 
 tags:
   - attack.defense_evasion

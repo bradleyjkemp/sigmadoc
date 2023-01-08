@@ -2,7 +2,7 @@
 title: "CobaltStrike Malleable Amazon Browsing Traffic Profile"
 aliases:
   - "/rule/953b895e-5cc9-454b-b183-7f3db555452e"
-
+ruleid: 953b895e-5cc9-454b-b183-7f3db555452e
 
 tags:
   - attack.defense_evasion

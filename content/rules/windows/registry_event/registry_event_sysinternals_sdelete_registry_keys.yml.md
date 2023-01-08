@@ -2,7 +2,7 @@
 title: "Sysinternals SDelete Registry Keys"
 aliases:
   - "/rule/9841b233-8df8-4ad7-9133-b0b4402a9014"
-
+ruleid: 9841b233-8df8-4ad7-9133-b0b4402a9014
 
 tags:
   - attack.defense_evasion

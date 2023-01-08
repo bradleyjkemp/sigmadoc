@@ -2,7 +2,7 @@
 title: "Clipboard Collection of Image Data with Xclip Tool"
 aliases:
   - "/rule/f200dc3f-b219-425d-a17e-c38467364816"
-
+ruleid: f200dc3f-b219-425d-a17e-c38467364816
 
 tags:
   - attack.collection

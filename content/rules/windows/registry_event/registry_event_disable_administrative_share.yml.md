@@ -2,7 +2,7 @@
 title: "Disable Administrative Share Creation at Startup"
 aliases:
   - "/rule/c7dcacd0-cc59-4004-b0a4-1d6cdebe6f3e"
-
+ruleid: c7dcacd0-cc59-4004-b0a4-1d6cdebe6f3e
 
 tags:
   - attack.defense_evasion

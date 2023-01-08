@@ -2,7 +2,7 @@
 title: "Writing Local Admin Share"
 aliases:
   - "/rule/4aafb0fa-bff5-4b9d-b99e-8093e659c65f"
-
+ruleid: 4aafb0fa-bff5-4b9d-b99e-8093e659c65f
 
 tags:
   - attack.lateral_movement

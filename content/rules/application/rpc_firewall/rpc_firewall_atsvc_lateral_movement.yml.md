@@ -2,7 +2,7 @@
 title: "Remote Schedule Task Lateral Movement via ATSvc"
 aliases:
   - "/rule/0fcd1c79-4eeb-4746-aba9-1b458f7a79cb"
-
+ruleid: 0fcd1c79-4eeb-4746-aba9-1b458f7a79cb
 
 tags:
   - attack.lateral_movement

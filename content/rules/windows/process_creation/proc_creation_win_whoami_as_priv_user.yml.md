@@ -2,7 +2,7 @@
 title: "Run Whoami as Privileged User"
 aliases:
   - "/rule/79ce34ca-af29-4d0e-b832-fc1b377020db"
-
+ruleid: 79ce34ca-af29-4d0e-b832-fc1b377020db
 
 tags:
   - attack.privilege_escalation

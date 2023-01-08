@@ -2,7 +2,7 @@
 title: "Conti Ransomware Execution"
 aliases:
   - "/rule/689308fc-cfba-4f72-9897-796c1dc61487"
-
+ruleid: 689308fc-cfba-4f72-9897-796c1dc61487
 
 tags:
   - attack.impact

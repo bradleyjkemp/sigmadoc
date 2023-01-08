@@ -2,7 +2,7 @@
 title: "Powershell MsXml COM Object"
 aliases:
   - "/rule/78aa1347-1517-4454-9982-b338d6df8343"
-
+ruleid: 78aa1347-1517-4454-9982-b338d6df8343
 
 tags:
   - attack.execution

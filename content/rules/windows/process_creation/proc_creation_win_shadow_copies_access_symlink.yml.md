@@ -2,7 +2,7 @@
 title: "Shadow Copies Access via Symlink"
 aliases:
   - "/rule/40b19fa6-d835-400c-b301-41f3a2baacaf"
-
+ruleid: 40b19fa6-d835-400c-b301-41f3a2baacaf
 
 tags:
   - attack.credential_access

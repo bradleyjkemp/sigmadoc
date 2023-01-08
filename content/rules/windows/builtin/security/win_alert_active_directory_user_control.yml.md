@@ -2,7 +2,7 @@
 title: "Enabled User Right in AD to Control User Objects"
 aliases:
   - "/rule/311b6ce2-7890-4383-a8c2-663a9f6b43cd"
-
+ruleid: 311b6ce2-7890-4383-a8c2-663a9f6b43cd
 
 tags:
   - attack.persistence

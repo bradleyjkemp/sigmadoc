@@ -2,7 +2,7 @@
 title: "APT PRIVATELOG Image Load Pattern"
 aliases:
   - "/rule/33a2d1dd-f3b0-40bd-8baf-7974468927cc"
-
+ruleid: 33a2d1dd-f3b0-40bd-8baf-7974468927cc
 
 tags:
   - attack.defense_evasion

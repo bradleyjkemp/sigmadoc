@@ -2,7 +2,7 @@
 title: "Suspicious Non PowerShell WSMAN COM Provider"
 aliases:
   - "/rule/df9a0e0e-fedb-4d6c-8668-d765dfc92aa7"
-
+ruleid: df9a0e0e-fedb-4d6c-8668-d765dfc92aa7
 
 tags:
   - attack.execution

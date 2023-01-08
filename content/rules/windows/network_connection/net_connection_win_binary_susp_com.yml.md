@@ -2,7 +2,7 @@
 title: "Microsoft Binary Suspicious Communication Endpoint"
 aliases:
   - "/rule/e0f8ab85-0ac9-423b-a73a-81b3c7b1aa97"
-
+ruleid: e0f8ab85-0ac9-423b-a73a-81b3c7b1aa97
 
 tags:
   - attack.lateral_movement

@@ -2,7 +2,7 @@
 title: "Antivirus Password Dumper Detection"
 aliases:
   - "/rule/78cc2dd2-7d20-4d32-93ff-057084c38b93"
-
+ruleid: 78cc2dd2-7d20-4d32-93ff-057084c38b93
 
 tags:
   - attack.credential_access

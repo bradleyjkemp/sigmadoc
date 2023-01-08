@@ -2,7 +2,7 @@
 title: "Cisco Crypto Commands"
 aliases:
   - "/rule/1f978c6a-4415-47fb-aca5-736a44d7ca3d"
-
+ruleid: 1f978c6a-4415-47fb-aca5-736a44d7ca3d
 
 tags:
   - attack.credential_access

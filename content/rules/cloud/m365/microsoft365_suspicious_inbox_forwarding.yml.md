@@ -2,7 +2,7 @@
 title: "Suspicious Inbox Forwarding"
 aliases:
   - "/rule/6c220477-0b5b-4b25-bb90-66183b4089e8"
-
+ruleid: 6c220477-0b5b-4b25-bb90-66183b4089e8
 
 tags:
   - attack.exfiltration

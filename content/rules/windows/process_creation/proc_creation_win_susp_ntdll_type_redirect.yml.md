@@ -2,7 +2,7 @@
 title: "Suspicious Ntdll Pipe Redirection"
 aliases:
   - "/rule/bbc865e4-7fcd-45a6-8ff1-95ced28ec5b2"
-
+ruleid: bbc865e4-7fcd-45a6-8ff1-95ced28ec5b2
 
 tags:
   - attack.defense_evasion

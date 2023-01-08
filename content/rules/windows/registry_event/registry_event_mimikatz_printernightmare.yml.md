@@ -2,7 +2,7 @@
 title: "PrinterNightmare Mimimkatz Driver Name"
 aliases:
   - "/rule/ba6b9e43-1d45-4d3c-a504-1043a64c8469"
-
+ruleid: ba6b9e43-1d45-4d3c-a504-1043a64c8469
 
 tags:
   - attack.execution

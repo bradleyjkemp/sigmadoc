@@ -2,7 +2,7 @@
 title: "Covenant Launcher Indicators"
 aliases:
   - "/rule/c260b6db-48ba-4b4a-a76f-2f67644e99d2"
-
+ruleid: c260b6db-48ba-4b4a-a76f-2f67644e99d2
 
 tags:
   - attack.execution

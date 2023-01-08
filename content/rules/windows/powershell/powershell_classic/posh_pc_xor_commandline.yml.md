@@ -2,7 +2,7 @@
 title: "Suspicious XOR Encoded PowerShell Command Line"
 aliases:
   - "/rule/812837bb-b17f-45e9-8bd0-0ec35d2e3bd6"
-
+ruleid: 812837bb-b17f-45e9-8bd0-0ec35d2e3bd6
 
 tags:
   - attack.execution

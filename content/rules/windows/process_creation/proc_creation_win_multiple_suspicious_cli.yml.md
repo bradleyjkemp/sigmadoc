@@ -2,7 +2,7 @@
 title: "Quick Execution of a Series of Suspicious Commands"
 aliases:
   - "/rule/61ab5496-748e-4818-a92f-de78e20fe7f1"
-
+ruleid: 61ab5496-748e-4818-a92f-de78e20fe7f1
 
 tags:
   - car.2013-04-002

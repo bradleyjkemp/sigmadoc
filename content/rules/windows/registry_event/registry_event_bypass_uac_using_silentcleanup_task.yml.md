@@ -2,7 +2,7 @@
 title: "Bypass UAC Using SilentCleanup Task"
 aliases:
   - "/rule/724ea201-6514-4f38-9739-e5973c34f49a"
-
+ruleid: 724ea201-6514-4f38-9739-e5973c34f49a
 
 tags:
   - attack.privilege_escalation

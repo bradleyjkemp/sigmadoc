@@ -2,7 +2,7 @@
 title: "Denied Access To Remote Desktop"
 aliases:
   - "/rule/8e5c03fa-b7f0-11ea-b242-07e0576828d9"
-
+ruleid: 8e5c03fa-b7f0-11ea-b242-07e0576828d9
 
 tags:
   - attack.lateral_movement

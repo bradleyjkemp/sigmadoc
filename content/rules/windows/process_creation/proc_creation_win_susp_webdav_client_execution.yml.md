@@ -2,7 +2,7 @@
 title: "Suspicious WebDav Client Execution"
 aliases:
   - "/rule/2dbd9d3d-9e27-42a8-b8df-f13825c6c3d5"
-
+ruleid: 2dbd9d3d-9e27-42a8-b8df-f13825c6c3d5
 
 tags:
   - attack.exfiltration

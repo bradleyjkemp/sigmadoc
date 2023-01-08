@@ -2,7 +2,7 @@
 title: "Psr.exe Capture Screenshots"
 aliases:
   - "/rule/2158f96f-43c2-43cb-952a-ab4580f32382"
-
+ruleid: 2158f96f-43c2-43cb-952a-ab4580f32382
 
 tags:
   - attack.collection

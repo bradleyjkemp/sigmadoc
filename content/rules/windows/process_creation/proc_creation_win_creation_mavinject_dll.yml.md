@@ -2,7 +2,7 @@
 title: "Mavinject Inject DLL Into Running Process"
 aliases:
   - "/rule/4f73421b-5a0b-4bbf-a892-5a7fb99bea66"
-
+ruleid: 4f73421b-5a0b-4bbf-a892-5a7fb99bea66
 
 tags:
   - attack.defense_evasion

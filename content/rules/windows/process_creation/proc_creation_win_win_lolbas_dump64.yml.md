@@ -2,7 +2,7 @@
 title: "Suspicious Dump64.exe Execution"
 aliases:
   - "/rule/129966c9-de17-4334-a123-8b58172e664d"
-
+ruleid: 129966c9-de17-4334-a123-8b58172e664d
 
 tags:
   - attack.credential_access

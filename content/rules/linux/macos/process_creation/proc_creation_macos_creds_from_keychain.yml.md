@@ -2,7 +2,7 @@
 title: "Credentials from Password Stores - Keychain"
 aliases:
   - "/rule/b120b587-a4c2-4b94-875d-99c9807d6955"
-
+ruleid: b120b587-a4c2-4b94-875d-99c9807d6955
 
 tags:
   - attack.credential_access

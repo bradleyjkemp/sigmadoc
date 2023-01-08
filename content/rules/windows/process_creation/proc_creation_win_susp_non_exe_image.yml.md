@@ -2,7 +2,7 @@
 title: "Execution of Suspicious File Type Extension"
 aliases:
   - "/rule/c09dad97-1c78-4f71-b127-7edb2b8e491a"
-
+ruleid: c09dad97-1c78-4f71-b127-7edb2b8e491a
 
 tags:
   - attack.defense_evasion

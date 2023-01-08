@@ -2,7 +2,7 @@
 title: "Microsoft Defender Tamper Protection Trigger"
 aliases:
   - "/rule/49e5bc24-8b86-49f1-b743-535f332c2856"
-
+ruleid: 49e5bc24-8b86-49f1-b743-535f332c2856
 
 tags:
   - attack.defense_evasion

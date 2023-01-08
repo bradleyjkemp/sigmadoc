@@ -2,7 +2,7 @@
 title: "Discover Private Keys"
 aliases:
   - "/rule/213d6a77-3d55-4ce8-ba74-fcfef741974e"
-
+ruleid: 213d6a77-3d55-4ce8-ba74-fcfef741974e
 
 tags:
   - attack.credential_access

@@ -2,7 +2,7 @@
 title: "Cmd Stream Redirection"
 aliases:
   - "/rule/70e68156-6571-427b-a6e9-4476a173a9b6"
-
+ruleid: 70e68156-6571-427b-a6e9-4476a173a9b6
 
 tags:
   - attack.defense_evasion

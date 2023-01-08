@@ -2,7 +2,7 @@
 title: "NirCmd Tool Execution"
 aliases:
   - "/rule/4e2ed651-1906-4a59-a78a-18220fca1b22"
-
+ruleid: 4e2ed651-1906-4a59-a78a-18220fca1b22
 
 tags:
   - attack.execution

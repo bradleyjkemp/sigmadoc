@@ -2,7 +2,7 @@
 title: "COM Hijack via Sdclt"
 aliases:
   - "/rule/07743f65-7ec9-404a-a519-913db7118a8d"
-
+ruleid: 07743f65-7ec9-404a-a519-913db7118a8d
 
 tags:
   - attack.privilege_escalation

@@ -2,7 +2,7 @@
 title: "Google Workspace Granted Domain API Access"
 aliases:
   - "/rule/04e2a23a-9b29-4a5c-be3a-3542e3f982ba"
-
+ruleid: 04e2a23a-9b29-4a5c-be3a-3542e3f982ba
 
 tags:
   - attack.persistence

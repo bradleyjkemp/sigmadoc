@@ -2,7 +2,7 @@
 title: "Image Load of VSS_PS.dll by Uncommon Executable"
 aliases:
   - "/rule/333cdbe8-27bb-4246-bf82-b41a0dca4b70"
-
+ruleid: 333cdbe8-27bb-4246-bf82-b41a0dca4b70
 
 tags:
   - attack.defense_evasion

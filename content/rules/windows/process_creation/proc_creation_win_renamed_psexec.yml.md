@@ -2,7 +2,7 @@
 title: "Renamed PsExec"
 aliases:
   - "/rule/a7a7e0e5-1d57-49df-9c58-9fe5bc0346a2"
-
+ruleid: a7a7e0e5-1d57-49df-9c58-9fe5bc0346a2
 
 tags:
   - car.2013-05-009

@@ -2,7 +2,7 @@
 title: "Registry Dump of SAM Creds and Secrets"
 aliases:
   - "/rule/038cd51c-3ad8-41c5-ba8f-5d1c92f3cc1e"
-
+ruleid: 038cd51c-3ad8-41c5-ba8f-5d1c92f3cc1e
 
 tags:
   - attack.credential_access

@@ -2,7 +2,7 @@
 title: "Sticky Key Like Backdoor Usage"
 aliases:
   - "/rule/baca5663-583c-45f9-b5dc-ea96a22ce542"
-
+ruleid: baca5663-583c-45f9-b5dc-ea96a22ce542
 
 tags:
   - attack.privilege_escalation

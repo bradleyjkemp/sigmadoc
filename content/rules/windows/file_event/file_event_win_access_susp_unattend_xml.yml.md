@@ -2,7 +2,7 @@
 title: "Suspicious Unattend.xml File Access"
 aliases:
   - "/rule/1a3d42dd-3763-46b9-8025-b5f17f340dfb"
-
+ruleid: 1a3d42dd-3763-46b9-8025-b5f17f340dfb
 
 tags:
   - attack.credential_access

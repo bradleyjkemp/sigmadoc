@@ -2,7 +2,7 @@
 title: "Invoke-Obfuscation RUNDLL LAUNCHER"
 aliases:
   - "/rule/056a7ee1-4853-4e67-86a0-3fd9ceed7555"
-
+ruleid: 056a7ee1-4853-4e67-86a0-3fd9ceed7555
 
 tags:
   - attack.defense_evasion

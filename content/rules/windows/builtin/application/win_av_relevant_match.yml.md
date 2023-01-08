@@ -2,7 +2,7 @@
 title: "Relevant Anti-Virus Event"
 aliases:
   - "/rule/78bc5783-81d9-4d73-ac97-59f6db4f72a8"
-
+ruleid: 78bc5783-81d9-4d73-ac97-59f6db4f72a8
 
 tags:
   - attack.resource_development

@@ -2,7 +2,7 @@
 title: "Detected Windows Software Discovery"
 aliases:
   - "/rule/2650dd1a-eb2a-412d-ac36-83f06c4f2282"
-
+ruleid: 2650dd1a-eb2a-412d-ac36-83f06c4f2282
 
 tags:
   - attack.discovery

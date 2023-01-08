@@ -2,7 +2,7 @@
 title: "Atbroker Registry Change"
 aliases:
   - "/rule/9577edbb-851f-4243-8c91-1d5b50c1a39b"
-
+ruleid: 9577edbb-851f-4243-8c91-1d5b50c1a39b
 
 tags:
   - attack.defense_evasion

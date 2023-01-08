@@ -2,7 +2,7 @@
 title: "Write Protect For Storage Disabled"
 aliases:
   - "/rule/75f7a0e2-7154-4c4d-9eae-5cdb4e0a5c13"
-
+ruleid: 75f7a0e2-7154-4c4d-9eae-5cdb4e0a5c13
 
 tags:
   - attack.defense_evasion

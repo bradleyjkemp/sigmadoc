@@ -2,7 +2,7 @@
 title: "Credentials Dumping Tools Accessing LSASS Memory"
 aliases:
   - "/rule/32d0d3e2-e58d-4d41-926b-18b520b2b32d"
-
+ruleid: 32d0d3e2-e58d-4d41-926b-18b520b2b32d
 
 tags:
   - attack.credential_access

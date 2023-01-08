@@ -2,7 +2,7 @@
 title: "System Network Connections Discovery"
 aliases:
   - "/rule/9a7a0393-2144-4626-9bf1-7c2f5a7321db"
-
+ruleid: 9a7a0393-2144-4626-9bf1-7c2f5a7321db
 
 tags:
   - attack.discovery

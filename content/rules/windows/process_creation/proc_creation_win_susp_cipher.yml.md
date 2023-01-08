@@ -2,7 +2,7 @@
 title: "Overwrite Deleted Data with Cipher"
 aliases:
   - "/rule/4b046706-5789-4673-b111-66f25fe99534"
-
+ruleid: 4b046706-5789-4673-b111-66f25fe99534
 
 tags:
   - attack.impact

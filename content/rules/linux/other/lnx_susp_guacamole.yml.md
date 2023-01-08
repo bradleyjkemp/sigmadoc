@@ -2,7 +2,7 @@
 title: "Guacamole Two Users Sharing Session Anomaly"
 aliases:
   - "/rule/1edd77db-0669-4fef-9598-165bda82826d"
-
+ruleid: 1edd77db-0669-4fef-9598-165bda82826d
 
 tags:
   - attack.credential_access

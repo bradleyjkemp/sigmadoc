@@ -2,7 +2,7 @@
 title: "AWS Macie Evasion"
 aliases:
   - "/rule/91f6a16c-ef71-437a-99ac-0b070e3ad221"
-
+ruleid: 91f6a16c-ef71-437a-99ac-0b070e3ad221
 
 tags:
   - attack.defense_evasion

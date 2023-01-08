@@ -2,7 +2,7 @@
 title: "Persistent Outlook Landing Pages"
 aliases:
   - "/rule/487bb375-12ef-41f6-baae-c6a1572b4dd1"
-
+ruleid: 487bb375-12ef-41f6-baae-c6a1572b4dd1
 
 tags:
   - attack.persistence

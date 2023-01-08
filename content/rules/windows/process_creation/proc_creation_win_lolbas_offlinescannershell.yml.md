@@ -2,7 +2,7 @@
 title: "Suspicious OfflineScannerShell.exe Execution From Another Folder"
 aliases:
   - "/rule/02b18447-ea83-4b1b-8805-714a8a34546a"
-
+ruleid: 02b18447-ea83-4b1b-8805-714a8a34546a
 
 tags:
   - attack.defense_evasion

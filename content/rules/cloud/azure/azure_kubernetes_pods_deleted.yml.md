@@ -2,7 +2,7 @@
 title: "Azure Kubernetes Pods Deleted"
 aliases:
   - "/rule/b02f9591-12c3-4965-986a-88028629b2e1"
-
+ruleid: b02f9591-12c3-4965-986a-88028629b2e1
 
 tags:
   - attack.impact

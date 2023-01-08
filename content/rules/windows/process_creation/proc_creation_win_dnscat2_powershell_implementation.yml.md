@@ -2,7 +2,7 @@
 title: "DNSCat2 Powershell Implementation Detection Via Process Creation"
 aliases:
   - "/rule/b11d75d6-d7c1-11ea-87d0-0242ac130003"
-
+ruleid: b11d75d6-d7c1-11ea-87d0-0242ac130003
 
 tags:
   - attack.command_and_control

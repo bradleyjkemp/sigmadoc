@@ -2,7 +2,7 @@
 title: "Mailbox Export to Exchange Webserver"
 aliases:
   - "/rule/516376b4-05cd-4122-bae0-ad7641c38d48"
-
+ruleid: 516376b4-05cd-4122-bae0-ad7641c38d48
 
 tags:
   - attack.persistence

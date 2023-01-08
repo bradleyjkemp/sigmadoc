@@ -2,7 +2,7 @@
 title: "VMToolsd Suspicious Child Process"
 aliases:
   - "/rule/5687f942-867b-4578-ade7-1e341c46e99a"
-
+ruleid: 5687f942-867b-4578-ade7-1e341c46e99a
 
 tags:
   - attack.execution
