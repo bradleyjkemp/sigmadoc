@@ -1,3 +1,8 @@
 <script defer data-domain="sigmadoc.bradleyjkemp.dev" src="https://stats.bradleyjkemp.dev/js/plausible.js"></script>
 {{- $p := .Params }}
-{{with $p}}<link rel="canonical" href="https://detection.fyi/sigmahq/sigma/id/{{.ruleid}}" />{{end}}
+{{with $p}}
+    {{if .ruleid}}
+        <link rel="canonical" href="https://detection.fyi/sigmahq/sigma/id/{{.ruleid}}" />
+        <meta http-equiv="refresh" content="0;url=https://detection.fyi/sigmahq/sigma/id/{{.ruleid}}" />
+    {{end}}
+{{end}}
