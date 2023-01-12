@@ -1,41 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>attack.t1187 on My New Hugo Site</title>
-    <link>https://bradleyjkemp.dev/sigmadoc/tags/attack.t1187/</link>
-    <description>Recent content in attack.t1187 on My New Hugo Site</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Mon, 23 Aug 2021 11:06:44 -0400</lastBuildDate><atom:link href="https://bradleyjkemp.dev/sigmadoc/tags/attack.t1187/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Potential PetitPotam Attack Via EFS RPC Calls</title>
-      <link>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_dce_rpc_potential_petit_potam_efs_rpc_call.yml/</link>
-      <pubDate>Mon, 23 Aug 2021 11:06:44 -0400</pubDate>
-      
-      <guid>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_dce_rpc_potential_petit_potam_efs_rpc_call.yml/</guid>
-      <description>&lt;p&gt;Detects usage of the windows RPC library Encrypting File System Remote Protocol (MS-EFSRPC). Variations of this RPC are used within the attack refereed to as PetitPotam.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>attack.t1187 on My New Hugo Site</title><link>https://bradleyjkemp.dev/sigmadoc/tags/attack.t1187/</link><description>Recent content in attack.t1187 on My New Hugo Site</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 23 Aug 2021 11:06:44 -0400</lastBuildDate><atom:link href="https://bradleyjkemp.dev/sigmadoc/tags/attack.t1187/index.xml" rel="self" type="application/rss+xml"/><item><title>Potential PetitPotam Attack Via EFS RPC Calls</title><link>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_dce_rpc_potential_petit_potam_efs_rpc_call.yml/</link><pubDate>Mon, 23 Aug 2021 11:06:44 -0400</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_dce_rpc_potential_petit_potam_efs_rpc_call.yml/</guid><description>&lt;p>Detects usage of the windows RPC library Encrypting File System Remote Protocol (MS-EFSRPC). Variations of this RPC are used within the attack refereed to as PetitPotam.
 The usage of this RPC function should be rare if ever used at all.
 Thus usage of this function is uncommon enough that any usage of this RPC function should warrant further investigation to determine if it is legitimate.
-View surrounding logs (within a few minutes before and after) from the Source IP to. Logs from from the Source IP would include dce_rpc, smb_mapping, smb_files, rdp, ntlm, kerberos, etc..&#39;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>PetitPotam Suspicious Kerberos TGT Request</title>
-      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_petitpotam_susp_tgt_request.yml/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_petitpotam_susp_tgt_request.yml/</guid>
-      <description>&lt;p&gt;Detect suspicious Kerberos TGT requests. Once an attacer obtains a computer certificate by abusing Active Directory Certificate Services in combination with PetitPotam, the next step would be to leverage the certificate for malicious purposes. One way of doing this is to request a Kerberos Ticket Granting Ticket using a tool like Rubeus. This request will generate a 4768 event with some unusual fields depending on the environment. This analytic will require tuning, we recommend filtering Account_Name to the Domain Controller computer accounts.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Possible PetitPotam Coerce Authentication Attempt</title>
-      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_petitpotam_network_share.yml/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_petitpotam_network_share.yml/</guid>
-      <description>&lt;p&gt;Detect PetitPotam coerced authentication activity.&lt;/p&gt;</description>
-    </item>
-    
-  </channel>
-</rss>
+View surrounding logs (within a few minutes before and after) from the Source IP to. Logs from from the Source IP would include dce_rpc, smb_mapping, smb_files, rdp, ntlm, kerberos, etc..'&lt;/p></description></item><item><title>PetitPotam Suspicious Kerberos TGT Request</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_petitpotam_susp_tgt_request.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_petitpotam_susp_tgt_request.yml/</guid><description>&lt;p>Detect suspicious Kerberos TGT requests. Once an attacer obtains a computer certificate by abusing Active Directory Certificate Services in combination with PetitPotam, the next step would be to leverage the certificate for malicious purposes. One way of doing this is to request a Kerberos Ticket Granting Ticket using a tool like Rubeus. This request will generate a 4768 event with some unusual fields depending on the environment. This analytic will require tuning, we recommend filtering Account_Name to the Domain Controller computer accounts.&lt;/p></description></item><item><title>Possible PetitPotam Coerce Authentication Attempt</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_petitpotam_network_share.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_petitpotam_network_share.yml/</guid><description>&lt;p>Detect PetitPotam coerced authentication activity.&lt;/p></description></item></channel></rss>

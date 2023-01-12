@@ -1,21 +1,2 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>attack.t1491.001 on My New Hugo Site</title>
-    <link>https://bradleyjkemp.dev/sigmadoc/tags/attack.t1491.001/</link>
-    <description>Recent content in attack.t1491.001 on My New Hugo Site</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sun, 26 Dec 2021 12:09:42 +0100</lastBuildDate><atom:link href="https://bradleyjkemp.dev/sigmadoc/tags/attack.t1491.001/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Replace Desktop Wallpaper by Powershell</title>
-      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_susp_wallpaper.yml/</link>
-      <pubDate>Sun, 26 Dec 2021 12:09:42 +0100</pubDate>
-      
-      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_susp_wallpaper.yml/</guid>
-      <description>&lt;p&gt;An adversary may deface systems internal to an organization in an attempt to intimidate or mislead users.
-This may take the form of modifications to internal websites, or directly to user systems with the replacement of the desktop wallpaper&lt;/p&gt;</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>attack.t1491.001 on My New Hugo Site</title><link>https://bradleyjkemp.dev/sigmadoc/tags/attack.t1491.001/</link><description>Recent content in attack.t1491.001 on My New Hugo Site</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 26 Dec 2021 12:09:42 +0100</lastBuildDate><atom:link href="https://bradleyjkemp.dev/sigmadoc/tags/attack.t1491.001/index.xml" rel="self" type="application/rss+xml"/><item><title>Replace Desktop Wallpaper by Powershell</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_susp_wallpaper.yml/</link><pubDate>Sun, 26 Dec 2021 12:09:42 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_susp_wallpaper.yml/</guid><description>&lt;p>An adversary may deface systems internal to an organization in an attempt to intimidate or mislead users.
+This may take the form of modifications to internal websites, or directly to user systems with the replacement of the desktop wallpaper&lt;/p></description></item></channel></rss>

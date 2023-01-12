@@ -1,11 +1,1 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>edr on My New Hugo Site</title>
-    <link>https://bradleyjkemp.dev/sigmadoc/rules/application/edr/</link>
-    <description>Recent content in edr on My New Hugo Site</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Mon, 30 Aug 2021 21:47:36 -0600</lastBuildDate><atom:link href="https://bradleyjkemp.dev/sigmadoc/rules/application/edr/index.xml" rel="self" type="application/rss+xml" />
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>edr on My New Hugo Site</title><link>https://bradleyjkemp.dev/sigmadoc/rules/application/edr/</link><description>Recent content in edr on My New Hugo Site</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 30 Aug 2021 21:47:36 -0600</lastBuildDate><atom:link href="https://bradleyjkemp.dev/sigmadoc/rules/application/edr/index.xml" rel="self" type="application/rss+xml"/></channel></rss>
