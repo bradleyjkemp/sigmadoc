@@ -1,1 +1,83 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>attack.t1046 on My New Hugo Site</title><link>https://bradleyjkemp.dev/sigmadoc/tags/attack.t1046/</link><description>Recent content in attack.t1046 on My New Hugo Site</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 18 Dec 2021 20:00:40 +0100</lastBuildDate><atom:link href="https://bradleyjkemp.dev/sigmadoc/tags/attack.t1046/index.xml" rel="self" type="application/rss+xml"/><item><title>Advanced Port Scanner</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_advanced_port_scanner.yml/</link><pubDate>Sat, 18 Dec 2021 20:00:40 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_advanced_port_scanner.yml/</guid><description>&lt;p>Detects the use of Advanced Port Scanner.&lt;/p></description></item><item><title>Python Initiated Connection</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/network_connection/net_connection_win_python.yml/</link><pubDate>Fri, 10 Dec 2021 16:31:16 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/network_connection/net_connection_win_python.yml/</guid><description>&lt;p>Adversaries may attempt to get a listing of services running on remote hosts, including those that may be vulnerable to remote software exploitation&lt;/p></description></item><item><title>Suspicious Nmap Execution</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_nmap.yml/</link><pubDate>Fri, 10 Dec 2021 16:31:16 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_nmap.yml/</guid><description>&lt;p>Adversaries may attempt to get a listing of services running on remote hosts, including those that may be vulnerable to remote software exploitation&lt;/p></description></item><item><title>Advanced IP Scanner</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_advanced_ip_scanner.yml/</link><pubDate>Tue, 12 May 2020 21:43:01 -0600</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_advanced_ip_scanner.yml/</guid><description>&lt;p>Detects the use of Advanced IP Scanner. Seems to be a popular tool for ransomware groups.&lt;/p></description></item><item><title>Linux Network Service Scanning</title><link>https://bradleyjkemp.dev/sigmadoc/rules/linux/process_creation/proc_creation_lnx_network_service_scanning.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/process_creation/proc_creation_lnx_network_service_scanning.yml/</guid><description>&lt;p>Detects enumeration of local or remote network services.&lt;/p></description></item><item><title>MacOS Network Service Scanning</title><link>https://bradleyjkemp.dev/sigmadoc/rules/linux/macos/process_creation/proc_creation_macos_network_service_scanning.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/macos/process_creation/proc_creation_macos_network_service_scanning.yml/</guid><description>&lt;p>Detects enumeration of local or remote network services.&lt;/p></description></item><item><title>Network Scans Count By Destination IP</title><link>https://bradleyjkemp.dev/sigmadoc/rules/network/net_susp_network_scan_by_ip.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/network/net_susp_network_scan_by_ip.yml/</guid><description>&lt;p>Detects many failed connection attempts to different ports or hosts&lt;/p></description></item><item><title>Network Scans Count By Destination Port</title><link>https://bradleyjkemp.dev/sigmadoc/rules/network/net_susp_network_scan_by_port.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/network/net_susp_network_scan_by_port.yml/</guid><description>&lt;p>Detects many failed connection attempts to different ports or hosts&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>attack.t1046 on My New Hugo Site</title>
+    <link>https://bradleyjkemp.dev/sigmadoc/tags/attack.t1046/</link>
+    <description>Recent content in attack.t1046 on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 18 Dec 2021 20:00:40 +0100</lastBuildDate><atom:link href="https://bradleyjkemp.dev/sigmadoc/tags/attack.t1046/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Advanced Port Scanner</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_advanced_port_scanner.yml/</link>
+      <pubDate>Sat, 18 Dec 2021 20:00:40 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_advanced_port_scanner.yml/</guid>
+      <description>&lt;p&gt;Detects the use of Advanced Port Scanner.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Python Initiated Connection</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/network_connection/net_connection_win_python.yml/</link>
+      <pubDate>Fri, 10 Dec 2021 16:31:16 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/network_connection/net_connection_win_python.yml/</guid>
+      <description>&lt;p&gt;Adversaries may attempt to get a listing of services running on remote hosts, including those that may be vulnerable to remote software exploitation&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Suspicious Nmap Execution</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_nmap.yml/</link>
+      <pubDate>Fri, 10 Dec 2021 16:31:16 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_nmap.yml/</guid>
+      <description>&lt;p&gt;Adversaries may attempt to get a listing of services running on remote hosts, including those that may be vulnerable to remote software exploitation&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Advanced IP Scanner</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_advanced_ip_scanner.yml/</link>
+      <pubDate>Tue, 12 May 2020 21:43:01 -0600</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_advanced_ip_scanner.yml/</guid>
+      <description>&lt;p&gt;Detects the use of Advanced IP Scanner. Seems to be a popular tool for ransomware groups.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Linux Network Service Scanning</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/linux/process_creation/proc_creation_lnx_network_service_scanning.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/process_creation/proc_creation_lnx_network_service_scanning.yml/</guid>
+      <description>&lt;p&gt;Detects enumeration of local or remote network services.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>MacOS Network Service Scanning</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/linux/macos/process_creation/proc_creation_macos_network_service_scanning.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/macos/process_creation/proc_creation_macos_network_service_scanning.yml/</guid>
+      <description>&lt;p&gt;Detects enumeration of local or remote network services.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Network Scans Count By Destination IP</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/network/net_susp_network_scan_by_ip.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/network/net_susp_network_scan_by_ip.yml/</guid>
+      <description>&lt;p&gt;Detects many failed connection attempts to different ports or hosts&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Network Scans Count By Destination Port</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/network/net_susp_network_scan_by_port.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/network/net_susp_network_scan_by_port.yml/</guid>
+      <description>&lt;p&gt;Detects many failed connection attempts to different ports or hosts&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

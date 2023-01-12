@@ -1,1 +1,20 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>attack.t1120 on My New Hugo Site</title><link>https://bradleyjkemp.dev/sigmadoc/tags/attack.t1120/</link><description>Recent content in attack.t1120 on My New Hugo Site</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 23 Aug 2021 13:17:35 +0200</lastBuildDate><atom:link href="https://bradleyjkemp.dev/sigmadoc/tags/attack.t1120/index.xml" rel="self" type="application/rss+xml"/><item><title>Powershell Suspicious Win32_PnPEntity</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_suspicious_win32_pnpentity.yml/</link><pubDate>Mon, 23 Aug 2021 13:17:35 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_suspicious_win32_pnpentity.yml/</guid><description>&lt;p>Adversaries may attempt to gather information about attached peripheral devices and components connected to a computer system.&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>attack.t1120 on My New Hugo Site</title>
+    <link>https://bradleyjkemp.dev/sigmadoc/tags/attack.t1120/</link>
+    <description>Recent content in attack.t1120 on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 23 Aug 2021 13:17:35 +0200</lastBuildDate><atom:link href="https://bradleyjkemp.dev/sigmadoc/tags/attack.t1120/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Powershell Suspicious Win32_PnPEntity</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_suspicious_win32_pnpentity.yml/</link>
+      <pubDate>Mon, 23 Aug 2021 13:17:35 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_suspicious_win32_pnpentity.yml/</guid>
+      <description>&lt;p&gt;Adversaries may attempt to gather information about attached peripheral devices and components connected to a computer system.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

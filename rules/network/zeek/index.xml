@@ -1,5 +1,195 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>zeek on My New Hugo Site</title><link>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/</link><description>Recent content in zeek on My New Hugo Site</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 20 Sep 2021 12:26:01 -0400</lastBuildDate><atom:link href="https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/index.xml" rel="self" type="application/rss+xml"/><item><title>OMIGOD HTTP No Authentication RCE</title><link>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_http_omigod_no_auth_rce.yml/</link><pubDate>Mon, 20 Sep 2021 12:26:01 -0400</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_http_omigod_no_auth_rce.yml/</guid><description>&lt;p>Detects the exploitation of OMIGOD (CVE-2021-38647) which allows remote execute (RCE) commands as root with just a single unauthenticated HTTP request. Verify, successful, exploitation by viewing the HTTP client (request) body to see what was passed to the server (using PCAP). Within the client body is where the code execution would occur. Additionally, check the endpoint logs to see if suspicious commands or activity occurred within the timeframe of this HTTP request.&lt;/p></description></item><item><title>Possible PrintNightmare Print Driver Install</title><link>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_dce_rpc_printnightmare_print_driver_install.yml/</link><pubDate>Tue, 24 Aug 2021 00:58:36 -0400</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_dce_rpc_printnightmare_print_driver_install.yml/</guid><description>&lt;p>Detects the remote installation of a print driver which is possible indication of the exploitation of PrintNightmare (CVE-2021-1675).
-The occurrence of print drivers being installed remotely via RPC functions should be rare, as print drivers are normally installed locally and or through group policy.&lt;/p></description></item><item><title>Potential PetitPotam Attack Via EFS RPC Calls</title><link>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_dce_rpc_potential_petit_potam_efs_rpc_call.yml/</link><pubDate>Mon, 23 Aug 2021 11:06:44 -0400</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_dce_rpc_potential_petit_potam_efs_rpc_call.yml/</guid><description>&lt;p>Detects usage of the windows RPC library Encrypting File System Remote Protocol (MS-EFSRPC). Variations of this RPC are used within the attack refereed to as PetitPotam.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>zeek on My New Hugo Site</title>
+    <link>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/</link>
+    <description>Recent content in zeek on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 20 Sep 2021 12:26:01 -0400</lastBuildDate><atom:link href="https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OMIGOD HTTP No Authentication RCE</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_http_omigod_no_auth_rce.yml/</link>
+      <pubDate>Mon, 20 Sep 2021 12:26:01 -0400</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_http_omigod_no_auth_rce.yml/</guid>
+      <description>&lt;p&gt;Detects the exploitation of OMIGOD (CVE-2021-38647) which allows remote execute (RCE) commands as root with just a single unauthenticated HTTP request. Verify, successful, exploitation by viewing the HTTP client (request) body to see what was passed to the server (using PCAP). Within the client body is where the code execution would occur. Additionally, check the endpoint logs to see if suspicious commands or activity occurred within the timeframe of this HTTP request.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Possible PrintNightmare Print Driver Install</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_dce_rpc_printnightmare_print_driver_install.yml/</link>
+      <pubDate>Tue, 24 Aug 2021 00:58:36 -0400</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_dce_rpc_printnightmare_print_driver_install.yml/</guid>
+      <description>&lt;p&gt;Detects the remote installation of a print driver which is possible indication of the exploitation of PrintNightmare (CVE-2021-1675).
+The occurrence of print drivers being installed remotely via RPC functions should be rare, as print drivers are normally installed locally and or through group policy.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Potential PetitPotam Attack Via EFS RPC Calls</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_dce_rpc_potential_petit_potam_efs_rpc_call.yml/</link>
+      <pubDate>Mon, 23 Aug 2021 11:06:44 -0400</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_dce_rpc_potential_petit_potam_efs_rpc_call.yml/</guid>
+      <description>&lt;p&gt;Detects usage of the windows RPC library Encrypting File System Remote Protocol (MS-EFSRPC). Variations of this RPC are used within the attack refereed to as PetitPotam.
 The usage of this RPC function should be rare if ever used at all.
 Thus usage of this function is uncommon enough that any usage of this RPC function should warrant further investigation to determine if it is legitimate.
-View surrounding logs (within a few minutes before and after) from the Source IP to. Logs from from the Source IP would include dce_rpc, smb_mapping, smb_files, rdp, ntlm, kerberos, etc..'&lt;/p></description></item><item><title>DNS Events Related To Mining Pools</title><link>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_dns_mining_pools.yml/</link><pubDate>Sun, 15 Aug 2021 16:00:14 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_dns_mining_pools.yml/</guid><description>&lt;p>Identifies clients that may be performing DNS lookups associated with common currency mining pools.&lt;/p></description></item><item><title>DNS TOR Proxies</title><link>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_dns_torproxy.yml/</link><pubDate>Sun, 15 Aug 2021 16:00:14 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_dns_torproxy.yml/</guid><description>&lt;p>Identifies IPs performing DNS lookups associated with common Tor proxies.&lt;/p></description></item><item><title>Default Cobalt Strike Certificate</title><link>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_default_cobalt_strike_certificate.yml/</link><pubDate>Wed, 23 Jun 2021 10:17:27 +0545</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_default_cobalt_strike_certificate.yml/</guid><description>&lt;p>Detects the presence of default Cobalt Strike certificate in the HTTPS traffic&lt;/p></description></item><item><title>Publicly Accessible RDP Service</title><link>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_rdp_public_listener.yml/</link><pubDate>Sun, 23 Aug 2020 13:16:42 -0400</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_rdp_public_listener.yml/</guid><description>&lt;p>Detects connections from routable IPs to an RDP listener - which is indicative of a publicly-accessible RDP service.&lt;/p></description></item><item><title>Kerberos Network Traffic RC4 Ticket Encryption</title><link>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_susp_kerberos_rc4.yml/</link><pubDate>Wed, 12 Feb 2020 21:21:46 -0800</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_susp_kerberos_rc4.yml/</guid><description>&lt;p>Detects kerberos TGS request using RC4 encryption which may be indicative of kerberoasting&lt;/p></description></item><item><title>Domain User Enumeration Network Recon 01</title><link>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_dce_rpc_domain_user_enumeration.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_dce_rpc_domain_user_enumeration.yml/</guid><description>&lt;p>Domain user and group enumeration via network reconnaissance. Seen in APT 29 and other common tactics and actors. Detects a set of RPC (remote procedure calls) used to enumerate a domain controller. The rule was created based off the datasets and hackathon from &lt;a href="https://github.com/OTRF/detection-hackathon-apt29">https://github.com/OTRF/detection-hackathon-apt29&lt;/a>&lt;/p></description></item><item><title>First Time Seen Remote Named Pipe - Zeek</title><link>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_smb_converted_win_lm_namedpipe.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_smb_converted_win_lm_namedpipe.yml/</guid><description>&lt;p>This detection excludes known namped pipes accessible remotely and notify on newly observed ones, may help to detect lateral movement and remote exec using named pipes&lt;/p></description></item><item><title>MITRE BZAR Indicators for Execution</title><link>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_dce_rpc_mitre_bzar_execution.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_dce_rpc_mitre_bzar_execution.yml/</guid><description>&lt;p>Windows DCE-RPC functions which indicate an execution techniques on the remote system. All credit for the Zeek mapping of the suspicious endpoint/operation field goes to MITRE&lt;/p></description></item><item><title>MITRE BZAR Indicators for Persistence</title><link>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_dce_rpc_mitre_bzar_persistence.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_dce_rpc_mitre_bzar_persistence.yml/</guid><description>&lt;p>Windows DCE-RPC functions which indicate a persistence techniques on the remote system. All credit for the Zeek mapping of the suspicious endpoint/operation field goes to MITRE.&lt;/p></description></item><item><title>Possible Impacket SecretDump Remote Activity - Zeek</title><link>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_smb_converted_win_impacket_secretdump.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_smb_converted_win_impacket_secretdump.yml/</guid><description>&lt;p>Detect AD credential dumping using impacket secretdump HKTL. Based on the SIGMA rules/windows/builtin/win_impacket_secretdump.yml&lt;/p></description></item><item><title>Remote Task Creation via ATSVC Named Pipe - Zeek</title><link>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_smb_converted_win_atsvc_task.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_smb_converted_win_atsvc_task.yml/</guid><description>&lt;p>Detects remote task creation via at.exe or API interacting with ATSVC namedpipe&lt;/p></description></item><item><title>SMB Spoolss Name Piped Usage</title><link>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_dce_rpc_smb_spoolss_named_pipe.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_dce_rpc_smb_spoolss_named_pipe.yml/</guid><description>&lt;p>Detects the use of the spoolss named pipe over SMB. This can be used to trigger the authentication via NTLM of any machine that has the spoolservice enabled.&lt;/p></description></item><item><title>Suspicious Access to Sensitive File Extensions - Zeek</title><link>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_smb_converted_win_susp_raccess_sensitive_fext.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_smb_converted_win_susp_raccess_sensitive_fext.yml/</guid><description>&lt;p>Detects known sensitive file extensions via Zeek&lt;/p></description></item><item><title>Suspicious DNS Z Flag Bit Set</title><link>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_dns_suspicious_zbit_flag.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_dns_suspicious_zbit_flag.yml/</guid><description>&lt;p>The DNS Z flag is bit within the DNS protocol header that is, per the IETF design, meant to be used reserved (unused). Although recently it has been used in DNSSec, the value being set to anything other than 0 should be rare. Otherwise if it is set to non 0 and DNSSec is being used, then excluding the legitimate domains is low effort and high reward. Determine if multiple of these files were accessed in a short period of time to further enhance the possibility of seeing if this was a one off or the possibility of larger sensitive file gathering. This Sigma query is designed to accompany the Corelight Threat Hunting Guide, which can be found here: &lt;a href="https://www3.corelight.com/corelights-introductory-guide-to-threat-hunting-with-zeek-bro-logs">https://www3.corelight.com/corelights-introductory-guide-to-threat-hunting-with-zeek-bro-logs&lt;/a>&lt;/p></description></item><item><title>Suspicious PsExec Execution - Zeek</title><link>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_smb_converted_win_susp_psexec.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_smb_converted_win_susp_psexec.yml/</guid><description>&lt;p>detects execution of psexec or paexec with renamed service name, this rule helps to filter out the noise if psexec is used for legit purposes or if attacker uses a different psexec client other than sysinternal one&lt;/p></description></item><item><title>Transferring Files with Credential Data via Network Shares - Zeek</title><link>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_smb_converted_win_transferring_files_with_credential_data.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_smb_converted_win_transferring_files_with_credential_data.yml/</guid><description>&lt;p>Transferring files with well-known filenames (sensitive files with credential data) using network shares&lt;/p></description></item><item><title>WebDav Put Request</title><link>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_http_webdav_put_request.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_http_webdav_put_request.yml/</guid><description>&lt;p>A General detection for WebDav user-agent being used to PUT files on a WebDav network share. This could be an indicator of exfiltration.&lt;/p></description></item></channel></rss>
+View surrounding logs (within a few minutes before and after) from the Source IP to. Logs from from the Source IP would include dce_rpc, smb_mapping, smb_files, rdp, ntlm, kerberos, etc..&#39;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>DNS Events Related To Mining Pools</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_dns_mining_pools.yml/</link>
+      <pubDate>Sun, 15 Aug 2021 16:00:14 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_dns_mining_pools.yml/</guid>
+      <description>&lt;p&gt;Identifies clients that may be performing DNS lookups associated with common currency mining pools.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>DNS TOR Proxies</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_dns_torproxy.yml/</link>
+      <pubDate>Sun, 15 Aug 2021 16:00:14 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_dns_torproxy.yml/</guid>
+      <description>&lt;p&gt;Identifies IPs performing DNS lookups associated with common Tor proxies.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Default Cobalt Strike Certificate</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_default_cobalt_strike_certificate.yml/</link>
+      <pubDate>Wed, 23 Jun 2021 10:17:27 +0545</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_default_cobalt_strike_certificate.yml/</guid>
+      <description>&lt;p&gt;Detects the presence of default Cobalt Strike certificate in the HTTPS traffic&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Publicly Accessible RDP Service</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_rdp_public_listener.yml/</link>
+      <pubDate>Sun, 23 Aug 2020 13:16:42 -0400</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_rdp_public_listener.yml/</guid>
+      <description>&lt;p&gt;Detects connections from routable IPs to an RDP listener - which is indicative of a publicly-accessible RDP service.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Kerberos Network Traffic RC4 Ticket Encryption</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_susp_kerberos_rc4.yml/</link>
+      <pubDate>Wed, 12 Feb 2020 21:21:46 -0800</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_susp_kerberos_rc4.yml/</guid>
+      <description>&lt;p&gt;Detects kerberos TGS request using RC4 encryption which may be indicative of kerberoasting&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Domain User Enumeration Network Recon 01</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_dce_rpc_domain_user_enumeration.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_dce_rpc_domain_user_enumeration.yml/</guid>
+      <description>&lt;p&gt;Domain user and group enumeration via network reconnaissance. Seen in APT 29 and other common tactics and actors. Detects a set of RPC (remote procedure calls) used to enumerate a domain controller. The rule was created based off the datasets and hackathon from &lt;a href=&#34;https://github.com/OTRF/detection-hackathon-apt29&#34;&gt;https://github.com/OTRF/detection-hackathon-apt29&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>First Time Seen Remote Named Pipe - Zeek</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_smb_converted_win_lm_namedpipe.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_smb_converted_win_lm_namedpipe.yml/</guid>
+      <description>&lt;p&gt;This detection excludes known namped pipes accessible remotely and notify on newly observed ones, may help to detect lateral movement and remote exec using named pipes&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>MITRE BZAR Indicators for Execution</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_dce_rpc_mitre_bzar_execution.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_dce_rpc_mitre_bzar_execution.yml/</guid>
+      <description>&lt;p&gt;Windows DCE-RPC functions which indicate an execution techniques on the remote system. All credit for the Zeek mapping of the suspicious endpoint/operation field goes to MITRE&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>MITRE BZAR Indicators for Persistence</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_dce_rpc_mitre_bzar_persistence.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_dce_rpc_mitre_bzar_persistence.yml/</guid>
+      <description>&lt;p&gt;Windows DCE-RPC functions which indicate a persistence techniques on the remote system. All credit for the Zeek mapping of the suspicious endpoint/operation field goes to MITRE.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Possible Impacket SecretDump Remote Activity - Zeek</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_smb_converted_win_impacket_secretdump.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_smb_converted_win_impacket_secretdump.yml/</guid>
+      <description>&lt;p&gt;Detect AD credential dumping using impacket secretdump HKTL. Based on the SIGMA rules/windows/builtin/win_impacket_secretdump.yml&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Remote Task Creation via ATSVC Named Pipe - Zeek</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_smb_converted_win_atsvc_task.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_smb_converted_win_atsvc_task.yml/</guid>
+      <description>&lt;p&gt;Detects remote task creation via at.exe or API interacting with ATSVC namedpipe&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>SMB Spoolss Name Piped Usage</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_dce_rpc_smb_spoolss_named_pipe.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_dce_rpc_smb_spoolss_named_pipe.yml/</guid>
+      <description>&lt;p&gt;Detects the use of the spoolss named pipe over SMB. This can be used to trigger the authentication via NTLM of any machine that has the spoolservice enabled.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Suspicious Access to Sensitive File Extensions - Zeek</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_smb_converted_win_susp_raccess_sensitive_fext.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_smb_converted_win_susp_raccess_sensitive_fext.yml/</guid>
+      <description>&lt;p&gt;Detects known sensitive file extensions via Zeek&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Suspicious DNS Z Flag Bit Set</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_dns_suspicious_zbit_flag.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_dns_suspicious_zbit_flag.yml/</guid>
+      <description>&lt;p&gt;The DNS Z flag is bit within the DNS protocol header that is, per the IETF design, meant to be used reserved (unused). Although recently it has been used in DNSSec, the value being set to anything other than 0 should be rare. Otherwise if it is set to non 0 and DNSSec is being used, then excluding the legitimate domains is low effort and high reward. Determine if multiple of these files were accessed in a short period of time to further enhance the possibility of seeing if this was a one off or the possibility of larger sensitive file gathering. This Sigma query is designed to accompany the Corelight Threat Hunting Guide, which can be found here: &lt;a href=&#34;https://www3.corelight.com/corelights-introductory-guide-to-threat-hunting-with-zeek-bro-logs&#34;&gt;https://www3.corelight.com/corelights-introductory-guide-to-threat-hunting-with-zeek-bro-logs&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Suspicious PsExec Execution - Zeek</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_smb_converted_win_susp_psexec.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_smb_converted_win_susp_psexec.yml/</guid>
+      <description>&lt;p&gt;detects execution of psexec or paexec with renamed service name, this rule helps to filter out the noise if psexec is used for legit purposes or if attacker uses a different psexec client other than sysinternal one&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Transferring Files with Credential Data via Network Shares - Zeek</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_smb_converted_win_transferring_files_with_credential_data.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_smb_converted_win_transferring_files_with_credential_data.yml/</guid>
+      <description>&lt;p&gt;Transferring files with well-known filenames (sensitive files with credential data) using network shares&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>WebDav Put Request</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_http_webdav_put_request.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_http_webdav_put_request.yml/</guid>
+      <description>&lt;p&gt;A General detection for WebDav user-agent being used to PUT files on a WebDav network share. This could be an indicator of exfiltration.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

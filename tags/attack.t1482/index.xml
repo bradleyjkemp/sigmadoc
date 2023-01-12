@@ -1,1 +1,92 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>attack.t1482 on My New Hugo Site</title><link>https://bradleyjkemp.dev/sigmadoc/tags/attack.t1482/</link><description>Recent content in attack.t1482 on My New Hugo Site</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 11 Dec 2021 09:38:20 +0100</lastBuildDate><atom:link href="https://bradleyjkemp.dev/sigmadoc/tags/attack.t1482/index.xml" rel="self" type="application/rss+xml"/><item><title>Suspicious Execution of SharpView Aka PowerView</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_sharpview.yml/</link><pubDate>Sat, 11 Dec 2021 09:38:20 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_sharpview.yml/</guid><description>&lt;p>Adversaries may look for details about the network configuration and settings of systems they access or through information discovery of remote systems&lt;/p></description></item><item><title>AzureHound PowerShell Commands</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_azurehound_commands.yml/</link><pubDate>Sat, 23 Oct 2021 18:27:36 -0500</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_azurehound_commands.yml/</guid><description>&lt;p>Detects the execution of AzureHound in PowerShell, a tool to gather data from Azure for BloodHound&lt;/p></description></item><item><title>Correct Execution of Nltest.exe</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_lolbas_execution_of_nltest.yml/</link><pubDate>Wed, 29 Sep 2021 14:33:36 -0700</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_lolbas_execution_of_nltest.yml/</guid><description>&lt;p>The attacker might use LOLBAS nltest.exe for discovery of domain controllers, domain trusts, parent domain and the current user permissions.&lt;/p></description></item><item><title>Suspicious AdFind Execution</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_adfind.yml/</link><pubDate>Sat, 26 Sep 2020 21:34:06 +0700</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_adfind.yml/</guid><description>&lt;p>Detects the execution of a AdFind for Active Directory enumeration&lt;/p></description></item><item><title>Trickbot Malware Recon Activity</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_malware_trickbot_recon_activity.yml/</link><pubDate>Fri, 27 Dec 2019 21:25:53 -0500</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_malware_trickbot_recon_activity.yml/</guid><description>&lt;p>Trickbot enumerates domain/network topology and executes certain commands automatically every few minutes. This detectors attempts to identify that activity based off a command rarely observed in an enterprise network.&lt;/p></description></item><item><title>Bloodhound and Sharphound Hack Tool</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_hack_bloodhound.yml/</link><pubDate>Fri, 20 Dec 2019 14:59:36 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_hack_bloodhound.yml/</guid><description>&lt;p>Detects command line parameters used by Bloodhound and Sharphound hack tools&lt;/p></description></item><item><title>AdFind Usage Detection</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_ad_find_discovery.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_ad_find_discovery.yml/</guid><description>&lt;p>AdFind continues to be seen across majority of breaches. It is used to domain trust discovery to plan out subsequent steps in the attack chain.&lt;/p></description></item><item><title>LDAP Reconnaissance / Active Directory Enumeration</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/ldap/win_ldap_recon.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/ldap/win_ldap_recon.yml/</guid><description>&lt;p>Detects possible Active Directory enumeration via LDAP&lt;/p></description></item><item><title>Recon Activity with NLTEST</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_nltest_recon.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_nltest_recon.yml/</guid><description>&lt;p>Detects nltest commands that can be used for information discovery&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>attack.t1482 on My New Hugo Site</title>
+    <link>https://bradleyjkemp.dev/sigmadoc/tags/attack.t1482/</link>
+    <description>Recent content in attack.t1482 on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 11 Dec 2021 09:38:20 +0100</lastBuildDate><atom:link href="https://bradleyjkemp.dev/sigmadoc/tags/attack.t1482/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Suspicious Execution of SharpView Aka PowerView</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_sharpview.yml/</link>
+      <pubDate>Sat, 11 Dec 2021 09:38:20 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_sharpview.yml/</guid>
+      <description>&lt;p&gt;Adversaries may look for details about the network configuration and settings of systems they access or through information discovery of remote systems&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>AzureHound PowerShell Commands</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_azurehound_commands.yml/</link>
+      <pubDate>Sat, 23 Oct 2021 18:27:36 -0500</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_azurehound_commands.yml/</guid>
+      <description>&lt;p&gt;Detects the execution of AzureHound in PowerShell, a tool to gather data from Azure for BloodHound&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Correct Execution of Nltest.exe</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_lolbas_execution_of_nltest.yml/</link>
+      <pubDate>Wed, 29 Sep 2021 14:33:36 -0700</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_lolbas_execution_of_nltest.yml/</guid>
+      <description>&lt;p&gt;The attacker might use LOLBAS nltest.exe for discovery of domain controllers, domain trusts, parent domain and the current user permissions.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Suspicious AdFind Execution</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_adfind.yml/</link>
+      <pubDate>Sat, 26 Sep 2020 21:34:06 +0700</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_adfind.yml/</guid>
+      <description>&lt;p&gt;Detects the execution of a AdFind for Active Directory enumeration&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Trickbot Malware Recon Activity</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_malware_trickbot_recon_activity.yml/</link>
+      <pubDate>Fri, 27 Dec 2019 21:25:53 -0500</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_malware_trickbot_recon_activity.yml/</guid>
+      <description>&lt;p&gt;Trickbot enumerates domain/network topology and executes certain commands automatically every few minutes. This detectors attempts to identify that activity based off a command rarely observed in an enterprise network.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Bloodhound and Sharphound Hack Tool</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_hack_bloodhound.yml/</link>
+      <pubDate>Fri, 20 Dec 2019 14:59:36 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_hack_bloodhound.yml/</guid>
+      <description>&lt;p&gt;Detects command line parameters used by Bloodhound and Sharphound hack tools&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>AdFind Usage Detection</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_ad_find_discovery.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_ad_find_discovery.yml/</guid>
+      <description>&lt;p&gt;AdFind continues to be seen across majority of breaches. It is used to domain trust discovery to plan out subsequent steps in the attack chain.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>LDAP Reconnaissance / Active Directory Enumeration</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/ldap/win_ldap_recon.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/ldap/win_ldap_recon.yml/</guid>
+      <description>&lt;p&gt;Detects possible Active Directory enumeration via LDAP&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Recon Activity with NLTEST</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_nltest_recon.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_nltest_recon.yml/</guid>
+      <description>&lt;p&gt;Detects nltest commands that can be used for information discovery&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,1 +1,47 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>attack.t1569 on My New Hugo Site</title><link>https://bradleyjkemp.dev/sigmadoc/tags/attack.t1569/</link><description>Recent content in attack.t1569 on My New Hugo Site</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 30 Oct 2020 13:15:11 +0530</lastBuildDate><atom:link href="https://bradleyjkemp.dev/sigmadoc/tags/attack.t1569/index.xml" rel="self" type="application/rss+xml"/><item><title>Psexec Accepteula Condition</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_psexec_eula.yml/</link><pubDate>Fri, 30 Oct 2020 13:15:11 +0530</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_psexec_eula.yml/</guid><description>&lt;p>Detect ed user accept agreement execution in psexec commandline&lt;/p></description></item><item><title>CVE-2021-1675 Print Spooler Exploitation</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/printservice/win_exploit_cve_2021_1675_printspooler_operational.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/printservice/win_exploit_cve_2021_1675_printspooler_operational.yml/</guid><description>&lt;p>Detects driver load events print service operational log that are a sign of successful exploitation attempts against print spooler vulnerability CVE-2021-1675&lt;/p></description></item><item><title>CVE-2021-1675 Print Spooler Exploitation IPC Access</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_exploit_cve_2021_1675_printspooler_security.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_exploit_cve_2021_1675_printspooler_security.yml/</guid><description>&lt;p>Detects remote printer driver load from Detailed File Share in Security logs that are a sign of successful exploitation attempts against print spooler vulnerability CVE-2021-1675 and CVE-2021-34527&lt;/p></description></item><item><title>Possible CVE-2021-1675 Print Spooler Exploitation</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/printservice/win_exploit_cve_2021_1675_printspooler.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/printservice/win_exploit_cve_2021_1675_printspooler.yml/</guid><description>&lt;p>Detects events of driver load errors in print service logs that could be a sign of successful exploitation attempts of print spooler vulnerability CVE-2021-1675&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>attack.t1569 on My New Hugo Site</title>
+    <link>https://bradleyjkemp.dev/sigmadoc/tags/attack.t1569/</link>
+    <description>Recent content in attack.t1569 on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 30 Oct 2020 13:15:11 +0530</lastBuildDate><atom:link href="https://bradleyjkemp.dev/sigmadoc/tags/attack.t1569/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Psexec Accepteula Condition</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_psexec_eula.yml/</link>
+      <pubDate>Fri, 30 Oct 2020 13:15:11 +0530</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_psexec_eula.yml/</guid>
+      <description>&lt;p&gt;Detect ed user accept agreement execution in psexec commandline&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>CVE-2021-1675 Print Spooler Exploitation</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/printservice/win_exploit_cve_2021_1675_printspooler_operational.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/printservice/win_exploit_cve_2021_1675_printspooler_operational.yml/</guid>
+      <description>&lt;p&gt;Detects driver load events print service operational log that are a sign of successful exploitation attempts against print spooler vulnerability CVE-2021-1675&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>CVE-2021-1675 Print Spooler Exploitation IPC Access</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_exploit_cve_2021_1675_printspooler_security.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_exploit_cve_2021_1675_printspooler_security.yml/</guid>
+      <description>&lt;p&gt;Detects remote printer driver load from Detailed File Share in Security logs that are a sign of successful exploitation attempts against print spooler vulnerability CVE-2021-1675 and CVE-2021-34527&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Possible CVE-2021-1675 Print Spooler Exploitation</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/printservice/win_exploit_cve_2021_1675_printspooler.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/printservice/win_exploit_cve_2021_1675_printspooler.yml/</guid>
+      <description>&lt;p&gt;Detects events of driver load errors in print service logs that could be a sign of successful exploitation attempts of print spooler vulnerability CVE-2021-1675&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,14 +1,582 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>file_event on My New Hugo Site</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/</link><description>Recent content in file_event on My New Hugo Site</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 25 Feb 2022 16:02:42 +0100</lastBuildDate><atom:link href="https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/index.xml" rel="self" type="application/rss+xml"/><item><title>Suspicious MSExchangeMailboxReplication ASPX Write</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_susp_exchange_aspx_write.yml/</link><pubDate>Fri, 25 Feb 2022 16:02:42 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_susp_exchange_aspx_write.yml/</guid><description>&lt;p>Detects suspicious activity in which the MSExchangeMailboxReplication process writes .asp and .apsx files to disk, which could be a sign of ProxyShell exploitation&lt;/p></description></item><item><title>GoToAssist Temporary Installation Artefact</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_gotoopener_artefact.yml/</link><pubDate>Sun, 13 Feb 2022 11:04:00 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_gotoopener_artefact.yml/</guid><description>&lt;p>An adversary may use legitimate desktop support and remote access software, such as Team Viewer, Go2Assist, LogMein, AmmyyAdmin, etc, to establish an interactive command and control channel to target systems within networks.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>file_event on My New Hugo Site</title>
+    <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/</link>
+    <description>Recent content in file_event on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 25 Feb 2022 16:02:42 +0100</lastBuildDate><atom:link href="https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Suspicious MSExchangeMailboxReplication ASPX Write</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_susp_exchange_aspx_write.yml/</link>
+      <pubDate>Fri, 25 Feb 2022 16:02:42 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_susp_exchange_aspx_write.yml/</guid>
+      <description>&lt;p&gt;Detects suspicious activity in which the MSExchangeMailboxReplication process writes .asp and .apsx files to disk, which could be a sign of ProxyShell exploitation&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>GoToAssist Temporary Installation Artefact</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_gotoopener_artefact.yml/</link>
+      <pubDate>Sun, 13 Feb 2022 11:04:00 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_gotoopener_artefact.yml/</guid>
+      <description>&lt;p&gt;An adversary may use legitimate desktop support and remote access software, such as Team Viewer, Go2Assist, LogMein, AmmyyAdmin, etc, to establish an interactive command and control channel to target systems within networks.
 These services are commonly used as legitimate technical support software, and may be allowed by application control within a target environment.
-Remote access tools like VNC, Ammyy, and Teamviewer are used frequently when compared with other legitimate software commonly used by adversaries. (Citation: Symantec Living off the Land)&lt;/p></description></item><item><title>ScreenConnect Temporary Installation Artefact</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_screenconnect_artefact.yml/</link><pubDate>Sun, 13 Feb 2022 11:04:00 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_screenconnect_artefact.yml/</guid><description>&lt;p>An adversary may use legitimate desktop support and remote access software, such as Team Viewer, Go2Assist, LogMein, AmmyyAdmin, etc, to establish an interactive command and control channel to target systems within networks.
+Remote access tools like VNC, Ammyy, and Teamviewer are used frequently when compared with other legitimate software commonly used by adversaries. (Citation: Symantec Living off the Land)&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>ScreenConnect Temporary Installation Artefact</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_screenconnect_artefact.yml/</link>
+      <pubDate>Sun, 13 Feb 2022 11:04:00 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_screenconnect_artefact.yml/</guid>
+      <description>&lt;p&gt;An adversary may use legitimate desktop support and remote access software, such as Team Viewer, Go2Assist, LogMein, AmmyyAdmin, etc, to establish an interactive command and control channel to target systems within networks.
 These services are commonly used as legitimate technical support software, and may be allowed by application control within a target environment.
-Remote access tools like VNC, Ammyy, and Teamviewer are used frequently when compared with other legitimate software commonly used by adversaries. (Citation: Symantec Living off the Land)&lt;/p></description></item><item><title>Anydesk Temporary Artefact</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_anydesk_artefact.yml/</link><pubDate>Sat, 12 Feb 2022 15:53:13 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_anydesk_artefact.yml/</guid><description>&lt;p>An adversary may use legitimate desktop support and remote access software, such as Team Viewer, Go2Assist, LogMein, AmmyyAdmin, etc, to establish an interactive command and control channel to target systems within networks.
+Remote access tools like VNC, Ammyy, and Teamviewer are used frequently when compared with other legitimate software commonly used by adversaries. (Citation: Symantec Living off the Land)&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Anydesk Temporary Artefact</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_anydesk_artefact.yml/</link>
+      <pubDate>Sat, 12 Feb 2022 15:53:13 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_anydesk_artefact.yml/</guid>
+      <description>&lt;p&gt;An adversary may use legitimate desktop support and remote access software, such as Team Viewer, Go2Assist, LogMein, AmmyyAdmin, etc, to establish an interactive command and control channel to target systems within networks.
 These services are commonly used as legitimate technical support software, and may be allowed by application control within a target environment.
-Remote access tools like VNC, Ammyy, and Teamviewer are used frequently when compared with other legitimate software commonly used by adversaries. (Citation: Symantec Living off the Land)&lt;/p></description></item><item><title>ISO or Image Mount Indicator in Recent Files</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_iso_file_recent.yml/</link><pubDate>Fri, 11 Feb 2022 12:37:35 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_iso_file_recent.yml/</guid><description>&lt;p>Detects the creation of recent element file that points to an .ISO, .IMG, .VHD or .VHDX file as often used in phishing attacks. This can be a false positive on server systems but on workstations users should rarely mount .iso or .img files.&lt;/p></description></item><item><title>TeamViewer Remote Session</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_susp_teamviewer_remote_session.yml/</link><pubDate>Sun, 30 Jan 2022 22:26:13 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_susp_teamviewer_remote_session.yml/</guid><description>&lt;p>Detects the creation of log files during a TeamViewer remote session&lt;/p></description></item><item><title>Installation of TeamViewer Desktop</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_install_teamviewer_desktop.yml/</link><pubDate>Fri, 28 Jan 2022 16:12:38 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_install_teamviewer_desktop.yml/</guid><description>&lt;p>TeamViewer_Desktop.exe is create during install&lt;/p></description></item><item><title>Suspicious Creation with Colorcpl</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_susp_colorcpl.yml/</link><pubDate>Fri, 21 Jan 2022 14:16:35 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_susp_colorcpl.yml/</guid><description>&lt;p>Once executed, colorcpl.exe will copy the arbitrary file to c:\windows\system32\spool\drivers\color\&lt;/p></description></item><item><title>Suspicious Process Writes Ntds.dit</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_susp_ntds_dit.yml/</link><pubDate>Wed, 12 Jan 2022 11:32:12 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_susp_ntds_dit.yml/</guid><description>&lt;p>Detects suspicious processes that write (copy) a Active Directory database (ntds.dit) file&lt;/p></description></item><item><title>Creation Exe for Service with Unquoted Path</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_creation_unquoted_service_path.yml/</link><pubDate>Thu, 30 Dec 2021 11:58:10 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_creation_unquoted_service_path.yml/</guid><description>&lt;p>Adversaries may execute their own malicious payloads by hijacking vulnerable file path references.
-Adversaries can take advantage of paths that lack surrounding quotations by placing an executable in a higher level directory within the path, so that Windows will choose the adversary&amp;rsquo;s executable to launch.&lt;/p></description></item><item><title>New Shim Database Created in the Default Directory</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_creation_new_shim_database.yml/</link><pubDate>Wed, 29 Dec 2021 17:47:43 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_creation_new_shim_database.yml/</guid><description>&lt;p>Adversaries may establish persistence and/or elevate privileges by executing malicious content triggered by application shims.
-The Microsoft Windows Application Compatibility Infrastructure/Framework (Application Shim) was created to allow for backward compatibility of software as the operating system codebase changes over time.&lt;/p></description></item><item><title>Suspicious Screensaver Binary File Creation</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_creation_scr_binary_file.yml/</link><pubDate>Wed, 29 Dec 2021 17:47:43 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_creation_scr_binary_file.yml/</guid><description>&lt;p>Adversaries may establish persistence by executing malicious content triggered by user inactivity.
-Screensavers are programs that execute after a configurable time of user inactivity and consist of Portable Executable (PE) files with a .scr file extension&lt;/p></description></item><item><title>Suspicious Creation TXT File in User Desktop</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_susp_desktop_txt.yml/</link><pubDate>Sun, 26 Dec 2021 12:09:42 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_susp_desktop_txt.yml/</guid><description>&lt;p>Ransomware create txt file in the user Desktop&lt;/p></description></item><item><title>Mimikatz MemSSP Default Log File Creation</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_mimimaktz_memssp_log_file.yml/</link><pubDate>Mon, 20 Dec 2021 10:49:18 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_mimimaktz_memssp_log_file.yml/</guid><description>&lt;p>Detects Mimikatz MemSSP default log file creation&lt;/p></description></item><item><title>Suspicious Unattend.xml File Access</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_access_susp_unattend_xml.yml/</link><pubDate>Sun, 19 Dec 2021 11:20:42 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_access_susp_unattend_xml.yml/</guid><description>&lt;p>Attempts to access unattend.xml, where credentials are commonly stored, within the Panther directory where installation logs are stored.
-If these files exist, their contents will be displayed. They are used to store credentials/answers during the unattended windows install process&lt;/p></description></item><item><title>NPPSpy Hacktool Usage</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_hktl_nppspy.yml/</link><pubDate>Mon, 29 Nov 2021 16:03:03 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_hktl_nppspy.yml/</guid><description>&lt;p>Detects the use of NPPSpy hacktool that stores cleartext passwords of users that logged in to a local file&lt;/p></description></item><item><title>InstallerFileTakeOver LPE CVE-2021-41379 File Create Event</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_cve_2021_41379_msi_lpe.yml/</link><pubDate>Mon, 22 Nov 2021 14:15:51 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_cve_2021_41379_msi_lpe.yml/</guid><description>&lt;p>Detects signs of the exploitation of LPE CVE-2021-41379 that include an msiexec process that creates an elevation_service.exe file&lt;/p></description></item><item><title>Windows Shell File Write to Suspicious Folder</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_win_shell_write_susp_directory.yml/</link><pubDate>Sat, 20 Nov 2021 15:37:10 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_win_shell_write_susp_directory.yml/</guid><description>&lt;p>Detects a Windows executable that writes files to suspicious folders&lt;/p></description></item><item><title>Suspicious Scheduled Task Write to System32 Tasks</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_susp_task_write.yml/</link><pubDate>Tue, 16 Nov 2021 17:30:47 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_susp_task_write.yml/</guid><description>&lt;p>Detects the creation of tasks from processes executed from suspicious locations&lt;/p></description></item><item><title>Suspicious VHD Image Download From Browser</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_mal_vhd_download.yml/</link><pubDate>Mon, 25 Oct 2021 09:07:22 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_mal_vhd_download.yml/</guid><description>&lt;p>Malware can use mountable Virtual Hard Disk .vhd file to encapsulate payloads and evade security controls&lt;/p></description></item><item><title>PowerShell Writing Startup Shortcuts</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_powershell_startup_shortcuts.yml/</link><pubDate>Sun, 24 Oct 2021 13:32:22 -0400</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_powershell_startup_shortcuts.yml/</guid><description>&lt;p>Attempts to detect PowerShell writing startup shortcuts. This procedure was highlighted in Red Canary Intel Insights Oct. 2021, &amp;ldquo;We frequently observe adversaries using PowerShell to write malicious .lnk files into the startup directory to establish persistence. Accordingly, this detection opportunity is likely to identify persistence mechanisms in multiple threats. In the context of Yellow Cockatoo, this persistence mechanism eventually launches the command-line script that leads to the installation of a malicious DLL&amp;rdquo;&lt;/p></description></item><item><title>Suspicious Word Cab File Write CVE-2021-40444</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_winword_cve_2021_40444.yml/</link><pubDate>Fri, 10 Sep 2021 18:13:09 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_winword_cve_2021_40444.yml/</guid><description>&lt;p>Detects file creation patterns noticeable during the exploitation of CVE-2021-40444&lt;/p></description></item><item><title>UAC Bypass Abusing Winsat Path Parsing - File</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_uac_bypass_winsat.yml/</link><pubDate>Tue, 31 Aug 2021 12:45:07 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_uac_bypass_winsat.yml/</guid><description>&lt;p>Detects the pattern of UAC Bypass using a path parsing issue in winsat.exe (UACMe 52)&lt;/p></description></item><item><title>UAC Bypass Using .NET Code Profiler on MMC</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_uac_bypass_dotnet_profiler.yml/</link><pubDate>Tue, 31 Aug 2021 12:45:07 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_uac_bypass_dotnet_profiler.yml/</guid><description>&lt;p>Detects the pattern of UAC Bypass using .NET Code Profiler and mmc.exe DLL hijacking (UACMe 39)&lt;/p></description></item><item><title>UAC Bypass Using Consent and Comctl32 - File</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_uac_bypass_consent_comctl32.yml/</link><pubDate>Tue, 31 Aug 2021 12:45:07 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_uac_bypass_consent_comctl32.yml/</guid><description>&lt;p>Detects the pattern of UAC Bypass using consent.exe and comctl32.dll (UACMe 22)&lt;/p></description></item><item><title>UAC Bypass Using IEInstal - File</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_uac_bypass_ieinstal.yml/</link><pubDate>Tue, 31 Aug 2021 12:45:07 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_uac_bypass_ieinstal.yml/</guid><description>&lt;p>Detects the pattern of UAC Bypass using IEInstal.exe (UACMe 64)&lt;/p></description></item><item><title>UAC Bypass Using MSConfig Token Modification - File</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_uac_bypass_msconfig_gui.yml/</link><pubDate>Tue, 31 Aug 2021 12:45:07 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_uac_bypass_msconfig_gui.yml/</guid><description>&lt;p>Detects the pattern of UAC Bypass using a msconfig GUI hack (UACMe 55)&lt;/p></description></item><item><title>UAC Bypass Using NTFS Reparse Point - File</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_uac_bypass_ntfs_reparse_point.yml/</link><pubDate>Tue, 31 Aug 2021 12:45:07 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_uac_bypass_ntfs_reparse_point.yml/</guid><description>&lt;p>Detects the pattern of UAC Bypass using NTFS reparse point and wusa.exe DLL hijacking (UACMe 36)&lt;/p></description></item><item><title>UAC Bypass Using Windows Media Player - File</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_uac_bypass_wmp.yml/</link><pubDate>Tue, 31 Aug 2021 12:45:07 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_uac_bypass_wmp.yml/</guid><description>&lt;p>Detects the pattern of UAC Bypass using Windows Media Player osksupport.dll (UACMe 32)&lt;/p></description></item><item><title>Created Files by Office Applications</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_script_creation_by_office_using_file_ext.yml/</link><pubDate>Mon, 30 Aug 2021 21:48:03 -0600</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_script_creation_by_office_using_file_ext.yml/</guid><description>&lt;p>This rule will monitor executable and script file creation by office applications. Please add more file extensions or magic bytes to the logic of your choice.&lt;/p></description></item><item><title>Powerup Write Hijack DLL</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_detect_powerup_dllhijacking.yml/</link><pubDate>Sat, 21 Aug 2021 17:47:56 +0530</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_detect_powerup_dllhijacking.yml/</guid><description>&lt;p>Powerup tool&amp;rsquo;s Write Hijack DLL exploits DLL hijacking for privilege escalation. In it&amp;rsquo;s default mode, it builds a self deleting .bat file which executes malicious command. The detection rule relies on creation of the malicious bat file (debug.bat by default).&lt;/p></description></item><item><title>CVE-2021-31979 CVE-2021-33771 Exploits by Sourgum</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_cve_2021_31979_cve_2021_33771_exploits.yml/</link><pubDate>Fri, 16 Jul 2021 22:09:07 +0700</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_cve_2021_31979_cve_2021_33771_exploits.yml/</guid><description>&lt;p>Detects patterns as noticed in exploitation of Windows CVE-2021-31979 CVE-2021-33771 vulnerability and DevilsTongue malware by threat group Sourgum&lt;/p></description></item><item><title>Suspicious ADSI-Cache Usage By Unknown Tool</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_susp_adsi_cache_usage.yml/</link><pubDate>Thu, 26 Mar 2020 15:13:36 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_susp_adsi_cache_usage.yml/</guid><description>&lt;p>Detects the usage of ADSI (LDAP) operations by tools. This may also detect tools like LDAPFragger.&lt;/p></description></item><item><title>Suspicious desktop.ini Action</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_susp_desktop_ini.yml/</link><pubDate>Thu, 19 Mar 2020 21:36:14 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_susp_desktop_ini.yml/</guid><description>&lt;p>Detects unusual processes accessing desktop.ini, which can be leveraged to alter how Explorer displays a folder&amp;rsquo;s content (i.e. renaming files) without changing them on disk.&lt;/p></description></item><item><title>Powershell Profile.ps1 Modification</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_suspicious_powershell_profile_create.yml/</link><pubDate>Fri, 25 Oct 2019 00:14:21 +0700</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_suspicious_powershell_profile_create.yml/</guid><description>&lt;p>Detects a change in profile.ps1 of the Powershell profile&lt;/p></description></item><item><title>File Created with System Process Name</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_creation_system_file.yml/</link><pubDate>Wed, 16 Jan 2019 23:36:31 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_creation_system_file.yml/</guid><description>&lt;p>Detects the creation of an executable with a system process name in a suspicious folder&lt;/p></description></item><item><title>Detection of SafetyKatz</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_ghostpack_safetykatz.yml/</link><pubDate>Tue, 24 Jul 2018 23:51:46 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_ghostpack_safetykatz.yml/</guid><description>&lt;p>Detects possible SafetyKatz Behaviour&lt;/p></description></item><item><title>QuarksPwDump Dump File</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_quarkspw_filedump.yml/</link><pubDate>Sat, 10 Feb 2018 15:25:36 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_quarkspw_filedump.yml/</guid><description>&lt;p>Detects a dump file written by QuarksPwDump password dumper&lt;/p></description></item><item><title>CVE-2021-1675 Print Spooler Exploitation Filename Pattern</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_cve_2021_1675_printspooler.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_cve_2021_1675_printspooler.yml/</guid><description>&lt;p>Detects the default filename used in PoC code against print spooler vulnerability CVE-2021-1675&lt;/p></description></item><item><title>CVE-2021-26858 Exchange Exploitation</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_cve_2021_26858_msexchange.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_cve_2021_26858_msexchange.yml/</guid><description>&lt;p>Detects possible successful exploitation for vulnerability described in CVE-2021-26858 by looking for | creation of non-standard files on disk by Exchange Server’s Unified Messaging service | which could indicate dropping web shells or other malicious content&lt;/p></description></item><item><title>Dynamic C Sharp Compile Artefact</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_csharp_compile_artefact.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_csharp_compile_artefact.yml/</guid><description>&lt;p>When C# is compiled dynamically, a .cmdline file will be created as a part of the process.
+Remote access tools like VNC, Ammyy, and Teamviewer are used frequently when compared with other legitimate software commonly used by adversaries. (Citation: Symantec Living off the Land)&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>ISO or Image Mount Indicator in Recent Files</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_iso_file_recent.yml/</link>
+      <pubDate>Fri, 11 Feb 2022 12:37:35 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_iso_file_recent.yml/</guid>
+      <description>&lt;p&gt;Detects the creation of recent element file that points to an .ISO, .IMG, .VHD or .VHDX file as often used in phishing attacks. This can be a false positive on server systems but on workstations users should rarely mount .iso or .img files.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>TeamViewer Remote Session</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_susp_teamviewer_remote_session.yml/</link>
+      <pubDate>Sun, 30 Jan 2022 22:26:13 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_susp_teamviewer_remote_session.yml/</guid>
+      <description>&lt;p&gt;Detects the creation of log files during a TeamViewer remote session&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Installation of TeamViewer Desktop</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_install_teamviewer_desktop.yml/</link>
+      <pubDate>Fri, 28 Jan 2022 16:12:38 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_install_teamviewer_desktop.yml/</guid>
+      <description>&lt;p&gt;TeamViewer_Desktop.exe is create during install&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Suspicious Creation with Colorcpl</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_susp_colorcpl.yml/</link>
+      <pubDate>Fri, 21 Jan 2022 14:16:35 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_susp_colorcpl.yml/</guid>
+      <description>&lt;p&gt;Once executed, colorcpl.exe will copy the arbitrary file to c:\windows\system32\spool\drivers\color\&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Suspicious Process Writes Ntds.dit</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_susp_ntds_dit.yml/</link>
+      <pubDate>Wed, 12 Jan 2022 11:32:12 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_susp_ntds_dit.yml/</guid>
+      <description>&lt;p&gt;Detects suspicious processes that write (copy) a Active Directory database (ntds.dit) file&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Creation Exe for Service with Unquoted Path</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_creation_unquoted_service_path.yml/</link>
+      <pubDate>Thu, 30 Dec 2021 11:58:10 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_creation_unquoted_service_path.yml/</guid>
+      <description>&lt;p&gt;Adversaries may execute their own malicious payloads by hijacking vulnerable file path references.
+Adversaries can take advantage of paths that lack surrounding quotations by placing an executable in a higher level directory within the path, so that Windows will choose the adversary&amp;rsquo;s executable to launch.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>New Shim Database Created in the Default Directory</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_creation_new_shim_database.yml/</link>
+      <pubDate>Wed, 29 Dec 2021 17:47:43 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_creation_new_shim_database.yml/</guid>
+      <description>&lt;p&gt;Adversaries may establish persistence and/or elevate privileges by executing malicious content triggered by application shims.
+The Microsoft Windows Application Compatibility Infrastructure/Framework (Application Shim) was created to allow for backward compatibility of software as the operating system codebase changes over time.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Suspicious Screensaver Binary File Creation</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_creation_scr_binary_file.yml/</link>
+      <pubDate>Wed, 29 Dec 2021 17:47:43 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_creation_scr_binary_file.yml/</guid>
+      <description>&lt;p&gt;Adversaries may establish persistence by executing malicious content triggered by user inactivity.
+Screensavers are programs that execute after a configurable time of user inactivity and consist of Portable Executable (PE) files with a .scr file extension&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Suspicious Creation TXT File in User Desktop</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_susp_desktop_txt.yml/</link>
+      <pubDate>Sun, 26 Dec 2021 12:09:42 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_susp_desktop_txt.yml/</guid>
+      <description>&lt;p&gt;Ransomware create txt file in the user Desktop&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Mimikatz MemSSP Default Log File Creation</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_mimimaktz_memssp_log_file.yml/</link>
+      <pubDate>Mon, 20 Dec 2021 10:49:18 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_mimimaktz_memssp_log_file.yml/</guid>
+      <description>&lt;p&gt;Detects Mimikatz MemSSP default log file creation&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Suspicious Unattend.xml File Access</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_access_susp_unattend_xml.yml/</link>
+      <pubDate>Sun, 19 Dec 2021 11:20:42 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_access_susp_unattend_xml.yml/</guid>
+      <description>&lt;p&gt;Attempts to access unattend.xml, where credentials are commonly stored, within the Panther directory where installation logs are stored.
+If these files exist, their contents will be displayed. They are used to store credentials/answers during the unattended windows install process&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>NPPSpy Hacktool Usage</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_hktl_nppspy.yml/</link>
+      <pubDate>Mon, 29 Nov 2021 16:03:03 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_hktl_nppspy.yml/</guid>
+      <description>&lt;p&gt;Detects the use of NPPSpy hacktool that stores cleartext passwords of users that logged in to a local file&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>InstallerFileTakeOver LPE CVE-2021-41379 File Create Event</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_cve_2021_41379_msi_lpe.yml/</link>
+      <pubDate>Mon, 22 Nov 2021 14:15:51 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_cve_2021_41379_msi_lpe.yml/</guid>
+      <description>&lt;p&gt;Detects signs of the exploitation of LPE CVE-2021-41379 that include an msiexec process that creates an elevation_service.exe file&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Windows Shell File Write to Suspicious Folder</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_win_shell_write_susp_directory.yml/</link>
+      <pubDate>Sat, 20 Nov 2021 15:37:10 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_win_shell_write_susp_directory.yml/</guid>
+      <description>&lt;p&gt;Detects a Windows executable that writes files to suspicious folders&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Suspicious Scheduled Task Write to System32 Tasks</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_susp_task_write.yml/</link>
+      <pubDate>Tue, 16 Nov 2021 17:30:47 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_susp_task_write.yml/</guid>
+      <description>&lt;p&gt;Detects the creation of tasks from processes executed from suspicious locations&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Suspicious VHD Image Download From Browser</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_mal_vhd_download.yml/</link>
+      <pubDate>Mon, 25 Oct 2021 09:07:22 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_mal_vhd_download.yml/</guid>
+      <description>&lt;p&gt;Malware can use mountable Virtual Hard Disk .vhd file to encapsulate payloads and evade security controls&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>PowerShell Writing Startup Shortcuts</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_powershell_startup_shortcuts.yml/</link>
+      <pubDate>Sun, 24 Oct 2021 13:32:22 -0400</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_powershell_startup_shortcuts.yml/</guid>
+      <description>&lt;p&gt;Attempts to detect PowerShell writing startup shortcuts. This procedure was highlighted in Red Canary Intel Insights Oct. 2021, &amp;ldquo;We frequently observe adversaries using PowerShell to write malicious .lnk files into the startup directory to establish persistence. Accordingly, this detection opportunity is likely to identify persistence mechanisms in multiple threats. In the context of Yellow Cockatoo, this persistence mechanism eventually launches the command-line script that leads to the installation of a malicious DLL&amp;rdquo;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Suspicious Word Cab File Write CVE-2021-40444</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_winword_cve_2021_40444.yml/</link>
+      <pubDate>Fri, 10 Sep 2021 18:13:09 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_winword_cve_2021_40444.yml/</guid>
+      <description>&lt;p&gt;Detects file creation patterns noticeable during the exploitation of CVE-2021-40444&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>UAC Bypass Abusing Winsat Path Parsing - File</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_uac_bypass_winsat.yml/</link>
+      <pubDate>Tue, 31 Aug 2021 12:45:07 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_uac_bypass_winsat.yml/</guid>
+      <description>&lt;p&gt;Detects the pattern of UAC Bypass using a path parsing issue in winsat.exe (UACMe 52)&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>UAC Bypass Using .NET Code Profiler on MMC</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_uac_bypass_dotnet_profiler.yml/</link>
+      <pubDate>Tue, 31 Aug 2021 12:45:07 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_uac_bypass_dotnet_profiler.yml/</guid>
+      <description>&lt;p&gt;Detects the pattern of UAC Bypass using .NET Code Profiler and mmc.exe DLL hijacking (UACMe 39)&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>UAC Bypass Using Consent and Comctl32 - File</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_uac_bypass_consent_comctl32.yml/</link>
+      <pubDate>Tue, 31 Aug 2021 12:45:07 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_uac_bypass_consent_comctl32.yml/</guid>
+      <description>&lt;p&gt;Detects the pattern of UAC Bypass using consent.exe and comctl32.dll (UACMe 22)&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>UAC Bypass Using IEInstal - File</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_uac_bypass_ieinstal.yml/</link>
+      <pubDate>Tue, 31 Aug 2021 12:45:07 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_uac_bypass_ieinstal.yml/</guid>
+      <description>&lt;p&gt;Detects the pattern of UAC Bypass using IEInstal.exe (UACMe 64)&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>UAC Bypass Using MSConfig Token Modification - File</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_uac_bypass_msconfig_gui.yml/</link>
+      <pubDate>Tue, 31 Aug 2021 12:45:07 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_uac_bypass_msconfig_gui.yml/</guid>
+      <description>&lt;p&gt;Detects the pattern of UAC Bypass using a msconfig GUI hack (UACMe 55)&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>UAC Bypass Using NTFS Reparse Point - File</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_uac_bypass_ntfs_reparse_point.yml/</link>
+      <pubDate>Tue, 31 Aug 2021 12:45:07 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_uac_bypass_ntfs_reparse_point.yml/</guid>
+      <description>&lt;p&gt;Detects the pattern of UAC Bypass using NTFS reparse point and wusa.exe DLL hijacking (UACMe 36)&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>UAC Bypass Using Windows Media Player - File</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_uac_bypass_wmp.yml/</link>
+      <pubDate>Tue, 31 Aug 2021 12:45:07 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_uac_bypass_wmp.yml/</guid>
+      <description>&lt;p&gt;Detects the pattern of UAC Bypass using Windows Media Player osksupport.dll (UACMe 32)&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Created Files by Office Applications</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_script_creation_by_office_using_file_ext.yml/</link>
+      <pubDate>Mon, 30 Aug 2021 21:48:03 -0600</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_script_creation_by_office_using_file_ext.yml/</guid>
+      <description>&lt;p&gt;This rule will monitor executable and script file creation by office applications. Please add more file extensions or magic bytes to the logic of your choice.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Powerup Write Hijack DLL</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_detect_powerup_dllhijacking.yml/</link>
+      <pubDate>Sat, 21 Aug 2021 17:47:56 +0530</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_detect_powerup_dllhijacking.yml/</guid>
+      <description>&lt;p&gt;Powerup tool&amp;rsquo;s Write Hijack DLL exploits DLL hijacking for privilege escalation. In it&amp;rsquo;s default mode, it builds a self deleting .bat file which executes malicious command. The detection rule relies on creation of the malicious bat file (debug.bat by default).&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>CVE-2021-31979 CVE-2021-33771 Exploits by Sourgum</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_cve_2021_31979_cve_2021_33771_exploits.yml/</link>
+      <pubDate>Fri, 16 Jul 2021 22:09:07 +0700</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_cve_2021_31979_cve_2021_33771_exploits.yml/</guid>
+      <description>&lt;p&gt;Detects patterns as noticed in exploitation of Windows CVE-2021-31979 CVE-2021-33771 vulnerability and DevilsTongue malware by threat group Sourgum&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Suspicious ADSI-Cache Usage By Unknown Tool</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_susp_adsi_cache_usage.yml/</link>
+      <pubDate>Thu, 26 Mar 2020 15:13:36 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_susp_adsi_cache_usage.yml/</guid>
+      <description>&lt;p&gt;Detects the usage of ADSI (LDAP) operations by tools. This may also detect tools like LDAPFragger.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Suspicious desktop.ini Action</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_susp_desktop_ini.yml/</link>
+      <pubDate>Thu, 19 Mar 2020 21:36:14 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_susp_desktop_ini.yml/</guid>
+      <description>&lt;p&gt;Detects unusual processes accessing desktop.ini, which can be leveraged to alter how Explorer displays a folder&amp;rsquo;s content (i.e. renaming files) without changing them on disk.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Powershell Profile.ps1 Modification</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_suspicious_powershell_profile_create.yml/</link>
+      <pubDate>Fri, 25 Oct 2019 00:14:21 +0700</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_suspicious_powershell_profile_create.yml/</guid>
+      <description>&lt;p&gt;Detects a change in profile.ps1 of the Powershell profile&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>File Created with System Process Name</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_creation_system_file.yml/</link>
+      <pubDate>Wed, 16 Jan 2019 23:36:31 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_creation_system_file.yml/</guid>
+      <description>&lt;p&gt;Detects the creation of an executable with a system process name in a suspicious folder&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Detection of SafetyKatz</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_ghostpack_safetykatz.yml/</link>
+      <pubDate>Tue, 24 Jul 2018 23:51:46 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_ghostpack_safetykatz.yml/</guid>
+      <description>&lt;p&gt;Detects possible SafetyKatz Behaviour&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>QuarksPwDump Dump File</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_quarkspw_filedump.yml/</link>
+      <pubDate>Sat, 10 Feb 2018 15:25:36 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_quarkspw_filedump.yml/</guid>
+      <description>&lt;p&gt;Detects a dump file written by QuarksPwDump password dumper&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>CVE-2021-1675 Print Spooler Exploitation Filename Pattern</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_cve_2021_1675_printspooler.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_cve_2021_1675_printspooler.yml/</guid>
+      <description>&lt;p&gt;Detects the default filename used in PoC code against print spooler vulnerability CVE-2021-1675&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>CVE-2021-26858 Exchange Exploitation</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_cve_2021_26858_msexchange.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_cve_2021_26858_msexchange.yml/</guid>
+      <description>&lt;p&gt;Detects possible successful exploitation for vulnerability described in CVE-2021-26858 by looking for | creation of non-standard files on disk by Exchange Server’s Unified Messaging service | which could indicate dropping web shells or other malicious content&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Dynamic C Sharp Compile Artefact</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_csharp_compile_artefact.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_csharp_compile_artefact.yml/</guid>
+      <description>&lt;p&gt;When C# is compiled dynamically, a .cmdline file will be created as a part of the process.
 Certain processes are not typically observed compiling C# code, but can do so without touching disk.
-This can be used to unpack a payload for execution&lt;/p></description></item><item><title>Hijack Legit RDP Session to Move Laterally</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_tsclient_filewrite_startup.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_tsclient_filewrite_startup.yml/</guid><description>&lt;p>Detects the usage of tsclient share to place a backdoor on the RDP source machine&amp;rsquo;s startup folder&lt;/p></description></item><item><title>LSASS Memory Dump File Creation</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_lsass_memory_dump_file_creation.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_lsass_memory_dump_file_creation.yml/</guid><description>&lt;p>LSASS memory dump creation using operating systems utilities. Procdump will use process name in output file if no name is specified&lt;/p></description></item><item><title>Malicious PowerShell Commandlet Names</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_powershell_exploit_scripts.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_powershell_exploit_scripts.yml/</guid><description>&lt;p>Detects the creation of known powershell scripts for exploitation&lt;/p></description></item><item><title>Microsoft Office Add-In Loading</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_office_persistence.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_office_persistence.yml/</guid><description>&lt;p>Detects add-ins that load when Microsoft Word or Excel starts (.wll/.xll are simply .dll fit for Word or Excel).&lt;/p></description></item><item><title>Mimikatz Kirbi File Creation</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_mimikatz_kirbi_file_creation.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_mimikatz_kirbi_file_creation.yml/</guid><description>&lt;p>Detects the creation of files that contain Kerberos tickets based on an extension used by the popular tool Mimikatz&lt;/p></description></item><item><title>Octopus Scanner Malware</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_mal_octopus_scanner.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_mal_octopus_scanner.yml/</guid><description>&lt;p>Detects Octopus Scanner Malware.&lt;/p></description></item><item><title>Outlook C2 Macro Creation</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_outlook_c2_macro_creation.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_outlook_c2_macro_creation.yml/</guid><description>&lt;p>Detects the creation of a macro file for Outlook. Goes with win_outlook_c2_registry_key. VbaProject.OTM is explicitly mentioned in T1137. Particularly interesting if both events Registry &amp;amp; File Creation happens at the same time.&lt;/p></description></item><item><title>Outlook Form Installation</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_outlook_newform.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_outlook_newform.yml/</guid><description>&lt;p>Detects the creation of new Outlook form which can contain malicious code&lt;/p></description></item><item><title>PCRE.NET Package Temp Files</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_pcre_net_temp_file.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_pcre_net_temp_file.yml/</guid><description>&lt;p>Detects processes creating temp files related to PCRE.NET package&lt;/p></description></item><item><title>Pingback Backdoor</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_pingback_backdoor.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_pingback_backdoor.yml/</guid><description>&lt;p>Detects the use of Pingback backdoor that creates ICMP tunnel for C2 as described in the trustwave report&lt;/p></description></item><item><title>Rclone Config File Creation</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_rclone_exec_file.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_rclone_exec_file.yml/</guid><description>&lt;p>Detects Rclone config file being created&lt;/p></description></item><item><title>RedMimicry Winnti Playbook Dropped File</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_redmimicry_winnti_filedrop.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_redmimicry_winnti_filedrop.yml/</guid><description>&lt;p>Detects actions caused by the RedMimicry Winnti playbook&lt;/p></description></item><item><title>Startup Folder File Write</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_startup_folder_file_write.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_startup_folder_file_write.yml/</guid><description>&lt;p>A General detection for files being created in the Windows startup directory. This could be an indicator of persistence.&lt;/p></description></item><item><title>Suspcious CLR Logs Creation</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_susp_clr_logs.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_susp_clr_logs.yml/</guid><description>&lt;p>Detects suspicious .NET assembly executions. Could detect using Cobalt Strike&amp;rsquo;s command execute-assembly.&lt;/p></description></item><item><title>Suspicious Desktopimgdownldr Target File</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_susp_desktopimgdownldr_file.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_susp_desktopimgdownldr_file.yml/</guid><description>&lt;p>Detects a suspicious Microsoft desktopimgdownldr file creation that stores a file to a suspicious location or contains a file with a suspicious extension&lt;/p></description></item><item><title>Suspicious Interactive PowerShell as SYSTEM</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_susp_system_interactive_powershell.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_susp_system_interactive_powershell.yml/</guid><description>&lt;p>Detects the creation of files that indicator an interactive use of PowerShell in the SYSTEM user context&lt;/p></description></item><item><title>Suspicious PFX File Creation</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_susp_pfx_file_creation.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_susp_pfx_file_creation.yml/</guid><description>&lt;p>A general detection for processes creating PFX files. This could be an indicator of an adversary exporting a local certificate to a PFX file.&lt;/p></description></item><item><title>Suspicious PROCEXP152.sys File Created In TMP</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_susp_procexplorer_driver_created_in_tmp_folder.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_susp_procexplorer_driver_created_in_tmp_folder.yml/</guid><description>&lt;p>Detects the creation of the PROCEXP152.sys file in the application-data local temporary folder. This driver is used by Sysinternals Process Explorer but also by KDU (&lt;a href="https://github.com/hfiref0x/KDU">https://github.com/hfiref0x/KDU&lt;/a>) or Ghost-In-The-Logs (&lt;a href="https://github.com/bats3c/Ghost-In-The-Logs),">https://github.com/bats3c/Ghost-In-The-Logs),&lt;/a> which uses KDU.&lt;/p></description></item><item><title>WMI Persistence - Script Event Consumer File Write</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_wmi_persistence_script_event_consumer_write.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_wmi_persistence_script_event_consumer_write.yml/</guid><description>&lt;p>Detects file writes of WMI script event consumer&lt;/p></description></item><item><title>Wmiprvse Wbemcomn DLL Hijack</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_wmiprvse_wbemcomn_dll_hijack.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_wmiprvse_wbemcomn_dll_hijack.yml/</guid><description>&lt;p>Detects a threat actor creating a file named &lt;code>wbemcomn.dll&lt;/code> in the &lt;code>C:\Windows\System32\wbem\&lt;/code> directory over the network and loading it for a WMI DLL Hijack scenario.&lt;/p></description></item><item><title>Writing Local Admin Share</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_writing_local_admin_share.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_writing_local_admin_share.yml/</guid><description>&lt;p>Aversaries may use to interact with a remote network share using Server Message Block (SMB).
-This technique is used by post-exploitation frameworks.&lt;/p></description></item></channel></rss>
+This can be used to unpack a payload for execution&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Hijack Legit RDP Session to Move Laterally</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_tsclient_filewrite_startup.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_tsclient_filewrite_startup.yml/</guid>
+      <description>&lt;p&gt;Detects the usage of tsclient share to place a backdoor on the RDP source machine&amp;rsquo;s startup folder&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>LSASS Memory Dump File Creation</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_lsass_memory_dump_file_creation.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_lsass_memory_dump_file_creation.yml/</guid>
+      <description>&lt;p&gt;LSASS memory dump creation using operating systems utilities. Procdump will use process name in output file if no name is specified&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Malicious PowerShell Commandlet Names</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_powershell_exploit_scripts.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_powershell_exploit_scripts.yml/</guid>
+      <description>&lt;p&gt;Detects the creation of known powershell scripts for exploitation&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Microsoft Office Add-In Loading</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_office_persistence.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_office_persistence.yml/</guid>
+      <description>&lt;p&gt;Detects add-ins that load when Microsoft Word or Excel starts (.wll/.xll are simply .dll fit for Word or Excel).&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Mimikatz Kirbi File Creation</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_mimikatz_kirbi_file_creation.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_mimikatz_kirbi_file_creation.yml/</guid>
+      <description>&lt;p&gt;Detects the creation of files that contain Kerberos tickets based on an extension used by the popular tool Mimikatz&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Octopus Scanner Malware</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_mal_octopus_scanner.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_mal_octopus_scanner.yml/</guid>
+      <description>&lt;p&gt;Detects Octopus Scanner Malware.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Outlook C2 Macro Creation</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_outlook_c2_macro_creation.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_outlook_c2_macro_creation.yml/</guid>
+      <description>&lt;p&gt;Detects the creation of a macro file for Outlook. Goes with win_outlook_c2_registry_key. VbaProject.OTM is explicitly mentioned in T1137. Particularly interesting if both events Registry &amp;amp; File Creation happens at the same time.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Outlook Form Installation</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_outlook_newform.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_outlook_newform.yml/</guid>
+      <description>&lt;p&gt;Detects the creation of new Outlook form which can contain malicious code&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>PCRE.NET Package Temp Files</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_pcre_net_temp_file.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_pcre_net_temp_file.yml/</guid>
+      <description>&lt;p&gt;Detects processes creating temp files related to PCRE.NET package&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Pingback Backdoor</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_pingback_backdoor.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_pingback_backdoor.yml/</guid>
+      <description>&lt;p&gt;Detects the use of Pingback backdoor that creates ICMP tunnel for C2 as described in the trustwave report&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Rclone Config File Creation</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_rclone_exec_file.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_rclone_exec_file.yml/</guid>
+      <description>&lt;p&gt;Detects Rclone config file being created&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>RedMimicry Winnti Playbook Dropped File</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_redmimicry_winnti_filedrop.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_redmimicry_winnti_filedrop.yml/</guid>
+      <description>&lt;p&gt;Detects actions caused by the RedMimicry Winnti playbook&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Startup Folder File Write</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_startup_folder_file_write.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_startup_folder_file_write.yml/</guid>
+      <description>&lt;p&gt;A General detection for files being created in the Windows startup directory. This could be an indicator of persistence.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Suspcious CLR Logs Creation</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_susp_clr_logs.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_susp_clr_logs.yml/</guid>
+      <description>&lt;p&gt;Detects suspicious .NET assembly executions. Could detect using Cobalt Strike&amp;rsquo;s command execute-assembly.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Suspicious Desktopimgdownldr Target File</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_susp_desktopimgdownldr_file.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_susp_desktopimgdownldr_file.yml/</guid>
+      <description>&lt;p&gt;Detects a suspicious Microsoft desktopimgdownldr file creation that stores a file to a suspicious location or contains a file with a suspicious extension&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Suspicious Interactive PowerShell as SYSTEM</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_susp_system_interactive_powershell.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_susp_system_interactive_powershell.yml/</guid>
+      <description>&lt;p&gt;Detects the creation of files that indicator an interactive use of PowerShell in the SYSTEM user context&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Suspicious PFX File Creation</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_susp_pfx_file_creation.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_susp_pfx_file_creation.yml/</guid>
+      <description>&lt;p&gt;A general detection for processes creating PFX files. This could be an indicator of an adversary exporting a local certificate to a PFX file.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Suspicious PROCEXP152.sys File Created In TMP</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_susp_procexplorer_driver_created_in_tmp_folder.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_susp_procexplorer_driver_created_in_tmp_folder.yml/</guid>
+      <description>&lt;p&gt;Detects the creation of the PROCEXP152.sys file in the application-data local temporary folder. This driver is used by Sysinternals Process Explorer but also by KDU (&lt;a href=&#34;https://github.com/hfiref0x/KDU&#34;&gt;https://github.com/hfiref0x/KDU&lt;/a&gt;) or Ghost-In-The-Logs (&lt;a href=&#34;https://github.com/bats3c/Ghost-In-The-Logs)&#34;&gt;https://github.com/bats3c/Ghost-In-The-Logs)&lt;/a&gt;, which uses KDU.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>WMI Persistence - Script Event Consumer File Write</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_wmi_persistence_script_event_consumer_write.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_wmi_persistence_script_event_consumer_write.yml/</guid>
+      <description>&lt;p&gt;Detects file writes of WMI script event consumer&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Wmiprvse Wbemcomn DLL Hijack</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_wmiprvse_wbemcomn_dll_hijack.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_wmiprvse_wbemcomn_dll_hijack.yml/</guid>
+      <description>&lt;p&gt;Detects a threat actor creating a file named &lt;code&gt;wbemcomn.dll&lt;/code&gt; in the &lt;code&gt;C:\Windows\System32\wbem\&lt;/code&gt; directory over the network and loading it for a WMI DLL Hijack scenario.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Writing Local Admin Share</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_writing_local_admin_share.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_writing_local_admin_share.yml/</guid>
+      <description>&lt;p&gt;Aversaries may use to interact with a remote network share using Server Message Block (SMB).
+This technique is used by post-exploitation frameworks.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

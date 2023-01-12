@@ -1,1 +1,74 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>attack.t1486 on My New Hugo Site</title><link>https://bradleyjkemp.dev/sigmadoc/tags/attack.t1486/</link><description>Recent content in attack.t1486 on My New Hugo Site</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 26 Dec 2021 12:09:42 +0100</lastBuildDate><atom:link href="https://bradleyjkemp.dev/sigmadoc/tags/attack.t1486/index.xml" rel="self" type="application/rss+xml"/><item><title>Suspicious Creation TXT File in User Desktop</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_susp_desktop_txt.yml/</link><pubDate>Sun, 26 Dec 2021 12:09:42 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_susp_desktop_txt.yml/</guid><description>&lt;p>Ransomware create txt file in the user Desktop&lt;/p></description></item><item><title>Suspicious Reg Add BitLocker</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_reg_bitlocker.yml/</link><pubDate>Mon, 15 Nov 2021 13:24:26 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_reg_bitlocker.yml/</guid><description>&lt;p>Suspicious add key for BitLocker&lt;/p></description></item><item><title>Conti Ransomware Execution</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_conti_cmd_ransomware.yml/</link><pubDate>Tue, 12 Oct 2021 20:57:12 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_conti_cmd_ransomware.yml/</guid><description>&lt;p>Conti ransomware command line ioc&lt;/p></description></item><item><title>AWS EC2 Disable EBS Encryption</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/aws/aws_ec2_disable_encryption.yml/</link><pubDate>Tue, 29 Jun 2021 11:06:00 +0700</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/aws/aws_ec2_disable_encryption.yml/</guid><description>&lt;p>Identifies disabling of default Amazon Elastic Block Store (EBS) encryption in the current region. Disabling default encryption does not change the encryption status of your existing volumes.&lt;/p></description></item><item><title>LockerGoga Ransomware</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_mal_lockergoga_ransomware.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_mal_lockergoga_ransomware.yml/</guid><description>&lt;p>Detects LockerGoga Ransomware command line.&lt;/p></description></item><item><title>Microsoft 365 - Potential Ransomware Activity</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/m365/microsoft365_potential_ransomware_activity.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/m365/microsoft365_potential_ransomware_activity.yml/</guid><description>&lt;p>Detects when a Microsoft Cloud App Security reported when a user uploads files to the cloud that might be infected with ransomware.&lt;/p></description></item><item><title>Suspicious Multiple File Rename Or Delete Occurred</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_multiple_files_renamed_or_deleted.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_multiple_files_renamed_or_deleted.yml/</guid><description>&lt;p>Detects multiple file rename or delete events occurrence within a specified period of time by a same user (these events may signalize about ransomware activity).&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>attack.t1486 on My New Hugo Site</title>
+    <link>https://bradleyjkemp.dev/sigmadoc/tags/attack.t1486/</link>
+    <description>Recent content in attack.t1486 on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 26 Dec 2021 12:09:42 +0100</lastBuildDate><atom:link href="https://bradleyjkemp.dev/sigmadoc/tags/attack.t1486/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Suspicious Creation TXT File in User Desktop</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_susp_desktop_txt.yml/</link>
+      <pubDate>Sun, 26 Dec 2021 12:09:42 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_susp_desktop_txt.yml/</guid>
+      <description>&lt;p&gt;Ransomware create txt file in the user Desktop&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Suspicious Reg Add BitLocker</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_reg_bitlocker.yml/</link>
+      <pubDate>Mon, 15 Nov 2021 13:24:26 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_reg_bitlocker.yml/</guid>
+      <description>&lt;p&gt;Suspicious add key for BitLocker&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Conti Ransomware Execution</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_conti_cmd_ransomware.yml/</link>
+      <pubDate>Tue, 12 Oct 2021 20:57:12 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_conti_cmd_ransomware.yml/</guid>
+      <description>&lt;p&gt;Conti ransomware command line ioc&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>AWS EC2 Disable EBS Encryption</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/aws/aws_ec2_disable_encryption.yml/</link>
+      <pubDate>Tue, 29 Jun 2021 11:06:00 +0700</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/aws/aws_ec2_disable_encryption.yml/</guid>
+      <description>&lt;p&gt;Identifies disabling of default Amazon Elastic Block Store (EBS) encryption in the current region. Disabling default encryption does not change the encryption status of your existing volumes.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>LockerGoga Ransomware</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_mal_lockergoga_ransomware.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_mal_lockergoga_ransomware.yml/</guid>
+      <description>&lt;p&gt;Detects LockerGoga Ransomware command line.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Microsoft 365 - Potential Ransomware Activity</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/m365/microsoft365_potential_ransomware_activity.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/m365/microsoft365_potential_ransomware_activity.yml/</guid>
+      <description>&lt;p&gt;Detects when a Microsoft Cloud App Security reported when a user uploads files to the cloud that might be infected with ransomware.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Suspicious Multiple File Rename Or Delete Occurred</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_multiple_files_renamed_or_deleted.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_multiple_files_renamed_or_deleted.yml/</guid>
+      <description>&lt;p&gt;Detects multiple file rename or delete events occurrence within a specified period of time by a same user (these events may signalize about ransomware activity).&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

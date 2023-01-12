@@ -1,1 +1,38 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>attack.t1562.006 on My New Hugo Site</title><link>https://bradleyjkemp.dev/sigmadoc/tags/attack.t1562.006/</link><description>Recent content in attack.t1562.006 on My New Hugo Site</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 25 Oct 2019 17:57:56 +0300</lastBuildDate><atom:link href="https://bradleyjkemp.dev/sigmadoc/tags/attack.t1562.006/index.xml" rel="self" type="application/rss+xml"/><item><title>Auditing Configuration Changes on Linux Host</title><link>https://bradleyjkemp.dev/sigmadoc/rules/linux/auditd/lnx_auditd_auditing_config_change.yml/</link><pubDate>Fri, 25 Oct 2019 17:57:56 +0300</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/auditd/lnx_auditd_auditing_config_change.yml/</guid><description>&lt;p>Detect changes in auditd configuration files&lt;/p></description></item><item><title>Logging Configuration Changes on Linux Host</title><link>https://bradleyjkemp.dev/sigmadoc/rules/linux/auditd/lnx_auditd_logging_config_change.yml/</link><pubDate>Fri, 25 Oct 2019 17:57:56 +0300</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/auditd/lnx_auditd_logging_config_change.yml/</guid><description>&lt;p>Detect changes of syslog daemons configuration files&lt;/p></description></item><item><title>Disable of ETW Trace</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_etw_trace_evasion.yml/</link><pubDate>Fri, 22 Mar 2019 11:36:55 -0400</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_etw_trace_evasion.yml/</guid><description>&lt;p>Detects a command that clears or disables any ETW trace log which could indicate a logging evasion.&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>attack.t1562.006 on My New Hugo Site</title>
+    <link>https://bradleyjkemp.dev/sigmadoc/tags/attack.t1562.006/</link>
+    <description>Recent content in attack.t1562.006 on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 25 Oct 2019 17:57:56 +0300</lastBuildDate><atom:link href="https://bradleyjkemp.dev/sigmadoc/tags/attack.t1562.006/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Auditing Configuration Changes on Linux Host</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/linux/auditd/lnx_auditd_auditing_config_change.yml/</link>
+      <pubDate>Fri, 25 Oct 2019 17:57:56 +0300</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/auditd/lnx_auditd_auditing_config_change.yml/</guid>
+      <description>&lt;p&gt;Detect changes in auditd configuration files&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Logging Configuration Changes on Linux Host</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/linux/auditd/lnx_auditd_logging_config_change.yml/</link>
+      <pubDate>Fri, 25 Oct 2019 17:57:56 +0300</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/auditd/lnx_auditd_logging_config_change.yml/</guid>
+      <description>&lt;p&gt;Detect changes of syslog daemons configuration files&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Disable of ETW Trace</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_etw_trace_evasion.yml/</link>
+      <pubDate>Fri, 22 Mar 2019 11:36:55 -0400</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_etw_trace_evasion.yml/</guid>
+      <description>&lt;p&gt;Detects a command that clears or disables any ETW trace log which could indicate a logging evasion.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

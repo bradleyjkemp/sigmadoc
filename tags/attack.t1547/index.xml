@@ -1,1 +1,47 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>attack.t1547 on My New Hugo Site</title><link>https://bradleyjkemp.dev/sigmadoc/tags/attack.t1547/</link><description>Recent content in attack.t1547 on My New Hugo Site</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 18 Nov 2021 18:39:20 +0100</lastBuildDate><atom:link href="https://bradleyjkemp.dev/sigmadoc/tags/attack.t1547/index.xml" rel="self" type="application/rss+xml"/><item><title>Registry Persistence Mechanisms in Recycle Bin</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_persistence_recycle_bin.yml/</link><pubDate>Thu, 18 Nov 2021 18:39:20 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_persistence_recycle_bin.yml/</guid><description>&lt;p>Detects persistence registry keys for Recycle Bin&lt;/p></description></item><item><title>Suspicious Driver Install by pnputil.exe</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_lolbins_suspicious_driver_installed_by_pnputil.yml/</link><pubDate>Thu, 30 Sep 2021 19:14:34 -0500</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_lolbins_suspicious_driver_installed_by_pnputil.yml/</guid><description>&lt;p>Detects when a possible suspicious driver is being installed via pnputil.exe lolbin&lt;/p></description></item><item><title>WINEKEY Registry Modification</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_runkey_winekey.yml/</link><pubDate>Fri, 30 Oct 2020 13:15:11 +0530</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_runkey_winekey.yml/</guid><description>&lt;p>Detects potential malicious modification of run keys by winekey or team9 backdoor&lt;/p></description></item><item><title>Atbroker Registry Change</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_susp_atbroker_change.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_susp_atbroker_change.yml/</guid><description>&lt;p>Detects creation/modification of Assisitive Technology applications and persistence with usage of ATs&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>attack.t1547 on My New Hugo Site</title>
+    <link>https://bradleyjkemp.dev/sigmadoc/tags/attack.t1547/</link>
+    <description>Recent content in attack.t1547 on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 18 Nov 2021 18:39:20 +0100</lastBuildDate><atom:link href="https://bradleyjkemp.dev/sigmadoc/tags/attack.t1547/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Registry Persistence Mechanisms in Recycle Bin</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_persistence_recycle_bin.yml/</link>
+      <pubDate>Thu, 18 Nov 2021 18:39:20 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_persistence_recycle_bin.yml/</guid>
+      <description>&lt;p&gt;Detects persistence registry keys for Recycle Bin&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Suspicious Driver Install by pnputil.exe</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_lolbins_suspicious_driver_installed_by_pnputil.yml/</link>
+      <pubDate>Thu, 30 Sep 2021 19:14:34 -0500</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_lolbins_suspicious_driver_installed_by_pnputil.yml/</guid>
+      <description>&lt;p&gt;Detects when a possible suspicious driver is being installed via pnputil.exe lolbin&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>WINEKEY Registry Modification</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_runkey_winekey.yml/</link>
+      <pubDate>Fri, 30 Oct 2020 13:15:11 +0530</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_runkey_winekey.yml/</guid>
+      <description>&lt;p&gt;Detects potential malicious modification of run keys by winekey or team9 backdoor&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Atbroker Registry Change</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_susp_atbroker_change.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_susp_atbroker_change.yml/</guid>
+      <description>&lt;p&gt;Detects creation/modification of Assisitive Technology applications and persistence with usage of ATs&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

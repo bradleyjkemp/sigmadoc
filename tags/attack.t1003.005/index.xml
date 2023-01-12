@@ -1,1 +1,56 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>attack.t1003.005 on My New Hugo Site</title><link>https://bradleyjkemp.dev/sigmadoc/tags/attack.t1003.005/</link><description>Recent content in attack.t1003.005 on My New Hugo Site</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 16 Jan 2019 23:36:31 +0100</lastBuildDate><atom:link href="https://bradleyjkemp.dev/sigmadoc/tags/attack.t1003.005/index.xml" rel="self" type="application/rss+xml"/><item><title>Cmdkey Cached Credentials Recon</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_cmdkey_recon.yml/</link><pubDate>Wed, 16 Jan 2019 23:36:31 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_cmdkey_recon.yml/</guid><description>&lt;p>Detects usage of cmdkey to look for cached credentials&lt;/p></description></item><item><title>Cred Dump-Tools Named Pipes</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/pipe_created/pipe_created_cred_dump_tools_named_pipes.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/pipe_created/pipe_created_cred_dump_tools_named_pipes.yml/</guid><description>&lt;p>Detects well-known credential dumping tools execution via specific named pipes&lt;/p></description></item><item><title>Credential Dumping Tools Service Execution</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_mal_creddumper.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_mal_creddumper.yml/</guid><description>&lt;p>Detects well-known credential dumping tools execution via service execution events&lt;/p></description></item><item><title>Grabbing Sensitive Hives via Reg Utility</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_grabbing_sensitive_hives_via_reg.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_grabbing_sensitive_hives_via_reg.yml/</guid><description>&lt;p>Dump sam, system or security hives using REG.exe utility&lt;/p></description></item><item><title>Mimikatz Command Line</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_mimikatz_command_line.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_mimikatz_command_line.yml/</guid><description>&lt;p>Detection well-known mimikatz command line arguments&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>attack.t1003.005 on My New Hugo Site</title>
+    <link>https://bradleyjkemp.dev/sigmadoc/tags/attack.t1003.005/</link>
+    <description>Recent content in attack.t1003.005 on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 16 Jan 2019 23:36:31 +0100</lastBuildDate><atom:link href="https://bradleyjkemp.dev/sigmadoc/tags/attack.t1003.005/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cmdkey Cached Credentials Recon</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_cmdkey_recon.yml/</link>
+      <pubDate>Wed, 16 Jan 2019 23:36:31 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_cmdkey_recon.yml/</guid>
+      <description>&lt;p&gt;Detects usage of cmdkey to look for cached credentials&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Cred Dump-Tools Named Pipes</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/pipe_created/pipe_created_cred_dump_tools_named_pipes.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/pipe_created/pipe_created_cred_dump_tools_named_pipes.yml/</guid>
+      <description>&lt;p&gt;Detects well-known credential dumping tools execution via specific named pipes&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Credential Dumping Tools Service Execution</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_mal_creddumper.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_mal_creddumper.yml/</guid>
+      <description>&lt;p&gt;Detects well-known credential dumping tools execution via service execution events&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Grabbing Sensitive Hives via Reg Utility</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_grabbing_sensitive_hives_via_reg.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_grabbing_sensitive_hives_via_reg.yml/</guid>
+      <description>&lt;p&gt;Dump sam, system or security hives using REG.exe utility&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Mimikatz Command Line</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_mimikatz_command_line.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_mimikatz_command_line.yml/</guid>
+      <description>&lt;p&gt;Detection well-known mimikatz command line arguments&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

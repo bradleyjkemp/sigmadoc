@@ -1,1 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>attack.t1125 on My New Hugo Site</title><link>https://bradleyjkemp.dev/sigmadoc/tags/attack.t1125/</link><description>Recent content in attack.t1125 on My New Hugo Site</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://bradleyjkemp.dev/sigmadoc/tags/attack.t1125/index.xml" rel="self" type="application/rss+xml"/><item><title>Suspicious Camera and Microphone Access</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_susp_mic_cam_access.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_susp_mic_cam_access.yml/</guid><description>&lt;p>Detects Processes accessing the camera and microphone from suspicious folder&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>attack.t1125 on My New Hugo Site</title>
+    <link>https://bradleyjkemp.dev/sigmadoc/tags/attack.t1125/</link>
+    <description>Recent content in attack.t1125 on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://bradleyjkemp.dev/sigmadoc/tags/attack.t1125/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Suspicious Camera and Microphone Access</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_susp_mic_cam_access.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_susp_mic_cam_access.yml/</guid>
+      <description>&lt;p&gt;Detects Processes accessing the camera and microphone from suspicious folder&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

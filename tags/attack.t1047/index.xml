@@ -1,4 +1,266 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>attack.t1047 on My New Hugo Site</title><link>https://bradleyjkemp.dev/sigmadoc/tags/attack.t1047/</link><description>Recent content in attack.t1047 on My New Hugo Site</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 28 Jan 2022 16:12:38 +0100</lastBuildDate><atom:link href="https://bradleyjkemp.dev/sigmadoc/tags/attack.t1047/index.xml" rel="self" type="application/rss+xml"/><item><title>WMI Uninstall An Application</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_wmic_remove_application.yml/</link><pubDate>Fri, 28 Jan 2022 16:12:38 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_wmic_remove_application.yml/</guid><description>&lt;p>Uninstall an application with wmic&lt;/p></description></item><item><title>Remote DCOM/WMI Lateral Movement</title><link>https://bradleyjkemp.dev/sigmadoc/rules/application/rpc_firewall/rpc_firewall_remote_dcom_or_wmi.yml/</link><pubDate>Mon, 10 Jan 2022 18:04:43 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/application/rpc_firewall/rpc_firewall_remote_dcom_or_wmi.yml/</guid><description>&lt;p>Detects remote RPC calls that performs remote DCOM operations. These could be abused for lateral movement via DCOM or WMI.&lt;/p></description></item><item><title>Created Files by Office Applications</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_script_creation_by_office_using_file_ext.yml/</link><pubDate>Mon, 30 Aug 2021 21:48:03 -0600</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_script_creation_by_office_using_file_ext.yml/</guid><description>&lt;p>This rule will monitor executable and script file creation by office applications. Please add more file extensions or magic bytes to the logic of your choice.&lt;/p></description></item><item><title>EDR WMI Command Execution by Office Applications</title><link>https://bradleyjkemp.dev/sigmadoc/rules/application/edr/windows/edr_command_execution_by_office_applications.yml/</link><pubDate>Mon, 30 Aug 2021 21:47:36 -0600</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/application/edr/windows/edr_command_execution_by_office_applications.yml/</guid><description>&lt;p>Initial execution of malicious document calls wmic Win32_Process::Create to execute the file with regsvr32&lt;/p></description></item><item><title>Lolbins Process Creation with WmiPrvse</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_lolbins_with_wmiprvse_parent_process.yml/</link><pubDate>Mon, 30 Aug 2021 21:47:36 -0600</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_lolbins_with_wmiprvse_parent_process.yml/</guid><description>&lt;p>This rule will monitor LOLBin process creations by wmiprvse. Add more LOLBins to rule logic if needed.&lt;/p></description></item><item><title>New Lolbin Process by Office Applications</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_lolbins_by_office_applications.yml/</link><pubDate>Mon, 30 Aug 2021 21:47:36 -0600</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_lolbins_by_office_applications.yml/</guid><description>&lt;p>This rule will monitor any office apps that spins up a new LOLBin process. This activity is pretty suspicious and should be investigated.&lt;/p></description></item><item><title>Suspicious WMI Execution Using Rundll32</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_wmic_proc_create_rundll32.yml/</link><pubDate>Mon, 12 Oct 2020 09:18:30 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_wmic_proc_create_rundll32.yml/</guid><description>&lt;p>Detects WMI executing rundll32&lt;/p></description></item><item><title>PSExec and WMI Process Creations Block</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/windefend/win_defender_psexec_wmi_asr.yml/</link><pubDate>Tue, 14 Jul 2020 14:01:43 +0545</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/windefend/win_defender_psexec_wmi_asr.yml/</guid><description>&lt;p>Detects blocking of process creations originating from PSExec and WMI commands&lt;/p></description></item><item><title>Maze Ransomware</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_crime_maze_ransomware.yml/</link><pubDate>Mon, 11 May 2020 10:46:26 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_crime_maze_ransomware.yml/</guid><description>&lt;p>Detects specific process characteristics of Maze ransomware word document droppers&lt;/p></description></item><item><title>WMImplant Hack Tool</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_wmimplant.yml/</link><pubDate>Fri, 27 Mar 2020 15:08:35 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_wmimplant.yml/</guid><description>&lt;p>Detects parameters used by WMImplant&lt;/p></description></item><item><title>Windows Management Instrumentation DLL Loaded Via Microsoft Word</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_susp_winword_wmidll_load.yml/</link><pubDate>Sun, 29 Dec 2019 23:14:29 +0900</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_susp_winword_wmidll_load.yml/</guid><description>&lt;p>Detects DLL&amp;rsquo;s Loaded Via Word Containing VBA Macros Executing WMI Commands&lt;/p></description></item><item><title>WMI Modules Loaded</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_wmi_module_load.yml/</link><pubDate>Thu, 24 Oct 2019 15:48:38 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_wmi_module_load.yml/</guid><description>&lt;p>Detects non wmiprvse loading WMI modules&lt;/p></description></item><item><title>Suspicious WMI Execution</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_wmi_execution.yml/</link><pubDate>Wed, 16 Jan 2019 23:36:31 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_wmi_execution.yml/</guid><description>&lt;p>Detects WMI executing suspicious commands&lt;/p></description></item><item><title>CrackMapExec Command Execution</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_crackmapexec_execution.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_crackmapexec_execution.yml/</guid><description>&lt;p>Detect various execution methods of the CrackMapExec pentesting framework&lt;/p></description></item><item><title>HTML Help Shell Spawn</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_html_help_spawn.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_html_help_spawn.yml/</guid><description>&lt;p>Detects a suspicious child process of a Microsoft HTML Help system when executing compiled HTML files (.chm)&lt;/p></description></item><item><title>Impacket Lateralization Detection</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_impacket_lateralization.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_impacket_lateralization.yml/</guid><description>&lt;p>Detects wmiexec/dcomexec/atexec/smbexec from Impacket framework&lt;/p></description></item><item><title>Login with WMI</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_wmi_login.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_wmi_login.yml/</guid><description>&lt;p>Detection of logins performed with WMI&lt;/p></description></item><item><title>MITRE BZAR Indicators for Execution</title><link>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_dce_rpc_mitre_bzar_execution.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_dce_rpc_mitre_bzar_execution.yml/</guid><description>&lt;p>Windows DCE-RPC functions which indicate an execution techniques on the remote system. All credit for the Zeek mapping of the suspicious endpoint/operation field goes to MITRE&lt;/p></description></item><item><title>Script Event Consumer Spawning Process</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_script_event_consumer_spawn.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_script_event_consumer_spawn.yml/</guid><description>&lt;p>Detects a suspicious child process of Script Event Consumer (scrcons.exe).&lt;/p></description></item><item><title>Suspicious Encoded Scripts in a WMI Consumer</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/wmi_event/sysmon_wmi_susp_encoded_scripts.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/wmi_event/sysmon_wmi_susp_encoded_scripts.yml/</guid><description>&lt;p>Detects suspicious encoded payloads in WMI Event Consumers&lt;/p></description></item><item><title>Suspicious WMI Reconnaissance</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_wmic_reconnaissance.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_wmic_reconnaissance.yml/</guid><description>&lt;p>An adversary might use WMI to list Processes running on the compromised host or list installed Software hotfix and patches.&lt;/p></description></item><item><title>T1047 Wmiprvse Wbemcomn DLL Hijack</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_wmiprvse_wbemcomn_dll_hijack.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_wmiprvse_wbemcomn_dll_hijack.yml/</guid><description>&lt;p>Detects a threat actor creating a file named &lt;code>wbemcomn.dll&lt;/code> in the &lt;code>C:\Windows\System32\wbem\&lt;/code> directory over the network for a WMI DLL Hijack scenario.&lt;/p></description></item><item><title>UNC2452 PowerShell Pattern</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_apt_unc2452_ps.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_apt_unc2452_ps.yml/</guid><description>&lt;p>Detects a specific PowerShell command line pattern used by the UNC2452 actors as mentioned in Microsoft and Symantec reports&lt;/p></description></item><item><title>WMI Event Consumer Created Named Pipe</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/pipe_created/pipe_created_susp_wmi_consumer_namedpipe.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/pipe_created/pipe_created_susp_wmi_consumer_namedpipe.yml/</guid><description>&lt;p>Detects the WMI Event Consumer service scrcons.exe creating a named pipe&lt;/p></description></item><item><title>WMI Reconnaissance List Remote Services</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_wmic_remote_service.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_wmic_remote_service.yml/</guid><description>&lt;p>An adversary might use WMI to check if a certain Remote Service is running on a remote device.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>attack.t1047 on My New Hugo Site</title>
+    <link>https://bradleyjkemp.dev/sigmadoc/tags/attack.t1047/</link>
+    <description>Recent content in attack.t1047 on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 28 Jan 2022 16:12:38 +0100</lastBuildDate><atom:link href="https://bradleyjkemp.dev/sigmadoc/tags/attack.t1047/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>WMI Uninstall An Application</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_wmic_remove_application.yml/</link>
+      <pubDate>Fri, 28 Jan 2022 16:12:38 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_wmic_remove_application.yml/</guid>
+      <description>&lt;p&gt;Uninstall an application with wmic&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Remote DCOM/WMI Lateral Movement</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/application/rpc_firewall/rpc_firewall_remote_dcom_or_wmi.yml/</link>
+      <pubDate>Mon, 10 Jan 2022 18:04:43 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/application/rpc_firewall/rpc_firewall_remote_dcom_or_wmi.yml/</guid>
+      <description>&lt;p&gt;Detects remote RPC calls that performs remote DCOM operations. These could be abused for lateral movement via DCOM or WMI.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Created Files by Office Applications</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_script_creation_by_office_using_file_ext.yml/</link>
+      <pubDate>Mon, 30 Aug 2021 21:48:03 -0600</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_script_creation_by_office_using_file_ext.yml/</guid>
+      <description>&lt;p&gt;This rule will monitor executable and script file creation by office applications. Please add more file extensions or magic bytes to the logic of your choice.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>EDR WMI Command Execution by Office Applications</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/application/edr/windows/edr_command_execution_by_office_applications.yml/</link>
+      <pubDate>Mon, 30 Aug 2021 21:47:36 -0600</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/application/edr/windows/edr_command_execution_by_office_applications.yml/</guid>
+      <description>&lt;p&gt;Initial execution of malicious document calls wmic Win32_Process::Create to execute the file with regsvr32&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Lolbins Process Creation with WmiPrvse</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_lolbins_with_wmiprvse_parent_process.yml/</link>
+      <pubDate>Mon, 30 Aug 2021 21:47:36 -0600</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_lolbins_with_wmiprvse_parent_process.yml/</guid>
+      <description>&lt;p&gt;This rule will monitor LOLBin process creations by wmiprvse. Add more LOLBins to rule logic if needed.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>New Lolbin Process by Office Applications</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_lolbins_by_office_applications.yml/</link>
+      <pubDate>Mon, 30 Aug 2021 21:47:36 -0600</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_lolbins_by_office_applications.yml/</guid>
+      <description>&lt;p&gt;This rule will monitor any office apps that spins up a new LOLBin process. This activity is pretty suspicious and should be investigated.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Suspicious WMI Execution Using Rundll32</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_wmic_proc_create_rundll32.yml/</link>
+      <pubDate>Mon, 12 Oct 2020 09:18:30 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_wmic_proc_create_rundll32.yml/</guid>
+      <description>&lt;p&gt;Detects WMI executing rundll32&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>PSExec and WMI Process Creations Block</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/windefend/win_defender_psexec_wmi_asr.yml/</link>
+      <pubDate>Tue, 14 Jul 2020 14:01:43 +0545</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/windefend/win_defender_psexec_wmi_asr.yml/</guid>
+      <description>&lt;p&gt;Detects blocking of process creations originating from PSExec and WMI commands&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Maze Ransomware</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_crime_maze_ransomware.yml/</link>
+      <pubDate>Mon, 11 May 2020 10:46:26 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_crime_maze_ransomware.yml/</guid>
+      <description>&lt;p&gt;Detects specific process characteristics of Maze ransomware word document droppers&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>WMImplant Hack Tool</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_wmimplant.yml/</link>
+      <pubDate>Fri, 27 Mar 2020 15:08:35 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_wmimplant.yml/</guid>
+      <description>&lt;p&gt;Detects parameters used by WMImplant&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Windows Management Instrumentation DLL Loaded Via Microsoft Word</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_susp_winword_wmidll_load.yml/</link>
+      <pubDate>Sun, 29 Dec 2019 23:14:29 +0900</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_susp_winword_wmidll_load.yml/</guid>
+      <description>&lt;p&gt;Detects DLL&amp;rsquo;s Loaded Via Word Containing VBA Macros Executing WMI Commands&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>WMI Modules Loaded</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_wmi_module_load.yml/</link>
+      <pubDate>Thu, 24 Oct 2019 15:48:38 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_wmi_module_load.yml/</guid>
+      <description>&lt;p&gt;Detects non wmiprvse loading WMI modules&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Suspicious WMI Execution</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_wmi_execution.yml/</link>
+      <pubDate>Wed, 16 Jan 2019 23:36:31 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_wmi_execution.yml/</guid>
+      <description>&lt;p&gt;Detects WMI executing suspicious commands&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>CrackMapExec Command Execution</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_crackmapexec_execution.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_crackmapexec_execution.yml/</guid>
+      <description>&lt;p&gt;Detect various execution methods of the CrackMapExec pentesting framework&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>HTML Help Shell Spawn</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_html_help_spawn.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_html_help_spawn.yml/</guid>
+      <description>&lt;p&gt;Detects a suspicious child process of a Microsoft HTML Help system when executing compiled HTML files (.chm)&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Impacket Lateralization Detection</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_impacket_lateralization.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_impacket_lateralization.yml/</guid>
+      <description>&lt;p&gt;Detects wmiexec/dcomexec/atexec/smbexec from Impacket framework&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Login with WMI</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_wmi_login.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_wmi_login.yml/</guid>
+      <description>&lt;p&gt;Detection of logins performed with WMI&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>MITRE BZAR Indicators for Execution</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_dce_rpc_mitre_bzar_execution.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_dce_rpc_mitre_bzar_execution.yml/</guid>
+      <description>&lt;p&gt;Windows DCE-RPC functions which indicate an execution techniques on the remote system. All credit for the Zeek mapping of the suspicious endpoint/operation field goes to MITRE&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Script Event Consumer Spawning Process</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_script_event_consumer_spawn.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_script_event_consumer_spawn.yml/</guid>
+      <description>&lt;p&gt;Detects a suspicious child process of Script Event Consumer (scrcons.exe).&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Suspicious Encoded Scripts in a WMI Consumer</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/wmi_event/sysmon_wmi_susp_encoded_scripts.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/wmi_event/sysmon_wmi_susp_encoded_scripts.yml/</guid>
+      <description>&lt;p&gt;Detects suspicious encoded payloads in WMI Event Consumers&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Suspicious WMI Reconnaissance</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_wmic_reconnaissance.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_wmic_reconnaissance.yml/</guid>
+      <description>&lt;p&gt;An adversary might use WMI to list Processes running on the compromised host or list installed Software hotfix and patches.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>T1047 Wmiprvse Wbemcomn DLL Hijack</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_wmiprvse_wbemcomn_dll_hijack.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_wmiprvse_wbemcomn_dll_hijack.yml/</guid>
+      <description>&lt;p&gt;Detects a threat actor creating a file named &lt;code&gt;wbemcomn.dll&lt;/code&gt; in the &lt;code&gt;C:\Windows\System32\wbem\&lt;/code&gt; directory over the network for a WMI DLL Hijack scenario.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>UNC2452 PowerShell Pattern</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_apt_unc2452_ps.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_apt_unc2452_ps.yml/</guid>
+      <description>&lt;p&gt;Detects a specific PowerShell command line pattern used by the UNC2452 actors as mentioned in Microsoft and Symantec reports&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>WMI Event Consumer Created Named Pipe</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/pipe_created/pipe_created_susp_wmi_consumer_namedpipe.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/pipe_created/pipe_created_susp_wmi_consumer_namedpipe.yml/</guid>
+      <description>&lt;p&gt;Detects the WMI Event Consumer service scrcons.exe creating a named pipe&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>WMI Reconnaissance List Remote Services</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_wmic_remote_service.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_wmic_remote_service.yml/</guid>
+      <description>&lt;p&gt;An adversary might use WMI to check if a certain Remote Service is running on a remote device.
 When the test completes, a service information will be displayed on the screen if it exists.
 A common feedback message is that &amp;ldquo;No instance(s) Available&amp;rdquo; if the service queried is not running.
-A common error message is &amp;ldquo;Node - (provided IP or default) ERROR Description =The RPC server is unavailable&amp;rdquo; if the provided remote host is unreacheable&lt;/p></description></item><item><title>WMI Spawning Windows PowerShell</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_wmi_spwns_powershell.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_wmi_spwns_powershell.yml/</guid><description>&lt;p>Detects WMI spawning PowerShell&lt;/p></description></item><item><title>Wmiprvse Wbemcomn DLL Hijack</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_wmiprvse_wbemcomn_dll_hijack.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_wmiprvse_wbemcomn_dll_hijack.yml/</guid><description>&lt;p>Detects a threat actor creating a file named &lt;code>wbemcomn.dll&lt;/code> in the &lt;code>C:\Windows\System32\wbem\&lt;/code> directory over the network and loading it for a WMI DLL Hijack scenario.&lt;/p></description></item><item><title>Wmiprvse Wbemcomn DLL Hijack</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_wmiprvse_wbemcomn_dll_hijack.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_wmiprvse_wbemcomn_dll_hijack.yml/</guid><description>&lt;p>Detects a threat actor creating a file named &lt;code>wbemcomn.dll&lt;/code> in the &lt;code>C:\Windows\System32\wbem\&lt;/code> directory over the network and loading it for a WMI DLL Hijack scenario.&lt;/p></description></item></channel></rss>
+A common error message is &amp;ldquo;Node - (provided IP or default) ERROR Description =The RPC server is unavailable&amp;rdquo; if the provided remote host is unreacheable&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>WMI Spawning Windows PowerShell</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_wmi_spwns_powershell.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_wmi_spwns_powershell.yml/</guid>
+      <description>&lt;p&gt;Detects WMI spawning PowerShell&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Wmiprvse Wbemcomn DLL Hijack</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_wmiprvse_wbemcomn_dll_hijack.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_wmiprvse_wbemcomn_dll_hijack.yml/</guid>
+      <description>&lt;p&gt;Detects a threat actor creating a file named &lt;code&gt;wbemcomn.dll&lt;/code&gt; in the &lt;code&gt;C:\Windows\System32\wbem\&lt;/code&gt; directory over the network and loading it for a WMI DLL Hijack scenario.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Wmiprvse Wbemcomn DLL Hijack</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_wmiprvse_wbemcomn_dll_hijack.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_wmiprvse_wbemcomn_dll_hijack.yml/</guid>
+      <description>&lt;p&gt;Detects a threat actor creating a file named &lt;code&gt;wbemcomn.dll&lt;/code&gt; in the &lt;code&gt;C:\Windows\System32\wbem\&lt;/code&gt; directory over the network and loading it for a WMI DLL Hijack scenario.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

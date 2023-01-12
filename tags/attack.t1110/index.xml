@@ -1,1 +1,83 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>attack.t1110 on My New Hugo Site</title><link>https://bradleyjkemp.dev/sigmadoc/tags/attack.t1110/</link><description>Recent content in attack.t1110 on My New Hugo Site</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 10 Oct 2021 16:06:28 +0400</lastBuildDate><atom:link href="https://bradleyjkemp.dev/sigmadoc/tags/attack.t1110/index.xml" rel="self" type="application/rss+xml"/><item><title>Account Lockout</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_account_lockout.yml/</link><pubDate>Sun, 10 Oct 2021 16:06:28 +0400</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_account_lockout.yml/</guid><description>&lt;p>Identifies user account which has been locked because the user tried to sign in too many times with an incorrect user ID or password.&lt;/p></description></item><item><title>User Access Blocked by Azure Conditional Access</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_user_login_blocked_by_conditional_access.yml/</link><pubDate>Sun, 10 Oct 2021 16:06:28 +0400</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_user_login_blocked_by_conditional_access.yml/</guid><description>&lt;p>Detect access has been blocked by Conditional Access policies. The access policy does not allow token issuance which might be sights≈ of unauthorizeed login to valid accounts.&lt;/p></description></item><item><title>Brute Force</title><link>https://bradleyjkemp.dev/sigmadoc/rules/generic/generic_brute_force.yml/</link><pubDate>Fri, 25 Oct 2019 17:57:56 +0300</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/generic/generic_brute_force.yml/</guid><description>&lt;p>Detects many authentication failures from one source to one destination which is may indicate Brute Force activity&lt;/p></description></item><item><title>Failed Logins with Different Accounts from Single Source System</title><link>https://bradleyjkemp.dev/sigmadoc/rules/linux/other/lnx_susp_failed_logons_single_source.yml/</link><pubDate>Tue, 27 Dec 2016 14:49:54 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/other/lnx_susp_failed_logons_single_source.yml/</guid><description>&lt;p>Detects suspicious failed logins with different user accounts from a single source system&lt;/p></description></item><item><title>CrackMapExecWin</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_apt_dragonfly.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_apt_dragonfly.yml/</guid><description>&lt;p>Detects CrackMapExecWin Activity as Described by NCSC&lt;/p></description></item><item><title>Hack Tool User Agent</title><link>https://bradleyjkemp.dev/sigmadoc/rules/proxy/proxy_ua_hacktool.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/proxy/proxy_ua_hacktool.yml/</guid><description>&lt;p>Detects suspicious user agent strings user by hack tools in proxy logs&lt;/p></description></item><item><title>Hydra Password Guessing Hack Tool</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_hack_hydra.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_hack_hydra.yml/</guid><description>&lt;p>Detects command line parameters used by Hydra password guessing hack tool&lt;/p></description></item><item><title>NTLM Brute Force</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/ntlm/win_susp_ntlm_brute_force.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/ntlm/win_susp_ntlm_brute_force.yml/</guid><description>&lt;p>Detects common NTLM brute force device names&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>attack.t1110 on My New Hugo Site</title>
+    <link>https://bradleyjkemp.dev/sigmadoc/tags/attack.t1110/</link>
+    <description>Recent content in attack.t1110 on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 10 Oct 2021 16:06:28 +0400</lastBuildDate><atom:link href="https://bradleyjkemp.dev/sigmadoc/tags/attack.t1110/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Account Lockout</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_account_lockout.yml/</link>
+      <pubDate>Sun, 10 Oct 2021 16:06:28 +0400</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_account_lockout.yml/</guid>
+      <description>&lt;p&gt;Identifies user account which has been locked because the user tried to sign in too many times with an incorrect user ID or password.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>User Access Blocked by Azure Conditional Access</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_user_login_blocked_by_conditional_access.yml/</link>
+      <pubDate>Sun, 10 Oct 2021 16:06:28 +0400</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/azure/azure_user_login_blocked_by_conditional_access.yml/</guid>
+      <description>&lt;p&gt;Detect access has been blocked by Conditional Access policies. The access policy does not allow token issuance which might be sights≈ of unauthorizeed login to valid accounts.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Brute Force</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/generic/generic_brute_force.yml/</link>
+      <pubDate>Fri, 25 Oct 2019 17:57:56 +0300</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/generic/generic_brute_force.yml/</guid>
+      <description>&lt;p&gt;Detects many authentication failures from one source to one destination which is may indicate Brute Force activity&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Failed Logins with Different Accounts from Single Source System</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/linux/other/lnx_susp_failed_logons_single_source.yml/</link>
+      <pubDate>Tue, 27 Dec 2016 14:49:54 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/other/lnx_susp_failed_logons_single_source.yml/</guid>
+      <description>&lt;p&gt;Detects suspicious failed logins with different user accounts from a single source system&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>CrackMapExecWin</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_apt_dragonfly.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_apt_dragonfly.yml/</guid>
+      <description>&lt;p&gt;Detects CrackMapExecWin Activity as Described by NCSC&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Hack Tool User Agent</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/proxy/proxy_ua_hacktool.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/proxy/proxy_ua_hacktool.yml/</guid>
+      <description>&lt;p&gt;Detects suspicious user agent strings user by hack tools in proxy logs&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Hydra Password Guessing Hack Tool</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_hack_hydra.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_hack_hydra.yml/</guid>
+      <description>&lt;p&gt;Detects command line parameters used by Hydra password guessing hack tool&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>NTLM Brute Force</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/ntlm/win_susp_ntlm_brute_force.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/ntlm/win_susp_ntlm_brute_force.yml/</guid>
+      <description>&lt;p&gt;Detects common NTLM brute force device names&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,1 +1,74 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>msexchange on My New Hugo Site</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/msexchange/</link><description>Recent content in msexchange on My New Hugo Site</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 18 Nov 2021 17:27:09 +0100</lastBuildDate><atom:link href="https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/msexchange/index.xml" rel="self" type="application/rss+xml"/><item><title>Possible Exploitation of Exchange RCE CVE-2021-42321</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/msexchange/win_exchange_cve_2021_42321.yml/</link><pubDate>Thu, 18 Nov 2021 17:27:09 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/msexchange/win_exchange_cve_2021_42321.yml/</guid><description>&lt;p>Detects log entries that appear in exploitation attempts against MS Exchange RCE CVE-2021-42321&lt;/p></description></item><item><title>Remove Exported Mailbox from Exchange Webserver</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/msexchange/win_exchange_proxyshell_remove_mailbox_export.yml/</link><pubDate>Tue, 31 Aug 2021 12:51:16 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/msexchange/win_exchange_proxyshell_remove_mailbox_export.yml/</guid><description>&lt;p>Detects removal of an exported Exchange mailbox which could be to cover tracks from ProxyShell exploit&lt;/p></description></item><item><title>Certificate Request Export to Exchange Webserver</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/msexchange/win_exchange_proxyshell_certificate_generation.yml/</link><pubDate>Mon, 23 Aug 2021 11:17:10 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/msexchange/win_exchange_proxyshell_certificate_generation.yml/</guid><description>&lt;p>Detects a write of an Exchange CSR to an untypical directory or with aspx name suffix which can be used to place a webshell&lt;/p></description></item><item><title>Mailbox Export to Exchange Webserver</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/msexchange/win_exchange_proxyshell_mailbox_export.yml/</link><pubDate>Wed, 11 Aug 2021 16:38:44 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/msexchange/win_exchange_proxyshell_mailbox_export.yml/</guid><description>&lt;p>Detects a successful export of an Exchange mailbox to untypical directory or with aspx name suffix which can be used to place a webshell or the needed role assignment for it&lt;/p></description></item><item><title>ProxyLogon MSExchange OabVirtualDirectory</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/msexchange/win_exchange_proxylogon_oabvirtualdir.yml/</link><pubDate>Tue, 10 Aug 2021 09:16:30 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/msexchange/win_exchange_proxylogon_oabvirtualdir.yml/</guid><description>&lt;p>Detects specific patterns found after a successful ProxyLogon exploitation in relation to a Commandlet invocation of Set-OabVirtualDirectory&lt;/p></description></item><item><title>Exchange Set OabVirtualDirectory ExternalUrl Property</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/msexchange/win_set_oabvirtualdirectory_externalurl.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/msexchange/win_set_oabvirtualdirectory_externalurl.yml/</guid><description>&lt;p>Rule to detect an adversary setting OabVirtualDirectory External URL property to a script in Exchange Management log&lt;/p></description></item><item><title>Failed MSExchange Transport Agent Installation</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/msexchange/win_exchange_transportagent_failed.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/msexchange/win_exchange_transportagent_failed.yml/</guid><description>&lt;p>Detects a failed installation of a Exchange Transport Agent&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>msexchange on My New Hugo Site</title>
+    <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/msexchange/</link>
+    <description>Recent content in msexchange on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 18 Nov 2021 17:27:09 +0100</lastBuildDate><atom:link href="https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/msexchange/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Possible Exploitation of Exchange RCE CVE-2021-42321</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/msexchange/win_exchange_cve_2021_42321.yml/</link>
+      <pubDate>Thu, 18 Nov 2021 17:27:09 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/msexchange/win_exchange_cve_2021_42321.yml/</guid>
+      <description>&lt;p&gt;Detects log entries that appear in exploitation attempts against MS Exchange RCE CVE-2021-42321&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Remove Exported Mailbox from Exchange Webserver</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/msexchange/win_exchange_proxyshell_remove_mailbox_export.yml/</link>
+      <pubDate>Tue, 31 Aug 2021 12:51:16 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/msexchange/win_exchange_proxyshell_remove_mailbox_export.yml/</guid>
+      <description>&lt;p&gt;Detects removal of an exported Exchange mailbox which could be to cover tracks from ProxyShell exploit&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Certificate Request Export to Exchange Webserver</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/msexchange/win_exchange_proxyshell_certificate_generation.yml/</link>
+      <pubDate>Mon, 23 Aug 2021 11:17:10 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/msexchange/win_exchange_proxyshell_certificate_generation.yml/</guid>
+      <description>&lt;p&gt;Detects a write of an Exchange CSR to an untypical directory or with aspx name suffix which can be used to place a webshell&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Mailbox Export to Exchange Webserver</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/msexchange/win_exchange_proxyshell_mailbox_export.yml/</link>
+      <pubDate>Wed, 11 Aug 2021 16:38:44 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/msexchange/win_exchange_proxyshell_mailbox_export.yml/</guid>
+      <description>&lt;p&gt;Detects a successful export of an Exchange mailbox to untypical directory or with aspx name suffix which can be used to place a webshell or the needed role assignment for it&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>ProxyLogon MSExchange OabVirtualDirectory</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/msexchange/win_exchange_proxylogon_oabvirtualdir.yml/</link>
+      <pubDate>Tue, 10 Aug 2021 09:16:30 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/msexchange/win_exchange_proxylogon_oabvirtualdir.yml/</guid>
+      <description>&lt;p&gt;Detects specific patterns found after a successful ProxyLogon exploitation in relation to a Commandlet invocation of Set-OabVirtualDirectory&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Exchange Set OabVirtualDirectory ExternalUrl Property</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/msexchange/win_set_oabvirtualdirectory_externalurl.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/msexchange/win_set_oabvirtualdirectory_externalurl.yml/</guid>
+      <description>&lt;p&gt;Rule to detect an adversary setting OabVirtualDirectory External URL property to a script in Exchange Management log&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Failed MSExchange Transport Agent Installation</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/msexchange/win_exchange_transportagent_failed.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/msexchange/win_exchange_transportagent_failed.yml/</guid>
+      <description>&lt;p&gt;Detects a failed installation of a Exchange Transport Agent&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

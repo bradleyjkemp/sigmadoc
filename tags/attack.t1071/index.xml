@@ -1,1 +1,38 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>attack.t1071 on My New Hugo Site</title><link>https://bradleyjkemp.dev/sigmadoc/tags/attack.t1071/</link><description>Recent content in attack.t1071 on My New Hugo Site</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 13 Aug 2020 12:06:48 +0100</lastBuildDate><atom:link href="https://bradleyjkemp.dev/sigmadoc/tags/attack.t1071/index.xml" rel="self" type="application/rss+xml"/><item><title>DNSCat2 Powershell Implementation Detection Via Process Creation</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_dnscat2_powershell_implementation.yml/</link><pubDate>Thu, 13 Aug 2020 12:06:48 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_dnscat2_powershell_implementation.yml/</guid><description>&lt;p>The PowerShell implementation of DNSCat2 calls nslookup to craft queries. Counting nslookup processes spawned by PowerShell will show hundreds or thousands of instances if PS DNSCat2 is active locally.&lt;/p></description></item><item><title>SILENTTRINITY Stager Execution</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_silenttrinity_stage_use.yml/</link><pubDate>Wed, 23 Oct 2019 18:08:30 +0300</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_silenttrinity_stage_use.yml/</guid><description>&lt;p>Detects SILENTTRINITY stager use&lt;/p></description></item><item><title>GALLIUM Artefacts</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_apt_gallium_sha1.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_apt_gallium_sha1.yml/</guid><description>&lt;p>Detects artefacts associated with activity group GALLIUM - Microsoft Threat Intelligence Center indicators released in December 2019.&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>attack.t1071 on My New Hugo Site</title>
+    <link>https://bradleyjkemp.dev/sigmadoc/tags/attack.t1071/</link>
+    <description>Recent content in attack.t1071 on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 13 Aug 2020 12:06:48 +0100</lastBuildDate><atom:link href="https://bradleyjkemp.dev/sigmadoc/tags/attack.t1071/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DNSCat2 Powershell Implementation Detection Via Process Creation</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_dnscat2_powershell_implementation.yml/</link>
+      <pubDate>Thu, 13 Aug 2020 12:06:48 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_dnscat2_powershell_implementation.yml/</guid>
+      <description>&lt;p&gt;The PowerShell implementation of DNSCat2 calls nslookup to craft queries. Counting nslookup processes spawned by PowerShell will show hundreds or thousands of instances if PS DNSCat2 is active locally.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>SILENTTRINITY Stager Execution</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_silenttrinity_stage_use.yml/</link>
+      <pubDate>Wed, 23 Oct 2019 18:08:30 +0300</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_silenttrinity_stage_use.yml/</guid>
+      <description>&lt;p&gt;Detects SILENTTRINITY stager use&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>GALLIUM Artefacts</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_apt_gallium_sha1.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_apt_gallium_sha1.yml/</guid>
+      <description>&lt;p&gt;Detects artefacts associated with activity group GALLIUM - Microsoft Threat Intelligence Center indicators released in December 2019.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

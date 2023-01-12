@@ -1,1 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>attack.g0047 on My New Hugo Site</title><link>https://bradleyjkemp.dev/sigmadoc/tags/attack.g0047/</link><description>Recent content in attack.g0047 on My New Hugo Site</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://bradleyjkemp.dev/sigmadoc/tags/attack.g0047/index.xml" rel="self" type="application/rss+xml"/><item><title>Suspicious UltraVNC Execution</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/process_creation_apt_gamaredon_ultravnc.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/process_creation_apt_gamaredon_ultravnc.yml/</guid><description>&lt;p>Detects suspicious UltraVNC command line flag combination that indicate a auto reconnect upon execution, e.g. startup (as seen being used by Gamaredon threat group)&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>attack.g0047 on My New Hugo Site</title>
+    <link>https://bradleyjkemp.dev/sigmadoc/tags/attack.g0047/</link>
+    <description>Recent content in attack.g0047 on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://bradleyjkemp.dev/sigmadoc/tags/attack.g0047/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Suspicious UltraVNC Execution</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/process_creation_apt_gamaredon_ultravnc.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/process_creation_apt_gamaredon_ultravnc.yml/</guid>
+      <description>&lt;p&gt;Detects suspicious UltraVNC command line flag combination that indicate a auto reconnect upon execution, e.g. startup (as seen being used by Gamaredon threat group)&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

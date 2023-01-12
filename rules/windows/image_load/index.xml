@@ -1,1 +1,254 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>image_load on My New Hugo Site</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/</link><description>Recent content in image_load on My New Hugo Site</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 27 Sep 2021 22:28:25 +0200</lastBuildDate><atom:link href="https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/index.xml" rel="self" type="application/rss+xml"/><item><title>FoggyWeb Backdoor DLL Loading</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_foggyweb_nobelium.yml/</link><pubDate>Mon, 27 Sep 2021 22:28:25 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_foggyweb_nobelium.yml/</guid><description>&lt;p>Detects DLL image load activity as used by FoggyWeb backdoor loader&lt;/p></description></item><item><title>Active Directory Kerberos DLL Loaded Via Office Applications</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_susp_office_kerberos_dll_load.yml/</link><pubDate>Wed, 19 Feb 2020 10:13:44 -0500</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_susp_office_kerberos_dll_load.yml/</guid><description>&lt;p>Detects Kerberos DLL being loaded by an Office Product&lt;/p></description></item><item><title>Active Directory Parsing DLL Loaded Via Office Applications</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_susp_office_dsparse_dll_load.yml/</link><pubDate>Wed, 19 Feb 2020 10:13:44 -0500</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_susp_office_dsparse_dll_load.yml/</guid><description>&lt;p>Detects DSParse DLL being loaded by an Office Product&lt;/p></description></item><item><title>CLR DLL Loaded Via Office Applications</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_susp_office_dotnet_clr_dll_load.yml/</link><pubDate>Wed, 19 Feb 2020 10:13:44 -0500</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_susp_office_dotnet_clr_dll_load.yml/</guid><description>&lt;p>Detects CLR DLL being loaded by an Office Product&lt;/p></description></item><item><title>dotNET DLL Loaded Via Office Applications</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_susp_office_dotnet_assembly_dll_load.yml/</link><pubDate>Wed, 19 Feb 2020 10:13:44 -0500</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_susp_office_dotnet_assembly_dll_load.yml/</guid><description>&lt;p>Detects any assembly DLL being loaded by an Office Product&lt;/p></description></item><item><title>GAC DLL Loaded Via Office Applications</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_susp_office_dotnet_gac_dll_load.yml/</link><pubDate>Wed, 19 Feb 2020 10:13:44 -0500</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_susp_office_dotnet_gac_dll_load.yml/</guid><description>&lt;p>Detects any GAC DLL being loaded by an Office Product&lt;/p></description></item><item><title>VBA DLL Loaded Via Microsoft Word</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_susp_winword_vbadll_load.yml/</link><pubDate>Wed, 19 Feb 2020 10:13:44 -0500</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_susp_winword_vbadll_load.yml/</guid><description>&lt;p>Detects DLL&amp;rsquo;s Loaded Via Word Containing VBA Macros&lt;/p></description></item><item><title>Windows Management Instrumentation DLL Loaded Via Microsoft Word</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_susp_winword_wmidll_load.yml/</link><pubDate>Sun, 29 Dec 2019 23:14:29 +0900</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_susp_winword_wmidll_load.yml/</guid><description>&lt;p>Detects DLL&amp;rsquo;s Loaded Via Word Containing VBA Macros Executing WMI Commands&lt;/p></description></item><item><title>Svchost DLL Search Order Hijack</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_svchost_dll_search_order_hijack.yml/</link><pubDate>Mon, 28 Oct 2019 12:03:03 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_svchost_dll_search_order_hijack.yml/</guid><description>&lt;p>IKEEXT and SessionEnv service, as they call LoadLibrary on files that do not exist within C:\Windows\System32\ by default. An attacker can place their malicious logic within the PROCESS_ATTACH block of their library and restart the aforementioned services &amp;ldquo;svchost.exe -k netsvcs&amp;rdquo; to gain code execution on a remote machine.&lt;/p></description></item><item><title>WMI Modules Loaded</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_wmi_module_load.yml/</link><pubDate>Thu, 24 Oct 2019 15:48:38 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_wmi_module_load.yml/</guid><description>&lt;p>Detects non wmiprvse loading WMI modules&lt;/p></description></item><item><title>APT PRIVATELOG Image Load Pattern</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_usp_svchost_clfsw32.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_usp_svchost_clfsw32.yml/</guid><description>&lt;p>Detects an image load pattern as seen when a tool named PRIVATELOG is used and rarely observed under legitimate circumstances&lt;/p></description></item><item><title>CLR DLL Loaded Via Scripting Applications</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_susp_script_dotnet_clr_dll_load.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_susp_script_dotnet_clr_dll_load.yml/</guid><description>&lt;p>Detects CLR DLL being loaded by an scripting applications&lt;/p></description></item><item><title>Fax Service DLL Search Order Hijack</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_susp_fax_dll.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_susp_fax_dll.yml/</guid><description>&lt;p>The Fax service attempts to load ualapi.dll, which is non-existent. An attacker can then (side)load their own malicious DLL using this service.&lt;/p></description></item><item><title>Image Load of VSS_PS.dll by Uncommon Executable</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_suspicious_vss_ps_load.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_suspicious_vss_ps_load.yml/</guid><description>&lt;p>Detects the image load of vss_ps.dll by uncommon executables using OriginalFileName datapoint&lt;/p></description></item><item><title>PCRE.NET Package Image Load</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_pcre_net_load.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_pcre_net_load.yml/</guid><description>&lt;p>Detects processes loading modules related to PCRE.NET package&lt;/p></description></item><item><title>Pingback Backdoor</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_pingback_backdoor.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_pingback_backdoor.yml/</guid><description>&lt;p>Detects the use of Pingback backdoor that creates ICMP tunnel for C2 as described in the trustwave report&lt;/p></description></item><item><title>Possible Process Hollowing Image Loading</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_susp_image_load.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_susp_image_load.yml/</guid><description>&lt;p>Detects Loading of samlib.dll, WinSCard.dll from untypical process e.g. through process hollowing by Mimikatz&lt;/p></description></item><item><title>Suspicious Load of Advapi31.dll</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_susp_advapi32_dll.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_susp_advapi32_dll.yml/</guid><description>&lt;p>Detects the load of advapi31.dll by a process running in an uncommon folder&lt;/p></description></item><item><title>Suspicious System.Drawing Load</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_susp_system_drawing_load.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_susp_system_drawing_load.yml/</guid><description>&lt;p>A General detection for processes loading System.Drawing.ni.dll. This could be an indicator of potential Screen Capture.&lt;/p></description></item><item><title>Time Travel Debugging Utility Usage</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_tttracer_mod_load.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_tttracer_mod_load.yml/</guid><description>&lt;p>Detects usage of Time Travel Debugging Utility. Adversaries can execute malicious processes and dump processes, such as lsass.exe, via tttracer.exe.&lt;/p></description></item><item><title>UAC Bypass With Fake DLL</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_uac_bypass_via_dism.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_uac_bypass_via_dism.yml/</guid><description>&lt;p>Attempts to load dismcore.dll after dropping it&lt;/p></description></item><item><title>Unsigned Image Loaded Into LSASS Process</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_unsigned_image_loaded_into_lsass.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_unsigned_image_loaded_into_lsass.yml/</guid><description>&lt;p>Loading unsigned image (DLL, EXE) into LSASS process&lt;/p></description></item><item><title>Windows Spooler Service Suspicious Binary Load</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_spoolsv_dll_load.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_spoolsv_dll_load.yml/</guid><description>&lt;p>Detect DLL Load from Spooler Service backup folder&lt;/p></description></item><item><title>WMI Persistence - Command Line Event Consumer</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_wmi_persistence_commandline_event_consumer.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_wmi_persistence_commandline_event_consumer.yml/</guid><description>&lt;p>Detects WMI command line event consumers&lt;/p></description></item><item><title>WMI Script Host Process Image Loaded</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_scrcons_imageload_wmi_scripteventconsumer.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_scrcons_imageload_wmi_scripteventconsumer.yml/</guid><description>&lt;p>Detects signs of the WMI script host process %SystemRoot%\system32\wbem\scrcons.exe functionality being used via images being loaded by a process.&lt;/p></description></item><item><title>WMIC Loading Scripting Libraries</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_wmic_remote_xsl_scripting_dlls.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_wmic_remote_xsl_scripting_dlls.yml/</guid><description>&lt;p>Detects threat actors proxy executing code and bypassing application controls by leveraging wmic and the &lt;code>/FORMAT&lt;/code> argument switch to download and execute an XSL file (i.e js, vbs, etc).&lt;/p></description></item><item><title>Wmiprvse Wbemcomn DLL Hijack</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_wmiprvse_wbemcomn_dll_hijack.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_wmiprvse_wbemcomn_dll_hijack.yml/</guid><description>&lt;p>Detects a threat actor creating a file named &lt;code>wbemcomn.dll&lt;/code> in the &lt;code>C:\Windows\System32\wbem\&lt;/code> directory over the network and loading it for a WMI DLL Hijack scenario.&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>image_load on My New Hugo Site</title>
+    <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/</link>
+    <description>Recent content in image_load on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 27 Sep 2021 22:28:25 +0200</lastBuildDate><atom:link href="https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>FoggyWeb Backdoor DLL Loading</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_foggyweb_nobelium.yml/</link>
+      <pubDate>Mon, 27 Sep 2021 22:28:25 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_foggyweb_nobelium.yml/</guid>
+      <description>&lt;p&gt;Detects DLL image load activity as used by FoggyWeb backdoor loader&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Active Directory Kerberos DLL Loaded Via Office Applications</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_susp_office_kerberos_dll_load.yml/</link>
+      <pubDate>Wed, 19 Feb 2020 10:13:44 -0500</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_susp_office_kerberos_dll_load.yml/</guid>
+      <description>&lt;p&gt;Detects Kerberos DLL being loaded by an Office Product&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Active Directory Parsing DLL Loaded Via Office Applications</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_susp_office_dsparse_dll_load.yml/</link>
+      <pubDate>Wed, 19 Feb 2020 10:13:44 -0500</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_susp_office_dsparse_dll_load.yml/</guid>
+      <description>&lt;p&gt;Detects DSParse DLL being loaded by an Office Product&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>CLR DLL Loaded Via Office Applications</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_susp_office_dotnet_clr_dll_load.yml/</link>
+      <pubDate>Wed, 19 Feb 2020 10:13:44 -0500</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_susp_office_dotnet_clr_dll_load.yml/</guid>
+      <description>&lt;p&gt;Detects CLR DLL being loaded by an Office Product&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>dotNET DLL Loaded Via Office Applications</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_susp_office_dotnet_assembly_dll_load.yml/</link>
+      <pubDate>Wed, 19 Feb 2020 10:13:44 -0500</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_susp_office_dotnet_assembly_dll_load.yml/</guid>
+      <description>&lt;p&gt;Detects any assembly DLL being loaded by an Office Product&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>GAC DLL Loaded Via Office Applications</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_susp_office_dotnet_gac_dll_load.yml/</link>
+      <pubDate>Wed, 19 Feb 2020 10:13:44 -0500</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_susp_office_dotnet_gac_dll_load.yml/</guid>
+      <description>&lt;p&gt;Detects any GAC DLL being loaded by an Office Product&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>VBA DLL Loaded Via Microsoft Word</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_susp_winword_vbadll_load.yml/</link>
+      <pubDate>Wed, 19 Feb 2020 10:13:44 -0500</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_susp_winword_vbadll_load.yml/</guid>
+      <description>&lt;p&gt;Detects DLL&amp;rsquo;s Loaded Via Word Containing VBA Macros&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Windows Management Instrumentation DLL Loaded Via Microsoft Word</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_susp_winword_wmidll_load.yml/</link>
+      <pubDate>Sun, 29 Dec 2019 23:14:29 +0900</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_susp_winword_wmidll_load.yml/</guid>
+      <description>&lt;p&gt;Detects DLL&amp;rsquo;s Loaded Via Word Containing VBA Macros Executing WMI Commands&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Svchost DLL Search Order Hijack</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_svchost_dll_search_order_hijack.yml/</link>
+      <pubDate>Mon, 28 Oct 2019 12:03:03 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_svchost_dll_search_order_hijack.yml/</guid>
+      <description>&lt;p&gt;IKEEXT and SessionEnv service, as they call LoadLibrary on files that do not exist within C:\Windows\System32\ by default. An attacker can place their malicious logic within the PROCESS_ATTACH block of their library and restart the aforementioned services &amp;ldquo;svchost.exe -k netsvcs&amp;rdquo; to gain code execution on a remote machine.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>WMI Modules Loaded</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_wmi_module_load.yml/</link>
+      <pubDate>Thu, 24 Oct 2019 15:48:38 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_wmi_module_load.yml/</guid>
+      <description>&lt;p&gt;Detects non wmiprvse loading WMI modules&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>APT PRIVATELOG Image Load Pattern</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_usp_svchost_clfsw32.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_usp_svchost_clfsw32.yml/</guid>
+      <description>&lt;p&gt;Detects an image load pattern as seen when a tool named PRIVATELOG is used and rarely observed under legitimate circumstances&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>CLR DLL Loaded Via Scripting Applications</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_susp_script_dotnet_clr_dll_load.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_susp_script_dotnet_clr_dll_load.yml/</guid>
+      <description>&lt;p&gt;Detects CLR DLL being loaded by an scripting applications&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Fax Service DLL Search Order Hijack</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_susp_fax_dll.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_susp_fax_dll.yml/</guid>
+      <description>&lt;p&gt;The Fax service attempts to load ualapi.dll, which is non-existent. An attacker can then (side)load their own malicious DLL using this service.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Image Load of VSS_PS.dll by Uncommon Executable</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_suspicious_vss_ps_load.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_suspicious_vss_ps_load.yml/</guid>
+      <description>&lt;p&gt;Detects the image load of vss_ps.dll by uncommon executables using OriginalFileName datapoint&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>PCRE.NET Package Image Load</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_pcre_net_load.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_pcre_net_load.yml/</guid>
+      <description>&lt;p&gt;Detects processes loading modules related to PCRE.NET package&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Pingback Backdoor</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_pingback_backdoor.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_pingback_backdoor.yml/</guid>
+      <description>&lt;p&gt;Detects the use of Pingback backdoor that creates ICMP tunnel for C2 as described in the trustwave report&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Possible Process Hollowing Image Loading</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_susp_image_load.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_susp_image_load.yml/</guid>
+      <description>&lt;p&gt;Detects Loading of samlib.dll, WinSCard.dll from untypical process e.g. through process hollowing by Mimikatz&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Suspicious Load of Advapi31.dll</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_susp_advapi32_dll.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_susp_advapi32_dll.yml/</guid>
+      <description>&lt;p&gt;Detects the load of advapi31.dll by a process running in an uncommon folder&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Suspicious System.Drawing Load</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_susp_system_drawing_load.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_susp_system_drawing_load.yml/</guid>
+      <description>&lt;p&gt;A General detection for processes loading System.Drawing.ni.dll. This could be an indicator of potential Screen Capture.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Time Travel Debugging Utility Usage</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_tttracer_mod_load.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_tttracer_mod_load.yml/</guid>
+      <description>&lt;p&gt;Detects usage of Time Travel Debugging Utility. Adversaries can execute malicious processes and dump processes, such as lsass.exe, via tttracer.exe.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>UAC Bypass With Fake DLL</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_uac_bypass_via_dism.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_uac_bypass_via_dism.yml/</guid>
+      <description>&lt;p&gt;Attempts to load dismcore.dll after dropping it&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Unsigned Image Loaded Into LSASS Process</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_unsigned_image_loaded_into_lsass.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_unsigned_image_loaded_into_lsass.yml/</guid>
+      <description>&lt;p&gt;Loading unsigned image (DLL, EXE) into LSASS process&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Windows Spooler Service Suspicious Binary Load</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_spoolsv_dll_load.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_spoolsv_dll_load.yml/</guid>
+      <description>&lt;p&gt;Detect DLL Load from Spooler Service backup folder&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>WMI Persistence - Command Line Event Consumer</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_wmi_persistence_commandline_event_consumer.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_wmi_persistence_commandline_event_consumer.yml/</guid>
+      <description>&lt;p&gt;Detects WMI command line event consumers&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>WMI Script Host Process Image Loaded</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_scrcons_imageload_wmi_scripteventconsumer.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_scrcons_imageload_wmi_scripteventconsumer.yml/</guid>
+      <description>&lt;p&gt;Detects signs of the WMI script host process %SystemRoot%\system32\wbem\scrcons.exe functionality being used via images being loaded by a process.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>WMIC Loading Scripting Libraries</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_wmic_remote_xsl_scripting_dlls.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_wmic_remote_xsl_scripting_dlls.yml/</guid>
+      <description>&lt;p&gt;Detects threat actors proxy executing code and bypassing application controls by leveraging wmic and the &lt;code&gt;/FORMAT&lt;/code&gt; argument switch to download and execute an XSL file (i.e js, vbs, etc).&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Wmiprvse Wbemcomn DLL Hijack</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_wmiprvse_wbemcomn_dll_hijack.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_wmiprvse_wbemcomn_dll_hijack.yml/</guid>
+      <description>&lt;p&gt;Detects a threat actor creating a file named &lt;code&gt;wbemcomn.dll&lt;/code&gt; in the &lt;code&gt;C:\Windows\System32\wbem\&lt;/code&gt; directory over the network and loading it for a WMI DLL Hijack scenario.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

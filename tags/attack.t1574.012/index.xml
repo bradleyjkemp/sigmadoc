@@ -1,5 +1,33 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>attack.t1574.012 on My New Hugo Site</title><link>https://bradleyjkemp.dev/sigmadoc/tags/attack.t1574.012/</link><description>Recent content in attack.t1574.012 on My New Hugo Site</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 30 Dec 2021 11:58:10 +0100</lastBuildDate><atom:link href="https://bradleyjkemp.dev/sigmadoc/tags/attack.t1574.012/index.xml" rel="self" type="application/rss+xml"/><item><title>Registry-Free Process Scope COR_PROFILER</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_cor_profiler.yml/</link><pubDate>Thu, 30 Dec 2021 11:58:10 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_cor_profiler.yml/</guid><description>&lt;p>Adversaries may leverage the COR_PROFILER environment variable to hijack the execution flow of programs that load the .NET CLR.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>attack.t1574.012 on My New Hugo Site</title>
+    <link>https://bradleyjkemp.dev/sigmadoc/tags/attack.t1574.012/</link>
+    <description>Recent content in attack.t1574.012 on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 30 Dec 2021 11:58:10 +0100</lastBuildDate><atom:link href="https://bradleyjkemp.dev/sigmadoc/tags/attack.t1574.012/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Registry-Free Process Scope COR_PROFILER</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_cor_profiler.yml/</link>
+      <pubDate>Thu, 30 Dec 2021 11:58:10 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_cor_profiler.yml/</guid>
+      <description>&lt;p&gt;Adversaries may leverage the COR_PROFILER environment variable to hijack the execution flow of programs that load the .NET CLR.
 The COR_PROFILER is a .NET Framework feature which allows developers to specify an unmanaged (or external of .NET) profiling DLL to be loaded into each .NET process that loads the Common Language Runtime (CLR).
 These profiliers are designed to monitor, troubleshoot, and debug managed code executed by the .NET CLR.
 (Citation: Microsoft Profiling Mar 2017)
-(Citation: Microsoft COR_PROFILER Feb 2013)&lt;/p></description></item><item><title>Enabling COR Profiler Environment Variables</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_enabling_cor_profiler_env_variables.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_enabling_cor_profiler_env_variables.yml/</guid><description>&lt;p>This rule detects cor_enable_profiling and cor_profiler environment variables being set and configured.&lt;/p></description></item></channel></rss>
+(Citation: Microsoft COR_PROFILER Feb 2013)&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Enabling COR Profiler Environment Variables</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_enabling_cor_profiler_env_variables.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_enabling_cor_profiler_env_variables.yml/</guid>
+      <description>&lt;p&gt;This rule detects cor_enable_profiling and cor_profiler environment variables being set and configured.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

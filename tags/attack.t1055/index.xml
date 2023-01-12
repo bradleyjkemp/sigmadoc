@@ -1,1 +1,128 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>attack.t1055 on My New Hugo Site</title><link>https://bradleyjkemp.dev/sigmadoc/tags/attack.t1055/</link><description>Recent content in attack.t1055 on My New Hugo Site</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 23 Aug 2021 08:32:50 +0200</lastBuildDate><atom:link href="https://bradleyjkemp.dev/sigmadoc/tags/attack.t1055/index.xml" rel="self" type="application/rss+xml"/><item><title>EfsPotato Named Pipe</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/pipe_created/pipe_created_efspotato_namedpipe.yml/</link><pubDate>Mon, 23 Aug 2021 08:32:50 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/pipe_created/pipe_created_efspotato_namedpipe.yml/</guid><description>&lt;p>Detects the pattern of a pipe name as used by the tool EfsPotato&lt;/p></description></item><item><title>Notepad Making Network Connection</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/network_connection/net_connection_win_notepad_network_connection.yml/</link><pubDate>Thu, 14 May 2020 18:08:30 +0700</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/network_connection/net_connection_win_notepad_network_connection.yml/</guid><description>&lt;p>Detects suspicious network connection by Notepad&lt;/p></description></item><item><title>Suspicious Remote Thread Created</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/create_remote_thread/sysmon_suspicious_remote_thread.yml/</link><pubDate>Mon, 28 Oct 2019 22:12:57 -0700</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/create_remote_thread/sysmon_suspicious_remote_thread.yml/</guid><description>&lt;p>Offensive tradecraft is switching away from using APIs like &amp;ldquo;CreateRemoteThread&amp;rdquo;, however, this is still largely observed in the wild. This rule aims to detect suspicious processes (those we would not expect to behave in this way like word.exe or outlook.exe) creating remote threads on other processes. It is a generalistic rule, but it should have a low FP ratio due to the selected range of processes.&lt;/p></description></item><item><title>Suspicious Userinit Child Process</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_userinit_child.yml/</link><pubDate>Sun, 23 Jun 2019 13:27:06 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_userinit_child.yml/</guid><description>&lt;p>Detects a suspicious child process of userinit&lt;/p></description></item><item><title>Dridex Process Pattern</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_malware_dridex.yml/</link><pubDate>Wed, 16 Jan 2019 23:36:31 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_malware_dridex.yml/</guid><description>&lt;p>Detects typical Dridex process patterns&lt;/p></description></item><item><title>PowerShell ShellCode</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_shellcode_b64.yml/</link><pubDate>Sat, 17 Nov 2018 09:10:09 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_shellcode_b64.yml/</guid><description>&lt;p>Detects Base64 encoded Shellcode&lt;/p></description></item><item><title>Antivirus PrinterNightmare CVE-2021-34527 Exploit Detection</title><link>https://bradleyjkemp.dev/sigmadoc/rules/application/antivirus/av_printernightmare_cve_2021_34527.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/application/antivirus/av_printernightmare_cve_2021_34527.yml/</guid><description>&lt;p>Detects the suspicious file that is created from PoC code against Windows Print Spooler Remote Code Execution Vulnerability CVE-2021-34527 (PrinterNightmare), CVE-2021-1675 .&lt;/p></description></item><item><title>APT PRIVATELOG Image Load Pattern</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_usp_svchost_clfsw32.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_usp_svchost_clfsw32.yml/</guid><description>&lt;p>Detects an image load pattern as seen when a tool named PRIVATELOG is used and rarely observed under legitimate circumstances&lt;/p></description></item><item><title>CLR DLL Loaded Via Scripting Applications</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_susp_script_dotnet_clr_dll_load.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_susp_script_dotnet_clr_dll_load.yml/</guid><description>&lt;p>Detects CLR DLL being loaded by an scripting applications&lt;/p></description></item><item><title>CobaltStrike Named Pipe</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/pipe_created/pipe_created_mal_cobaltstrike.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/pipe_created/pipe_created_mal_cobaltstrike.yml/</guid><description>&lt;p>Detects the creation of a named pipe as used by CobaltStrike&lt;/p></description></item><item><title>Malicious Named Pipe</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/pipe_created/pipe_created_mal_namedpipes.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/pipe_created/pipe_created_mal_namedpipes.yml/</guid><description>&lt;p>Detects the creation of a named pipe used by known APT malware&lt;/p></description></item><item><title>Malware Shellcode in Verclsid Target Process</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_access/proc_access_win_malware_verclsid_shellcode.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_access/proc_access_win_malware_verclsid_shellcode.yml/</guid><description>&lt;p>Detects a process access to verclsid.exe that injects shellcode from a Microsoft Office application / VBA macro&lt;/p></description></item><item><title>Suspicious Rundll32 Invoking Inline VBScript</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_rundll32_inline_vbs.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_rundll32_inline_vbs.yml/</guid><description>&lt;p>Detects suspicious process related to rundll32 based on command line that invokes inline VBScript as seen being used by UNC2452&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>attack.t1055 on My New Hugo Site</title>
+    <link>https://bradleyjkemp.dev/sigmadoc/tags/attack.t1055/</link>
+    <description>Recent content in attack.t1055 on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 23 Aug 2021 08:32:50 +0200</lastBuildDate><atom:link href="https://bradleyjkemp.dev/sigmadoc/tags/attack.t1055/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>EfsPotato Named Pipe</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/pipe_created/pipe_created_efspotato_namedpipe.yml/</link>
+      <pubDate>Mon, 23 Aug 2021 08:32:50 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/pipe_created/pipe_created_efspotato_namedpipe.yml/</guid>
+      <description>&lt;p&gt;Detects the pattern of a pipe name as used by the tool EfsPotato&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Notepad Making Network Connection</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/network_connection/net_connection_win_notepad_network_connection.yml/</link>
+      <pubDate>Thu, 14 May 2020 18:08:30 +0700</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/network_connection/net_connection_win_notepad_network_connection.yml/</guid>
+      <description>&lt;p&gt;Detects suspicious network connection by Notepad&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Suspicious Remote Thread Created</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/create_remote_thread/sysmon_suspicious_remote_thread.yml/</link>
+      <pubDate>Mon, 28 Oct 2019 22:12:57 -0700</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/create_remote_thread/sysmon_suspicious_remote_thread.yml/</guid>
+      <description>&lt;p&gt;Offensive tradecraft is switching away from using APIs like &amp;ldquo;CreateRemoteThread&amp;rdquo;, however, this is still largely observed in the wild. This rule aims to detect suspicious processes (those we would not expect to behave in this way like word.exe or outlook.exe) creating remote threads on other processes. It is a generalistic rule, but it should have a low FP ratio due to the selected range of processes.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Suspicious Userinit Child Process</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_userinit_child.yml/</link>
+      <pubDate>Sun, 23 Jun 2019 13:27:06 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_userinit_child.yml/</guid>
+      <description>&lt;p&gt;Detects a suspicious child process of userinit&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Dridex Process Pattern</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_malware_dridex.yml/</link>
+      <pubDate>Wed, 16 Jan 2019 23:36:31 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_malware_dridex.yml/</guid>
+      <description>&lt;p&gt;Detects typical Dridex process patterns&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>PowerShell ShellCode</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_shellcode_b64.yml/</link>
+      <pubDate>Sat, 17 Nov 2018 09:10:09 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_shellcode_b64.yml/</guid>
+      <description>&lt;p&gt;Detects Base64 encoded Shellcode&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Antivirus PrinterNightmare CVE-2021-34527 Exploit Detection</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/application/antivirus/av_printernightmare_cve_2021_34527.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/application/antivirus/av_printernightmare_cve_2021_34527.yml/</guid>
+      <description>&lt;p&gt;Detects the suspicious file that is created from PoC code against Windows Print Spooler Remote Code Execution Vulnerability CVE-2021-34527 (PrinterNightmare), CVE-2021-1675 .&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>APT PRIVATELOG Image Load Pattern</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_usp_svchost_clfsw32.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_usp_svchost_clfsw32.yml/</guid>
+      <description>&lt;p&gt;Detects an image load pattern as seen when a tool named PRIVATELOG is used and rarely observed under legitimate circumstances&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>CLR DLL Loaded Via Scripting Applications</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_susp_script_dotnet_clr_dll_load.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_susp_script_dotnet_clr_dll_load.yml/</guid>
+      <description>&lt;p&gt;Detects CLR DLL being loaded by an scripting applications&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>CobaltStrike Named Pipe</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/pipe_created/pipe_created_mal_cobaltstrike.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/pipe_created/pipe_created_mal_cobaltstrike.yml/</guid>
+      <description>&lt;p&gt;Detects the creation of a named pipe as used by CobaltStrike&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Malicious Named Pipe</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/pipe_created/pipe_created_mal_namedpipes.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/pipe_created/pipe_created_mal_namedpipes.yml/</guid>
+      <description>&lt;p&gt;Detects the creation of a named pipe used by known APT malware&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Malware Shellcode in Verclsid Target Process</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_access/proc_access_win_malware_verclsid_shellcode.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_access/proc_access_win_malware_verclsid_shellcode.yml/</guid>
+      <description>&lt;p&gt;Detects a process access to verclsid.exe that injects shellcode from a Microsoft Office application / VBA macro&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Suspicious Rundll32 Invoking Inline VBScript</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_rundll32_inline_vbs.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_rundll32_inline_vbs.yml/</guid>
+      <description>&lt;p&gt;Detects suspicious process related to rundll32 based on command line that invokes inline VBScript as seen being used by UNC2452&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

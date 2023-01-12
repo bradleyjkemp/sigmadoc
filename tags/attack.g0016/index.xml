@@ -1,1 +1,20 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>attack.g0016 on My New Hugo Site</title><link>https://bradleyjkemp.dev/sigmadoc/tags/attack.g0016/</link><description>Recent content in attack.g0016 on My New Hugo Site</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 13 Aug 2017 16:20:25 -0400</lastBuildDate><atom:link href="https://bradleyjkemp.dev/sigmadoc/tags/attack.g0016/index.xml" rel="self" type="application/rss+xml"/><item><title>APT29</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_apt_apt29_thinktanks.yml/</link><pubDate>Sun, 13 Aug 2017 16:20:25 -0400</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_apt_apt29_thinktanks.yml/</guid><description>&lt;p>This method detects a suspicious PowerShell command line combination as used by APT29 in a campaign against U.S. think tanks.&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>attack.g0016 on My New Hugo Site</title>
+    <link>https://bradleyjkemp.dev/sigmadoc/tags/attack.g0016/</link>
+    <description>Recent content in attack.g0016 on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 13 Aug 2017 16:20:25 -0400</lastBuildDate><atom:link href="https://bradleyjkemp.dev/sigmadoc/tags/attack.g0016/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>APT29</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_apt_apt29_thinktanks.yml/</link>
+      <pubDate>Sun, 13 Aug 2017 16:20:25 -0400</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_apt_apt29_thinktanks.yml/</guid>
+      <description>&lt;p&gt;This method detects a suspicious PowerShell command line combination as used by APT29 in a campaign against U.S. think tanks.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

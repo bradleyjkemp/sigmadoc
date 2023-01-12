@@ -1,3 +1,22 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>attack.t1555.003 on My New Hugo Site</title><link>https://bradleyjkemp.dev/sigmadoc/tags/attack.t1555.003/</link><description>Recent content in attack.t1555.003 on My New Hugo Site</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 20 Dec 2021 10:43:32 +0100</lastBuildDate><atom:link href="https://bradleyjkemp.dev/sigmadoc/tags/attack.t1555.003/index.xml" rel="self" type="application/rss+xml"/><item><title>Accessing Encrypted Credentials from Google Chrome Login Database</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_access_to_chrome_login_data.yml/</link><pubDate>Mon, 20 Dec 2021 10:43:32 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_access_to_chrome_login_data.yml/</guid><description>&lt;p>Adversaries may acquire credentials from web browsers by reading files specific to the target browser.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>attack.t1555.003 on My New Hugo Site</title>
+    <link>https://bradleyjkemp.dev/sigmadoc/tags/attack.t1555.003/</link>
+    <description>Recent content in attack.t1555.003 on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 20 Dec 2021 10:43:32 +0100</lastBuildDate><atom:link href="https://bradleyjkemp.dev/sigmadoc/tags/attack.t1555.003/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Accessing Encrypted Credentials from Google Chrome Login Database</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_access_to_chrome_login_data.yml/</link>
+      <pubDate>Mon, 20 Dec 2021 10:43:32 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_access_to_chrome_login_data.yml/</guid>
+      <description>&lt;p&gt;Adversaries may acquire credentials from web browsers by reading files specific to the target browser.
 Web browsers commonly save credentials such as website usernames and passwords so that they do not need to be entered manually in the future.
-Web browsers typically store the credentials in an encrypted format within a credential store.&lt;/p></description></item></channel></rss>
+Web browsers typically store the credentials in an encrypted format within a credential store.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

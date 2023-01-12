@@ -1,1 +1,47 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>firewall_as on My New Hugo Site</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/firewall_as/</link><description>Recent content in firewall_as on My New Hugo Site</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 19 Feb 2022 10:18:49 +0100</lastBuildDate><atom:link href="https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/firewall_as/index.xml" rel="self" type="application/rss+xml"/><item><title>Failed to Load Policy in Windows Firewall with Advanced Security</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/firewall_as/win_firewall_as_failed.yml/</link><pubDate>Sat, 19 Feb 2022 10:18:49 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/firewall_as/win_firewall_as_failed.yml/</guid><description>&lt;p>The Windows Firewall service failed to load Group Policy.&lt;/p></description></item><item><title>Modified Rule in Windows Firewall with Advanced Security</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/firewall_as/win_firewall_as_change_rule.yml/</link><pubDate>Sat, 19 Feb 2022 10:18:49 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/firewall_as/win_firewall_as_change_rule.yml/</guid><description>&lt;p>A rule has been modified in the Windows Firewall exception list&lt;/p></description></item><item><title>Reset to Default Configuration Windows Firewall with Advanced Security</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/firewall_as/win_firewall_as_reset.yml/</link><pubDate>Sat, 19 Feb 2022 10:18:49 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/firewall_as/win_firewall_as_reset.yml/</guid><description>&lt;p>Windows Firewall has been reset to its default configuration.&lt;/p></description></item><item><title>Setting Change in Windows Firewall with Advanced Security</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/firewall_as/win_firewall_as_setting_change.yml/</link><pubDate>Sat, 19 Feb 2022 10:18:49 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/firewall_as/win_firewall_as_setting_change.yml/</guid><description>&lt;p>Setting have been change in Windows Firewall&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>firewall_as on My New Hugo Site</title>
+    <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/firewall_as/</link>
+    <description>Recent content in firewall_as on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 19 Feb 2022 10:18:49 +0100</lastBuildDate><atom:link href="https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/firewall_as/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Failed to Load Policy in Windows Firewall with Advanced Security</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/firewall_as/win_firewall_as_failed.yml/</link>
+      <pubDate>Sat, 19 Feb 2022 10:18:49 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/firewall_as/win_firewall_as_failed.yml/</guid>
+      <description>&lt;p&gt;The Windows Firewall service failed to load Group Policy.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Modified Rule in Windows Firewall with Advanced Security</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/firewall_as/win_firewall_as_change_rule.yml/</link>
+      <pubDate>Sat, 19 Feb 2022 10:18:49 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/firewall_as/win_firewall_as_change_rule.yml/</guid>
+      <description>&lt;p&gt;A rule has been modified in the Windows Firewall exception list&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Reset to Default Configuration Windows Firewall with Advanced Security</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/firewall_as/win_firewall_as_reset.yml/</link>
+      <pubDate>Sat, 19 Feb 2022 10:18:49 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/firewall_as/win_firewall_as_reset.yml/</guid>
+      <description>&lt;p&gt;Windows Firewall has been reset to its default configuration.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Setting Change in Windows Firewall with Advanced Security</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/firewall_as/win_firewall_as_setting_change.yml/</link>
+      <pubDate>Sat, 19 Feb 2022 10:18:49 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/firewall_as/win_firewall_as_setting_change.yml/</guid>
+      <description>&lt;p&gt;Setting have been change in Windows Firewall&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

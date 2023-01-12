@@ -1,3 +1,121 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>deprecated on My New Hugo Site</title><link>https://bradleyjkemp.dev/sigmadoc/status/deprecated/</link><description>Recent content in deprecated on My New Hugo Site</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 20 Dec 2021 10:43:32 +0100</lastBuildDate><atom:link href="https://bradleyjkemp.dev/sigmadoc/status/deprecated/index.xml" rel="self" type="application/rss+xml"/><item><title>Accessing Encrypted Credentials from Google Chrome Login Database</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_access_to_chrome_login_data.yml/</link><pubDate>Mon, 20 Dec 2021 10:43:32 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_access_to_chrome_login_data.yml/</guid><description>&lt;p>Adversaries may acquire credentials from web browsers by reading files specific to the target browser.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>deprecated on My New Hugo Site</title>
+    <link>https://bradleyjkemp.dev/sigmadoc/status/deprecated/</link>
+    <description>Recent content in deprecated on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 20 Dec 2021 10:43:32 +0100</lastBuildDate><atom:link href="https://bradleyjkemp.dev/sigmadoc/status/deprecated/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Accessing Encrypted Credentials from Google Chrome Login Database</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_access_to_chrome_login_data.yml/</link>
+      <pubDate>Mon, 20 Dec 2021 10:43:32 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_access_to_chrome_login_data.yml/</guid>
+      <description>&lt;p&gt;Adversaries may acquire credentials from web browsers by reading files specific to the target browser.
 Web browsers commonly save credentials such as website usernames and passwords so that they do not need to be entered manually in the future.
-Web browsers typically store the credentials in an encrypted format within a credential store.&lt;/p></description></item><item><title>Rclone Execution via Command Line or PowerShell</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/deprecated/win_susp_rclone_exec.yml/</link><pubDate>Sun, 24 Oct 2021 11:02:55 -0500</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/deprecated/win_susp_rclone_exec.yml/</guid><description>&lt;p>Detects Rclone which is commonly used by ransomware groups for exfiltration&lt;/p></description></item><item><title>RClone Execution</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/deprecated/sysmon_rclone_execution.yml/</link><pubDate>Sun, 24 Oct 2021 11:02:34 -0500</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/deprecated/sysmon_rclone_execution.yml/</guid><description>&lt;p>Detects execution of RClone utility for exfiltration as used by various ransomwares strains like REvil, Conti, FiveHands, etc&lt;/p></description></item><item><title>Windows Management Instrumentation DLL Loaded Via Microsoft Word</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_susp_winword_wmidll_load.yml/</link><pubDate>Sun, 29 Dec 2019 23:14:29 +0900</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_susp_winword_wmidll_load.yml/</guid><description>&lt;p>Detects DLL&amp;rsquo;s Loaded Via Word Containing VBA Macros Executing WMI Commands&lt;/p></description></item><item><title>Activity Related to NTDS.dit Domain Hash Retrieval</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/deprecated/win_susp_vssadmin_ntds_activity.yml/</link><pubDate>Wed, 16 Jan 2019 23:36:31 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/deprecated/win_susp_vssadmin_ntds_activity.yml/</guid><description>&lt;p>Detects suspicious commands that could be related to activity that uses volume shadow copy to steal and retrieve hashes from the NTDS.dit file remotely&lt;/p></description></item><item><title>Suspicious PowerShell Invocations - Generic</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/deprecated/powershell_suspicious_invocation_generic.yml/</link><pubDate>Sun, 12 Mar 2017 17:06:53 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/deprecated/powershell_suspicious_invocation_generic.yml/</guid><description>&lt;p>Detects suspicious PowerShell invocation command parameters&lt;/p></description></item><item><title>Lateral Movement Indicator ConDrv</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_lateral_movement_condrv.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_lateral_movement_condrv.yml/</guid><description>&lt;p>This event was observed on the target host during lateral movement. The process name within the event contains the process spawned post compromise. Account Name within the event contains the compromised user account name. This event should to be correlated with 4624 and 4688 for further intrusion context.&lt;/p></description></item><item><title>Mimikatz Detection LSASS Access</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/deprecated/sysmon_mimikatz_detection_lsass.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/deprecated/sysmon_mimikatz_detection_lsass.yml/</guid><description>&lt;p>Detects process access to LSASS which is typical for Mimikatz (0x1000 PROCESS_QUERY_ LIMITED_INFORMATION, 0x0400 PROCESS_QUERY_ INFORMATION &amp;ldquo;only old versions&amp;rdquo;, 0x0010 PROCESS_VM_READ)&lt;/p></description></item><item><title>Suspicious Esentutl Use</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/deprecated/win_susp_esentutl_activity.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/deprecated/win_susp_esentutl_activity.yml/</guid><description>&lt;p>Detects flags often used with the LOLBAS Esentutl for malicious activity. It could be used in rare cases by administrators to access locked files or during maintenance.&lt;/p></description></item><item><title>Suspicious PowerShell Download</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/deprecated/powershell_suspicious_download.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/deprecated/powershell_suspicious_download.yml/</guid><description>&lt;p>Detects suspicious PowerShell download command&lt;/p></description></item><item><title>Suspicious PowerShell Invocations - Specific</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/deprecated/powershell_suspicious_invocation_specific.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/deprecated/powershell_suspicious_invocation_specific.yml/</guid><description>&lt;p>Detects suspicious PowerShell invocation command parameters&lt;/p></description></item><item><title>SyncAppvPublishingServer Execution to Bypass Powershell Restriction</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/deprecated/process_creation_syncappvpublishingserver_exe.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/deprecated/process_creation_syncappvpublishingserver_exe.yml/</guid><description>&lt;p>Detects SyncAppvPublishingServer process execution which usually utilized by adversaries to bypass PowerShell execution restrictions.&lt;/p></description></item></channel></rss>
+Web browsers typically store the credentials in an encrypted format within a credential store.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Rclone Execution via Command Line or PowerShell</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/deprecated/win_susp_rclone_exec.yml/</link>
+      <pubDate>Sun, 24 Oct 2021 11:02:55 -0500</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/deprecated/win_susp_rclone_exec.yml/</guid>
+      <description>&lt;p&gt;Detects Rclone which is commonly used by ransomware groups for exfiltration&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>RClone Execution</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/deprecated/sysmon_rclone_execution.yml/</link>
+      <pubDate>Sun, 24 Oct 2021 11:02:34 -0500</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/deprecated/sysmon_rclone_execution.yml/</guid>
+      <description>&lt;p&gt;Detects execution of RClone utility for exfiltration as used by various ransomwares strains like REvil, Conti, FiveHands, etc&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Windows Management Instrumentation DLL Loaded Via Microsoft Word</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_susp_winword_wmidll_load.yml/</link>
+      <pubDate>Sun, 29 Dec 2019 23:14:29 +0900</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/image_load/image_load_susp_winword_wmidll_load.yml/</guid>
+      <description>&lt;p&gt;Detects DLL&amp;rsquo;s Loaded Via Word Containing VBA Macros Executing WMI Commands&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Activity Related to NTDS.dit Domain Hash Retrieval</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/deprecated/win_susp_vssadmin_ntds_activity.yml/</link>
+      <pubDate>Wed, 16 Jan 2019 23:36:31 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/deprecated/win_susp_vssadmin_ntds_activity.yml/</guid>
+      <description>&lt;p&gt;Detects suspicious commands that could be related to activity that uses volume shadow copy to steal and retrieve hashes from the NTDS.dit file remotely&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Suspicious PowerShell Invocations - Generic</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/deprecated/powershell_suspicious_invocation_generic.yml/</link>
+      <pubDate>Sun, 12 Mar 2017 17:06:53 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/deprecated/powershell_suspicious_invocation_generic.yml/</guid>
+      <description>&lt;p&gt;Detects suspicious PowerShell invocation command parameters&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Lateral Movement Indicator ConDrv</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_lateral_movement_condrv.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_lateral_movement_condrv.yml/</guid>
+      <description>&lt;p&gt;This event was observed on the target host during lateral movement. The process name within the event contains the process spawned post compromise. Account Name within the event contains the compromised user account name. This event should to be correlated with 4624 and 4688 for further intrusion context.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Mimikatz Detection LSASS Access</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/deprecated/sysmon_mimikatz_detection_lsass.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/deprecated/sysmon_mimikatz_detection_lsass.yml/</guid>
+      <description>&lt;p&gt;Detects process access to LSASS which is typical for Mimikatz (0x1000 PROCESS_QUERY_ LIMITED_INFORMATION, 0x0400 PROCESS_QUERY_ INFORMATION &amp;ldquo;only old versions&amp;rdquo;, 0x0010 PROCESS_VM_READ)&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Suspicious Esentutl Use</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/deprecated/win_susp_esentutl_activity.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/deprecated/win_susp_esentutl_activity.yml/</guid>
+      <description>&lt;p&gt;Detects flags often used with the LOLBAS Esentutl for malicious activity. It could be used in rare cases by administrators to access locked files or during maintenance.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Suspicious PowerShell Download</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/deprecated/powershell_suspicious_download.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/deprecated/powershell_suspicious_download.yml/</guid>
+      <description>&lt;p&gt;Detects suspicious PowerShell download command&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Suspicious PowerShell Invocations - Specific</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/deprecated/powershell_suspicious_invocation_specific.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/deprecated/powershell_suspicious_invocation_specific.yml/</guid>
+      <description>&lt;p&gt;Detects suspicious PowerShell invocation command parameters&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>SyncAppvPublishingServer Execution to Bypass Powershell Restriction</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/deprecated/process_creation_syncappvpublishingserver_exe.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/deprecated/process_creation_syncappvpublishingserver_exe.yml/</guid>
+      <description>&lt;p&gt;Detects SyncAppvPublishingServer process execution which usually utilized by adversaries to bypass PowerShell execution restrictions.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

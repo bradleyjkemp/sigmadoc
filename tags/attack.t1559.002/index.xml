@@ -1,1 +1,20 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>attack.t1559.002 on My New Hugo Site</title><link>https://bradleyjkemp.dev/sigmadoc/tags/attack.t1559.002/</link><description>Recent content in attack.t1559.002 on My New Hugo Site</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 27 Feb 2022 07:40:19 +0100</lastBuildDate><atom:link href="https://bradleyjkemp.dev/sigmadoc/tags/attack.t1559.002/index.xml" rel="self" type="application/rss+xml"/><item><title>Enable Microsoft Dynamic Data Exchange</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_office_enable_dde.yml/</link><pubDate>Sun, 27 Feb 2022 07:40:19 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_office_enable_dde.yml/</guid><description>&lt;p>Enable Dynamic Data Exchange protocol (DDE) in all supported editions of Microsoft Word or Excel.&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>attack.t1559.002 on My New Hugo Site</title>
+    <link>https://bradleyjkemp.dev/sigmadoc/tags/attack.t1559.002/</link>
+    <description>Recent content in attack.t1559.002 on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 27 Feb 2022 07:40:19 +0100</lastBuildDate><atom:link href="https://bradleyjkemp.dev/sigmadoc/tags/attack.t1559.002/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Enable Microsoft Dynamic Data Exchange</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_office_enable_dde.yml/</link>
+      <pubDate>Sun, 27 Feb 2022 07:40:19 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_office_enable_dde.yml/</guid>
+      <description>&lt;p&gt;Enable Dynamic Data Exchange protocol (DDE) in all supported editions of Microsoft Word or Excel.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

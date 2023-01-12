@@ -1,1 +1,47 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>attack.t1573 on My New Hugo Site</title><link>https://bradleyjkemp.dev/sigmadoc/tags/attack.t1573/</link><description>Recent content in attack.t1573 on My New Hugo Site</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 23 Jan 2022 11:37:01 +0100</lastBuildDate><atom:link href="https://bradleyjkemp.dev/sigmadoc/tags/attack.t1573/index.xml" rel="self" type="application/rss+xml"/><item><title>Suspicious SSL Connection</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_susp_ssl_keyword.yml/</link><pubDate>Sun, 23 Jan 2022 11:37:01 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_susp_ssl_keyword.yml/</guid><description>&lt;p>Adversaries may employ a known encryption algorithm to conceal command and control traffic rather than relying on any inherent protections provided by a communication protocol.&lt;/p></description></item><item><title>Activity from Anonymous IP Addresses</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/m365/microsoft365_activity_from_anonymous_ip_addresses.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/m365/microsoft365_activity_from_anonymous_ip_addresses.yml/</guid><description>&lt;p>Detects when a Microsoft Cloud App Security reported when users were active from an IP address that has been identified as an anonymous proxy IP address.&lt;/p></description></item><item><title>Activity from Infrequent Country</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/m365/microsoft365_activity_from_infrequent_country.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/m365/microsoft365_activity_from_infrequent_country.yml/</guid><description>&lt;p>Detects when a Microsoft Cloud App Security reported when an activity occurs from a location that wasn&amp;rsquo;t recently or never visited by any user in the organization.&lt;/p></description></item><item><title>Activity from Suspicious IP Addresses</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/m365/microsoft365_from_suspicious_ip_addresses.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/m365/microsoft365_from_suspicious_ip_addresses.yml/</guid><description>&lt;p>Detects when a Microsoft Cloud App Security reported users were active from an IP address identified as risky by Microsoft Threat Intelligence. These IP addresses are involved in malicious activities, such as Botnet C&amp;amp;C, and may indicate compromised account.&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>attack.t1573 on My New Hugo Site</title>
+    <link>https://bradleyjkemp.dev/sigmadoc/tags/attack.t1573/</link>
+    <description>Recent content in attack.t1573 on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 23 Jan 2022 11:37:01 +0100</lastBuildDate><atom:link href="https://bradleyjkemp.dev/sigmadoc/tags/attack.t1573/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Suspicious SSL Connection</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_susp_ssl_keyword.yml/</link>
+      <pubDate>Sun, 23 Jan 2022 11:37:01 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_script/posh_ps_susp_ssl_keyword.yml/</guid>
+      <description>&lt;p&gt;Adversaries may employ a known encryption algorithm to conceal command and control traffic rather than relying on any inherent protections provided by a communication protocol.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Activity from Anonymous IP Addresses</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/m365/microsoft365_activity_from_anonymous_ip_addresses.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/m365/microsoft365_activity_from_anonymous_ip_addresses.yml/</guid>
+      <description>&lt;p&gt;Detects when a Microsoft Cloud App Security reported when users were active from an IP address that has been identified as an anonymous proxy IP address.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Activity from Infrequent Country</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/m365/microsoft365_activity_from_infrequent_country.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/m365/microsoft365_activity_from_infrequent_country.yml/</guid>
+      <description>&lt;p&gt;Detects when a Microsoft Cloud App Security reported when an activity occurs from a location that wasn&amp;rsquo;t recently or never visited by any user in the organization.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Activity from Suspicious IP Addresses</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/m365/microsoft365_from_suspicious_ip_addresses.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/m365/microsoft365_from_suspicious_ip_addresses.yml/</guid>
+      <description>&lt;p&gt;Detects when a Microsoft Cloud App Security reported users were active from an IP address identified as risky by Microsoft Threat Intelligence. These IP addresses are involved in malicious activities, such as Botnet C&amp;amp;C, and may indicate compromised account.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

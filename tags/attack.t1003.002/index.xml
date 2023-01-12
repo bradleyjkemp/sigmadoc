@@ -1,1 +1,209 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>attack.t1003.002 on My New Hugo Site</title><link>https://bradleyjkemp.dev/sigmadoc/tags/attack.t1003.002/</link><description>Recent content in attack.t1003.002 on My New Hugo Site</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 12 Jan 2022 11:32:12 +0100</lastBuildDate><atom:link href="https://bradleyjkemp.dev/sigmadoc/tags/attack.t1003.002/index.xml" rel="self" type="application/rss+xml"/><item><title>Suspicious Process Writes Ntds.dit</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_susp_ntds_dit.yml/</link><pubDate>Wed, 12 Jan 2022 11:32:12 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_susp_ntds_dit.yml/</guid><description>&lt;p>Detects suspicious processes that write (copy) a Active Directory database (ntds.dit) file&lt;/p></description></item><item><title>PowerShell SAM Copy</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_powershell_sam_access.yml/</link><pubDate>Thu, 29 Jul 2021 18:12:10 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_powershell_sam_access.yml/</guid><description>&lt;p>Detects suspicious PowerShell scripts accessing SAM hives&lt;/p></description></item><item><title>QuarksPwDump Dump File</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_quarkspw_filedump.yml/</link><pubDate>Sat, 10 Feb 2018 15:25:36 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_quarkspw_filedump.yml/</guid><description>&lt;p>Detects a dump file written by QuarksPwDump password dumper&lt;/p></description></item><item><title>SAM Dump to AppData</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_susp_sam_dump.yml/</link><pubDate>Mon, 27 Mar 2017 15:20:50 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_susp_sam_dump.yml/</guid><description>&lt;p>Detects suspicious SAM dump activity as cause by QuarksPwDump and other password dumpers&lt;/p></description></item><item><title>Mimikatz Use</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/win_alert_mimikatz_keywords.yml/</link><pubDate>Tue, 27 Dec 2016 14:49:54 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/win_alert_mimikatz_keywords.yml/</guid><description>&lt;p>This method detects mimikatz keywords in different Eventlogs (some of them only appear in older Mimikatz version that are however still used by different threat groups)&lt;/p></description></item><item><title>Antivirus Password Dumper Detection</title><link>https://bradleyjkemp.dev/sigmadoc/rules/application/antivirus/av_password_dumper.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/application/antivirus/av_password_dumper.yml/</guid><description>&lt;p>Detects a highly relevant Antivirus alert that reports a password dumper&lt;/p></description></item><item><title>Cred Dump-Tools Named Pipes</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/pipe_created/pipe_created_cred_dump_tools_named_pipes.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/pipe_created/pipe_created_cred_dump_tools_named_pipes.yml/</guid><description>&lt;p>Detects well-known credential dumping tools execution via specific named pipes&lt;/p></description></item><item><title>Credential Dumping Tools Service Execution</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_mal_creddumper.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_mal_creddumper.yml/</guid><description>&lt;p>Detects well-known credential dumping tools execution via service execution events&lt;/p></description></item><item><title>Esentutl Volume Shadow Copy Service Keys</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_esentutl_volume_shadow_copy_service_keys.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_esentutl_volume_shadow_copy_service_keys.yml/</guid><description>&lt;p>Detects the volume shadow copy service initialization and processing via esentutl. Registry keys such as HKLM\System\CurrentControlSet\Services\VSS\Diag\VolSnap\Volume are captured.&lt;/p></description></item><item><title>Grabbing Sensitive Hives via Reg Utility</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_grabbing_sensitive_hives_via_reg.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_grabbing_sensitive_hives_via_reg.yml/</guid><description>&lt;p>Dump sam, system or security hives using REG.exe utility&lt;/p></description></item><item><title>Mimikatz Command Line</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_mimikatz_command_line.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_mimikatz_command_line.yml/</guid><description>&lt;p>Detection well-known mimikatz command line arguments&lt;/p></description></item><item><title>Possible Impacket SecretDump Remote Activity</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_impacket_secretdump.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_impacket_secretdump.yml/</guid><description>&lt;p>Detect AD credential dumping using impacket secretdump HKTL&lt;/p></description></item><item><title>Possible Impacket SecretDump Remote Activity - Zeek</title><link>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_smb_converted_win_impacket_secretdump.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_smb_converted_win_impacket_secretdump.yml/</guid><description>&lt;p>Detect AD credential dumping using impacket secretdump HKTL. Based on the SIGMA rules/windows/builtin/win_impacket_secretdump.yml&lt;/p></description></item><item><title>QuarksPwDump Clearing Access History</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_quarkspwdump_clearing_hive_access_history.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_quarkspwdump_clearing_hive_access_history.yml/</guid><description>&lt;p>Detects QuarksPwDump clearing access history in hive&lt;/p></description></item><item><title>Registry Dump of SAM Creds and Secrets</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_reg_dump_sam.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_reg_dump_sam.yml/</guid><description>&lt;p>Adversaries may attempt to extract credential material from the Security Account Manager (SAM) database either through Windows Registry where the SAM database is stored&lt;/p></description></item><item><title>Registry Parse with Pypykatz</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_pypykatz.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_pypykatz.yml/</guid><description>&lt;p>Adversaries may attempt to extract credential material from the Security Account Manager (SAM) database either through Windows Registry where the SAM database is stored&lt;/p></description></item><item><title>Shadow Copies Access via Symlink</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_shadow_copies_access_symlink.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_shadow_copies_access_symlink.yml/</guid><description>&lt;p>Shadow Copies storage symbolic link creation using operating systems utilities&lt;/p></description></item><item><title>Shadow Copies Creation Using Operating Systems Utilities</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_shadow_copies_creation.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_shadow_copies_creation.yml/</guid><description>&lt;p>Shadow Copies creation using operating systems utilities, possible credential access&lt;/p></description></item><item><title>Transferring Files with Credential Data via Network Shares</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_transferring_files_with_credential_data_via_network_shares.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_transferring_files_with_credential_data_via_network_shares.yml/</guid><description>&lt;p>Transferring files with well-known filenames (sensitive files with credential data) using network shares&lt;/p></description></item><item><title>Transferring Files with Credential Data via Network Shares - Zeek</title><link>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_smb_converted_win_transferring_files_with_credential_data.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_smb_converted_win_transferring_files_with_credential_data.yml/</guid><description>&lt;p>Transferring files with well-known filenames (sensitive files with credential data) using network shares&lt;/p></description></item><item><title>Volume Shadow Copy Mount</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_volume_shadow_copy_mount.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_volume_shadow_copy_mount.yml/</guid><description>&lt;p>Detects volume shadow copy mount&lt;/p></description></item><item><title>VSSAudit Security Event Source Registration</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_vssaudit_secevent_source_registration.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_vssaudit_secevent_source_registration.yml/</guid><description>&lt;p>Detects the registration of the security event source VSSAudit. It would usually trigger when volume shadow copy operations happen.&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>attack.t1003.002 on My New Hugo Site</title>
+    <link>https://bradleyjkemp.dev/sigmadoc/tags/attack.t1003.002/</link>
+    <description>Recent content in attack.t1003.002 on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 12 Jan 2022 11:32:12 +0100</lastBuildDate><atom:link href="https://bradleyjkemp.dev/sigmadoc/tags/attack.t1003.002/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Suspicious Process Writes Ntds.dit</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_susp_ntds_dit.yml/</link>
+      <pubDate>Wed, 12 Jan 2022 11:32:12 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_susp_ntds_dit.yml/</guid>
+      <description>&lt;p&gt;Detects suspicious processes that write (copy) a Active Directory database (ntds.dit) file&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>PowerShell SAM Copy</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_powershell_sam_access.yml/</link>
+      <pubDate>Thu, 29 Jul 2021 18:12:10 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_powershell_sam_access.yml/</guid>
+      <description>&lt;p&gt;Detects suspicious PowerShell scripts accessing SAM hives&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>QuarksPwDump Dump File</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_quarkspw_filedump.yml/</link>
+      <pubDate>Sat, 10 Feb 2018 15:25:36 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/file_event/file_event_win_quarkspw_filedump.yml/</guid>
+      <description>&lt;p&gt;Detects a dump file written by QuarksPwDump password dumper&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>SAM Dump to AppData</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_susp_sam_dump.yml/</link>
+      <pubDate>Mon, 27 Mar 2017 15:20:50 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_susp_sam_dump.yml/</guid>
+      <description>&lt;p&gt;Detects suspicious SAM dump activity as cause by QuarksPwDump and other password dumpers&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Mimikatz Use</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/win_alert_mimikatz_keywords.yml/</link>
+      <pubDate>Tue, 27 Dec 2016 14:49:54 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/win_alert_mimikatz_keywords.yml/</guid>
+      <description>&lt;p&gt;This method detects mimikatz keywords in different Eventlogs (some of them only appear in older Mimikatz version that are however still used by different threat groups)&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Antivirus Password Dumper Detection</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/application/antivirus/av_password_dumper.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/application/antivirus/av_password_dumper.yml/</guid>
+      <description>&lt;p&gt;Detects a highly relevant Antivirus alert that reports a password dumper&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Cred Dump-Tools Named Pipes</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/pipe_created/pipe_created_cred_dump_tools_named_pipes.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/pipe_created/pipe_created_cred_dump_tools_named_pipes.yml/</guid>
+      <description>&lt;p&gt;Detects well-known credential dumping tools execution via specific named pipes&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Credential Dumping Tools Service Execution</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_mal_creddumper.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_mal_creddumper.yml/</guid>
+      <description>&lt;p&gt;Detects well-known credential dumping tools execution via service execution events&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Esentutl Volume Shadow Copy Service Keys</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_esentutl_volume_shadow_copy_service_keys.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_esentutl_volume_shadow_copy_service_keys.yml/</guid>
+      <description>&lt;p&gt;Detects the volume shadow copy service initialization and processing via esentutl. Registry keys such as HKLM\System\CurrentControlSet\Services\VSS\Diag\VolSnap\Volume are captured.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Grabbing Sensitive Hives via Reg Utility</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_grabbing_sensitive_hives_via_reg.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_grabbing_sensitive_hives_via_reg.yml/</guid>
+      <description>&lt;p&gt;Dump sam, system or security hives using REG.exe utility&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Mimikatz Command Line</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_mimikatz_command_line.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_mimikatz_command_line.yml/</guid>
+      <description>&lt;p&gt;Detection well-known mimikatz command line arguments&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Possible Impacket SecretDump Remote Activity</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_impacket_secretdump.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_impacket_secretdump.yml/</guid>
+      <description>&lt;p&gt;Detect AD credential dumping using impacket secretdump HKTL&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Possible Impacket SecretDump Remote Activity - Zeek</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_smb_converted_win_impacket_secretdump.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_smb_converted_win_impacket_secretdump.yml/</guid>
+      <description>&lt;p&gt;Detect AD credential dumping using impacket secretdump HKTL. Based on the SIGMA rules/windows/builtin/win_impacket_secretdump.yml&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>QuarksPwDump Clearing Access History</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_quarkspwdump_clearing_hive_access_history.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_quarkspwdump_clearing_hive_access_history.yml/</guid>
+      <description>&lt;p&gt;Detects QuarksPwDump clearing access history in hive&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Registry Dump of SAM Creds and Secrets</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_reg_dump_sam.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_reg_dump_sam.yml/</guid>
+      <description>&lt;p&gt;Adversaries may attempt to extract credential material from the Security Account Manager (SAM) database either through Windows Registry where the SAM database is stored&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Registry Parse with Pypykatz</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_pypykatz.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_pypykatz.yml/</guid>
+      <description>&lt;p&gt;Adversaries may attempt to extract credential material from the Security Account Manager (SAM) database either through Windows Registry where the SAM database is stored&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Shadow Copies Access via Symlink</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_shadow_copies_access_symlink.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_shadow_copies_access_symlink.yml/</guid>
+      <description>&lt;p&gt;Shadow Copies storage symbolic link creation using operating systems utilities&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Shadow Copies Creation Using Operating Systems Utilities</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_shadow_copies_creation.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_shadow_copies_creation.yml/</guid>
+      <description>&lt;p&gt;Shadow Copies creation using operating systems utilities, possible credential access&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Transferring Files with Credential Data via Network Shares</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_transferring_files_with_credential_data_via_network_shares.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_transferring_files_with_credential_data_via_network_shares.yml/</guid>
+      <description>&lt;p&gt;Transferring files with well-known filenames (sensitive files with credential data) using network shares&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Transferring Files with Credential Data via Network Shares - Zeek</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_smb_converted_win_transferring_files_with_credential_data.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_smb_converted_win_transferring_files_with_credential_data.yml/</guid>
+      <description>&lt;p&gt;Transferring files with well-known filenames (sensitive files with credential data) using network shares&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Volume Shadow Copy Mount</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_volume_shadow_copy_mount.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_volume_shadow_copy_mount.yml/</guid>
+      <description>&lt;p&gt;Detects volume shadow copy mount&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>VSSAudit Security Event Source Registration</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_vssaudit_secevent_source_registration.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_vssaudit_secevent_source_registration.yml/</guid>
+      <description>&lt;p&gt;Detects the registration of the security event source VSSAudit. It would usually trigger when volume shadow copy operations happen.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

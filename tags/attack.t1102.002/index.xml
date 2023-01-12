@@ -1,1 +1,28 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>attack.t1102.002 on My New Hugo Site</title><link>https://bradleyjkemp.dev/sigmadoc/tags/attack.t1102.002/</link><description>Recent content in attack.t1102.002 on My New Hugo Site</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://bradleyjkemp.dev/sigmadoc/tags/attack.t1102.002/index.xml" rel="self" type="application/rss+xml"/><item><title>Telegram API Access</title><link>https://bradleyjkemp.dev/sigmadoc/rules/proxy/proxy_telegram_api.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/proxy/proxy_telegram_api.yml/</guid><description>&lt;p>Detects suspicious requests to Telegram API without the usual Telegram User-Agent&lt;/p></description></item><item><title>Telegram Bot API Request</title><link>https://bradleyjkemp.dev/sigmadoc/rules/network/net_susp_telegram_api.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/network/net_susp_telegram_api.yml/</guid><description>&lt;p>Detects suspicious DNS queries to api.telegram.org used by Telegram Bots of any kind&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>attack.t1102.002 on My New Hugo Site</title>
+    <link>https://bradleyjkemp.dev/sigmadoc/tags/attack.t1102.002/</link>
+    <description>Recent content in attack.t1102.002 on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://bradleyjkemp.dev/sigmadoc/tags/attack.t1102.002/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Telegram API Access</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/proxy/proxy_telegram_api.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/proxy/proxy_telegram_api.yml/</guid>
+      <description>&lt;p&gt;Detects suspicious requests to Telegram API without the usual Telegram User-Agent&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Telegram Bot API Request</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/network/net_susp_telegram_api.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/network/net_susp_telegram_api.yml/</guid>
+      <description>&lt;p&gt;Detects suspicious DNS queries to api.telegram.org used by Telegram Bots of any kind&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

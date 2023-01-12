@@ -1,2 +1,660 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>stable on My New Hugo Site</title><link>https://bradleyjkemp.dev/sigmadoc/status/stable/</link><description>Recent content in stable on My New Hugo Site</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 20 Jan 2022 09:50:41 +0700</lastBuildDate><atom:link href="https://bradleyjkemp.dev/sigmadoc/status/stable/index.xml" rel="self" type="application/rss+xml"/><item><title>Linux Doas Conf File Creation</title><link>https://bradleyjkemp.dev/sigmadoc/rules/linux/file_create/lnx_doas_conf_creation.yml/</link><pubDate>Thu, 20 Jan 2022 09:50:41 +0700</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/file_create/lnx_doas_conf_creation.yml/</guid><description>&lt;p>Detects the creation of doas.conf file in linux host platform.&lt;/p></description></item><item><title>Linux Doas Tool Execution</title><link>https://bradleyjkemp.dev/sigmadoc/rules/linux/process_creation/proc_creation_lnx_doas_execution.yml/</link><pubDate>Thu, 20 Jan 2022 09:46:17 +0700</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/process_creation/proc_creation_lnx_doas_execution.yml/</guid><description>&lt;p>Detects the doas tool execution in linux host platform.&lt;/p></description></item><item><title>Linux Crypto Mining Pool Connections</title><link>https://bradleyjkemp.dev/sigmadoc/rules/linux/network_connection/net_connection_lnx_crypto_mining_indicators.yml/</link><pubDate>Tue, 26 Oct 2021 08:52:07 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/network_connection/net_connection_lnx_crypto_mining_indicators.yml/</guid><description>&lt;p>Detects process connections to a Monero crypto mining pool&lt;/p></description></item><item><title>Windows Crypto Mining Indicators</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_crypto_mining_monero.yml/</link><pubDate>Tue, 26 Oct 2021 08:52:07 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_crypto_mining_monero.yml/</guid><description>&lt;p>Detects command line parameters or strings often used by crypto miners&lt;/p></description></item><item><title>Windows Crypto Mining Pool Connections</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/network_connection/net_connection_win_crypto_mining.yml/</link><pubDate>Tue, 26 Oct 2021 08:52:07 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/network_connection/net_connection_win_crypto_mining.yml/</guid><description>&lt;p>Detects process connections to a Monero crypto mining pool&lt;/p></description></item><item><title>Monero Crypto Coin Mining Pool Lookup</title><link>https://bradleyjkemp.dev/sigmadoc/rules/network/net_pua_cryptocoin_mining_xmr.yml/</link><pubDate>Sun, 24 Oct 2021 15:44:44 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/network/net_pua_cryptocoin_mining_xmr.yml/</guid><description>&lt;p>Detects suspicious DNS queries to Monero mining pools&lt;/p></description></item><item><title>OMIGOD HTTP No Authentication RCE</title><link>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_http_omigod_no_auth_rce.yml/</link><pubDate>Mon, 20 Sep 2021 12:26:01 -0400</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_http_omigod_no_auth_rce.yml/</guid><description>&lt;p>Detects the exploitation of OMIGOD (CVE-2021-38647) which allows remote execute (RCE) commands as root with just a single unauthenticated HTTP request. Verify, successful, exploitation by viewing the HTTP client (request) body to see what was passed to the server (using PCAP). Within the client body is where the code execution would occur. Additionally, check the endpoint logs to see if suspicious commands or activity occurred within the timeframe of this HTTP request.&lt;/p></description></item><item><title>Possible PrintNightmare Print Driver Install</title><link>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_dce_rpc_printnightmare_print_driver_install.yml/</link><pubDate>Tue, 24 Aug 2021 00:58:36 -0400</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_dce_rpc_printnightmare_print_driver_install.yml/</guid><description>&lt;p>Detects the remote installation of a print driver which is possible indication of the exploitation of PrintNightmare (CVE-2021-1675).
-The occurrence of print drivers being installed remotely via RPC functions should be rare, as print drivers are normally installed locally and or through group policy.&lt;/p></description></item><item><title>Windows Defender Exclusions Added</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/windefend/win_defender_exclusions.yml/</link><pubDate>Tue, 13 Jul 2021 13:07:44 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/windefend/win_defender_exclusions.yml/</guid><description>&lt;p>Detects the Setting of Windows Defender Exclusions&lt;/p></description></item><item><title>Suspicious Spool Service Child Process</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_spoolsv_child_processes.yml/</link><pubDate>Mon, 12 Jul 2021 08:48:59 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_spoolsv_child_processes.yml/</guid><description>&lt;p>Detects suspicious print spool service (spoolsv.exe) child processes.&lt;/p></description></item><item><title>Pulse Connect Secure RCE Attack CVE-2021-22893</title><link>https://bradleyjkemp.dev/sigmadoc/rules/web/web_cve_2021_22893_pulse_secure_rce_exploit.yml/</link><pubDate>Tue, 29 Jun 2021 13:56:30 +0700</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/web/web_cve_2021_22893_pulse_secure_rce_exploit.yml/</guid><description>&lt;p>This rule detects exploitation attempts using Pulse Connect Secure(PCS) vulnerability (CVE-2021-22893)&lt;/p></description></item><item><title>AWS EC2 Disable EBS Encryption</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/aws/aws_ec2_disable_encryption.yml/</link><pubDate>Tue, 29 Jun 2021 11:06:00 +0700</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/aws/aws_ec2_disable_encryption.yml/</guid><description>&lt;p>Identifies disabling of default Amazon Elastic Block Store (EBS) encryption in the current region. Disabling default encryption does not change the encryption status of your existing volumes.&lt;/p></description></item><item><title>AWS SecurityHub Findings Evasion</title><link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/aws/aws_securityhub_finding_evasion.yml/</link><pubDate>Mon, 28 Jun 2021 15:42:34 +0700</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/aws/aws_securityhub_finding_evasion.yml/</guid><description>&lt;p>Detects the modification of the findings on SecurityHub.&lt;/p></description></item><item><title>Windows Defender AMSI Trigger Detected</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/windefend/win_defender_amsi_trigger.yml/</link><pubDate>Mon, 14 Sep 2020 18:10:38 +0545</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/windefend/win_defender_amsi_trigger.yml/</guid><description>&lt;p>Detects triggering of AMSI by Windows Defender.&lt;/p></description></item><item><title>Winnti Pipemon Characteristics</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_apt_winnti_pipemon.yml/</link><pubDate>Thu, 30 Jul 2020 18:55:47 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_apt_winnti_pipemon.yml/</guid><description>&lt;p>Detects specific process characteristics of Winnti Pipemon malware reported by ESET&lt;/p></description></item><item><title>Windows Defender Threat Detected</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/windefend/win_defender_threat.yml/</link><pubDate>Sun, 28 Jun 2020 10:55:32 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/windefend/win_defender_threat.yml/</guid><description>&lt;p>Detects all actions taken by Windows Defender malware detection engines&lt;/p></description></item><item><title>Windows Defender Threat Detection Disabled</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/windefend/win_defender_disabled.yml/</link><pubDate>Sun, 28 Jun 2020 10:55:32 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/windefend/win_defender_disabled.yml/</guid><description>&lt;p>Detects disabling Windows Defender threat protection&lt;/p></description></item><item><title>Remote File Copy</title><link>https://bradleyjkemp.dev/sigmadoc/rules/linux/builtin/lnx_file_copy.yml/</link><pubDate>Thu, 18 Jun 2020 23:37:49 +0300</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/builtin/lnx_file_copy.yml/</guid><description>&lt;p>Detects the use of tools that copy files from or to remote systems&lt;/p></description></item><item><title>Cleartext Protocol Usage</title><link>https://bradleyjkemp.dev/sigmadoc/rules/compliance/firewall_cleartext_protocols.yml/</link><pubDate>Thu, 19 Mar 2020 10:54:48 +0700</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/compliance/firewall_cleartext_protocols.yml/</guid><description>&lt;p>Ensure that all account usernames and authentication credentials are transmitted across networks using encrypted channels. Ensure that an encryption is used for all sensitive information in transit. Ensure that an encrypted channels is used for all administrative account access.&lt;/p></description></item><item><title>Cleartext Protocol Usage</title><link>https://bradleyjkemp.dev/sigmadoc/rules/compliance/netflow_cleartext_protocols.yml/</link><pubDate>Thu, 19 Mar 2020 10:54:48 +0700</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/compliance/netflow_cleartext_protocols.yml/</guid><description>&lt;p>Ensure that all account usernames and authentication credentials are transmitted across networks using encrypted channels. Ensure that an encryption is used for all sensitive information in transit. Ensure that an encrypted channels is used for all administrative account access.&lt;/p></description></item><item><title>Default Credentials Usage</title><link>https://bradleyjkemp.dev/sigmadoc/rules/compliance/default_credentials_usage.yml/</link><pubDate>Thu, 19 Mar 2020 10:54:48 +0700</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/compliance/default_credentials_usage.yml/</guid><description>&lt;p>Before deploying any new asset, change all default passwords to have values consistent with administrative level accounts. Sigma detects default credentials usage. Sigma for Qualys vulnerability scanner. Scan type - Vulnerability Management.&lt;/p></description></item><item><title>Group Modification Logging</title><link>https://bradleyjkemp.dev/sigmadoc/rules/compliance/group_modification_logging.yml/</link><pubDate>Thu, 19 Mar 2020 10:54:48 +0700</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/compliance/group_modification_logging.yml/</guid><description>&lt;p>Configure systems to issue a log entry and alert when an account is added to or removed from any group assigned administrative privileges. Sigma detects\ \ Event ID 4728 indicates a \u2018Member is added to a Security Group\u2019. Event ID 4729 indicates a \u2018Member is removed from a Security enabled-group\u2019\ . Event ID 4730 indicates a\u2018Security Group is deleted\u2019. The case is not applicable for Unix OS. Supported OS - Windows 2008 R2 and 7, Windows 2012 R2\ \ and 8.1, Windows 2016 and 10 Windows Server 2019, Windows Server 2000, Windows 2003 and XP.&lt;/p></description></item><item><title>Host Without Firewall</title><link>https://bradleyjkemp.dev/sigmadoc/rules/compliance/host_without_firewall.yml/</link><pubDate>Thu, 19 Mar 2020 10:54:48 +0700</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/compliance/host_without_firewall.yml/</guid><description>&lt;p>Host Without Firewall. Alert means not complied. Sigma for Qualys vulnerability scanner. Scan type - Vulnerability Management.&lt;/p></description></item><item><title>Locked Workstation</title><link>https://bradleyjkemp.dev/sigmadoc/rules/compliance/workstation_was_locked.yml/</link><pubDate>Thu, 19 Mar 2020 10:54:48 +0700</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/compliance/workstation_was_locked.yml/</guid><description>&lt;p>Automatically lock workstation sessions after a standard period of inactivity. The case is not applicable for Unix OS. Supported OS - Windows 2008 R2 and 7, Windows 2012 R2 and 8.1, Windows 2016 and 10 Windows Server 2019.&lt;/p></description></item><item><title>DTRACK Process Creation</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_malware_dtrack.yml/</link><pubDate>Wed, 30 Oct 2019 15:15:57 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_malware_dtrack.yml/</guid><description>&lt;p>Detects specific process parameters as seen in DTRACK infections&lt;/p></description></item><item><title>Windows Network Enumeration</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_net_enum.yml/</link><pubDate>Mon, 28 Oct 2019 11:59:49 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_net_enum.yml/</guid><description>&lt;p>Identifies attempts to enumerate hosts in a network using the built-in Windows net.exe tool.&lt;/p></description></item><item><title>Overwriting the File with Dev Zero or Null</title><link>https://bradleyjkemp.dev/sigmadoc/rules/linux/auditd/lnx_auditd_dd_delete_file.yml/</link><pubDate>Wed, 23 Oct 2019 11:22:33 -0700</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/auditd/lnx_auditd_dd_delete_file.yml/</guid><description>&lt;p>Detects overwriting (effectively wiping/deleting) of a file.&lt;/p></description></item><item><title>Suspicious Call by Ordinal</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_rundll32_by_ordinal.yml/</link><pubDate>Tue, 22 Oct 2019 12:40:26 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_rundll32_by_ordinal.yml/</guid><description>&lt;p>Detects suspicious calls of DLLs in rundll32.dll exports by ordinal&lt;/p></description></item><item><title>Suspicious Double Extension</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_double_extension.yml/</link><pubDate>Wed, 26 Jun 2019 15:57:25 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_double_extension.yml/</guid><description>&lt;p>Detects suspicious use of an .exe extension after a non-executable file extension like .pdf.exe, a set of spaces or underlines to cloak the executable file in spear phishing campaigns&lt;/p></description></item><item><title>Mimikatz through Windows Remote Management</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_access/proc_access_win_mimikatz_trough_winrm.yml/</link><pubDate>Mon, 20 May 2019 12:25:58 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_access/proc_access_win_mimikatz_trough_winrm.yml/</guid><description>&lt;p>Detects usage of mimikatz through WinRM protocol by monitoring access to lsass process by wsmprovhost.exe.&lt;/p></description></item><item><title>CMSTP UAC Bypass via COM Object Access</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_cmstp_com_object_access.yml/</link><pubDate>Wed, 16 Jan 2019 23:36:31 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_cmstp_com_object_access.yml/</guid><description>&lt;p>Detects UAC Bypass Attempt Using Microsoft Connection Manager Profile Installer Autoelevate-capable COM Objects (e.g. UACMe ID of 41, 43, 58 or 65)&lt;/p></description></item><item><title>PowerShell Base64 Encoded Shellcode</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_powershell_b64_shellcode.yml/</link><pubDate>Wed, 16 Jan 2019 23:36:31 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_powershell_b64_shellcode.yml/</guid><description>&lt;p>Detects Base64 encoded Shellcode&lt;/p></description></item><item><title>Rubeus Hack Tool</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_hack_rubeus.yml/</link><pubDate>Wed, 16 Jan 2019 23:36:31 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_hack_rubeus.yml/</guid><description>&lt;p>Detects command line parameters used by Rubeus hack tool&lt;/p></description></item><item><title>Suspicious Use of Procdump on LSASS</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_procdump_lsass.yml/</link><pubDate>Wed, 16 Jan 2019 23:36:31 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_procdump_lsass.yml/</guid><description>&lt;p>Detects suspicious uses of the SysInternals Procdump utility by using a special command line parameter in combination with the lsass.exe process. This way we&amp;rsquo;re also able to catch cases in which the attacker has renamed the procdump executable.&lt;/p></description></item><item><title>CMSTP Execution Process Access</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_access/proc_access_win_cmstp_execution_by_access.yml/</link><pubDate>Mon, 16 Jul 2018 02:53:41 +0300</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_access/proc_access_win_cmstp_execution_by_access.yml/</guid><description>&lt;p>Detects various indicators of Microsoft Connection Manager Profile Installer execution&lt;/p></description></item><item><title>CMSTP Execution Process Creation</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_cmstp_execution_by_creation.yml/</link><pubDate>Mon, 16 Jul 2018 02:53:41 +0300</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_cmstp_execution_by_creation.yml/</guid><description>&lt;p>Detects various indicators of Microsoft Connection Manager Profile Installer execution&lt;/p></description></item><item><title>CMSTP Execution Registry Event</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_cmstp_execution_by_registry.yml/</link><pubDate>Mon, 16 Jul 2018 02:53:41 +0300</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_cmstp_execution_by_registry.yml/</guid><description>&lt;p>Detects various indicators of Microsoft Connection Manager Profile Installer execution&lt;/p></description></item><item><title>Exploit for CVE-2015-1641</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_exploit_cve_2015_1641.yml/</link><pubDate>Thu, 22 Feb 2018 16:59:40 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_exploit_cve_2015_1641.yml/</guid><description>&lt;p>Detects Winword starting uncommon sub process MicroScMgmt.exe as used in exploits for CVE-2015-1641&lt;/p></description></item><item><title>Equation Group DLL_U Load</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_apt_equationgroup_dll_u_load.yml/</link><pubDate>Wed, 31 Jan 2018 23:11:37 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_apt_equationgroup_dll_u_load.yml/</guid><description>&lt;p>Detects a specific tool and export used by EquationGroup&lt;/p></description></item><item><title>Python SQL Exceptions</title><link>https://bradleyjkemp.dev/sigmadoc/rules/application/python/app_python_sql_exceptions.yml/</link><pubDate>Sat, 12 Aug 2017 00:44:18 +0200</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/application/python/app_python_sql_exceptions.yml/</guid><description>&lt;p>Generic rule for SQL exceptions in Python according to PEP 249&lt;/p></description></item><item><title>User Added to Local Administrators</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_user_added_to_local_administrators.yml/</link><pubDate>Tue, 14 Mar 2017 12:51:50 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_user_added_to_local_administrators.yml/</guid><description>&lt;p>This rule triggers on user accounts that are added to the local Administrators group, which could be legitimate activity or a sign of privilege escalation activity&lt;/p></description></item><item><title>Multiple Modsecurity Blocks</title><link>https://bradleyjkemp.dev/sigmadoc/rules/linux/modsecurity/modsec_mulitple_blocks.yml/</link><pubDate>Tue, 28 Feb 2017 17:53:32 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/modsecurity/modsec_mulitple_blocks.yml/</guid><description>&lt;p>Detects multiple blocks by the mod_security module (Web Application Firewall)&lt;/p></description></item><item><title>Addition of SID History to Active Directory Object</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_add_sid_history.yml/</link><pubDate>Sun, 19 Feb 2017 22:43:27 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_add_sid_history.yml/</guid><description>&lt;p>An attacker can use the SID history attribute to gain additional privileges.&lt;/p></description></item><item><title>Password Change on Directory Service Restore Mode (DSRM) Account</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_dsrm_password_change.yml/</link><pubDate>Sun, 19 Feb 2017 22:43:27 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_dsrm_password_change.yml/</guid><description>&lt;p>The Directory Service Restore Mode (DSRM) account is a local administrator account on Domain Controllers. Attackers may change the password to gain persistence.&lt;/p></description></item><item><title>Password Dumper Remote Thread in LSASS</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/create_remote_thread/sysmon_password_dumper_lsass.yml/</link><pubDate>Fri, 10 Feb 2017 19:17:02 +0100</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/create_remote_thread/sysmon_password_dumper_lsass.yml/</guid><description>&lt;p>Detects password dumper activity by monitoring remote thread creation EventID 8 in combination with the lsass.exe process as TargetImage. The process in field Process is the malicious program. A single execution can lead to hundreds of events.&lt;/p></description></item><item><title>Addition of Domain Trusts</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_add_domain_trust.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_add_domain_trust.yml/</guid><description>&lt;p>Addition of domains is seldom and should be verified for legitimacy.&lt;/p></description></item><item><title>Antivirus PrinterNightmare CVE-2021-34527 Exploit Detection</title><link>https://bradleyjkemp.dev/sigmadoc/rules/application/antivirus/av_printernightmare_cve_2021_34527.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/application/antivirus/av_printernightmare_cve_2021_34527.yml/</guid><description>&lt;p>Detects the suspicious file that is created from PoC code against Windows Print Spooler Remote Code Execution Vulnerability CVE-2021-34527 (PrinterNightmare), CVE-2021-1675 .&lt;/p></description></item><item><title>Buffer Overflow Attempts</title><link>https://bradleyjkemp.dev/sigmadoc/rules/linux/builtin/lnx_buffer_overflows.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/builtin/lnx_buffer_overflows.yml/</guid><description>&lt;p>Detects buffer overflow attempts in Unix system log files&lt;/p></description></item><item><title>Clear Linux Logs</title><link>https://bradleyjkemp.dev/sigmadoc/rules/linux/process_creation/proc_creation_lnx_clear_logs.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/process_creation/proc_creation_lnx_clear_logs.yml/</guid><description>&lt;p>Detects clear logs&lt;/p></description></item><item><title>CrackMapExec Command Execution</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_crackmapexec_execution.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_crackmapexec_execution.yml/</guid><description>&lt;p>Detect various execution methods of the CrackMapExec pentesting framework&lt;/p></description></item><item><title>Credential Dumping by LaZagne</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_access/proc_access_win_lazagne_cred_dump_lsass_access.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_access/proc_access_win_lazagne_cred_dump_lsass_access.yml/</guid><description>&lt;p>Detects LSASS process access by LaZagne for credential dumping.&lt;/p></description></item><item><title>CVE-2021-26857 Exchange Exploitation</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_cve_2021_26857_msexchange.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_cve_2021_26857_msexchange.yml/</guid><description>&lt;p>Detects possible successful exploitation for vulnerability described in CVE-2021-26857 by looking for | abnormal subprocesses spawning by Exchange Server’s Unified Messaging service&lt;/p></description></item><item><title>Delete Volume Shadow Copies Via WMI With PowerShell</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_classic/posh_pc_delete_volume_shadow_copies.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_classic/posh_pc_delete_volume_shadow_copies.yml/</guid><description>&lt;p>Shadow Copies deletion using operating systems utilities via PowerShell&lt;/p></description></item><item><title>Django Framework Exceptions</title><link>https://bradleyjkemp.dev/sigmadoc/rules/application/django/appframework_django_exceptions.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/application/django/appframework_django_exceptions.yml/</guid><description>&lt;p>Detects suspicious Django web application framework exceptions that could indicate exploitation attempts&lt;/p></description></item><item><title>Failed Code Integrity Checks</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_codeintegrity_check_failure.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_codeintegrity_check_failure.yml/</guid><description>&lt;p>Code integrity failures may indicate tampered executables.&lt;/p></description></item><item><title>File Deletion</title><link>https://bradleyjkemp.dev/sigmadoc/rules/linux/process_creation/proc_creation_lnx_file_deletion.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/process_creation/proc_creation_lnx_file_deletion.yml/</guid><description>&lt;p>Detects file deletion commands&lt;/p></description></item><item><title>Impacket Lateralization Detection</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_impacket_lateralization.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_impacket_lateralization.yml/</guid><description>&lt;p>Detects wmiexec/dcomexec/atexec/smbexec from Impacket framework&lt;/p></description></item><item><title>Login with WMI</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_wmi_login.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_wmi_login.yml/</guid><description>&lt;p>Detection of logins performed with WMI&lt;/p></description></item><item><title>Microsoft Defender Tamper Protection Trigger</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/windefend/win_defender_tamper_protection_trigger.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/windefend/win_defender_tamper_protection_trigger.yml/</guid><description>&lt;p>Detects block of attempt to disable real time protection of Microsoft Defender by tamper protection&lt;/p></description></item><item><title>Password Policy Discovery</title><link>https://bradleyjkemp.dev/sigmadoc/rules/linux/auditd/lnx_auditd_password_policy_discovery.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/auditd/lnx_auditd_password_policy_discovery.yml/</guid><description>&lt;p>Detects password policy discovery commands&lt;/p></description></item><item><title>Process Discovery</title><link>https://bradleyjkemp.dev/sigmadoc/rules/linux/process_creation/proc_creation_lnx_process_discovery.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/process_creation/proc_creation_lnx_process_discovery.yml/</guid><description>&lt;p>Detects process discovery commands&lt;/p></description></item><item><title>Relevant ClamAV Message</title><link>https://bradleyjkemp.dev/sigmadoc/rules/linux/other/lnx_clamav.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/other/lnx_clamav.yml/</guid><description>&lt;p>Detects relevant ClamAV messages&lt;/p></description></item><item><title>Ruby on Rails Framework Exceptions</title><link>https://bradleyjkemp.dev/sigmadoc/rules/application/ruby/appframework_ruby_on_rails_exceptions.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/application/ruby/appframework_ruby_on_rails_exceptions.yml/</guid><description>&lt;p>Detects suspicious Ruby on Rails exceptions that could indicate exploitation attempts&lt;/p></description></item><item><title>Scheduled Task/Job At</title><link>https://bradleyjkemp.dev/sigmadoc/rules/linux/process_creation/proc_creation_lnx_at_command.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/process_creation/proc_creation_lnx_at_command.yml/</guid><description>&lt;p>Detects the use of at/atd&lt;/p></description></item><item><title>Shadow Copies Deletion Using Operating Systems Utilities</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_shadow_copies_deletion.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_shadow_copies_deletion.yml/</guid><description>&lt;p>Shadow Copies deletion using operating systems utilities&lt;/p></description></item><item><title>Spring Framework Exceptions</title><link>https://bradleyjkemp.dev/sigmadoc/rules/application/spring/appframework_spring_exceptions.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/application/spring/appframework_spring_exceptions.yml/</guid><description>&lt;p>Detects suspicious Spring framework exceptions that could indicate exploitation attempts&lt;/p></description></item><item><title>System Information Discovery</title><link>https://bradleyjkemp.dev/sigmadoc/rules/linux/process_creation/proc_creation_lnx_system_info_discovery.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/process_creation/proc_creation_lnx_system_info_discovery.yml/</guid><description>&lt;p>Detects system information discovery commands&lt;/p></description></item><item><title>TropicTrooper Campaign November 2018</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_apt_tropictrooper.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_apt_tropictrooper.yml/</guid><description>&lt;p>Detects TropicTrooper activity, an actor who targeted high-profile organizations in the energy and food and beverage sectors in Asia&lt;/p></description></item><item><title>Unidentified Attacker November 2018</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_apt_unidentified_nov_18.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_apt_unidentified_nov_18.yml/</guid><description>&lt;p>A sigma rule detecting an unidetefied attacker who used phishing emails to target high profile orgs on November 2018. The Actor shares some TTPs with YYTRIUM/APT29 campaign in 2016.&lt;/p></description></item><item><title>Ursnif Malware C2 URL Pattern</title><link>https://bradleyjkemp.dev/sigmadoc/rules/proxy/proxy_ursnif_malware_c2_url.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/proxy/proxy_ursnif_malware_c2_url.yml/</guid><description>&lt;p>Detects Ursnif C2 traffic.&lt;/p></description></item><item><title>Ursnif Malware Download URL Pattern</title><link>https://bradleyjkemp.dev/sigmadoc/rules/proxy/proxy_ursnif_malware_download_url.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/proxy/proxy_ursnif_malware_download_url.yml/</guid><description>&lt;p>Detects download of Ursnif malware done by dropper documents.&lt;/p></description></item><item><title>Zerologon Exploitation Using Well-known Tools</title><link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_possible_zerologon_exploitation_using_wellknown_tools.yml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_possible_zerologon_exploitation_using_wellknown_tools.yml/</guid><description>&lt;p>This rule is designed to detect attempts to exploit Zerologon (CVE-2020-1472) vulnerability using mimikatz zerologon module or other exploits from machine with &amp;ldquo;kali&amp;rdquo; hostname.&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>stable on My New Hugo Site</title>
+    <link>https://bradleyjkemp.dev/sigmadoc/status/stable/</link>
+    <description>Recent content in stable on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 20 Jan 2022 09:50:41 +0700</lastBuildDate><atom:link href="https://bradleyjkemp.dev/sigmadoc/status/stable/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux Doas Conf File Creation</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/linux/file_create/lnx_doas_conf_creation.yml/</link>
+      <pubDate>Thu, 20 Jan 2022 09:50:41 +0700</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/file_create/lnx_doas_conf_creation.yml/</guid>
+      <description>&lt;p&gt;Detects the creation of doas.conf file in linux host platform.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Linux Doas Tool Execution</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/linux/process_creation/proc_creation_lnx_doas_execution.yml/</link>
+      <pubDate>Thu, 20 Jan 2022 09:46:17 +0700</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/process_creation/proc_creation_lnx_doas_execution.yml/</guid>
+      <description>&lt;p&gt;Detects the doas tool execution in linux host platform.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Linux Crypto Mining Pool Connections</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/linux/network_connection/net_connection_lnx_crypto_mining_indicators.yml/</link>
+      <pubDate>Tue, 26 Oct 2021 08:52:07 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/network_connection/net_connection_lnx_crypto_mining_indicators.yml/</guid>
+      <description>&lt;p&gt;Detects process connections to a Monero crypto mining pool&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Windows Crypto Mining Indicators</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_crypto_mining_monero.yml/</link>
+      <pubDate>Tue, 26 Oct 2021 08:52:07 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_crypto_mining_monero.yml/</guid>
+      <description>&lt;p&gt;Detects command line parameters or strings often used by crypto miners&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Windows Crypto Mining Pool Connections</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/network_connection/net_connection_win_crypto_mining.yml/</link>
+      <pubDate>Tue, 26 Oct 2021 08:52:07 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/network_connection/net_connection_win_crypto_mining.yml/</guid>
+      <description>&lt;p&gt;Detects process connections to a Monero crypto mining pool&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Monero Crypto Coin Mining Pool Lookup</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/network/net_pua_cryptocoin_mining_xmr.yml/</link>
+      <pubDate>Sun, 24 Oct 2021 15:44:44 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/network/net_pua_cryptocoin_mining_xmr.yml/</guid>
+      <description>&lt;p&gt;Detects suspicious DNS queries to Monero mining pools&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>OMIGOD HTTP No Authentication RCE</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_http_omigod_no_auth_rce.yml/</link>
+      <pubDate>Mon, 20 Sep 2021 12:26:01 -0400</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_http_omigod_no_auth_rce.yml/</guid>
+      <description>&lt;p&gt;Detects the exploitation of OMIGOD (CVE-2021-38647) which allows remote execute (RCE) commands as root with just a single unauthenticated HTTP request. Verify, successful, exploitation by viewing the HTTP client (request) body to see what was passed to the server (using PCAP). Within the client body is where the code execution would occur. Additionally, check the endpoint logs to see if suspicious commands or activity occurred within the timeframe of this HTTP request.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Possible PrintNightmare Print Driver Install</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_dce_rpc_printnightmare_print_driver_install.yml/</link>
+      <pubDate>Tue, 24 Aug 2021 00:58:36 -0400</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/network/zeek/zeek_dce_rpc_printnightmare_print_driver_install.yml/</guid>
+      <description>&lt;p&gt;Detects the remote installation of a print driver which is possible indication of the exploitation of PrintNightmare (CVE-2021-1675).
+The occurrence of print drivers being installed remotely via RPC functions should be rare, as print drivers are normally installed locally and or through group policy.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Windows Defender Exclusions Added</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/windefend/win_defender_exclusions.yml/</link>
+      <pubDate>Tue, 13 Jul 2021 13:07:44 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/windefend/win_defender_exclusions.yml/</guid>
+      <description>&lt;p&gt;Detects the Setting of Windows Defender Exclusions&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Suspicious Spool Service Child Process</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_spoolsv_child_processes.yml/</link>
+      <pubDate>Mon, 12 Jul 2021 08:48:59 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_spoolsv_child_processes.yml/</guid>
+      <description>&lt;p&gt;Detects suspicious print spool service (spoolsv.exe) child processes.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Pulse Connect Secure RCE Attack CVE-2021-22893</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/web/web_cve_2021_22893_pulse_secure_rce_exploit.yml/</link>
+      <pubDate>Tue, 29 Jun 2021 13:56:30 +0700</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/web/web_cve_2021_22893_pulse_secure_rce_exploit.yml/</guid>
+      <description>&lt;p&gt;This rule detects exploitation attempts using Pulse Connect Secure(PCS) vulnerability (CVE-2021-22893)&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>AWS EC2 Disable EBS Encryption</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/aws/aws_ec2_disable_encryption.yml/</link>
+      <pubDate>Tue, 29 Jun 2021 11:06:00 +0700</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/aws/aws_ec2_disable_encryption.yml/</guid>
+      <description>&lt;p&gt;Identifies disabling of default Amazon Elastic Block Store (EBS) encryption in the current region. Disabling default encryption does not change the encryption status of your existing volumes.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>AWS SecurityHub Findings Evasion</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/cloud/aws/aws_securityhub_finding_evasion.yml/</link>
+      <pubDate>Mon, 28 Jun 2021 15:42:34 +0700</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/cloud/aws/aws_securityhub_finding_evasion.yml/</guid>
+      <description>&lt;p&gt;Detects the modification of the findings on SecurityHub.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Windows Defender AMSI Trigger Detected</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/windefend/win_defender_amsi_trigger.yml/</link>
+      <pubDate>Mon, 14 Sep 2020 18:10:38 +0545</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/windefend/win_defender_amsi_trigger.yml/</guid>
+      <description>&lt;p&gt;Detects triggering of AMSI by Windows Defender.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Winnti Pipemon Characteristics</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_apt_winnti_pipemon.yml/</link>
+      <pubDate>Thu, 30 Jul 2020 18:55:47 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_apt_winnti_pipemon.yml/</guid>
+      <description>&lt;p&gt;Detects specific process characteristics of Winnti Pipemon malware reported by ESET&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Windows Defender Threat Detected</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/windefend/win_defender_threat.yml/</link>
+      <pubDate>Sun, 28 Jun 2020 10:55:32 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/windefend/win_defender_threat.yml/</guid>
+      <description>&lt;p&gt;Detects all actions taken by Windows Defender malware detection engines&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Windows Defender Threat Detection Disabled</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/windefend/win_defender_disabled.yml/</link>
+      <pubDate>Sun, 28 Jun 2020 10:55:32 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/windefend/win_defender_disabled.yml/</guid>
+      <description>&lt;p&gt;Detects disabling Windows Defender threat protection&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Remote File Copy</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/linux/builtin/lnx_file_copy.yml/</link>
+      <pubDate>Thu, 18 Jun 2020 23:37:49 +0300</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/builtin/lnx_file_copy.yml/</guid>
+      <description>&lt;p&gt;Detects the use of tools that copy files from or to remote systems&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Cleartext Protocol Usage</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/compliance/firewall_cleartext_protocols.yml/</link>
+      <pubDate>Thu, 19 Mar 2020 10:54:48 +0700</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/compliance/firewall_cleartext_protocols.yml/</guid>
+      <description>&lt;p&gt;Ensure that all account usernames and authentication credentials are transmitted across networks using encrypted channels. Ensure that an encryption is used for all sensitive information in transit. Ensure that an encrypted channels is used  for all administrative account access.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Cleartext Protocol Usage</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/compliance/netflow_cleartext_protocols.yml/</link>
+      <pubDate>Thu, 19 Mar 2020 10:54:48 +0700</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/compliance/netflow_cleartext_protocols.yml/</guid>
+      <description>&lt;p&gt;Ensure that all account usernames and authentication credentials are transmitted across networks using encrypted channels. Ensure that an encryption is used for all sensitive information in transit. Ensure that an encrypted channels is used  for all administrative account access.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Default Credentials Usage</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/compliance/default_credentials_usage.yml/</link>
+      <pubDate>Thu, 19 Mar 2020 10:54:48 +0700</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/compliance/default_credentials_usage.yml/</guid>
+      <description>&lt;p&gt;Before deploying any new asset, change all default passwords to have values consistent with administrative level accounts. Sigma detects default credentials usage. Sigma for Qualys vulnerability scanner. Scan type - Vulnerability Management.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Group Modification Logging</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/compliance/group_modification_logging.yml/</link>
+      <pubDate>Thu, 19 Mar 2020 10:54:48 +0700</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/compliance/group_modification_logging.yml/</guid>
+      <description>&lt;p&gt;Configure systems to issue a log entry and alert when an account is added to or removed from any group assigned administrative privileges. Sigma detects\ \ Event ID 4728 indicates a \u2018Member is added to a Security Group\u2019. Event ID 4729 indicates a \u2018Member is removed from a Security enabled-group\u2019\ . Event ID 4730 indicates a\u2018Security Group is deleted\u2019. The case is not applicable for Unix OS. Supported OS - Windows 2008 R2 and 7, Windows 2012 R2\ \ and 8.1, Windows 2016 and 10 Windows Server 2019, Windows Server 2000, Windows 2003 and XP.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Host Without Firewall</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/compliance/host_without_firewall.yml/</link>
+      <pubDate>Thu, 19 Mar 2020 10:54:48 +0700</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/compliance/host_without_firewall.yml/</guid>
+      <description>&lt;p&gt;Host Without Firewall. Alert means not complied. Sigma for Qualys vulnerability scanner. Scan type - Vulnerability Management.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Locked Workstation</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/compliance/workstation_was_locked.yml/</link>
+      <pubDate>Thu, 19 Mar 2020 10:54:48 +0700</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/compliance/workstation_was_locked.yml/</guid>
+      <description>&lt;p&gt;Automatically lock workstation sessions after a standard period of inactivity. The case is not applicable for Unix OS. Supported OS - Windows 2008 R2 and 7, Windows 2012 R2 and 8.1, Windows 2016 and 10 Windows Server 2019.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>DTRACK Process Creation</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_malware_dtrack.yml/</link>
+      <pubDate>Wed, 30 Oct 2019 15:15:57 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_malware_dtrack.yml/</guid>
+      <description>&lt;p&gt;Detects specific process parameters as seen in DTRACK infections&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Windows Network Enumeration</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_net_enum.yml/</link>
+      <pubDate>Mon, 28 Oct 2019 11:59:49 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_net_enum.yml/</guid>
+      <description>&lt;p&gt;Identifies attempts to enumerate hosts in a network using the built-in Windows net.exe tool.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Overwriting the File with Dev Zero or Null</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/linux/auditd/lnx_auditd_dd_delete_file.yml/</link>
+      <pubDate>Wed, 23 Oct 2019 11:22:33 -0700</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/auditd/lnx_auditd_dd_delete_file.yml/</guid>
+      <description>&lt;p&gt;Detects overwriting (effectively wiping/deleting) of a file.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Suspicious Call by Ordinal</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_rundll32_by_ordinal.yml/</link>
+      <pubDate>Tue, 22 Oct 2019 12:40:26 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_rundll32_by_ordinal.yml/</guid>
+      <description>&lt;p&gt;Detects suspicious calls of DLLs in rundll32.dll exports by ordinal&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Suspicious Double Extension</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_double_extension.yml/</link>
+      <pubDate>Wed, 26 Jun 2019 15:57:25 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_double_extension.yml/</guid>
+      <description>&lt;p&gt;Detects suspicious use of an .exe extension after a non-executable file extension like .pdf.exe, a set of spaces or underlines to cloak the executable file in spear phishing campaigns&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Mimikatz through Windows Remote Management</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_access/proc_access_win_mimikatz_trough_winrm.yml/</link>
+      <pubDate>Mon, 20 May 2019 12:25:58 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_access/proc_access_win_mimikatz_trough_winrm.yml/</guid>
+      <description>&lt;p&gt;Detects usage of mimikatz through WinRM protocol by monitoring access to lsass process by wsmprovhost.exe.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>CMSTP UAC Bypass via COM Object Access</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_cmstp_com_object_access.yml/</link>
+      <pubDate>Wed, 16 Jan 2019 23:36:31 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_cmstp_com_object_access.yml/</guid>
+      <description>&lt;p&gt;Detects UAC Bypass Attempt Using Microsoft Connection Manager Profile Installer Autoelevate-capable COM Objects (e.g. UACMe ID of 41, 43, 58 or 65)&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>PowerShell Base64 Encoded Shellcode</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_powershell_b64_shellcode.yml/</link>
+      <pubDate>Wed, 16 Jan 2019 23:36:31 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_powershell_b64_shellcode.yml/</guid>
+      <description>&lt;p&gt;Detects Base64 encoded Shellcode&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Rubeus Hack Tool</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_hack_rubeus.yml/</link>
+      <pubDate>Wed, 16 Jan 2019 23:36:31 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_hack_rubeus.yml/</guid>
+      <description>&lt;p&gt;Detects command line parameters used by Rubeus hack tool&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Suspicious Use of Procdump on LSASS</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_procdump_lsass.yml/</link>
+      <pubDate>Wed, 16 Jan 2019 23:36:31 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_procdump_lsass.yml/</guid>
+      <description>&lt;p&gt;Detects suspicious uses of the SysInternals Procdump utility by using a special command line parameter in combination with the lsass.exe process. This way we&amp;rsquo;re also able to catch cases in which the attacker has renamed the procdump executable.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>CMSTP Execution Process Access</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_access/proc_access_win_cmstp_execution_by_access.yml/</link>
+      <pubDate>Mon, 16 Jul 2018 02:53:41 +0300</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_access/proc_access_win_cmstp_execution_by_access.yml/</guid>
+      <description>&lt;p&gt;Detects various indicators of Microsoft Connection Manager Profile Installer execution&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>CMSTP Execution Process Creation</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_cmstp_execution_by_creation.yml/</link>
+      <pubDate>Mon, 16 Jul 2018 02:53:41 +0300</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_cmstp_execution_by_creation.yml/</guid>
+      <description>&lt;p&gt;Detects various indicators of Microsoft Connection Manager Profile Installer execution&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>CMSTP Execution Registry Event</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_cmstp_execution_by_registry.yml/</link>
+      <pubDate>Mon, 16 Jul 2018 02:53:41 +0300</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/registry_event/registry_event_cmstp_execution_by_registry.yml/</guid>
+      <description>&lt;p&gt;Detects various indicators of Microsoft Connection Manager Profile Installer execution&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Exploit for CVE-2015-1641</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_exploit_cve_2015_1641.yml/</link>
+      <pubDate>Thu, 22 Feb 2018 16:59:40 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_exploit_cve_2015_1641.yml/</guid>
+      <description>&lt;p&gt;Detects Winword starting uncommon sub process MicroScMgmt.exe as used in exploits for CVE-2015-1641&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Equation Group DLL_U Load</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_apt_equationgroup_dll_u_load.yml/</link>
+      <pubDate>Wed, 31 Jan 2018 23:11:37 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_apt_equationgroup_dll_u_load.yml/</guid>
+      <description>&lt;p&gt;Detects a specific tool and export used by EquationGroup&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Python SQL Exceptions</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/application/python/app_python_sql_exceptions.yml/</link>
+      <pubDate>Sat, 12 Aug 2017 00:44:18 +0200</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/application/python/app_python_sql_exceptions.yml/</guid>
+      <description>&lt;p&gt;Generic rule for SQL exceptions in Python according to PEP 249&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>User Added to Local Administrators</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_user_added_to_local_administrators.yml/</link>
+      <pubDate>Tue, 14 Mar 2017 12:51:50 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_user_added_to_local_administrators.yml/</guid>
+      <description>&lt;p&gt;This rule triggers on user accounts that are added to the local Administrators group, which could be legitimate activity or a sign of privilege escalation activity&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Multiple Modsecurity Blocks</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/linux/modsecurity/modsec_mulitple_blocks.yml/</link>
+      <pubDate>Tue, 28 Feb 2017 17:53:32 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/modsecurity/modsec_mulitple_blocks.yml/</guid>
+      <description>&lt;p&gt;Detects multiple blocks by the mod_security module (Web Application Firewall)&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Addition of SID History to Active Directory Object</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_add_sid_history.yml/</link>
+      <pubDate>Sun, 19 Feb 2017 22:43:27 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_add_sid_history.yml/</guid>
+      <description>&lt;p&gt;An attacker can use the SID history attribute to gain additional privileges.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Password Change on Directory Service Restore Mode (DSRM) Account</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_dsrm_password_change.yml/</link>
+      <pubDate>Sun, 19 Feb 2017 22:43:27 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_dsrm_password_change.yml/</guid>
+      <description>&lt;p&gt;The Directory Service Restore Mode (DSRM) account is a local administrator account on Domain Controllers. Attackers may change the password to gain persistence.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Password Dumper Remote Thread in LSASS</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/create_remote_thread/sysmon_password_dumper_lsass.yml/</link>
+      <pubDate>Fri, 10 Feb 2017 19:17:02 +0100</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/create_remote_thread/sysmon_password_dumper_lsass.yml/</guid>
+      <description>&lt;p&gt;Detects password dumper activity by monitoring remote thread creation EventID 8 in combination with the lsass.exe process as TargetImage. The process in field Process is the malicious program. A single execution can lead to hundreds of events.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Addition of Domain Trusts</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_add_domain_trust.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_add_domain_trust.yml/</guid>
+      <description>&lt;p&gt;Addition of domains is seldom and should be verified for legitimacy.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Antivirus PrinterNightmare CVE-2021-34527 Exploit Detection</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/application/antivirus/av_printernightmare_cve_2021_34527.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/application/antivirus/av_printernightmare_cve_2021_34527.yml/</guid>
+      <description>&lt;p&gt;Detects the suspicious file that is created from PoC code against Windows Print Spooler Remote Code Execution Vulnerability CVE-2021-34527 (PrinterNightmare), CVE-2021-1675 .&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Buffer Overflow Attempts</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/linux/builtin/lnx_buffer_overflows.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/builtin/lnx_buffer_overflows.yml/</guid>
+      <description>&lt;p&gt;Detects buffer overflow attempts in Unix system log files&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Clear Linux Logs</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/linux/process_creation/proc_creation_lnx_clear_logs.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/process_creation/proc_creation_lnx_clear_logs.yml/</guid>
+      <description>&lt;p&gt;Detects clear logs&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>CrackMapExec Command Execution</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_crackmapexec_execution.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_susp_crackmapexec_execution.yml/</guid>
+      <description>&lt;p&gt;Detect various execution methods of the CrackMapExec pentesting framework&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Credential Dumping by LaZagne</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_access/proc_access_win_lazagne_cred_dump_lsass_access.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_access/proc_access_win_lazagne_cred_dump_lsass_access.yml/</guid>
+      <description>&lt;p&gt;Detects LSASS process access by LaZagne for credential dumping.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>CVE-2021-26857 Exchange Exploitation</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_cve_2021_26857_msexchange.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_cve_2021_26857_msexchange.yml/</guid>
+      <description>&lt;p&gt;Detects possible successful exploitation for vulnerability described in CVE-2021-26857 by looking for | abnormal subprocesses spawning by Exchange Server’s Unified Messaging service&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Delete Volume Shadow Copies Via WMI With PowerShell</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_classic/posh_pc_delete_volume_shadow_copies.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/powershell/powershell_classic/posh_pc_delete_volume_shadow_copies.yml/</guid>
+      <description>&lt;p&gt;Shadow Copies deletion using operating systems utilities via PowerShell&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Django Framework Exceptions</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/application/django/appframework_django_exceptions.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/application/django/appframework_django_exceptions.yml/</guid>
+      <description>&lt;p&gt;Detects suspicious Django web application framework exceptions that could indicate exploitation attempts&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Failed Code Integrity Checks</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_codeintegrity_check_failure.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_codeintegrity_check_failure.yml/</guid>
+      <description>&lt;p&gt;Code integrity failures may indicate tampered executables.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>File Deletion</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/linux/process_creation/proc_creation_lnx_file_deletion.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/process_creation/proc_creation_lnx_file_deletion.yml/</guid>
+      <description>&lt;p&gt;Detects file deletion commands&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Impacket Lateralization Detection</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_impacket_lateralization.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_impacket_lateralization.yml/</guid>
+      <description>&lt;p&gt;Detects wmiexec/dcomexec/atexec/smbexec from Impacket framework&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Login with WMI</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_wmi_login.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/security/win_susp_wmi_login.yml/</guid>
+      <description>&lt;p&gt;Detection of logins performed with WMI&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Microsoft Defender Tamper Protection Trigger</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/windefend/win_defender_tamper_protection_trigger.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/windefend/win_defender_tamper_protection_trigger.yml/</guid>
+      <description>&lt;p&gt;Detects block of attempt to disable real time protection of Microsoft Defender by tamper protection&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Password Policy Discovery</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/linux/auditd/lnx_auditd_password_policy_discovery.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/auditd/lnx_auditd_password_policy_discovery.yml/</guid>
+      <description>&lt;p&gt;Detects password policy discovery commands&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Process Discovery</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/linux/process_creation/proc_creation_lnx_process_discovery.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/process_creation/proc_creation_lnx_process_discovery.yml/</guid>
+      <description>&lt;p&gt;Detects process discovery commands&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Relevant ClamAV Message</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/linux/other/lnx_clamav.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/other/lnx_clamav.yml/</guid>
+      <description>&lt;p&gt;Detects relevant ClamAV messages&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Ruby on Rails Framework Exceptions</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/application/ruby/appframework_ruby_on_rails_exceptions.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/application/ruby/appframework_ruby_on_rails_exceptions.yml/</guid>
+      <description>&lt;p&gt;Detects suspicious Ruby on Rails exceptions that could indicate exploitation attempts&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Scheduled Task/Job At</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/linux/process_creation/proc_creation_lnx_at_command.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/process_creation/proc_creation_lnx_at_command.yml/</guid>
+      <description>&lt;p&gt;Detects the use of at/atd&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Shadow Copies Deletion Using Operating Systems Utilities</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_shadow_copies_deletion.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_shadow_copies_deletion.yml/</guid>
+      <description>&lt;p&gt;Shadow Copies deletion using operating systems utilities&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Spring Framework Exceptions</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/application/spring/appframework_spring_exceptions.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/application/spring/appframework_spring_exceptions.yml/</guid>
+      <description>&lt;p&gt;Detects suspicious Spring framework exceptions that could indicate exploitation attempts&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>System Information Discovery</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/linux/process_creation/proc_creation_lnx_system_info_discovery.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/linux/process_creation/proc_creation_lnx_system_info_discovery.yml/</guid>
+      <description>&lt;p&gt;Detects system information discovery commands&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>TropicTrooper Campaign November 2018</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_apt_tropictrooper.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_apt_tropictrooper.yml/</guid>
+      <description>&lt;p&gt;Detects TropicTrooper activity, an actor who targeted high-profile organizations in the energy and food and beverage sectors in Asia&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Unidentified Attacker November 2018</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_apt_unidentified_nov_18.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/process_creation/proc_creation_win_apt_unidentified_nov_18.yml/</guid>
+      <description>&lt;p&gt;A sigma rule detecting an unidetefied attacker who used phishing emails to target high profile orgs on November 2018. The Actor shares some TTPs with YYTRIUM/APT29 campaign in 2016.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Ursnif Malware C2 URL Pattern</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/proxy/proxy_ursnif_malware_c2_url.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/proxy/proxy_ursnif_malware_c2_url.yml/</guid>
+      <description>&lt;p&gt;Detects Ursnif C2 traffic.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Ursnif Malware Download URL Pattern</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/proxy/proxy_ursnif_malware_download_url.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/proxy/proxy_ursnif_malware_download_url.yml/</guid>
+      <description>&lt;p&gt;Detects download of Ursnif malware done by dropper documents.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Zerologon Exploitation Using Well-known Tools</title>
+      <link>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_possible_zerologon_exploitation_using_wellknown_tools.yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bradleyjkemp.dev/sigmadoc/rules/windows/builtin/system/win_possible_zerologon_exploitation_using_wellknown_tools.yml/</guid>
+      <description>&lt;p&gt;This rule is designed to detect attempts to exploit Zerologon (CVE-2020-1472) vulnerability using mimikatz zerologon module or other exploits from machine with &amp;ldquo;kali&amp;rdquo; hostname.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
