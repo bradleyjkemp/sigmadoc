@@ -16,6 +16,10 @@ status: {{.}}
 level: {{.}}
 {{end}}
 
+{{with .Parsed.Reviewer}}
+reviewer: {{.}}
+{{end}}
+
 {{with .Time}}
 date: {{.}}
 {{end}}

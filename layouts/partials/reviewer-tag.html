@@ -1,0 +1,7 @@
+<div class="control">
+    <div class="tags has-addons">
+        <span class="tag {{with .size}}is-{{.}}{{end}} is-dark">reviewer</span>
+        {{$colour := "light"}}
+        <span class="tag {{with .size}}is-{{.}}{{end}} is-{{$colour}}">{{.reviewer}}</span>
+    </div>
+</div>
